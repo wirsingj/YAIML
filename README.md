@@ -58,6 +58,12 @@ This repository includes a robust fictional example:
 
 It is intentionally fake, but detailed enough to show what useful YAIML memory looks like after real engineering pressure: current capabilities, product doctrine, verified evidence, trust risks, architecture boundaries, maintainer checks, and open questions.
 
+## Rights And Reuse
+
+This repository is public for visibility and review, but it is not open source yet.
+
+No open-source license is currently granted. See [LICENSE.md](LICENSE.md). Do not copy, redistribute, repackage, sell, or build derivative works from YAIML without explicit written permission from the copyright holder.
+
 ## The Engineering Problem
 
 Modern software work with coding agents happens at two levels:

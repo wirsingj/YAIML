@@ -23,11 +23,12 @@ The practical goal is simple: a developer can copy a small document family and p
 
 Declared: YAIML is a lightweight project-context system for AI Project Engineering. It is not primarily a schema, formal specification, YAML dialect, parser target, contract system, or compliance framework.
 
-Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, a cold-start review note, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, provider adapter, or license file.
+Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, a cold-start review note, a restrictive all-rights-reserved notice, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, or provider adapter.
 
 ## Current Artifact Set
 
 - `README.md`: public entry point, quick start, concept summary, and current/future boundary.
+- `LICENSE.md`: restrictive rights notice; public visibility does not grant open-source reuse.
 - `yaiml.yml`: discovers this repository's YAIML document family.
 - `docs/SoTY.md`: current engineering state for YAIML.
 - `docs/ARCHITECTURE.md`: durable conceptual architecture and artifact responsibilities.
@@ -54,6 +55,7 @@ Developers using Codex, Claude, Gemini, Cursor, local models, or future coding a
 - Ambiguity must be visible when it can affect future work.
 - Pruning is part of the method, especially for SoT.
 - Tooling is deferred.
+- The repository may be public for visibility, but it is not open source yet.
 
 ## Meaningful Accomplishments
 
@@ -61,6 +63,7 @@ Developers using Codex, Claude, Gemini, Cursor, local models, or future coding a
 - The core document family has been clarified as SoT, with project-specific filenames such as `SoTY.md`, `SoTT.md`, or `SoTC.md`.
 - Stable headers now replace the earlier heavier document-contract framing.
 - The README explains the problem, the immediate workflow, and the current/future boundary.
+- The README and rights notice now state that public visibility does not grant open-source reuse.
 - Core templates and the fictional example use SoT, Architecture, and Maintainer Guide consistently.
 
 ## Current Strengths
@@ -92,7 +95,7 @@ Developers using Codex, Claude, Gemini, Cursor, local models, or future coding a
 2. Keep the fictional example detailed enough to teach the pattern without implying it is a source-project copy.
 3. Refine pruning behavior from actual overgrown SoT documents.
 4. Preserve YAIML's own dogfood documents after material changes.
-5. Decide licensing only with explicit human approval.
+5. Revisit licensing only with explicit human approval.
 
 ## Known Divergence
 
@@ -112,7 +115,7 @@ Possible later tooling includes repository initialization, document discovery, f
 
 ## Open Questions
 
-- What license should govern the repository and templates?
+- What eventual public/open-source license, if any, should govern the repository and templates?
 - How strongly should YAIML enforce project-specific SoT filenames such as `SoTY.md`, `SoTT.md`, or `SoTC.md`?
 - Is `yaiml.yml` essential for the no-tooling phase, or should it be recommended but optional?
 - How strict should future tooling be without damaging the interpretive value of YAIML?

@@ -58,6 +58,7 @@ Run these manually after meaningful edits:
 ## Important Files
 
 - `README.md`: public entry point and immediate-use path.
+- `LICENSE.md`: restrictive all-rights-reserved notice; do not replace with an open-source license without explicit human approval.
 - `yaiml.yml`: discovers this repository's YAIML documents.
 - `docs/SoTY.md`: current direction, risks, and open questions.
 - `docs/ARCHITECTURE.md`: durable conceptual model and artifact boundaries.
@@ -68,6 +69,7 @@ Run these manually after meaningful edits:
 ## Danger Files
 
 - `README.md`: easy place to overclaim maturity or tooling.
+- `LICENSE.md`: easy place to accidentally grant reuse rights before the project is ready.
 - `templates/core/SOT.md`: neutral starter template; easy place to normalize append-only memory.
 - `docs/STABLE_HEADERS.md`: easy place to drift into schema design.
 - `prompts/initialize-yaiml.md`: easy place to accidentally authorize code changes during initialization.
