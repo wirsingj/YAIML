@@ -1,0 +1,21 @@
+yaiml: "0.1"
+usage: fictional-example
+
+project:
+  id: canopy-dispatch
+  name: Canopy Dispatch
+
+documents:
+  sot:
+    path: docs/SoTD.md
+    title: SoTD
+  architecture:
+    path: docs/ARCHITECTURE.md
+    title: Canopy Dispatch Architecture
+  maintainer:
+    path: docs/MAINTAINER_GUIDE.md
+    title: Canopy Dispatch Maintainer Guide
+
+supporting:
+  - path: docs/RELEASE_AND_TRUST.md
+    role: release-trust-memory

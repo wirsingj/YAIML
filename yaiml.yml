@@ -1,0 +1,32 @@
+yaiml: "0.1"
+
+project:
+  id: yaiml
+  name: YAIML
+
+documents:
+  sot:
+    path: docs/SoTY.md
+    title: SoTY
+  architecture:
+    path: docs/ARCHITECTURE.md
+    title: YAIML Architecture
+  maintainer:
+    path: docs/MAINTAINER_GUIDE.md
+    title: YAIML Maintainer Guide
+
+supporting:
+  - path: docs/CONCEPTS.md
+    role: concept-guide
+  - path: docs/CORE_DOCUMENT_FAMILY.md
+    role: core-family-guide
+  - path: docs/STABLE_HEADERS.md
+    role: stable-header-guide
+  - path: docs/AMBIGUITY_AND_EVIDENCE.md
+    role: ambiguity-guide
+  - path: docs/PRUNING_AND_LIFECYCLE.md
+    role: lifecycle-guide
+  - path: docs/COLD_START_REVIEW.md
+    role: cold-start-review
+
+phase: convention-first
