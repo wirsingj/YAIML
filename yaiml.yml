@@ -26,7 +26,13 @@ supporting:
     role: ambiguity-guide
   - path: docs/PRUNING_AND_LIFECYCLE.md
     role: lifecycle-guide
+  - path: docs/AGENT_INTEGRATION.md
+    role: agent-integration-guide
+  - path: docs/CONTEXT_LOADING.md
+    role: context-loading-guide
+  - path: docs/EVALUATION.md
+    role: evaluation-guide
   - path: docs/COLD_START_REVIEW.md
     role: cold-start-review
 
-phase: convention-first
+phase: incubation-convention-first

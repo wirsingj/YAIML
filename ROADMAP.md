@@ -1,6 +1,10 @@
 # YAIML Roadmap
 
-YAIML is in its convention-first phase. The current goal is to make the SoT-centered project-memory pattern immediately useful without tooling.
+YAIML is in an incubation and convention-first phase. The current goal is to make the SoT-centered, self-unfolding project-memory pattern immediately useful without tooling.
+
+The current startup paths are `prompts/init-yaiml.md` for quick adoption and `prompts/initialize-yaiml.md` for deeper repository setup. A better startup helper may come later, but it should still produce and maintain plain YAIML files in the user's project rather than turning YAIML into an installed dependency, runtime, or package format.
+
+Near-term work should make the existing philosophy clearer, smaller, and more durable before adding more framework surface.
 
 ## Now
 
@@ -8,29 +12,38 @@ YAIML is in its convention-first phase. The current goal is to make the SoT-cent
 - Improve the prompt pack through actual agent sessions.
 - Keep YAIML's own SoTY, Architecture, and Maintainer Guide short and honest.
 - Add only examples that reveal how the pattern behaves in use.
+- Refine self-unfolding document guidance so agents add useful supporting documents without creating empty ceremony.
+- Keep the minimum viable adoption path smaller than the full initializer.
+- Apply the cold-start evaluation method to real repositories without fabricating proof.
+- Reduce terminology where ordinary engineering language works.
 - Avoid drifting back into schemas, conformance fixtures, parser design, or standards-body language.
 
 ## Near Next
 
 - Collect real failure cases where agents misunderstood intent, implementation, or risk.
 - Refine the stable header until it is strong enough to guide agents and short enough to tolerate.
-- Improve optional document guidance for security, domain models, product rules, and legal/compliance memory.
+- Refine context-loading guidance from real agent sessions.
+- Record real-project case studies using the evaluation template.
+- Improve self-unfolded document guidance for preferences, terms, risk review, security, domain models, product rules, operations, release, and legal/compliance memory.
 - Develop manual review checklists for project-memory quality.
+- Prepare public release readiness criteria, including license selection, contribution expectations, examples, and evidence requirements.
 
 ## Later
 
 Possible later work:
 
-- a project initializer;
+- a bootstrap helper for initializing project-local YAIML files;
 - stale-claim auditing;
 - document pruning assistance;
 - editor snippets;
 - provider-specific prompt variants;
 - team review workflows;
-- lightweight validators.
+- document health checks.
 
 These remain deferred until the plain Markdown and prompt workflow proves itself.
 
 ## Still Human-Decided
 
-No license has been selected. Do not add a license file or license claims without explicit human approval.
+A restrictive all-rights-reserved notice exists for incubation protection. Do not replace it with an open-source license, license headers, or broader reuse permission without explicit human approval.
+
+The maintainer intends to choose an open license before broad public adoption, but no license or date has been selected.

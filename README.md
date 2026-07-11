@@ -1,195 +1,154 @@
 # YAIML
 
-YAIML preserves the current interpreted understanding of a software project across disposable coding-agent sessions.
+YAIML is an incubating plain-file convention for preserving a software project's current interpreted engineering understanding across disposable coding-agent sessions.
 
 The chat can disappear. The provider can change. The agent can change. The project context remains in the repository.
 
 > Coding agents are temporary. The project's engineering understanding should not be.
 
-## Quick Start
+## What Problem It Solves
 
-Tell your coding agent to initialize YAIML. Paste the contents of [prompts/initialize-yaiml.md](prompts/initialize-yaiml.md) into Codex, Claude, ChatGPT, Cursor, or another repository-aware agent and point it at the project.
+Modern agent-assisted software work includes code, tests, configuration, and a second layer of natural-language engineering direction: product intent, design corrections, audit findings, rejected approaches, risk calls, maintainer procedures, and lessons learned through use.
 
-The agent should inspect the repository, create the YAIML document family, and populate it with verified current context. It should not change application code during initialization unless you explicitly ask for code changes.
+That second layer often lives in temporary chat. YAIML keeps the useful interpreted state close to the source code so the next Codex, Claude, Cursor, Gemini, local model, or other coding agent does not have to reconstruct the project from scratch.
 
-After initialization, start future coding-agent sessions with [prompts/hydrate-agent-session.md](prompts/hydrate-agent-session.md). After meaningful work, use [prompts/update-project-memory.md](prompts/update-project-memory.md).
+## Who It Is For
 
-That is the first usable version of YAIML.
+YAIML is for developers using recurring coding-agent sessions on projects where source code alone does not preserve enough meaning.
 
-## Manual Setup
+The README is for humans deciding whether to try YAIML. The document family inside a project is primarily for agent continuity, while staying readable and reviewable by humans.
 
-If you want to set YAIML up by hand, copy the three core templates into a repository:
+## Minimum Useful Setup
+
+The smallest useful YAIML setup is three Markdown files plus a tiny discovery file:
 
 ```text
 SOT.md
 ARCHITECTURE.md
 MAINTAINER_GUIDE.md
+yaiml.yml
 ```
 
-`SOT.md` is the neutral starter filename. For a real project, rename it to a project-specific SoT name when there is an obvious larger project word:
+Use this flow when you want to try the idea in a few minutes:
 
-- `SoTC.md` for State Of The Captions;
-- `SoTT.md` for State Of The Table;
-- `SoTY.md` for State Of The YAIML.
+1. Run the small init prompt once: [prompts/init-yaiml.md](prompts/init-yaiml.md).
+2. Review the created or updated `SOT.md`, `ARCHITECTURE.md`, `MAINTAINER_GUIDE.md`, and `yaiml.yml`.
+3. Add a short pointer from your repository's agent instruction file, if it has one, telling future agents to read `yaiml.yml` and the core YAIML documents before meaningful work.
+4. Let future sessions use those files as project memory. After meaningful work, the agent should update and prune the affected YAIML documents as part of the work, not wait for a separate pasted reminder.
 
-The final letter should point to the larger project or product being remembered, not to an arbitrary subsystem like renderer or sidebar.
+If a repository has no agent instruction file yet, YAIML still works: start future sessions by telling the agent to read `yaiml.yml` first. The goal is not to paste a workflow prompt after every step. The goal is for the repository to carry enough current project understanding that the next agent can rehydrate from the files already there.
 
-Add a small `yaiml.yml` that points to the files:
+In day-to-day use, the human instruction should be ordinary language: "read YAIML and continue through the SoT priorities," "check the SoT before changing this," or "update our SoT after this work." YAIML should make those small instructions meaningful because the repository already contains the context.
 
-```yaml
-yaiml: "0.1"
-project:
-  id: my-project
-  name: My Project
-documents:
-  sot:
-    path: SoTP.md
-  architecture:
-    path: ARCHITECTURE.md
-  maintainer:
-    path: MAINTAINER_GUIDE.md
-```
+## Full Initialization
 
-## Examples
+Use [prompts/initialize-yaiml.md](prompts/initialize-yaiml.md) when the repository needs a deeper first pass: richer evidence discipline, self-unfolding supporting documents, safety boundaries, and more complete starter shapes.
 
-This repository includes a robust fictional example:
+The full initializer is intentionally self-contained so it can work in another repository without assuming the agent has this repository open. It should still create ordinary project-local Markdown files, not a package dependency, runtime, build step, hosted service, schema system, or required CLI.
 
-[Canopy Dispatch](examples/canopy-dispatch/) shows a neighborhood storm-response coordination app with SoTD, architecture notes, maintainer playbooks, and release/trust memory.
+## Core Documents
 
-It is intentionally fake, but detailed enough to show what useful YAIML memory looks like after real engineering pressure: current capabilities, product doctrine, verified evidence, trust risks, architecture boundaries, maintainer checks, and open questions.
+**SoT** means **State Of The**. It is the current engineering-state document: what the project means now, what is verified, what humans intend, what is risky, what is uncertain, what diverges, and what the next agent must not casually distort.
 
-## Rights And Reuse
+For unfamiliar repositories, use `SOT.md` by default. Project-specific names such as `SoTC.md`, `SoTT.md`, or this repository's `docs/SoTY.md` are supported when they add useful project character, but a new adopter should not have to invent one before beginning.
 
-This repository is public for visibility and review, but it is not open source yet.
+**Architecture** preserves durable system shape: components, boundaries, invariants, intended architecture, current architecture, known violations, danger zones, and retired approaches.
 
-No open-source license is currently granted. See [LICENSE.md](LICENSE.md). Do not copy, redistribute, repackage, sell, or build derivative works from YAIML without explicit written permission from the copyright holder.
+**Maintainer Guide** preserves practical operating knowledge: setup, commands, tests, diagnostics, important files, danger files, release or recovery procedures, and failure playbooks.
 
-## The Engineering Problem
+Supporting documents are added only when recurring specialist knowledge no longer fits naturally in the core three. A useful test: if a new document cannot immediately hold several concrete recurring pieces of project knowledge, it probably should not exist yet.
 
-Modern software work with coding agents happens at two levels:
+## Agent Instructions
 
-1. Source code, tests, configuration, and technical artifacts.
-2. Continuous natural-language engineering direction: product intent, feature requests, design corrections, audits, bugs found in use, architecture concerns, priorities, rejected directions, and lessons learned.
+`AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files primarily tell an agent how to behave while working in a repository.
 
-That second layer can become enormous. Most of the raw conversation should not be preserved forever, but its useful engineering meaning must survive. Otherwise each new Codex, Claude, Cursor, Gemini, or local-model session has to reconstruct the project from source files, stale chat, and guesswork.
+YAIML primarily preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
 
-YAIML is a lightweight project-context system for that loop.
+An instruction file may point agents to YAIML, but YAIML should not duplicate every behavioral rule. See [Agent Integration](docs/AGENT_INTEGRATION.md).
 
-## Project Layers
+## Context Loading
 
-YAIML has several layers that should not be collapsed:
+Self-unfolding does not mean reading every document for every task. YAIML uses a bounded loading model:
 
-- **Philosophy**: coding agents are temporary, but project understanding should persist.
-- **Framework**: AI Project Engineering needs durable context for natural-language direction as well as source code.
-- **Document family**: SoT, Architecture, Maintainer Guide, and optional supporting documents.
-- **Reference kit**: this repository's templates, prompts, guides, examples, and dogfooded YAIML documents.
-- **Future tooling**: possible helpers around initialization, discovery, auditing, context assembly, or IDE/agent integration.
+- Discovery layer: `yaiml.yml` and repository agent instructions.
+- Core layer: concise SoT, Architecture, and Maintainer Guide.
+- Task-relevant layer: supporting documents selected because the current task touches their domain.
+- Deep-reference layer: historical decisions, audits, release notes, or specialized material loaded only when needed.
 
-## What YAIML Is
+See [Context Loading](docs/CONTEXT_LOADING.md). The hydrate prompt follows this model: [prompts/hydrate-agent-session.md](prompts/hydrate-agent-session.md).
 
-YAIML is a lightweight standard and reusable document family for AI Project Engineering.
+## Evidence Discipline
 
-It is not:
+YAIML should not silently blend different kinds of truth.
+
+- **Verified**: supported by named files, tests, commands, runtime behavior, or documents.
+- **Declared**: stated as intent, policy, direction, or decision by a human or authoritative project document.
+- **Observed**: seen in behavior but not fully traced.
+- **Inferred**: plausible from available evidence but not verified.
+- **Disputed**: sources disagree.
+- **Unknown**: not currently established.
+- **Obsolete**: previously relevant but no longer current.
+
+Do not label every sentence. Use labels where a claim could steer future work. See [Ambiguity And Evidence](docs/AMBIGUITY_AND_EVIDENCE.md).
+
+## What YAIML Is Not
+
+YAIML is not:
 
 - a YAML format;
-- a schema;
-- a serialization protocol;
-- a conformance system;
-- an RFC-style specification;
-- a replacement for `AGENTS.md`;
-- a generic knowledge base;
-- a hosted memory product.
+- a schema-validation system;
+- an RFC or conformance regime;
+- a package;
+- a runtime framework;
+- a hosted memory service;
+- a database;
+- an agent SDK;
+- a required CLI;
+- a provider integration layer;
+- a replacement for source code, tests, Git history, issues, or agent instruction files.
 
-YAIML is semantically structured and syntactically loose. The core roles are stable. The exact filenames, headings, and local vocabulary may vary.
+Future tools may help initialize, discover, audit, prune, or assemble context. They should serve the plain-file convention rather than redefine YAIML as software infrastructure.
 
-## The Core Workflow
+## Positioning
 
-YAIML supports this working loop:
+YAIML does not claim to have invented persistent Markdown context for coding agents.
 
-1. The developer describes a goal, concern, bug, correction, or feature.
-2. The agent reads the YAIML document family.
-3. The agent reconciles the request with current state, architecture, operating guidance, evidence, and uncertainty.
-4. The agent inspects the repository.
-5. The agent implements, audits, tests, or reports.
-6. The agent updates affected YAIML documents so they describe the project after the work.
-7. A future agent reads those documents and continues without requiring the old chat.
+Its contribution is the combination of current interpreted whole-project understanding, separation of human direction from implementation evidence, explicit uncertainty and disagreement, synthesis instead of chronological logging, pruning and obsolescence, distinct document ownership, and continuity across disposable agents and providers.
 
-YAIML documents are not passive documentation after development. They are part of the active engineering process.
+Agent instruction files tell an agent how to work. Feature specs define desired behavior for a bounded change. Changelogs describe what changed. Backlogs describe work that may happen. Architecture docs describe system shape. YAIML connects these concerns by preserving the project's current interpreted engineering state and pointing agents toward the authoritative artifacts behind it.
 
-## SoT Is The Center
+## Examples And Evaluation
 
-The central YAIML artifact is **SoT**.
+[Canopy Dispatch](examples/canopy-dispatch/) is a robust fictional example. It is useful as an example, not proof.
 
-SoT means **State Of The**. The phrase is intentionally incomplete; the project completes it.
+YAIML needs real-project evidence. Use [Evaluation And Case Studies](docs/EVALUATION.md) to run lightweight cold-start comparisons and record limitations without fabricating adoption claims or universal metrics.
 
-For a real project, the filename should usually expand with one final project letter:
+## Prompt Library
 
-- `SoTC.md` can mean State Of The Captions.
-- `SoTT.md` can mean State Of The Table.
-- `SoTY.md` means State Of The YAIML in this repository.
+These prompts are fallback and maintenance workflows, not required commands to paste after every change. In a healthy YAIML repository, the core documents and agent instructions already guide routine hydration, update, and pruning.
 
-Do not force awkward titles such as `State Of The: Renderer`. SoT should refer to the larger project, product, table, app, world, or other top-level thing whose engineering state is being preserved.
+- Initialize YAIML in a repository: [prompts/init-yaiml.md](prompts/init-yaiml.md)
+- Do a deeper initialization pass: [prompts/initialize-yaiml.md](prompts/initialize-yaiml.md)
+- Rehydrate a session when the agent needs explicit help: [prompts/hydrate-agent-session.md](prompts/hydrate-agent-session.md)
+- Repair stale memory after meaningful work: [prompts/update-project-memory.md](prompts/update-project-memory.md)
+- Audit memory against reality: [prompts/audit-against-reality.md](prompts/audit-against-reality.md)
+- Prune an overgrown SoT: [prompts/prune-sot.md](prompts/prune-sot.md)
+- Realign a project around a corrected center: [prompts/major-project-realignment.md](prompts/major-project-realignment.md)
 
-SoT is the project engineering control surface. It synthesizes the active development loop: current product identity, major developer asks, current capabilities, meaningful accomplishments, audit findings, architecture concerns, security and performance risks, testing results, unresolved bugs, known debt, active priorities, corrected directions, and implementation lessons.
+## Maturity And License
 
-It is not merely a changelog, backlog, status report, journal, requirements document, or project plan. It may contain aspects of those, but its job is broader: preserve the project's current engineering state and direction for the next coding agent.
+YAIML is currently in an incubation and review phase. The repository is public for visibility and feedback, but reuse is intentionally restricted during this phase.
 
-## Supporting Documents
+No open-source license is currently granted. See [LICENSE.md](LICENSE.md). The maintainer intends to choose an open license before broad public adoption, but no license or release date has been selected.
 
-Two supporting roles form the default YAIML family:
+The current restriction is temporary project protection, not YAIML's intended permanent adoption model.
 
-- **Architecture** preserves durable system shape, ownership boundaries, intended design, current design, transitional architecture, known debt, and retired approaches.
-- **Maintainer Guide** preserves setup, commands, tests, debugging paths, important files, operational procedures, common failures, and recovery steps.
+## Where To Read More
 
-Projects may add documents such as Security, Legal, Data, Testing, UX, Domain, Deployment, Release, Operations, Product Doctrine, World or Lore, Provider Integration, or Remote Access.
-
-Use the documents the project actually needs.
-
-## Stable Headers
-
-Every YAIML document begins with a small stable header. The header orients an unfamiliar coding agent before it reads the body.
-
-The header is not primarily machine metadata. It is not a schema. It is not a rigid form. It should answer:
-
-- what this document is;
-- what responsibility it owns;
-- what belongs here;
-- what does not belong here;
-- how durable or volatile it is;
-- which related YAIML documents to read;
-- when it should be updated;
-- how the agent should handle evidence, uncertainty, conflicts, pruning, and human direction.
-
-See [Stable Headers](docs/STABLE_HEADERS.md).
-
-## Authority And Evidence
-
-YAIML must not silently blend different kinds of truth.
-
-- Human direction is authoritative about intended meaning and product direction.
-- Code, tests, commands, and runtime behavior are authoritative about what currently exists.
-- Agent inference is useful but must stay marked as inference.
-- Open questions and disputed claims should remain visible.
-
-When intent and implementation conflict, record the conflict. Do not rewrite intent to match broken code. Do not describe intended behavior as though it already exists.
-
-## Pruning
-
-The goal is useful continuity, not maximum memory.
-
-SoT should synthesize and prune aggressively. It should preserve meaningful accomplishments and important lessons while compressing implementation sediment. Architecture should retain durable decisions and current structure. Maintainer Guides should remove obsolete commands and procedures. Legal, audit, or history documents may require stricter retention.
-
-## Use YAIML Tonight
-
-1. Paste [initialize-yaiml.md](prompts/initialize-yaiml.md) into your coding agent.
-2. Let the agent inspect the repository and create the YAIML files.
-3. Start later sessions with [hydrate-agent-session.md](prompts/hydrate-agent-session.md).
-4. After meaningful work, use [update-project-memory.md](prompts/update-project-memory.md).
-
-No install is required.
-
-## Deferred
-
-Future tooling may include initialization helpers, document discovery, freshness checks, audit assistance, context assembly, IDE integration, agent adapters, document health checks, and provider integrations.
-
-Those tools do not exist here today. This repository is the lightweight document system, templates, prompts, guidance, examples, and YAIML's own dogfood memory.
+- [Concepts](docs/CONCEPTS.md)
+- [Core Document Family](docs/CORE_DOCUMENT_FAMILY.md)
+- [Stable Headers](docs/STABLE_HEADERS.md)
+- [Context Loading](docs/CONTEXT_LOADING.md)
+- [Agent Integration](docs/AGENT_INTEGRATION.md)
+- [Evaluation And Case Studies](docs/EVALUATION.md)
+- [Roadmap](ROADMAP.md)

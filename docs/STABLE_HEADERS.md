@@ -1,3 +1,16 @@
+---
+yaiml: 0.1
+kind: stable-header-guide
+title: Stable Headers
+purpose: Explain the stable header convention used to orient coding agents before document bodies.
+belongs-here: header purpose, required meaning, recommended shape, minimum healthy header, compatibility guidance.
+not-here: parser requirements, schema design, exhaustive metadata fields, current project priorities.
+durability: durable; update when header responsibilities or compatibility posture changes.
+read-with: Core Document Family; Ambiguity And Evidence; Pruning And Lifecycle.
+update-when: stable header meaning, recommended shape, or agent guidance expectations change.
+agent-guidance: Keep headers short and semantic. Do not convert this guide into a rigid field schema.
+---
+
 # Stable Headers
 
 Every YAIML document begins with a small stable header.
@@ -29,7 +42,7 @@ Use a compact YAML-like block for readability:
 ---
 yaiml: 0.1
 role: sot
-title: SoTP
+title: SOT
 purpose: Current engineering state and direction for the project.
 belongs-here: goals, current capabilities, active risks, priorities, divergence, recent lessons.
 not-here: durable architecture, command reference, full history.

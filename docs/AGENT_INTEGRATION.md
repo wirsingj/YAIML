@@ -1,0 +1,80 @@
+---
+yaiml: 0.1
+kind: agent-integration-guide
+title: Agent Integration
+purpose: Explain how YAIML relates to repository agent instruction files without becoming one.
+belongs-here: integration patterns for AGENTS.md, CLAUDE.md, .cursorrules, and similar provider-neutral instruction files.
+not-here: provider adapters, SDKs, exhaustive tool-specific instructions, project-specific agent rules.
+durability: durable; update when YAIML's relationship to agent instruction files changes.
+read-with: SoTY; Context Loading; Core Document Family.
+update-when: integration guidance, context-loading expectations, or instruction-file boundaries change.
+agent-guidance: Keep this provider-neutral. Do not imply official adapters or duplicate every behavioral rule inside YAIML.
+---
+
+# Agent Integration
+
+YAIML and agent instruction files have different jobs.
+
+`AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files primarily tell an agent how to behave while working in a repository: coding style, tool rules, review expectations, safety limits, branch policy, and local workflow preferences.
+
+YAIML primarily preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
+
+An instruction file can point agents toward YAIML. YAIML should not become a duplicate of every instruction file.
+
+## Minimal Instruction Snippet
+
+```md
+Before meaningful work:
+
+1. Read `yaiml.yml` if present.
+2. Read the stable header of each declared YAIML document before its body.
+3. Read the core YAIML documents: `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`, or the paths declared in `yaiml.yml`.
+4. Load supporting YAIML documents only when the current task touches their domain.
+5. Verify task-relevant claims against repository reality.
+6. Never treat inference as verified reality.
+7. After meaningful work, update affected YAIML documents and prune stale current-state information.
+```
+
+## Existing Instruction File Example
+
+```md
+# Instructions For Agents
+
+Use YAIML as project memory, not as a replacement for these instructions.
+
+Start by reading `yaiml.yml`. Then read the core YAIML documents it declares:
+
+- SoT for current project state, direction, risk, uncertainty, and priorities.
+- Architecture for durable system shape and intended boundaries.
+- Maintainer Guide for commands, diagnostics, and failure playbooks.
+
+For the current task, inspect only relevant supporting YAIML documents. Do not load unrelated domains just because they exist.
+
+When intent and implementation disagree, surface the divergence. Do not rewrite human intent to match accidental code, and do not describe planned behavior as already implemented.
+
+After material changes, update the affected YAIML documents. Remove resolved active risks instead of appending a work diary.
+```
+
+## Boundary
+
+Put behavior rules in agent instructions:
+
+- how to run tools;
+- how to format responses;
+- how to handle tests;
+- how to manage branches;
+- what commands require care;
+- how the human wants the agent to collaborate.
+
+Put project understanding in YAIML:
+
+- current product or system meaning;
+- verified current capabilities;
+- declared human direction;
+- architecture boundaries;
+- commands and diagnostics that are current project memory;
+- active risks and known divergence;
+- open questions and uncertainty;
+- durable lessons that should guide future work.
+
+If both places need a fact, prefer a short instruction-file pointer to the YAIML document rather than duplicating the body.

@@ -1,3 +1,16 @@
+---
+yaiml: 0.1
+kind: lifecycle-guide
+title: Pruning And Lifecycle
+purpose: Explain how YAIML documents retain, compress, and forget project memory.
+belongs-here: pruning rules, document lifecycles, retention differences, stale-memory guidance.
+not-here: current project priorities, command procedures, complete history, legal advice.
+durability: durable; update when retention or pruning doctrine changes.
+read-with: SoTY; Core Document Family; Ambiguity And Evidence.
+update-when: pruning behavior, lifecycle expectations, or supporting-document retention guidance changes.
+agent-guidance: Preserve useful continuity without append-only bloat. Keep human-governed retention constraints visible.
+---
+
 # Pruning And Lifecycle
 
 Healthy project memory requires forgetting.
@@ -77,10 +90,18 @@ Remove or mark:
 - old environment notes that no longer apply;
 - historical instructions kept only because they once worked.
 
-## Optional Documents
+## Self-Unfolded Documents
 
 Not every document should prune the same way.
 
-Legal, compliance, audit, or decision-history documents may require human approval before destructive pruning. Supporting documents should declare their own lifecycle in the stable header.
+Legal, compliance, audit, contract, agreement, or decision-history documents may require human approval before destructive pruning. Preferences, terms, concepts, risk reviews, product doctrine, world/lore, operations, release, and provider documents may each need different retention rules.
+
+Supporting documents should declare their own lifecycle in the stable header:
+
+- what memory they own;
+- what does not belong there;
+- whether the content is durable, volatile, governed, or audit-sensitive;
+- when stale entries should be removed, compressed, or retained;
+- when human approval is needed before pruning.
 
 The principle is not "delete everything." The principle is that each document should know what kind of memory it is.

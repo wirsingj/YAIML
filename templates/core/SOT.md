@@ -1,7 +1,7 @@
 ---
 yaiml: 0.1
 role: sot
-title: SoTP
+title: SOT
 purpose: Current engineering state and direction for the project.
 belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, priorities, divergence, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
@@ -11,9 +11,9 @@ update-when: direction, verified reality, risks, priorities, or useful engineeri
 agent-guidance: Verify implementation claims. Preserve human intent. Mark uncertainty. Surface conflicts. Prune stale detail.
 ---
 
-# SoTP
+# SOT
 
-SoT means State Of The. `SOT.md` is the neutral starter filename. In a real project, rename the file to a project-specific SoT name when there is an obvious larger project word, such as `SoTP.md`, `SoTC.md`, or `SoTT.md`.
+SoT means State Of The. `SOT.md` is the recommended default filename for unfamiliar repositories. A project may rename the file to a project-specific SoT name when that adds useful project character, such as `SoTP.md`, `SoTC.md`, or `SoTT.md`.
 
 ## North Star
 

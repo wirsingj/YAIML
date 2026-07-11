@@ -1,3 +1,16 @@
+---
+yaiml: 0.1
+kind: ambiguity-guide
+title: Ambiguity And Evidence
+purpose: Preserve YAIML's truth-source model and uncertainty vocabulary.
+belongs-here: authority rules, evidence labels, divergence handling, common separations, evidence-note guidance.
+not-here: project-specific facts, command reference, complete audit history.
+durability: durable; update when evidence vocabulary or authority rules change.
+read-with: Concepts; Core Document Family; Stable Headers.
+update-when: truth-source distinctions, labels, or divergence-handling guidance change.
+agent-guidance: Resist false certainty. Preserve conflicts. Do not collapse intent, inference, and implementation reality.
+---
+
 # Ambiguity And Evidence
 
 YAIML documents should resist false certainty.
@@ -15,6 +28,10 @@ YAIML separates different kinds of truth:
 
 When these sources conflict, record the conflict. Do not silently merge them.
 
+Legal, licensing, ownership, copyright, trademark, patent, contract, and IP claims require special care. Treat human-approved legal text as declared intent or constraint. Treat repository files as evidence of what is present. Do not infer ownership, permission, infringement, patent status, or licensing conclusions from partial evidence.
+
+Security, privacy, compliance, and incident-response claims also require care. YAIML can record reviewed constraints, observed risks, evidence locations, and open questions. It should not present agent-written analysis as professional advice or a completed assessment.
+
 ## Shared Vocabulary
 
 Use these labels when a claim could steer future work:
@@ -28,6 +45,16 @@ Use these labels when a claim could steer future work:
 - **Obsolete**: previously relevant but no longer current.
 
 Do not label every sentence. Use labels, sections, or short notes when ambiguity matters.
+
+Labels should change agent behavior:
+
+- verified claims can guide implementation directly, while still being rechecked when the task depends on them;
+- declared intent should be preserved even when code disagrees;
+- observed behavior should prompt tracing before architectural conclusions;
+- inferred claims should guide investigation, not become project canon;
+- disputed claims should be surfaced before acting;
+- unknowns should stay visible when they affect risk or direction;
+- obsolete claims should be removed from current-state sections or retained only as retired context.
 
 ## Common Separations
 
@@ -80,3 +107,5 @@ When practical, name evidence:
 - human instruction or decision source.
 
 When evidence is missing, say so.
+
+For sensitive material, name evidence without copying secrets. Prefer paths, sanitized descriptions, risk shape, owners, and verification status over raw credentials, private data, or exploit instructions.
