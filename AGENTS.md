@@ -12,6 +12,7 @@ Working rules:
 - Preserve the distinction between SoT, architecture, and maintainer procedures.
 - Preserve the distinction between declared intent and implementation evidence.
 - Dogfood YAIML retention and uncertainty rules in this repository.
+- Treat natural-language requests such as "continue through the SoT list" or "update our SoT" as instructions to use this repository's YAIML memory, not as requests for separate prompt choreography.
 - Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas, conformance fixtures, or web applications during the convention-first phase.
 - Do not select a license without explicit human approval.
 - Update the repository's YAIML documents after material changes.

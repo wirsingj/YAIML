@@ -36,4 +36,4 @@ Before changing YAIML, ask:
 - Does this help agents prune instead of append forever?
 - Does this help the document family self-unfold where useful without creating empty files?
 - Does this avoid turning YAIML into a classical technical standard?
-- Could a developer use this tonight with only Markdown files and a pasted prompt?
+- Could a developer use this tonight with ordinary Markdown files, with prompts only as setup or maintenance helpers?

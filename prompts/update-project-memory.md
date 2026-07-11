@@ -6,13 +6,14 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 
 1. Read `yaiml.yml`.
 2. Read the relevant stable headers before document bodies.
-3. Update only YAIML documents materially affected by the work.
-4. Update SoT when current condition, risk, priority, divergence, useful lesson, or near-term context changed.
-5. Update Architecture only when boundaries, responsibilities, invariants, intended design, transitional paths, or retired approaches changed.
-6. Update Maintainer Guide when commands, setup, diagnostics, danger files, or failure playbooks changed.
-7. Remove resolved risks from active sections.
-8. Preserve unresolved uncertainty and known divergence.
-9. Rewrite rather than append when a section has become stale or repetitive.
+3. Check the current worktree state before editing. Treat uncommitted changes as intentional work in progress.
+4. Update only YAIML documents materially affected by the work.
+5. Update SoT when current condition, risk, priority, divergence, useful lesson, or near-term context changed.
+6. Update Architecture only when boundaries, responsibilities, invariants, intended design, transitional paths, or retired approaches changed.
+7. Update Maintainer Guide when commands, setup, diagnostics, danger files, or failure playbooks changed.
+8. Remove resolved risks from active sections.
+9. Preserve unresolved uncertainty and known divergence.
+10. Rewrite rather than append when a section has become stale or repetitive.
 
 ## Rules
 
@@ -22,6 +23,9 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 - Preserve human directives.
 - Surface conflicts.
 - Use Git history as the archive for old completed work.
+- Do not overwrite, discard, reset, or hide uncommitted human work.
+- Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, sensitive raw values, exploit details, or speculative legal/IP conclusions.
+- Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 
 ## Output
 

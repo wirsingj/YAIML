@@ -4,7 +4,7 @@ You are performing an adversarial review of YAIML project memory.
 
 ## Task
 
-Read `yaiml.yml`, then read YAIML stable headers and document bodies. Inspect repository reality where needed. Look for:
+Read repository agent instructions and `yaiml.yml`, then read YAIML stable headers and document bodies. Check the current worktree state before editing or recommending changes, and treat uncommitted changes as intentional work in progress. Inspect repository reality where needed. Look for:
 
 - stale claims;
 - false certainty;
@@ -25,8 +25,12 @@ Read `yaiml.yml`, then read YAIML stable headers and document bodies. Inspect re
 - Do not fix everything silently.
 - Findings should be grounded in evidence.
 - Preserve human directives.
+- Do not reset, discard, overwrite, or hide uncommitted work.
+- Do not change application code during an audit unless the human explicitly asks for implementation fixes.
 - Do not treat recent file modification time as proof of reconciliation.
 - Distinguish verified findings from suspicion.
+- Do not copy secrets, credentials, sensitive raw values, exploit details, or speculative legal/IP conclusions into YAIML documents.
+- Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 
 ## Output
 

@@ -143,6 +143,8 @@ No open-source license is currently granted. See [LICENSE.md](LICENSE.md). The m
 
 The current restriction is temporary project protection, not YAIML's intended permanent adoption model.
 
+For sensitive reports or memory-hygiene concerns, see [SECURITY.md](SECURITY.md). Do not put secrets, credentials, personal data, exploit details, or confidential project information into public YAIML documents, examples, issues, or pull requests.
+
 ## Where To Read More
 
 - [Concepts](docs/CONCEPTS.md)

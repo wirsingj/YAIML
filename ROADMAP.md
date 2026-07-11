@@ -40,7 +40,7 @@ Possible later work:
 - team review workflows;
 - document health checks.
 
-These remain deferred until the plain Markdown and prompt workflow proves itself.
+These remain deferred until the plain Markdown memory workflow and helper prompts prove themselves.
 
 ## Still Human-Decided
 

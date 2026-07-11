@@ -84,6 +84,7 @@ Run these manually after meaningful edits:
 - Check that guidance keeps YAIML documents as ordinary Markdown by default rather than introducing a `.yaiml` extension.
 - Check that initialization guidance does not add YAIML files to `.gitignore` by default.
 - Check that prompts and templates warn against storing secrets, sensitive raw values, or AI-invented legal/IP conclusions in YAIML documents.
+- Check that `SECURITY.md` still matches README, prompts, templates, and public-repo sensitive-reporting expectations.
 - Check that self-unfolding document guidance encourages useful project-specific extension without normalizing empty document ceremony.
 - Check examples for believable, compact project memory rather than generic filler; they should be fictional but detailed enough to feel shaped by real engineering pressure.
 - For every proposed addition, ask whether it improves a fresh coding agent's ability to reconstruct current engineering understanding. If not, remove or defer it.
@@ -94,6 +95,7 @@ Run these manually after meaningful edits:
 
 - `README.md`: public entry point and immediate-use path.
 - `LICENSE.md`: restrictive all-rights-reserved notice; do not replace with an open-source license without explicit human approval.
+- `SECURITY.md`: sensitive-reporting and memory-hygiene policy for the public repository.
 - `CONTRIBUTING.md`: contribution rules and licensing guardrails.
 - `ROADMAP.md`: near-term priorities and deferred future-tooling boundary.
 - `yaiml.yml`: discovers this repository's YAIML documents.
@@ -110,6 +112,7 @@ Run these manually after meaningful edits:
 
 - `README.md`: easy place to overclaim maturity or tooling.
 - `LICENSE.md`: easy place to accidentally grant reuse rights before the project is ready.
+- `SECURITY.md`: easy place to overpromise professional security process or drift away from YAIML's memory-hygiene rules.
 - `CONTRIBUTING.md` and `ROADMAP.md`: easy places for stale licensing or future-tooling claims to survive after concept changes.
 - `templates/core/SOT.md`: default SoT starter template; easy place to normalize append-only memory or make project-specific naming feel required.
 - `templates/supporting/`: easy place to imply every possible supporting document should exist in every project.

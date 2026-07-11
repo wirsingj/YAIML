@@ -29,12 +29,13 @@ Declared: YAIML is an idea and documentation framework, not professional legal, 
 
 Declared: YAIML's value is the convention it expresses, not the documents as standalone artifacts. The documents, templates, prompts, examples, and future helpers exist only to preserve project understanding across coding-agent sessions.
 
-Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, an evaluation guide, a cold-start review note, a restrictive incubation-phase all-rights-reserved notice, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, database, hosted service, or provider adapter.
+Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, an evaluation guide, a cold-start review note, a restrictive incubation-phase all-rights-reserved notice, a public security/sensitive-information policy, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, database, hosted service, or provider adapter.
 
 ## Current Artifact Set
 
 - `README.md`: public entry point, quick start, concept summary, and current/future boundary.
 - `LICENSE.md`: restrictive incubation-phase rights notice; public visibility does not grant open-source reuse.
+- `SECURITY.md`: public guidance for sensitive reports and memory-hygiene risks.
 - `CONTRIBUTING.md`: contribution guardrails for preserving the concept.
 - `ROADMAP.md`: convention-first priorities and deferred-tooling boundary.
 - `yaiml.yml`: discovers this repository's YAIML document family.
@@ -77,7 +78,7 @@ Developers using Codex, Claude, Gemini, Cursor, local models, or future coding a
 - Ambiguity must be visible when it can affect future work.
 - Pruning is part of the method, especially for SoT.
 - Tooling is deferred.
-- A future startup helper may improve on the pasted init prompt, but YAIML should remain plain project-local files, not a package-manager dependency, runtime library, hosted platform, or build step.
+- A future startup helper may improve on the one-time init flow, but YAIML should remain plain project-local files, not a package-manager dependency, runtime library, hosted platform, or build step.
 - Every proposed addition should answer: does this improve a new coding agent's ability to reconstruct the project's current engineering understanding?
 - The repository may be public for visibility, but it is not open source yet. The maintainer intends to choose an open license before broad public adoption, but no license or date has been selected.
 
@@ -96,6 +97,7 @@ Developers using Codex, Claude, Gemini, Cursor, local models, or future coding a
 - Supporting guidance now protects the plain-file boundary: visible Markdown, versioned by default, no `.yaiml` extension, no hidden tool-state folder, no package dependency.
 - Supporting guidance now protects memory hygiene: no secrets or sensitive raw values, and no agent-invented legal/IP/security/compliance conclusions.
 - Declared supporting YAIML guides now have stable headers, matching the repository's own stable-header rule.
+- A public security/sensitive-information policy now tells contributors not to place secrets, personal data, exploit details, or confidential project information into public YAIML materials.
 
 ## Current Strengths
 
@@ -131,6 +133,7 @@ Developers using Codex, Claude, Gemini, Cursor, local models, or future coding a
 - Ceremony drift: self-unfolding documents could become empty files if agents create every possible supporting role instead of only what the project needs.
 - Context drift: agents could treat `yaiml.yml` as a command to load every document on every task, making YAIML too heavy for routine work.
 - Safety drift: public or shared repositories could expose sensitive information if agents treat YAIML as private scratch space instead of sanitized project memory.
+- Reporting drift: public issues or examples could include sensitive security details if the top-level security policy is missed or ignored.
 - Advice drift: legal, security, compliance, privacy, licensing, or IP memory could be mistaken for professional recommendations if templates do not keep their memory-only role clear.
 - Status-report drift: SoT could be misread as a status report instead of an engineering-state synthesis.
 - Prompt drift: the prompt pack needs real use on varied repositories before its wording can be considered stable.
