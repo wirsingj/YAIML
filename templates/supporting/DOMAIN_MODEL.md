@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: domain
 title: Domain Model
 purpose: Durable domain concepts, vocabulary, rules, and unresolved domain questions.

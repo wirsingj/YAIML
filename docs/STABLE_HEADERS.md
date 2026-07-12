@@ -1,8 +1,8 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: stable-header-guide
 title: Stable Headers
-purpose: Explain the stable header convention used to orient coding agents before document bodies.
+purpose: Explain the stable header convention used to orient AI chats and coding agents before document bodies.
 belongs-here: header purpose, required meaning, recommended shape, minimum healthy header, compatibility guidance.
 not-here: parser requirements, schema design, exhaustive metadata fields, current project priorities.
 durability: durable; update when header responsibilities or compatibility posture changes.
@@ -15,7 +15,7 @@ agent-guidance: Keep headers short and semantic. Do not convert this guide into 
 
 Every YAIML document begins with a small stable header.
 
-The header is an operating guide for a coding agent. It is not primarily machine metadata, not a rigid YAML schema, and not a promise that every project uses byte-for-byte identical fields.
+The header is an operating guide for future AI chats and coding agents. It is not primarily machine metadata, not a rigid YAML schema, and not a promise that every project uses byte-for-byte identical fields.
 
 The body beneath the header remains free-form Markdown suited to the project.
 
@@ -40,7 +40,7 @@ Use a compact YAML-like block for readability:
 
 ```md
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.

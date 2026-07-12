@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: ambiguity-guide
 title: Ambiguity And Evidence
 purpose: Preserve YAIML's truth-source model and uncertainty vocabulary.

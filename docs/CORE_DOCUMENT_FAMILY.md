@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: core-family-guide
 title: Core Document Family
 purpose: Define the core YAIML document roles and how self-unfolded supporting documents relate to them.
@@ -21,7 +21,7 @@ The smallest coherent YAIML core is three roles:
 
 The roles are semantic requirements, not exact templates. A project may rename files, adapt headings, and add local vocabulary, but the responsibilities should remain recognizable.
 
-The core three are the starting spine, not the ceiling. YAIML is a self-unfolding guiding document set for project management, memory, definition, and agent continuity.
+The core three are the starting spine, not the ceiling. YAIML is a self-unfolding guiding document set for project management, memory, definition, and AI-chat, agent, and contributor continuity.
 
 Use ordinary Markdown files for YAIML documents by default. Do not require a custom `.yaiml` extension. The convention should stay easy to open, diff, preview, edit, and review.
 
@@ -117,7 +117,7 @@ It should explain:
 - recovery steps;
 - environment assumptions.
 
-It should be actionable, current, and useful to both a human developer and a coding agent.
+It should be actionable, current, and useful to human developers, AI chats, and coding agents.
 
 Wrong or obsolete procedures should be removed quickly.
 
@@ -164,7 +164,7 @@ Do not create supporting documents as empty ceremony. Let the project unfold the
 
 A useful test: if a proposed document cannot immediately hold several concrete, recurring pieces of project knowledge, it probably should not exist yet.
 
-Every supporting document should improve a future coding agent's ability to reconstruct the project's current engineering understanding. If it does not, prune, merge, or defer it.
+Every supporting document should improve a future AI chat, coding agent, or contributor's ability to reconstruct the project's current engineering understanding. If it does not, prune, merge, or defer it.
 
 ## Context Loading
 

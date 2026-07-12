@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: terms-glossary
 title: Terms And Glossary
 purpose: Project vocabulary, naming conventions, domain terms, and distinctions agents must preserve.

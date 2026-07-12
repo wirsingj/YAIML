@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: security
 title: Security Memory
 purpose: Project-specific security assumptions, trust boundaries, reviewed constraints, evidence notes, and active security risks.

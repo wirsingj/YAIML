@@ -1,6 +1,8 @@
 # Contributing to YAIML
 
-YAIML is an incubating convention and framework of ideas for living project memory, project definition, project management, and agent continuity in agent-driven development.
+YAIML is an incubating convention and reusable template docset for living project memory, project definition, project management, and AI-chat, agent, and contributor continuity in AI-assisted development.
+
+YAIML is the canonical project and standard name. Do not reintroduce ARCS branding except in narrowly scoped migration notes.
 
 Contributions should make the convention clearer, more useful, easier to apply, or harder for agents to misuse.
 
@@ -17,20 +19,22 @@ The value of YAIML is the convention for preserving project understanding, not t
 - Treat examples and templates as supporting artifacts that must stay aligned with the concepts.
 - Prefer one strong template or prompt over several weak variants.
 - Use ordinary engineering language before introducing YAIML-specific terms.
+- Keep `yaiml.yml` as a lightweight discovery/version marker, not a schema or local-reference store.
+- Preserve mature repository-specific YAIML documents during upgrades; do not replace them with generic templates.
 - Report contradictions instead of smoothing them into confident prose.
 
 ## Licensing
 
 This repository currently uses a restrictive all-rights-reserved notice during incubation. Do not replace it with an open-source license, license header, or broader public reuse claim without explicit human approval.
 
-The maintainer intends to choose an open license before broad public adoption, but no license or release date has been selected.
+The maintainer intends to choose an open license before broad public reuse, but no license or release date has been selected.
 
 ## Review Checklist
 
 Before changing YAIML, ask:
 
 - Does this help a fresh agent understand a project faster and better?
-- Does this improve a new coding agent's ability to reconstruct the project's current engineering understanding?
+- Does this improve a new AI chat, coding agent, or contributor's ability to reconstruct the project's current engineering understanding?
 - Does this protect explicit human corrections?
 - Does this keep uncertainty visible?
 - Does this help agents prune instead of append forever?

@@ -1,20 +1,22 @@
 # Initialize YAIML In An Existing Project
 
-You are a coding agent adding YAIML living project memory to an existing repository.
+You are an AI coding assistant adding YAIML living project memory to an existing repository.
 
-This prompt must work even if you have no access to the YAIML repository, templates, guides, or prior chat. Treat the guidance below as the embedded bootstrap version of YAIML.
+This prompt must work even if you have no access to the YAIML repository, templates, guides, or prior chat. Treat the guidance below as the embedded self-contained version of YAIML.
 
 Do not change application code during initialization unless the human explicitly asks for code changes. Your job is to inspect, understand, and create project-memory documents.
 
 ## What YAIML Is
 
-YAIML is a lightweight convention for AI Project Engineering: project management, project memory, project definition, and agent continuity.
+YAIML means YAIML. It is a lightweight documentation standard and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
 
-It preserves the current interpreted understanding of a software project across disposable coding-agent sessions: product intent, verified implementation reality, architecture boundaries, maintainer procedures, risks, uncertainty, and human direction.
+YAIML is the canonical project and standard name. If temporary ARCS-era files are present, rename and update them back to YAIML in place instead of creating a second parallel docset.
+
+It preserves the current interpreted understanding of a software project across disposable AI chats, coding-agent sessions, and contributor handoffs: product intent, verified implementation reality, architecture boundaries, maintainer procedures, risks, uncertainty, and human direction.
 
 The documents are useful because of the convention they express. Do not expand the document set for its own sake.
 
-YAIML is an idea and documentation framework. It is not professional legal, security, compliance, licensing, privacy, or IP advice. When a project has documents in those areas, they are memory surfaces for that project's reviewed constraints, evidence, questions, and decisions.
+YAIML is documentation and guidance. It is not professional legal, security, compliance, licensing, privacy, or IP advice. When a project has documents in those areas, they are memory surfaces for that project's reviewed constraints, evidence, questions, and decisions.
 
 YAIML is not:
 
@@ -24,11 +26,17 @@ YAIML is not:
 - a parser target;
 - a generic knowledge base;
 - a hosted memory product;
+- durable storage;
+- an orchestration framework;
+- a background service;
+- an autonomous coding agent;
 - a replacement for source code, tests, Git history, issues, or `AGENTS.md`.
 
 YAIML is semantically structured and syntactically loose. The document roles have strong bones, but the exact headings, filenames, local vocabulary, and supporting documents may bend to the project.
 
-Use ordinary Markdown documents by default. Do not create a custom `.yaiml` file extension during initialization. YAIML should be easy for humans, editors, Git diffs, Markdown previewers, and agents to read without special tooling. `yaiml.yml` can act as a discovery index, but the durable memory should live in readable `.md` files.
+Use ordinary Markdown documents by default. Do not create a custom `.yaiml` file extension during initialization. YAIML should be easy for humans, editors, Git diffs, Markdown previewers, AI chats, and agents to read without special tooling. `yaiml.yml` can act as a discovery index, but the durable memory should live in readable `.md` files.
+
+Assume the YAIML family should travel with this repository across machines, contributors, and AI chat provider instances. The project may be private, public, paid, free, open-source, or unreleased; that is separate from YAIML. Write YAIML as repository-safe project memory for the repository's intended audience: sanitized evidence, no secrets, no private chat transcripts, no raw sensitive logs, no private screenshots, and no invented legal, security, privacy, or ownership conclusions.
 
 ## Core Document Family
 
@@ -92,7 +100,7 @@ Do not create a pile of empty documents just because names are available. Let th
 
 A useful test: if a proposed supporting document cannot immediately hold several concrete, recurring pieces of project knowledge, do not create it yet.
 
-For every added document, ask whether it improves a future coding agent's ability to reconstruct the project's current engineering understanding. If the answer is no, keep the knowledge in an existing document or leave it out.
+For every added document, ask whether it improves a future AI chat, coding agent, or contributor's ability to reconstruct the project's current engineering understanding. If the answer is no, keep the knowledge in an existing document or leave it out.
 
 ## SoT
 
@@ -168,13 +176,13 @@ Maintainer Guide owns practical operating knowledge:
 - common failures and playbooks;
 - unverified procedures.
 
-Maintainer Guide should be actionable, current, and useful to both a human developer and a future coding agent. Remove or mark wrong, stale, or unverified procedures.
+Maintainer Guide should be actionable, current, and useful to human developers, future AI chats, and future coding agents. Remove or mark wrong, stale, or unverified procedures.
 
 ## Stable Headers
 
 Every YAIML document should begin with a small stable header.
 
-The header is an operating guide for a coding agent, not a rigid machine schema. It should answer:
+The header is an operating guide for future AI chats and coding agents, not a rigid machine schema. It should answer:
 
 - what document this is;
 - what responsibility it owns;
@@ -189,7 +197,7 @@ Recommended shape:
 
 ```md
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
@@ -212,6 +220,7 @@ Do not silently blend different kinds of truth.
 - Code, tests, commands, configuration, and runtime behavior define implementation evidence.
 - Agent inference may guide investigation, but it is not project canon.
 - Future direction belongs in declared, intended, planned, or open-question sections, not verified current-state sections.
+- In multi-agent or multi-contributor projects, preserve conflicts, sources, and uncertainty instead of silently merging disagreement into confident prose.
 
 Use labels when a claim could steer future work:
 
@@ -231,22 +240,25 @@ When sources conflict, record the conflict. Do not rewrite intent to match accid
 2. Inspect the repository broadly: source, tests, configuration, docs, scripts, package files, build files, deployment files, prompts, examples, and visible project history.
 3. Identify the project type, current implementation shape, declared intent, active risks, uncertainty, and any contradictions.
 4. Decide where YAIML documents should live. Prefer an existing `docs/` or project-memory area when appropriate, but keep the paths simple.
-5. Create or update `yaiml.yml` so future agents can find the document family.
+5. Create or update `yaiml.yml` so future AI chats and agents can find the document family and identify the YAIML revision.
 6. Create or update the SoT document.
 7. Create or update Architecture.
 8. Create or update Maintainer Guide.
 9. Let the document family self-unfold: add supporting YAIML documents for project-specific memory, rules, definitions, preferences, risks, domain concepts, or operating doctrine when the repository clearly needs them.
 10. Add concise stable headers to every YAIML document.
-11. Do not add YAIML documents to `.gitignore` by default. YAIML is meant to live with the source code as versioned project memory unless the human explicitly chooses a different retention policy.
-12. Keep initialization bounded. Do not create a complete historical archive.
-13. Report what you inspected, what you created or changed, and what remains uncertain.
+11. Add a short YAIML maintenance note to Maintainer Guide: phrases such as "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" mean compare the local YAIML setup against a human-provided or workspace-local YAIML reference, refresh compatible prompts/templates/guidance, and preserve project-specific memory.
+12. Do not record machine-specific YAIML reference paths or local workspace URIs in versioned files. A local YAIML reference path belongs in the human prompt, agent/workspace configuration, environment, or ignored local notes, not committed project memory.
+13. If an existing agent instruction file was found, add or preserve a concise pointer telling future AI chats and agents to read `yaiml.yml`, load the core YAIML documents before meaningful work, load supporting documents only when task-relevant, update affected YAIML memory after meaningful work, and treat "update YAIML" / "check new YAIML" as a convention-refresh request that needs a human-provided or workspace-local reference rather than a project-memory rewrite. Do not create a provider-specific instruction file solely for YAIML unless the human asks.
+14. Do not add YAIML documents to `.gitignore` by default. YAIML is meant to live with the source code as versioned project memory unless the human explicitly chooses a different retention policy. Keep the contents safe enough to move with the repository across machines, contributors, and AI chat providers by sanitizing sensitive evidence.
+15. Keep initialization bounded. Do not create a complete historical archive.
+16. Report what you inspected, what you created or changed, and what remains uncertain.
 
 ## Suggested `yaiml.yml`
 
 Use this shape as a starting point and adapt names and paths to the project:
 
 ```yaml
-yaiml: "0.1"
+yaiml: "0.2"
 
 project:
   id: my-project
@@ -272,13 +284,17 @@ supporting:
 
 The supporting entries above are examples, not required defaults. If `yaiml.yml` already exists, preserve useful existing declarations and update stale paths rather than replacing it carelessly.
 
+If the repository has `arcs.yml` instead, treat it as a temporary ARCS-era marker. Migrate it to `yaiml.yml`, preserve useful document declarations, update temporary ARCS terminology, and do not create a second parallel docset.
+
+Keep `yaiml.yml` portable. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
+
 ## Starter SoT Shape
 
 Use headings that fit the project, but cover this meaning:
 
 ```md
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
@@ -339,7 +355,7 @@ List questions that shape near-term work or human decisions.
 
 ```md
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: architecture
 title: Architecture
 purpose: Durable system shape, boundaries, invariants, and intended architecture.
@@ -394,7 +410,7 @@ Record approaches that should not quietly return.
 
 ```md
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: maintainer
 title: Maintainer Guide
 purpose: Current procedures, commands, diagnostics, and failure playbooks.
@@ -434,7 +450,7 @@ List files where changes are high-risk, generated, security-sensitive, large, or
 
 ## Diagnostics
 
-Record inspection commands and how to read their output.
+Record inspection commands and how to read their output. Store exact commands and sanitized outcomes, not raw output that contains secrets, personal data, machine-specific paths, private URLs, or confidential details.
 
 ## Failure Playbooks
 
@@ -442,7 +458,11 @@ Record current recovery steps for common failures.
 
 ## Unverified Procedures
 
-List procedures that need validation before a future agent relies on them.
+List procedures that need validation before a future AI chat or agent relies on them.
+
+## YAIML Maintenance
+
+Record how this repository should refresh its local YAIML setup. At minimum, explain that "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" means to compare local YAIML prompts, templates, guidance, and agent-instruction pointers against a human-provided or workspace-local YAIML reference while preserving project-specific SoT, Architecture, Maintainer Guide, and supporting memory. Do not hardcode machine-specific reference paths in this note.
 ```
 
 ## Rules
@@ -452,9 +472,9 @@ List procedures that need validation before a future agent relies on them.
 - Preserve the distinction between declared intent and implementation evidence.
 - Let YAIML extend as needed for the project, while keeping each document's responsibility clear.
 - Use ordinary `.md` files for YAIML documents by default. Do not introduce a `.yaiml` extension unless the human explicitly asks for a local experiment.
-- Treat YAIML documents as source-adjacent project memory that should usually be committed with the repository.
+- Treat YAIML documents as source-adjacent project memory that should usually be committed with the repository and safe for the repository's intended audience after sensitive details are sanitized.
 - Do not add YAIML documents to `.gitignore` unless the human explicitly asks or the repository has an established private-memory policy.
-- Do not store secrets, credentials, private keys, tokens, passwords, customer personal data, or other sensitive raw values in YAIML documents.
+- Do not store secrets, credentials, private keys, tokens, passwords, customer personal data, private chat transcripts, or other sensitive raw values in YAIML documents.
 - For security, privacy, or incident material, record sanitized facts, risk shape, owner, evidence location, and next steps instead of secret values or exploit details that should not be broadly visible.
 - Be careful with AI-generated legal, licensing, copyright, trademark, ownership, patent, contract, or IP statements. Preserve human-approved statements and mark uncertainty; do not invent rights claims, assign ownership, or select/change a license.
 - Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations. Treat them as project memory until reviewed by the appropriate human or professional.
@@ -473,6 +493,9 @@ List procedures that need validation before a future agent relies on them.
 Report:
 
 - files created or changed;
+- pre-existing files preserved;
+- agent-instruction paths found and updated with a YAIML pointer, or why none were updated;
+- confirmation that no machine-specific YAIML reference path was committed;
 - evidence inspected;
 - project model summary;
 - verified facts;
@@ -482,3 +505,9 @@ Report:
 - known divergence;
 - commands run and whether they passed;
 - recommended next steps.
+
+## Temporary ARCS Cleanup Prompt
+
+```text
+This repository was temporarily migrated from YAIML to ARCS. YAIML is canonical again. Restore YAIML terminology and filenames in place, preserve project-specific content, remove ARCS branding except for a brief migration note, and do not create a second parallel docset.
+```

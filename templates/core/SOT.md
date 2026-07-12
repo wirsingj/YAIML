@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
@@ -35,7 +35,7 @@ Record current human asks, product rules, accepted decisions, and corrected dire
 
 ## Active Work
 
-Record the work currently in motion or most likely to affect the next agent session.
+Record the work currently in motion or most likely to affect the next AI chat, agent session, or contributor handoff.
 
 ## Current Capabilities
 

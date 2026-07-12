@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: context-loading-guide
 title: Context Loading
 purpose: Define how agents should load YAIML context deliberately without reading every accumulated document for every task.
@@ -79,12 +79,12 @@ Deep references should not be required by default stable headers unless the proj
 
 ## `yaiml.yml`
 
-`yaiml.yml` should help agents discover the document family. It should not become a validation schema or database.
+`yaiml.yml` should help agents discover the document family and current YAIML revision. It should not become a validation schema, database, storage layer, or local-reference cache.
 
 A small useful shape is:
 
 ```yaml
-yaiml: "0.1"
+yaiml: "0.2"
 
 project:
   id: my-project

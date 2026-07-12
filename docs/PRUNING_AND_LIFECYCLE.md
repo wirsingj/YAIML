@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: lifecycle-guide
 title: Pruning And Lifecycle
 purpose: Explain how YAIML documents retain, compress, and forget project memory.

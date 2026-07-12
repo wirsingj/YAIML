@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: maintainer
 title: Canopy Dispatch Maintainer Guide
 purpose: Preserve current setup, commands, focused checks, debugging paths, and failure playbooks for the fictional Canopy Dispatch project.

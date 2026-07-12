@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: preferences
 title: Preferences
 purpose: Durable human and project preferences that should shape agent decisions.

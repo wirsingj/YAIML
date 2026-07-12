@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: product-doctrine
 title: Product Doctrine
 purpose: Durable product principles, audience assumptions, experience goals, and rejected product directions.

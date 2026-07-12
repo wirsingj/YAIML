@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: risk-review
 title: Risk Review
 purpose: Active and recurring project risks that need explicit review outside the main SoT.

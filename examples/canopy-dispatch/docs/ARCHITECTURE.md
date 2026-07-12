@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: architecture
 title: Canopy Dispatch Architecture
 purpose: Preserve the durable system model, ownership boundaries, invariants, and intended direction for the fictional Canopy Dispatch project.

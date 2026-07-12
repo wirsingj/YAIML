@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: agent-integration-guide
 title: Agent Integration
 purpose: Explain how YAIML relates to repository agent instruction files without becoming one.
@@ -20,6 +20,8 @@ YAIML and agent instruction files have different jobs.
 YAIML primarily preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
 
 An instruction file can point agents toward YAIML. YAIML should not become a duplicate of every instruction file.
+
+In multi-agent or multi-contributor projects, YAIML is shared project memory. It should help the next AI chat or contributor understand the same project state without requiring access to earlier private conversations.
 
 ## Minimal Instruction Snippet
 
@@ -53,6 +55,8 @@ For the current task, inspect only relevant supporting YAIML documents. Do not l
 When intent and implementation disagree, surface the divergence. Do not rewrite human intent to match accidental code, and do not describe planned behavior as already implemented.
 
 After material changes, update the affected YAIML documents. Remove resolved active risks instead of appending a work diary.
+
+If another agent or contributor left conflicting project-memory updates, preserve the disagreement and evidence until a human or repository fact resolves it.
 ```
 
 ## Boundary
@@ -78,3 +82,5 @@ Put project understanding in YAIML:
 - durable lessons that should guide future work.
 
 If both places need a fact, prefer a short instruction-file pointer to the YAIML document rather than duplicating the body.
+
+For shared teams, keep local tool preferences in the instruction file when they affect agent behavior, but keep project meaning in YAIML so different chats, agents, and contributors can converge on the same interpreted state.

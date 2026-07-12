@@ -1,22 +1,28 @@
 # YAIML
 
-YAIML is an incubating plain-file convention for preserving a software project's current interpreted engineering understanding across disposable coding-agent sessions.
+YAIML is an incubating plain-file convention and reusable template docset for preserving a software repository's current interpreted engineering understanding across disposable AI chats, coding-agent sessions, and contributor handoffs.
 
-The chat can disappear. The provider can change. The agent can change. The project context remains in the repository.
+YAIML was temporarily renamed ARCS and has now returned to its original name. YAIML is the canonical project and standard name.
 
-> Coding agents are temporary. The project's engineering understanding should not be.
+The chat can disappear. The provider can change. The agent can change. The contributor can change. The project context remains in the repository.
+
+> AI chats are temporary. The project's engineering understanding should not be.
 
 ## What Problem It Solves
 
 Modern agent-assisted software work includes code, tests, configuration, and a second layer of natural-language engineering direction: product intent, design corrections, audit findings, rejected approaches, risk calls, maintainer procedures, and lessons learned through use.
 
-That second layer often lives in temporary chat. YAIML keeps the useful interpreted state close to the source code so the next Codex, Claude, Cursor, Gemini, local model, or other coding agent does not have to reconstruct the project from scratch.
+That second layer often lives in temporary chat. YAIML keeps the useful interpreted state close to the source code so the next Codex, Claude, Cursor, Gemini, local model, human contributor, or other AI-assisted session does not have to reconstruct the project from scratch.
 
 ## Who It Is For
 
-YAIML is for developers using recurring coding-agent sessions on projects where source code alone does not preserve enough meaning.
+YAIML is for people using AI chats, coding agents, and local or hosted models on projects where source code alone does not preserve enough meaning.
 
-The README is for humans deciding whether to try YAIML. The document family inside a project is primarily for agent continuity, while staying readable and reviewable by humans.
+It is meant to work for solo developers, teams, multi-agent workflows, and multi-contributor projects. The README is for humans deciding whether to try YAIML. The document family inside a project is primarily for shared AI-session continuity, while staying readable and reviewable by humans.
+
+YAIML documents are intended to live with the project they describe. Whether a project is private, public, paid, free, or open-source is separate from YAIML; once used, the project memory should travel with the repository across machines, contributors, and AI chat provider instances.
+
+Write YAIML as repository-safe project memory: appropriate for the repository's intended audience, sanitized where needed, and free of secrets, private chat transcripts, raw sensitive logs, and invented legal, security, or ownership conclusions.
 
 ## Minimum Useful Setup
 
@@ -33,12 +39,16 @@ Use this flow when you want to try the idea in a few minutes:
 
 1. Run the small init prompt once: [prompts/init-yaiml.md](prompts/init-yaiml.md).
 2. Review the created or updated `SOT.md`, `ARCHITECTURE.md`, `MAINTAINER_GUIDE.md`, and `yaiml.yml`.
-3. Add a short pointer from your repository's agent instruction file, if it has one, telling future agents to read `yaiml.yml` and the core YAIML documents before meaningful work.
-4. Let future sessions use those files as project memory. After meaningful work, the agent should update and prune the affected YAIML documents as part of the work, not wait for a separate pasted reminder.
+3. If your repository already has an agent instruction file, verify that it now points future AI chats and agents to `yaiml.yml` and the core YAIML documents before meaningful work.
+4. Let future sessions use those files as shared project memory. After meaningful work, the agent should update and prune the affected YAIML documents as part of the work, not wait for a separate pasted reminder.
 
-If a repository has no agent instruction file yet, YAIML still works: start future sessions by telling the agent to read `yaiml.yml` first. The goal is not to paste a workflow prompt after every step. The goal is for the repository to carry enough current project understanding that the next agent can rehydrate from the files already there.
+If a repository has no agent instruction file yet, YAIML still works: start future sessions by telling the agent or chat to read `yaiml.yml` first. The goal is not to paste a workflow prompt after every step. The goal is for the repository to carry enough current project understanding that the next session can rehydrate from the files already there.
 
 In day-to-day use, the human instruction should be ordinary language: "read YAIML and continue through the SoT priorities," "check the SoT before changing this," or "update our SoT after this work." YAIML should make those small instructions meaningful because the repository already contains the context.
+
+If the YAIML reference itself has changed, use "update YAIML" or [prompts/update-yaiml.md](prompts/update-yaiml.md) to refresh local YAIML prompts/templates/guidance from a human-provided or workspace-local reference source while preserving the project's own memory. Do not commit machine-specific reference paths or local workspace URIs into project memory.
+
+For the full first-time adoption and existing YAIML update workflows, see [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md).
 
 ## Full Initialization
 
@@ -48,7 +58,7 @@ The full initializer is intentionally self-contained so it can work in another r
 
 ## Core Documents
 
-**SoT** means **State Of The**. It is the current engineering-state document: what the project means now, what is verified, what humans intend, what is risky, what is uncertain, what diverges, and what the next agent must not casually distort.
+**SoT** means **State Of The**. It is the current engineering-state document: what the project means now, what is verified, what humans intend, what is risky, what is uncertain, what diverges, and what the next chat, agent, or contributor must not casually distort.
 
 For unfamiliar repositories, use `SOT.md` by default. Project-specific names such as `SoTC.md`, `SoTT.md`, or this repository's `docs/SoTY.md` are supported when they add useful project character, but a new adopter should not have to invent one before beginning.
 
@@ -105,15 +115,18 @@ YAIML is not:
 - an agent SDK;
 - a required CLI;
 - a provider integration layer;
+- durable storage;
+- an orchestration framework;
+- a background service;
 - a replacement for source code, tests, Git history, issues, or agent instruction files.
 
 Future tools may help initialize, discover, audit, prune, or assemble context. They should serve the plain-file convention rather than redefine YAIML as software infrastructure.
 
 ## Positioning
 
-YAIML does not claim to have invented persistent Markdown context for coding agents.
+YAIML does not claim to have invented persistent Markdown context for AI chats or coding agents.
 
-Its contribution is the combination of current interpreted whole-project understanding, separation of human direction from implementation evidence, explicit uncertainty and disagreement, synthesis instead of chronological logging, pruning and obsolescence, distinct document ownership, and continuity across disposable agents and providers.
+Its contribution is the combination of current interpreted whole-project understanding, separation of human direction from implementation evidence, explicit uncertainty and disagreement, synthesis instead of chronological logging, pruning and obsolescence, distinct document ownership, and continuity across disposable chats, agents, contributors, and providers.
 
 Agent instruction files tell an agent how to work. Feature specs define desired behavior for a bounded change. Changelogs describe what changed. Backlogs describe work that may happen. Architecture docs describe system shape. YAIML connects these concerns by preserving the project's current interpreted engineering state and pointing agents toward the authoritative artifacts behind it.
 
@@ -131,19 +144,34 @@ These prompts are fallback and maintenance workflows, not required commands to p
 - Do a deeper initialization pass: [prompts/initialize-yaiml.md](prompts/initialize-yaiml.md)
 - Rehydrate a session when the agent needs explicit help: [prompts/hydrate-agent-session.md](prompts/hydrate-agent-session.md)
 - Repair stale memory after meaningful work: [prompts/update-project-memory.md](prompts/update-project-memory.md)
+- Refresh local YAIML convention files from a human-provided or workspace-local reference: [prompts/update-yaiml.md](prompts/update-yaiml.md)
 - Audit memory against reality: [prompts/audit-against-reality.md](prompts/audit-against-reality.md)
 - Prune an overgrown SoT: [prompts/prune-sot.md](prompts/prune-sot.md)
 - Realign a project around a corrected center: [prompts/major-project-realignment.md](prompts/major-project-realignment.md)
 
+Practical prompts:
+
+```text
+I want this repository to adopt YAIML. Read the YAIML standard, inspect the repository, create an appropriate repository-specific YAIML docset, preserve existing useful documentation, and do not invent project facts.
+```
+
+```text
+I have a new version of the YAIML standard at [path]. Review this repository's current YAIML docset, compare it with the newer standard, preserve repository-specific truth, migrate relevant structural or terminology changes, update internal references, and summarize the upgrade.
+```
+
+```text
+Read my request, read the repository's YAIML documents, inspect the relevant implementation, execute the work, update the YAIML documents where project truth changed, verify the result, and report what was done.
+```
+
 ## Maturity And License
 
-YAIML is currently in an incubation and review phase. The repository is public for visibility and feedback, but reuse is intentionally restricted during this phase.
+YAIML is currently in an incubation and review phase. The repository is public for visibility and feedback, and its intended audience is broad, but reuse is intentionally restricted during this phase.
 
-No open-source license is currently granted. See [LICENSE.md](LICENSE.md). The maintainer intends to choose an open license before broad public adoption, but no license or release date has been selected.
+No open-source license is currently granted. See [LICENSE.md](LICENSE.md). The maintainer intends to choose an open license before broad public reuse, but no license or release date has been selected.
 
 The current restriction is temporary project protection, not YAIML's intended permanent adoption model.
 
-For sensitive reports or memory-hygiene concerns, see [SECURITY.md](SECURITY.md). Do not put secrets, credentials, personal data, exploit details, or confidential project information into public YAIML documents, examples, issues, or pull requests.
+For sensitive reports or memory-hygiene concerns, see [SECURITY.md](SECURITY.md). Do not put secrets, credentials, personal data, private chat transcripts, raw sensitive logs, exploit details, or confidential project information into public YAIML documents, examples, issues, or pull requests.
 
 ## Where To Read More
 

@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
 purpose: Provide lightweight ways to gather real evidence about YAIML without inventing proof.
@@ -41,7 +41,7 @@ Use this shape for a real project trial:
 
 ## Before YAIML
 
-- Problems observed before YAIML:
+- Problems observed before yaiml:
 - Repeated agent misunderstandings:
 - Missed constraints:
 - Stale or scattered project knowledge:

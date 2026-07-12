@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: concept-guide
 title: Concepts
 purpose: Explain YAIML's conceptual frame and vocabulary for AI Project Engineering.
@@ -13,11 +13,13 @@ agent-guidance: Preserve the lightweight convention-first frame. Do not turn con
 
 # Concepts
 
-YAIML is an incubating convention and framework of ideas for AI Project Engineering practice. It may become a broadly reusable standard later, but this repository should not imply that broad adoption or consensus already exists.
+YAIML is an incubating convention and reusable template docset for AI Project Engineering practice. It may become broadly adopted later, but this repository should not imply that broad adoption or consensus already exists.
 
-It exists because repository-aware coding agents have made natural-language engineering direction a first-class part of software development. A developer may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. YAIML preserves the useful engineering state that should survive.
+YAIML is the canonical project and standard name. A temporary ARCS rename was reverted and should not appear as normal branding.
 
-YAIML is a guiding document set for project management, project memory, project definition, and agent continuity. It gives durable homes to the parts of a project that are too important to leave in vanished chat but too interpretive to live only in source code.
+It exists because repository-aware AI chats and coding agents have made natural-language engineering direction a first-class part of software development. A person or team may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. YAIML preserves the useful engineering state that should survive.
+
+YAIML is a guiding document set for project management, project memory, project definition, and AI-session continuity. It gives durable homes to the parts of a repository that are too important to leave in vanished chat but too interpretive to live only in source code.
 
 YAIML is an idea and documentation framework, not professional advice. It can help preserve a project's own legal, security, compliance, privacy, licensing, or IP constraints, but it does not create those constraints or recommend professional action.
 
@@ -26,27 +28,29 @@ YAIML is an idea and documentation framework, not professional advice. It can he
 In AI Project Engineering, the developer works at two layers:
 
 - technical artifacts: code, tests, configuration, scripts, docs, assets;
-- engineering direction: goals, constraints, corrections, risk calls, acceptance judgments, and lessons learned through agent collaboration.
+- engineering direction: goals, constraints, corrections, risk calls, acceptance judgments, and lessons learned through human, chat, and agent collaboration.
 
-YAIML stores the distilled second layer in the repository so a later agent can continue the same project instead of re-discovering or distorting it.
+YAIML stores the distilled second layer in the repository so a later chat, agent, or contributor can continue the same project instead of re-discovering or distorting it.
 
 ## Repository Memory, Not Chat Memory
 
 Chat history is useful during a session, but it is a poor long-term source of project truth:
 
 - it is provider-specific;
-- it may be inaccessible to another agent;
+- it may be inaccessible to another agent, chat, or contributor;
 - it is too large to reread continuously;
 - it mixes obsolete experiments with current direction;
 - it often records raw discussion rather than synthesized engineering state.
 
-YAIML documents are smaller, local, editable, versioned with the repo, and designed to be read by the next agent.
+YAIML documents are smaller, local, editable, versioned with the repo, and designed to be read by the next AI chat, agent, or contributor.
 
 They should be ordinary Markdown documents by default. A custom `.yaiml` extension would make the idea feel more branded, but less usable: editors, previews, search tools, diffs, and agents already understand `.md`. YAIML's strength is the shape of the memory, not a new file format.
 
-They should usually be committed with the source code. YAIML is project memory, not private scratch space by default. A project may choose a private-memory policy, but initialization should not hide YAIML files in `.gitignore` without explicit human direction.
+They should usually be committed with the source code. YAIML is shared project memory, not private scratch space by default. A project may choose a private-memory policy, but initialization should not hide YAIML files in `.gitignore` without explicit human direction.
 
-Because YAIML travels with the repository, it must not become a dumping ground for secrets or fragile legal claims. Do not store raw tokens, passwords, private keys, credentials, customer personal data, or other sensitive values in YAIML. For security and privacy topics, preserve sanitized risk shape, evidence location, owner, decision, and next step.
+YAIML's portability is independent of the project's business or licensing model. A project may be private, public, paid, free, open-source, or unreleased; the YAIML family should still travel with the repository across machines, contributors, and AI chat provider instances.
+
+Because YAIML travels with the repository, it must be safe for the repository's intended audience. It must not become a dumping ground for secrets, private chat transcripts, raw logs, private screenshots, or fragile legal claims. Do not store raw tokens, passwords, private keys, credentials, customer personal data, or other sensitive values in YAIML. For security and privacy topics, preserve sanitized risk shape, evidence location, owner, decision, and next step.
 
 Legal, licensing, copyright, trademark, ownership, patent, contract, and IP statements need extra caution. Agents should preserve human-approved statements and uncertainty, not invent legal conclusions or rights claims.
 
@@ -62,7 +66,7 @@ An instruction file can direct an agent to discover and read YAIML. YAIML should
 
 ## Positioning
 
-YAIML does not claim to have invented persistent Markdown context for coding agents.
+YAIML does not claim to have invented persistent Markdown context for AI chats or coding agents.
 
 Its differentiator is the combination of:
 
@@ -72,15 +76,15 @@ Its differentiator is the combination of:
 - synthesis instead of chronological logging;
 - pruning and obsolescence;
 - distinct ownership across SoT, Architecture, Maintainer Guide, and supporting domains;
-- continuity across disposable agents and providers.
+- continuity across disposable chats, agents, contributors, and providers.
 
 Feature specifications define desired behavior for a bounded change. Changelogs describe what changed. Backlogs describe work that may happen. Architecture documents describe system shape. YAIML connects these concerns by preserving the project's current interpreted engineering state and directing agents toward the authoritative artifacts behind it.
 
-## Strong Bones, Soft Definitions
+## Standard Shape, Local Fit
 
 YAIML should be recognizable without requiring identical documents everywhere.
 
-Strong bones:
+Durable expectations:
 
 - SoT is the central current-state artifact.
 - Architecture preserves durable system understanding.
@@ -91,7 +95,7 @@ Strong bones:
 - Uncertainty and conflicts stay visible.
 - Stale SoT detail is pruned.
 
-Soft definitions:
+Project-sensitive choices:
 
 - filenames may vary;
 - headings may vary;
@@ -110,6 +114,8 @@ Self-unfolding does not mean creating every possible document. It means splittin
 
 Agents are expected to create, update, audit, and prune YAIML documents. Humans remain authoritative about intended meaning and product direction. The repository remains authoritative about current implementation reality.
 
+YAIML is allowed to be multi-agent and multi-contributor. That makes the evidence rules more important, not less important: when two chats, agents, or humans disagree, preserve the conflict, source, and uncertainty instead of smoothing it into a false single story.
+
 Example:
 
 ```text
@@ -127,7 +133,7 @@ YAIML is not a transcript of prior agent work. Completed work belongs only when 
 Ask:
 
 ```text
-Will this help the next coding agent make better decisions?
+Will this help the next AI chat, coding agent, or contributor make better decisions?
 ```
 
 If not, Git history is the archive.

@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: legal-or-compliance
 title: Legal Or Compliance Memory
 purpose: Human-approved legal, licensing, regulatory, or compliance constraints that agents must not casually rewrite.

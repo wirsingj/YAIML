@@ -29,7 +29,7 @@ Read repository agent instructions and `yaiml.yml`, then read YAIML stable heade
 - Do not change application code during an audit unless the human explicitly asks for implementation fixes.
 - Do not treat recent file modification time as proof of reconciliation.
 - Distinguish verified findings from suspicion.
-- Do not copy secrets, credentials, sensitive raw values, exploit details, or speculative legal/IP conclusions into YAIML documents.
+- Do not copy secrets, credentials, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions into YAIML documents.
 - Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 
 ## Output

@@ -10,9 +10,9 @@ This is not an incremental cleanup. You are authorized to make large conceptual 
 2. Inspect the repository broadly.
 3. Identify the incorrect conceptual center.
 4. Decide what should be kept, rewritten, merged, replaced, or deleted.
-5. Remove artifacts that teach future agents the wrong model.
+5. Remove artifacts that teach future AI chats, agents, or contributors the wrong model.
 6. Rewrite the project around the corrected center.
-7. Update the YAIML documents so future agents understand the new reality.
+7. Update the YAIML documents so future AI chats, agents, or contributors understand the new reality.
 8. Preserve explicit human intent and record any remaining divergence.
 
 ## Allowed

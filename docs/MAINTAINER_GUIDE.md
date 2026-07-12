@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
 purpose: Preserve current procedures for evolving YAIML without drifting from the living-memory concept.
@@ -15,7 +15,7 @@ agent-guidance: Verify command claims when practical. Surface conflicts. Preserv
 
 ## Quick Start
 
-This is a plain-file convention repository. There is no build step, package install, runtime service, or validator.
+This is a plain-file documentation-standard and template-docset repository. There is no build step, package install, runtime service, storage layer, background service, orchestration framework, or validator.
 
 ## Common Commands
 
@@ -61,6 +61,12 @@ Search for maturity overclaiming:
 rg "standard|industry|adoption|proven|benchmark|metrics|case study"
 ```
 
+Search for temporary ARCS references:
+
+```powershell
+rg "ARCS|Agent-Ready|arcs\\.yml|init-arcs|initialize-arcs|update-arcs"
+```
+
 These search terms intentionally include older draft language. Hits should either be removed or explicitly contextualized as legacy drift checks.
 
 ## Focused Reviews
@@ -77,23 +83,31 @@ Run these manually after meaningful edits:
 - Compare prompt instructions with `docs/STABLE_HEADERS.md`, `docs/AMBIGUITY_AND_EVIDENCE.md`, and `docs/PRUNING_AND_LIFECYCLE.md`.
 - Compare `prompts/hydrate-agent-session.md` with `docs/CONTEXT_LOADING.md`.
 - Compare `prompts/init-yaiml.md` with the README minimum useful setup.
+- Check that init prompts and README agree on how existing agent instruction files should point future AI chats and agents toward YAIML.
+- Check that init prompts and `templates/core/MAINTAINER_GUIDE.md` teach "update YAIML" / "check new YAIML" as a convention-refresh request, not a project-memory rewrite.
 - Check that `prompts/initialize-yaiml.md` remains self-contained enough to use in an unrelated repository without assuming this repo's docs are attached.
 - Check that generic initialization examples recommend `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` by default while allowing project-specific SoT names.
 - Check that `docs/AGENT_INTEGRATION.md` keeps YAIML distinct from agent behavior instructions.
 - Check that `docs/EVALUATION.md` requests real evidence without inventing adoption claims, metrics, or proof.
 - Check that guidance keeps YAIML documents as ordinary Markdown by default rather than introducing a `.yaiml` extension.
+- Check that `docs/ADOPTION_AND_UPGRADES.md`, `prompts/update-yaiml.md`, and README agree on first-time adoption, existing YAIML update, and temporary ARCS cleanup.
+- Check that remaining ARCS references are intentional temporary-rename notes or deprecated compatibility aliases.
+- Check that `yaiml.yml` remains a lightweight discovery/version marker, not a schema, database, or local-reference store.
 - Check that initialization guidance does not add YAIML files to `.gitignore` by default.
-- Check that prompts and templates warn against storing secrets, sensitive raw values, or AI-invented legal/IP conclusions in YAIML documents.
-- Check that `SECURITY.md` still matches README, prompts, templates, and public-repo sensitive-reporting expectations.
+- Check that YAIML guidance does not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into project memory.
+- Check that prompts and templates warn against storing secrets, private chat transcripts, raw sensitive logs, sensitive raw values, or AI-invented legal/IP conclusions in YAIML documents.
+- Check that `SECURITY.md` still matches README, prompts, templates, and repository-safe sensitive-reporting expectations.
 - Check that self-unfolding document guidance encourages useful project-specific extension without normalizing empty document ceremony.
 - Check examples for believable, compact project memory rather than generic filler; they should be fictional but detailed enough to feel shaped by real engineering pressure.
-- For every proposed addition, ask whether it improves a fresh coding agent's ability to reconstruct current engineering understanding. If not, remove or defer it.
+- For every proposed addition, ask whether it improves a fresh AI chat, coding agent, or contributor's ability to reconstruct current engineering understanding. If not, remove or defer it.
 - Confirm the restrictive incubation license remains intact and is not misrepresented as open source.
 - Confirm no broader license, license header, or public reuse grant has been introduced without explicit human approval.
+- Confirm public-facing language treats YAIML as useful to shared AI chats, multi-agent workflows, and multi-contributor projects, not only one developer's recurring private agent.
 
 ## Important Files
 
 - `README.md`: public entry point and immediate-use path.
+- `AGENTS.md`: this repository's agent behavior instructions and YAIML dogfood entrypoint.
 - `LICENSE.md`: restrictive all-rights-reserved notice; do not replace with an open-source license without explicit human approval.
 - `SECURITY.md`: sensitive-reporting and memory-hygiene policy for the public repository.
 - `CONTRIBUTING.md`: contribution rules and licensing guardrails.
@@ -105,12 +119,15 @@ Run these manually after meaningful edits:
 - `docs/AGENT_INTEGRATION.md`: boundary between agent instruction files and YAIML project memory.
 - `docs/CONTEXT_LOADING.md`: bounded loading model for YAIML context.
 - `docs/EVALUATION.md`: case-study template and cold-start comparison method.
+- `docs/ADOPTION_AND_UPGRADES.md`: first-time adoption, existing YAIML update, temporary ARCS cleanup, and version-awareness guidance.
 - `templates/core/`: starter documents users copy into projects.
+- `prompts/update-yaiml.md`: upgrade and convention-refresh workflow for adopting repositories with a human-provided or workspace-local YAIML reference.
 - `prompts/`: fallback and maintenance workflows; `init-yaiml.md` should stay small and usable as a one-time adoption prompt, while `initialize-yaiml.md` should carry deeper context for a no-prior-YAIML agent.
 
 ## Danger Files
 
 - `README.md`: easy place to overclaim maturity or tooling.
+- `AGENTS.md`: easy place for this repository's own dogfood instructions to drift away from README, prompts, or SoTY.
 - `LICENSE.md`: easy place to accidentally grant reuse rights before the project is ready.
 - `SECURITY.md`: easy place to overpromise professional security process or drift away from YAIML's memory-hygiene rules.
 - `CONTRIBUTING.md` and `ROADMAP.md`: easy places for stale licensing or future-tooling claims to survive after concept changes.
@@ -121,6 +138,21 @@ Run these manually after meaningful edits:
 - `prompts/init-yaiml.md`: easy place to become too large or to omit evidence discipline.
 - `docs/EVALUATION.md`: easy place to accidentally fabricate proof or imply a benchmark suite exists.
 - `docs/STABLE_HEADERS.md`: easy place to drift into schema design.
+- `docs/ADOPTION_AND_UPGRADES.md`: easy place to accidentally turn adoption or upgrade into a generic template-copy operation.
+
+## Propagating Standard Revisions
+
+When YAIML itself changes:
+
+1. Update the reference guidance, templates, prompts, examples, and `yaiml.yml` version marker in this repository.
+2. Update `docs/SoTY.md` only with material current-state changes, not a full work diary.
+3. Update `docs/ARCHITECTURE.md` when document roles, boundaries, or deferred-tooling posture change.
+4. Update this Maintainer Guide when procedures, checks, or dangerous areas change.
+5. Update `docs/ADOPTION_AND_UPGRADES.md` when adoption, update, temporary ARCS cleanup, or version-awareness behavior changes.
+6. Search for stale legacy terminology and broken renamed links.
+7. For adopting repositories, use `prompts/update-yaiml.md` or the upgrade prompt from `docs/ADOPTION_AND_UPGRADES.md`: compare their installed docset against the new standard, preserve repository-specific truth, repair links and terminology, and update their `yaiml.yml` revision marker.
+
+Do not propagate a revision by copying this repository wholesale over an adopter's mature YAIML documents.
 
 ## Failure Playbooks
 
@@ -157,7 +189,7 @@ Begin here:
 2. Keep the minimum flow visible before the full initialization path.
 3. Link deeper doctrine instead of repeating all of it in the README.
 4. Keep `SOT.md` as the generic default.
-5. Frame prompt files as optional support for initialization, repair, audit, pruning, and realignment.
+5. Frame prompt files as optional support for initialization, convention refresh, repair, audit, pruning, and realignment.
 
 ### The SoT Template Becomes A Work Log
 
@@ -215,7 +247,7 @@ Symptoms:
 - new terms are introduced without removing older equivalent terms;
 - new templates exist without concrete recurring knowledge they would hold;
 - README explains internal YAIML vocabulary before the adoption problem;
-- additions do not help a fresh agent reconstruct current project understanding.
+- additions do not help a fresh AI chat, agent, or contributor reconstruct current project understanding.
 
 Begin here:
 

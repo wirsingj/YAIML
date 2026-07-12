@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: release-trust
 title: Canopy Dispatch Release And Trust
 purpose: Preserve release gates, privacy posture, trust-sensitive checks, and operational risk notes for the fictional Canopy Dispatch project.

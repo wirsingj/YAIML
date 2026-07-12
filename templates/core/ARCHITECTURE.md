@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 role: architecture
 title: Architecture
 purpose: Durable system shape, boundaries, invariants, and intended architecture.
@@ -13,7 +13,7 @@ agent-guidance: Distinguish current, intended, transitional, uncertain, and obso
 
 # Architecture
 
-This document preserves design meaning. It should prevent a fresh agent from treating accidental implementation as intentional architecture.
+This document preserves design meaning. It should prevent a fresh AI chat, agent, or contributor from treating accidental implementation as intentional architecture.
 
 ## System Model
 

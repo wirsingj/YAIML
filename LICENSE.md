@@ -10,4 +10,4 @@ Viewing this repository on GitHub, opening issues, linking to it, or using GitHu
 
 If you want to use YAIML, its templates, prompts, examples, documentation, name, or related materials during this incubation phase, contact the copyright holder for permission.
 
-The maintainer intends to choose an open license before broad public adoption. No license, release date, or reuse grant has been selected yet. Until this notice is replaced, all rights are reserved.
+The maintainer intends to choose an open license before broad public reuse. No license, release date, or reuse grant has been selected yet. Until this notice is replaced, all rights are reserved.

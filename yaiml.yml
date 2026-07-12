@@ -1,4 +1,5 @@
-yaiml: "0.1"
+yaiml: "0.2"
+standard: YAIML
 
 project:
   id: yaiml
@@ -34,5 +35,7 @@ supporting:
     role: evaluation-guide
   - path: docs/COLD_START_REVIEW.md
     role: cold-start-review
+  - path: docs/ADOPTION_AND_UPGRADES.md
+    role: adoption-upgrade-guide
 
 phase: incubation-convention-first

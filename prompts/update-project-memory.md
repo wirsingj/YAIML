@@ -24,7 +24,7 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 - Surface conflicts.
 - Use Git history as the archive for old completed work.
 - Do not overwrite, discard, reset, or hide uncommitted human work.
-- Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, sensitive raw values, exploit details, or speculative legal/IP conclusions.
+- Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions.
 - Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 
 ## Output

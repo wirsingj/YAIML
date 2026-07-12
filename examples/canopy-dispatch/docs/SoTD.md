@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: sot
 title: SoTD
 purpose: Preserve the current engineering state, product direction, active risks, and next priorities for the fictional Canopy Dispatch project.

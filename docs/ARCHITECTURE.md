@@ -1,5 +1,5 @@
 ---
-yaiml: 0.1
+yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
 purpose: Preserve YAIML's durable conceptual model, artifact boundaries, and deferred tooling boundaries.
@@ -14,15 +14,17 @@ agent-guidance: Verify repository shape before claiming artifacts. Surface confl
 
 ## System Model
 
-YAIML is an incubating plain-file convention and framework of ideas for AI Project Engineering.
+YAIML is an incubating plain-file convention and reusable template docset for AI Project Engineering.
 
-Its architecture is conceptual rather than software-based. The repository supplies guides, templates, prompts, examples, and dogfood memory documents. The artifacts are meant to work in any Git repository with any capable coding agent.
+Its architecture is conceptual rather than software-based. The repository supplies guides, templates, prompts, examples, and dogfood memory documents. The artifacts are meant to work in any Git repository with capable AI chats, coding agents, and human contributors.
 
-The convention is the primary artifact. Documents, templates, prompts, examples, and future helpers exist to preserve current engineering understanding; they are not independent mechanisms to expand for their own sake.
+YAIML is the canonical project and standard name. The temporary ARCS rename has been reverted and should not define the architecture.
 
-YAIML may later have better bootstrap helpers, but the architectural target remains plain files in the user's project. A helper may create, discover, review, or assemble YAIML context; it should not make the adopting project depend on YAIML as a runtime library, package-manager dependency, hosted platform, or build step.
+The convention is the primary artifact. Documents, templates, prompts, examples, and future helpers exist to preserve current engineering understanding across chats, agents, and contributors; they are not independent mechanisms to expand for their own sake.
 
-YAIML documents should remain normal Markdown files by default, not a custom `.yaiml` extension. The visible, boring file format is part of the architecture: it keeps the memory editable by humans, readable by generic tools, reviewable in Git, and accessible to any capable agent. `yaiml.yml` may discover the family, but it is not the product center or a schema.
+YAIML may later have better init helpers, but the architectural target remains plain files in the user's project. A helper may create, discover, review, refresh, or assemble YAIML context; it should not make the adopting project depend on YAIML as a runtime library, package-manager dependency, hosted platform, or build step.
+
+YAIML documents should remain normal Markdown files by default, not a custom `.yaiml` extension. The visible, boring file format is part of the architecture: it keeps the memory editable by humans, readable by generic tools, reviewable in Git, and accessible to capable agents and AI chats. `yaiml.yml` may discover the family, but it is not the product center or a schema.
 
 ## Core Roles
 
@@ -38,18 +40,20 @@ The roles should remain separate. SoT should not become a command reference. Arc
 
 ## Artifact Responsibilities
 
+- Root files handle public entry, agent instructions, licensing, sensitive reporting, contribution guardrails, roadmap, and discovery.
 - `README.md` introduces the problem and immediate use path for humans deciding whether to adopt YAIML.
 - `docs/` explains the convention and hosts YAIML's own living documents.
 - `templates/core/` provides starter versions of the three required roles.
 - `templates/supporting/` provides examples for supporting memory documents.
 - `prompts/init-yaiml.md` provides the smallest useful adoption path.
 - `prompts/initialize-yaiml.md` provides the deeper self-contained initialization path.
-- `prompts/` also provides provider-neutral hydration, update, audit, pruning, and realignment procedures.
+- `prompts/` also provides provider-neutral hydration, memory update, YAIML update, temporary ARCS cleanup, audit, pruning, and realignment procedures.
 - `examples/canopy-dispatch/` demonstrates a robust fictional YAIML family with product doctrine, authority boundaries, operational playbooks, and release/trust memory.
 - `docs/COLD_START_REVIEW.md` records the latest manual cold-start usability pass.
 - `docs/AGENT_INTEGRATION.md` explains how YAIML relates to `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files.
 - `docs/CONTEXT_LOADING.md` defines bounded context-loading layers.
 - `docs/EVALUATION.md` defines a lightweight case-study and cold-start comparison method.
+- `docs/ADOPTION_AND_UPGRADES.md` defines first-time adoption, existing YAIML updates, temporary ARCS cleanup, and version awareness.
 - `yaiml.yml` discovers YAIML's own memory documents.
 
 ## Context Loading Boundary
@@ -90,6 +94,9 @@ Deferred:
 - package format;
 - package-manager dependency;
 - runtime library;
+- database or storage layer;
+- orchestration framework;
+- background service;
 - custom `.yaiml` document format;
 - hosted service;
 - provider adapters;
@@ -98,7 +105,7 @@ Deferred:
 
 Future tools should serve the convention. They should not redefine YAIML as a technical-document standard.
 
-Addition test: if a new artifact does not improve a future coding agent's ability to reconstruct a project's current engineering understanding, it probably does not belong in YAIML.
+Addition test: if a new artifact does not improve a future AI chat, coding agent, or contributor's ability to reconstruct a project's current engineering understanding, it probably does not belong in YAIML.
 
 ## Retired Approaches
 
