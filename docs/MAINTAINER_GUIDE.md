@@ -61,12 +61,6 @@ Search for maturity overclaiming:
 rg "standard|industry|adoption|proven|benchmark|metrics|case study"
 ```
 
-Search for temporary ARCS references:
-
-```powershell
-rg "ARCS|Agent-Ready|arcs\\.yml|init-arcs|initialize-arcs|update-arcs"
-```
-
 These search terms intentionally include older draft language. Hits should either be removed or explicitly contextualized as legacy drift checks.
 
 ## Focused Reviews
@@ -78,6 +72,7 @@ Run these manually after meaningful edits:
 - Check that the README leads with the minimum useful setup before the full initialization path.
 - Check that the README presents init as a one-time setup move and does not imply humans should paste workflow prompts after every routine step.
 - Compare `templates/core/` and `templates/supporting/` with `docs/CORE_DOCUMENT_FAMILY.md`.
+- Check that SoT examples keep recent verified checks visible as a replaceable summary, not an append-only test log.
 - Compare `CONTRIBUTING.md` and `ROADMAP.md` with `docs/SoTY.md` for stale licensing, phase, or tooling claims.
 - Confirm every document declared in `yaiml.yml` has a stable header before its body.
 - Compare prompt instructions with `docs/STABLE_HEADERS.md`, `docs/AMBIGUITY_AND_EVIDENCE.md`, and `docs/PRUNING_AND_LIFECYCLE.md`.
@@ -90,8 +85,7 @@ Run these manually after meaningful edits:
 - Check that `docs/AGENT_INTEGRATION.md` keeps YAIML distinct from agent behavior instructions.
 - Check that `docs/EVALUATION.md` requests real evidence without inventing adoption claims, metrics, or proof.
 - Check that guidance keeps YAIML documents as ordinary Markdown by default rather than introducing a `.yaiml` extension.
-- Check that `docs/ADOPTION_AND_UPGRADES.md`, `prompts/update-yaiml.md`, and README agree on first-time adoption, existing YAIML update, and temporary ARCS cleanup.
-- Check that remaining ARCS references are intentional temporary-rename notes or deprecated compatibility aliases.
+- Check that `docs/ADOPTION_AND_UPGRADES.md`, `prompts/update-yaiml.md`, and README agree on first-time adoption, existing YAIML update, and version awareness.
 - Check that `yaiml.yml` remains a lightweight discovery/version marker, not a schema, database, or local-reference store.
 - Check that initialization guidance does not add YAIML files to `.gitignore` by default.
 - Check that YAIML guidance does not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into project memory.
@@ -119,7 +113,7 @@ Run these manually after meaningful edits:
 - `docs/AGENT_INTEGRATION.md`: boundary between agent instruction files and YAIML project memory.
 - `docs/CONTEXT_LOADING.md`: bounded loading model for YAIML context.
 - `docs/EVALUATION.md`: case-study template and cold-start comparison method.
-- `docs/ADOPTION_AND_UPGRADES.md`: first-time adoption, existing YAIML update, temporary ARCS cleanup, and version-awareness guidance.
+- `docs/ADOPTION_AND_UPGRADES.md`: first-time adoption, existing YAIML update, and version-awareness guidance.
 - `templates/core/`: starter documents users copy into projects.
 - `prompts/update-yaiml.md`: upgrade and convention-refresh workflow for adopting repositories with a human-provided or workspace-local YAIML reference.
 - `prompts/`: fallback and maintenance workflows; `init-yaiml.md` should stay small and usable as a one-time adoption prompt, while `initialize-yaiml.md` should carry deeper context for a no-prior-YAIML agent.
@@ -148,7 +142,7 @@ When YAIML itself changes:
 2. Update `docs/SoTY.md` only with material current-state changes, not a full work diary.
 3. Update `docs/ARCHITECTURE.md` when document roles, boundaries, or deferred-tooling posture change.
 4. Update this Maintainer Guide when procedures, checks, or dangerous areas change.
-5. Update `docs/ADOPTION_AND_UPGRADES.md` when adoption, update, temporary ARCS cleanup, or version-awareness behavior changes.
+5. Update `docs/ADOPTION_AND_UPGRADES.md` when adoption, update, or version-awareness behavior changes.
 6. Search for stale legacy terminology and broken renamed links.
 7. For adopting repositories, use `prompts/update-yaiml.md` or the upgrade prompt from `docs/ADOPTION_AND_UPGRADES.md`: compare their installed docset against the new standard, preserve repository-specific truth, repair links and terminology, and update their `yaiml.yml` revision marker.
 

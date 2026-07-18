@@ -10,8 +10,6 @@ Do not change application code during initialization unless the human explicitly
 
 YAIML means YAIML. It is a lightweight documentation standard and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
 
-YAIML is the canonical project and standard name. If temporary ARCS-era files are present, rename and update them back to YAIML in place instead of creating a second parallel docset.
-
 It preserves the current interpreted understanding of a software project across disposable AI chats, coding-agent sessions, and contributor handoffs: product intent, verified implementation reality, architecture boundaries, maintainer procedures, risks, uncertainty, and human direction.
 
 The documents are useful because of the convention they express. Do not expand the document set for its own sake.
@@ -127,6 +125,7 @@ SoT owns current engineering state and direction:
 - architecture concerns that currently affect work;
 - security, privacy, performance, UX, or reliability risks;
 - testing state;
+- recent verified checks;
 - unresolved bugs;
 - known debt;
 - active priorities;
@@ -135,7 +134,7 @@ SoT owns current engineering state and direction:
 - useful recent lessons;
 - open questions.
 
-SoT is not merely a changelog, backlog, project plan, status report, requirements document, or diary. Keep it bounded. Synthesize aggressively. Do not preserve a permanent history of every completed step.
+SoT is not merely a changelog, backlog, project plan, status report, requirements document, or diary. Keep it bounded. Synthesize aggressively. Do not preserve a permanent history of every completed step. A small recent-verified-checks section is useful when it is replaced after newer verification, not appended forever.
 
 ## Architecture
 
@@ -201,7 +200,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, current capabilities, active risks, priorities, divergence, recent lessons.
+belongs-here: goals, current capabilities, active risks, recent verified checks, priorities, divergence, recent lessons.
 not-here: durable architecture, command reference, full history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -284,8 +283,6 @@ supporting:
 
 The supporting entries above are examples, not required defaults. If `yaiml.yml` already exists, preserve useful existing declarations and update stale paths rather than replacing it carelessly.
 
-If the repository has `arcs.yml` instead, treat it as a temporary ARCS-era marker. Migrate it to `yaiml.yml`, preserve useful document declarations, update temporary ARCS terminology, and do not create a second parallel docset.
-
 Keep `yaiml.yml` portable. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
 
 ## Starter SoT Shape
@@ -298,7 +295,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, priorities, divergence, useful recent lessons.
+belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, recent verified checks, priorities, divergence, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -337,6 +334,10 @@ Keep this list current. Remove resolved risks later.
 ## Testing State
 
 Summarize what has been verified, what checks are trusted, and what remains untested or uncertain.
+
+## Recent Verified Checks
+
+Keep a short replaceable summary of the latest trusted checks. Replace this section after newer verification; do not append forever.
 
 ## Known Divergence
 
@@ -505,9 +506,3 @@ Report:
 - known divergence;
 - commands run and whether they passed;
 - recommended next steps.
-
-## Temporary ARCS Cleanup Prompt
-
-```text
-This repository was temporarily migrated from YAIML to ARCS. YAIML is canonical again. Restore YAIML terminology and filenames in place, preserve project-specific content, remove ARCS branding except for a brief migration note, and do not create a second parallel docset.
-```

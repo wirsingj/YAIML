@@ -18,8 +18,6 @@ YAIML is an incubating plain-file convention and reusable template docset for AI
 
 Its architecture is conceptual rather than software-based. The repository supplies guides, templates, prompts, examples, and dogfood memory documents. The artifacts are meant to work in any Git repository with capable AI chats, coding agents, and human contributors.
 
-YAIML is the canonical project and standard name. The temporary ARCS rename has been reverted and should not define the architecture.
-
 The convention is the primary artifact. Documents, templates, prompts, examples, and future helpers exist to preserve current engineering understanding across chats, agents, and contributors; they are not independent mechanisms to expand for their own sake.
 
 YAIML may later have better init helpers, but the architectural target remains plain files in the user's project. A helper may create, discover, review, refresh, or assemble YAIML context; it should not make the adopting project depend on YAIML as a runtime library, package-manager dependency, hosted platform, or build step.
@@ -47,13 +45,13 @@ The roles should remain separate. SoT should not become a command reference. Arc
 - `templates/supporting/` provides examples for supporting memory documents.
 - `prompts/init-yaiml.md` provides the smallest useful adoption path.
 - `prompts/initialize-yaiml.md` provides the deeper self-contained initialization path.
-- `prompts/` also provides provider-neutral hydration, memory update, YAIML update, temporary ARCS cleanup, audit, pruning, and realignment procedures.
+- `prompts/` also provides provider-neutral hydration, memory update, YAIML update, audit, pruning, and realignment procedures.
 - `examples/canopy-dispatch/` demonstrates a robust fictional YAIML family with product doctrine, authority boundaries, operational playbooks, and release/trust memory.
 - `docs/COLD_START_REVIEW.md` records the latest manual cold-start usability pass.
 - `docs/AGENT_INTEGRATION.md` explains how YAIML relates to `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files.
 - `docs/CONTEXT_LOADING.md` defines bounded context-loading layers.
 - `docs/EVALUATION.md` defines a lightweight case-study and cold-start comparison method.
-- `docs/ADOPTION_AND_UPGRADES.md` defines first-time adoption, existing YAIML updates, temporary ARCS cleanup, and version awareness.
+- `docs/ADOPTION_AND_UPGRADES.md` defines first-time adoption, existing YAIML updates, and version awareness.
 - `yaiml.yml` discovers YAIML's own memory documents.
 
 ## Context Loading Boundary

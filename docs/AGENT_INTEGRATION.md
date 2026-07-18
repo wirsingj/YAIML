@@ -34,7 +34,7 @@ Before meaningful work:
 4. Load supporting YAIML documents only when the current task touches their domain.
 5. Verify task-relevant claims against repository reality.
 6. Never treat inference as verified reality.
-7. After meaningful work, update affected YAIML documents and prune stale current-state information.
+7. After meaningful work, update only affected YAIML documents and prune stale current-state information.
 ```
 
 ## Existing Instruction File Example
@@ -54,7 +54,7 @@ For the current task, inspect only relevant supporting YAIML documents. Do not l
 
 When intent and implementation disagree, surface the divergence. Do not rewrite human intent to match accidental code, and do not describe planned behavior as already implemented.
 
-After material changes, update the affected YAIML documents. Remove resolved active risks instead of appending a work diary.
+After material changes, update only the affected YAIML documents. Remove resolved active risks and replace stale verification summaries instead of appending a work diary.
 
 If another agent or contributor left conflicting project-memory updates, preserve the disagreement and evidence until a human or repository fact resolves it.
 ```

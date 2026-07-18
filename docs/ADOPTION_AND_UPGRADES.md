@@ -2,8 +2,8 @@
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
-purpose: Define evidence-based first-time adoption, existing YAIML updates, temporary ARCS cleanup, and version marker guidance.
-belongs-here: adoption workflow, update workflow, temporary rename cleanup, version marker guidance, practical prompts.
+purpose: Define evidence-based first-time adoption, existing YAIML updates, and version marker guidance.
+belongs-here: adoption workflow, update workflow, version marker guidance, practical prompts.
 not-here: project-specific state, command procedures, implementation tooling, service design.
 durability: durable; update when YAIML adoption, update, or version-awareness guidance changes.
 read-with: SoTY; YAIML Architecture; YAIML Maintainer Guide; Core Document Family.
@@ -13,9 +13,7 @@ agent-guidance: Preserve repository-specific truth. Do not replace mature docume
 
 # YAIML Adoption And Updates
 
-YAIML is a documentation convention and reusable template docset for making a repository understandable and maintainable by humans and AI coding agents.
-
-YAIML was temporarily renamed ARCS and has now returned to its original name. ARCS references should be removed from normal documentation unless they are needed as a short migration note or a temporary deprecated alias for an unmigrated dependent repository.
+YAIML is a documentation convention and reusable template docset for making a repository understandable and maintainable across humans, AI chats, coding agents, and contributor handoffs.
 
 ## Version Awareness
 
@@ -27,7 +25,7 @@ The marker should help an agent identify:
 - which YAIML revision or posture the docset follows;
 - where the core documents live;
 - which supporting documents exist;
-- whether a repository still contains temporary ARCS terminology that needs cleanup.
+- whether the discovery marker needs a compatibility refresh.
 
 Minimal shape:
 
@@ -102,28 +100,6 @@ Example prompt:
 
 ```text
 I have a new version of the YAIML standard at [path]. Review this repository's current YAIML docset, compare it with the newer standard, preserve repository-specific truth, migrate relevant structural or terminology changes, update internal references, and summarize the update.
-```
-
-## Temporary ARCS Cleanup
-
-If a repository was touched during the temporary ARCS rename, clean it back to YAIML in place.
-
-A cleanup agent should:
-
-- identify ARCS-named discovery files such as `arcs.yml`;
-- identify ARCS stable-header keys, prompt names, document titles, agent instructions, links, and template names;
-- rename them back to YAIML where safe;
-- preserve project-specific content;
-- update or recreate `yaiml.yml`;
-- record the cleanup in the repository's state document when it changes project-maintenance truth;
-- avoid installing a second parallel docset.
-
-Keep ARCS references only where they document the temporary rename or a deprecated compatibility alias that still has a named downstream dependency.
-
-Example prompt:
-
-```text
-This repository was temporarily migrated from YAIML to ARCS. YAIML is canonical again. Restore YAIML terminology and filenames in place, preserve project-specific content, remove ARCS branding except for a brief migration note, and do not create a second parallel docset.
 ```
 
 ## Normal Implementation Work

@@ -2,8 +2,6 @@
 
 YAIML is an incubating convention and reusable template docset for living project memory, project definition, project management, and AI-chat, agent, and contributor continuity in AI-assisted development.
 
-YAIML is the canonical project and standard name. Do not reintroduce ARCS branding except in narrowly scoped migration notes.
-
 Contributions should make the convention clearer, more useful, easier to apply, or harder for agents to misuse.
 
 The value of YAIML is the convention for preserving project understanding, not the volume of documents around it. Favor refinement over expansion.

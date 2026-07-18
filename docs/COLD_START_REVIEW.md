@@ -90,4 +90,4 @@ Observed:
 
 Lesson:
 
-YAIML initialization can produce useful repo-carried memory in varied projects, but early adopters and temporary ARCS-era installations need a convention-refresh pass before examples or claims imply the portability rule has always been satisfied.
+YAIML initialization can produce useful repo-carried memory in varied projects, but adopter cleanup still needs validation outside this local workspace before examples or claims imply the portability rule has always been satisfied.

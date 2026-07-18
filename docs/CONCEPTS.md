@@ -15,8 +15,6 @@ agent-guidance: Preserve the lightweight convention-first frame. Do not turn con
 
 YAIML is an incubating convention and reusable template docset for AI Project Engineering practice. It may become broadly adopted later, but this repository should not imply that broad adoption or consensus already exists.
 
-YAIML is the canonical project and standard name. A temporary ARCS rename was reverted and should not appear as normal branding.
-
 It exists because repository-aware AI chats and coding agents have made natural-language engineering direction a first-class part of software development. A person or team may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. YAIML preserves the useful engineering state that should survive.
 
 YAIML is a guiding document set for project management, project memory, project definition, and AI-session continuity. It gives durable homes to the parts of a repository that are too important to leave in vanished chat but too interpretive to live only in source code.

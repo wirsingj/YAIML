@@ -16,7 +16,6 @@ Near-term work should make the existing philosophy clearer, smaller, and more du
 - Keep the minimum viable adoption path smaller than the full initializer.
 - Apply the cold-start evaluation method to real repositories without fabricating proof.
 - Check YAIML 0.2 readiness by initializing or upgrading YAIML in repositories intended to move across machines, contributors, and AI chat provider instances, then verifying the generated memory remains useful without exposing private material.
-- Clean any temporary ARCS-era references from real repositories without creating parallel docsets.
 - Choose or document a private sensitive-reporting path before broad public release, or explicitly rely on GitHub private vulnerability reporting if enabled.
 - Reduce terminology where ordinary engineering language works.
 - Avoid drifting back into schemas, conformance fixtures, parser design, or standards-body language.

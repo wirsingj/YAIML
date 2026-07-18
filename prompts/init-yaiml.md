@@ -43,9 +43,9 @@ If `ARCHITECTURE.md`, `MAINTAINER_GUIDE.md`, or similar documentation already ex
 6. Put a concise stable header at the top of each YAIML document.
 7. Add a short YAIML maintenance note to `MAINTAINER_GUIDE.md`: phrases such as "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" mean compare the local YAIML setup against a human-provided or workspace-local YAIML reference, refresh compatible prompts/templates/guidance, and preserve project-specific memory.
 8. Do not record machine-specific YAIML reference paths or local workspace URIs in versioned files. A local YAIML reference path belongs in the human prompt, agent/workspace configuration, environment, or ignored local notes, not committed project memory.
-9. If an existing agent instruction file was found, add or preserve a short pointer telling future AI chats and agents to read `yaiml.yml` and the core YAIML documents before meaningful work, update affected YAIML documents after meaningful work, and treat "update YAIML" / "check new YAIML" as a convention-refresh request that needs a human-provided or workspace-local reference rather than a project-memory rewrite. Do not create a provider-specific instruction file solely for YAIML unless the human asks.
+9. If an existing agent instruction file was found, add or preserve a short pointer telling future AI chats and agents to read `yaiml.yml` and the core YAIML documents before meaningful work, update only affected YAIML documents after meaningful work, prune stale state, and treat "update YAIML" / "check new YAIML" as a convention-refresh request that needs a human-provided or workspace-local reference rather than a project-memory rewrite. Do not create a provider-specific instruction file solely for YAIML unless the human asks.
 10. Populate only verified facts, declared human intent, clearly marked inference, known uncertainty, and visible divergence.
-11. When recording commands, list only commands found in project files or actually run. If you run checks, record the exact command and a sanitized outcome inside the YAIML documents, not only in the final chat response. Do not copy raw output that contains secrets, personal data, machine-specific paths, private URLs, or confidential details.
+11. When recording commands, list only commands found in project files or actually run. If you run checks, record the exact command and a sanitized outcome inside the YAIML documents, not only in the final chat response. Prefer a short replaceable `Recent Verified Checks` section in `SOT.md`; replace it after newer verification instead of appending forever. Do not copy raw output that contains secrets, personal data, machine-specific paths, private URLs, or confidential details.
 12. Do not create supporting documents unless a domain already has several concrete recurring pieces of project knowledge that would bloat the core three.
 13. Keep the first pass concise. Leave clear next steps, but do not turn init into a giant audit.
 14. Do not add YAIML files to `.gitignore` by default. YAIML is meant to live with the project; keep the contents safe enough to move with the repository across machines, contributors, and AI chat providers by sanitizing sensitive evidence.
@@ -62,7 +62,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, current capabilities, declared direction, active risks, priorities, divergence, uncertainty, useful recent lessons.
+belongs-here: goals, current capabilities, declared direction, active risks, recent verified checks, priorities, divergence, uncertainty, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -98,7 +98,7 @@ Keep `yaiml.yml` portable. Do not add machine-specific reference paths, local dr
 
 ## Core Document Jobs
 
-`SOT.md` preserves current engineering state: project identity, verified capabilities, declared human direction, active risks, testing state, known divergence, useful lessons, immediate priorities, and open questions.
+`SOT.md` preserves current engineering state: project identity, verified capabilities, declared human direction, active risks, testing state, recent verified checks, known divergence, useful lessons, immediate priorities, and open questions.
 
 `ARCHITECTURE.md` preserves durable system shape: components, boundaries, data flow, invariants, current architecture, intended architecture, known violations, danger zones, and retired approaches.
 

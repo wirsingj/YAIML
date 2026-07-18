@@ -3,7 +3,7 @@ yaiml: 0.2
 role: product-doctrine
 title: Product Doctrine
 purpose: Durable product principles, audience assumptions, experience goals, and rejected product directions.
-belongs-here: product principles, user promises, experience boundaries, positioning, tradeoff rules, rejected product shapes.
+belongs-here: product principles, user promises, product language decisions, experience boundaries, positioning, tradeoff rules, rejected product shapes.
 not-here: sprint status, implementation details, command procedures, complete roadmap.
 durability: durable; update when human product direction changes.
 read-with: SoT; Architecture; Preferences; Terms And Glossary.
@@ -18,6 +18,8 @@ agent-guidance: Preserve declared human product intent. Mark inferred doctrine. 
 ## Audience
 
 ## Experience Principles
+
+## Product Language
 
 ## Tradeoff Rules
 

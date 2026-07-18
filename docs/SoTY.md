@@ -25,8 +25,6 @@ YAIML should feel like an observation platform for a project: high enough to see
 
 Declared: YAIML is an incubating plain-file documentation standard and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, constraints, and AI-session continuity. It is not primarily a schema, formal specification, YAML dialect, parser target, contract system, package dependency, runtime, database, hosted memory service, agent SDK, required CLI, storage layer, autonomous coding agent, or compliance framework.
 
-Declared: YAIML was temporarily renamed ARCS and has now returned to its original name. YAIML is the canonical project and standard name.
-
 Declared: No established expansion for YAIML was found in the repository history inspected during restoration. YAIML remains the canonical name without an expanded form.
 
 Declared: YAIML is an idea and documentation framework, not professional legal, security, compliance, privacy, licensing, or IP advice. Security, compliance, privacy, legal, licensing, and IP documents are memory surfaces for project-specific reviewed constraints, evidence, decisions, and open questions, not recommendations supplied by YAIML itself.
@@ -54,7 +52,7 @@ Verified: This repository is currently plain Markdown and YAML guidance, templat
 - `docs/CONTEXT_LOADING.md`: bounded discovery/core/task/deep context-loading model.
 - `docs/EVALUATION.md`: real-project case-study template and cold-start comparison method.
 - `docs/COLD_START_REVIEW.md`: latest first-time-agent usability review.
-- `docs/ADOPTION_AND_UPGRADES.md`: adoption, upgrade, temporary ARCS cleanup, and version-awareness guidance.
+- `docs/ADOPTION_AND_UPGRADES.md`: adoption, upgrade, and version-awareness guidance.
 - `templates/core/`: starter SoT, Architecture, and Maintainer Guide.
 - `templates/supporting/`: supporting document starters for self-unfolded roles such as domain, legal/compliance, preferences, product doctrine, risk review, security memory, and terms/glossary.
 - `prompts/`: provider-neutral workflows for initialization, hydration, project-memory update, YAIML convention refresh, audit, pruning, and realignment.
@@ -77,7 +75,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - `SOT.md` is the recommended default SoT filename for unfamiliar repositories; project-specific names such as this repository's `SoTY.md` remain supported when they add useful project character.
 - The default family is SoT, Architecture, and Maintainer Guide.
 - YAIML now has two initialization paths: `init-yaiml.md` for quick adoption and `initialize-yaiml.md` for deeper initialization.
-- YAIML revision `0.2` records the restoration of YAIML after the temporary ARCS rename.
+- YAIML revision `0.2` records the current convention-first docset posture.
 - YAIML is for AI chats as well as coding agents; repository memory should survive provider changes, chat resets, agent handoffs, and contributor handoffs.
 - YAIML supports multi-agent and multi-contributor projects; conflicts should preserve evidence and uncertainty rather than being smoothed into false certainty.
 - YAIML distinguishes agent instruction files from project memory: instruction files tell agents how to behave; YAIML preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
@@ -93,6 +91,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Human intent and implementation evidence must remain separate.
 - Ambiguity must be visible when it can affect future work.
 - Pruning is part of the method, especially for SoT.
+- SoT templates should include a small recent-verified-checks surface when useful, but it must be replaced after newer verification rather than appended forever.
 - Tooling is deferred.
 - A future init helper may improve on the one-time init flow, but YAIML should remain plain project-local files, not a package-manager dependency, runtime library, hosted platform, or build step.
 - Every proposed addition should answer: does this improve a new AI chat, coding agent, or contributor's ability to reconstruct the project's current engineering understanding?
@@ -103,8 +102,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The repository has been realigned away from schema/conformance/spec framing and toward a convention-first AI Project Engineering framework.
 - The core document family is centered on SoT, with project-specific Markdown filenames such as `SoTY.md`, `SoTT.md`, or `SoTC.md`.
 - Stable headers now act as agent-facing orientation instead of rigid document contracts.
-- The README, guides, templates, prompts, and fictional example now teach YAIML as a self-unfolding project-memory and project-definition document family.
-- The temporary ARCS rename has been reverted in this repository; YAIML filenames, discovery markers, prompts, and documentation are canonical again.
+- The README now uses a more human-facing front door, while guides, templates, prompts, and the fictional example carry the deeper YAIML project-memory doctrine.
+- Obsolete legacy-name migration language has been removed because current known adopters are local and already updated; new readers should encounter YAIML directly.
 - `prompts/init-yaiml.md` provides the small adoption path; `prompts/initialize-yaiml.md` remains the full self-contained initialization prompt for deeper repository setup.
 - Live init trials clarified that sanitized command outcomes should be recorded inside generated YAIML documents, not only in final chat output.
 - `docs/AGENT_INTEGRATION.md` clarifies the boundary between agent behavior instructions and YAIML project memory.
@@ -115,7 +114,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Supporting guidance now protects memory hygiene: no secrets, private chat transcripts, sensitive raw values, raw sensitive command output, or agent-invented legal/IP/security/compliance conclusions.
 - Declared supporting YAIML guides now have stable headers, matching the repository's own stable-header rule.
 - A public security/sensitive-information policy now tells contributors not to place secrets, personal data, exploit details, or confidential project information into public YAIML materials.
-- Cold-start review now covers repository portability, provider/machine/contributor handoff, repository-safe memory hygiene, and temporary ARCS cleanup as YAIML 0.2 readiness concerns.
+- Cold-start review now covers repository portability, provider/machine/contributor handoff, and repository-safe memory hygiene as YAIML 0.2 readiness concerns.
+- SpriteWrite field feedback reported that `AGENTS.md` -> `yaiml.yml` -> stable-headered core docs preserved project memory through ordinary coding work; this is useful field signal, not controlled proof.
 
 ## Current Strengths
 
@@ -138,6 +138,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The same local sampling found hardcoded machine-specific reference paths in early adopter discovery files, confirming that convention-refresh cleanup and portable-reference guidance remain YAIML 0.2 readiness concerns.
 - A follow-up local adopter cleanup removed hardcoded YAIML checkout paths from several nearby YAIML-adopting repositories and replaced stale agent/maintainer wording with run-time reference guidance, confirming that the portable-reference rule can be applied without changing project-specific memory.
 - The repository dogfoods its own framework.
+- Early SpriteWrite use supports the small-discoverable-role-separated shape: SoT for current truth, Architecture for durable boundaries, Maintainer Guide for procedures, and supporting docs for product-specific direction.
 
 ## Current Weaknesses
 
@@ -151,6 +152,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The supporting template set must be kept useful without implying every possible memory domain deserves a starter file.
 - The README still needs pressure toward human adoption clarity rather than internal framework explanation.
 - The prompt library can easily read like a required operating checklist; it should remain framed as fallback and maintenance help for cases where the repository's own YAIML guidance is not enough.
+- Field feedback suggests agents benefit from explicit instruction to update only affected YAIML documents after material changes and prune stale state; guidance should keep that behavior visible without making updates ceremonial.
 - The init prompts still need more real-repository trials to confirm they add agent-instruction pointers cleanly without overwriting local guidance.
 - The YAIML refresh prompt and init-time maintenance note need real trials across existing YAIML-adopting projects to confirm agents remove committed local reference paths while preserving local memory.
 - Adopter cleanup still needs validation outside this local workspace before the guidance can be treated as broadly proven.

@@ -3,7 +3,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, priorities, divergence, useful recent lessons.
+belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, recent verified checks, priorities, divergence, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -48,6 +48,10 @@ Record security, architecture, performance, UX, or code-quality findings that st
 ## Testing State
 
 Summarize what has been verified, what checks are trusted, and what remains untested or uncertain.
+
+## Recent Verified Checks
+
+Keep a short replaceable summary of the latest trusted checks. Replace this section after newer verification; do not append forever.
 
 ## Active Risks And Debt
 

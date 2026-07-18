@@ -56,6 +56,7 @@ SoT preserves the current engineering state and direction of the project. It may
 - architecture concerns;
 - security and performance risks;
 - testing findings;
+- recent verified checks;
 - unresolved bugs;
 - known debt;
 - active priorities;
@@ -74,7 +75,7 @@ It is not merely:
 - a journal;
 - a requirements document.
 
-SoT should synthesize aggressively. Preserve meaningful accomplishments and lessons, but compress implementation sediment.
+SoT should synthesize aggressively. Preserve meaningful accomplishments and lessons, but compress implementation sediment. A small recent-verified-checks section can be useful when it is replaced after new verification; it should not become an append-only test log.
 
 ## Architecture
 
@@ -157,6 +158,8 @@ Examples:
 - Observability;
 - Support or Triage;
 - anything else the project actually needs.
+
+Product Doctrine or a similar supporting document can own product-language decisions when they would otherwise get tangled with architecture. For example, an internal implementation term may remain correct in code while the user-facing product language deliberately uses a different word.
 
 Each supporting document should declare its own responsibility and retention behavior in its stable header.
 

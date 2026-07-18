@@ -8,8 +8,6 @@ The human may say this as "update YAIML", "YAIML is updated", "run an update on 
 
 Refresh the repository's YAIML convention scaffolding against a newer YAIML reference while preserving the repository's own project memory.
 
-YAIML is the canonical project and standard name. If the repository still contains temporary ARCS terminology, clean it back to YAIML in place.
-
 This is not the same as updating the project's SoT after ordinary work. Do not rewrite project-specific current state, architecture, maintainer knowledge, risks, or priorities just because the YAIML reference changed.
 
 YAIML remains plain Markdown and YAML project memory. Do not add a package dependency, CLI, runtime, schema validator, database, storage layer, orchestration framework, hosted service, background service, autonomous coding agent, or build step.
@@ -17,7 +15,7 @@ YAIML remains plain Markdown and YAML project memory. Do not add a package depen
 ## Before Editing
 
 1. Read repository agent instructions first, such as `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, contribution docs, or workspace notes.
-2. Read `yaiml.yml`; if only `arcs.yml` exists, read it as a temporary ARCS-era discovery file to migrate back to YAIML.
+2. Read `yaiml.yml`.
 3. Read the stable headers for the core YAIML documents before their bodies.
 4. Check the current git status or equivalent worktree state. Treat existing uncommitted changes as intentional work in progress.
 5. Do not reset, discard, overwrite, or hide existing work.
@@ -51,7 +49,7 @@ Inspect the reference repository or reference files for:
 - `prompts/update-yaiml.md`, if present;
 - core templates;
 - supporting templates;
-- docs that define evidence, context loading, stable headers, agent integration, pruning, safety, licensing posture, adoption, upgrade, legacy migration, version awareness, or evaluation.
+- docs that define evidence, context loading, stable headers, agent integration, pruning, safety, licensing posture, adoption, upgrade, version awareness, or evaluation.
 
 Do not assume every adopting project should copy the reference repository wholesale. Look for convention changes that improve continuity, safety, clarity, or agent behavior.
 
@@ -63,7 +61,6 @@ Apply only updates that are useful and compatible with this repository:
 - update local YAIML templates if this repository keeps copies;
 - update agent-instruction pointers when the current YAIML guidance has changed;
 - update `yaiml.yml` only as a small discovery file, not as a schema, database, or place for machine-specific reference paths;
-- migrate `arcs.yml`, ARCS stable-header keys, prompt filenames, document titles, and links back to YAIML naming when present;
 - update the repository's own YAIML documents only when the refresh changes how future AI chats, agents, or contributors should understand or maintain this repository.
 
 Preserve project-specific memory. Do not replace:
@@ -75,8 +72,6 @@ Preserve project-specific memory. Do not replace:
 - human decisions;
 - local naming choices;
 - supporting documents that contain real project knowledge.
-
-Do not install a second YAIML docset beside temporary ARCS-era files. Rename and update the existing docset in place.
 
 ## Safety Rules
 
