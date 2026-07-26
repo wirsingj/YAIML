@@ -74,39 +74,29 @@ Deep references should not be required by default stable headers unless the proj
 - Do not create empty documents preemptively.
 - Do not load unrelated supporting domains.
 - Prune stale information rather than endlessly accumulating it.
-- Make `yaiml.yml` useful for discovery without turning it into a schema.
+- Make `yaiml.yml` useful for discovery without turning project memory into a schema-controlled format.
 - Allow a full hydration pass when the task genuinely requires whole-project review.
 
 ## `yaiml.yml`
 
-`yaiml.yml` should help agents discover the document family and current YAIML revision. It should not become a validation schema, database, storage layer, or local-reference cache.
+`yaiml.yml` should help agents discover the document family and current YAIML discovery version. It should not become a database, storage layer, local-reference cache, or schema for the Markdown memory documents.
 
 A small useful shape is:
 
 ```yaml
-yaiml: "0.2"
-
-project:
-  id: my-project
-  name: My Project
-
-documents:
-  sot:
-    path: SOT.md
-    title: SOT
-  architecture:
-    path: ARCHITECTURE.md
-    title: Architecture
-  maintainer:
-    path: MAINTAINER_GUIDE.md
-    title: Maintainer Guide
-
-supporting:
-  - path: docs/SECURITY_MEMORY.md
-    role: security
+yaiml:
+  version: "0.2.0"
+  core:
+    state: SOT.md
+    architecture: ARCHITECTURE.md
+    maintainer_guide: MAINTAINER_GUIDE.md
+  supporting:
+    security: docs/SECURITY_MEMORY.md
 ```
 
 Supporting entries should describe available context, not require automatic loading.
+
+Future validation, if any, should stay limited to this small discovery shape. The project memory itself remains ordinary Markdown with stable roles, evidence discipline, and human-readable judgment.
 
 ## Hydration Behavior
 

@@ -13,7 +13,7 @@ agent-guidance: Preserve the lightweight convention-first frame. Do not turn con
 
 # Concepts
 
-YAIML is an incubating convention and reusable template docset for AI Project Engineering practice. It may become broadly adopted later, but this repository should not imply that broad adoption or consensus already exists.
+YAIML is a lightweight plain-file convention and reusable template docset for AI Project Engineering practice. It should grow more like Markdown, Keep a Changelog, Conventional Commits, or EditorConfig than like a runtime framework: easy to adopt, easy to inspect, and useful without installing a dependency. It may become broadly adopted later, but this repository should not imply that broad adoption or consensus already exists.
 
 It exists because repository-aware AI chats and coding agents have made natural-language engineering direction a first-class part of software development. A person or team may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. YAIML preserves the useful engineering state that should survive.
 
@@ -43,6 +43,8 @@ Chat history is useful during a session, but it is a poor long-term source of pr
 YAIML documents are smaller, local, editable, versioned with the repo, and designed to be read by the next AI chat, agent, or contributor.
 
 They should be ordinary Markdown documents by default. A custom `.yaiml` extension would make the idea feel more branded, but less usable: editors, previews, search tools, diffs, and agents already understand `.md`. YAIML's strength is the shape of the memory, not a new file format.
+
+`yaiml.yml` exists only as a tiny discovery file so humans, chats, agents, and possible future tools can find the memory family. If YAIML ever validates anything, validation should stay around that small discovery file, not the human-authored Markdown memory.
 
 They should usually be committed with the source code. YAIML is shared project memory, not private scratch space by default. A project may choose a private-memory policy, but initialization should not hide YAIML files in `.gitignore` without explicit human direction.
 
@@ -102,7 +104,7 @@ Project-sensitive choices:
 - supporting document types are not closed; projects can invent the ones they need;
 - local vocabulary may vary;
 - the body is free-form Markdown;
-- no parser-driven compliance is required.
+- no parser-driven compliance is required for the Markdown memory.
 
 A document is healthy because it performs its engineering role, not because it matches a schema exactly.
 

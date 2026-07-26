@@ -8,7 +8,7 @@ Do not change application code during initialization unless the human explicitly
 
 ## What YAIML Is
 
-YAIML means YAIML. It is a lightweight documentation standard and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
+YAIML means YAIML. It is a lightweight plain-file convention and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
 
 It preserves the current interpreted understanding of a software project across disposable AI chats, coding-agent sessions, and contributor handoffs: product intent, verified implementation reality, architecture boundaries, maintainer procedures, risks, uncertainty, and human direction.
 
@@ -19,7 +19,7 @@ YAIML is documentation and guidance. It is not professional legal, security, com
 YAIML is not:
 
 - a YAML format;
-- a schema;
+- a schema for Markdown memory;
 - a conformance system;
 - a parser target;
 - a generic knowledge base;
@@ -32,7 +32,7 @@ YAIML is not:
 
 YAIML is semantically structured and syntactically loose. The document roles have strong bones, but the exact headings, filenames, local vocabulary, and supporting documents may bend to the project.
 
-Use ordinary Markdown documents by default. Do not create a custom `.yaiml` file extension during initialization. YAIML should be easy for humans, editors, Git diffs, Markdown previewers, AI chats, and agents to read without special tooling. `yaiml.yml` can act as a discovery index, but the durable memory should live in readable `.md` files.
+Use ordinary Markdown documents by default. Do not create a custom `.yaiml` file extension during initialization. YAIML should be easy for humans, editors, Git diffs, Markdown previewers, AI chats, and agents to read without special tooling. `yaiml.yml` can act as a tiny discovery index, but the durable memory should live in readable `.md` files.
 
 Assume the YAIML family should travel with this repository across machines, contributors, and AI chat provider instances. The project may be private, public, paid, free, open-source, or unreleased; that is separate from YAIML. Write YAIML as repository-safe project memory for the repository's intended audience: sanitized evidence, no secrets, no private chat transcripts, no raw sensitive logs, no private screenshots, and no invented legal, security, privacy, or ownership conclusions.
 
@@ -257,33 +257,20 @@ When sources conflict, record the conflict. Do not rewrite intent to match accid
 Use this shape as a starting point and adapt names and paths to the project:
 
 ```yaml
-yaiml: "0.2"
-
-project:
-  id: my-project
-  name: My Project
-
-documents:
-  sot:
-    path: SOT.md
-    title: SOT
-  architecture:
-    path: ARCHITECTURE.md
-    title: Architecture
-  maintainer:
-    path: MAINTAINER_GUIDE.md
-    title: Maintainer Guide
-
-supporting:
-  - path: docs/RISK_REVIEW.md
-    role: risk-review
-  - path: docs/CONCEPTS.md
-    role: concept-guide
+yaiml:
+  version: "0.2.0"
+  core:
+    state: SOT.md
+    architecture: ARCHITECTURE.md
+    maintainer_guide: MAINTAINER_GUIDE.md
+  supporting:
+    risk_review: docs/RISK_REVIEW.md
+    concepts: docs/CONCEPTS.md
 ```
 
 The supporting entries above are examples, not required defaults. If `yaiml.yml` already exists, preserve useful existing declarations and update stale paths rather than replacing it carelessly.
 
-Keep `yaiml.yml` portable. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
+Keep `yaiml.yml` portable and boring. It is a discovery file, not a schema for the Markdown documents. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
 
 ## Starter SoT Shape
 

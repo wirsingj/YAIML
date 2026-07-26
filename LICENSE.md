@@ -1,13 +1,21 @@
-# All Rights Reserved
+# MIT License
 
-Copyright (c) 2026 Jeff Wirsing.
+Copyright (c) 2026 Jeff Wirsing
 
-This repository is public for visibility and review only during YAIML's incubation phase. It is not open source, and no open-source license is currently granted.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Unless you have explicit written permission from the copyright holder, you may not copy, modify, distribute, sublicense, sell, publish, host, or create derivative works from this repository or any substantial portion of it.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Viewing this repository on GitHub, opening issues, linking to it, or using GitHub platform features does not grant permission to reuse the work outside the permissions required by GitHub's Terms of Service.
-
-If you want to use YAIML, its templates, prompts, examples, documentation, name, or related materials during this incubation phase, contact the copyright holder for permission.
-
-The maintainer intends to choose an open license before broad public reuse. No license, release date, or reuse grant has been selected yet. Until this notice is replaced, all rights are reserved.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -16,12 +16,12 @@ Working rules:
 - Treat natural-language requests such as "continue through the SoT list" or "update our SoT" as instructions to use this repository's YAIML memory, not as requests for separate prompt choreography.
 - Treat "update YAIML", "updated YAIML", or "check new YAIML" as convention-refresh language: in adopting repositories, compare local YAIML scaffolding with a human-provided or workspace-local YAIML reference; in this repository, update the reference guidance itself and then update SoTY if the meaning changed.
 - Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
-- Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas, conformance fixtures, or web applications during the convention-first phase.
-- Do not select a license without explicit human approval.
+- Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas for Markdown memory documents, conformance fixtures, or web applications during the convention-first phase.
+- Preserve the MIT License unless the maintainer explicitly approves a license change.
 - Update only the affected YAIML documents after material changes, prune stale state, and do not append a work diary.
 - Report contradictions rather than smoothing them into confident prose.
 - Do not describe planned tooling as implemented tooling.
-- Do not revive `SPEC.md`, schema-first language, or formal conformance machinery unless a human explicitly changes the project phase.
+- Do not revive `SPEC.md`, schema-first language for Markdown memory documents, or formal conformance machinery unless a human explicitly changes the project phase.
 
 When updating YAIML documents:
 

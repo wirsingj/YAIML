@@ -14,7 +14,7 @@ agent-guidance: Verify repository shape before claiming artifacts. Surface confl
 
 ## System Model
 
-YAIML is an incubating plain-file convention and reusable template docset for AI Project Engineering.
+YAIML is a lightweight plain-file convention and reusable template docset for AI Project Engineering.
 
 Its architecture is conceptual rather than software-based. The repository supplies guides, templates, prompts, examples, and dogfood memory documents. The artifacts are meant to work in any Git repository with capable AI chats, coding agents, and human contributors.
 
@@ -22,7 +22,9 @@ The convention is the primary artifact. Documents, templates, prompts, examples,
 
 YAIML may later have better init helpers, but the architectural target remains plain files in the user's project. A helper may create, discover, review, refresh, or assemble YAIML context; it should not make the adopting project depend on YAIML as a runtime library, package-manager dependency, hosted platform, or build step.
 
-YAIML documents should remain normal Markdown files by default, not a custom `.yaiml` extension. The visible, boring file format is part of the architecture: it keeps the memory editable by humans, readable by generic tools, reviewable in Git, and accessible to capable agents and AI chats. `yaiml.yml` may discover the family, but it is not the product center or a schema.
+YAIML documents should remain normal Markdown files by default, not a custom `.yaiml` extension. The visible, boring file format is part of the architecture: it keeps the memory editable by humans, readable by generic tools, reviewable in Git, and accessible to capable agents and AI chats. `yaiml.yml` discovers the family through a tiny versioned discovery protocol, but it is not the product center or a schema for project-memory documents.
+
+Future validation, if any, should be limited to the small `yaiml.yml` discovery shape. The human-authored Markdown memory remains syntactically loose and evidence-disciplined rather than schema-controlled.
 
 ## Core Roles
 
@@ -87,8 +89,10 @@ Deferred:
 
 - CLI;
 - parser;
-- validator;
+- validator for Markdown memory documents;
 - SDK;
+- MCP server;
+- framework adapters;
 - package format;
 - package-manager dependency;
 - runtime library;
@@ -99,9 +103,11 @@ Deferred:
 - hosted service;
 - provider adapters;
 - IDE integrations;
-- schema or conformance fixtures.
+- schema, JSON-LD, or conformance fixtures for Markdown memory documents;
+- separate formal specification repository;
+- formal standards-governance program.
 
-Future tools should serve the convention. They should not redefine YAIML as a technical-document standard.
+Future tools should serve the convention. They should not redefine YAIML as software infrastructure.
 
 Addition test: if a new artifact does not improve a future AI chat, coding agent, or contributor's ability to reconstruct a project's current engineering understanding, it probably does not belong in YAIML.
 
@@ -110,10 +116,12 @@ Addition test: if a new artifact does not improve a future AI chat, coding agent
 Retired for the current phase:
 
 - `SPEC.md` as normative center;
-- JSON Schema as a primary project artifact;
+- JSON Schema as a primary project artifact for Markdown memory documents;
+- JSON-LD as a primary project artifact for Markdown memory documents;
 - conformance fixture directories;
 - RFC-style requirement language;
-- treating YAIML as a schema or package format.
+- MCP or framework adapter layer as adoption center;
+- treating YAIML memory as a schema or package format.
 - requiring a custom file extension for project memory.
 
 These should not return unless a human explicitly changes the project phase.

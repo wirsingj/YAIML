@@ -10,7 +10,7 @@ Refresh the repository's YAIML convention scaffolding against a newer YAIML refe
 
 This is not the same as updating the project's SoT after ordinary work. Do not rewrite project-specific current state, architecture, maintainer knowledge, risks, or priorities just because the YAIML reference changed.
 
-YAIML remains plain Markdown and YAML project memory. Do not add a package dependency, CLI, runtime, schema validator, database, storage layer, orchestration framework, hosted service, background service, autonomous coding agent, or build step.
+YAIML remains plain Markdown and YAML project memory. Do not add a package dependency, CLI, runtime, schema validator for Markdown memory, database, storage layer, orchestration framework, hosted service, background service, autonomous coding agent, or build step.
 
 ## Before Editing
 

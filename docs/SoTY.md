@@ -23,7 +23,7 @@ YAIML should feel like an observation platform for a project: high enough to see
 
 ## Current Concept
 
-Declared: YAIML is an incubating plain-file documentation standard and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, constraints, and AI-session continuity. It is not primarily a schema, formal specification, YAML dialect, parser target, contract system, package dependency, runtime, database, hosted memory service, agent SDK, required CLI, storage layer, autonomous coding agent, or compliance framework.
+Declared: YAIML is a lightweight plain-file convention and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, constraints, and AI-session continuity. It should grow more like Markdown, Keep a Changelog, Conventional Commits, or EditorConfig than like a runtime framework: easy to adopt, easy to inspect, and useful without installing a dependency. It is not primarily a schema, formal specification, YAML dialect, parser target, contract system, package dependency, runtime, database, hosted memory service, agent SDK, required CLI, storage layer, autonomous coding agent, or compliance framework.
 
 Declared: No established expansion for YAIML was found in the repository history inspected during restoration. YAIML remains the canonical name without an expanded form.
 
@@ -33,17 +33,17 @@ Declared: YAIML's value is the convention it expresses, not the documents as sta
 
 Declared: YAIML portability is independent of the adopting project's business or licensing model. A project may be private, public, paid, free, open-source, or unreleased; once YAIML is used, its project-memory family should travel with that repository across machines, contributors, and AI chat provider instances.
 
-Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, an evaluation guide, a cold-start review note, a restrictive incubation-phase all-rights-reserved notice, a public security/sensitive-information policy, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, database, storage layer, orchestration framework, background service, hosted service, or provider adapter.
+Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, an evaluation guide, a cold-start review note, an MIT License, a public security/sensitive-information policy, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, database, storage layer, orchestration framework, background service, hosted service, or provider adapter.
 
 ## Current Artifact Set
 
 - `README.md`: public entry point, quick start, concept summary, and current/future boundary.
 - `AGENTS.md`: repository agent instructions that require future AI chats and agents to read YAIML memory and recognize natural-language SoT and YAIML-refresh requests.
-- `LICENSE.md`: restrictive incubation-phase rights notice; public visibility does not grant open-source reuse.
+- `LICENSE.md`: MIT License; Jeff Wirsing retains copyright ownership while anyone may use the repository materials under the license terms.
 - `SECURITY.md`: public guidance for sensitive reports and memory-hygiene risks.
 - `CONTRIBUTING.md`: contribution guardrails for preserving the concept.
 - `ROADMAP.md`: convention-first priorities and deferred-tooling boundary.
-- `yaiml.yml`: discovers this repository's YAIML document family and records the active YAIML revision.
+- `yaiml.yml`: tiny discovery file that records the active YAIML discovery version and points to this repository's YAIML document family.
 - `docs/SoTY.md`: current engineering state for YAIML.
 - `docs/ARCHITECTURE.md`: durable conceptual architecture and artifact responsibilities.
 - `docs/MAINTAINER_GUIDE.md`: current maintenance procedures and review checks.
@@ -64,7 +64,7 @@ Verified: This repository is currently plain Markdown and YAML guidance, templat
 
 People and teams using Codex, Claude, Gemini, Cursor, local models, or future AI chats and coding agents on projects where source code alone does not preserve enough meaning.
 
-Declared: YAIML should be usable by anyone evaluating or adopting the convention, including multi-agent and multi-contributor projects. Current reuse rights remain governed by `LICENSE.md` until the maintainer chooses an open license.
+Declared: YAIML should be usable by anyone evaluating or adopting the convention, including multi-agent and multi-contributor projects. Current reuse rights are governed by the MIT License in `LICENSE.md`.
 
 ## Decided
 
@@ -76,6 +76,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The default family is SoT, Architecture, and Maintainer Guide.
 - YAIML now has two initialization paths: `init-yaiml.md` for quick adoption and `initialize-yaiml.md` for deeper initialization.
 - YAIML revision `0.2` records the current convention-first docset posture.
+- `yaiml.yml` now uses a tiny nested discovery protocol with SemVer under `yaiml.version`; the version applies to the discovery/config shape and reference posture, not to every sentence in the Markdown memory documents.
+- Future validation, if any, should apply only to the small discovery file shape, not to human-authored Markdown project memory.
 - YAIML is for AI chats as well as coding agents; repository memory should survive provider changes, chat resets, agent handoffs, and contributor handoffs.
 - YAIML supports multi-agent and multi-contributor projects; conflicts should preserve evidence and uncertainty rather than being smoothed into false certainty.
 - YAIML distinguishes agent instruction files from project memory: instruction files tell agents how to behave; YAIML preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
@@ -84,6 +86,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - YAIML documents should usually be versioned with the source code; initialization should not add them to `.gitignore` by default.
 - YAIML-using projects should remain portable and shareable with their intended audience when their YAIML documents are maintained as repository-safe project memory: sanitized evidence, no secrets, no private transcripts, no raw sensitive logs, and no invented legal/security/privacy/ownership conclusions.
 - YAIML documents should be ordinary visible Markdown by default, not a custom `.yaiml` extension, hidden folder, cache, or tool-state format.
+- YAIML should keep near-zero dependency burden for adopters. Current adoption should not require a CLI, package, SDK, parser, validator for Markdown memory documents, MCP server, framework adapter, or hosted service.
 - Machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, and private workspace URLs should not be committed into YAIML documents. YAIML reference locations for "update YAIML" are per-workspace/per-agent context unless a stable team-approved source exists.
 - YAIML documents must not store raw secrets, credentials, tokens, private keys, passwords, customer personal data, private chat transcripts, or sensitive raw values.
 - AI-generated legal, licensing, ownership, copyright, trademark, patent, contract, or IP statements require caution. Preserve human-approved statements and uncertainty; do not invent rights claims.
@@ -95,7 +98,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Tooling is deferred.
 - A future init helper may improve on the one-time init flow, but YAIML should remain plain project-local files, not a package-manager dependency, runtime library, hosted platform, or build step.
 - Every proposed addition should answer: does this improve a new AI chat, coding agent, or contributor's ability to reconstruct the project's current engineering understanding?
-- The repository is public for visibility and review, but it is not open source yet. The intended audience is broad, including anyone working with AI chats or agents on software projects, but current reuse remains restricted until a license decision is made.
+- The repository is public for visibility, review, and use under the MIT License. The intended audience is broad, including anyone working with AI chats or agents on software projects.
 
 ## Meaningful Accomplishments
 
@@ -104,6 +107,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Stable headers now act as agent-facing orientation instead of rigid document contracts.
 - The README now uses a more human-facing front door, while guides, templates, prompts, and the fictional example carry the deeper YAIML project-memory doctrine.
 - Obsolete legacy-name migration language has been removed because current known adopters are local and already updated; new readers should encounter YAIML directly.
+- The discovery-file examples now use the nested `yaiml.version` / `core` / `supporting` shape instead of the older flat marker shape.
+- The repository now uses the MIT License, preserving Jeff Wirsing's copyright ownership while allowing public use, copying, modification, distribution, sublicensing, and sale under the license terms.
 - `prompts/init-yaiml.md` provides the small adoption path; `prompts/initialize-yaiml.md` remains the full self-contained initialization prompt for deeper repository setup.
 - Live init trials clarified that sanitized command outcomes should be recorded inside generated YAIML documents, not only in final chat output.
 - `docs/AGENT_INTEGRATION.md` clarifies the boundary between agent behavior instructions and YAIML project memory.
@@ -132,6 +137,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Authority and evidence guidance clearly separates human intent from implementation reality.
 - Pruning guidance directly addresses append-only state bloat.
 - The no-dependency/no-custom-format boundary is visible in the README, Architecture, Roadmap, and initialization prompt.
+- The `yaiml.yml` discovery protocol is now explicitly small and path-oriented, with validation deferred to that file only if validation is ever added.
 - Init, update, and audit prompts now consistently warn against private chat transcripts and raw sensitive logs in versioned YAIML memory.
 - The repository now has a lightweight method for collecting real-project case studies and cold-start comparison evidence.
 - Read-only local adoption sampling found YAIML-shaped project memory in four nearby repositories, giving modest evidence that the convention can exist across varied project shapes.
@@ -159,7 +165,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 
 ## Active Risks
 
-- Formalization drift: future changes could recreate schemas, conformance fixtures, normative spec language, package formats, or custom file extensions too early.
+- Formalization drift: future changes could recreate schemas for Markdown memory, conformance fixtures, normative spec language, package formats, or custom file extensions too early.
+- Standards-track drift: external adoption advice could push YAIML toward a separate formal spec repo, JSON Schema or JSON-LD as the center of project memory, validators for Markdown documents, SDKs, MCP or framework adapters, RFC machinery, or standards-body governance before the plain-file memory pattern is proven.
 - Tooling drift: a future init helper could become a dependency, runtime, hosted platform, or build step instead of serving project-local Markdown files.
 - Ceremony drift: self-unfolding documents could become empty files if agents create every possible supporting role instead of only what the project needs.
 - Context drift: agents could treat `yaiml.yml` as a command to load every document on every task, making YAIML too heavy for routine work.
@@ -189,7 +196,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 6. Explore a better init-helper shape while preserving the plain-file, no-dependency boundary.
 7. Keep the fictional example detailed enough to teach the pattern without implying it is proof.
 8. Refine pruning behavior from actual overgrown SoT documents.
-9. Prepare open-license and public-release readiness criteria for human decision.
+9. Prepare public-release readiness criteria, including contribution expectations, evidence requirements, release labeling, and clear MIT license communication.
 10. Decide the YAIML 0.2 sensitive-reporting path.
 11. Preserve YAIML's own dogfood documents after material changes.
 
@@ -211,6 +218,7 @@ Resolved: later refinements clarified stable headers, SoT naming, self-unfolding
 - YAIML is not a custom document file extension.
 - YAIML is not proof of agent productivity by itself.
 - YAIML is not a finished software platform.
+- YAIML is not currently a formal standards-body program, validator ecosystem, SDK family, MCP integration, or framework adapter layer.
 
 ## Future Possibilities
 
@@ -218,11 +226,9 @@ Possible later tooling includes repository initialization, document discovery, f
 
 ## Open Questions
 
-- What eventual public/open-source license, if any, should govern the repository and templates?
 - How strongly should YAIML enforce project-specific SoT filenames such as `SoTY.md`, `SoTT.md`, or `SoTC.md`?
 - Is `yaiml.yml` essential for the no-tooling phase, or should it be recommended but optional?
 - How strict should future tooling be without damaging the interpretive value of YAIML?
 - Which self-unfolded document roles are common enough to deserve first-class templates?
 - What is the smallest useful init helper, if tooling becomes appropriate, that reduces manual prompt handling without becoming a dependency or platform?
-- Which open license should be selected before broad public reuse?
-- What evidence threshold is enough to describe YAIML as a reusable standard rather than an incubating convention?
+- What evidence threshold is enough to describe YAIML as a reusable standard rather than an early public convention?

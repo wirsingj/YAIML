@@ -1,41 +1,17 @@
-yaiml: "0.2"
-standard: YAIML
-
-project:
-  id: yaiml
-  name: YAIML
-
-documents:
-  sot:
-    path: docs/SoTY.md
-    title: SoTY
-  architecture:
-    path: docs/ARCHITECTURE.md
-    title: YAIML Architecture
-  maintainer:
-    path: docs/MAINTAINER_GUIDE.md
-    title: YAIML Maintainer Guide
-
-supporting:
-  - path: docs/CONCEPTS.md
-    role: concept-guide
-  - path: docs/CORE_DOCUMENT_FAMILY.md
-    role: core-family-guide
-  - path: docs/STABLE_HEADERS.md
-    role: stable-header-guide
-  - path: docs/AMBIGUITY_AND_EVIDENCE.md
-    role: ambiguity-guide
-  - path: docs/PRUNING_AND_LIFECYCLE.md
-    role: lifecycle-guide
-  - path: docs/AGENT_INTEGRATION.md
-    role: agent-integration-guide
-  - path: docs/CONTEXT_LOADING.md
-    role: context-loading-guide
-  - path: docs/EVALUATION.md
-    role: evaluation-guide
-  - path: docs/COLD_START_REVIEW.md
-    role: cold-start-review
-  - path: docs/ADOPTION_AND_UPGRADES.md
-    role: adoption-upgrade-guide
-
-phase: incubation-convention-first
+yaiml:
+  version: "0.2.0"
+  core:
+    state: docs/SoTY.md
+    architecture: docs/ARCHITECTURE.md
+    maintainer_guide: docs/MAINTAINER_GUIDE.md
+  supporting:
+    concepts: docs/CONCEPTS.md
+    core_document_family: docs/CORE_DOCUMENT_FAMILY.md
+    stable_headers: docs/STABLE_HEADERS.md
+    ambiguity_and_evidence: docs/AMBIGUITY_AND_EVIDENCE.md
+    pruning_and_lifecycle: docs/PRUNING_AND_LIFECYCLE.md
+    agent_integration: docs/AGENT_INTEGRATION.md
+    context_loading: docs/CONTEXT_LOADING.md
+    evaluation: docs/EVALUATION.md
+    cold_start_review: docs/COLD_START_REVIEW.md
+    adoption_and_upgrades: docs/ADOPTION_AND_UPGRADES.md

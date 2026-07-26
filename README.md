@@ -33,6 +33,8 @@ MAINTAINER_GUIDE.md
 yaiml.yml
 ```
 
+`yaiml.yml` only tells future chats, agents, and possible tools where the project memory lives. It is not a schema for the Markdown documents.
+
 Use this flow when you want to try the idea in a few minutes:
 
 1. Run the small init prompt once: [prompts/init-yaiml.md](prompts/init-yaiml.md).
@@ -118,7 +120,7 @@ YAIML is not:
 - a background service;
 - a replacement for source code, tests, Git history, issues, or agent instruction files.
 
-Future tools may help initialize, discover, audit, prune, or assemble context. They should serve the plain-file convention rather than redefine YAIML as software infrastructure.
+Future tools may help initialize, discover, audit, prune, or assemble context. If validation ever appears, it should stay around the tiny `yaiml.yml` discovery file, not the human-authored Markdown memory. Tools should serve the plain-file convention rather than redefine YAIML as software infrastructure.
 
 ## Positioning
 
@@ -163,11 +165,9 @@ Read my request, read the repository's YAIML documents, inspect the relevant imp
 
 ## Maturity And License
 
-YAIML is currently in an incubation and review phase. The repository is public for visibility and feedback, and its intended audience is broad, but reuse is intentionally restricted during this phase.
+YAIML is currently in an early public review phase. The repository is public so people can read it, use it, adapt it, and give feedback.
 
-No open-source license is currently granted. See [LICENSE.md](LICENSE.md). The maintainer intends to choose an open license before broad public reuse, but no license or release date has been selected.
-
-The current restriction is temporary project protection, not YAIML's intended permanent adoption model.
+YAIML is licensed under the [MIT License](LICENSE.md). Jeff Wirsing retains copyright ownership, and the license allows anyone to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the material, subject to the license terms.
 
 For sensitive reports or memory-hygiene concerns, see [SECURITY.md](SECURITY.md). Do not put secrets, credentials, personal data, private chat transcripts, raw sensitive logs, exploit details, or confidential project information into public YAIML documents, examples, issues, or pull requests.
 

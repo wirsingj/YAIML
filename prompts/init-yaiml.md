@@ -12,7 +12,7 @@ Before editing, inspect the current worktree state. Treat existing uncommitted c
 
 Create a plain Markdown project-memory loop that preserves the repository's current interpreted engineering understanding across future disposable AI chats, coding-agent sessions, and contributor handoffs.
 
-YAIML means YAIML. It is a documentation standard and reusable template docset, not a package, runtime, schema, parser target, hosted memory service, database, storage layer, orchestration framework, SDK, autonomous coding agent, or required CLI. It is ordinary version-controlled project memory.
+YAIML means YAIML. It is a lightweight plain-file convention and reusable template docset, not a package, runtime, schema for Markdown memory, parser target, hosted memory service, database, storage layer, orchestration framework, SDK, autonomous coding agent, or required CLI. It is ordinary version-controlled project memory.
 
 Assume the repository may later be touched by multiple humans, multiple AI chats, and multiple agents. Preserve conflicts, uncertainty, and evidence instead of flattening disagreement into false certainty.
 
@@ -76,25 +76,15 @@ Adapt `role`, `title`, `purpose`, and guidance for Architecture and Maintainer G
 ## Suggested `yaiml.yml`
 
 ```yaml
-yaiml: "0.2"
-
-project:
-  id: my-project
-  name: My Project
-
-documents:
-  sot:
-    path: SOT.md
-    title: SOT
-  architecture:
-    path: ARCHITECTURE.md
-    title: Architecture
-  maintainer:
-    path: MAINTAINER_GUIDE.md
-    title: Maintainer Guide
+yaiml:
+  version: "0.2.0"
+  core:
+    state: SOT.md
+    architecture: ARCHITECTURE.md
+    maintainer_guide: MAINTAINER_GUIDE.md
 ```
 
-Keep `yaiml.yml` portable. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
+Keep `yaiml.yml` portable and boring. It is a discovery file, not a schema for the Markdown documents. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
 
 ## Core Document Jobs
 

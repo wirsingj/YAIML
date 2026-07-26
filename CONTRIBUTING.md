@@ -1,6 +1,6 @@
 # Contributing to YAIML
 
-YAIML is an incubating convention and reusable template docset for living project memory, project definition, project management, and AI-chat, agent, and contributor continuity in AI-assisted development.
+YAIML is an early public convention and reusable template docset for living project memory, project definition, project management, and AI-chat, agent, and contributor continuity in AI-assisted development.
 
 Contributions should make the convention clearer, more useful, easier to apply, or harder for agents to misuse.
 
@@ -8,24 +8,24 @@ The value of YAIML is the convention for preserving project understanding, not t
 
 ## Ground Rules
 
-- Keep the center on living project memory, not schema design.
+- Keep the center on living project memory, not schema design for Markdown documents.
 - Do not add CLIs, SDKs, package manifests, provider adapters, web apps, or parser implementations during the convention-first phase.
-- Do not add conformance fixtures or formal validation machinery unless the project explicitly changes phase.
+- Do not add conformance fixtures or formal validation machinery for Markdown memory documents unless the project explicitly changes phase.
 - Preserve the distinction between human intent and implementation evidence.
 - Preserve the distinction between SoT, durable Architecture, and procedural Maintainer guidance.
 - Preserve the self-unfolding document model: add supporting documents when they clarify recurring project memory, definitions, risks, preferences, or doctrine; avoid empty ceremony.
 - Treat examples and templates as supporting artifacts that must stay aligned with the concepts.
 - Prefer one strong template or prompt over several weak variants.
 - Use ordinary engineering language before introducing YAIML-specific terms.
-- Keep `yaiml.yml` as a lightweight discovery/version marker, not a schema or local-reference store.
+- Keep `yaiml.yml` as a tiny discovery protocol, not a schema for Markdown memory documents or a local-reference store.
 - Preserve mature repository-specific YAIML documents during upgrades; do not replace them with generic templates.
 - Report contradictions instead of smoothing them into confident prose.
 
 ## Licensing
 
-This repository currently uses a restrictive all-rights-reserved notice during incubation. Do not replace it with an open-source license, license header, or broader public reuse claim without explicit human approval.
+YAIML is licensed under the MIT License. Jeff Wirsing retains copyright ownership, and anyone may use, copy, modify, publish, distribute, sublicense, or sell copies under the license terms.
 
-The maintainer intends to choose an open license before broad public reuse, but no license or release date has been selected.
+Do not change the license, add license headers, or make new trademark, ownership, or endorsement claims without explicit maintainer approval.
 
 ## Review Checklist
 
