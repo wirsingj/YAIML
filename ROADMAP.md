@@ -4,7 +4,7 @@ YAIML is in an early public convention-first phase. The current goal is to make 
 
 The long-term ambition is industry-standard adoption. The path is practical: keep adoption cheap, prove usefulness in real projects, invite outside feedback, and let maturity claims follow evidence.
 
-The current init paths are `prompts/init-yaiml.md` for quick adoption and `prompts/full-init-yaiml.md` for deeper repository setup. The primary adoption route is still copy/paste prompt text, not a download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
+The current init path is `prompts/init-yaiml.md`. It is self-contained enough for first-time adoption without requiring a separate full-init prompt, download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
 
 Near-term work should make the existing philosophy clearer, smaller, and more durable before adding more framework surface.
 
@@ -22,7 +22,7 @@ Near-term work should make the existing philosophy clearer, smaller, and more du
 - Keep YAIML's own SoTY, Architecture, and Maintainer Guide short and honest.
 - Add only examples that reveal how the pattern behaves in use.
 - Refine self-unfolding document guidance so agents add useful supporting documents without creating empty ceremony.
-- Keep the minimum viable adoption path smaller than the full initializer.
+- Keep the init prompt usable as the single copy/paste adoption path without making the README front door heavy.
 - Apply the cold-start evaluation method to real repositories without fabricating proof, including at least one mature local repo, one unfamiliar public repo, and one repo owned by another developer.
 - Check YAIML 0.2 readiness by initializing or upgrading YAIML in repositories intended to move across machines, contributors, and AI chat provider instances, then verifying the generated memory remains useful without exposing private material.
 - Prepare a concise enterprise-safe KT/demo path for a manager or senior-engineering audience: explain the repeated-context problem, show copy/paste initialization, demonstrate fresh-session recovery, and keep examples sanitized and policy-safe.

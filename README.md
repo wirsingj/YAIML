@@ -30,7 +30,7 @@ In company or regulated repositories, "safe enough for the repo" means allowed b
 
 ## Try It In A Repo
 
-The easiest way to try YAIML is to paste one setup prompt into your AI coding tool. The agent inspects the repo, creates the small project-memory files, and wires future sessions to read them.
+The easiest way to try YAIML is to paste one setup prompt into an approved AI coding tool. The agent inspects the repo, creates the small project-memory files, and wires future sessions to read them.
 
 You should not need to make a bunch of folders by hand, download this repo, install a package, or add a dependency just to try it.
 
@@ -51,7 +51,7 @@ Day to day, you should be able to speak normally: "read YAIML and continue throu
 
 If YAIML itself has changed, use "update YAIML" or [prompts/update-yaiml.md](prompts/update-yaiml.md) to refresh the local prompts, templates, and guidance from a reference you provide. Keep the project's own memory intact. Do not commit machine-specific paths or local workspace links into project memory.
 
-For the full first-time adoption and existing YAIML update workflows, see [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md).
+For first-time adoption and existing YAIML update workflows, see [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md).
 
 ## What It Creates
 
@@ -65,12 +65,6 @@ yaiml.yml
 ```
 
 The Markdown files are project memory. `yaiml.yml` only tells future chats, agents, and possible tools where that memory lives. It is not a schema for the Markdown documents.
-
-## Full Initialization
-
-Use [prompts/full-init-yaiml.md](prompts/full-init-yaiml.md) when the repository needs a deeper first pass: more evidence guidance, supporting documents where they are actually useful, safety boundaries, and fuller starter shapes.
-
-The full initializer includes enough context to work in another repository without this repo open beside it. It still creates ordinary Markdown files in that project. It is not a package install, runtime, build step, hosted service, schema system, or required CLI.
 
 ## Core Documents
 
@@ -161,7 +155,6 @@ YAIML needs real-project evidence. Use [Evaluation And Case Studies](docs/EVALUA
 These prompts are helpers, not required ceremony. In a healthy YAIML repository, you should not be pasting a prompt after every change. The core documents and agent instructions should already guide normal reading, updating, and pruning.
 
 - Initialize YAIML in a repository: [prompts/init-yaiml.md](prompts/init-yaiml.md)
-- Do a fuller initialization pass: [prompts/full-init-yaiml.md](prompts/full-init-yaiml.md)
 - Rehydrate a session when the agent needs explicit help: [prompts/hydrate-agent-session.md](prompts/hydrate-agent-session.md)
 - Repair stale memory after meaningful work: [prompts/update-project-memory.md](prompts/update-project-memory.md)
 - Refresh local YAIML convention files from a human-provided or workspace-local reference: [prompts/update-yaiml.md](prompts/update-yaiml.md)

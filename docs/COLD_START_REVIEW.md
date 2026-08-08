@@ -45,9 +45,9 @@ The current front door also explains that YAIML portability is independent of an
 - A new AI session can see supporting templates for several high-leverage self-unfolded roles without being told to create every role by default.
 - A new AI session can identify `SOT.md` as the recommended default filename and project-specific names such as `SoTY.md` or `SoTT.md` as optional project character.
 - A new AI session can follow the read, execute, update lifecycle from the README and prompts.
-- A new AI session can choose `prompts/init-yaiml.md` for a small trial or `prompts/full-init-yaiml.md` for a deeper repository initialization.
+- A new AI session can use `prompts/init-yaiml.md` as the single first-time repository initialization prompt.
 - A new AI session can identify `prompts/update-yaiml.md` as the workflow for refreshing local YAIML scaffolding from a human-provided or workspace-local reference without overwriting project memory.
-- A new AI session can paste `prompts/full-init-yaiml.md` into another repository without also needing this repository's support docs open.
+- A new AI session can paste `prompts/init-yaiml.md` into another repository without also needing this repository's support docs open.
 - A new AI session can see that initial YAIML setup should teach "update YAIML" / "check new YAIML" through Maintainer Guide and the repository's agent-instruction surface, without committing machine-specific reference paths.
 - A new AI session can identify the context-loading layers and avoid reading unrelated supporting documents for a narrow task.
 - A new AI session can identify that Canopy Dispatch is an example, not proof, and that real case studies should use `docs/EVALUATION.md`.

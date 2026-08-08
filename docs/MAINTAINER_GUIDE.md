@@ -89,7 +89,7 @@ Run these manually after meaningful edits:
 - Check that init prompts and README agree on how existing agent instruction files should point future AI chats and agents toward YAIML.
 - Check that init prompts, README, and `docs/AGENT_INTEGRATION.md` agree that initialization updates relevant existing instruction files, creates a small provider-neutral `AGENTS.md` when none exist, and avoids creating provider-specific files solely for YAIML unless the human asks.
 - Check that init prompts and `templates/core/MAINTAINER_GUIDE.md` teach "update YAIML" / "check new YAIML" as a convention-refresh request, not a project-memory rewrite.
-- Check that `prompts/full-init-yaiml.md` remains self-contained enough to use in an unrelated repository without assuming this repo's docs are attached.
+- Check that `prompts/init-yaiml.md` remains self-contained enough to use in an unrelated repository without assuming this repo's docs are attached.
 - Check that generic initialization examples recommend `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` by default while allowing project-specific SoT names.
 - Check that `docs/AGENT_INTEGRATION.md` keeps YAIML distinct from agent behavior instructions.
 - Check that `docs/EVALUATION.md` requests real evidence without inventing adoption claims, metrics, or proof.
@@ -133,7 +133,7 @@ Run these manually after meaningful edits:
 - `docs/PROJECT_INDEPENDENCE.md`: public personal-project posture and employer-data hygiene boundary.
 - `templates/core/`: starter documents users copy into projects.
 - `prompts/update-yaiml.md`: upgrade and convention-refresh workflow for adopting repositories with a human-provided or workspace-local YAIML reference.
-- `prompts/`: fallback and maintenance workflows; `init-yaiml.md` should stay small and usable as a one-time adoption prompt, while `full-init-yaiml.md` should carry deeper context for a no-prior-YAIML agent.
+- `prompts/`: fallback and maintenance workflows; `init-yaiml.md` should be the single self-contained one-time adoption prompt.
 
 ## Danger Files
 
@@ -146,8 +146,7 @@ Run these manually after meaningful edits:
 - `templates/core/SOT.md`: default SoT starter template; easy place to normalize append-only memory or make project-specific naming feel required.
 - `templates/supporting/`: easy place to imply every possible supporting document should exist in every project.
 - `prompts/hydrate-agent-session.md`: easy place to accidentally load every supporting document for every task.
-- `prompts/full-init-yaiml.md`: easy place to accidentally authorize code changes during initialization, make YAIML private-by-default, or allow unsafe legal/IP claims.
-- `prompts/init-yaiml.md`: easy place to become too large or to omit evidence discipline.
+- `prompts/init-yaiml.md`: easy place to become too large, omit evidence discipline, accidentally authorize code changes during initialization, make YAIML private-by-default, or allow unsafe legal/IP claims.
 - `docs/EVALUATION.md`: easy place to accidentally fabricate proof or imply a benchmark suite exists.
 - `docs/STABLE_HEADERS.md`: easy place to drift into schema design.
 - `docs/ADOPTION_AND_UPGRADES.md`: easy place to accidentally turn adoption or upgrade into a generic template-copy operation.
@@ -190,7 +189,7 @@ Begin here:
 Symptoms:
 
 - README first asks users to understand every supporting document role;
-- the copy/paste try-it path is hidden below the full initializer or file checklist;
+- the copy/paste try-it path is hidden below a file checklist or competing setup route;
 - users must invent a project-specific SoT filename before trying YAIML;
 - quick start makes ongoing YAIML use sound like repeated prompt-pasting instead of repository-carried guidance;
 - licensing or maturity caveats bury the actual first-use path.

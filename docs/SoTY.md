@@ -71,8 +71,7 @@ Verified: This repository is currently plain Markdown and YAML guidance, templat
 - `templates/core/`: starter SoT, Architecture, and Maintainer Guide.
 - `templates/supporting/`: supporting document starters for self-unfolded roles such as domain, legal/compliance, preferences, product doctrine, risk review, security memory, and terms/glossary.
 - `prompts/`: provider-neutral workflows for initialization, hydration, project-memory update, YAIML convention refresh, audit, pruning, and realignment.
-- `prompts/init-yaiml.md`: smallest useful one-time adoption prompt.
-- `prompts/full-init-yaiml.md`: full self-contained initialization prompt for deeper setup when the agent does not have the rest of this repository open.
+- `prompts/init-yaiml.md`: single self-contained one-time adoption prompt.
 - `prompts/update-yaiml.md`: refresh workflow for adopting repositories that need to compare their local YAIML prompts/templates/guidance with a human-provided or workspace-local YAIML reference while preserving project-specific memory.
 - `examples/canopy-dispatch/`: robust fictional example with SoTD, architecture, maintainer, and release/trust memory.
 
@@ -90,7 +89,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - SoT is the central artifact. SoT means State Of The.
 - `SOT.md` is the recommended default SoT filename for unfamiliar repositories; project-specific names such as this repository's `SoTY.md` remain supported when they add useful project character.
 - The default family is SoT, Architecture, and Maintainer Guide.
-- YAIML now has two clearly named initialization paths: `init-yaiml.md` for quick adoption and `full-init-yaiml.md` for deeper self-contained initialization.
+- YAIML now has one first-time initialization path: `init-yaiml.md`, a self-contained copy/paste adoption prompt.
 - YAIML revision `0.2` records the current convention-first docset posture.
 - YAIML 0.2 should freeze the tiny core surface around `yaiml.yml`, SoT, Architecture, Maintainer Guide, discovery/loading behavior, evidence states, and update/pruning expectations while real adoption trials run.
 - `yaiml.yml` now uses a tiny nested discovery protocol with SemVer under `yaiml.version`; the version applies to the discovery/config shape and reference posture, not to every sentence in the Markdown memory documents.
@@ -133,7 +132,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - `CONTRIBUTING.md` now states that inbound contributions are provided under the repository's MIT License and must not include employer-confidential, unauthorized third-party, secret, private, or sensitive material.
 - `docs/PROJECT_INDEPENDENCE.md` records the maintainer's public, personal-project posture and employer-data hygiene boundary without presenting legal advice.
 - The README now keeps the copyright/licensing posture visible while clarifying that it does not interpret employment, contractor, or invention-assignment agreements.
-- `prompts/init-yaiml.md` provides the small adoption path; `prompts/full-init-yaiml.md` provides the full self-contained initialization prompt for deeper repository setup.
+- `prompts/init-yaiml.md` now combines the earlier minimal and full initialization routes into one self-contained first-use prompt so new adopters do not have to choose between two similar files.
 - Live init trials clarified that sanitized command outcomes should be recorded inside generated YAIML documents, not only in final chat output.
 - `docs/AGENT_INTEGRATION.md` clarifies the boundary between agent behavior instructions and YAIML project memory.
 - `docs/AGENT_INTEGRATION.md` now clarifies init behavior for multi-provider repositories: update existing relevant instruction files, or create a small provider-neutral `AGENTS.md` when no instruction surface exists.
@@ -231,7 +230,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 
 1. Freeze YAIML 0.2's tiny core while continuing wording and evidence refinements that make adoption cheaper and safer for shared or governed repositories.
 2. Prepare a concise enterprise-safe KT/demo path: explain the repeated-context problem, show the copy/paste init path, demonstrate fresh-session recovery, and keep all examples sanitized and policy-safe.
-3. Continue trialing `init-yaiml.md`, `full-init-yaiml.md`, and `update-yaiml.md` on unrelated real repositories and record where agents misunderstand the concept.
+3. Continue trialing `init-yaiml.md` and `update-yaiml.md` on unrelated real repositories and record where agents misunderstand the concept.
 4. Apply the cold-start evaluation method to real projects without overclaiming results, including one mature local repo, one unfamiliar public repo, and one repo owned by another developer.
 5. Test whether agents choose useful self-unfolded supporting documents without creating empty ceremony, using the "several concrete recurring pieces of knowledge" heuristic.
 6. Test whether the context-loading model keeps routine tasks bounded while still surfacing task-relevant supporting memory.
