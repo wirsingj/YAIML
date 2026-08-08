@@ -4,7 +4,7 @@ YAIML is in an early public convention-first phase. The current goal is to make 
 
 The long-term ambition is industry-standard adoption. The path is practical: keep adoption cheap, prove usefulness in real projects, invite outside feedback, and let maturity claims follow evidence.
 
-The current init paths are `prompts/init-yaiml.md` for quick adoption and `prompts/initialize-yaiml.md` for deeper repository setup. The primary adoption route is still copy/paste prompt text, not a download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
+The current init paths are `prompts/init-yaiml.md` for quick adoption and `prompts/full-init-yaiml.md` for deeper repository setup. The primary adoption route is still copy/paste prompt text, not a download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
 
 Near-term work should make the existing philosophy clearer, smaller, and more durable before adding more framework surface.
 

@@ -1,6 +1,6 @@
-# Initialize YAIML In An Existing Project
+# Full Init YAIML
 
-You are an AI coding assistant adding YAIML living project memory to an existing repository.
+You are an AI coding assistant adding a full YAIML living project-memory setup to a new or existing repository.
 
 This prompt must work even if you have no access to the YAIML repository, templates, guides, or prior chat. Treat the guidance below as the embedded self-contained version of YAIML.
 

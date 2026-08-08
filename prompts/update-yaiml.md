@@ -40,7 +40,7 @@ Inspect the reference repository or reference files for:
 
 - README front-door guidance;
 - `prompts/init-yaiml.md`;
-- `prompts/initialize-yaiml.md`;
+- `prompts/full-init-yaiml.md`;
 - `prompts/hydrate-agent-session.md`;
 - `prompts/update-project-memory.md`;
 - `prompts/audit-against-reality.md`;
