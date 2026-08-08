@@ -160,8 +160,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The front door now presents YAIML as a one-time init plus repository-carried project memory, not a sequence of repeated pasted prompts.
 - The intended day-to-day interaction can be natural human language such as "continue through the SoT priorities" or "update our SoT" because the repository already holds the guiding context.
 - The concept now explicitly covers shared AI-chat, multi-agent, and multi-contributor continuity rather than only a single recurring coding-agent relationship.
-- The init prompts now wire YAIML into the repository's agent-instruction surface: update all relevant existing instruction files, or create a small provider-neutral `AGENTS.md` when none exist.
-- The minimal init prompt now names the core evidence labels directly, making blind use in unrelated repositories less dependent on the rest of this repository being open beside it.
+- The init prompt now wires YAIML into the repository's agent-instruction surface: update all relevant existing instruction files, or create a small provider-neutral `AGENTS.md` when none exist.
+- The init prompt names the core evidence labels directly, making blind use in unrelated repositories less dependent on the rest of this repository being open beside it.
 - `prompts/update-yaiml.md` gives adopters a thin natural-language path for "update YAIML" when the YAIML reference changes, without turning YAIML into a package, CLI, dependency, or schema migration.
 - Initial YAIML setup now teaches phrases such as "updated YAIML" and "check new YAIML" through the generated Maintainer Guide and the repository's agent-instruction surface, while keeping machine-specific YAIML reference paths out of committed project memory.
 - The self-unfolding document model can adapt to project domains without requiring every project to use every document.
@@ -187,7 +187,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The framework has one robust fictional example and a small read-only local adoption sample, but it still needs controlled adoption trials on real repositories, including evidence outside the maintainer's own portfolio.
 - The SoT naming posture now favors `SOT.md` as the boring default while preserving project-specific names; this still needs validation with first-time readers.
 - The manifest is useful for discovery, but it is not yet proven whether it should be required for all adopters.
-- The prompt pack has not yet been exercised enough to know which instructions agents routinely miss; the minimum and full initialization prompts both need broader real-world validation.
+- The prompt pack has not yet been exercised enough to know which instructions agents routinely miss; the single self-contained init prompt needs broader real-world validation.
 - The context-loading guide is conceptually clear but untested under real context-window pressure.
 - The case-study and cold-start evaluation method is only a proposed evidence path until used on real repositories.
 - The future init-helper shape is intentionally undefined; it needs to reduce manual prompt handling without becoming a package dependency or platform.
@@ -196,7 +196,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The prompt library can easily read like a required operating checklist; it should remain framed as fallback and maintenance help for cases where the repository's own YAIML guidance is not enough.
 - Field feedback suggests agents benefit from explicit instruction to update only affected YAIML documents after material changes and prune stale state; guidance should keep that behavior visible without making updates ceremonial.
 - Cleanup/compression trigger wording needs real adoption trials to confirm agents reduce bloat without deleting human direction, active risk, unresolved uncertainty, or governed retention material.
-- The init prompts still need more real-repository trials to confirm they add agent-instruction pointers cleanly without overwriting local guidance.
+- The init prompt still needs more real-repository trials to confirm it adds agent-instruction pointers cleanly without overwriting local guidance.
 - The YAIML refresh prompt and init-time maintenance note need real trials across existing YAIML-adopting projects to confirm agents remove committed local reference paths while preserving local memory.
 - Adopter cleanup still needs validation outside this local workspace before the guidance can be treated as broadly proven.
 - The enterprise pitch still needs a concise, manager-readable demo path that avoids internal YAIML vocabulary until the problem and value are obvious.
@@ -253,7 +253,7 @@ No active divergence currently identified in the repository's declared concept v
 
 Resolved: an earlier version centered on `SPEC.md`, schemas, conformance fixtures, and formal standard language. That material was removed during the foundational realignment.
 
-Resolved: later refinements clarified stable headers, SoT naming, self-unfolding supporting documents, versioned-by-default memory, ordinary Markdown files, safety/legal/IP hygiene, bounded context loading, init versus full initialization, evaluation evidence paths, prompt-library fallback framing, and the no-dependency init-helper boundary.
+Resolved: later refinements clarified stable headers, SoT naming, self-unfolding supporting documents, versioned-by-default memory, ordinary Markdown files, safety/legal/IP hygiene, bounded context loading, the single self-contained init path, evaluation evidence paths, prompt-library fallback framing, and the no-dependency init-helper boundary.
 
 ## Rejected Framings
 

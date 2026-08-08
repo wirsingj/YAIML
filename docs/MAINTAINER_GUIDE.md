@@ -86,10 +86,10 @@ Run these manually after meaningful edits:
 - Compare prompt instructions with `docs/STABLE_HEADERS.md`, `docs/AMBIGUITY_AND_EVIDENCE.md`, and `docs/PRUNING_AND_LIFECYCLE.md`.
 - Compare `prompts/hydrate-agent-session.md` with `docs/CONTEXT_LOADING.md`.
 - Compare `prompts/init-yaiml.md` with the README try-it path and expected created files.
-- Check that init prompts and README agree on how existing agent instruction files should point future AI chats and agents toward YAIML.
-- Check that init prompts, README, and `docs/AGENT_INTEGRATION.md` agree that initialization updates relevant existing instruction files, creates a small provider-neutral `AGENTS.md` when none exist, and avoids creating provider-specific files solely for YAIML unless the human asks.
-- Check that init prompts and `templates/core/MAINTAINER_GUIDE.md` teach "update YAIML" / "check new YAIML" as a convention-refresh request, not a project-memory rewrite.
-- Check that init prompts, agent integration guidance, and `templates/core/MAINTAINER_GUIDE.md` teach "clean up YAIML" / "compress YAIML" / "compact project memory" / "prune SoT" as cleanup/compression requests, not new feature work or archive creation.
+- Check that the init prompt and README agree on how existing agent instruction files should point future AI chats and agents toward YAIML.
+- Check that the init prompt, README, and `docs/AGENT_INTEGRATION.md` agree that initialization updates relevant existing instruction files, creates a small provider-neutral `AGENTS.md` when none exist, and avoids creating provider-specific files solely for YAIML unless the human asks.
+- Check that the init prompt and `templates/core/MAINTAINER_GUIDE.md` teach "update YAIML" / "check new YAIML" as a convention-refresh request, not a project-memory rewrite.
+- Check that the init prompt, agent integration guidance, and `templates/core/MAINTAINER_GUIDE.md` teach "clean up YAIML" / "compress YAIML" / "compact project memory" / "prune SoT" as cleanup/compression requests, not new feature work or archive creation.
 - Check that `prompts/init-yaiml.md` remains self-contained enough to use in an unrelated repository without assuming this repo's docs are attached.
 - Check that generic initialization examples recommend `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` by default while allowing project-specific SoT names.
 - Check that `docs/AGENT_INTEGRATION.md` keeps YAIML distinct from agent behavior instructions.
@@ -200,7 +200,7 @@ Symptoms:
 Begin here:
 
 1. Preserve the one-sentence definition.
-2. Keep the minimum flow visible before the full initialization path.
+2. Keep the single init path visible before file checklists or deeper doctrine.
 3. Link deeper doctrine instead of repeating all of it in the README.
 4. Keep `SOT.md` as the generic default.
 5. Frame prompt files as optional support for initialization, convention refresh, repair, audit, pruning, and realignment.
