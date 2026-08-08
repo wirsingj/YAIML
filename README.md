@@ -47,7 +47,7 @@ After it runs:
 
 If a tool ignores the repo's instruction file, YAIML still works. Start that session by telling the agent or chat to read `yaiml.yml` first. The goal is not to paste a workflow prompt after every step. The goal is for the repository to carry enough context that the next session can orient itself from the files already there.
 
-Day to day, you should be able to speak normally: "read YAIML and continue through the SoT priorities," "check the SoT before changing this," or "update our SoT after this work." YAIML makes those small instructions meaningful because the repository already contains the context.
+Day to day, you should be able to speak normally: "read YAIML and continue through the State Of The (SoT) priorities," "check the SoT before changing this," or "update our SoT after this work." YAIML makes those small instructions meaningful because the repository already contains the context.
 
 If YAIML itself has changed, use "update YAIML" or [prompts/update-yaiml.md](prompts/update-yaiml.md) to refresh the local prompts, templates, and guidance from a reference you provide. Keep the project's own memory intact. Do not commit machine-specific paths or local workspace links into project memory.
 
