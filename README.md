@@ -1,6 +1,6 @@
 # YAIML
 
-#Agents forget. Projects shouldn’t.
+Agents forget. Projects shouldn’t.
 
 
 YAIML is a lightweight project-memory convention for software repositories that use AI chats, coding agents, or AI-assisted workflows.
