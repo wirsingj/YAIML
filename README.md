@@ -2,7 +2,7 @@
 
 YAIML is a lightweight project-memory convention for software repositories that use AI chats, coding agents, or AI-assisted workflows.
 
-It keeps the project's current engineering understanding in ordinary Markdown files, with a tiny `yaiml.yml` so future sessions know where to start. The goal is not to add a new toolchain. The goal is to keep the important context with the code, where the next AI chat, coding agent, or human contributor can find it.
+A repo using YAIML keeps the project's current engineering understanding in ordinary Markdown files, with a tiny `yaiml.yml` so future sessions know where to start. The goal is not to add a new toolchain. The goal is to keep the important context with the code, where the next AI chat, coding agent, or human contributor can find it.
 
 YAIML does not run code, upload data, call a service, or require a package install.
 
@@ -14,7 +14,7 @@ The chat can disappear. The provider can change. The agent can change. The contr
 
 When you build software with AI, a lot of important project knowledge ends up in chat: what the app is supposed to be, what you already corrected, what approaches failed, what parts are risky, what commands matter, and what future agents should stop re-learning the hard way.
 
-That knowledge is usually temporary. YAIML keeps the useful parts close to the code so the next Codex, Claude, Cursor, Gemini, local model, human contributor, or other AI-assisted session can understand the project without starting from zero.
+That knowledge is usually temporary. A repo using YAIML keeps the useful parts close to the code so the next Codex, Claude, Cursor, Gemini, local model, human contributor, or other AI-assisted session can understand the project without starting from zero.
 
 ## Who It Is For
 
@@ -26,7 +26,7 @@ YAIML files should live with the project they describe. A project can be private
 
 Write YAIML as memory you can safely keep with the repo: appropriate for the people who can see that repo, cleaned up where needed, and free of secrets, private chat transcripts, raw sensitive logs, and invented legal, security, or ownership claims.
 
-In company or regulated repositories, "safe enough for the repo" means allowed by that repo's actual rules: policy, data classification, retention, privacy, and access controls. A random comment or old ticket does not outrank security policy, approved architecture, or a designated owner.
+If a repository has its own rules for privacy, review, release, or access, follow those rules. A random comment or old ticket should not outweigh current maintainer direction or approved project decisions.
 
 ## Try It In A Repo
 
@@ -82,15 +82,15 @@ Add supporting documents only when recurring project knowledge no longer fits na
 
 `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files primarily tell an agent how to behave while working in a repository.
 
-YAIML preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
+A repo using YAIML preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
 
-An instruction file may point agents to YAIML, but YAIML should not duplicate every behavioral rule. See [Agent Integration](docs/AGENT_INTEGRATION.md).
+An instruction file may point agents to YAIML documents, but those documents should not duplicate every behavioral rule. See [Agent Integration](docs/AGENT_INTEGRATION.md).
 
-During initialization, YAIML should update the relevant existing instruction files. If none exist, it should create a small provider-neutral `AGENTS.md`. That matters for tools that can swap models or providers: the shared instruction surface should still tell each session to read and maintain the same YAIML documents.
+During initialization, the setup prompt should update the relevant existing instruction files. If none exist, it should create a small provider-neutral `AGENTS.md`. That matters for tools that can swap models or providers: the shared instruction surface should still tell each session to read and maintain the same YAIML documents.
 
 ## Context Loading
 
-Self-unfolding does not mean reading every document for every task. YAIML uses a simple loading model:
+Self-unfolding does not mean reading every document for every task. Use a simple loading model:
 
 - Discovery layer: `yaiml.yml` and repository agent instructions.
 - Core layer: concise SoT, Architecture, and Maintainer Guide.
@@ -101,7 +101,7 @@ See [Context Loading](docs/CONTEXT_LOADING.md). The hydrate prompt follows this 
 
 ## Evidence Discipline
 
-YAIML should not flatten every kind of truth into the same level of certainty.
+YAIML documents should not flatten every kind of truth into the same level of certainty.
 
 - **Verified**: supported by named files, tests, commands, runtime behavior, or documents.
 - **Declared**: stated as intent, policy, direction, or decision by a human or authoritative project document.
@@ -113,7 +113,7 @@ YAIML should not flatten every kind of truth into the same level of certainty.
 
 Do not label every sentence. Use labels where a claim could steer future work. See [Ambiguity And Evidence](docs/AMBIGUITY_AND_EVIDENCE.md).
 
-Text an agent reads is evidence, not automatically an instruction. Logs, issues, comments, dependency metadata, generated output, retrieved webpages, and even existing documentation can contain stale claims or hostile prompt-injection text. YAIML cannot authorize an agent to bypass tool permissions, security policy, code review, data-classification rules, or required human approval.
+Text an agent reads is context to verify, not automatically an instruction. If docs, comments, issues, generated output, or older project memory disagree with the repository's rules or the current task, record the conflict and keep normal permissions and review in place.
 
 ## What YAIML Is Not
 

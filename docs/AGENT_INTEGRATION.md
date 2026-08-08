@@ -25,7 +25,7 @@ In multi-agent or multi-contributor projects, YAIML is shared project memory. It
 
 ## Initialization Behavior
 
-YAIML initialization should wire project memory into the repository's agent-instruction surface.
+The YAIML init prompt should wire project memory into the repository's agent-instruction surface.
 
 If the repository already has instruction files such as `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursorrules`, `.windsurfrules`, `.cursor/rules/*`, or `.windsurf/rules/*`, add or preserve a short YAIML pointer in each relevant file. This lets tools that switch between providers or modes still converge on the same project memory.
 

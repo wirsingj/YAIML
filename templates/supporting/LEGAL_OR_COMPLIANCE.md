@@ -17,7 +17,7 @@ This template is for projects that need explicit legal or compliance memory. It 
 
 Do not use this document to generate new legal conclusions. Record human-approved constraints, known repository evidence, approval requirements, and open questions for humans.
 
-Use the repository's governing approval, data-classification, retention, privacy, and access-control rules. YAIML records permitted project memory; it does not decide what the organization permits or what legal/compliance conclusion is correct.
+Use the repository's governing approval, retention, privacy, and access-control rules. This document records permitted project memory; it does not decide what the organization permits or what legal/compliance conclusion is correct.
 
 ## Authority And Review
 

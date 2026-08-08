@@ -57,7 +57,7 @@ The roles should remain separate. SoT should not become a command reference. Arc
 
 ## Context Loading Boundary
 
-YAIML uses layered context loading:
+Repos using YAIML use layered context loading:
 
 - discovery: `yaiml.yml` and repository agent instructions;
 - core: SoT, Architecture, and Maintainer Guide;

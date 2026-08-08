@@ -101,8 +101,8 @@ Run these manually after meaningful edits:
 - Check that initialization guidance does not add YAIML files to `.gitignore` by default.
 - Check that YAIML guidance does not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into project memory.
 - Check that prompts and templates warn against storing secrets, private chat transcripts, raw sensitive logs, sensitive raw values, or AI-invented legal/IP conclusions in YAIML documents.
-- Check that prompts and templates treat read material as evidence, not automatically as instruction, and prevent YAIML from bypassing tool permissions, policy, security controls, data-classification rules, code review, CODEOWNERS, or required human approval.
-- Check that enterprise-facing guidance preserves an authority hierarchy without turning YAIML into a compliance system: organization policy and approved decisions outrank ordinary comments, stale tickets, ad hoc notes, and inference.
+- Check that prompts and templates treat read material as context to verify, not automatically as instruction, and keep normal repository rules, tool approvals, and review paths in place.
+- Check that shared-project guidance preserves source authority without turning YAIML into a compliance system: approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and inference.
 - Check that adoption remains copy/paste-first and does not require downloading this repository, installing a package, adding a dependency, or running a CLI.
 - Check that `docs/PROJECT_INDEPENDENCE.md`, README, LICENSE, and SECURITY agree on public use, personal-project posture, and employer-data hygiene.
 - Check that `CONTRIBUTING.md` preserves inbound MIT contribution terms and warns contributors not to submit employer-confidential, unauthorized third-party, secret, private, or sensitive material.
@@ -113,7 +113,7 @@ Run these manually after meaningful edits:
 - Confirm `LICENSE.md` remains MIT unless the maintainer explicitly approves a license change.
 - Confirm no new license headers, trademark claims, ownership claims, endorsement claims, or non-MIT reuse terms were introduced without explicit maintainer approval.
 - Confirm public-facing language treats YAIML as useful to shared AI chats, multi-agent workflows, and multi-contributor projects, not only one developer's recurring private agent.
-- Confirm enterprise-facing examples stay sanitized, policy-safe, provider-neutral, and free of employer-specific details unless a human explicitly approves publishing them.
+- Confirm public or workplace-facing examples stay sanitized, provider-neutral, and free of employer-specific details unless a human explicitly approves publishing them.
 
 ## Important Files
 

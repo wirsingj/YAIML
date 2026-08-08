@@ -21,7 +21,7 @@ This template is for project-specific security memory. It is not security advice
 
 Record categories, storage locations, handling rules, and risks. Do not record raw secrets, credentials, tokens, private keys, passwords, or customer personal data.
 
-Use the repository's governing data classification, retention, privacy, and access-control rules. YAIML does not decide what is safe to store; it records the rules, evidence, owners, and open questions the project is allowed to keep.
+Use the repository's governing retention, privacy, and access-control rules. This document records the rules, evidence, owners, and open questions the project is allowed to keep; it does not decide what is safe to store.
 
 ## Authority And Review
 

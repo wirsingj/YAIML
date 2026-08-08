@@ -15,7 +15,7 @@ agent-guidance: Preserve the lightweight convention-first frame. Do not turn con
 
 YAIML is a lightweight plain-file convention and reusable template docset for AI Project Engineering practice. It should grow more like Markdown, Keep a Changelog, Conventional Commits, or EditorConfig than like a runtime framework: easy to adopt, easy to inspect, and useful without installing a dependency. It may become broadly adopted later, but this repository should not imply that broad adoption or consensus already exists.
 
-It exists because repository-aware AI chats and coding agents have made natural-language engineering direction a first-class part of software development. A person or team may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. YAIML preserves the useful engineering state that should survive.
+It exists because repository-aware AI chats and coding agents have made natural-language engineering direction a first-class part of software development. A person or team may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. A repo using YAIML preserves the useful engineering state that should survive.
 
 YAIML is a guiding document set for project management, project memory, project definition, and AI-session continuity. It gives durable homes to the parts of a repository that are too important to leave in vanished chat but too interpretive to live only in source code.
 
@@ -28,7 +28,7 @@ In AI Project Engineering, the developer works at two layers:
 - technical artifacts: code, tests, configuration, scripts, docs, assets;
 - engineering direction: goals, constraints, corrections, risk calls, acceptance judgments, and lessons learned through human, chat, and agent collaboration.
 
-YAIML stores the distilled second layer in the repository so a later chat, agent, or contributor can continue the same project instead of re-discovering or distorting it.
+A repo using YAIML stores the distilled second layer in the repository so a later chat, agent, or contributor can continue the same project instead of re-discovering or distorting it.
 
 ## Repository Memory, Not Chat Memory
 
@@ -52,11 +52,11 @@ YAIML's portability is independent of the project's business or licensing model.
 
 Because YAIML travels with the repository, it must be safe for the repository's intended audience. It must not become a dumping ground for secrets, private chat transcripts, raw logs, private screenshots, or fragile legal claims. Do not store raw tokens, passwords, private keys, credentials, customer personal data, or other sensitive values in YAIML. For security and privacy topics, preserve sanitized risk shape, evidence location, owner, decision, and next step.
 
-In company, client, or regulated repositories, "safe for the repository's intended audience" means permitted by the governing data classification, retention, privacy, access-control, owner, and review rules. YAIML records those constraints; it does not override them.
+In company, client, or regulated repositories, "safe for the repository's intended audience" means permitted by the governing retention, privacy, access-control, owner, and review rules. YAIML documents can record those constraints; they do not override them.
 
 Legal, licensing, copyright, trademark, ownership, patent, contract, and IP statements need extra caution. Agents should preserve human-approved statements and uncertainty, not invent legal conclusions or rights claims.
 
-The same caution applies to security, compliance, privacy, and incident-response notes. YAIML can record reviewed decisions, risk shape, evidence, owners, and questions. It should not manufacture advice or imply that agent-written text is a professional assessment.
+The same caution applies to security, compliance, privacy, and incident-response notes. YAIML documents can record reviewed decisions, risk shape, evidence, owners, and questions. They should not manufacture advice or imply that agent-written text is a professional assessment.
 
 ## Relationship To Agent Instructions
 
@@ -114,7 +114,7 @@ Self-unfolding does not mean creating every possible document. It means splittin
 
 ## Human-Governed, Agent-Maintained
 
-Agents are expected to create, update, audit, and prune YAIML documents. Humans remain authoritative about intended meaning and product direction when they are the right authority for that project. In enterprise projects, organizational policy, approved decisions, and designated owners outrank ordinary comments or ad hoc statements. The repository remains authoritative about current implementation reality.
+Agents are expected to create, update, audit, and prune YAIML documents. Humans remain authoritative about intended meaning and product direction when they are the right authority for that project. In shared or governed projects, approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and agent inference. The repository remains authoritative about current implementation reality.
 
 YAIML is allowed to be multi-agent and multi-contributor. That makes the evidence rules more important, not less important: when two chats, agents, or humans disagree, preserve the conflict, source, and uncertainty instead of smoothing it into a false single story.
 
