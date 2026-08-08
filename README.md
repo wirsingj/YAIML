@@ -1,5 +1,8 @@
 # YAIML
 
+#Agents forget. Projects shouldn’t.
+
+
 YAIML is a lightweight project-memory convention for software repositories that use AI chats, coding agents, or AI-assisted workflows.
 
 A repo using YAIML keeps the project's current engineering understanding in ordinary Markdown files, with a tiny `yaiml.yml` so future sessions know where to start. The goal is not to add a new toolchain. The goal is to keep the important context with the code, where the next AI chat, coding agent, or human contributor can find it.
