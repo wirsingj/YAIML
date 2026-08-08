@@ -43,7 +43,7 @@ Inspect the reference repository or reference files for:
 - `prompts/hydrate-agent-session.md`;
 - `prompts/update-project-memory.md`;
 - `prompts/audit-against-reality.md`;
-- `prompts/prune-sot.md`;
+- `prompts/compress-project-memory.md`;
 - `prompts/major-project-realignment.md`;
 - `prompts/update-yaiml.md`, if present;
 - core templates;

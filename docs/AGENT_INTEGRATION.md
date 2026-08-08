@@ -45,6 +45,7 @@ Before meaningful work:
 5. Verify task-relevant claims against repository reality.
 6. Never treat inference as verified reality.
 7. After meaningful work, update only affected YAIML documents and prune stale current-state information.
+8. Treat cleanup/compression phrases such as "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as instructions to rewrite affected YAIML documents so stale, repetitive, resolved, or log-like content is removed while current truth, human direction, evidence, uncertainty, active risks, and useful lessons are preserved.
 ```
 
 ## Existing Instruction File Example
@@ -65,6 +66,8 @@ For the current task, inspect only relevant supporting YAIML documents. Do not l
 When intent and implementation disagree, surface the divergence. Do not rewrite human intent to match accidental code, and do not describe planned behavior as already implemented.
 
 After material changes, update only the affected YAIML documents. Remove resolved active risks and replace stale verification summaries instead of appending a work diary.
+
+If the human asks to clean up, compress, compact, or prune YAIML/project memory, treat that as a maintenance request: rewrite only affected YAIML documents, preserve current truth and uncertainty, remove stale or repetitive content, and do not create an archive unless asked.
 
 If another agent or contributor left conflicting project-memory updates, preserve the disagreement and evidence until a human or repository fact resolves it.
 ```

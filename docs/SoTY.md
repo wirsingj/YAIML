@@ -73,6 +73,7 @@ Verified: This repository is currently plain Markdown and YAML guidance, templat
 - `prompts/`: provider-neutral workflows for initialization, hydration, project-memory update, YAIML convention refresh, audit, pruning, and realignment.
 - `prompts/init-yaiml.md`: single self-contained one-time adoption prompt.
 - `prompts/update-yaiml.md`: refresh workflow for adopting repositories that need to compare their local YAIML prompts/templates/guidance with a human-provided or workspace-local YAIML reference while preserving project-specific memory.
+- `prompts/compress-project-memory.md`: cleanup/compression workflow for stale, repetitive, resolved, or log-like YAIML memory.
 - `examples/canopy-dispatch/`: robust fictional example with SoTD, architecture, maintainer, and release/trust memory.
 
 ## Initial Audience
@@ -98,6 +99,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - YAIML supports multi-agent and multi-contributor projects; conflicts should preserve evidence and uncertainty rather than being smoothed into false certainty.
 - YAIML distinguishes agent instruction files from project memory: instruction files tell agents how to behave; YAIML preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
 - YAIML initialization should wire project memory into the repository's agent-instruction surface. It should update relevant existing instruction files, and if none exist, create a small provider-neutral `AGENTS.md` so different AI chats, agents, or provider modes can discover and maintain the same YAIML documents.
+- YAIML initialization should also wire cleanup/compression phrases into the agent-instruction surface so future agents understand "clean up YAIML", "compress YAIML", "compact project memory", or "prune SoT" as project-memory maintenance rather than feature work.
 - YAIML uses bounded context loading: discovery, core, task-relevant supporting documents, then deep references only when needed.
 - YAIML should self-unfold beyond the core family when a project needs durable homes for preferences, legal, contracts or agreements, concepts, terms, risk review, security, data, testing, UX, domain, deployment, release, operations, product doctrine, world or lore, provider integration, remote access, or other project-specific guidance.
 - YAIML documents should usually be versioned with the source code; initialization should not add them to `.gitignore` by default.
@@ -133,6 +135,8 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - `docs/PROJECT_INDEPENDENCE.md` records the maintainer's public, personal-project posture and employer-data hygiene boundary without presenting legal advice.
 - The README now keeps the copyright/licensing posture visible while clarifying that it does not interpret employment, contractor, or invention-assignment agreements.
 - `prompts/init-yaiml.md` now combines the earlier minimal and full initialization routes into one self-contained first-use prompt so new adopters do not have to choose between two similar files.
+- `prompts/compress-project-memory.md` replaces the narrower SoT-only pruning helper and gives future agents a bounded cleanup/compression workflow for the YAIML family.
+- `AGENTS.md`, `prompts/init-yaiml.md`, `docs/AGENT_INTEGRATION.md`, and `templates/core/MAINTAINER_GUIDE.md` now recognize or install natural-language cleanup/compression triggers into repository agent instructions and maintainer memory.
 - Live init trials clarified that sanitized command outcomes should be recorded inside generated YAIML documents, not only in final chat output.
 - `docs/AGENT_INTEGRATION.md` clarifies the boundary between agent behavior instructions and YAIML project memory.
 - `docs/AGENT_INTEGRATION.md` now clarifies init behavior for multi-provider repositories: update existing relevant instruction files, or create a small provider-neutral `AGENTS.md` when no instruction surface exists.
@@ -191,6 +195,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The README still needs pressure toward human adoption clarity rather than internal framework explanation.
 - The prompt library can easily read like a required operating checklist; it should remain framed as fallback and maintenance help for cases where the repository's own YAIML guidance is not enough.
 - Field feedback suggests agents benefit from explicit instruction to update only affected YAIML documents after material changes and prune stale state; guidance should keep that behavior visible without making updates ceremonial.
+- Cleanup/compression trigger wording needs real adoption trials to confirm agents reduce bloat without deleting human direction, active risk, unresolved uncertainty, or governed retention material.
 - The init prompts still need more real-repository trials to confirm they add agent-instruction pointers cleanly without overwriting local guidance.
 - The YAIML refresh prompt and init-time maintenance note need real trials across existing YAIML-adopting projects to confirm agents remove committed local reference paths while preserving local memory.
 - Adopter cleanup still needs validation outside this local workspace before the guidance can be treated as broadly proven.

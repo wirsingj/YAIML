@@ -159,7 +159,7 @@ These prompts are helpers, not required ceremony. In a healthy YAIML repository,
 - Repair stale memory after meaningful work: [prompts/update-project-memory.md](prompts/update-project-memory.md)
 - Refresh local YAIML convention files from a human-provided or workspace-local reference: [prompts/update-yaiml.md](prompts/update-yaiml.md)
 - Audit memory against reality: [prompts/audit-against-reality.md](prompts/audit-against-reality.md)
-- Prune an overgrown SoT: [prompts/prune-sot.md](prompts/prune-sot.md)
+- Clean up or compress YAIML project memory: [prompts/compress-project-memory.md](prompts/compress-project-memory.md)
 - Realign a project around a corrected center: [prompts/major-project-realignment.md](prompts/major-project-realignment.md)
 
 Practical prompts:

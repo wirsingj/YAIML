@@ -46,7 +46,7 @@ The roles should remain separate. SoT should not become a command reference. Arc
 - `templates/core/` provides starter versions of the three required roles.
 - `templates/supporting/` provides examples for supporting memory documents.
 - `prompts/init-yaiml.md` provides the single self-contained adoption path.
-- `prompts/` also provides provider-neutral hydration, memory update, YAIML update, audit, pruning, and realignment procedures.
+- `prompts/` also provides provider-neutral hydration, memory update, YAIML update, audit, cleanup/compression, and realignment procedures.
 - `examples/canopy-dispatch/` demonstrates a robust fictional YAIML family with product doctrine, authority boundaries, operational playbooks, and release/trust memory.
 - `docs/COLD_START_REVIEW.md` records the latest manual cold-start usability pass.
 - `docs/AGENT_INTEGRATION.md` explains how YAIML relates to `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files.

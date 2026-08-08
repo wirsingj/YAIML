@@ -50,6 +50,12 @@ If SoT starts feeling like a diary, prune it.
 
 SoT is allowed to remember accomplishments. It should not remember them as a chronological trophy case. It should synthesize them into current capabilities, active lessons, or changed priorities.
 
+## Cleanup Trigger
+
+Repository agent instructions may define phrases such as "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as YAIML maintenance requests.
+
+Those phrases should not start feature work, a broad architecture rewrite, or an archive creation pass. They mean: read the YAIML discovery file, inspect the affected memory documents, rewrite stale or repetitive sections, remove resolved active items, and preserve current truth, human direction, evidence, uncertainty, active risk, and useful lessons.
+
 ## Architecture Lifecycle
 
 Architecture should remain a coherent model.

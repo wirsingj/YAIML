@@ -258,12 +258,16 @@ When sources conflict, record the conflict. Do not rewrite intent to match accid
 9. Create or update Maintainer Guide.
 10. Let the document family self-unfold: add supporting YAIML documents for project-specific memory, rules, definitions, preferences, risks, domain concepts, or operating doctrine when the repository clearly needs them.
 11. Add concise stable headers to every YAIML document.
-12. Add a short YAIML maintenance note to Maintainer Guide: phrases such as "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" mean compare the local YAIML setup against a human-provided or workspace-local YAIML reference, refresh compatible prompts/templates/guidance, and preserve project-specific memory.
+12. Add a short YAIML maintenance note to Maintainer Guide. It should define two recurring requests:
+   - "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" mean compare the local YAIML setup against a human-provided or workspace-local YAIML reference, refresh compatible prompts/templates/guidance, and preserve project-specific memory.
+   - "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" mean remove or compress stale, repetitive, resolved, or log-like YAIML content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
 13. Do not record machine-specific YAIML reference paths or local workspace URIs in versioned files. A local YAIML reference path belongs in the human prompt, agent/workspace configuration, environment, or ignored local notes, not committed project memory.
 14. Wire YAIML into the repository's agent-instruction surface:
    - If one or more existing agent instruction files were found, add or preserve a concise pointer in each relevant file so different AI chats, coding agents, or provider modes can discover the same project memory.
    - If no agent instruction file exists, create a small provider-neutral `AGENTS.md` that points future AI chats and agents to YAIML.
-   - The pointer should tell future agents to read `yaiml.yml`, load the core YAIML documents before meaningful work, load supporting documents only when task-relevant, update affected YAIML memory after meaningful work, preserve evidence/uncertainty, prune stale current-state memory, and treat "update YAIML" / "check new YAIML" as a convention-refresh request that needs a human-provided or workspace-local reference rather than a project-memory rewrite.
+   - The pointer should tell future agents to read `yaiml.yml`, load the core YAIML documents before meaningful work, load supporting documents only when task-relevant, update affected YAIML memory after meaningful work, preserve evidence/uncertainty, and prune stale current-state memory.
+   - The pointer should define "update YAIML" / "check new YAIML" as a convention-refresh request that needs a human-provided or workspace-local reference rather than a project-memory rewrite.
+   - The pointer should define "clean up YAIML" / "compress YAIML" / "compact project memory" / "prune SoT" as a cleanup/compression request that rewrites affected YAIML documents to remove stale, repetitive, resolved, or log-like content without erasing current truth, human direction, uncertainty, active risks, or useful lessons.
    - Keep provider-specific instruction files thin. Do not create new provider-specific files solely for YAIML unless the human asks.
 15. If ownership or review authority is clear, add a small owner/review note to the relevant YAIML document. If it is unclear, record it as unknown rather than inventing an owner.
 16. Do not add YAIML documents to `.gitignore` by default. YAIML is meant to live with the source code as versioned project memory unless the human explicitly chooses a different retention policy. Keep the contents safe enough to move with the repository across machines, contributors, and AI chat providers by sanitizing sensitive evidence and following the repository's governing data-classification, retention, privacy, and access-control rules.
@@ -302,6 +306,8 @@ Before meaningful work, read `yaiml.yml` and then the core YAIML documents it de
 After meaningful work, update only the affected YAIML documents. Preserve verified facts, declared human direction, uncertainty, and disagreements. Prune stale current-state memory instead of appending a work log.
 
 Treat "update YAIML", "updated YAIML", or "check new YAIML" as a convention-refresh request. Use a human-provided or workspace-local YAIML reference, preserve project-specific memory, and do not commit machine-specific reference paths.
+
+Treat "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as a project-memory cleanup request. Rewrite affected YAIML documents to remove stale, repetitive, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
 ```
 
 ## Starter SoT Shape
@@ -491,7 +497,12 @@ List procedures that need validation before a future AI chat or agent relies on 
 
 ## YAIML Maintenance
 
-Record how this repository should refresh its local YAIML setup. At minimum, explain that "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" means to compare local YAIML prompts, templates, guidance, and agent-instruction pointers against a human-provided or workspace-local YAIML reference while preserving project-specific SoT, Architecture, Maintainer Guide, and supporting memory. Do not hardcode machine-specific reference paths in this note.
+Record how this repository should refresh and compress its local YAIML setup. At minimum, explain:
+
+- "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" means to compare local YAIML prompts, templates, guidance, and agent-instruction pointers against a human-provided or workspace-local YAIML reference while preserving project-specific SoT, Architecture, Maintainer Guide, and supporting memory.
+- "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" means to remove or compress stale, repetitive, resolved, or log-like YAIML content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
+
+Do not hardcode machine-specific reference paths in this note.
 ```
 
 ## Rules

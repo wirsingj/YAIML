@@ -89,6 +89,7 @@ Run these manually after meaningful edits:
 - Check that init prompts and README agree on how existing agent instruction files should point future AI chats and agents toward YAIML.
 - Check that init prompts, README, and `docs/AGENT_INTEGRATION.md` agree that initialization updates relevant existing instruction files, creates a small provider-neutral `AGENTS.md` when none exist, and avoids creating provider-specific files solely for YAIML unless the human asks.
 - Check that init prompts and `templates/core/MAINTAINER_GUIDE.md` teach "update YAIML" / "check new YAIML" as a convention-refresh request, not a project-memory rewrite.
+- Check that init prompts, agent integration guidance, and `templates/core/MAINTAINER_GUIDE.md` teach "clean up YAIML" / "compress YAIML" / "compact project memory" / "prune SoT" as cleanup/compression requests, not new feature work or archive creation.
 - Check that `prompts/init-yaiml.md` remains self-contained enough to use in an unrelated repository without assuming this repo's docs are attached.
 - Check that generic initialization examples recommend `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` by default while allowing project-specific SoT names.
 - Check that `docs/AGENT_INTEGRATION.md` keeps YAIML distinct from agent behavior instructions.
@@ -134,6 +135,7 @@ Run these manually after meaningful edits:
 - `templates/core/`: starter documents users copy into projects.
 - `prompts/update-yaiml.md`: upgrade and convention-refresh workflow for adopting repositories with a human-provided or workspace-local YAIML reference.
 - `prompts/`: fallback and maintenance workflows; `init-yaiml.md` should be the single self-contained one-time adoption prompt.
+- `prompts/compress-project-memory.md`: cleanup/compression workflow for stale, repetitive, resolved, or log-like YAIML memory.
 
 ## Danger Files
 
@@ -147,6 +149,7 @@ Run these manually after meaningful edits:
 - `templates/supporting/`: easy place to imply every possible supporting document should exist in every project.
 - `prompts/hydrate-agent-session.md`: easy place to accidentally load every supporting document for every task.
 - `prompts/init-yaiml.md`: easy place to become too large, omit evidence discipline, accidentally authorize code changes during initialization, make YAIML private-by-default, or allow unsafe legal/IP claims.
+- `prompts/compress-project-memory.md`: easy place to erase useful uncertainty, human directives, or governed retention material while trying to reduce size.
 - `docs/EVALUATION.md`: easy place to accidentally fabricate proof or imply a benchmark suite exists.
 - `docs/STABLE_HEADERS.md`: easy place to drift into schema design.
 - `docs/ADOPTION_AND_UPGRADES.md`: easy place to accidentally turn adoption or upgrade into a generic template-copy operation.
@@ -213,7 +216,7 @@ Symptoms:
 
 Begin here:
 
-1. Use `prompts/prune-sot.md`.
+1. Use `prompts/compress-project-memory.md`.
 2. Preserve active risk, current direction, divergence, and human directives.
 3. Delete completed implementation history that Git can recover.
 

@@ -49,6 +49,8 @@ Record inspection commands and how to read their output. Prefer sanitized outcom
 
 Phrases such as "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" mean to compare this repository's local YAIML prompts, templates, guidance, and agent-instruction pointers against a human-provided or workspace-local YAIML reference while preserving project-specific SoT, Architecture, Maintainer Guide, and supporting memory.
 
+Phrases such as "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" mean to remove or compress stale, repetitive, resolved, or log-like YAIML content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
+
 Do not hardcode machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs in versioned YAIML files. If no reference is available from the human prompt or local workspace context, ask for one instead of guessing.
 
 ## Failure Playbooks
