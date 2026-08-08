@@ -21,7 +21,7 @@ Use `yaiml.yml` as the lightweight discovery protocol when a repository has a YA
 
 The file should help an agent identify:
 
-- whether YAIML is installed;
+- whether YAIML is present;
 - which YAIML discovery layout the docset follows;
 - where the core documents live;
 - which supporting documents exist;
@@ -50,6 +50,8 @@ Future validation, if it exists, should be limited to this small discovery file.
 
 YAIML adoption is evidence-based documentation work, not a generic file-copy operation.
 
+The default adoption route is copy/paste prompt text into the target repository's AI chat. Do not require a download, package install, CLI, or dependency just to start using YAIML.
+
 An adoption agent should:
 
 1. Read the YAIML reference, templates, and prompt guidance available to it.
@@ -62,7 +64,8 @@ An adoption agent should:
 8. Avoid claiming aspirational work is already implemented.
 9. Consolidate or reference existing documentation rather than duplicating it unnecessarily.
 10. Add or update `yaiml.yml` as a discovery file.
-11. Report which documents were created or modified, what evidence was inspected, what remains uncertain, and what checks were run.
+11. Update relevant existing agent instruction files, or create a small provider-neutral `AGENTS.md` when none exist, so future AI chats, agents, and provider modes discover the same YAIML memory.
+12. Report which documents were created or modified, what evidence was inspected, what remains uncertain, and what checks were run.
 
 Default core documents are SoT, Architecture, and Maintainer Guide. Supporting documents should be added only when the repository already has several concrete recurring pieces of project knowledge that deserve their own home.
 
@@ -74,14 +77,14 @@ I want this repository to adopt YAIML. Read the YAIML reference, inspect the rep
 
 ## Existing YAIML Update
 
-A YAIML update refreshes an installed YAIML docset to follow newer reference guidance while preserving repository-specific truth.
+A YAIML update refreshes an adopted YAIML docset to follow newer reference guidance while preserving repository-specific truth.
 
 An update agent should:
 
 1. Read the new YAIML reference source.
 2. Read the repository's current YAIML documents.
 3. Inspect the current repository implementation enough to distinguish YAIML-reference drift from project-memory drift.
-4. Compare the installed docset against the newer reference.
+4. Compare the adopted docset against the newer reference.
 5. Preserve project-specific SoT, architecture, maintainer knowledge, risks, human decisions, and supporting memory.
 6. Update obsolete structure, terminology, headings, responsibilities, and guidance.
 7. Add newly recommended sections only when they are relevant.
@@ -100,7 +103,7 @@ I have a new version of the YAIML reference at [path]. Review this repository's 
 
 ## Normal Implementation Work
 
-Once YAIML is installed, routine work should use the docset as repository-carried context.
+Once YAIML is adopted, routine work should use the docset as repository-carried context.
 
 Example prompt:
 

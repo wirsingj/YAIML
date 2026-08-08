@@ -19,6 +19,15 @@ SoT means State Of The. `SOT.md` is the recommended default filename for unfamil
 
 Declared: Unknown until project inspection or human direction.
 
+## Authority And Review
+
+- Maintainer or owner:
+- Last meaningful review:
+- Higher-authority sources:
+- Review path for material changes:
+
+In enterprise repositories, organizational policy and designated authoritative sources outrank ordinary comments, ad hoc developer statements, stale tickets, and agent inference.
+
 ## Current Engineering State
 
 Record what is verified now. Do not describe planned behavior as implemented behavior.

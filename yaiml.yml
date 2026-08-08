@@ -15,3 +15,4 @@ yaiml:
     evaluation: docs/EVALUATION.md
     cold_start_review: docs/COLD_START_REVIEW.md
     adoption_and_upgrades: docs/ADOPTION_AND_UPGRADES.md
+    project_independence: docs/PROJECT_INDEPENDENCE.md

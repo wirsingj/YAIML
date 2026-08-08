@@ -75,7 +75,9 @@ Run these manually after meaningful edits:
 
 - Compare `README.md` with `docs/SoTY.md` for concept drift.
 - Check README from a human adoption stance: problem, value, safety, and first use should be clearer than internal framework vocabulary.
-- Check that the README leads with the minimum useful setup before the full initialization path.
+- Check README and demo language from a manager or senior-engineer adoption stance: it should explain the repeated-context problem, show the copy/paste init path, and avoid sounding like a new platform mandate.
+- Check that the README leads with the copy/paste try-it path before showing the file list.
+- Check that adoption remains prompt-first: humans provide the prompt, agents perform bounded repo-aware setup, and humans review and accept the resulting documentation changes.
 - Check that the README presents init as a one-time setup move and does not imply humans should paste workflow prompts after every routine step.
 - Compare `templates/core/` and `templates/supporting/` with `docs/CORE_DOCUMENT_FAMILY.md`.
 - Check that SoT examples keep recent verified checks visible as a replaceable summary, not an append-only test log.
@@ -83,8 +85,9 @@ Run these manually after meaningful edits:
 - Confirm every document declared in `yaiml.yml` has a stable header before its body.
 - Compare prompt instructions with `docs/STABLE_HEADERS.md`, `docs/AMBIGUITY_AND_EVIDENCE.md`, and `docs/PRUNING_AND_LIFECYCLE.md`.
 - Compare `prompts/hydrate-agent-session.md` with `docs/CONTEXT_LOADING.md`.
-- Compare `prompts/init-yaiml.md` with the README minimum useful setup.
+- Compare `prompts/init-yaiml.md` with the README try-it path and expected created files.
 - Check that init prompts and README agree on how existing agent instruction files should point future AI chats and agents toward YAIML.
+- Check that init prompts, README, and `docs/AGENT_INTEGRATION.md` agree that initialization updates relevant existing instruction files, creates a small provider-neutral `AGENTS.md` when none exist, and avoids creating provider-specific files solely for YAIML unless the human asks.
 - Check that init prompts and `templates/core/MAINTAINER_GUIDE.md` teach "update YAIML" / "check new YAIML" as a convention-refresh request, not a project-memory rewrite.
 - Check that `prompts/initialize-yaiml.md` remains self-contained enough to use in an unrelated repository without assuming this repo's docs are attached.
 - Check that generic initialization examples recommend `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` by default while allowing project-specific SoT names.
@@ -97,6 +100,10 @@ Run these manually after meaningful edits:
 - Check that initialization guidance does not add YAIML files to `.gitignore` by default.
 - Check that YAIML guidance does not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into project memory.
 - Check that prompts and templates warn against storing secrets, private chat transcripts, raw sensitive logs, sensitive raw values, or AI-invented legal/IP conclusions in YAIML documents.
+- Check that prompts and templates treat read material as evidence, not automatically as instruction, and prevent YAIML from bypassing tool permissions, policy, security controls, data-classification rules, code review, CODEOWNERS, or required human approval.
+- Check that enterprise-facing guidance preserves an authority hierarchy without turning YAIML into a compliance system: organization policy and approved decisions outrank ordinary comments, stale tickets, ad hoc notes, and inference.
+- Check that adoption remains copy/paste-first and does not require downloading this repository, installing a package, adding a dependency, or running a CLI.
+- Check that `docs/PROJECT_INDEPENDENCE.md`, README, LICENSE, and SECURITY agree on public use, personal-project posture, and employer-data hygiene.
 - Check that `SECURITY.md` still matches README, prompts, templates, and repository-safe sensitive-reporting expectations.
 - Check that self-unfolding document guidance encourages useful project-specific extension without normalizing empty document ceremony.
 - Check examples for believable, compact project memory rather than generic filler; they should be fictional but detailed enough to feel shaped by real engineering pressure.
@@ -104,6 +111,7 @@ Run these manually after meaningful edits:
 - Confirm `LICENSE.md` remains MIT unless the maintainer explicitly approves a license change.
 - Confirm no new license headers, trademark claims, ownership claims, endorsement claims, or non-MIT reuse terms were introduced without explicit maintainer approval.
 - Confirm public-facing language treats YAIML as useful to shared AI chats, multi-agent workflows, and multi-contributor projects, not only one developer's recurring private agent.
+- Confirm enterprise-facing examples stay sanitized, policy-safe, provider-neutral, and free of employer-specific details unless a human explicitly approves publishing them.
 
 ## Important Files
 
@@ -121,6 +129,7 @@ Run these manually after meaningful edits:
 - `docs/CONTEXT_LOADING.md`: bounded loading model for YAIML context.
 - `docs/EVALUATION.md`: case-study template and cold-start comparison method.
 - `docs/ADOPTION_AND_UPGRADES.md`: first-time adoption, existing YAIML update, and version-awareness guidance.
+- `docs/PROJECT_INDEPENDENCE.md`: public personal-project posture and employer-data hygiene boundary.
 - `templates/core/`: starter documents users copy into projects.
 - `prompts/update-yaiml.md`: upgrade and convention-refresh workflow for adopting repositories with a human-provided or workspace-local YAIML reference.
 - `prompts/`: fallback and maintenance workflows; `init-yaiml.md` should stay small and usable as a one-time adoption prompt, while `initialize-yaiml.md` should carry deeper context for a no-prior-YAIML agent.
@@ -131,6 +140,7 @@ Run these manually after meaningful edits:
 - `AGENTS.md`: easy place for this repository's own dogfood instructions to drift away from README, prompts, or SoTY.
 - `LICENSE.md`: easy place to accidentally change public reuse terms, attribution requirements, warranty language, or ownership claims.
 - `SECURITY.md`: easy place to overpromise professional security process or drift away from YAIML's memory-hygiene rules.
+- `docs/PROJECT_INDEPENDENCE.md`: easy place to overstate legal certainty, add employer-specific details, or drift away from the no-confidential-material boundary.
 - `CONTRIBUTING.md` and `ROADMAP.md`: easy places for stale licensing or future-tooling claims to survive after concept changes.
 - `templates/core/SOT.md`: default SoT starter template; easy place to normalize append-only memory or make project-specific naming feel required.
 - `templates/supporting/`: easy place to imply every possible supporting document should exist in every project.
@@ -151,7 +161,7 @@ When YAIML itself changes:
 4. Update this Maintainer Guide when procedures, checks, or dangerous areas change.
 5. Update `docs/ADOPTION_AND_UPGRADES.md` when adoption, update, or version-awareness behavior changes.
 6. Search for stale legacy terminology and broken renamed links.
-7. For adopting repositories, use `prompts/update-yaiml.md` or the upgrade prompt from `docs/ADOPTION_AND_UPGRADES.md`: compare their installed docset against the new YAIML reference, preserve repository-specific truth, repair links and terminology, and update their `yaiml.yml` discovery protocol when needed.
+7. For adopting repositories, use `prompts/update-yaiml.md` or the upgrade prompt from `docs/ADOPTION_AND_UPGRADES.md`: compare their adopted docset against the new YAIML reference, preserve repository-specific truth, repair links and terminology, and update their `yaiml.yml` discovery protocol when needed.
 
 Do not propagate a revision by copying this repository wholesale over an adopter's mature YAIML documents.
 
@@ -179,7 +189,7 @@ Begin here:
 Symptoms:
 
 - README first asks users to understand every supporting document role;
-- minimum setup is hidden below the full initializer;
+- the copy/paste try-it path is hidden below the full initializer or file checklist;
 - users must invent a project-specific SoT filename before trying YAIML;
 - quick start makes ongoing YAIML use sound like repeated prompt-pasting instead of repository-carried guidance;
 - licensing or maturity caveats bury the actual first-use path.

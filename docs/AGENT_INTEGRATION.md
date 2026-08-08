@@ -3,7 +3,7 @@ yaiml: 0.2
 kind: agent-integration-guide
 title: Agent Integration
 purpose: Explain how YAIML relates to repository agent instruction files without becoming one.
-belongs-here: integration patterns for AGENTS.md, CLAUDE.md, .cursorrules, and similar provider-neutral instruction files.
+belongs-here: integration patterns for AGENTS.md, CLAUDE.md, GEMINI.md, .cursorrules, .windsurfrules, and similar instruction files.
 not-here: provider adapters, SDKs, exhaustive tool-specific instructions, project-specific agent rules.
 durability: durable; update when YAIML's relationship to agent instruction files changes.
 read-with: SoTY; Context Loading; Core Document Family.
@@ -22,6 +22,16 @@ YAIML primarily preserves what the project currently means, knows, intends, has 
 An instruction file can point agents toward YAIML. YAIML should not become a duplicate of every instruction file.
 
 In multi-agent or multi-contributor projects, YAIML is shared project memory. It should help the next AI chat or contributor understand the same project state without requiring access to earlier private conversations.
+
+## Initialization Behavior
+
+YAIML initialization should wire project memory into the repository's agent-instruction surface.
+
+If the repository already has instruction files such as `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursorrules`, `.windsurfrules`, `.cursor/rules/*`, or `.windsurf/rules/*`, add or preserve a short YAIML pointer in each relevant file. This lets tools that switch between providers or modes still converge on the same project memory.
+
+If no agent instruction file exists, create a small provider-neutral `AGENTS.md` by default. Do not create a stack of provider-specific files just for YAIML unless the human asks or the repository already uses those surfaces.
+
+Provider-specific files should stay thin. They can point to `yaiml.yml`, the core YAIML documents, and local behavior rules. They should not duplicate the full SoT, Architecture, Maintainer Guide, or supporting memory.
 
 ## Minimal Instruction Snippet
 

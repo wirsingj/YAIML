@@ -17,6 +17,14 @@ The Canopy Dispatch example demonstrates what YAIML can look like, but it is fic
 
 YAIML needs real-project evidence gathered without inflated claims.
 
+A useful evidence set for the public pilot phase should include at least three independent-quality case studies:
+
+- one mature repository already known to the maintainer, labeled as internal dogfooding rather than outside proof;
+- one unfamiliar public repository initialized without private project context;
+- one repository owned by another developer or team.
+
+Internal portfolio repositories can show that YAIML is useful in practice, but they should not be counted as independent adoption evidence.
+
 ## Case Study Template
 
 Use this shape for a real project trial:
@@ -105,7 +113,7 @@ Use bounded comparisons rather than broad claims.
 3. Give Agent or Session A the repository and ordinary instructions.
 4. Give Agent or Session B the same repository plus YAIML.
 5. Give both the same tasks.
-6. Compare results without pretending one small test proves universal effectiveness.
+6. Compare results without pretending one small test proves universal effectiveness. Preserve transcripts, summaries, failures, and limitations when safe to share.
 
 Tasks should be small enough to review and specific enough to reveal project understanding.
 

@@ -34,7 +34,7 @@ An unfamiliar AI chat or coding agent enters the repository with no prior YAIML 
 
 Pass with open risks after the front-door, minimal-initialization, context-loading, repository-portability, and evaluation refinement passes.
 
-The repository explains YAIML as an early public plain-file convention for AI Project Engineering: project management, memory, definition, and AI-chat, agent, and contributor continuity. SoT is clearly the central artifact, with Architecture and Maintainer Guide as supporting default roles. The stable header is described as semantic guidance for future AI sessions rather than a parser-oriented format. The README now leads with a minimum useful setup before the full initialization path, and the full initialization prompt still carries embedded YAIML context for use outside this repository. The prompt library distinguishes project-memory updates from YAIML convention refreshes.
+The repository explains YAIML as an early public plain-file convention for AI Project Engineering: project management, memory, definition, and AI-chat, agent, and contributor continuity. SoT is clearly the central artifact, with Architecture and Maintainer Guide as supporting default roles. The stable header is described as semantic guidance for future AI sessions rather than a parser-oriented format. The README now leads with a copy/paste try-it path before showing the file list, and the full initialization prompt still carries embedded YAIML context for use outside this repository. The prompt library distinguishes project-memory updates from YAIML convention refreshes.
 
 The current front door also explains that YAIML portability is independent of an adopting project's business or licensing model. A project may be private, public, paid, free, open-source, or unreleased; YAIML should travel with that repository across machines, contributors, and AI chat provider instances when maintained as repository-safe project memory.
 
@@ -48,7 +48,7 @@ The current front door also explains that YAIML portability is independent of an
 - A new AI session can choose `prompts/init-yaiml.md` for a small trial or `prompts/initialize-yaiml.md` for a deeper repository initialization.
 - A new AI session can identify `prompts/update-yaiml.md` as the workflow for refreshing local YAIML scaffolding from a human-provided or workspace-local reference without overwriting project memory.
 - A new AI session can paste `prompts/initialize-yaiml.md` into another repository without also needing this repository's support docs open.
-- A new AI session can see that initial YAIML setup should teach "update YAIML" / "check new YAIML" through Maintainer Guide and existing agent instruction files when present, without committing machine-specific reference paths.
+- A new AI session can see that initial YAIML setup should teach "update YAIML" / "check new YAIML" through Maintainer Guide and the repository's agent-instruction surface, without committing machine-specific reference paths.
 - A new AI session can identify the context-loading layers and avoid reading unrelated supporting documents for a narrow task.
 - A new AI session can identify that Canopy Dispatch is an example, not proof, and that real case studies should use `docs/EVALUATION.md`.
 - A new AI session can identify that YAIML documents are intended to be versioned with source code by default, not added to `.gitignore` automatically.

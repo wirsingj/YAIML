@@ -128,6 +128,8 @@ Add supporting YAIML documents when a memory, rule, definition, risk, preference
 
 Supporting documents are still source-adjacent project memory by default. Do not use them for raw secrets, credentials, private keys, tokens, passwords, customer personal data, or speculative legal/IP conclusions.
 
+In enterprise or regulated repositories, supporting documents should follow the repository's governing data classification, retention, privacy, access-control, owner, and review rules. YAIML records permitted project memory; it does not decide what the organization permits.
+
 Examples:
 
 - Preferences;

@@ -52,6 +52,8 @@ YAIML's portability is independent of the project's business or licensing model.
 
 Because YAIML travels with the repository, it must be safe for the repository's intended audience. It must not become a dumping ground for secrets, private chat transcripts, raw logs, private screenshots, or fragile legal claims. Do not store raw tokens, passwords, private keys, credentials, customer personal data, or other sensitive values in YAIML. For security and privacy topics, preserve sanitized risk shape, evidence location, owner, decision, and next step.
 
+In company, client, or regulated repositories, "safe for the repository's intended audience" means permitted by the governing data classification, retention, privacy, access-control, owner, and review rules. YAIML records those constraints; it does not override them.
+
 Legal, licensing, copyright, trademark, ownership, patent, contract, and IP statements need extra caution. Agents should preserve human-approved statements and uncertainty, not invent legal conclusions or rights claims.
 
 The same caution applies to security, compliance, privacy, and incident-response notes. YAIML can record reviewed decisions, risk shape, evidence, owners, and questions. It should not manufacture advice or imply that agent-written text is a professional assessment.
@@ -112,7 +114,7 @@ Self-unfolding does not mean creating every possible document. It means splittin
 
 ## Human-Governed, Agent-Maintained
 
-Agents are expected to create, update, audit, and prune YAIML documents. Humans remain authoritative about intended meaning and product direction. The repository remains authoritative about current implementation reality.
+Agents are expected to create, update, audit, and prune YAIML documents. Humans remain authoritative about intended meaning and product direction when they are the right authority for that project. In enterprise projects, organizational policy, approved decisions, and designated owners outrank ordinary comments or ad hoc statements. The repository remains authoritative about current implementation reality.
 
 YAIML is allowed to be multi-agent and multi-contributor. That makes the evidence rules more important, not less important: when two chats, agents, or humans disagree, preserve the conflict, source, and uncertainty instead of smoothing it into a false single story.
 

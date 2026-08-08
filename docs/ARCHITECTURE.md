@@ -121,7 +121,7 @@ Retired for the current phase:
 - conformance fixture directories;
 - RFC-style requirement language;
 - MCP or framework adapter layer as adoption center;
-- treating YAIML memory as a schema or package format.
+- treating YAIML memory as a schema or package format;
 - requiring a custom file extension for project memory.
 
 These should not return unless a human explicitly changes the project phase.

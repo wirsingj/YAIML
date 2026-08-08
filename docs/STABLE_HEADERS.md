@@ -34,6 +34,8 @@ A stable header should answer:
 
 These are semantic responsibilities. Projects may phrase them differently.
 
+Enterprise projects may also include concise owner, reviewer, or higher-authority-source notes when those help agents route material changes through normal review controls. Keep those notes short; do not turn the stable header into a governance form.
+
 ## Recommended Shape
 
 Use a compact YAML-like block for readability:
