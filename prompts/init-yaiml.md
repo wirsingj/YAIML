@@ -1,10 +1,10 @@
 # Init YAIML
 
-You are an AI coding assistant adding YAIML living project memory to a new or existing software repository.
+You are an AI coding assistant adding YAIML project memory to a new or existing software repository.
 
-This prompt must work even if you have no access to the YAIML repository, templates, guides, or prior chat. Treat the guidance below as the embedded self-contained version of YAIML.
+This prompt is self-contained. Use it even if you do not have the YAIML repository, templates, guides, or prior chat open.
 
-YAIML adoption is prompt-first: the human provides this prompt, and you do the repo-aware setup work. Do not ask the human to manually create a folder checklist. Inspect the repository, make the appropriate bounded documentation changes, and leave the result clear enough for the human to review and accept.
+YAIML adoption is prompt-first. The human provides this prompt, and you do the repo-aware setup work. Do not ask the human to manually create a folder checklist. Inspect the repository, make bounded documentation changes, and leave the result clear enough for the human to review.
 
 Do not change application code during initialization unless the human explicitly asks for code changes. Your job is to inspect, understand, and create project-memory documents.
 
@@ -14,11 +14,11 @@ Inspect before editing. Read enough first that any created memory reflects the r
 
 ## What YAIML Is
 
-YAIML means YAIML. It is a lightweight plain-file convention and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
+YAIML is a lightweight plain-file convention for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
 
 It preserves the current interpreted understanding of a software project across disposable AI chats, coding-agent sessions, and contributor handoffs: product intent, verified implementation reality, architecture boundaries, maintainer procedures, risks, uncertainty, and human direction.
 
-The documents are useful because of the convention they express. Do not expand the document set for its own sake.
+The documents matter because they preserve project understanding, not because every project needs the same set of files. Do not expand the document set for its own sake.
 
 YAIML is documentation and guidance. It is not professional legal, security, compliance, licensing, privacy, or IP advice. When a project has documents in those areas, they are memory surfaces for that project's reviewed constraints, evidence, questions, and decisions.
 
@@ -36,7 +36,7 @@ YAIML is not:
 - an autonomous coding agent;
 - a replacement for source code, tests, Git history, issues, or `AGENTS.md`.
 
-YAIML is semantically structured and syntactically loose. The document roles have strong bones, but the exact headings, filenames, local vocabulary, and supporting documents may bend to the project.
+YAIML is structured by meaning, not by strict syntax. The document roles should stay clear, but headings, filenames, local vocabulary, and supporting documents may bend to the project.
 
 Use ordinary Markdown documents by default. Do not create a custom `.yaiml` file extension during initialization. YAIML should be easy for humans, editors, Git diffs, Markdown previewers, AI chats, and agents to read without special tooling. `yaiml.yml` can act as a tiny discovery index, but the durable memory should live in readable `.md` files.
 
@@ -56,11 +56,11 @@ Create or update the smallest coherent YAIML family:
 
 Add supporting documents when a project has a recurring memory, definition, preference, risk, rules, domain, or operations area that would otherwise bloat the core three.
 
-The core three are the starting spine, not the ceiling. YAIML should self-unfold as the repository reveals what kinds of memory, definition, rules, and project-management guidance need a durable home. It can be arbitrarily extended as needed, as long as each added document has a clear responsibility and does not blur the core roles.
+The core three are the starting point, not the ceiling. Let YAIML unfold as the repository reveals what kinds of memory, definitions, rules, and project-management guidance need a durable home. Extend the document family when needed, but keep each added document responsible for a clear job.
 
 ## Self-Unfolding Documents
 
-During initialization, look for memory domains that are important enough to deserve their own document. Add them when they would make future work clearer, safer, or less dependent on vanished chat.
+During initialization, look for memory domains that are important enough to deserve their own document. Add one when it would make future work clearer, safer, or less dependent on vanished chat context.
 
 Common supporting documents include:
 
@@ -95,7 +95,7 @@ Common supporting documents include:
 
 Do not treat that list as exhaustive. A game may need World, Lore, Rules, Characters, or Canon. A regulated app may need Legal, Compliance, Risk Review, Data, Retention, and Audit. A creative tool may need UX Doctrine, Terms, Concepts, and Product Doctrine. A distributed system may need Operations, Deployment, Observability, Provider Integration, and Recovery.
 
-Each added document should have a clear job:
+Each added document should make its job clear:
 
 - what memory or definition it owns;
 - what does not belong there;
@@ -104,7 +104,7 @@ Each added document should have a clear job:
 - how aggressively it should prune;
 - what other YAIML documents it should be read with.
 
-Do not create a pile of empty documents just because names are available. Let the project unfold the set. When a topic is small, keep it in SoT, Architecture, or Maintainer Guide. When a topic keeps recurring, creates risk, defines vocabulary, or would bloat the core documents, split it into a supporting document.
+Do not create a pile of empty documents just because names are available. Let the project reveal the set it needs. When a topic is small, keep it in SoT, Architecture, or Maintainer Guide. When a topic keeps recurring, creates risk, defines vocabulary, or would bloat the core documents, split it into a supporting document.
 
 A useful test: if a proposed supporting document cannot immediately hold several concrete, recurring pieces of project knowledge, do not create it yet.
 

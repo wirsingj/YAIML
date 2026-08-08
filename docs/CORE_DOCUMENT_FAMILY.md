@@ -21,7 +21,7 @@ The smallest coherent YAIML core is three roles:
 
 The roles are semantic requirements, not exact templates. A project may rename files, adapt headings, and add local vocabulary, but the responsibilities should remain recognizable.
 
-The core three are the starting spine, not the ceiling. YAIML is a self-unfolding guiding document set for project management, memory, definition, and AI-chat, agent, and contributor continuity.
+The core three are the starting point, not the limit. YAIML can grow as a project reveals more durable memory, definitions, rules, and operating guidance that need a clear home.
 
 Use ordinary Markdown files for YAIML documents by default. Do not require a custom `.yaiml` extension. The convention should stay easy to open, diff, preview, edit, and review.
 

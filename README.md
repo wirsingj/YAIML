@@ -30,7 +30,7 @@ In company or regulated repositories, "safe enough for the repo" means allowed b
 
 ## Try It In A Repo
 
-The easiest way to try YAIML is to paste one setup prompt into an approved AI coding tool. The agent inspects the repo, creates the small project-memory files, and wires future sessions to read them.
+The easiest way to try YAIML is to paste one setup prompt into an AI coding tool. The agent inspects the repo, creates the small project-memory files, and wires future sessions to read them.
 
 You should not need to make a bunch of folders by hand, download this repo, install a package, or add a dependency just to try it.
 

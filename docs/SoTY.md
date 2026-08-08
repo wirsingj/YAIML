@@ -45,7 +45,7 @@ Declared: YAIML adoption is prompt-first. The human should be able to paste a st
 
 Declared: Enterprise readiness should strengthen authority, safety, and review guidance without redesigning YAIML. In company, client, regulated, multi-team, or otherwise governed repositories, organizational policy, approved decisions, security/privacy/compliance controls, incident procedures, and designated owners outrank ordinary comments, stale tickets, ad hoc notes, and agent inference.
 
-Declared: A likely first serious non-portfolio audience is an internal workplace engineering audience already receiving AI knowledge-transfer sessions from the maintainer. YAIML should be explainable there as a practical repository-memory workflow for approved AI-assisted development tools, not as a demand to adopt a new platform or bypass enterprise review.
+Declared: A likely first serious non-portfolio audience is an internal workplace engineering audience already receiving AI knowledge-transfer sessions from the maintainer. YAIML should be explainable there as a practical repository-memory workflow for the AI-assisted development tools people already use, while still respecting any review, security, or policy boundaries that apply to that repository.
 
 Verified: This repository is currently plain Markdown and YAML guidance, templates, prompts, one robust fictional example, an evaluation guide, a cold-start review note, an MIT License, a public security/sensitive-information policy, and YAIML's own project-memory documents. It does not include a CLI, SDK, parser, package manifest, validator, web app, database, storage layer, orchestration framework, background service, hosted service, or provider adapter.
 
