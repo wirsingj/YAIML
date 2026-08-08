@@ -4,6 +4,8 @@ YAIML is a lightweight project-memory convention for software repositories that 
 
 It keeps the project's current engineering understanding in ordinary Markdown files, with a tiny `yaiml.yml` so future sessions know where to start. The goal is not to add a new toolchain. The goal is to keep the important context with the code, where the next AI chat, coding agent, or human contributor can find it.
 
+YAIML does not run code, upload data, call a service, or require a package install.
+
 The chat can disappear. The provider can change. The agent can change. The contributor can change. The project context remains in the repository.
 
 > AI chats are temporary. The project's engineering understanding should not be.
@@ -28,7 +30,9 @@ In company or regulated repositories, "safe enough for the repo" means allowed b
 
 ## Try It In A Repo
 
-YAIML adoption is prompt-first. You should not need to make a bunch of folders by hand, download this repo, install a package, or add a dependency just to try it.
+The easiest way to try YAIML is to paste one setup prompt into your AI coding tool. The agent inspects the repo, creates the small project-memory files, and wires future sessions to read them.
+
+You should not need to make a bunch of folders by hand, download this repo, install a package, or add a dependency just to try it.
 
 Open the repository you want to initialize in your coding agent or AI chat, then copy in [prompts/init-yaiml.md](prompts/init-yaiml.md).
 
