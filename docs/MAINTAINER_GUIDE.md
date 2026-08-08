@@ -104,6 +104,7 @@ Run these manually after meaningful edits:
 - Check that enterprise-facing guidance preserves an authority hierarchy without turning YAIML into a compliance system: organization policy and approved decisions outrank ordinary comments, stale tickets, ad hoc notes, and inference.
 - Check that adoption remains copy/paste-first and does not require downloading this repository, installing a package, adding a dependency, or running a CLI.
 - Check that `docs/PROJECT_INDEPENDENCE.md`, README, LICENSE, and SECURITY agree on public use, personal-project posture, and employer-data hygiene.
+- Check that `CONTRIBUTING.md` preserves inbound MIT contribution terms and warns contributors not to submit employer-confidential, unauthorized third-party, secret, private, or sensitive material.
 - Check that `SECURITY.md` still matches README, prompts, templates, and repository-safe sensitive-reporting expectations.
 - Check that self-unfolding document guidance encourages useful project-specific extension without normalizing empty document ceremony.
 - Check examples for believable, compact project memory rather than generic filler; they should be fictional but detailed enough to feel shaped by real engineering pressure.

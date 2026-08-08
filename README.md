@@ -187,7 +187,7 @@ The long-term goal is for YAIML to become an industry standard for repository-ca
 
 YAIML is licensed under the [MIT License](LICENSE.md). Jeff Wirsing retains copyright ownership, and the license allows anyone to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the material, subject to the license terms.
 
-YAIML is intended to remain a public, personally maintained project with no employer code, employer data, private screenshots, vulnerability details, or confidential workplace material. See [Project Independence](docs/PROJECT_INDEPENDENCE.md).
+YAIML is intended to remain a public, personally maintained project with no employer code, employer data, private screenshots, vulnerability details, or confidential workplace material. This records the repository's licensing and independence posture; it is not an interpretation of any employment, contractor, or invention-assignment agreement. See [Project Independence](docs/PROJECT_INDEPENDENCE.md).
 
 For sensitive reports or memory-hygiene concerns, see [SECURITY.md](SECURITY.md). Do not put secrets, credentials, personal data, private chat transcripts, raw sensitive logs, exploit details, or confidential project information into public YAIML documents, examples, issues, or pull requests.
 

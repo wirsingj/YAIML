@@ -25,6 +25,8 @@ The value of YAIML is the convention for preserving project understanding, not t
 
 YAIML is licensed under the MIT License. Jeff Wirsing retains copyright ownership, and anyone may use, copy, modify, publish, distribute, sublicense, or sell copies under the license terms.
 
+By submitting a contribution, you agree that your contribution is provided under the MIT License used by this repository. Submit only material you have the right to contribute. Do not include employer-confidential material, third-party material without permission, secrets, private transcripts, raw sensitive logs, customer or personal data, unreleased vulnerability details, or proprietary project text from another repository.
+
 Do not change the license, add license headers, or make new trademark, ownership, or endorsement claims without explicit maintainer approval.
 
 ## Review Checklist

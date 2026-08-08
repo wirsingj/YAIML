@@ -55,7 +55,7 @@ Verified: This repository is currently plain Markdown and YAML guidance, templat
 - `AGENTS.md`: repository agent instructions that require future AI chats and agents to read YAIML memory and recognize natural-language SoT and YAIML-refresh requests.
 - `LICENSE.md`: MIT License; Jeff Wirsing retains copyright ownership while anyone may use the repository materials under the license terms.
 - `SECURITY.md`: public guidance for sensitive reports and memory-hygiene risks.
-- `CONTRIBUTING.md`: contribution guardrails for preserving the concept.
+- `CONTRIBUTING.md`: contribution guardrails, inbound MIT contribution terms, and source-material hygiene.
 - `ROADMAP.md`: convention-first priorities and deferred-tooling boundary.
 - `yaiml.yml`: tiny discovery file that records the active YAIML discovery version and points to this repository's YAIML document family.
 - `docs/SoTY.md`: current engineering state for YAIML.
@@ -67,7 +67,7 @@ Verified: This repository is currently plain Markdown and YAML guidance, templat
 - `docs/EVALUATION.md`: real-project case-study template and cold-start comparison method.
 - `docs/COLD_START_REVIEW.md`: latest first-time-agent usability review.
 - `docs/ADOPTION_AND_UPGRADES.md`: adoption, upgrade, and version-awareness guidance.
-- `docs/PROJECT_INDEPENDENCE.md`: public independence, employer-data hygiene, and sharing boundary.
+- `docs/PROJECT_INDEPENDENCE.md`: public independence declaration, employer-data hygiene, and sharing boundary.
 - `templates/core/`: starter SoT, Architecture, and Maintainer Guide.
 - `templates/supporting/`: supporting document starters for self-unfolded roles such as domain, legal/compliance, preferences, product doctrine, risk review, security memory, and terms/glossary.
 - `prompts/`: provider-neutral workflows for initialization, hydration, project-memory update, YAIML convention refresh, audit, pruning, and realignment.
@@ -129,7 +129,9 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Obsolete legacy-name migration language has been removed because current known adopters are local and already updated; new readers should encounter YAIML directly.
 - The discovery-file examples now use the nested `yaiml.version` / `core` / `supporting` shape instead of the older flat marker shape.
 - The repository now uses the MIT License, preserving Jeff Wirsing's copyright ownership while allowing public use, copying, modification, distribution, sublicensing, and sale under the license terms.
+- `CONTRIBUTING.md` now states that inbound contributions are provided under the repository's MIT License and must not include employer-confidential, unauthorized third-party, secret, private, or sensitive material.
 - `docs/PROJECT_INDEPENDENCE.md` records the maintainer's public, personal-project posture and employer-data hygiene boundary without presenting legal advice.
+- The README now keeps the copyright/licensing posture visible while clarifying that it does not interpret employment, contractor, or invention-assignment agreements.
 - `prompts/init-yaiml.md` provides the small adoption path; `prompts/initialize-yaiml.md` remains the full self-contained initialization prompt for deeper repository setup.
 - Live init trials clarified that sanitized command outcomes should be recorded inside generated YAIML documents, not only in final chat output.
 - `docs/AGENT_INTEGRATION.md` clarifies the boundary between agent behavior instructions and YAIML project memory.
@@ -210,7 +212,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Collaboration drift: multiple agents or contributors could overwrite, flatten, or silently contradict each other's project-memory updates instead of preserving evidence and disagreement until resolved.
 - Workspace drift: agents could commit machine-specific YAIML reference paths or local workspace URIs, making the repo less portable and exposing local machine details.
 - Reporting drift: public issues or examples could include sensitive security details if the top-level security policy is missed or ignored.
-- Reporting-channel gap: `SECURITY.md` avoids public sensitive details, but YAIML 0.2 readiness still needs a human-approved private reporting path or an explicit decision to rely on GitHub private vulnerability reporting.
+- Sensitive-reporting gap: `SECURITY.md` now gives a no-public-details fallback, but broader public pilot readiness still needs GitHub private vulnerability reporting enabled or another maintainer-approved private contact path.
 - Advice drift: legal, security, compliance, privacy, licensing, or IP memory could be mistaken for professional recommendations if templates do not keep their memory-only role clear.
 - Independence drift: public examples, demos, or future contributions could accidentally introduce employer-specific code, data, screenshots, vulnerability details, process text, or confidential workplace material.
 - Status-report drift: SoT could be misread as a status report instead of an engineering-state synthesis.
@@ -237,7 +239,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 9. Keep the fictional example detailed enough to teach the pattern without implying it is proof.
 10. Refine pruning behavior from actual overgrown SoT documents.
 11. Prepare public-release readiness criteria, including contribution expectations, evidence requirements, release labeling, clear MIT license communication, a simple adoption-report path, and a visible decision process.
-12. Decide the YAIML 0.2 sensitive-reporting path.
+12. Enable or document the YAIML sensitive-reporting private channel before broader public pilot readiness.
 13. Preserve YAIML's own dogfood documents after material changes.
 
 ## Known Divergence

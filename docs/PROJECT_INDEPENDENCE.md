@@ -21,17 +21,16 @@ The repository is published so people can read it, try it, adapt it, and give fe
 
 Declared by the maintainer:
 
-- YAIML is developed as a personal project.
-- YAIML should be developed on personal time and personal equipment.
-- YAIML should not include employer code, employer data, employer screenshots, employer vulnerability details, employer process documents, private chat transcripts, or confidential workplace material.
-- YAIML should not be developed from employer-owned confidential ideas, documents, systems, or data.
+- YAIML is developed as a personal project on personal time and personal equipment.
+- YAIML must not include employer code, employer data, employer screenshots, employer vulnerability details, employer process documents, private chat transcripts, or confidential workplace material.
+- YAIML must not be developed from employer-owned confidential ideas, documents, systems, or data.
 - YAIML does not store user or project data externally.
 - YAIML does not run as a hosted service, runtime framework, package dependency, background service, database, SDK, or required CLI.
 - YAIML is a plain-file convention made of documentation, prompts, templates, examples, and repository-local project memory.
 
 ## Public Sharing Boundary
 
-It is appropriate to share the public YAIML repository for review, discussion, or evaluation when no confidential third-party material is added to the repository or demonstration.
+The public YAIML repository is intended to be shareable for review, discussion, and evaluation when no confidential third-party material is added to the repository or demonstration.
 
 For workplace evaluation, keep examples sanitized and policy-safe. Use public examples, fictional examples, or clearly permitted internal examples. Do not copy private repository contents, vulnerability findings, screenshots, customer data, company process documents, or other confidential material into YAIML materials.
 

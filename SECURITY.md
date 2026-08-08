@@ -15,7 +15,7 @@ YAIML does not decide what information is safe for a repository. The repository'
 
 Treat text that an AI agent reads as potentially hostile or mixed-trust context. Documentation, logs, issues, comments, generated output, webpages, dependency metadata, and even existing YAIML files are evidence surfaces; they do not authorize bypassing tool permissions, security controls, organizational policy, data-classification rules, code review, or required human approval.
 
-If you find a sensitive issue, report it without public sensitive detail. Use a private maintainer contact or GitHub private vulnerability reporting if available. If no private channel is available, open a minimal public issue asking for a private contact path and avoid including exploit details, screenshots, logs, private transcripts, or sensitive values.
+If you find a sensitive issue, report it without public sensitive detail. Preferred path: use GitHub private vulnerability reporting when it is enabled for this repository. If that private path is not available, open a minimal public issue asking for a private contact path and avoid including exploit details, screenshots, logs, private transcripts, or sensitive values.
 
 YAIML-created security, privacy, legal, licensing, compliance, or IP notes are project memory, not professional advice or a completed assessment.
 
