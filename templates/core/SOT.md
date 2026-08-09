@@ -26,7 +26,7 @@ Declared: Unknown until project inspection or human direction.
 - Higher-authority sources:
 - Review path for material changes:
 
-In enterprise repositories, organizational policy and designated authoritative sources outrank ordinary comments, ad hoc developer statements, stale tickets, and agent inference.
+In shared or governed repositories, approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and agent inference.
 
 ## Current Engineering State
 

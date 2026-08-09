@@ -33,7 +33,7 @@ Read repository agent instructions and `yaiml.yml`, then read YAIML stable heade
 - Do not treat recent file modification time as proof of reconciliation.
 - Distinguish verified findings from suspicion.
 - Do not copy secrets, credentials, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions into YAIML documents.
-- Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
+- Do not present agent-written security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 
 ## Output
 

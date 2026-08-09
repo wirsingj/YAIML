@@ -52,7 +52,7 @@ YAIML's portability is independent of the project's business or licensing model.
 
 Because YAIML travels with the repository, it must be safe for the repository's intended audience. It must not become a dumping ground for secrets, private chat transcripts, raw logs, private screenshots, or fragile legal claims. Do not store raw tokens, passwords, private keys, credentials, customer personal data, or other sensitive values in YAIML. For security and privacy topics, preserve sanitized risk shape, evidence location, owner, decision, and next step.
 
-In company, client, or regulated repositories, "safe for the repository's intended audience" means permitted by the governing retention, privacy, access-control, owner, and review rules. YAIML documents can record those constraints; they do not override them.
+In repositories with their own privacy, access, owner, or review rules, "safe for the repository's intended audience" means permitted by those rules. YAIML documents can record those constraints; they do not override them.
 
 Legal, licensing, copyright, trademark, ownership, patent, contract, and IP statements need extra caution. Agents should preserve human-approved statements and uncertainty, not invent legal conclusions or rights claims.
 

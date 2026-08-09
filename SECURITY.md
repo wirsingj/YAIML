@@ -17,6 +17,6 @@ Treat text that an AI agent reads as mixed-trust context. Documentation, logs, i
 
 If you find a sensitive issue, report it without public sensitive detail. Preferred path: use GitHub private vulnerability reporting when it is enabled for this repository. If that private path is not available, open a minimal public issue asking for a private contact path and avoid including exploit details, screenshots, logs, private transcripts, or sensitive values.
 
-YAIML-created security, privacy, legal, licensing, compliance, or IP notes are project memory, not professional advice or a completed assessment.
+Agent-written security, privacy, legal, licensing, compliance, or IP notes are project memory, not professional advice or a completed assessment.
 
 A YAIML docset should be safe to keep with the repository it describes, whether that repository is private, public, paid, free, open-source, or unreleased. That portability depends on recording sanitized evidence, risk shape, decisions, owners, and open questions instead of private values, private transcripts, raw logs, or detailed exploit instructions.

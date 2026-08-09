@@ -45,7 +45,7 @@ After it runs:
 3. Confirm the repo's agent instruction file now points future AI chats and agents to YAIML.
 4. Let future sessions use those files as shared project memory.
 
-If a tool ignores the repo's instruction file, YAIML still works. Start that session by telling the agent or chat to read `yaiml.yml` first. The goal is not to paste a workflow prompt after every step. The goal is for the repository to carry enough context that the next session can orient itself from the files already there.
+If a tool ignores the repo's instruction file, the pattern still works. Start that session by telling the agent or chat to read `yaiml.yml` first. The goal is not to paste a workflow prompt after every step. The goal is for the repository to carry enough context that the next session can orient itself from the files already there.
 
 Day to day, you should be able to speak normally: "read YAIML and continue through the State Of The (SoT) priorities," "check the SoT before changing this," or "update our SoT after this work." YAIML makes those small instructions meaningful because the repository already contains the context.
 

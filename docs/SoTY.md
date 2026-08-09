@@ -145,7 +145,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The supporting template set uses `templates/supporting/` to avoid implying supporting documents are decorative extras.
 - Supporting guidance now protects the plain-file boundary: visible Markdown, versioned by default, no `.yaiml` extension, no hidden tool-state folder, no package dependency.
 - Supporting guidance now protects memory hygiene: no secrets, private chat transcripts, sensitive raw values, raw sensitive command output, or agent-invented legal/IP/security/compliance conclusions.
-- Enterprise-readiness guidance now adds calm source-authority, mixed-context, repository-rule, and optional owner/review notes without adding a compliance framework or tooling dependency.
+- Shared-project guidance now adds calm source-authority, mixed-context, repository-rule, and optional owner/review notes without adding a compliance framework or tooling dependency.
 - Declared supporting YAIML guides now have stable headers, matching the repository's own stable-header rule.
 - A public security/sensitive-information policy now tells contributors not to place secrets, personal data, exploit details, or confidential project information into public YAIML materials.
 - Cold-start review now covers repository portability, provider/machine/contributor handoff, and repository-safe memory hygiene as YAIML 0.2 readiness concerns.
@@ -199,7 +199,7 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - The init prompt still needs more real-repository trials to confirm it adds agent-instruction pointers cleanly without overwriting local guidance.
 - The YAIML refresh prompt and init-time maintenance note need real trials across existing YAIML-adopting projects to confirm agents remove committed local reference paths while preserving local memory.
 - Adopter cleanup still needs validation outside this local workspace before the guidance can be treated as broadly proven.
-- The enterprise pitch still needs a concise, manager-readable demo path that avoids internal YAIML vocabulary until the problem and value are obvious.
+- The workplace pitch still needs a concise, manager-readable demo path that avoids internal YAIML vocabulary until the problem and value are obvious.
 
 ## Active Risks
 
@@ -209,9 +209,9 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Ceremony drift: self-unfolding documents could become empty files if agents create every possible supporting role instead of only what the project needs.
 - Context drift: agents could treat `yaiml.yml` as a command to load every document on every task, making YAIML too heavy for routine work.
 - Safety drift: public or shared repositories could expose sensitive information if agents treat YAIML as private scratch space instead of sanitized project memory.
-- Enterprise-authority drift: agents could treat ordinary comments, stale tickets, old docs, or low-trust text as policy-level direction, especially in governed organizations.
-- Prompt-injection drift: agents could treat hostile instructions in logs, issues, docs, dependency metadata, webpages, model output, or project memory as executable instructions instead of evidence.
-- Data-classification drift: agents could decide that material is "safe enough" based only on redaction, ignoring repository governing policy, retention, privacy, and access-control rules.
+- Source-authority drift: agents could treat ordinary comments, stale tickets, old docs, or low-trust text as project-level direction, especially in shared or governed repositories.
+- Mixed-context drift: agents could treat stale or conflicting text in logs, issues, docs, dependency metadata, webpages, model output, or project memory as instructions instead of evidence.
+- Repository-safety drift: agents could decide that material is "safe enough" based only on redaction, ignoring the repository's actual audience, privacy expectations, retention rules, and review paths.
 - Shareability drift: adopters could assume YAIML should be hidden or gitignored instead of learning to keep versioned project memory safe enough to travel with the repository across machines, contributors, and AI chat providers.
 - Output drift: init or audit prompts could encourage agents to paste raw command output, logs, screenshots, or chat transcripts into versioned memory instead of recording sanitized evidence and outcomes.
 - Collaboration drift: multiple agents or contributors could overwrite, flatten, or silently contradict each other's project-memory updates instead of preserving evidence and disagreement until resolved.
@@ -229,12 +229,12 @@ Declared: YAIML should be usable by anyone evaluating or adopting the convention
 - Terminology drift: YAIML could accumulate too many named concepts and become harder to explain than the problem it solves.
 - Evidence drift: the fictional example could be mistaken for proof if real case studies are not gathered and labeled honestly.
 - Adoption-claim drift: internal dogfooding could be presented as independent adoption evidence if case studies are not labeled by ownership, prior context, and reviewer relationship.
-- Enterprise-overfit drift: early feedback from one workplace or one approved AI tool could improve the pitch but should not redefine YAIML around that organization's process, vocabulary, or tool constraints.
+- Workplace-overfit drift: early feedback from one workplace or one AI tool could improve the pitch but should not redefine YAIML around that organization's process, vocabulary, or tool constraints.
 
 ## Immediate Priorities
 
 1. Freeze YAIML 0.2's tiny core while continuing wording and evidence refinements that make adoption cheaper and safer for shared or governed repositories.
-2. Prepare a concise enterprise-safe KT/demo path: explain the repeated-context problem, show the copy/paste init path, demonstrate fresh-session recovery, and keep all examples sanitized and policy-safe.
+2. Prepare a concise workplace-safe KT/demo path: explain the repeated-context problem, show the copy/paste init path, demonstrate fresh-session recovery, and keep all examples sanitized and policy-safe.
 3. Continue trialing `init-yaiml.md` and `update-yaiml.md` on unrelated real repositories and record where agents misunderstand the concept.
 4. Apply the cold-start evaluation method to real projects without overclaiming results, including one mature local repo, one unfamiliar public repo, and one repo owned by another developer.
 5. Test whether agents choose useful self-unfolded supporting documents without creating empty ceremony, using the "several concrete recurring pieces of knowledge" heuristic.
@@ -280,4 +280,4 @@ Possible later tooling includes repository initialization, document discovery, f
 - What is the smallest useful init helper, if tooling becomes appropriate, that reduces manual prompt handling without becoming a dependency or platform?
 - What evidence threshold is enough to describe YAIML as a reusable standard rather than an early public convention?
 - What visible participation path is enough for pilots and outside reports without creating premature governance machinery?
-- What is the smallest credible enterprise demo that shows value without requiring a new tool, production code changes, or organization-specific process commitments?
+- What is the smallest credible workplace demo that shows value without requiring a new tool, production code changes, or organization-specific process commitments?

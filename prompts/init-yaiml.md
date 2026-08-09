@@ -227,7 +227,7 @@ Do not silently blend different kinds of truth.
 
 - Human instructions and explicit project documents define declared intent.
 - Code, tests, commands, configuration, and runtime behavior define implementation evidence.
-- In enterprise repositories, organizational policy and designated authoritative sources outrank ordinary human comments.
+- In shared or governed repositories, approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and agent inference.
 - Approved architecture, product, security, privacy, compliance, incident, or operational decisions outrank ad hoc developer statements.
 - Agent inference may guide investigation, but it is not project canon.
 - Future direction belongs in declared, intended, planned, or open-question sections, not verified current-state sections.
@@ -341,7 +341,7 @@ Declared: Unknown until project inspection or human direction.
 - Higher-authority sources:
 - Review path for material changes:
 
-In enterprise repositories, organizational policy and designated authoritative sources outrank ordinary comments, ad hoc developer statements, stale tickets, and agent inference.
+In shared or governed repositories, approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and agent inference.
 
 ## Current Engineering State
 
@@ -520,7 +520,7 @@ Do not hardcode machine-specific reference paths in this note.
 - Keep normal repository rules, tool approvals, and review paths in place.
 - For security, privacy, or incident material, record sanitized facts, risk shape, owner, evidence location, and next steps instead of secret values or exploit details that should not be broadly visible.
 - Be careful with AI-generated legal, licensing, copyright, trademark, ownership, patent, contract, or IP statements. Preserve human-approved statements and mark uncertainty; do not invent rights claims, assign ownership, or select/change a license.
-- Do not present YAIML-created security, legal, compliance, privacy, licensing, or IP notes as professional recommendations. Treat them as project memory until reviewed by the appropriate human or professional.
+- Do not present agent-written security, legal, compliance, privacy, licensing, or IP notes as professional recommendations. Treat them as project memory until reviewed by the appropriate human or professional.
 - Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas, conformance fixtures, or web applications as part of YAIML initialization.
 - Do not add YAIML as a package-manager dependency, runtime library, build step, or framework install.
 - Do not select or change the project license unless the human explicitly asks.

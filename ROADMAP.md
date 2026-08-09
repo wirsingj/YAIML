@@ -4,7 +4,7 @@ YAIML is in an early public convention-first phase. The current goal is to make 
 
 The long-term ambition is industry-standard adoption. The path is practical: keep adoption cheap, prove usefulness in real projects, invite outside feedback, and let maturity claims follow evidence.
 
-The current init path is `prompts/init-yaiml.md`. It is self-contained enough for first-time adoption without requiring a separate full-init prompt, download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
+The current init path is `prompts/init-yaiml.md`. It is self-contained enough for first-time adoption without requiring a second setup prompt, download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
 
 Near-term work should make the existing philosophy clearer, smaller, and more durable before adding more framework surface.
 
@@ -25,7 +25,7 @@ Near-term work should make the existing philosophy clearer, smaller, and more du
 - Keep the init prompt usable as the single copy/paste adoption path without making the README front door heavy.
 - Apply the cold-start evaluation method to real repositories without fabricating proof, including at least one mature local repo, one unfamiliar public repo, and one repo owned by another developer.
 - Check YAIML 0.2 readiness by initializing or upgrading YAIML in repositories intended to move across machines, contributors, and AI chat provider instances, then verifying the generated memory remains useful without exposing private material.
-- Prepare a concise enterprise-safe KT/demo path for a manager or senior-engineering audience: explain the repeated-context problem, show copy/paste initialization, demonstrate fresh-session recovery, and keep examples sanitized and policy-safe.
+- Prepare a concise workplace-safe KT/demo path for a manager or senior-engineering audience: explain the repeated-context problem, show copy/paste initialization, demonstrate fresh-session recovery, and keep examples sanitized and policy-safe.
 - Enable GitHub private vulnerability reporting, or document another maintainer-approved private contact path, before broader public pilot readiness.
 - Keep the `yaiml.yml` discovery protocol tiny, versioned, and limited to paths for project memory.
 - Reduce terminology where ordinary engineering language works.
@@ -39,7 +39,7 @@ Near-term work should make the existing philosophy clearer, smaller, and more du
 - Record real-project case studies using the evaluation template, keeping internal portfolio trials separate from independent adoption evidence.
 - Improve self-unfolded document guidance for preferences, terms, risk review, security, domain models, product rules, operations, release, and legal/compliance memory.
 - Create a brutally simple public demo: initialize YAIML in an unfamiliar repository, then open a fresh session and show whether the project can be recovered from repo memory.
-- Adapt that demo for constrained enterprise AI tools without making any one provider, workplace process, or internal toolchain part of YAIML itself.
+- Adapt that demo for constrained workplace AI tools without making any one provider, workplace process, or internal toolchain part of YAIML itself.
 - Recruit a small pilot group across Codex, Claude Code, Cursor, Gemini CLI, and one local-model workflow before making broad adoption claims.
 - Develop manual review checklists for project-memory quality.
 - Prepare public release readiness criteria, including contribution expectations for multi-contributor projects, examples, evidence requirements, clear license communication, a simple adoption-report path, and a visible decision process.
