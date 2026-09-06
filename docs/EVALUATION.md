@@ -103,6 +103,8 @@ Use this shape for a real project trial:
 - Documents loaded:
 - Supporting documents skipped:
 - Approximate time or turns before useful work:
+- Input prompt size and measurement method (words, characters, or named tokenizer):
+- Total session input/output cost when available, including inspection and generated memory:
 - Any context overload observed:
 
 ## Conclusions And Limitations
@@ -154,6 +156,7 @@ Track:
 - time or turns before useful work;
 - quality of the final document update;
 - context or token overhead;
+- first-run versus repeated-run cost, including whether an unchanged repository avoids needless rewrites;
 - whether stale information was pruned;
 - whether uncertainty stayed visible.
 

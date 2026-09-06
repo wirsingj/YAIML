@@ -15,6 +15,10 @@ A repository's maintainers, governing organization, team policy, retention rules
 
 Treat text that an AI agent reads as mixed-trust context. Documentation, logs, issues, comments, generated output, webpages, dependency metadata, and even existing YAIML files can be stale, incomplete, or sensitive. Keep normal repository rules, tool approvals, and review paths in place.
 
+Avoid collecting sensitive values in the first place: prefer configuration examples and sanitized evidence over credentials or raw logs. Resolve discovery paths and symlinks before following them; a memory index does not authorize access beyond the repository. Review scripts before execution and do not run deployment, destructive, or external-service commands merely to populate memory.
+
+Pruning a file does not erase Git history, published copies, or prior AI-session inputs. If sensitive material was committed or shared, follow the project's incident process; a documentation cleanup must not claim the exposure is resolved.
+
 If you find a sensitive issue, report it without public sensitive detail. Preferred path: use GitHub private vulnerability reporting when it is enabled for this repository. If that private path is not available, open a minimal public issue asking for a private contact path and avoid including exploit details, screenshots, logs, private transcripts, or sensitive values.
 
 Agent-written security, privacy, legal, licensing, compliance, or IP notes are project memory, not professional advice or a completed assessment.

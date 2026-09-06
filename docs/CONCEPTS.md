@@ -36,10 +36,10 @@ YAIML does not claim to have invented persistent Markdown context. It brings cur
 
 Agent instructions tell a session how to work. Feature specs define desired changes; issues track work; changelogs record history. YAIML preserves the current understanding that connects these sources and points back to them. Reuse existing documentation that already fills a role.
 
-The code is evidence of implementation, not proof that the implementation reflects approved intent. For example:
+The code is evidence of implementation, not proof that the implementation reflects approved intent. In a fictional tabletop app:
 
 ```text
-Declared (product decision): the desktop host is a player, not the DM.
+Declared (product decision): the desktop host is a player, not the dungeon master (DM).
 Verified by source inspection: two UI labels still call the host “DM”.
 Divergence: implementation copy conflicts with product direction.
 ```

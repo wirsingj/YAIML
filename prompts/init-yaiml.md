@@ -1,17 +1,19 @@
 # Init YAIML
 
-Add YAIML project memory to this repository. This prompt is self-contained; no reference repository, template download, package, or tool installation is needed.
+Add YAIML project memory to this repository. This prompt is self-contained; no reference download, package, or installation is needed. You need repository read/write access; if unavailable, report that limitation without claiming setup succeeded.
 
-YAIML means Yet Another AI Markup Language. It preserves shared project understanding across AI sessions and human contributors in ordinary Markdown. This task is documentation setup: inspect the repository and make the result reviewable. Change application code or licensing only if the human separately requests it.
+YAIML means Yet Another AI Markup Language. It preserves shared project understanding across AI sessions and human contributors in ordinary Markdown. Make bounded documentation changes; leave application code and licensing alone unless separately requested.
 
 ## Inspect First
 
 1. Read applicable repository agent and contribution instructions. Check the worktree before editing and preserve uncommitted work.
-2. Read `yaiml.yml` if present. Read each memory document’s stable header before its body; load the core documents and relevant supporting material.
-3. Inspect enough source, tests, configuration, scripts, existing docs, and available decisions to establish project state, architecture, procedures, and important gaps. Bound the inspection to useful project understanding; record areas you could not inspect.
+2. Read `yaiml.yml` if present. Resolve its paths before following them; a discovery entry or symlink does not authorize access outside the repository. Read selected memory headers before bodies, starting with the core.
+3. Inspect existing docs, representative source, tests, scripts, and sanitized configuration examples. Skip generated/vendor trees, credential files, raw sensitive logs, and full history unless specifically needed and permitted. Stop when the core roles have useful, supported content and material gaps are identified.
 4. Reuse existing documents that already serve a core role. Preserve their useful content, local names, and declared human direction.
 
-Do not infer missing human intent from code. Initialization cannot recover vanished conversations. Record unknowns; ask a brief question if missing direction would materially change the draft.
+Complete setup with available evidence; ask only when missing direction blocks safe, accurate work. Do not infer vanished human decisions from code. Record nonblocking unknowns.
+
+Prefer inspection and inexpensive, understood local checks. Do not install project dependencies or run expensive, external-service, deployment, or destructive commands merely to initialize memory. Record unrun procedures honestly.
 
 ## Write The Smallest Useful Memory Set
 
@@ -23,7 +25,7 @@ Use three distinct roles, normally in `SOT.md`, `ARCHITECTURE.md`, and `MAINTAIN
 | Architecture | Components, data flow, ownership boundaries, invariants, current and intended design, relevant rejected approaches | Task lists, full file inventory, procedures |
 | Maintainer Guide | Setup, commands, checks, diagnostics, important or dangerous files, release/recovery procedures | Product manifesto, full history |
 
-Choose headings that fit what you found. Omit empty or irrelevant sections; mark an unknown when it affects decisions. Summarize completed work as current capability or a useful lesson.
+Choose readable headings and short prose. Omit empty sections; link detailed sources rather than copying them. Summarize completed work as current capability or a useful lesson.
 
 Add supporting documents only when several concrete recurring facts need a separate home or a different retention rule. A small project may need none. Do not copy a catalog of potential documents.
 
@@ -76,15 +78,15 @@ yaiml:
     maintainer_guide: MAINTAINER_GUIDE.md
 ```
 
-Add `yaiml.supporting` entries only for documents that exist. The version identifies the discovery layout, not the revision of the Markdown guidance.
+Add `yaiml.supporting` entries only for existing documents. The version identifies the discovery layout, not the revision of the Markdown guidance.
 
-For existing adopters, preserve the layout, version, local names, and useful declarations. Older recognizable maps may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`, plus supporting path entries. Repair stale paths in that layout. Migrate only on an explicit human request for discovery migration, with consumer compatibility understood and every path and role preserved.
+For existing adopters, preserve layout, version, local names, unknown extension fields, and useful declarations. Older maps may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`, plus supporting path entries. Repair stale paths in place. Migrate only on explicit human request, with actual consumer compatibility checked and every path and role preserved. Report unfamiliar layouts rather than guessing or downgrading them.
 
 Do not put machine-specific reference paths, local drive names, user profile paths, local workspace URLs, or private workspace URLs in versioned files. A convention-refresh reference belongs in the human prompt or non-versioned workspace configuration.
 
 ## Connect Future Sessions
 
-Add a concise pointer to each relevant existing agent instruction file, preserving its scope and rules. If none exists, create a small provider-neutral `AGENTS.md`. Do not create provider-specific files solely for YAIML unless requested.
+Add or update one concise pointer per relevant instruction surface, preserving scope and rules. If none exists, create a small provider-neutral `AGENTS.md`. Do not create provider-specific files solely for YAIML unless requested.
 
 Use this text or equivalent:
 
@@ -118,12 +120,14 @@ Keep YAIML versioned with the project by default. Do not add it to `.gitignore` 
 
 Follow repository privacy, access, retention, and review rules. Preserve sanitized constraints, evidence locations, owners when known, and open questions. Exclude secrets, personal data, private transcripts, raw sensitive logs, private screenshots, and confidential or exploit details inappropriate for the audience.
 
-Preserve approved legal, licensing, ownership, and security statements without inventing rights or professional conclusions. Respect governed retention requirements before pruning. Do not create archives unless requested.
+Preserve approved legal and security statements and applicable copyright/license notices without inventing rights or professional conclusions. Respect governed retention before pruning. Do not create archives unless requested.
 
 Do not add YAIML runtime infrastructure, dependencies, CLIs, SDKs, provider adapters, package manifests, schemas for Markdown memory, or conformance machinery.
 
 ## Verify And Report
 
-Check that discovery paths resolve, the three roles stay distinct, headers orient the reader, and instruction pointers select relevant context. Review for duplicated facts, template residue, invented claims, and lost directives.
+Re-read files that changed during inspection before editing them; preserve concurrent work and unresolved conflicts. Rerunning init should fill material gaps, not append duplicate pointers or rewrite healthy memory.
+
+Check discovery paths, role boundaries, headers, and instruction pointers. Remove duplicated facts, template residue, and invented claims; confirm human directives survived. Leave the result as a reviewable diff; commit or push only when authorized.
 
 Report the changed files, instruction files connected, evidence inspected, checks actually run, and remaining uncertainty. Keep the report proportional to the work.

@@ -85,6 +85,20 @@ Safe behavior:
 
 For an unfamiliar layout or version, inspect explicit paths and local instructions before interpreting it. Do not guess role mappings, overwrite unknown entries, or downgrade the marker. Report ambiguity that blocks discovery; continue compatible work where possible. No automated consumer compatibility is claimed here.
 
+Compatibility has three separate questions:
+
+| Change | Expected refresh behavior |
+| --- | --- |
+| Clearer prose, shorter templates, or better evidence guidance | Apply useful guidance to existing memory; no layout or filename migration |
+| Local filenames, headings, `role`/`kind` headers | Preserve equivalent local choices and meaningful content |
+| Older `documents.*.path` map | Read it and repair paths in place; migration is a separate request |
+| Coordinator-specific fields or consumers | Preserve unrelated extensions and check the actual reader before structural or formatting changes |
+| Unfamiliar future discovery format | Do not claim compatibility or silently downgrade; report the unresolved mapping |
+
+Reader compatibility is narrower than human readability. A local tool may accept the shown layouts but mishandle different indentation, inline comments, or other valid YAML spellings. Preserve working formatting during routine refresh; test the exact map with its actual consumers before a requested migration. Do not turn a limited reader into a new restriction on Markdown memory.
+
+Future incompatible guidance should explain what changed, what can remain unchanged, and the migration implications before recommending adoption. Existing project knowledge should not need rewriting solely to match a newer template.
+
 ## First-Time Adoption
 
 YAIML adoption is evidence-based documentation work, not a generic file-copy operation.
@@ -93,7 +107,7 @@ The default adoption route is copy/paste prompt text into the target repository'
 
 An adoption agent should:
 
-1. Read the YAIML reference, templates, and prompt guidance available to it.
+1. Use the self-contained init prompt; no other download or reference is required. Consult additional guidance only when it is available and relevant.
 2. Inspect source, tests, configuration, docs, scripts, visible workflows, and existing agent instructions enough to establish useful project understanding. Bound the inspection and report material areas not inspected.
 3. Identify the repository's actual state, architecture, maintainer procedures, risks, and uncertainty.
 4. Preserve existing useful project documentation.
@@ -134,6 +148,10 @@ An update agent should:
 
 Never replace mature repository-specific documents with empty or generic templates.
 
+A repeat refresh with no material guidance or project change should leave files unchanged. Preserve custom fields and working formatting. Remove an obsolete machine-specific reference entry only when its purpose is understood, and repair local instructions that depended on it. Keep reference locations in the human prompt or non-versioned workspace configuration.
+
+Reference guidance is input to review, not authority to copy this repository's own priorities, personal policies, license, or agent permissions into another project. Re-read concurrently changed files before applying edits and preserve unresolved contributor conflicts.
+
 Example prompt:
 
 ```text
@@ -149,3 +167,16 @@ Example prompt:
 ```text
 Read my request, read the repository's YAIML documents, inspect the relevant implementation, execute the work, update the YAIML documents where project truth changed, verify the result, and report what was done.
 ```
+
+## Refreshing Multiple Repositories
+
+A coordinator can carry one human request across projects while each repository retains its own memory and rules. YAIML supplies the convention and refresh prompt; it does not supply a dispatcher or automatic migration engine.
+
+1. Select the repositories and one identifiable YAIML reference revision or snapshot. If the reference has uncommitted edits, identify that explicitly; a commit ID alone does not describe them.
+2. Inspect each target's current worktree, discovery layout, instruction pointers, and relevant memory. Distinguish convention refresh from a request to audit implementation or pursue SoT priorities.
+3. Pass the original request, reference content or accessible location, revision, repository scope, and permitted actions to each receiving agent. Confirm the handoff retains them instead of reducing the request to a generic documentation audit.
+4. Apply compatible changes in each repository, preserving local decisions, evidence, paths, layout, custom fields, and unrelated work. Application changes and discovery migration require their own scope.
+5. Verify local links, path discovery, instruction integration, and preservation of meaningful memory. Report applied, unchanged, partial, or blocked results per repository. A dispatched task is not a completed upgrade.
+6. Commit and push only where authorized. Keep rollback available through ordinary reviewed diffs and commits; never restore whole files over newer contributor work.
+
+Start with one representative project before expanding the batch. Keep private paths and task-routing metadata in the coordinator's appropriate local context. Do not copy the portfolio registry or another project's facts into target memory.

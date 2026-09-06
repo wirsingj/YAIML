@@ -27,6 +27,8 @@ Use several focused passes for substantial revisions:
 
 The init prompt is intentionally self-contained. When shortening it, keep the behavior an adopter needs without relying on links to this repository.
 
+Review init alone against a small repository, mature existing docs, repeated setup, missing access, concurrent edits, and unfamiliar discovery. Check its stopping rule and command scope as well as its length. Track prompt size separately from observed total session cost; word counts do not prove token savings or successful adoption.
+
 ## Useful Commands
 
 Run from the repository root; Git and ripgrep must be available.

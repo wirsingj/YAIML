@@ -10,6 +10,8 @@ YAIML is an early experiment with the ambition to become a widely adopted standa
 
 Open your project in a repository-aware AI chat or coding agent. Copy the contents of [Init YAIML](prompts/init-yaiml.md) into that session. The prompt is self-contained: you do not need to download this repository.
 
+The session needs access to read and edit your project. Init creates a useful first draft from available evidence; it does not require installing the project's dependencies or completing a full code audit.
+
 The agent inspects your project, reuses useful existing documentation, writes the smallest appropriate memory set, and adds a pointer to your agent instructions. Review the diff for invented facts, lost decisions, or sensitive information before accepting it.
 
 Initialization can recover context from available files and supplied decisions. It cannot recover intent that existed only in a vanished chat.
@@ -77,3 +79,5 @@ YAIML needs maintenance and consumes reading context. Stale or overgrown memory 
 - [Contributing](CONTRIBUTING.md) and [Roadmap](ROADMAP.md): feedback and future direction.
 
 Licensed under [MIT](LICENSE.md). Maintained with [AI assistance](AI_USAGE.md) as a [personal, independent project](docs/PROJECT_INDEPENDENCE.md). Keep memory appropriate for its repository’s audience; follow [Security And Sensitive Information](SECURITY.md) for handling and reporting concerns.
+
+When redistributing copied YAIML prompts, templates, or other substantial material, retain the applicable copyright and permission notice from [LICENSE.md](LICENSE.md). Adoption does not ask an agent to change your project's license.

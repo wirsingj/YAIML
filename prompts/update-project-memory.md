@@ -28,6 +28,7 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 - Keep normal repository rules, tool approvals, and review paths in place.
 - Use Git history as the archive for old completed work.
 - Do not overwrite, discard, reset, or hide uncommitted human work.
+- Re-read files changed by other contributors since inspection before writing. Do not rely on Git to preserve detail that has never been committed.
 - Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions.
 - Do not present agent-written security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 - Source inspection can verify that a command, script, workflow, config entry, or test exists. Successful execution verifies that it ran under the recorded conditions.

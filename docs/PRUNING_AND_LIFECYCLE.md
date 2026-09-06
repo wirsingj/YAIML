@@ -58,6 +58,8 @@ Those phrases should not start feature work, a broad architecture rewrite, or an
 
 Routine pruning is also expected after material work. A normal SoT update should remove stale or resolved state while recording the new current truth. An explicit compression request is useful when the memory has become repetitive, too large, contradictory, or log-like.
 
+Before removing detail because Git can recover it, confirm it is actually committed or safely preserved under the project's retention rules. Re-read files changed during the review to avoid overwriting concurrent work. Pruning current text does not remove sensitive content from history or published copies; follow [Security](../SECURITY.md) for that distinction.
+
 ## Architecture Lifecycle
 
 Architecture should remain a coherent model.

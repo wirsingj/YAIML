@@ -21,6 +21,8 @@ Declared: the ambition is broad adoption as a standard. Current status remains a
 
 Declared: keep adoption prompt-first, no-install, and convention-first. Preserve the three core roles, ordinary Markdown, explicit uncertainty, and routine pruning. Do not add tooling or revive formal specification machinery without a human phase change.
 
+Declared: the standalone init prompt is the primary integration point. A user should paste it into a repository-capable agent and obtain useful memory without additional downloads, libraries, installs, or coordinator dependencies. Preserve human readability while controlling inspection and output cost.
+
 Declared: keep this a personally maintained, public MIT-licensed project. Preserve the [maintainer’s independence declaration](PROJECT_INDEPENDENCE.md) and exclude employer-confidential material, secrets, and private transcripts. Record reviewed professional constraints without inventing legal or security conclusions.
 
 Declared (maintainer request, 2026-09-06): use repeated audits and corrections to reduce verbosity, repetition, and issues that unfamiliar agents would reasonably flag.
@@ -31,9 +33,9 @@ Verified by repository inspection: YAIML consists of reference guides, seven hel
 
 The README provides one adoption path. The init prompt is self-contained and reuses existing project documentation. Detailed guidance is organized by topic; [Architecture](ARCHITECTURE.md) maps the artifact responsibilities and [Maintainer Guide](MAINTAINER_GUIDE.md) describes review procedures.
 
-Current guidance treats headers as reader orientation, `read-with` as a relevance hint, and discovery versions separately from prose revisions. Realignment follows established human direction; repository-local storage does not promise local-only AI processing. Core templates consolidate overlapping sections and permit omission of empty headings.
+Current guidance distinguishes headers from discovery versions, bounds initial inspection, avoids sensitive-file collection and unnecessary command execution, and preserves concurrent work. Repeated init/refresh should leave healthy memory unchanged. Existing layouts and custom fields survive compatible guidance refreshes; actual consumers must be checked before requested migrations.
 
-The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned repository inspection and dated public-listing observations. It does not measure productivity or establish independent adoption. External evidence is not revalidated by this documentation audit.
+The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned inspection and dated listing observations, not productivity or independent adoption. The current audit checked its 18 pinned source paths for existence; it did not rerun extension checks or refresh store observations.
 
 Prior local sampling reported useful project memory alongside legacy discovery maps and committed machine-specific reference paths. That historical report is not a reproducible independent trial. The current [compatibility policy](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) preserves layouts during routine refresh and requires explicit migration direction.
 
@@ -44,7 +46,7 @@ Prior local sampling reported useful project memory alongside legacy discovery m
 - **Evidence and authority errors:** agents may still promote old results, inference, or fictional examples into current fact, or flatten contributor disagreements.
 - **Portability and sharing:** generated memory must preserve useful constraints without machine-specific paths or sensitive content; legacy-adopter refresh behavior needs trials.
 - **Phase drift:** added tools, formal requirements, or empty templates could displace the plain-file convention.
-- **Reporting readiness:** a private sensitive-reporting path is not established by the current evidence; resolve this before broader public pilot readiness.
+- **Reporting readiness:** GitHub's private-reporting API returned `enabled: false` on 2026-09-06. Establish the private path before broader public pilot readiness; the current policy provides a minimal public contact-request fallback.
 
 ## Immediate Priorities
 

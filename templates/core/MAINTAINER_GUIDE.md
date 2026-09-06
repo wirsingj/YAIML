@@ -37,6 +37,8 @@ For recurring failures, record symptoms, likely owner, evidence to inspect, and 
 
 “Update YAIML”, “updated YAIML”, or “check new YAIML” means compare local convention guidance, prompts, templates, and instruction pointers against a human-provided or workspace-local reference. Preserve project memory and existing discovery layout; migrate only on explicit request with compatibility established.
 
+Identify the reference revision or supplied snapshot. Preserve unrelated custom fields and concurrent edits; a repeat refresh may need no changes. Coordinated work must carry the original refresh request and reference into each target session and distinguish dispatch from completion.
+
 “Clean up YAIML”, “compress YAIML”, “compact project memory”, “prune project memory”, or “prune SoT” means remove stale, repeated, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons. Respect governed retention rules.
 
 Keep machine-specific reference paths and private workspace URLs out of versioned files. If a refresh reference is unavailable, request one rather than guessing.

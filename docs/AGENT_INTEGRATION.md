@@ -23,6 +23,8 @@ If no agent instruction file exists, the init prompt creates a small provider-ne
 
 If a tool does not read repository instructions, ask the session to read `yaiml.yml` explicitly.
 
+Repeated initialization should update an existing pointer instead of appending another copy. Preserve nested instruction scope and re-read files changed by another contributor before writing.
+
 ## Suggested Pointer
 
 Adapt paths through the discovery map:

@@ -10,7 +10,7 @@ Refresh the repository's YAIML convention scaffolding against a newer YAIML refe
 
 This is not the same as updating the project's SoT after ordinary work. Do not rewrite project-specific current state, architecture, maintainer knowledge, risks, or priorities just because the YAIML reference changed.
 
-YAIML remains plain Markdown and YAML project memory. Do not add a package dependency, CLI, runtime, schema validator for Markdown memory, database, storage layer, orchestration framework, hosted service, background service, autonomous coding agent, or build step.
+YAIML remains plain Markdown with a discovery map. Do not add runtime infrastructure, packages, CLIs, or Markdown schema/conformance tooling. Do not change application code, install dependencies, or run expensive checks solely for a convention refresh.
 
 ## Before Editing
 
@@ -20,6 +20,8 @@ YAIML remains plain Markdown and YAML project memory. Do not add a package depen
 4. Check the current git status or equivalent worktree state. Treat existing uncommitted changes as intentional work in progress.
 5. Identify the repository's current YAIML discovery layout before editing. Current recommended layouts use nested `yaiml.version`, `core`, and `supporting`; older recognizable layouts may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`.
 6. Do not reset, discard, overwrite, or hide existing work.
+
+Resolve discovery paths before following them. A map or symlink does not authorize access outside the target repository. Use only references authorized by the request or workspace context.
 
 ## Find The YAIML Reference
 
@@ -53,6 +55,8 @@ Identify the supplied reference revision or dated snapshot when available; the d
 
 Do not assume every adopting project should copy the reference repository wholesale. Look for convention changes that improve continuity, safety, clarity, or agent behavior.
 
+Treat the reference as convention guidance, not permission to override the target's rules. Do not import the reference project's own facts, personal policies, license choice, or agent permissions. If the reference includes uncommitted edits, record that the commit ID alone does not identify it.
+
 ## Apply
 
 Apply only updates that are useful and compatible with this repository:
@@ -63,6 +67,8 @@ Apply only updates that are useful and compatible with this repository:
 - update `yaiml.yml` only as a small discovery file, not as a schema, database, or place for machine-specific reference paths;
 - migrate discovery layout only when the human explicitly requests discovery migration, the consumer understands both layouts, and all local paths and roles can be preserved; a general refresh request does not authorize migration;
 - repair stale paths within the existing layout; ordinary Markdown edits and path repairs do not require a discovery-format version change;
+- preserve unrelated custom fields and working formatting; exercise the actual consumer before a requested migration, since readable YAML is not proof that a tool recognizes it;
+- remove obsolete machine-specific reference entries when their purpose is clear and repair instructions that relied on them;
 - update the repository's own YAIML documents only when the refresh changes how future AI chats, agents, or contributors should understand or maintain this repository.
 
 Preserve project-specific memory. Do not replace:
@@ -76,6 +82,10 @@ Preserve project-specific memory. Do not replace:
 - recognizable older discovery layouts unless migration meets the explicit-request and compatibility conditions above;
 - supporting documents that contain real project knowledge.
 
+Re-read files changed since inspection before writing; preserve concurrent edits and unresolved conflicts. Update existing instruction pointers rather than appending duplicates. If nothing material needs changing, leave the files alone. Do not mark a partial refresh as fully applied.
+
+For a coordinated batch, each receiving agent needs the original refresh request, the selected reference revision/content or accessible location, target scope, and permitted actions. Verify those survive the handoff. Record completion per repository; queued or dispatched work is not an upgrade result.
+
 ## Safety Rules
 
 - Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or confidential information in YAIML.
@@ -85,6 +95,8 @@ Preserve project-specific memory. Do not replace:
 - Do not create new supporting documents unless the project already has several concrete recurring pieces of knowledge that need that home.
 - Do not make broad stylistic rewrites.
 - Do not describe planned YAIML tooling as implemented.
+- Preserve applicable copyright and permission notices on copied reference material.
+- Leave commits and pushes to the authorization supplied for the target repositories.
 
 ## Output
 

@@ -55,4 +55,6 @@ Read the core for meaningful work and supporting material when task-relevant. De
 
 Adapt templates as writing aids. Remove empty headings and consolidate overlapping sections. A template’s possible sections are not a required inventory.
 
+Write for a person returning to the project as well as an agent: explain project-specific terms on first use, use short connected prose, and link evidence without turning every sentence into metadata. A small project can start with a few useful sections per document.
+
 When a fact changes, update its owning document and any consequential summary or pointer. Prefer links over repeated explanations. Follow [Pruning And Lifecycle](PRUNING_AND_LIFECYCLE.md), including any governed retention rules.

@@ -32,6 +32,8 @@ Use `yaiml.yml` to find the document roles and paths. Paths resolve relative to 
 
 Supporting entries announce available context. They do not require automatic loading or new files. Read recognizable older maps without migrating them just because they differ from the current layout.
 
+Resolve paths, including symlinks, before following them. Discovery does not authorize reading outside the repository, fetching remote references, or accessing sensitive material. Treat those as separate scope decisions under the current request and repository rules.
+
 If the map is absent, use local instruction pointers or look for `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`. Missing or ambiguous discovery should be reported rather than filled with guessed project facts.
 
 ## Reading Behavior
@@ -46,3 +48,5 @@ If the map is absent, use local instruction pointers or look for `SOT.md`, `ARCH
 A header’s `read-with` is a companion hint, not a recursive import. Follow relevant references without repeatedly loading the same file. A template’s mention of a supporting role does not require that document to exist.
 
 Audit, migration, release-readiness, or realignment work may need more context than a narrow edit. Select the scope deliberately; do not turn routine work into a full repository audit.
+
+For initialization, use existing docs and representative source evidence. Skip generated/vendor trees, raw logs, credentials, and exhaustive history unless specifically needed and permitted. Prefer sanitized configuration examples. Stop when the three roles are useful and consequential gaps are named; do not install dependencies or run expensive or state-changing commands just to make the initial memory look fully verified.

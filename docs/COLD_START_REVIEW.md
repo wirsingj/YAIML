@@ -14,60 +14,50 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 # Cold Start Review
 
 Date: 2026-09-06
+Baseline: `7c1c44e`
 
-## Scope And Method
+## Scope
 
-Three manual audit/correction passes reviewed the repository as material a reader might hand to an unfamiliar AI agent:
+Manual audit of the standalone init prompt and the repository's intent, reading/maintenance cost, security guidance, licensing consistency, human readability, evidence, and backwards compatibility. Reference guides, all prompts, templates, examples, policy files, discovery maps, and living memory were reviewed.
 
-1. Reader path, verbosity, repetition, and core-memory size.
-2. Authority, discovery/header semantics, template consistency, and evidence boundaries.
-3. Regression review of the shortened instructions, examples, local references, and publication diff.
-
-Baseline: commit `cbe412e`, which preserves the worktree revisions present at the start of this review. Scope includes README, agent instructions, all declared memory, prompts, templates, examples, roadmap, and public policies.
-
-The same assisting agent performed the edits and review. This is not an independent review, controlled fresh-session trial, or evidence that another model will follow the prompts successfully.
+The same assisting agent reviewed and edited the materials. This is not an independent evaluation, a fresh-agent adoption trial, a legal opinion, or a security certification.
 
 ## Findings And Corrections
 
-| Finding | Correction |
-| --- | --- |
-| README and init repeat much of the reference | README links to topic guides; init retains a self-contained minimum without embedding three full templates |
-| Core memory repeats artifact lists, doctrine, and checklist items | Consolidated roles, current state, and procedures into their own documents |
-| Core templates invite repeated facts under overlapping headings | Combined sections and made omission of empty headings explicit |
-| Realignment permits broad deletion before establishing corrected intent | Requires human-directed scope, preserves unrelated work, and distinguishes design from transitional implementation |
-| Header fields, companion hints, and versions invite strict-format assumptions | Explained flexible headers, non-recursive reading, path resolution, and discovery versus prose revisions |
-| Fictional results and local-storage language can imply more than intended | Added nearby fictional-result labels and clarified that an AI tool has its own data handling |
-| Review/evaluation wording risks overstating evidence | Kept inspection distinct from trials; improved baseline isolation, comparable conditions, and reporting limits |
-| Earlier approved text could appear immutable | Clarified that authorized decisions may supersede it, with the change recorded |
+| Area | Finding | Correction |
+| --- | --- | --- |
+| Paste-and-go intent | The primary integration point needed an explicit access assumption | Init remains self-contained and now reports missing repository access honestly |
+| Performance | “Bounded inspection” left room for exhaustive reading and costly setup commands | Added representative reading, exclusions, a stopping rule, and inexpensive-check guidance |
+| Repeat use | Repeated initialization or refresh could append pointers or rewrite healthy memory | Defined unchanged results, pointer reuse, and concurrent-edit checks |
+| Security | Sanitizing output alone does not prevent collecting sensitive input | Prefer sanitized examples; check discovery/symlink scope and scripts before following or running them |
+| Retention | “Git is the archive” can lose uncommitted knowledge or imply an exposure is erased | Confirm preservation before pruning; distinguish current-file cleanup from history and prior disclosure |
+| Licensing | Copy/paste adoption did not clearly explain notices on redistributed material | Linked the existing MIT notice condition; preserve the target project's license and supplied notices |
+| Readability | Further shortening could remove useful orientation | Kept the role table, header example, evidence labels, and instruction pointer; emphasized short prose and defined terms |
+| Compatibility | Guidance refresh, discovery migration, and tool compatibility could be conflated | Added a compatibility table and explicit preservation of local choices, custom fields, and working formatting |
 
-## Verification
+The init prompt grew from **1,178 to 1,255 whitespace-delimited words** (8,702 to 9,348 characters). The additional 77 words make inspection and repeat-run behavior more bounded. This is a size measurement, not measured token savings or proof of reduced total session cost.
 
-Local inspection ran on Windows using Git, Python, and the existing PyYAML library. Temporary review checks were not added as project tooling.
+## Scenario Review
 
-- Parsed all three discovery maps; all 23 declared document paths resolved and their files had stable header delimiters.
-- Checked all 48 tracked Markdown files for balanced code fences and local Markdown links, including heading anchors; no errors found.
-- A targeted scan found no concrete machine-specific reference values in the checked patterns. This is not a comprehensive secret scan.
-- `git diff --check` passed for the corrections.
-- The MIT License and discovery map contents were unchanged by the audit corrections.
+Manual walkthroughs checked the instructions for a small repository, mature local filenames and docs, repeated setup, concurrent edits, missing filesystem access, missing refresh reference, unfamiliar discovery, and governed retention.
 
-These checks establish local structural consistency, not Markdown schema conformance or agent effectiveness. External links, store listings, extension behavior, and prior case-study checks were not revalidated.
+The prompt gives an explicit path for each: create only useful memory, reuse established roles, avoid duplicate rewrites, preserve concurrent work, report access limits, request a missing reference, retain ambiguous mappings, and respect retention. These are findings about instruction coverage; no new agent was run against those scenarios.
 
-Whitespace-delimited word counts against the baseline:
+## Executed Checks
 
-| Document | Before | After |
-| --- | ---: | ---: |
-| README | 2,317 | 741 |
-| Init prompt | 4,305 | 1,178 |
-| SoTY | 1,233 | 734 |
-| Architecture | 1,093 | 570 |
-| Maintainer Guide | 2,245 | 721 |
+Local checks used Git, Python, and the already available PyYAML library. No library, script, runtime, or validation framework was added to YAIML.
 
-These measure text reduction, not token cost or improved outcomes.
+- All 48 tracked Markdown files were checked for balanced fences, local link targets/anchors, case-sensitive paths, encoding errors, and merge markers.
+- All three discovery maps parsed; their 23 declared document paths resolved to files with stable headers. Four fenced YAML examples parsed.
+- Targeted credential and machine-specific-path patterns produced no findings. This was a current-tree pattern scan, not an exhaustive history or secret audit.
+- `git diff --check` passed. The MIT License and all three discovery maps were unchanged.
+- The MIT text was compared with the [OSI reference](https://opensource.org/license/mit); this review did not assess authorship, ownership, or employment agreements.
+- All 18 unique pinned source-file links in the existing YTMMOCC case study resolved to Git objects locally. That verifies referenced paths, not every behavioral claim or current online availability; extension checks and store observations were not rerun.
 
-## Remaining Limits
+## Remaining Findings
 
-The shortened prompt still needs fresh-session adoption, refresh, and compression trials, including legacy discovery layouts. Independent projects and comparable baselines are needed before claims of broad compatibility or productivity improvement.
+**Private reporting is disabled.** A read-only request to [GitHub's repository reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting) returned HTTP 200 with `enabled: false` on 2026-09-06. No setting was changed. The existing security policy offers a minimal public request for a private contact path; establishing that private route remains a public-pilot readiness task.
 
-The prior review recorded local adopter sampling on 2026-07-11: useful project-specific memory coexisted with older maps and machine-specific reference paths. That report was not reproduced here. Retain its practical lesson—test portability and cleanup—without treating local sampling as independent proof.
+**Effectiveness remains unmeasured.** Prompt size, structural checks, and manual walkthroughs do not establish independent adoption success, total token cost, or interoperability with every agent or reader. Use the [evaluation method](EVALUATION.md) for those trials.
 
-A private sensitive-reporting path remains unestablished by the evidence recorded here. Current active priorities belong in [SoTY](SoTY.md); evaluation procedure belongs in [Evaluation](EVALUATION.md).
+Current priorities belong in [SoTY](SoTY.md). Upgrade behavior belongs in [Adoption And Updates](ADOPTION_AND_UPGRADES.md); this review does not promise universal backwards compatibility.

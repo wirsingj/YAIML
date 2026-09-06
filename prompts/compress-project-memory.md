@@ -32,6 +32,7 @@ This is not a feature implementation task. Do not change application code unless
 - Do not create an archive unless the project asks for one.
 - Prefer a coherent rewrite over a patched-down long file.
 - Use Git history as the archive for old completed work.
+- Confirm detail is committed or otherwise safely retained before relying on history. Re-read concurrently changed files before writing; preserve other contributors' work. Removing sensitive text does not erase prior exposure or Git history.
 
 ## Output
 

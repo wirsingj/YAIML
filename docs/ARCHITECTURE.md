@@ -52,6 +52,8 @@ Headers communicate role, responsibility, lifecycle, update triggers, and eviden
 
 The init prompt deliberately repeats the minimum convention because it must work when copied alone. Other guides should link to the topic’s owner instead of repeating full explanations.
 
+The init prompt is the primary adoption interface. It must retain enough context to work independently, with bounded inspection and no installation requirement. External coordinating tools are optional users of the files; none is a dependency or part of the adoption path.
+
 ## Deferred And Retired Approaches
 
 During the convention-first phase, do not add implementation libraries, CLIs, SDKs, provider adapters, package manifests, services, databases, orchestration, or web applications. A future helper would serve project-local files without becoming an adopter’s runtime or build dependency.

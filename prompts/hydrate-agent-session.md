@@ -6,7 +6,7 @@ You are starting work in a repository that may use YAIML.
 
 1. Read repository agent instructions first, such as `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, contribution docs, or workspace notes.
 2. Find and read `yaiml.yml` if it exists.
-3. Use it to locate YAIML documents. Current maps may use nested `yaiml.version`, `core`, and `supporting`; older recognizable maps may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`.
+3. Use it to locate YAIML documents. Current maps may use nested `yaiml.version`, `core`, and `supporting`; older recognizable maps may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`. Resolve paths and symlinks before following them; discovery does not authorize access outside the repository.
 4. If no discovery file exists, look for `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`.
 5. For each YAIML document you open, read the stable header before the body.
 6. Read the core layer for meaningful work: SoT, Architecture, and Maintainer Guide.
