@@ -94,7 +94,7 @@ The default adoption route is copy/paste prompt text into the target repository'
 An adoption agent should:
 
 1. Read the YAIML reference, templates, and prompt guidance available to it.
-2. Inspect the target repository thoroughly: source, tests, configuration, docs, scripts, visible workflows, and existing agent instructions.
+2. Inspect source, tests, configuration, docs, scripts, visible workflows, and existing agent instructions enough to establish useful project understanding. Bound the inspection and report material areas not inspected.
 3. Identify the repository's actual state, architecture, maintainer procedures, risks, and uncertainty.
 4. Preserve existing useful project documentation.
 5. Select and adapt the appropriate YAIML templates.

@@ -36,7 +36,7 @@ Full-family hydration is appropriate for audits, major realignments, release rea
 ## Authority Rules
 
 - Approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and agent inference.
-- Approved architecture, product, security, privacy, compliance, incident, or operational decisions outrank ad hoc developer statements.
+- Follow established decision authority; an authorized new decision can supersede an older approved one. Record what changed instead of silently blending them.
 - Repository maintainers define local project intent when that does not conflict with higher authority.
 - Code, tests, and runtime behavior establish implementation reality.
 - YAIML documents own only the memory declared in their stable headers.

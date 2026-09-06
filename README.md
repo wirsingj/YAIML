@@ -1,8 +1,8 @@
 # YAIML
 
-**Yet Another AI Markup Language** is a project-memory convention for software repositories. It keeps current state, human direction, architecture, and working procedures in ordinary Markdown so the next AI session or contributor has somewhere to start.
-
 > Agents forget. Projects shouldn’t.
+
+**Yet Another AI Markup Language** is a project-memory convention for software repositories. It keeps current state, human direction, architecture, and working procedures in ordinary Markdown so the next AI session or contributor has somewhere to start.
 
 YAIML is an early experiment with the ambition to become a widely adopted standard. You can use it today without installing anything; independent evidence of its effectiveness is still needed.
 
@@ -35,7 +35,7 @@ Ask normally: “Read YAIML and continue through the SoT priorities,” or “Up
 
 For meaningful work, load the three core documents and only the supporting material relevant to the task. Afterward, update affected memory and remove stale state. Keep decisions and useful lessons; let Git retain the work history.
 
-The key distinction is intent versus evidence:
+The key distinction is intent versus evidence. In a fictional example:
 
 ```text
 Declared (maintainer decision): v1 stays local-only.

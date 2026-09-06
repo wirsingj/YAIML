@@ -13,72 +13,61 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-09-05
+Date: 2026-09-06
 
-## Scenario
+## Scope And Method
 
-An unfamiliar AI chat or coding agent enters the repository with no prior YAIML context and reads:
+Three manual audit/correction passes reviewed the repository as material a reader might hand to an unfamiliar AI agent:
 
-1. `yaiml.yml`
-2. `docs/SoTY.md`
-3. `docs/ARCHITECTURE.md`
-4. `docs/MAINTAINER_GUIDE.md`
-5. `AGENTS.md`
-6. `README.md`
-7. `docs/AGENT_INTEGRATION.md`, `docs/CONTEXT_LOADING.md`, and `docs/EVALUATION.md`
-8. `docs/ADOPTION_AND_UPGRADES.md` and `docs/case-studies/YTMMOCC.md`
-9. `CONTRIBUTING.md`, `SECURITY.md`, `AI_USAGE.md`, and `ROADMAP.md`
-10. Core templates, supporting templates, and prompt pack
-11. `examples/minimal-notes/` and `examples/canopy-dispatch/`
+1. Reader path, verbosity, repetition, and core-memory size.
+2. Authority, discovery/header semantics, template consistency, and evidence boundaries.
+3. Regression review of the shortened instructions, examples, local references, and publication diff.
 
-## Result
+Baseline: commit `cbe412e`, which preserves the worktree revisions present at the start of this review. Scope includes README, agent instructions, all declared memory, prompts, templates, examples, roadmap, and public policies.
 
-Manual inspection found guidance for the intended adoption path. Fresh-session success has not been established.
+The same assisting agent performed the edits and review. This is not an independent review, controlled fresh-session trial, or evidence that another model will follow the prompts successfully.
 
-The repository explains YAIML, Yet Another AI Markup Language, as an early public plain-file convention for AI Project Engineering: project management, memory, definition, and AI-chat, agent, and contributor continuity. SoT is clearly the central artifact, with Architecture and Maintainer Guide as supporting default roles. The stable header is described as semantic guidance for future AI sessions rather than a parser-oriented format. The README now leads with practical value, a compact file example, and a copy/paste try-it path. The single init prompt carries embedded YAIML context for use outside this repository and now distinguishes source-defined commands from successful command execution.
+## Findings And Corrections
 
-The current front door also explains that YAIML portability is independent of an adopting project's business or licensing model. A project may be private, public, paid, free, open-source, or unreleased; YAIML should travel with that repository across machines, contributors, and AI chat provider instances when maintained as repository-safe project memory.
+| Finding | Correction |
+| --- | --- |
+| README and init repeat much of the reference | README links to topic guides; init retains a self-contained minimum without embedding three full templates |
+| Core memory repeats artifact lists, doctrine, and checklist items | Consolidated roles, current state, and procedures into their own documents |
+| Core templates invite repeated facts under overlapping headings | Combined sections and made omission of empty headings explicit |
+| Realignment permits broad deletion before establishing corrected intent | Requires human-directed scope, preserves unrelated work, and distinguishes design from transitional implementation |
+| Header fields, companion hints, and versions invite strict-format assumptions | Explained flexible headers, non-recursive reading, path resolution, and discovery versus prose revisions |
+| Fictional results and local-storage language can imply more than intended | Added nearby fictional-result labels and clarified that an AI tool has its own data handling |
+| Review/evaluation wording risks overstating evidence | Kept inspection distinct from trials; improved baseline isolation, comparable conditions, and reporting limits |
+| Earlier approved text could appear immutable | Clarified that authorized decisions may supersede it, with the change recorded |
 
-This review is a manual walkthrough, not an independent fresh-session trial.
+## Verification
 
-## Inspected Guidance
+Local inspection ran on Windows using Git, Python, and the existing PyYAML library. Temporary review checks were not added as project tooling.
 
-- README and init prompt describe the three core roles, `SOT.md` default, optional local names, and supporting documents only when justified.
-- Init embeds adoption instructions; refresh preserves mature memory and existing discovery layouts unless migration is explicitly requested and compatibility is established.
-- Context-loading guidance selects task-relevant supporting documents. Portability guidance keeps memory versioned and excludes machine-specific reference paths and sensitive material.
-- Evidence and compression guidance separates declared direction, inspected definitions, execution outcomes, and unknowns. The worked examples now preserve missing rationale and verification gaps.
-- Evaluation distinguishes fictional examples, maintainer-owned YTMMOCC evidence, and independent trials. The case study links public source at an inspected revision.
+- Parsed all three discovery maps; all 23 declared document paths resolved and their files had stable header delimiters.
+- Checked all 48 tracked Markdown files for balanced code fences and local Markdown links, including heading anchors; no errors found.
+- A targeted scan found no concrete machine-specific reference values in the checked patterns. This is not a comprehensive secret scan.
+- `git diff --check` passed for the corrections.
+- The MIT License and discovery map contents were unchanged by the audit corrections.
 
-These are observations about the supplied instructions, not measured evidence that an unfamiliar session will follow them correctly.
+These checks establish local structural consistency, not Markdown schema conformance or agent effectiveness. External links, store listings, extension behavior, and prior case-study checks were not revalidated.
 
-## Remaining Risks
+Whitespace-delimited word counts against the baseline:
 
-- The example is fictional, so it should be checked for plausibility, specificity, and accidental drift into generic filler.
-- Future tooling boundaries remain intentionally deferred and should not dominate near-term edits.
-- The expanded initialization prompt still needs real-world trials to prove it is detailed enough without becoming too long for routine use.
-- Self-unfolding document guidance needs real-world trials to prove agents add the right documents instead of adding too many.
-- `CONTRIBUTING.md` and `ROADMAP.md` are now checked because they can preserve stale licensing or tooling assumptions outside the YAIML manifest.
-- Memory hygiene guidance needs real-world trials to prove agents sanitize sensitive evidence while preserving enough actionable risk context.
-- Repository-portability guidance needs real-world trials to prove generated YAIML remains useful across machines, contributors, and AI chat providers without becoming private scratch memory.
-- YAIML 0.2 still needs a human-approved sensitive-reporting path or an explicit decision to rely on GitHub private vulnerability reporting.
-- YAIML convention refresh needs real-world trials to prove agents can update local prompts/templates/guidance while preserving project-specific memory.
-- The cold-start evaluation method itself needs real use before its dimensions can be considered reliable.
-- Discovery compatibility guidance needs trials on mature adopters before migrations are recommended as routine.
+| Document | Before | After |
+| --- | ---: | ---: |
+| README | 2,317 | 742 |
+| Init prompt | 4,305 | 1,178 |
+| SoTY | 1,233 | 734 |
+| Architecture | 1,093 | 570 |
+| Maintainer Guide | 2,245 | 721 |
 
-## Local Adoption Sampling
+These measure text reduction, not token cost or improved outcomes.
 
-Date: 2026-07-11
+## Remaining Limits
 
-Scope: read-only inspection of four nearby local repositories that already contain YAIML-shaped project memory. This was not a controlled cold-start comparison and should not be treated as proof of effectiveness.
+The shortened prompt still needs fresh-session adoption, refresh, and compression trials, including legacy discovery layouts. Independent projects and comparable baselines are needed before claims of broad compatibility or productivity improvement.
 
-Observed:
+The prior review recorded local adopter sampling on 2026-07-11: useful project-specific memory coexisted with older maps and machine-specific reference paths. That report was not reproduced here. Retain its practical lesson—test portability and cleanup—without treating local sampling as independent proof.
 
-- Three inspected adopters have a discoverable `yaiml.yml` and a recognizable SoT/Architecture/Maintainer Guide family.
-- One older adopter has a looser YAIML shape: `yaiml.yml` points to a core document family and supporting project-memory files, but its SoT naming and supporting map predate the current boring-default guidance.
-- The local adopters preserve useful project-specific memory rather than only copying generic templates.
-- All four inspected local adopters contain a machine-specific YAIML reference path in `yaiml.yml`. That confirms the current no-hardcoded-local-reference guidance and `prompts/update-yaiml.md` are needed cleanup paths, not theoretical polish.
-- Several adopter maintenance notes still say to use the "known YAIML reference in `yaiml.yml`." Future refresh trials should verify that agents remove those committed local paths and keep reference locations in human/workspace context instead.
-
-Lesson:
-
-YAIML initialization can produce useful repo-carried memory in varied projects, but adopter cleanup still needs validation outside this local workspace before examples or claims imply the portability rule has always been satisfied.
+A private sensitive-reporting path remains unestablished by the evidence recorded here. Current active priorities belong in [SoTY](SoTY.md); evaluation procedure belongs in [Evaluation](EVALUATION.md).

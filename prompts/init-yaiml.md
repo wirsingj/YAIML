@@ -57,7 +57,7 @@ Use labels or sections where uncertainty could steer work:
 - **Unknown**: not established.
 - **Obsolete**: superseded; retain only if it still prevents mistakes.
 
-Name evidence for consequential claims. Source inspection can establish that a command or test exists; it cannot establish a passing run. For executed checks, record outcome and relevant revision, date, and environment. Attribute prior results with their limits. Never turn an old result or a recent document timestamp into current verification.
+Name evidence for consequential claims. Source inspection can establish that a command or test exists; it cannot establish a passing run. For executed checks, record outcome and relevant revision, date, and environment. Check test discovery, skips, and relevant assertions before claiming coverage. Attribute prior results with their limits. Never turn an old result or a recent document timestamp into current verification.
 
 Preserve intended behavior when implementation disagrees and record the divergence. Follow the project’s established decision authority; do not invent a hierarchy when ownership is unclear. Keep conflicts from other contributors visible until evidence or authorized direction resolves them.
 

@@ -3,7 +3,7 @@ yaiml: 0.2
 kind: concept-guide
 title: Concepts
 purpose: Explain YAIML's conceptual frame and vocabulary for AI Project Engineering.
-belongs-here: core philosophy, project-memory concepts, strong-bones/soft-definitions framing, human-agent authority model.
+belongs-here: purpose, design choices, vocabulary, shared ownership, tradeoffs.
 not-here: current project priorities, command procedures, complete template inventory.
 durability: durable; update when YAIML's conceptual frame changes materially.
 read-with: SoTY; Core Document Family; Ambiguity And Evidence.
