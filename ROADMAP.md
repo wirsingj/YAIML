@@ -1,71 +1,46 @@
 # YAIML Roadmap
 
-YAIML is in an early public convention-first phase. The current goal is to make the SoT-centered, self-unfolding project-memory pattern immediately useful without tooling.
+YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
 
-The long-term ambition is industry-standard adoption. The path is practical: keep adoption cheap, prove usefulness in real projects, invite outside feedback, and let maturity claims follow evidence.
-
-The current init path is `prompts/init-yaiml.md`. It is self-contained enough for first-time adoption without requiring a second setup prompt, download, install, dependency, runtime, or package format. A better init helper may come later, but it should still produce and maintain plain YAIML files in the user's project.
-
-Near-term work should make the existing philosophy clearer, smaller, and more durable before adding more framework surface.
-
-## Maturity Ladder
-
-- YAIML 0.2: usable experiment. Freeze the tiny core around `yaiml.yml`, SoT, Architecture, Maintainer Guide, discovery/loading behavior, evidence states, and update/pruning expectations while testing adoption.
-- YAIML 0.3: public pilot. Keep the core stable, publish clear adoption/reporting paths, and collect outside feedback across multiple AI-chat and coding-agent providers.
-- YAIML 0.5: implemented draft. Show use in unrelated projects, document incompatibilities and failures, and demonstrate at least one external or separately maintained helper or workflow.
-- YAIML 1.0: stable convention. Freeze the core contract, publish migration expectations, and support maturity claims with independent adopters and real case-study evidence.
+The immediate route is the self-contained [init prompt](prompts/init-yaiml.md). Improve the plain-file workflow before adding tools.
 
 ## Now
 
-- Test the templates on real repositories.
-- Improve the prompt pack through actual AI-chat, agent, and contributor handoff sessions.
-- Keep YAIML's own SoTY, Architecture, and Maintainer Guide short and honest.
-- Add only examples that reveal how the pattern behaves in use.
-- Refine self-unfolding document guidance so agents add useful supporting documents without creating empty ceremony.
-- Keep the init prompt usable as the single copy/paste adoption path without making the README front door heavy.
-- Apply the cold-start evaluation method to real repositories without fabricating proof, including at least one mature local repo, one unfamiliar public repo, and one repo owned by another developer.
-- Use the YTMMOCC case study as maintainer-owned field evidence, not independent proof; refresh it when repository or public listing evidence changes.
-- Check YAIML 0.2 readiness by initializing or upgrading YAIML in repositories intended to move across machines, contributors, and AI chat provider instances, then verifying the generated memory remains useful without exposing private material.
-- Trial discovery refreshes on older `documents.*.path` adopters before recommending migration as routine.
-- Prepare a concise workplace-safe KT/demo path for a manager or senior-engineering audience: explain the repeated-context problem, show copy/paste initialization, demonstrate fresh-session recovery, and keep examples sanitized and policy-safe.
-- Enable GitHub private vulnerability reporting, or document another maintainer-approved private contact path, before broader public pilot readiness.
-- Keep the `yaiml.yml` discovery protocol tiny, versioned, and limited to paths for project memory.
-- Reduce terminology where ordinary engineering language works.
-- Avoid drifting back into schemas for Markdown memory documents, conformance fixtures, parser design, or standards-body language.
+- Trial initialization, refresh, and compression in real repositories; keep YAIML’s own core memory short.
+- Test portability across machines, contributors, and AI providers, including mature adopters with older discovery layouts.
+- Gather three kinds of case evidence: a maintainer-owned project, an unfamiliar public repository, and a project owned by someone else. [YTMMOCC](docs/case-studies/YTMMOCC.md) supplies maintainer-owned inspection evidence only.
+- Run comparable fresh-session tasks and retain failures and neutral results. Measure context cost as well as useful work.
+- Refine headers, prompt length, and supporting-document split decisions from those trials.
+- Prepare a short sanitized demo for developers, managers, and senior engineers: initialize memory, then show what a fresh session can recover.
+- Establish a maintainer-approved private sensitive-reporting path before broader public pilot readiness.
 
-## Near Next
+## Public Pilot
 
-- Collect real failure cases where AI chats, agents, or contributors misunderstood intent, implementation, or risk.
-- Refine the stable header until it is strong enough to guide agents and short enough to tolerate.
-- Refine context-loading guidance from real AI-chat and agent sessions.
-- Record real-project case studies using the evaluation template, keeping internal portfolio trials separate from independent adoption evidence.
-- Run comparable fresh-session trials with documented baselines; do not count walkthroughs or hypothetical comparisons as independent evidence.
-- Improve self-unfolded document guidance for preferences, terms, risk review, security, domain models, product rules, operations, release, and legal/compliance memory.
-- Create a brutally simple public demo: initialize YAIML in an unfamiliar repository, then open a fresh session and show whether the project can be recovered from repo memory.
-- Adapt that demo for constrained workplace AI tools without making any one provider, workplace process, or internal toolchain part of YAIML itself.
-- Recruit a small pilot group across Codex, Claude Code, Cursor, Gemini CLI, and one local-model workflow before making broad adoption claims.
-- Develop manual review checklists for project-memory quality.
-- Prepare public release readiness criteria, including contribution expectations for multi-contributor projects, examples, evidence requirements, clear license communication, a simple adoption-report path, and a visible decision process.
-- Decide whether future validation should exist for `yaiml.yml` only, while preserving Markdown memory as human-authored plain text.
+Recruit feedback across multiple AI tools and a local-model workflow without making provider-specific integrations part of YAIML. Test constrained workplace use only with permitted, sanitized material.
+
+Publish a simple adoption-report path and a visible process for resolving proposed convention changes. Contribution guidance, examples, evidence limits, and release criteria should be clear before broader maturity claims.
+
+Add or refine examples and supporting templates only when actual use reveals recurring knowledge they need to hold.
+
+## Maturity Milestones
+
+These are proposed project milestones, not discovery-format versions or release promises.
+
+| Milestone | Evidence sought |
+| --- | --- |
+| 0.2 — usable experiment | Small core, usable prompts, honest dogfooding and documented gaps |
+| 0.3 — public pilot | Outside feedback and trials across different agent environments |
+| 0.5 — implemented draft | Unrelated adopters, recorded incompatibilities and failures; a separately maintained helper or workflow |
+| 1.0 — stable convention | Stable core expectations, migration guidance, independent adopters and case evidence |
+
+The separate `yaiml.version` field identifies discovery layout. Editing guidance or reaching a project milestone does not itself require changing that field.
 
 ## Later
 
-Possible later work:
+Possible helpers include initialization, stale-claim review, pruning, context assembly, editor snippets, and team review workflows. They remain deferred until the plain-file approach has enough use to justify them.
 
-- an init helper for creating or refreshing project-local YAIML files;
-- stale-claim auditing;
-- document pruning assistance;
-- editor snippets;
-- provider-specific prompt variants;
-- team review workflows;
-- document health checks.
+No runtime services, databases, orchestration, package dependencies, web apps, SDKs, provider adapters, or Markdown validators are planned during this phase. Any future validation would be limited to `yaiml.yml`.
 
-These remain deferred until the plain Markdown memory workflow and helper prompts prove themselves.
+## Human Decisions
 
-Not planned during the convention-first phase: runtime services, databases, storage layers, orchestration frameworks, package-manager dependencies, web applications, SDKs, provider adapters, or validators for Markdown memory documents.
-
-## Still Human-Decided
-
-YAIML now uses the MIT License for public use while preserving Jeff Wirsing's copyright ownership. Do not change the license, add license headers, or make new trademark, ownership, or endorsement claims without explicit maintainer approval.
-
-Still human-decided: release labeling, broader contribution governance, evidence thresholds for maturity claims, the private sensitive-reporting channel, and whether future tooling should ever exist.
+The maintainer decides release labeling, contribution governance, maturity evidence thresholds, the private reporting channel, and whether tooling becomes appropriate. Preserve the MIT License; license changes and new ownership, trademark, or endorsement claims require explicit approval.

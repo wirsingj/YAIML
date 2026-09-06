@@ -14,117 +14,48 @@ agent-guidance: Verify repository shape before claiming artifacts. Surface confl
 
 ## System Model
 
-YAIML is a lightweight plain-file convention and reusable template docset for AI Project Engineering.
+YAIML is a documentation convention. This repository supplies reference guidance, prompts, templates, examples, and its own living project memory. Adopters keep ordinary Markdown files in their repositories; no YAIML runtime participates in their application or build.
 
-Its architecture is conceptual rather than software-based. The repository supplies guides, templates, prompts, examples, and dogfood memory documents. The artifacts are meant to work in any Git repository with capable AI chats, coding agents, and human contributors.
+`yaiml.yml` maps document roles to paths. It is a discovery index, not a schema for memory bodies. Discovery compatibility belongs in [Adoption And Updates](ADOPTION_AND_UPGRADES.md).
 
-The convention is the primary artifact. Documents, templates, prompts, examples, and future helpers exist to preserve current engineering understanding across chats, agents, and contributors; they are not independent mechanisms to expand for their own sake.
+## Core Responsibilities
 
-YAIML may later have better init helpers, but the architectural target remains plain files in the user's project. A helper may create, discover, review, refresh, or assemble YAIML context; it should not make the adopting project depend on YAIML as a runtime library, package-manager dependency, hosted platform, or build step.
+- **SoT:** current engineering state, direction, capabilities, risks, priorities, divergence, and unresolved questions.
+- **Architecture:** durable boundaries, responsibilities, invariants, intended design, and relevant retired approaches.
+- **Maintainer Guide:** current procedures, focused checks, diagnostics, and failure recovery.
+- **Supporting documents:** recurring specialist knowledge that needs its own responsibility or retention rule.
 
-YAIML documents should remain normal Markdown files by default, not a custom `.yaiml` extension. The visible, boring file format is part of the architecture: it keeps the memory editable by humans, readable by generic tools, reviewable in Git, and accessible to capable agents and AI chats. `yaiml.yml` discovers the family through a tiny versioned discovery protocol, but it is not the product center or a schema for project-memory documents.
+[Core Document Family](CORE_DOCUMENT_FAMILY.md) owns the adopter-facing role guidance. Each fact should have one detailed home; other documents can summarize and link when their readers need it.
 
-Future validation, if any, should be limited to the small `yaiml.yml` discovery shape. The human-authored Markdown memory remains syntactically loose and evidence-disciplined rather than schema-controlled.
+## Repository Surfaces
 
-## Core Roles
+| Surface | Responsibility |
+| --- | --- |
+| README | Definition, one adoption path, limits, and navigation |
+| Root policies and ROADMAP | Contributions, licensing, sensitive reporting, AI disclosure, future direction |
+| AGENTS.md | Instructions for contributors’ agents working on YAIML itself |
+| docs/SoTY.md, this file, Maintainer Guide | YAIML’s own current state, architecture, and procedures |
+| Other docs/ guides | Reference explanations by topic |
+| templates/ | Optional starters, adapted rather than copied as empty forms |
+| prompts/init-yaiml.md | Self-contained adoption instructions |
+| Other prompts/ | Explicit orientation, audit, update, compression, refresh, and realignment helpers |
+| examples/ | Minimal and larger fictional document families; no application code |
+| docs/case-studies/ and COLD_START_REVIEW.md | Evidence notes with scope and limitations |
 
-SoT owns current engineering state: identity, active developer direction, current capabilities, active priorities, active risks, useful recent lessons, current divergence, and unresolved questions. `SOT.md` is the recommended default filename for unfamiliar repositories; project-specific names are supported when useful.
+The reference repository contains more documents than a typical adopter needs because it explains the convention. Initialization should not reproduce this inventory in an adopting project.
 
-Architecture owns durable project self-model: components, ownership boundaries, invariants, intended architecture, transitional paths, violations, and retired approaches.
+## Reading And Maintenance Boundaries
 
-Maintainer Guide owns procedural memory: setup, commands, diagnostics, focused checks, danger files, and failure playbooks.
+The normal loading sequence is discovery, three concise core documents, then task-relevant supporting material. History and specialist references load only when needed. A `read-with` header is a relevance hint, not a recursive import.
 
-Supporting documents own self-unfolded memory domains: preferences, legal, contracts or agreements, concepts, terms, risk review, security, data, testing, UX, domain, deployment, release, operations, product doctrine, world or lore, provider integration, remote access, and other project-specific guidance as needed.
+Headers communicate role, responsibility, lifecycle, update triggers, and evidence/conflict behavior. Field names, titles, wording, and body sections remain adaptable. No Markdown parser or conformance checker is required.
 
-The roles should remain separate. SoT should not become a command reference. Architecture should not become a work log. Maintainer Guide should not become a product manifesto.
+The init prompt deliberately repeats the minimum convention because it must work when copied alone. Other guides should link to the topic’s owner instead of repeating full explanations.
 
-## Artifact Responsibilities
+## Deferred And Retired Approaches
 
-- Root files handle public entry, agent instructions, licensing, sensitive reporting, contribution guardrails, roadmap, and discovery.
-- `README.md` introduces the problem and immediate use path for humans deciding whether to adopt YAIML.
-- `AI_USAGE.md` discloses AI-assisted maintenance of this repository and provenance expectations for material generated outputs.
-- `docs/` explains the convention and hosts YAIML's own living documents.
-- `templates/core/` provides starter versions of the three required roles.
-- `templates/supporting/` provides examples for supporting memory documents.
-- `prompts/init-yaiml.md` provides the single self-contained adoption path.
-- `prompts/` also provides provider-neutral hydration, memory update, YAIML update, audit, cleanup/compression, and realignment procedures.
-- `examples/canopy-dispatch/` demonstrates a robust fictional YAIML family with product doctrine, authority boundaries, operational playbooks, and release/trust memory.
-- `docs/COLD_START_REVIEW.md` records the latest manual cold-start usability pass.
-- `docs/AGENT_INTEGRATION.md` explains how YAIML relates to `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files.
-- `docs/CONTEXT_LOADING.md` defines bounded context-loading layers.
-- `docs/EVALUATION.md` defines a lightweight case-study and cold-start comparison method.
-- `docs/case-studies/` holds real-project evidence notes with ownership and limitation labels.
-- `docs/ADOPTION_AND_UPGRADES.md` defines first-time adoption, existing YAIML updates, and version awareness.
-- `docs/ADOPTION_AND_UPGRADES.md` also documents discovery-layout compatibility so recognizable older adopters can be read safely before any refresh.
-- `yaiml.yml` discovers YAIML's own memory documents.
-- `examples/minimal-notes/` demonstrates the smallest useful YAIML shape without supporting documents or application code.
+During the convention-first phase, do not add implementation libraries, CLIs, SDKs, provider adapters, package manifests, services, databases, orchestration, or web applications. A future helper would serve project-local files without becoming an adopter’s runtime or build dependency.
 
-## Context Loading Boundary
+`SPEC.md` as the normative center, Markdown schemas, JSON-LD metadata systems, conformance fixtures, RFC-style requirements, and custom `.yaiml` memory files are retired for this phase. Do not revive them without an explicit human phase change. Any future validation should be limited to the discovery map.
 
-Repos using YAIML use layered context loading:
-
-- discovery: `yaiml.yml` and repository agent instructions;
-- core: SoT, Architecture, and Maintainer Guide;
-- task-relevant: supporting documents selected because the task touches their domain;
-- deep-reference: historical decisions, audits, release notes, or specialized material loaded only when needed.
-
-Supporting documents should not recursively require the entire family without reason.
-
-## Stable Header Boundary
-
-The stable header is an agent-facing orientation block, not a validation schema.
-
-It should be consistent enough for agents to recognize and flexible enough for projects to adapt. Future tooling may parse it, but current design should optimize for a model opening the file and understanding how to use the prose that follows.
-
-Firm bones: role, authority, evidence, update trigger, pruning behavior, conflict behavior, and human authority.
-
-Soft edges: exact field names, phrasing, document title, local vocabulary, optional sections, and project-specific retention details.
-
-## Self-Unfolding Documents
-
-Supporting documents may exist when a project has a memory domain that would otherwise bloat the core family or needs different retention behavior. Examples include preferences, legal, contracts or agreements, concepts, terms, risk review, security, domain model, data model, testing, UX doctrine, deployment, release, operations, product doctrine, world or lore, provider integration, or remote access.
-
-Self-unfolded documents must declare what memory they own and how they prune. They do not become mandatory just because they are useful somewhere.
-
-## Deferred Tooling
-
-Deferred:
-
-- CLI;
-- parser;
-- validator for Markdown memory documents;
-- SDK;
-- MCP server;
-- framework adapters;
-- package format;
-- package-manager dependency;
-- runtime library;
-- database or storage layer;
-- orchestration framework;
-- background service;
-- custom `.yaiml` document format;
-- hosted service;
-- provider adapters;
-- IDE integrations;
-- schema, JSON-LD, or conformance fixtures for Markdown memory documents;
-- separate formal specification repository;
-- formal standards-governance program.
-
-Future tools should serve the convention. They should not redefine YAIML as software infrastructure.
-
-Addition test: if a new artifact does not improve a future AI chat, coding agent, or contributor's ability to reconstruct a project's current engineering understanding, it probably does not belong in YAIML.
-
-## Retired Approaches
-
-Retired for the current phase:
-
-- `SPEC.md` as normative center;
-- JSON Schema as a primary project artifact for Markdown memory documents;
-- JSON-LD as a primary project artifact for Markdown memory documents;
-- conformance fixture directories;
-- RFC-style requirement language;
-- MCP or framework adapter layer as adoption center;
-- treating YAIML memory as a schema or package format;
-- requiring a custom file extension for project memory.
-
-These should not return unless a human explicitly changes the project phase.
+Preserve the MIT License and the maintainer’s [independence declaration](PROJECT_INDEPENDENCE.md). Tooling, licensing, release labeling, and governance changes remain human decisions.

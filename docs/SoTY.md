@@ -13,93 +13,56 @@ agent-guidance: Verify repository shape. Preserve human direction. Mark uncertai
 
 # SoTY
 
-## North Star
+## North Star And Human Direction
 
-YAIML, expanded as Yet Another AI Markup Language, is a lightweight, repository-owned project-memory convention for software work with AI chats, coding agents, and human contributors.
+YAIML means Yet Another AI Markup Language: shared, repository-owned project memory for AI chats, coding agents, and human contributors.
 
-It exists because agents forget and projects should not. A repo using YAIML keeps the current engineering understanding beside the code in ordinary Markdown, with a tiny discovery file so the next session knows where to start.
+Declared: the ambition is broad adoption as a standard. Current status remains an early public experiment; independent evidence must precede stronger maturity claims.
 
-## Current Concept
+Declared: keep adoption prompt-first, no-install, and convention-first. Preserve the three core roles, ordinary Markdown, explicit uncertainty, and routine pruning. Do not add tooling or revive formal specification machinery without a human phase change.
 
-Declared: YAIML is an experimental plain-file convention and reusable template docset for AI Project Engineering: project management, shared project memory, project definition, constraints, and AI-session continuity. It should grow more like Markdown, Keep a Changelog, Conventional Commits, or EditorConfig than like a runtime framework: easy to adopt, easy to inspect, and useful without installing a dependency.
+Declared: keep this a personally maintained, public MIT-licensed project. Preserve the [maintainer’s independence declaration](PROJECT_INDEPENDENCE.md) and exclude employer-confidential material, secrets, and private transcripts. Record reviewed professional constraints without inventing legal or security conclusions.
 
-Declared: The long-term ambition is for YAIML to become a widely adopted convention for repository-carried engineering memory. Current materials should keep that ambition visible without claiming standard status before evidence supports it.
+Declared (maintainer request, 2026-09-06): use repeated audits and corrections to reduce verbosity, repetition, and issues that unfamiliar agents would reasonably flag. Clarity and defensible claims matter more than suppressing criticism.
 
-Declared: YAIML's center is a small document family: SoT, Architecture, and Maintainer Guide. `SOT.md` is the recommended default SoT filename for unfamiliar repositories; project-specific names such as this repository's `docs/SoTY.md` remain supported when they add useful character.
+## Current State And Evidence
 
-Declared: YAIML remains prompt-first and no-install during the convention-first phase. Do not add a runtime, CLI, SDK, hosted service, Markdown schema, conformance system, orchestration engine, provider adapter, package dependency, or framework layer.
+Verified by repository inspection: YAIML consists of reference guides, seven helper prompts, core and optional supporting templates, two fictional examples, policy documents, and its own three core memory documents. There is no YAIML application runtime or build/test suite.
 
-Declared: YAIML documents are project memory, not professional legal, security, compliance, privacy, licensing, or IP advice. Security, compliance, privacy, legal, licensing, and IP documents are memory surfaces for project-specific reviewed constraints, evidence, decisions, and open questions.
+The README provides one adoption path. The init prompt is self-contained and reuses existing project documentation. Detailed guidance is organized by topic; [Architecture](ARCHITECTURE.md) maps the artifact responsibilities and [Maintainer Guide](MAINTAINER_GUIDE.md) describes review procedures.
 
-Declared: YAIML is intended to remain a public, personally maintained MIT-licensed project with no employer code, employer data, employer screenshots, vulnerability details, private chat transcripts, or confidential workplace material.
+The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned repository inspection and dated public-listing observations. It does not measure productivity or establish independent adoption. External evidence is not revalidated by this documentation audit.
 
-Verified: This repository is currently Markdown and YAML guidance, templates, prompts, examples, case-study/evaluation material, a roadmap, an MIT License, a public security/sensitive-information policy, and YAIML's own project-memory documents. It does not include software runtime infrastructure.
+Prior local sampling reported useful project memory alongside legacy discovery maps and committed machine-specific reference paths. That historical report is not a reproducible independent trial. The current [compatibility policy](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) preserves layouts during routine refresh and requires explicit migration direction.
 
-## Current Artifact Set
+## Active Risks And Gaps
 
-- `README.md`: public entry point, practical benefit, quick start, examples, and current/future boundary.
-- `AGENTS.md`: repository agent instructions and YAIML dogfood entrypoint.
-- `yaiml.yml`: tiny discovery file for this repository's YAIML document family.
-- `docs/SoTY.md`, `docs/ARCHITECTURE.md`, `docs/MAINTAINER_GUIDE.md`: YAIML's own core memory.
-- `docs/CONCEPTS.md`, `docs/CORE_DOCUMENT_FAMILY.md`, `docs/STABLE_HEADERS.md`, `docs/AMBIGUITY_AND_EVIDENCE.md`, `docs/PRUNING_AND_LIFECYCLE.md`, `docs/CONTEXT_LOADING.md`, `docs/AGENT_INTEGRATION.md`: durable convention guidance.
-- `docs/ADOPTION_AND_UPGRADES.md`: adoption, convention refresh, discovery-layout compatibility, and version-awareness guidance.
-- `docs/EVALUATION.md`, `docs/COLD_START_REVIEW.md`, `docs/case-studies/YTMMOCC.md`: evidence-gathering guidance and current observed evidence.
-- `docs/PROJECT_INDEPENDENCE.md`, `AI_USAGE.md`, `SECURITY.md`, `CONTRIBUTING.md`, `LICENSE.md`: public use, provenance, contribution, and sensitive-information guardrails.
-- `templates/core/` and `templates/supporting/`: starter documents for adopters.
-- `prompts/`: provider-neutral initialization, hydration, memory update, convention refresh, audit, compression, and realignment helpers.
-- `examples/minimal-notes/`: smallest fictional example.
-- `examples/canopy-dispatch/`: richer fictional teaching example.
-
-## Current Capability And Useful Lessons
-
-- A developer can use YAIML today with ordinary Markdown files and a copy/paste init prompt.
-- The core roles are clear enough to dogfood: SoT holds current state, Architecture holds durable shape, and Maintainer Guide holds procedures.
-- Stable headers work as agent-facing orientation without becoming a Markdown schema.
-- Bounded context loading keeps routine use practical: discovery, core, task-relevant supporting docs, and deep references only when needed.
-- Evidence labels preserve distinctions among verified implementation, declared intent, observation, inference, disagreement, unknowns, and obsolete material.
-- Pruning is part of normal maintenance. Completed work should become current capability, a still-useful lesson, or nothing; Git history remains the archive.
-- The README and init prompt now present one self-contained adoption path rather than a set of competing setup choices.
-- Early field use in maintainer-owned repositories, especially YTMMOCC and SpriteWrite, suggests YAIML can preserve useful project-specific memory across sessions. This is internal dogfooding evidence, not independent proof.
-- Local adopter inspection found both useful YAIML-shaped memory and older discovery layouts, confirming that compatibility guidance is needed before any migration pressure.
-
-## Active Risks
-
-- Formalization drift: YAIML could drift back toward Markdown schemas, conformance fixtures, normative spec language, package formats, or custom file extensions too early.
-- Tooling drift: a future helper could become a dependency, runtime, hosted service, or build step instead of serving project-local files.
-- Ceremony drift: agents could create empty supporting documents instead of letting recurring project knowledge justify them.
-- Context drift: agents could treat `yaiml.yml` as a command to load every document for every task.
-- Safety drift: public or shared repositories could expose sensitive information if YAIML is treated as private scratch space.
-- Source-authority drift: stale notes, comments, generated output, old chats, or low-trust webpages could be promoted above current maintainer direction or repository rules.
-- Collaboration drift: multiple agents or contributors could silently flatten contradictory project-memory edits even when Git merges cleanly.
-- Evidence drift: old successful checks, source-defined commands, fictional examples, internal dogfooding, or user-reported publication could be described as stronger proof than they are.
-- Discovery drift: adopters using older discovery layouts could be migrated carelessly, breaking their local memory or confusing discovery-format versioning with ordinary Markdown edits.
-- Adoption-claim drift: YAIML's ambition to become broadly adopted could be presented as current maturity before independent trials exist.
+- **Effectiveness remains unmeasured:** no controlled fresh-session comparison or independent adoption evidence is recorded.
+- **Context and maintenance cost:** even concise instructions can produce overgrown or stale memory; the shortened init path and supporting-document choices need adopter trials.
+- **Evidence and authority errors:** agents may still promote old results, inference, or fictional examples into current fact, or flatten contributor disagreements.
+- **Portability and sharing:** generated memory must preserve useful constraints without machine-specific paths or sensitive content; legacy-adopter refresh behavior needs trials.
+- **Phase drift:** added tools, formal requirements, or empty templates could displace the plain-file convention.
+- **Reporting readiness:** a private sensitive-reporting path is not established by the current evidence; resolve this before broader public pilot readiness.
 
 ## Immediate Priorities
 
-1. Keep YAIML 0.2 small and convention-first while improving adoption clarity, evidence discipline, and pruning behavior.
-2. Continue real-project trials of `prompts/init-yaiml.md`, `prompts/update-yaiml.md`, and compression guidance; record failures without upgrading them into universal metrics.
-3. Apply the [discovery compatibility policy](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility): preserve existing layouts through routine refreshes; migrate only on explicit human request with consumer compatibility established.
-4. Add and refine concise case studies, clearly separating observed repository facts, human-reported experience, public listing evidence, and measured outcomes.
-5. Keep the fictional examples useful for teaching without presenting them as evidence.
-6. Prepare a sanitized workplace-safe demo path that shows the repeated-context problem, copy/paste initialization, and fresh-session recovery without tool or employer overfit.
-7. Enable or document a private sensitive-reporting channel before broader public pilot readiness.
-8. Keep YAIML's own memory pruned after material changes.
+1. Trial the revised init, refresh, and compression prompts in real repositories; record failures and context cost.
+2. Run comparable fresh-session tasks, including an unfamiliar repository and an independently owned project.
+3. Exercise older discovery layouts without replacing mature memory or forcing migration.
+4. Prepare the short sanitized demo and establish the private reporting path.
+5. Keep current review evidence scoped in [Cold Start Review](COLD_START_REVIEW.md); prune affected memory after material changes.
 
-## Known Divergence And Open Questions
+## Open Questions
 
-No active divergence currently identified between YAIML's declared convention-first phase and repository artifact shape.
+- Should discovery remain strongly recommended or become essential for every adopter?
+- Which supporting roles recur enough to justify additional templates?
+- What evidence and participation process justify each proposed [maturity milestone](../ROADMAP.md)?
+- If future tooling becomes appropriate, what helper improves continuity without becoming infrastructure?
 
-Open questions:
+## Useful Lessons And Retired Directions
 
-- Is `yaiml.yml` essential for all adopters, or should it remain strongly recommended but optional?
-- Which self-unfolded document roles are common enough to deserve first-class templates?
-- What is the smallest useful init helper, if tooling becomes appropriate, that reduces manual prompt handling without becoming infrastructure?
-- What evidence threshold is enough to describe YAIML as a reusable standard rather than an early public convention?
-- What visible participation path is enough for pilots and outside reports without premature governance machinery?
+A reference repository needs more explanation than an adopter. Do not reproduce its document inventory in every project. Keep the init prompt self-contained, but link detailed guidance elsewhere instead of restating it throughout the reference.
 
-## Retired Or Rejected
+Compression must preserve human directives, evidence scope, unresolved conflicts, and governed retention. Completed work becomes current capability, a useful lesson, or Git history.
 
-- `SPEC.md`, schema-first wording, conformance fixtures, RFC-style requirements, and validators for Markdown memory documents are retired for the current phase.
-- YAIML is not primarily a YAML format, parser target, validation regime, memory database, durable storage layer, orchestration framework, background service, autonomous coding agent, required CLI, package dependency, or provider integration layer.
-- Completed work should not be retained as a diary when it no longer changes current understanding.
+Retired for this phase: `SPEC.md` as normative center, schemas and conformance machinery for Markdown, custom memory formats, and runtime/framework adoption. See [Architecture](ARCHITECTURE.md) for boundaries.
