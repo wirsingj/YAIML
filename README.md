@@ -29,7 +29,7 @@ Initialization can recover context from available files and supplied decisions. 
 
 Each memory document starts with a short header explaining its role and when to update or prune it. Filenames and headings can fit the project. Add supporting documents only when recurring knowledge needs its own home.
 
-See [Minimal Notes](examples/minimal-notes/) for the smallest fictional example and [Canopy Dispatch](examples/canopy-dispatch/) for a larger one.
+See [Minimal Notes](examples/minimal-notes/) for the smallest fictional example and a short paste-and-go demo, or [Canopy Dispatch](examples/canopy-dispatch/) for a larger one.
 
 ## Use It Day To Day
 
@@ -66,7 +66,7 @@ Setup is a one-time starting point; these prompts help when explicit maintenance
 
 ## Evidence And Limits
 
-[YTMMOCC](docs/case-studies/YTMMOCC.md) is a real maintainer-owned adoption case. It documents preserved project constraints, not measured productivity gains. [The current repository review](docs/COLD_START_REVIEW.md) is a manual inspection, not an independent agent trial.
+[YTMMOCC](docs/case-studies/YTMMOCC.md) records maintainer-owned adoption. [Local adoption exercises](docs/case-studies/ADOPTION_TRIAL.md) record isolated initialization, legacy refresh, and compression with measured document sizes. Neither establishes productivity gains or independent adoption. [The current review](docs/COLD_START_REVIEW.md) records repository findings and remaining gaps.
 
 YAIML needs maintenance and consumes reading context. Stale or overgrown memory can mislead an agent. Whether its benefits outweigh that cost needs trials beyond the maintainer’s projects. Use [Evaluation](docs/EVALUATION.md) to report successes, failures, and neutral results.
 

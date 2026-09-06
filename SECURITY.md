@@ -19,7 +19,9 @@ Avoid collecting sensitive values in the first place: prefer configuration examp
 
 Pruning a file does not erase Git history, published copies, or prior AI-session inputs. If sensitive material was committed or shared, follow the project's incident process; a documentation cleanup must not claim the exposure is resolved.
 
-If you find a sensitive issue, report it without public sensitive detail. Preferred path: use GitHub private vulnerability reporting when it is enabled for this repository. If that private path is not available, open a minimal public issue asking for a private contact path and avoid including exploit details, screenshots, logs, private transcripts, or sensitive values.
+Report sensitive issues through [GitHub private vulnerability reporting](https://github.com/wirsingj/YAIML/security/advisories/new). It was enabled and checked on 2026-09-06. Share only the detail needed to explain the issue; do not include live credentials or unrelated private material.
+
+If that private path is unavailable, open a minimal public issue asking for a private contact path. Do not include exploit details, screenshots, logs, private transcripts, or sensitive values in that public request.
 
 Agent-written security, privacy, legal, licensing, compliance, or IP notes are project memory, not professional advice or a completed assessment.
 

@@ -11,53 +11,43 @@ update-when: a major conceptual or structural revision changes the first-time us
 agent-guidance: Treat this as review evidence, not a normative source. Verify current files before relying on it.
 ---
 
+
 # Cold Start Review
 
-Date: 2026-09-06
-Baseline: `7c1c44e`
+Date: 2026-09-06. Baseline: `c3ba11d`.
 
-## Scope
+## Scope And Findings
 
-Manual audit of the standalone init prompt and the repository's intent, reading/maintenance cost, security guidance, licensing consistency, human readability, evidence, and backwards compatibility. Reference guides, all prompts, templates, examples, policy files, discovery maps, and living memory were reviewed.
+Audit of YAIML's adoption path, refresh/compression guidance, evidence, human readability, privacy/reporting, license preservation, and current priorities. The same assisting agent reviewed and edited the repository. This is not an independent evaluation, legal opinion, or security certification.
 
-The same assisting agent reviewed and edited the materials. This is not an independent evaluation, a fresh-agent adoption trial, a legal opinion, or a security certification.
+The main actionable finding was a mismatch between bounded context loading and the refresh prompt's near-complete reference inventory. Refresh now starts with init/adoption guidance and local maintenance instructions, expanding only for material differences or local copies. The standalone init prompt remains unchanged at 1,255 whitespace-delimited words; it needs no reference download or installation.
 
-## Findings And Corrections
+The long evaluation form was replaced with a compact report format and concrete comparison tasks. The minimal fictional example now includes a short demonstration of setup, session recovery, and no-op compression. These preserve examples and practical instructions rather than shortening away necessary context.
 
-| Area | Finding | Correction |
-| --- | --- | --- |
-| Paste-and-go intent | The primary integration point needed an explicit access assumption | Init remains self-contained and now reports missing repository access honestly |
-| Performance | “Bounded inspection” left room for exhaustive reading and costly setup commands | Added representative reading, exclusions, a stopping rule, and inexpensive-check guidance |
-| Repeat use | Repeated initialization or refresh could append pointers or rewrite healthy memory | Defined unchanged results, pointer reuse, and concurrent-edit checks |
-| Security | Sanitizing output alone does not prevent collecting sensitive input | Prefer sanitized examples; check discovery/symlink scope and scripts before following or running them |
-| Retention | “Git is the archive” can lose uncommitted knowledge or imply an exposure is erased | Confirm preservation before pruning; distinguish current-file cleanup from history and prior disclosure |
-| Licensing | Copy/paste adoption did not clearly explain notices on redistributed material | Linked the existing MIT notice condition; preserve the target project's license and supplied notices |
-| Readability | Further shortening could remove useful orientation | Kept the role table, header example, evidence labels, and instruction pointer; emphasized short prose and defined terms |
-| Compatibility | Guidance refresh, discovery migration, and tool compatibility could be conflated | Added a compatibility table and explicit preservation of local choices, custom fields, and working formatting |
+## Original Top Five Priorities
 
-The init prompt grew from **1,178 to 1,255 whitespace-delimited words** (8,702 to 9,348 characters). The additional 77 words make inspection and repeat-run behavior more bounded. This is a size measurement, not measured token savings or proof of reduced total session cost.
+| Priority | Outcome and limit |
+| --- | --- |
+| Trial init, refresh, and compression | Executed isolated document exercises on a public source checkout and a maintainer-owned legacy memory snapshot; recorded sizes and unchanged files. These were same-session exercises, not ongoing adopter field trials. |
+| Comparable fresh-session tasks | Prepared fixed tasks and reviewer criteria. Separate fresh sessions and independent owner participation have not occurred; this priority remains open. |
+| Exercise older discovery | Refreshed and compressed the local guide in the legacy snapshot while preserving the entire map, core memory, and agent instructions. No reader migration or universal compatibility claim. |
+| Short demo and private reporting | Added the fictional demo. Enabled GitHub private reporting; the update returned HTTP 204 and a subsequent uncached read returned `enabled: true`. No vulnerability report was submitted. |
+| Scoped evidence and pruning | Added a bounded trial summary, replaced this review, and updated SoTY's current state and remaining priorities. |
 
-## Scenario Review
+The [trial summary](case-studies/ADOPTION_TRIAL.md) records conditions, inspected revisions, measured sizes, and limits. The public initialization produced five files totaling 717 words; a same-session repeat and same-reference refresh required no edits. Legacy guide refresh/compression changed 943 words to 1,033, then 596, without changing the map or core documents.
 
-Manual walkthroughs checked the instructions for a small repository, mature local filenames and docs, repeated setup, concurrent edits, missing filesystem access, missing refresh reference, unfamiliar discovery, and governed retention.
+## Verification
 
-The prompt gives an explicit path for each: create only useful memory, reuse established roles, avoid duplicate rewrites, preserve concurrent work, report access limits, request a missing reference, retain ambiguous mappings, and respect retention. These are findings about instruction coverage; no new agent was run against those scenarios.
+Local checks passed for 49 Markdown files, 76 local links/anchors, three discovery maps, 24 declared document paths with stable headers, and four fenced YAML examples. Checks included case-sensitive paths, fences, UTF-8 decoding, merge markers, and targeted credential/machine-path patterns. `git diff --check` passed. This is structural review and a current-tree pattern scan, not an exhaustive secret or history audit.
 
-## Executed Checks
+The inspection helpers used existing local tools only; no validation framework or runtime was added to YAIML. Final diff review confirmed that the init prompt and license were unchanged.
 
-Local checks used Git, Python, and the already available PyYAML library. No library, script, runtime, or validation framework was added to YAIML.
+The existing MIT License remains unchanged. Original source and license files in the public trial checkout were preserved byte-for-byte. This verifies preservation, not ownership or legal compliance. Prior case-study runtime checks and store observations were not rerun.
 
-- All 48 tracked Markdown files were checked for balanced fences, local link targets/anchors, case-sensitive paths, encoding errors, and merge markers.
-- All three discovery maps parsed; their 23 declared document paths resolved to files with stable headers. Four fenced YAML examples parsed.
-- Targeted credential and machine-specific-path patterns produced no findings. This was a current-tree pattern scan, not an exhaustive history or secret audit.
-- `git diff --check` passed. The MIT License and all three discovery maps were unchanged.
-- The MIT text was compared with the [OSI reference](https://opensource.org/license/mit); this review did not assess authorship, ownership, or employment agreements.
-- All 18 unique pinned source-file links in the existing YTMMOCC case study resolved to Git objects locally. That verifies referenced paths, not every behavioral claim or current online availability; extension checks and store observations were not rerun.
+GitHub reporting state was checked through the [repository reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting). [GitHub's API documentation](https://docs.github.com/en/rest/repos/repos#enable-private-vulnerability-reporting-for-a-repository) describes this setting; the reporting route is linked in [Security](../SECURITY.md).
 
-## Remaining Findings
+## Remaining Work
 
-**Private reporting is disabled.** A read-only request to [GitHub's repository reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting) returned HTTP 200 with `enabled: false` on 2026-09-06. No setting was changed. The existing security policy offers a minimal public request for a private contact path; establishing that private route remains a public-pilot readiness task.
+The [prepared comparison](EVALUATION.md#ready-to-run-comparison) still requires separate fresh sessions and permitted independent participation. Same-agent success cannot establish general reliability, total token savings, or cross-provider performance. The demo's fresh-session portion is instructions, not an executed result.
 
-**Effectiveness remains unmeasured.** Prompt size, structural checks, and manual walkthroughs do not establish independent adoption success, total token cost, or interoperability with every agent or reader. Use the [evaluation method](EVALUATION.md) for those trials.
-
-Current priorities belong in [SoTY](SoTY.md). Upgrade behavior belongs in [Adoption And Updates](ADOPTION_AND_UPGRADES.md); this review does not promise universal backwards compatibility.
+Discovery compatibility remains scoped to the exercised files. Concurrent edits, unfamiliar future layouts, and repeated use in other agent environments need additional trials. Current priorities belong in [SoTY](SoTY.md).

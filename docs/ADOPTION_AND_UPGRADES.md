@@ -134,10 +134,10 @@ A YAIML update refreshes an adopted YAIML docset to follow newer reference guida
 
 An update agent should:
 
-1. Read the new YAIML reference source.
+1. Identify the new reference revision or snapshot. Start with its init prompt and adoption guidance; use relevant changes from the previously applied reference when known.
 2. Read the repository's current YAIML documents.
 3. Inspect the current repository implementation enough to distinguish YAIML-reference drift from project-memory drift.
-4. Compare the adopted docset against the newer reference.
+4. Compare local instructions and maintenance guidance. Load other reference topics only for material differences or local copies; do not read or reproduce the whole reference inventory.
 5. Preserve project-specific SoT, architecture, maintainer knowledge, risks, human decisions, and supporting memory.
 6. Update obsolete structure, terminology, headings, responsibilities, and guidance.
 7. Add newly recommended sections only when they are relevant.

@@ -29,6 +29,8 @@ The init prompt is intentionally self-contained. When shortening it, keep the be
 
 Review init alone against a small repository, mature existing docs, repeated setup, missing access, concurrent edits, and unfamiliar discovery. Check its stopping rule and command scope as well as its length. Track prompt size separately from observed total session cost; word counts do not prove token savings or successful adoption.
 
+For adoption exercises, use isolated snapshots and record their source/reference revisions before editing. Preserve original-file hashes and compare repeat-run changes. Keep generated trial memory out of this reference repository; publish a scoped case summary. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; a same-session exercise does not satisfy that step.
+
 ## Useful Commands
 
 Run from the repository root; Git and ripgrep must be available.
@@ -78,7 +80,7 @@ Preserve `LICENSE.md` as MIT. Do not add license headers or new ownership, trade
 
 Follow [SECURITY.md](../SECURITY.md) and [Project Independence](PROJECT_INDEPENDENCE.md). Preserve the maintainer declaration; exclude confidential material and machine-specific reference locations. Do not turn agent-written notes into legal or security assurances.
 
-Case studies must retain dates, evidence sources, ownership, and limits. A documentation edit does not revalidate an external repository or store listing. Broader public pilot readiness still requires the private reporting path described in SoTY.
+Case studies must retain dates, evidence sources, ownership, and limits. A documentation edit does not revalidate an external repository or store listing. Before a public pilot, verify that the private reporting route in Security still works; do not submit a dummy vulnerability report to test it.
 
 ## Publication
 

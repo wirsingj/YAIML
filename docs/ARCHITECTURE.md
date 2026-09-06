@@ -39,7 +39,7 @@ YAIML is a documentation convention. This repository supplies reference guidance
 | templates/ | Optional starters, adapted rather than copied as empty forms |
 | prompts/init-yaiml.md | Self-contained adoption instructions |
 | Other prompts/ | Explicit orientation, audit, update, compression, refresh, and realignment helpers |
-| examples/ | Minimal and larger fictional document families; no application code |
+| examples/ | Minimal and larger fictional document families, plus a short demo; no application code |
 | docs/case-studies/ and COLD_START_REVIEW.md | Evidence notes with scope and limitations |
 
 The reference repository contains more documents than a typical adopter needs because it explains the convention. Initialization should not reproduce this inventory in an adopting project.

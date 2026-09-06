@@ -11,8 +11,8 @@ The immediate route is the self-contained [init prompt](prompts/init-yaiml.md). 
 - Gather three kinds of case evidence: a maintainer-owned project, an unfamiliar public repository, and a project owned by someone else. [YTMMOCC](docs/case-studies/YTMMOCC.md) supplies maintainer-owned inspection evidence only.
 - Run comparable fresh-session tasks and retain failures and neutral results. Measure context cost as well as useful work.
 - Refine headers, prompt length, and supporting-document split decisions from those trials.
-- Prepare a short sanitized demo for developers, managers, and senior engineers: initialize memory, then show what a fresh session can recover.
-- Establish a maintainer-approved private sensitive-reporting path before broader public pilot readiness.
+- Run the [prepared sanitized demo](examples/minimal-notes/README.md#short-paste-and-go-demo) with new readers and check what a fresh session recovers.
+- Keep the [private sensitive-reporting route](SECURITY.md) available; it was enabled and verified on 2026-09-06.
 
 ## Public Pilot
 

@@ -39,19 +39,9 @@ If the human wants a durable team-wide reference later, use a stable, team-appro
 
 ## Compare
 
-Identify the supplied reference revision or dated snapshot when available; the discovery marker alone cannot identify a prose revision. Compare the relevant guidance below, loading other topics only when the differences require them:
+Identify the supplied reference revision or dated snapshot when available; the discovery marker alone cannot identify a prose revision. Start with its init prompt and adoption/upgrade guidance, then compare the target's existing instruction pointers and maintenance notes. If the previously applied reference is known, use the relevant changes between references to focus inspection.
 
-- README front-door guidance;
-- `prompts/init-yaiml.md`;
-- `prompts/hydrate-agent-session.md`;
-- `prompts/update-project-memory.md`;
-- `prompts/audit-against-reality.md`;
-- `prompts/compress-project-memory.md`;
-- `prompts/major-project-realignment.md`;
-- `prompts/update-yaiml.md`, if present;
-- core templates;
-- supporting templates;
-- docs that define evidence, context loading, stable headers, agent integration, pruning, safety, licensing posture, adoption, upgrade, version awareness, or evaluation.
+Read other reference prompts, templates, and topic guides only when the target keeps copies or a material difference needs clarification. Do not load the entire reference inventory or create local copies merely to compare them. Stop when applicable differences are addressed or explicitly unresolved; an identical reference still needs local drift checked, not a wholesale reread.
 
 Do not assume every adopting project should copy the reference repository wholesale. Look for convention changes that improve continuity, safety, clarity, or agent behavior.
 

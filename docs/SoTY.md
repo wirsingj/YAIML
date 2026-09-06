@@ -35,26 +35,25 @@ The README provides one adoption path. The init prompt is self-contained and reu
 
 Current guidance distinguishes headers from discovery versions, bounds initial inspection, avoids sensitive-file collection and unnecessary command execution, and preserves concurrent work. Repeated init/refresh should leave healthy memory unchanged. Existing layouts and custom fields survive compatible guidance refreshes; actual consumers must be checked before requested migrations.
 
-The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned inspection and dated listing observations, not productivity or independent adoption. The current audit checked its 18 pinned source paths for existence; it did not rerun extension checks or refresh store observations.
+The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned inspection and dated listing observations. [Local adoption exercises](case-studies/ADOPTION_TRIAL.md) add actual isolated document edits: initialization on a public source snapshot, unchanged repeat setup, and a legacy guide refresh/compression with the discovery map and core memory preserved. These are same-session exercises, not independent adoption or runtime validation.
 
-Prior local sampling reported useful project memory alongside legacy discovery maps and committed machine-specific reference paths. That historical report is not a reproducible independent trial. The current [compatibility policy](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) preserves layouts during routine refresh and requires explicit migration direction.
+The [minimal example](../examples/minimal-notes/README.md#short-paste-and-go-demo) now includes a short fictional demo. [Evaluation](EVALUATION.md#ready-to-run-comparison) provides concrete matched tasks and reviewer criteria; fresh comparison sessions have not run. GitHub private vulnerability reporting was enabled and verified on 2026-09-06; [Security](../SECURITY.md) links the reporting route.
 
 ## Active Risks And Gaps
 
 - **Effectiveness remains unmeasured:** no controlled fresh-session comparison or independent adoption evidence is recorded.
 - **Context and maintenance cost:** even concise instructions can produce overgrown or stale memory; the shortened init path and supporting-document choices need adopter trials.
 - **Evidence and authority errors:** agents may still promote old results, inference, or fictional examples into current fact, or flatten contributor disagreements.
-- **Portability and sharing:** generated memory must preserve useful constraints without machine-specific paths or sensitive content; legacy-adopter refresh behavior needs trials.
+- **Portability and sharing:** one preserved legacy map does not establish compatibility with every consumer, layout, or concurrent editing workflow.
 - **Phase drift:** added tools, formal requirements, or empty templates could displace the plain-file convention.
-- **Reporting readiness:** GitHub's private-reporting API returned `enabled: false` on 2026-09-06. Establish the private path before broader public pilot readiness; the current policy provides a minimal public contact-request fallback.
 
 ## Immediate Priorities
 
-1. Trial the revised init, refresh, and compression prompts in real repositories; record failures and context cost.
-2. Run comparable fresh-session tasks, including an unfamiliar repository and an independently owned project.
-3. Exercise older discovery layouts without replacing mature memory or forcing migration.
-4. Prepare the short sanitized demo and establish the private reporting path.
-5. Keep current review evidence scoped in [Cold Start Review](COLD_START_REVIEW.md); prune affected memory after material changes.
+1. Run the prepared fresh-session comparison; record total context cost and failures without sharing answers between conditions.
+2. Obtain a permitted owner-led trial and feedback from outside the maintainer's projects; a public checkout alone is not independent adoption.
+3. Repeat adoption and refresh in another agent environment, including an unfamiliar layout and concurrent edits; preserve failed and neutral outcomes.
+4. Run the prepared demo with a new reader and record what they misunderstood or could not recover.
+5. Refine only the guidance those trials show needs changing; keep [current review evidence](COLD_START_REVIEW.md) scoped and core memory concise.
 
 ## Open Questions
 

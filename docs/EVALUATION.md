@@ -31,90 +31,25 @@ Keep fictional examples, maintainer-owned field evidence, and independent trials
 
 ## Case Study Template
 
-Use this shape for a real project trial:
+Keep one short report per trial, with these fields. Use “not measured” or “not run” where appropriate; omit empty narrative sections.
 
 ```md
-# YAIML Case Study: Project Name
+# Trial: project and task
 
-## Project And Timeframe
-
-- Project:
-- Repository type:
-- Inspected revision and immutable public source links where accessible:
-- Local changes or unpublished evidence, identified separately:
-- Dates:
-- Agent or tools used:
-- Human reviewers:
-
-## Repository Shape
-
-- Main languages and frameworks:
-- Project size:
-- Existing docs or agent instructions:
-- Test/build/deploy shape:
-- Public release or listing evidence, if relevant:
-
-## Before YAIML
-
-- Problems observed before yaiml:
-- Repeated agent misunderstandings:
-- Missed constraints:
-- Stale or scattered project knowledge:
-
-## Documents Introduced
-
-- Core documents:
-- Supporting documents:
-- Why each supporting document existed:
-- Documents considered but not created:
-
-## Evolution
-
-- How the documents changed over time:
-- Stale or incorrect memory corrected:
-- Resolved risks removed:
-- Human corrections preserved:
-
-## Cold-Start Tasks
-
-- Task A:
-- Task B:
-- Task C:
-
-## Observed Failures
-
-- False claims:
-- Missed constraints:
-- Reintroduced rejected approaches:
-- Architecture misunderstandings:
-- Commands or tests missed:
-- Human corrections required:
-
-## Useful Work Completed
-
-- Implementation, audit, debugging, design, or documentation work completed:
-- Evidence that work respected project constraints:
-- Quality of final YAIML update:
-- Human-reported experience:
-- Measured outcomes:
-
-## Context Cost
-
-- Documents loaded:
-- Supporting documents skipped:
-- Approximate time or turns before useful work:
-- Input prompt size and measurement method (words, characters, or named tokenizer):
-- Total session input/output cost when available, including inspection and generated memory:
-- Any context overload observed:
-
-## Conclusions And Limitations
-
-- What YAIML appeared to help:
-- What it did not help:
-- Remaining failures:
-- Evidence limits and unverified claims:
-- Why this case study should not be overgeneralized:
+- Source revision and permitted immutable references:
+- YAIML reference revision, plus any uncommitted changes:
+- Date, agent/model, access, budget, and human reviewer:
+- Relationship to project (maintainer-owned, outside snapshot, or owner-led):
+- Starting docs, selected task, and criteria fixed before execution:
+- Files actually read; files created or changed; documents deliberately skipped:
+- Actual commands and outcomes, including unrun checks:
+- Result, failures, human corrections, and unresolved uncertainty:
+- Prompt size, inspected content, generated memory, and repeat-run changes:
+- Total session cost when available; measurement method and excluded costs:
+- Evidence retained, where permitted; limitations and next question:
 ```
+
+Report source inspection, a same-session exercise, a fresh-session comparison, and independent owner feedback as different evidence. Working on another person's public code does not establish their adoption or endorsement.
 
 ## Cold-Start Comparison Method
 
@@ -142,6 +77,20 @@ Useful baselines:
 Do not describe a personal walkthrough or hypothetical comparison as an independent fresh-session trial. If the same maintainer, prior project context, or prior chat history influenced the run, label that limitation.
 
 This comparison tests the added memory package, not whether YAIML outperforms equally informative ordinary documentation. For that question, add a condition with the same facts in existing docs without YAIML organization. Account for the cost of creating and maintaining either version.
+
+## Ready-To-Run Comparison
+
+The [local adoption exercise](case-studies/ADOPTION_TRIAL.md) identifies a public `strip-tags` revision and the inspected files. It supplies a candidate, not a completed comparison. Use isolated copies of that same revision; create and retain the YAIML package before either comparison session starts. Keep these reviewer criteria outside both sessions.
+
+Give each fresh session the same bounded requests, with equivalent access and budget:
+
+1. “Trace file or stdin input through the CLI to text extraction. Explain where `--first` stops selection. Cite source; do not edit or run the app.”
+2. “Compare the declared Python support range with the configured CI matrix. What does this establish, and what remains unknown? Do not infer passing runs or change support policy.”
+3. “Write a maintenance handoff of at most 120 words: relevant checks, unverified behavior, and release boundaries. Do not install dependencies or execute commands.”
+
+Reviewer criteria: the first answer follows the CLI/library boundary and the first-match exit across selectors; the second distinguishes package metadata, configured coverage, and executed results; the third identifies local checks without claiming they passed or authorizing a release. Count unsupported claims, missed constraints, inspected content, and useful correct answers. Report the cost of building the memory package separately from the comparison sessions.
+
+No comparison result is recorded yet. A project owner reviewing or performing their own trial is still needed for independent adoption evidence. Publish only permitted, sanitized results through [Contributing](../CONTRIBUTING.md#feedback-and-adoption-reports).
 
 ## Evaluation Dimensions
 

@@ -14,6 +14,7 @@ yaiml:
     context_loading: docs/CONTEXT_LOADING.md
     evaluation: docs/EVALUATION.md
     ytmmocc_case_study: docs/case-studies/YTMMOCC.md
+    adoption_trial: docs/case-studies/ADOPTION_TRIAL.md
     cold_start_review: docs/COLD_START_REVIEW.md
     adoption_and_upgrades: docs/ADOPTION_AND_UPGRADES.md
     project_independence: docs/PROJECT_INDEPENDENCE.md
