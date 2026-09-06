@@ -56,7 +56,7 @@ Whitespace-delimited word counts against the baseline:
 
 | Document | Before | After |
 | --- | ---: | ---: |
-| README | 2,317 | 742 |
+| README | 2,317 | 741 |
 | Init prompt | 4,305 | 1,178 |
 | SoTY | 1,233 | 734 |
 | Architecture | 1,093 | 570 |

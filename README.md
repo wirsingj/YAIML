@@ -1,6 +1,6 @@
 # YAIML
 
-> Agents forget. Projects shouldn’t.
+Agents forget. Projects shouldn’t.
 
 **Yet Another AI Markup Language** is a project-memory convention for software repositories. It keeps current state, human direction, architecture, and working procedures in ordinary Markdown so the next AI session or contributor has somewhere to start.
 
