@@ -14,7 +14,7 @@ agent-guidance: This is a fictional YAIML example. Treat commands as example pro
 
 ## Quick Start
 
-This fictional project has a normal application runtime and a seeded demo mode. In a real repository, verify every command before preserving it here.
+The fictional scenario assumes an application runtime and seeded demo mode. Neither is included here. The commands below illustrate procedures, have not been run in this repository, and should not be executed from this example directory. In a real adopter, separate source-defined commands from recorded successful runs.
 
 ## Common Commands
 

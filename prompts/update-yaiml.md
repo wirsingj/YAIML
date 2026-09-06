@@ -33,11 +33,11 @@ If no YAIML reference can be identified, do not guess. Report that a reference p
 
 Do not write machine-specific filesystem paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into versioned YAIML files. They are per-workspace/per-agent context, not project memory.
 
-If the human wants a durable team-wide reference later, record only a stable, team-approved public or internal project reference. Until then, keep local paths in the prompt, local agent memory, environment, or ignored workspace notes. Do not invent a reference URL. Do not fetch from the network unless the environment allows it and the human request or existing non-versioned workspace context makes the source clear.
+If the human wants a durable team-wide reference later, use a stable, team-approved public reference in versioned guidance. Keep private workspace references in non-versioned configuration. Do not invent a reference URL. Do not fetch from the network unless the environment allows it and the human request or existing non-versioned workspace context makes the source clear.
 
 ## Compare
 
-Inspect the reference repository or reference files for:
+Identify the supplied reference revision or dated snapshot when available; the discovery marker alone cannot identify a prose revision. Compare the relevant guidance below, loading other topics only when the differences require them:
 
 - README front-door guidance;
 - `prompts/init-yaiml.md`;

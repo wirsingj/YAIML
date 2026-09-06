@@ -13,7 +13,7 @@ agent-guidance: Keep headers short and semantic. Do not convert this guide into 
 
 # Stable Headers
 
-Every YAIML document begins with a small stable header.
+Every YAIML memory document begins with a small stable header. This includes declared core and supporting memory, not every Markdown file in a repository. Entry pages, licenses, agent instruction files, and copyable prompts keep their own formats.
 
 The header is an operating guide for future AI chats and coding agents. It is not primarily machine metadata, not a rigid YAML schema, and not a promise that every project uses byte-for-byte identical fields.
 
@@ -57,6 +57,10 @@ agent-guidance: Verify implementation claims. Preserve human intent. Mark uncert
 
 This is a recommended header shape, not a serialization protocol.
 
+`role` is the example spelling; existing `kind` fields are equivalent for reader orientation. The optional `yaiml: 0.2` hint identifies the header's convention family. It is not the discovery-format version, a document revision, or a requirement to migrate equivalent headers. Omit it when it adds no useful context.
+
+`read-with` names relevant companions, not mandatory recursive imports. Read a selected document's header before its body; do not load every listed companion regardless of the task. Resolve document names through the discovery map or explicit local links. Missing optional companions are not instructions to create them.
+
 ## Minimum Healthy Header
 
 If a project wants fewer fields, the header should still make these clear:
@@ -71,7 +75,7 @@ Update it when work changes current understanding.
 Verify implementation claims and preserve human intent.
 ```
 
-Markdown prose is acceptable if it reliably orients the agent.
+Markdown prose is acceptable if it reliably orients the agent. Keep it visibly separate from the current-state body so later edits preserve the document's role.
 
 ## Header Discipline
 
@@ -83,4 +87,4 @@ Do not use the header to encode a project-management database, issue tracker, or
 
 ## Compatibility
 
-Future tools may read these headers, but current YAIML does not require a parser. A compatible tool should tolerate equivalent wording, missing optional fields, and project-specific vocabulary as long as the semantic responsibilities are clear.
+Current YAIML requires no header parser and claims no parser compatibility. Readers should understand equivalent wording and project-specific vocabulary. If a future tool requires a narrower format, it must document that limitation rather than treating this guide as a machine contract.

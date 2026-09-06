@@ -28,6 +28,8 @@ Declared by the maintainer:
 - YAIML does not run as a hosted service, runtime framework, package dependency, background service, database, SDK, or required CLI.
 - YAIML is a plain-file convention made of documentation, prompts, templates, examples, and repository-local project memory.
 
+These declarations describe YAIML itself. An agent or hosted AI service used to read the files has its own data handling; storing memory in a repository does not guarantee that a session processes it locally.
+
 ## Public Sharing Boundary
 
 The public YAIML repository is intended to be shareable for review, discussion, and evaluation when no confidential third-party material is added to the repository or demonstration.

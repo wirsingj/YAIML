@@ -29,6 +29,8 @@ The file should help an agent identify:
 
 The version describes the discovery format. It is not a Markdown revision counter or a claim that document bodies follow a machine-validatable schema.
 
+The recommended discovery marker is the three-part string `0.2.0`. Roadmap milestones and optional Markdown header hints are separate; neither requires a discovery-version bump. To compare revisions of the reference guidance, use the supplied reference's Git revision or dated snapshot, not the discovery marker alone.
+
 Current recommended shape:
 
 ```yaml
@@ -41,6 +43,8 @@ yaiml:
   supporting:
     risk_review: docs/RISK_REVIEW.md
 ```
+
+Paths are relative to the directory containing `yaiml.yml`, normally the repository root. Use portable paths to files inside the repository. Include only existing supporting documents; omit `supporting` when none are needed. The example's `risk_review` entry is illustrative, not a file to create automatically.
 
 Keep this file portable. Do not store machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs in it.
 
@@ -78,6 +82,8 @@ Safe behavior:
 - Do not confuse discovery-format versioning with ordinary Markdown edits. Updating a paragraph in SoT does not require changing the discovery format version.
 - Migrate discovery only when the human explicitly requests discovery migration, the consumer understands both layouts, and all local paths and roles can be preserved. A general initialization or refresh request does not authorize migration.
 - Repair stale paths within the existing layout. Path repairs do not require a discovery-format version change. If compatibility is unclear, preserve the map and report the gap while completing compatible edits.
+
+For an unfamiliar layout or version, inspect explicit paths and local instructions before interpreting it. Do not guess role mappings, overwrite unknown entries, or downgrade the marker. Report ambiguity that blocks discovery; continue compatible work where possible. No automated consumer compatibility is claimed here.
 
 ## First-Time Adoption
 

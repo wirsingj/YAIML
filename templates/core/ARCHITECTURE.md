@@ -13,48 +13,24 @@ agent-guidance: Distinguish current, intended, transitional, uncertain, and obso
 
 # Architecture
 
-This document preserves design meaning. It should prevent a fresh AI chat, agent, or contributor from treating accidental implementation as intentional architecture.
+Adapt these headings; omit empty or irrelevant sections. Explain design meaning so future readers can distinguish intended boundaries from accidental implementation.
 
-## System Model
+## System Model And Components
 
-Describe the project at a conceptual level.
+Describe major components, their responsibilities, and data flow. Do not mirror the whole directory tree.
 
-## Major Components
+## Boundaries And Invariants
 
-List important components and their responsibilities. Do not mirror the whole directory tree.
+Explain ownership of decisions, data, state, UI, integrations, and domain logic. Preserve the rules that should survive future changes and their decision sources.
 
-## Ownership Boundaries
+## Current And Intended Architecture
 
-Explain where decisions, data, policy, state, UI, integration, storage, and domain logic belong.
-
-## Current Architecture
-
-Verified implementation shape goes here.
-
-## Intended Architecture
-
-Declared design direction goes here. Mark anything unimplemented clearly.
-
-## Transitional Paths
-
-Describe transitional architecture that is currently true but not the desired endpoint.
-
-## Invariants
-
-List rules that should remain true across changes.
-
-## Known Violations
-
-Record current implementation that violates intended architecture.
+Separate verified implementation from declared design. Include transitional paths, known violations, and unresolved design questions where relevant.
 
 ## Danger Zones
 
-Name concentrated files, fragile boundaries, security-sensitive areas, generated outputs, or modules that need extra care.
+Name fragile boundaries, concentrated responsibilities, generated outputs, or sensitive modules that need particular care. Link procedures in the Maintainer Guide.
 
-## Retired Approaches
+## Decisions And Retired Approaches
 
-Record approaches that should not quietly return.
-
-## Open Architecture Questions
-
-List unresolved design questions.
+Preserve important rationale and rejected designs that should not quietly return. Remove obsolete detail that no longer affects decisions.

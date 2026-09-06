@@ -32,3 +32,7 @@ None. This example has no package, build, test, or application code.
 ## Maintenance Notes
 
 Keep this example boring. It exists to show that YAIML can be useful before a project needs supporting documents.
+
+For “update YAIML” or “check new YAIML”, compare with a supplied reference while preserving project-specific memory and discovery layout. Do not commit local reference locations.
+
+For “compress YAIML” or “prune SoT”, remove stale or repeated memory while preserving decisions, evidence, and uncertainty. These requests maintain the example; they do not ask for application implementation.

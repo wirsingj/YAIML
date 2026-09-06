@@ -50,7 +50,7 @@ Full-family hydration is appropriate for audits, major realignments, release rea
 Before acting, briefly report:
 
 - which YAIML documents were read;
-- which supporting or deep-reference documents were skipped as not task-relevant;
+- material context gaps or deliberately excluded areas that affect the task (no exhaustive skipped-file inventory);
 - the working project model;
 - contradictions or freshness concerns;
 - what you still need to verify for the requested task.

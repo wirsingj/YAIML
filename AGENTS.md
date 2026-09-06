@@ -3,7 +3,7 @@
 Before making changes:
 
 1. Read `yaiml.yml`.
-2. Read the stable header at the top of each declared YAIML document before reading its body.
+2. Read the three core documents below and task-relevant supporting material. For each selected YAIML document, read its stable header before its body; `read-with` is a relevance hint, not a recursive loading requirement.
 3. Treat `docs/SoTY.md`, `docs/ARCHITECTURE.md`, and `docs/MAINTAINER_GUIDE.md` as this repository's living project memory.
 4. Treat examples, templates, prompts, and guides as supporting artifacts that must stay synchronized with the living-memory concept.
 

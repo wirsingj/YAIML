@@ -21,7 +21,7 @@ agent-guidance: Verify implementation claims. Preserve human-approved domain int
 
 ## Declared Intent
 
-## Current Implementation Notes
+## Links To Implementation Evidence
 
 ## Known Ambiguity
 

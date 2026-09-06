@@ -33,7 +33,6 @@ Do not change the license, add license headers, or make new trademark, ownership
 
 Before changing YAIML, ask:
 
-- Does this help a fresh agent understand a project faster and better?
 - Does this improve a new AI chat, coding agent, or contributor's ability to reconstruct the project's current engineering understanding?
 - Does this protect explicit human corrections?
 - Does this keep uncertainty visible?
@@ -41,3 +40,9 @@ Before changing YAIML, ask:
 - Does this help the document family self-unfold where useful without creating empty files?
 - Does this avoid turning YAIML into a classical technical standard?
 - Could a developer use this tonight with ordinary Markdown files, with prompts only as setup or maintenance helpers?
+
+## Feedback And Adoption Reports
+
+Open a GitHub issue or pull request with a concrete unclear passage, contradiction, or proposed correction. For adoption feedback, include the YAIML reference revision, repository context you may share, agent environment, task, observed result, and what required correction. Use [Evaluation](docs/EVALUATION.md) for comparisons; small failure reports are welcome too.
+
+Use the private-contact guidance in [SECURITY.md](SECURITY.md) for sensitive reports. Do not publish private project memory or transcripts to make a report reproducible.

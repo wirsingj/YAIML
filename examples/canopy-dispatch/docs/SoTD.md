@@ -13,6 +13,8 @@ agent-guidance: This is a fictional YAIML example. Keep human intent separate fr
 
 # SoTD
 
+All implementation and test results below are invented scenario facts for teaching. This directory contains documentation only; they are not checks executed in YAIML.
+
 ## North Star
 
 Canopy Dispatch is a fictional neighborhood storm-response coordination app. It helps a small volunteer team intake requests, assign responders, track safety status, and publish limited public updates during power, tree, water, or supply disruptions.
@@ -33,7 +35,7 @@ Unverified: the external SMS provider, map geocoding, and public status page are
 - Coordinators can assign one primary responder and multiple watchers.
 - Responders can mark en route, on scene, blocked, resolved, or needs escalation.
 - Incident timelines preserve important state changes and coordinator notes.
-- Public updates intentionally redact names, exact addresses, phone numbers, and private notes.
+- The redaction helper removes names, exact addresses, phone numbers, and private notes in the scenario's unit-level behavior; the public-feed bypass remains unresolved below.
 - A local demo mode can run from seeded storm scenarios.
 
 ## Recent Human Direction

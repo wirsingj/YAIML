@@ -31,6 +31,8 @@ Verified by repository inspection: YAIML consists of reference guides, seven hel
 
 The README provides one adoption path. The init prompt is self-contained and reuses existing project documentation. Detailed guidance is organized by topic; [Architecture](ARCHITECTURE.md) maps the artifact responsibilities and [Maintainer Guide](MAINTAINER_GUIDE.md) describes review procedures.
 
+Current guidance treats headers as reader orientation, `read-with` as a relevance hint, and discovery versions separately from prose revisions. Realignment follows established human direction; repository-local storage does not promise local-only AI processing. Core templates consolidate overlapping sections and permit omission of empty headings.
+
 The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned repository inspection and dated public-listing observations. It does not measure productivity or establish independent adoption. External evidence is not revalidated by this documentation audit.
 
 Prior local sampling reported useful project memory alongside legacy discovery maps and committed machine-specific reference paths. That historical report is not a reproducible independent trial. The current [compatibility policy](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) preserves layouts during routine refresh and requires explicit migration direction.

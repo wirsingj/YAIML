@@ -19,7 +19,7 @@ This template is for project risk memory and review preparation. It is not legal
 
 ## Accepted Risks
 
-## Recently Resolved Risks
+## Useful Lessons From Resolved Risks
 
 ## Verification Notes
 

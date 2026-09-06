@@ -13,89 +13,48 @@ agent-guidance: Keep this provider-neutral. Do not imply official adapters or du
 
 # Agent Integration
 
-YAIML and agent instruction files have different jobs.
+Agent instruction files specify how a session should work. YAIML holds project understanding: state, direction, evidence, architecture, procedures, and uncertainty. Keep the detailed memory in its owning document and use short pointers from instructions.
 
-`AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files primarily tell an agent how to behave while working in a repository: coding style, tool rules, review expectations, safety limits, branch policy, and local workflow preferences.
+## Initialization
 
-YAIML primarily preserves what the project currently means, knows, intends, has verified, is uncertain about, and has learned.
+Add or preserve a YAIML pointer in each relevant existing instruction surface. Possible surfaces include `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or editor rule files. Respect their existing scope and syntax; these names are examples, not a claim that every tool reads them.
 
-An instruction file can point agents toward YAIML. YAIML should not become a duplicate of every instruction file.
+If no agent instruction file exists, the init prompt creates a small provider-neutral `AGENTS.md`. Do not create extra provider-specific files solely for YAIML unless requested.
 
-In multi-agent or multi-contributor projects, YAIML is shared project memory. It should help the next AI chat or contributor understand the same project state without requiring access to earlier private conversations.
+If a tool does not read repository instructions, ask the session to read `yaiml.yml` explicitly.
 
-## Initialization Behavior
+## Suggested Pointer
 
-The YAIML init prompt should wire project memory into the repository's agent-instruction surface.
-
-If the repository already has instruction files such as `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursorrules`, `.windsurfrules`, `.cursor/rules/*`, or `.windsurf/rules/*`, add or preserve a short YAIML pointer in each relevant file. This lets tools that switch between providers or modes still converge on the same project memory.
-
-If no agent instruction file exists, create a small provider-neutral `AGENTS.md` by default. Do not create a stack of provider-specific files just for YAIML unless the human asks or the repository already uses those surfaces.
-
-Provider-specific files should stay thin. They can point to `yaiml.yml`, the core YAIML documents, and local behavior rules. They should not duplicate the full SoT, Architecture, Maintainer Guide, or supporting memory.
-
-## Minimal Instruction Snippet
+Adapt paths through the discovery map:
 
 ```md
-Before meaningful work:
+## YAIML Project Memory
 
-1. Read `yaiml.yml` if present.
-2. Read the stable header of each declared YAIML document before its body.
-3. Read the core YAIML documents: `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`, or the paths declared in `yaiml.yml`.
-4. Load supporting YAIML documents only when the current task touches their domain.
-5. Verify task-relevant claims against repository reality.
-6. Never treat inference as verified reality.
-7. After meaningful work, update only affected YAIML documents and prune stale current-state information.
-8. Treat cleanup/compression phrases such as "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as instructions to rewrite affected YAIML documents so stale, repetitive, resolved, or log-like content is removed while current truth, human direction, evidence, uncertainty, active risks, and useful lessons are preserved.
+Before meaningful work, read yaiml.yml and its core documents:
+SoT for current state, Architecture for system boundaries, and
+Maintainer Guide for procedures. Read each selected document’s
+stable header before its body. Load supporting material only
+when task-relevant, and verify consequential claims.
+
+After material work, update affected memory and prune stale state.
+Preserve declared direction, evidence scope, uncertainty, and unresolved
+contributor disagreements. Do not append a work diary.
+
+“Update YAIML”, “updated YAIML”, or “check new YAIML” means refresh
+convention guidance from a human-provided or workspace-local reference.
+Preserve project memory and the existing discovery layout.
+
+“Clean up YAIML”, “compress YAIML”, “compact project memory”,
+“prune project memory”, or “prune SoT” means remove stale or repetitive
+memory while preserving current truth, direction, evidence, and uncertainty.
+
+See the Maintainer Guide for local YAIML maintenance.
 ```
 
-## Existing Instruction File Example
+Routine refreshes preserve local document names and older recognizable maps. See [discovery compatibility](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) before migration.
 
-```md
-# Instructions For Agents
+## Keeping Responsibilities Clear
 
-Use YAIML as project memory, not as a replacement for these instructions.
+Tool permissions, response style, branch rules, and collaboration behavior belong in agent instructions. YAIML can record the project procedures those instructions refer to, such as a current test command or release checklist.
 
-Start by reading `yaiml.yml`. Then read the core YAIML documents it declares:
-
-- SoT for current project state, direction, risk, uncertainty, and priorities.
-- Architecture for durable system shape and intended boundaries.
-- Maintainer Guide for commands, diagnostics, and failure playbooks.
-
-For the current task, inspect only relevant supporting YAIML documents. Do not load unrelated domains just because they exist.
-
-If `yaiml.yml` uses an older recognizable `documents.*.path` layout, preserve it and the repository's local document names. Migrate only on an explicit human request for discovery migration, with consumer understanding of both layouts and preservation of all paths and roles.
-
-When intent and implementation disagree, surface the divergence. Do not rewrite human intent to match accidental code, and do not describe planned behavior as already implemented.
-
-After material changes, update only the affected YAIML documents. Remove resolved active risks and replace stale verification summaries instead of appending a work diary.
-
-If the human asks to clean up, compress, compact, or prune YAIML/project memory, treat that as a maintenance request: rewrite only affected YAIML documents, preserve current truth and uncertainty, remove stale or repetitive content, and do not create an archive unless asked.
-
-If another agent or contributor left conflicting project-memory updates, preserve the disagreement and evidence until a human or repository fact resolves it.
-```
-
-## Boundary
-
-Put behavior rules in agent instructions:
-
-- how to run tools;
-- how to format responses;
-- how to handle tests;
-- how to manage branches;
-- what commands require care;
-- how the human wants the agent to collaborate.
-
-Put project understanding in YAIML:
-
-- current product or system meaning;
-- verified current capabilities;
-- declared human direction;
-- architecture boundaries;
-- commands and diagnostics that are current project memory;
-- active risks and known divergence;
-- open questions and uncertainty;
-- durable lessons that should guide future work.
-
-If both places need a fact, prefer a short instruction-file pointer to the YAIML document rather than duplicating the body.
-
-For shared teams, keep local tool preferences in the instruction file when they affect agent behavior, but keep project meaning in YAIML so different chats, agents, and contributors can converge on the same interpreted state.
+Project preferences may live in supporting memory when their rationale matters. Link to them instead of duplicating their full text in every provider’s instruction file. An agent still follows applicable instructions and project review authority; memory does not grant new permissions.

@@ -118,12 +118,12 @@ Use this shape for a real project trial:
 
 Use bounded comparisons rather than broad claims.
 
-1. Choose a real repository and a small set of bounded tasks.
-2. Prepare ordinary repository instructions for both sessions.
-3. Give Agent or Session A the repository and ordinary instructions.
-4. Give Agent or Session B the same repository plus YAIML.
-5. Give both the same tasks.
-6. Compare results without pretending one small test proves universal effectiveness. Preserve transcripts, summaries, failures, and limitations when safe to share.
+1. Choose a real repository, a fixed revision, and bounded tasks with review criteria set before running them.
+2. Prepare isolated copies with the same source and ordinary documentation. Session A gets the baseline without YAIML; Session B gets that baseline plus the recorded YAIML files and minimal discovery pointer. Keep ordinary instructions equivalent, except for that necessary pointer.
+3. Start separate fresh sessions without shared chat history, prior answers, or edits from the other condition. Record model/version when available, tool access, permissions, and time or context budgets; keep them comparable.
+4. Give both the same task wording. Record what each session actually loads, including any baseline documentation that already performs YAIML-like roles.
+5. Compare results against the preset criteria. Repeat when practical; report run counts, failures, and variation rather than selecting a favorable example.
+6. Preserve permitted evidence in an approved location. Publish sanitized summaries and reproducible references, not private transcripts or sensitive raw logs.
 
 Tasks should be small enough to review and specific enough to reveal project understanding.
 
@@ -132,11 +132,14 @@ Useful baselines:
 - same repository revision for both sessions;
 - same human task wording;
 - same ordinary repository instructions;
+- a baseline that cannot accidentally load the added YAIML files through search, history, or preexisting session context;
 - recorded YAIML documents loaded by the YAIML-assisted session;
 - recorded commands run and outcomes;
 - concise reviewer notes explaining which result better respected project constraints.
 
 Do not describe a personal walkthrough or hypothetical comparison as an independent fresh-session trial. If the same maintainer, prior project context, or prior chat history influenced the run, label that limitation.
+
+This comparison tests the added memory package, not whether YAIML outperforms equally informative ordinary documentation. For that question, add a condition with the same facts in existing docs without YAIML organization. Account for the cost of creating and maintaining either version.
 
 ## Evaluation Dimensions
 

@@ -13,63 +13,30 @@ agent-guidance: Verify implementation claims. Preserve human intent. Mark uncert
 
 # SOT
 
-SoT means State Of The. `SOT.md` is the recommended default filename for unfamiliar repositories. A project may rename the file to a project-specific SoT name when that adds useful project character, such as `SoTP.md`, `SoTC.md`, or `SoTT.md`.
+SoT means State Of The. Use `SOT.md` by default or preserve an established project-specific name.
 
-## North Star
+Adapt these headings to the project. Remove empty or irrelevant sections; retain unknowns that affect decisions. Do not repeat the same fact under several headings.
 
-Declared: Unknown until project inspection or human direction.
+## Purpose And Direction
 
-## Authority And Review
+Record project identity, current human asks, accepted decisions, and corrected directions. Name decision sources or owners where relevant. Keep declared intent separate from implementation.
 
-- Maintainer or owner:
-- Last meaningful review:
-- Higher-authority sources:
-- Review path for material changes:
+## Current State And Capabilities
 
-In shared or governed repositories, approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and agent inference.
+Summarize verified behavior with consequential evidence references. Describe completed work as current capability, not a chronological log. Mark inferred or unknown areas.
 
-## Current Engineering State
+## Active Risks And Divergence
 
-Record what is verified now. Do not describe planned behavior as implemented behavior.
+Record unresolved risks, debt, and conflicts among direction, design, code, tests, or contributor accounts. Remove resolved active items; preserve accepted risks with their decision source.
 
-## Product Or System Identity
+## Verification
 
-- Verified:
-- Declared:
-- Unknown:
+Keep a short replaceable summary of consequential checks and gaps. Separate successful execution from source-defined checks. For prior results, preserve relevant date, revision, environment, and limits. A newer edit does not revalidate a claim.
 
-## Developer Direction
+## Immediate Priorities And Open Questions
 
-Record current human asks, product rules, accepted decisions, and corrected directions. Do not rewrite this to match accidental implementation.
+Name the next few useful actions and questions that shape them. Link a larger backlog if one exists.
 
-## Current Capabilities
+## Useful Lessons
 
-Summarize meaningful accomplishments as current capability, not as a chronological work log.
-
-## Active Risks And Debt
-
-Keep this list current. Include audit findings only while they still affect current work. Remove resolved risks.
-
-## Testing And Verification State
-
-Summarize what has been verified, what checks are trusted, and what remains untested or uncertain.
-
-## Recent Verification
-
-Keep a short replaceable summary of the latest trusted checks. Separate checks that passed from commands or tests that merely exist. Replace this section after newer verification; do not append forever.
-
-## Useful Recent Lessons
-
-Capture lessons that should change future work. Avoid preserving routine run history.
-
-## Known Divergence
-
-Record disagreement between declared intent, architecture, documentation, code, tests, or runtime behavior.
-
-## Immediate Priorities
-
-Keep this short. Name the next few useful moves without turning this into a full backlog.
-
-## Open Questions
-
-List questions that shape near-term work or human decisions.
+Keep decisions or lessons that still change future work, including rejected approaches worth preventing. Let Git retain routine run history.

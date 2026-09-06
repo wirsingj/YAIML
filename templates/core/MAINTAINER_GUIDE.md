@@ -13,66 +13,30 @@ agent-guidance: Verify command claims when practical. Mark environment-dependent
 
 # Maintainer Guide
 
-This document is procedural memory. Keep it current and practical.
+Adapt these headings; omit empty or irrelevant sections. Keep procedures current and actionable.
 
-## Quick Start
+## Setup And Commands
 
-Record the shortest verified path from checkout to useful local work.
+Record the shortest useful path from checkout to local work. Identify required tools and environment assumptions.
 
-## Verified Commands
+Separate commands actually run from commands found by source inspection and procedures still unverified. Record the command, outcome, and relevant date, revision, and environment for results that matter. Do not imply a script passed because it exists.
 
-```sh
-# Add commands that have been successfully run under recorded conditions.
-```
+## Focused Checks And Diagnostics
 
-## Defined But Not Run
+List useful test, build, lint, or diagnostic procedures and how to interpret results. Mark service, hardware, account, or credential requirements without storing sensitive values. Prefer sanitized outcomes to raw logs.
 
-List useful commands, scripts, workflows, or checks found by source inspection but not executed in the current pass.
+## Important And Dangerous Files
 
-## Environment-Dependent Commands
+Map files and boundaries a contributor needs before editing; omit a complete file inventory.
 
-List commands that depend on local services, secrets, hardware, accounts, or optional tools.
+## Failure, Release, And Recovery Procedures
 
-## Focused Checks
-
-List narrow test, lint, typecheck, build, or diagnostic commands.
-
-## Important Files
-
-Map files and directories an agent should know before editing.
-
-## Danger Files
-
-List files where changes are high-risk, generated, security-sensitive, large, or easy to misuse.
-
-## Diagnostics
-
-Record inspection commands and how to read their output. Source inspection can verify that a command exists; successful execution verifies that it ran under the recorded conditions. Prefer sanitized outcomes over raw output that contains secrets, personal data, private paths, private URLs, or confidential details.
+For recurring failures, record symptoms, likely owner, evidence to inspect, and recovery steps. Include release, rollback, backup, or restore procedures when applicable, with verification limits.
 
 ## YAIML Maintenance
 
-Phrases such as "update YAIML", "updated YAIML", "check new YAIML", or "run a YAIML update" mean to compare this repository's local YAIML prompts, templates, guidance, and agent-instruction pointers against a human-provided or workspace-local YAIML reference while preserving project-specific SoT, Architecture, Maintainer Guide, and supporting memory.
+“Update YAIML”, “updated YAIML”, or “check new YAIML” means compare local convention guidance, prompts, templates, and instruction pointers against a human-provided or workspace-local reference. Preserve project memory and existing discovery layout; migrate only on explicit request with compatibility established.
 
-Phrases such as "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" mean to remove or compress stale, repetitive, resolved, or log-like YAIML content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
+“Clean up YAIML”, “compress YAIML”, “compact project memory”, “prune project memory”, or “prune SoT” means remove stale, repeated, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons. Respect governed retention rules.
 
-Do not hardcode machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs in versioned YAIML files. If no reference is available from the human prompt or local workspace context, ask for one instead of guessing.
-
-## Failure Playbooks
-
-### Symptom
-
-Likely owner:
-
-Inspect:
-
-Run:
-
-Common fix direction:
-
-## Release And Recovery
-
-Record current release, rollback, backup, restore, or deployment procedures if they exist.
-
-## Unverified Procedures
-
-List procedures that need validation before a future AI chat or agent relies on them.
+Keep machine-specific reference paths and private workspace URLs out of versioned files. If a refresh reference is unavailable, request one rather than guessing.

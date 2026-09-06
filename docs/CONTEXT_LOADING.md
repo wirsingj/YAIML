@@ -13,103 +13,36 @@ agent-guidance: Keep the core bounded. Load supporting and deep-reference materi
 
 # Context Loading
 
-YAIML should preserve useful project understanding without turning every task into a whole-repository document reading exercise.
-
-Self-unfolding means the document family can grow when the project needs it. It does not mean every accumulated document belongs in every prompt.
+YAIML is a discovery and reading convention, not a command to load every document.
 
 ## Loading Layers
 
-### Discovery Layer
+| Layer | Read when |
+| --- | --- |
+| Discovery: applicable agent instructions and `yaiml.yml` | Starting work in the repository |
+| Core: SoT, Architecture, Maintainer Guide | Doing meaningful project work |
+| Supporting: specialist project memory | The task touches that document’s domain |
+| Deep reference: history, audits, incident or release records | A specific question needs the detail |
 
-Read first:
+Keep the core concise enough for recurring use. Split supporting knowledge only when it improves clarity or needs different retention. A full review can justify a whole-family read.
 
-- `yaiml.yml`, if present;
-- repository agent instructions such as `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, or contribution instructions.
+## Discovery
 
-Use this layer to find the YAIML family and understand how the repository expects agents to behave.
+Use `yaiml.yml` to find the document roles and paths. Paths resolve relative to the map’s directory. [Adoption And Updates](ADOPTION_AND_UPGRADES.md#version-awareness) owns the current example, version meaning, and compatibility policy.
 
-### Core Layer
+Supporting entries announce available context. They do not require automatic loading or new files. Read recognizable older maps without migrating them just because they differ from the current layout.
 
-Read for meaningful work:
+If the map is absent, use local instruction pointers or look for `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`. Missing or ambiguous discovery should be reported rather than filled with guessed project facts.
 
-- SoT;
-- Architecture;
-- Maintainer Guide.
+## Reading Behavior
 
-These documents should stay concise enough to be practical recurring context. If they become too large for routine loading, prune them or split recurring specialist knowledge into a supporting document.
+1. Understand the user’s task and applicable instructions.
+2. Locate the core and read each selected document’s stable header before its body.
+3. Choose supporting material by relevance: security for trust boundaries, terms for naming, release guidance for rollout, and so on.
+4. Consult deep references where a consequential claim needs evidence.
+5. Verify task-dependent claims against current repository reality.
+6. Briefly identify the context used and material gaps. There is no need to enumerate every irrelevant document skipped.
 
-### Task-Relevant Layer
+A header’s `read-with` is a companion hint, not a recursive import. Follow relevant references without repeatedly loading the same file. A template’s mention of a supporting role does not require that document to exist.
 
-Read supporting documents when the current task touches their domain.
-
-Examples:
-
-- Read Security Memory for authentication, authorization, secret handling, public exposure, or trust-boundary work.
-- Read Legal Or Compliance Memory for license, compliance, contract, policy, or rights-sensitive work.
-- Read Product Doctrine for product tradeoffs, audience assumptions, or rejected product directions.
-- Read Terms And Glossary when naming, vocabulary, concepts, or domain distinctions shape the task.
-- Read Release or Operations material when deployment, rollout, rollback, incident response, or support behavior is in scope.
-
-Do not load unrelated domains just because they exist.
-
-### Deep-Reference Layer
-
-Load only when needed:
-
-- historical decisions;
-- audit notes;
-- release records;
-- old incident reports;
-- migration notes;
-- specialized domain material;
-- long example transcripts or research notes.
-
-Deep references should not be required by default stable headers unless the project truly needs them for routine work.
-
-## Principles
-
-- Prefer a bounded core.
-- Keep SoT synthesized and current, not chronological.
-- Split recurring specialist knowledge only when it improves clarity.
-- Do not create empty documents preemptively.
-- Do not load unrelated supporting domains.
-- Prune stale information rather than endlessly accumulating it.
-- Make `yaiml.yml` useful for discovery without turning project memory into a schema-controlled format.
-- Allow a full hydration pass when the task genuinely requires whole-project review.
-
-## `yaiml.yml`
-
-`yaiml.yml` should help agents discover the document family and current YAIML discovery version. It should not become a database, storage layer, local-reference cache, or schema for the Markdown memory documents.
-
-A small useful shape is:
-
-```yaml
-yaiml:
-  version: "0.2.0"
-  core:
-    state: SOT.md
-    architecture: ARCHITECTURE.md
-    maintainer_guide: MAINTAINER_GUIDE.md
-  supporting:
-    security: docs/SECURITY_MEMORY.md
-```
-
-Supporting entries should describe available context, not require automatic loading.
-
-Future validation, if any, should stay limited to this small discovery shape. The project memory itself remains ordinary Markdown with stable roles, evidence discipline, and human-readable judgment.
-
-Some adopters may still use older path-style maps such as `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`. Treat those as recognizable discovery hints. Understand the target layout before loading or refreshing it, and do not migrate an adopter's discovery file just because it differs from the current recommended shape.
-
-## Hydration Behavior
-
-A good hydration pass should:
-
-1. Read discovery files.
-2. Read stable headers before bodies.
-3. Read the core layer.
-4. Inspect the user's task.
-5. Select task-relevant supporting documents.
-6. Verify claims against repository reality where the task depends on them.
-7. State what was loaded, what was skipped, and why.
-
-If the human asks for a full review, audit, migration, release readiness check, or major realignment, a whole-family read may be appropriate. Treat that as an explicit deep pass, not the default for every change.
+Audit, migration, release-readiness, or realignment work may need more context than a narrow edit. Select the scope deliberately; do not turn routine work into a full repository audit.
