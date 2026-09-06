@@ -12,15 +12,18 @@ Working rules:
 - Preserve the distinction between SoT, architecture, and maintainer procedures.
 - Preserve the distinction between declared intent and implementation evidence.
 - Treat YAIML as shared project memory for AI chats, coding agents, and human contributors, not private scratch notes for one agent.
+- Use "Yet Another AI Markup Language" as YAIML's intended expansion.
 - Dogfood YAIML retention and uncertainty rules in this repository.
 - Treat natural-language requests such as "continue through the SoT list" or "update our SoT" as instructions to use this repository's YAIML memory, not as requests for separate prompt choreography.
 - Treat "update YAIML", "updated YAIML", or "check new YAIML" as convention-refresh language: in adopting repositories, compare local YAIML scaffolding with a human-provided or workspace-local YAIML reference; in this repository, update the reference guidance itself and then update SoTY if the meaning changed.
 - Treat "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as project-memory cleanup/compression language: rewrite affected YAIML documents to remove stale, repetitive, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
+- Treat older recognizable discovery layouts such as `documents.sot.path` as compatibility inputs to understand before migrating, not as a reason to overwrite mature adopter memory.
 - Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
 - Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas for Markdown memory documents, conformance fixtures, or web applications during the convention-first phase.
 - Preserve the MIT License unless the maintainer explicitly approves a license change.
 - Update only the affected YAIML documents after material changes, prune stale state, and do not append a work diary.
 - Report contradictions rather than smoothing them into confident prose.
+- Do not treat a command, script, workflow, or test existing in source as proof that it passed; successful execution only applies under the recorded conditions.
 - Do not describe planned tooling as implemented tooling.
 - Do not revive `SPEC.md`, schema-first language for Markdown memory documents, or formal conformance machinery unless a human explicitly changes the project phase.
 

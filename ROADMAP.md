@@ -24,7 +24,9 @@ Near-term work should make the existing philosophy clearer, smaller, and more du
 - Refine self-unfolding document guidance so agents add useful supporting documents without creating empty ceremony.
 - Keep the init prompt usable as the single copy/paste adoption path without making the README front door heavy.
 - Apply the cold-start evaluation method to real repositories without fabricating proof, including at least one mature local repo, one unfamiliar public repo, and one repo owned by another developer.
+- Use the YTMMOCC case study as maintainer-owned field evidence, not independent proof; refresh it when repository or public listing evidence changes.
 - Check YAIML 0.2 readiness by initializing or upgrading YAIML in repositories intended to move across machines, contributors, and AI chat provider instances, then verifying the generated memory remains useful without exposing private material.
+- Trial discovery refreshes on older `documents.*.path` adopters before recommending migration as routine.
 - Prepare a concise workplace-safe KT/demo path for a manager or senior-engineering audience: explain the repeated-context problem, show copy/paste initialization, demonstrate fresh-session recovery, and keep examples sanitized and policy-safe.
 - Enable GitHub private vulnerability reporting, or document another maintainer-approved private contact path, before broader public pilot readiness.
 - Keep the `yaiml.yml` discovery protocol tiny, versioned, and limited to paths for project memory.
@@ -37,6 +39,7 @@ Near-term work should make the existing philosophy clearer, smaller, and more du
 - Refine the stable header until it is strong enough to guide agents and short enough to tolerate.
 - Refine context-loading guidance from real AI-chat and agent sessions.
 - Record real-project case studies using the evaluation template, keeping internal portfolio trials separate from independent adoption evidence.
+- Run comparable fresh-session trials with documented baselines; do not count walkthroughs or hypothetical comparisons as independent evidence.
 - Improve self-unfolded document guidance for preferences, terms, risk review, security, domain models, product rules, operations, release, and legal/compliance memory.
 - Create a brutally simple public demo: initialize YAIML in an unfamiliar repository, then open a fresh session and show whether the project can be recovered from repo memory.
 - Adapt that demo for constrained workplace AI tools without making any one provider, workplace process, or internal toolchain part of YAIML itself.

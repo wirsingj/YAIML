@@ -12,9 +12,11 @@ Before editing, inspect the current worktree state. Treat existing uncommitted c
 
 Inspect before editing. Read enough first that any created memory reflects the repository, not a generic template.
 
+Initialization cannot recover decisions that existed only in vanished chats. When important intent appears missing, preserve `Unknown` and, if it would materially improve the first YAIML draft, ask one brief optional question such as: "What did previous agents repeatedly misunderstand about this project?"
+
 ## What YAIML Is
 
-YAIML is a lightweight plain-file convention for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
+YAIML, Yet Another AI Markup Language, is a lightweight plain-file convention for AI Project Engineering: project management, shared project memory, project definition, and AI-session continuity.
 
 It preserves the current interpreted understanding of a software project across disposable AI chats, coding-agent sessions, and contributor handoffs: product intent, verified implementation reality, architecture boundaries, maintainer procedures, risks, uncertainty, and human direction.
 
@@ -135,7 +137,7 @@ SoT owns current engineering state and direction:
 - architecture concerns that currently affect work;
 - security, privacy, performance, UX, or reliability risks;
 - testing state;
-- recent verified checks;
+- recent verification;
 - unresolved bugs;
 - known debt;
 - active priorities;
@@ -210,7 +212,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, current capabilities, active risks, recent verified checks, priorities, divergence, recent lessons.
+belongs-here: goals, current capabilities, active risks, recent verification, priorities, divergence, recent lessons.
 not-here: durable architecture, command reference, full history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -244,6 +246,16 @@ Use labels when a claim could steer future work:
 - **Obsolete**: previously relevant but no longer current.
 
 When sources conflict, record the conflict. Do not rewrite intent to match accidental implementation. Do not describe intended behavior as implemented behavior.
+
+Verification has a scope:
+
+- Source inspection can establish that a command, script, workflow, config entry, or test is defined. It does not establish that it passed.
+- Successful execution establishes that a command ran under the recorded conditions. Record the relevant command, outcome, revision or branch, and environment when that context matters.
+- Source inspection can establish that a test is defined and what it asserts; execution establishes whether it ran and passed. Check discovery, skips, and relevant assertions before describing behavioral coverage.
+- Do not promote an old successful check into current verification without evidence.
+- Recheck task-dependent claims when relevant code, dependencies, data, browser behavior, external services, or environment conditions change. A recent document timestamp alone is not proof of revalidation.
+
+Use concise evidence references for consequential claims and checks. Avoid boilerplate metadata on every sentence.
 
 ## Initialization Procedure
 
@@ -294,6 +306,8 @@ The supporting entries above are examples, not required defaults. If `yaiml.yml`
 
 Keep `yaiml.yml` portable and boring. It is a discovery file, not a schema for the Markdown documents. Do not add machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs to versioned YAIML files. If "update YAIML" needs a local reference, the human or workspace should provide it at run time.
 
+For an existing adopter, preserve its discovery layout, version, and local document names, including recognizable legacy maps with `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path` plus supporting path entries. Migrate only when the human explicitly requests discovery migration and the consumer understands both layouts and can preserve all paths and roles. A general initialization or refresh request does not authorize migration. Repair stale paths within the existing layout; ordinary Markdown edits and path repairs do not require a discovery-format version change.
+
 ## Suggested Agent Instruction Pointer
 
 Use this text or an equivalent concise pointer in `AGENTS.md` or existing agent instruction files:
@@ -320,7 +334,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, recent verified checks, priorities, divergence, useful recent lessons.
+belongs-here: goals, developer asks, current capabilities, risks, testing and verification state, priorities, divergence, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -363,15 +377,19 @@ Record current human asks, product rules, accepted decisions, and corrected dire
 
 ## Active Risks And Debt
 
-Keep this list current. Remove resolved risks later.
+Keep this list current. Include audit findings only while they still affect current work. Remove resolved risks later.
 
-## Testing State
+## Testing And Verification State
 
 Summarize what has been verified, what checks are trusted, and what remains untested or uncertain.
 
-## Recent Verified Checks
+## Recent Verification
 
-Keep a short replaceable summary of the latest trusted checks. Replace this section after newer verification; do not append forever.
+Keep a short replaceable summary of the latest trusted checks. Separate checks that passed from commands or tests that merely exist. Replace this section after newer verification; do not append forever.
+
+## Useful Recent Lessons
+
+Capture lessons that should change future work. Avoid preserving routine run history.
 
 ## Known Divergence
 
@@ -379,7 +397,7 @@ Record disagreement between declared intent, architecture, documentation, code, 
 
 ## Immediate Priorities
 
-Keep this short.
+Keep this short. Name the next few useful moves without turning this into a full backlog.
 
 ## Open Questions
 
@@ -465,7 +483,11 @@ Record the shortest verified path from checkout to useful local work.
 
 ## Verified Commands
 
-List commands you verified or can strongly substantiate from project files.
+List commands that were successfully run under recorded conditions. Include the command, outcome, date, and relevant revision or environment when useful.
+
+## Defined But Not Run
+
+List commands, scripts, workflows, or checks found by source inspection but not executed in this initialization pass.
 
 ## Environment-Dependent Commands
 
@@ -527,7 +549,8 @@ Do not hardcode machine-specific reference paths in this note.
 - Do not revive formal specification, schema-first, or conformance machinery.
 - Do not create generic filler.
 - Do not turn guesses into project canon.
-- Do not claim commands are verified unless you ran them or have strong evidence from project files.
+- Do not claim commands ran or passed unless you ran them in this session or are recording a clearly sourced prior result with its date, revision, and limits.
+- Source inspection may verify that a command is defined; it does not verify successful execution.
 - Report contradictions rather than smoothing them into confident prose.
 - Prefer concise, useful memory over exhaustive documentation.
 

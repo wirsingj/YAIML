@@ -98,6 +98,8 @@ Supporting entries should describe available context, not require automatic load
 
 Future validation, if any, should stay limited to this small discovery shape. The project memory itself remains ordinary Markdown with stable roles, evidence discipline, and human-readable judgment.
 
+Some adopters may still use older path-style maps such as `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`. Treat those as recognizable discovery hints. Understand the target layout before loading or refreshing it, and do not migrate an adopter's discovery file just because it differs from the current recommended shape.
+
 ## Hydration Behavior
 
 A good hydration pass should:

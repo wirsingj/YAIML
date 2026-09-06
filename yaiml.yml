@@ -13,6 +13,8 @@ yaiml:
     agent_integration: docs/AGENT_INTEGRATION.md
     context_loading: docs/CONTEXT_LOADING.md
     evaluation: docs/EVALUATION.md
+    ytmmocc_case_study: docs/case-studies/YTMMOCC.md
     cold_start_review: docs/COLD_START_REVIEW.md
     adoption_and_upgrades: docs/ADOPTION_AND_UPGRADES.md
     project_independence: docs/PROJECT_INDEPENDENCE.md
+    ai_usage: AI_USAGE.md

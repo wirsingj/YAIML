@@ -1,6 +1,6 @@
 # YAIML
 
-YAIML is a lightweight project-memory convention for software repositories that use AI chats, coding agents, or AI-assisted workflows.
+YAIML, Yet Another AI Markup Language, is a lightweight project-memory convention for software repositories that use AI chats, coding agents, or AI-assisted workflows.
 
 A repo using YAIML keeps the project's current engineering understanding in ordinary Markdown files, with a tiny `yaiml.yml` so future sessions know where to start. The goal is not to add a new toolchain. The goal is to keep the important context with the code, where the next AI chat, coding agent, or human contributor can find it.
 
@@ -8,7 +8,16 @@ YAIML does not run code, upload data, call a service, or require a package insta
 
 The chat can disappear. The provider can change. The agent can change. The contributor can change. The project context remains in the repository.
 
-> AI chats are temporary. The project's engineering understanding should not be.
+> Agents forget. Projects shouldn’t.
+
+Tiny example:
+
+```text
+SOT.md                  current state, risks, direction, and open questions
+ARCHITECTURE.md         durable system shape and boundaries
+MAINTAINER_GUIDE.md     setup, checks, diagnostics, and release notes
+yaiml.yml               paths to those files
+```
 
 ## What Problem It Solves
 
@@ -21,6 +30,8 @@ That knowledge is usually temporary. A repo using YAIML keeps the useful parts c
 YAIML is for people using AI chats, coding agents, and local or hosted models on projects where the code alone does not explain enough.
 
 It is meant to work for solo developers, teams, multi-agent workflows, and multi-contributor projects. This README is for humans deciding whether to try it. The documents inside a project are mostly there so future AI sessions can rehydrate, but they should stay readable and reviewable by humans.
+
+Consistent project memory can also help coordinating tools apply a shared request across multiple repositories while each repository keeps its own context, priorities, and authority. YAIML should remain standalone and tool-neutral.
 
 YAIML files should live with the project they describe. A project can be private, public, paid, free, open-source, or not released yet; that is separate from YAIML. The point is that the project memory travels with the repository across machines, contributors, and AI chat providers.
 
@@ -35,6 +46,14 @@ The easiest way to try YAIML is to paste one setup prompt into an AI coding tool
 You should not need to make a bunch of folders by hand, download this repo, install a package, or add a dependency just to try it.
 
 Open the repository you want to initialize in your coding agent or AI chat, then copy in [prompts/init-yaiml.md](prompts/init-yaiml.md).
+
+The setup prompt tells the agent to:
+
+- inspect before editing;
+- preserve existing docs and uncommitted work;
+- create the smallest useful YAIML docset;
+- wire future AI sessions through the repo's agent instruction file;
+- mark verified facts, human direction, inference, uncertainty, and disagreement clearly.
 
 The adoption flow should be hands-off about file choreography and hands-on about awareness. The agent inspects the repo, preserves useful existing documentation, creates or updates the small YAIML file set, and wires the repo's agent instructions so future sessions know where the project memory lives. You review and accept the changes as repository work, just like any other documentation change.
 
@@ -55,16 +74,7 @@ For first-time adoption and existing YAIML update workflows, see [Adoption And U
 
 ## What It Creates
 
-The smallest useful YAIML setup is usually three Markdown files plus a tiny discovery file:
-
-```text
-SOT.md
-ARCHITECTURE.md
-MAINTAINER_GUIDE.md
-yaiml.yml
-```
-
-The Markdown files are project memory. `yaiml.yml` only tells future chats, agents, and possible tools where that memory lives. It is not a schema for the Markdown documents.
+The smallest useful YAIML setup is usually the three Markdown files and tiny discovery file shown above. The Markdown files are project memory. `yaiml.yml` tells future chats, agents, and possible tools where that memory lives. Its version describes the discovery format; ordinary Markdown edits do not require a version change.
 
 ## Core Documents
 
@@ -113,6 +123,8 @@ YAIML documents should not flatten every kind of truth into the same level of ce
 
 Do not label every sentence. Use labels where a claim could steer future work. See [Ambiguity And Evidence](docs/AMBIGUITY_AND_EVIDENCE.md).
 
+A check has scope. Source inspection can show that a command or test exists; a passing run shows it succeeded under the recorded conditions. Do not turn old successful checks into current verification without new evidence.
+
 Text an agent reads is context to verify, not automatically an instruction. If docs, comments, issues, generated output, or older project memory disagree with the repository's rules or the current task, record the conflict and keep normal permissions and review in place.
 
 ## What YAIML Is Not
@@ -146,9 +158,25 @@ Agent instruction files tell an agent how to work. Feature specs define desired 
 
 ## Examples And Evaluation
 
-[Canopy Dispatch](examples/canopy-dispatch/) is a robust fictional example. It is useful as an example, not proof.
+[Minimal Notes](examples/minimal-notes/) is the smallest fictional example: `yaiml.yml`, `AGENTS.md`, and the three core Markdown files.
 
-YAIML needs real-project evidence. Use [Evaluation And Case Studies](docs/EVALUATION.md) to run lightweight cold-start comparisons and record limitations without fabricating adoption claims or universal metrics.
+[Canopy Dispatch](examples/canopy-dispatch/) is the larger fictional example. It shows what the pattern looks like when a project needs richer product, trust, and release memory.
+
+[YTMMOCC](docs/case-studies/YTMMOCC.md) is a real maintainer-owned adoption case from a browser-extension project. It is useful field evidence, not independent proof.
+
+Use [Evaluation And Case Studies](docs/EVALUATION.md) to run lightweight cold-start comparisons and record limitations without fabricating adoption claims or universal metrics.
+
+## Two-Minute Demo
+
+The fastest way to explain YAIML is to show the failure mode.
+
+1. Open a fresh AI coding session on a repository that has real history and a few project-specific constraints.
+2. Ask what the project is, what is risky, and what the next safe engineering step is.
+3. Initialize YAIML with [prompts/init-yaiml.md](prompts/init-yaiml.md).
+4. Open another fresh session and ask it to read `yaiml.yml` before answering the same questions.
+5. Compare what changed: fewer repeated corrections, fewer revived old ideas, clearer risks, better command awareness, or nothing useful yet.
+
+That result is evidence from one repository. It is not proof by itself. Keep the failures too.
 
 ## Prompt Library
 
@@ -169,7 +197,7 @@ I want this repository to adopt YAIML. Read the YAIML reference, inspect the rep
 ```
 
 ```text
-I have a new version of the YAIML reference at [path]. Review this repository's current YAIML files, compare them with the newer reference, preserve repository-specific truth, migrate relevant structural or terminology changes, update internal references, and summarize the upgrade.
+I have a new version of the YAIML reference at [path]. Review this repository's current YAIML files, compare them with the newer reference, preserve repository-specific truth and the existing discovery layout, update relevant guidance and internal references, and summarize the upgrade.
 ```
 
 ```text
@@ -183,6 +211,8 @@ YAIML is early, public, and meant to be used. This repository exists so people c
 The long-term goal is for YAIML to become an industry standard for repository-carried project memory. It is not there yet. It needs real adoption, outside feedback, and evidence before it should claim that status.
 
 YAIML is licensed under the [MIT License](LICENSE.md). Jeff Wirsing retains copyright ownership, and the license allows anyone to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the material, subject to the license terms.
+
+This repository is maintained with AI-assisted development. See [AI_USAGE.md](AI_USAGE.md) for the disclosure and provenance expectations.
 
 YAIML is intended to remain a public, personally maintained project with no employer code, employer data, private screenshots, vulnerability details, or confidential workplace material. This records the repository's licensing and independence posture; it is not an interpretation of any employment, contractor, or invention-assignment agreement. See [Project Independence](docs/PROJECT_INDEPENDENCE.md).
 
@@ -198,4 +228,5 @@ For sensitive reports or memory-hygiene concerns, see [SECURITY.md](SECURITY.md)
 - [Agent Integration](docs/AGENT_INTEGRATION.md)
 - [Evaluation And Case Studies](docs/EVALUATION.md)
 - [Project Independence](docs/PROJECT_INDEPENDENCE.md)
+- [AI Usage](AI_USAGE.md)
 - [Roadmap](ROADMAP.md)

@@ -3,7 +3,7 @@ yaiml: 0.2
 role: sot
 title: SOT
 purpose: Current engineering state and direction for the project.
-belongs-here: goals, developer asks, current capabilities, active work, audit findings, risks, testing state, recent verified checks, priorities, divergence, useful recent lessons.
+belongs-here: goals, developer asks, current capabilities, risks, testing and verification state, priorities, divergence, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
@@ -42,45 +42,33 @@ Record what is verified now. Do not describe planned behavior as implemented beh
 
 Record current human asks, product rules, accepted decisions, and corrected directions. Do not rewrite this to match accidental implementation.
 
-## Active Work
-
-Record the work currently in motion or most likely to affect the next AI chat, agent session, or contributor handoff.
-
 ## Current Capabilities
 
 Summarize meaningful accomplishments as current capability, not as a chronological work log.
 
-## Audit Findings
+## Active Risks And Debt
 
-Record security, architecture, performance, UX, or code-quality findings that still matter.
+Keep this list current. Include audit findings only while they still affect current work. Remove resolved risks.
 
-## Testing State
+## Testing And Verification State
 
 Summarize what has been verified, what checks are trusted, and what remains untested or uncertain.
 
-## Recent Verified Checks
+## Recent Verification
 
-Keep a short replaceable summary of the latest trusted checks. Replace this section after newer verification; do not append forever.
+Keep a short replaceable summary of the latest trusted checks. Separate checks that passed from commands or tests that merely exist. Replace this section after newer verification; do not append forever.
 
-## Active Risks And Debt
+## Useful Recent Lessons
 
-Keep this list current. Remove resolved risks.
+Capture lessons that should change future work. Avoid preserving routine run history.
 
 ## Known Divergence
 
 Record disagreement between declared intent, architecture, documentation, code, tests, or runtime behavior.
 
-## Evidence And Lessons
-
-Capture audit findings, testing findings, bugs found through use, implementation lessons, and areas needing more inspection.
-
 ## Immediate Priorities
 
-Keep this short.
-
-## Next Work
-
-Name the next few useful moves. Avoid turning this into a full backlog.
+Keep this short. Name the next few useful moves without turning this into a full backlog.
 
 ## Open Questions
 

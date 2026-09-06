@@ -6,13 +6,14 @@ You are starting work in a repository that may use YAIML.
 
 1. Read repository agent instructions first, such as `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, contribution docs, or workspace notes.
 2. Find and read `yaiml.yml` if it exists.
-3. Use it to locate YAIML documents. If it does not exist, look for `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`.
-4. For each YAIML document you open, read the stable header before the body.
-5. Read the core layer for meaningful work: SoT, Architecture, and Maintainer Guide.
-6. Inspect the human request and choose task-relevant supporting documents. Do not read unrelated supporting documents just because they exist.
-7. Load deep-reference material only when the task genuinely needs it, such as release history, audits, incident notes, migration records, or specialized domain material.
-8. Inspect relevant repository reality to verify claims needed for the current task.
-9. Build a concise project model:
+3. Use it to locate YAIML documents. Current maps may use nested `yaiml.version`, `core`, and `supporting`; older recognizable maps may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`.
+4. If no discovery file exists, look for `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md`.
+5. For each YAIML document you open, read the stable header before the body.
+6. Read the core layer for meaningful work: SoT, Architecture, and Maintainer Guide.
+7. Inspect the human request and choose task-relevant supporting documents. Do not read unrelated supporting documents just because they exist.
+8. Load deep-reference material only when the task genuinely needs it, such as release history, audits, incident notes, migration records, or specialized domain material.
+9. Inspect relevant repository reality to verify claims needed for the current task.
+10. Build a concise project model:
    - current state;
    - declared direction;
    - architecture boundaries;
@@ -20,8 +21,8 @@ You are starting work in a repository that may use YAIML.
    - active risks;
    - known divergence;
    - open uncertainty.
-10. Identify stale claims, contradictions, dead commands, or missing evidence.
-11. Proceed with the requested work only after the project model is coherent enough.
+11. Identify stale claims, contradictions, dead commands, or missing evidence.
+12. Proceed with the requested work only after the project model is coherent enough.
 
 ## Context Loading Model
 

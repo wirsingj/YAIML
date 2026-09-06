@@ -70,6 +70,33 @@ Labels should change agent behavior:
 - unknowns should stay visible when they affect risk or direction;
 - obsolete claims should be removed from current-state sections or retained only as retired context.
 
+## Verification Scope
+
+Verification has a scope. Keep that scope visible when the claim could affect future work.
+
+Source inspection can verify that a command, script, config entry, workflow, or test definition exists. It does not verify that the command passed.
+
+Successful execution can verify that a command ran under the recorded conditions: repository revision or branch, relevant environment, command line, and observed outcome. It does not prove the command will always pass later.
+
+Source inspection can establish that a test is defined and what it asserts; execution establishes whether it ran and passed. Check discovery, skips, and relevant assertions before describing behavioral coverage. A passing run applies only to the code and environment actually checked.
+
+Do not promote an old successful check into current verification without evidence. Recheck task-dependent claims when relevant code, data, dependencies, browser behavior, store behavior, environment, or external services may have changed. A recent document timestamp alone is not evidence that the claim was revalidated.
+
+Good concise evidence notes include:
+
+- relevant file, command, or decision source;
+- revision, branch, or environment when it matters;
+- outcome;
+- limits that affect review.
+
+Example:
+
+```text
+Verified on 2026-09-05 at commit abc123: `npm test` passed locally, 252/252.
+Verified by source inspection: `package.json` defines `npm run release:sanity`.
+Unknown: store publish credentials were not exercised.
+```
+
 ## Common Separations
 
 SoT often separates:

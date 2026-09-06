@@ -13,6 +13,8 @@ agent-guidance: Preserve the lightweight convention-first frame. Do not turn con
 
 # Concepts
 
+YAIML expands to Yet Another AI Markup Language.
+
 YAIML is a lightweight plain-file convention and reusable template docset for AI Project Engineering practice. It should grow more like Markdown, Keep a Changelog, Conventional Commits, or EditorConfig than like a runtime framework: easy to adopt, easy to inspect, and useful without installing a dependency. It may become broadly adopted later, but this repository should not imply that broad adoption or consensus already exists.
 
 It exists because repository-aware AI chats and coding agents have made natural-language engineering direction a first-class part of software development. A person or team may spend months steering agents through product intent, bugs, design corrections, audits, playtest feedback, security findings, implementation risks, and priorities. The raw conversation is temporary working memory. A repo using YAIML preserves the useful engineering state that should survive.
@@ -29,6 +31,8 @@ In AI Project Engineering, the developer works at two layers:
 - engineering direction: goals, constraints, corrections, risk calls, acceptance judgments, and lessons learned through human, chat, and agent collaboration.
 
 A repo using YAIML stores the distilled second layer in the repository so a later chat, agent, or contributor can continue the same project instead of re-discovering or distorting it.
+
+Consistent repository memory can help coordinating tools carry one human request across multiple repositories, but each repository's YAIML family remains the authority for that repository's context, risks, priorities, and decisions. YAIML should stay standalone and tool-neutral.
 
 ## Repository Memory, Not Chat Memory
 

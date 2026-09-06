@@ -22,8 +22,12 @@ Record the shortest verified path from checkout to useful local work.
 ## Verified Commands
 
 ```sh
-# Add verified commands here.
+# Add commands that have been successfully run under recorded conditions.
 ```
+
+## Defined But Not Run
+
+List useful commands, scripts, workflows, or checks found by source inspection but not executed in the current pass.
 
 ## Environment-Dependent Commands
 
@@ -43,7 +47,7 @@ List files where changes are high-risk, generated, security-sensitive, large, or
 
 ## Diagnostics
 
-Record inspection commands and how to read their output. Prefer sanitized outcomes over raw output that contains secrets, personal data, private paths, private URLs, or confidential details.
+Record inspection commands and how to read their output. Source inspection can verify that a command exists; successful execution verifies that it ran under the recorded conditions. Prefer sanitized outcomes over raw output that contains secrets, personal data, private paths, private URLs, or confidential details.
 
 ## YAIML Maintenance
 

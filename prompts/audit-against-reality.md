@@ -31,6 +31,8 @@ Read repository agent instructions and `yaiml.yml`, then read YAIML stable heade
 - Do not reset, discard, overwrite, or hide uncommitted work.
 - Do not change application code during an audit unless the human explicitly asks for implementation fixes.
 - Do not treat recent file modification time as proof of reconciliation.
+- Do not treat a test or command existing in source as proof that it passed.
+- Do not promote an old successful check into current verification without rerunning it or recording it as prior evidence with date, revision, and limits.
 - Distinguish verified findings from suspicion.
 - Do not copy secrets, credentials, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions into YAIML documents.
 - Do not present agent-written security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.

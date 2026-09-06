@@ -51,16 +51,12 @@ SoT preserves the current engineering state and direction of the project. It may
 - developer asks;
 - meaningful accomplishments;
 - current capabilities;
-- active work;
-- audit findings;
-- architecture concerns;
-- security and performance risks;
-- testing findings;
-- recent verified checks;
+- active risks and debt, including audit findings that still matter;
+- testing and verification state;
+- recent verification, with passed checks separated from commands or tests that merely exist;
 - unresolved bugs;
 - known debt;
 - active priorities;
-- near-term goals;
 - rejected or corrected directions;
 - implementation lessons;
 - areas needing inspection.
@@ -75,7 +71,7 @@ It is not merely:
 - a journal;
 - a requirements document.
 
-SoT should synthesize aggressively. Preserve meaningful accomplishments and lessons, but compress implementation sediment. A small recent-verified-checks section can be useful when it is replaced after new verification; it should not become an append-only test log.
+SoT should synthesize aggressively. Preserve meaningful accomplishments and lessons, but compress implementation sediment. A small recent-verification section can be useful when it is replaced after new verification; it should not become an append-only test log. A test or command being defined is useful evidence, but a passing check requires successful execution under recorded conditions.
 
 ## Architecture
 
@@ -121,6 +117,8 @@ It should explain:
 It should be actionable, current, and useful to human developers, AI chats, and coding agents.
 
 Wrong or obsolete procedures should be removed quickly.
+
+Maintainer Guide should distinguish commands that were successfully run from commands, scripts, workflows, or tests that were found by source inspection but not executed.
 
 ## Adding Supporting Documents
 

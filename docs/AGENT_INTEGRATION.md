@@ -63,6 +63,8 @@ Start by reading `yaiml.yml`. Then read the core YAIML documents it declares:
 
 For the current task, inspect only relevant supporting YAIML documents. Do not load unrelated domains just because they exist.
 
+If `yaiml.yml` uses an older recognizable `documents.*.path` layout, preserve it and the repository's local document names. Migrate only on an explicit human request for discovery migration, with consumer understanding of both layouts and preservation of all paths and roles.
+
 When intent and implementation disagree, surface the divergence. Do not rewrite human intent to match accidental code, and do not describe planned behavior as already implemented.
 
 After material changes, update only the affected YAIML documents. Remove resolved active risks and replace stale verification summaries instead of appending a work diary.

@@ -42,6 +42,7 @@ The roles should remain separate. SoT should not become a command reference. Arc
 
 - Root files handle public entry, agent instructions, licensing, sensitive reporting, contribution guardrails, roadmap, and discovery.
 - `README.md` introduces the problem and immediate use path for humans deciding whether to adopt YAIML.
+- `AI_USAGE.md` discloses AI-assisted maintenance of this repository and provenance expectations for material generated outputs.
 - `docs/` explains the convention and hosts YAIML's own living documents.
 - `templates/core/` provides starter versions of the three required roles.
 - `templates/supporting/` provides examples for supporting memory documents.
@@ -52,8 +53,11 @@ The roles should remain separate. SoT should not become a command reference. Arc
 - `docs/AGENT_INTEGRATION.md` explains how YAIML relates to `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, and similar files.
 - `docs/CONTEXT_LOADING.md` defines bounded context-loading layers.
 - `docs/EVALUATION.md` defines a lightweight case-study and cold-start comparison method.
+- `docs/case-studies/` holds real-project evidence notes with ownership and limitation labels.
 - `docs/ADOPTION_AND_UPGRADES.md` defines first-time adoption, existing YAIML updates, and version awareness.
+- `docs/ADOPTION_AND_UPGRADES.md` also documents discovery-layout compatibility so recognizable older adopters can be read safely before any refresh.
 - `yaiml.yml` discovers YAIML's own memory documents.
+- `examples/minimal-notes/` demonstrates the smallest useful YAIML shape without supporting documents or application code.
 
 ## Context Loading Boundary
 

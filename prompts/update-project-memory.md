@@ -14,6 +14,7 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 8. Remove resolved risks from active sections.
 9. Preserve unresolved uncertainty and known divergence.
 10. Rewrite rather than append when a section has become stale or repetitive.
+11. Do not promote a previously passing command or test into current verification unless it was rerun or clearly recorded as prior evidence with date, revision, and limits.
 
 ## Rules
 
@@ -29,6 +30,7 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 - Do not overwrite, discard, reset, or hide uncommitted human work.
 - Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions.
 - Do not present agent-written security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
+- Source inspection can verify that a command, script, workflow, config entry, or test exists. Successful execution verifies that it ran under the recorded conditions.
 
 ## Output
 

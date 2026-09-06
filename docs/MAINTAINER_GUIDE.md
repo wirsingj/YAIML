@@ -37,10 +37,10 @@ Search for old formal-standard or contract-system drift:
 rg "SPEC|schema|conformance|MUST|SHOULD|validator|parser|Document Contract|soft contract"
 ```
 
-Search for old flat discovery-file examples:
+Search for old or incompatible discovery-file examples:
 
 ```powershell
-rg 'yaiml: "0\.2"|documents:|version marker|discovery marker'
+rg 'yaiml: "0\.2"|documents:|yaiml\.core|version marker|discovery marker'
 ```
 
 Search for stale SoT naming:
@@ -80,7 +80,8 @@ Run these manually after meaningful edits:
 - Check that adoption remains prompt-first: humans provide the prompt, agents perform bounded repo-aware setup, and humans review and accept the resulting documentation changes.
 - Check that the README presents init as a one-time setup move and does not imply humans should paste workflow prompts after every routine step.
 - Compare `templates/core/` and `templates/supporting/` with `docs/CORE_DOCUMENT_FAMILY.md`.
-- Check that SoT examples keep recent verified checks visible as a replaceable summary, not an append-only test log.
+- Check that SoT examples keep recent verification visible as a replaceable summary, not an append-only test log.
+- Check that Maintainer Guide examples distinguish commands that passed from commands merely found by source inspection.
 - Compare `CONTRIBUTING.md` and `ROADMAP.md` with `docs/SoTY.md` for stale licensing, phase, or tooling claims.
 - Confirm every document declared in `yaiml.yml` has a stable header before its body.
 - Compare prompt instructions with `docs/STABLE_HEADERS.md`, `docs/AMBIGUITY_AND_EVIDENCE.md`, and `docs/PRUNING_AND_LIFECYCLE.md`.
@@ -94,9 +95,11 @@ Run these manually after meaningful edits:
 - Check that generic initialization examples recommend `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` by default while allowing project-specific SoT names.
 - Check that `docs/AGENT_INTEGRATION.md` keeps YAIML distinct from agent behavior instructions.
 - Check that `docs/EVALUATION.md` requests real evidence without inventing adoption claims, metrics, or proof.
+- Check that `docs/case-studies/YTMMOCC.md` stays labeled as maintainer-owned evidence, keeps observed facts separate from human reports, and is refreshed if public listing or repository evidence changes.
 - Check that guidance keeps YAIML documents as ordinary Markdown by default rather than introducing a `.yaiml` extension.
 - Check that `docs/ADOPTION_AND_UPGRADES.md`, `prompts/update-yaiml.md`, and README agree on first-time adoption, existing YAIML update, and version awareness.
 - Check that `yaiml.yml` remains a tiny nested discovery protocol with SemVer under `yaiml.version`, not a database, local-reference store, or schema for Markdown memory documents.
+- Check that discovery compatibility guidance explains the current nested layout, recognizable older `documents.*.path` layouts, and safe refresh behavior without forcing mature adopters to migrate.
 - Check that validation language, if present, is limited to the discovery file shape rather than the human-authored Markdown memory.
 - Check that initialization guidance does not add YAIML files to `.gitignore` by default.
 - Check that YAIML guidance does not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into project memory.
@@ -105,6 +108,7 @@ Run these manually after meaningful edits:
 - Check that shared-project guidance preserves source authority without turning YAIML into a compliance system: approved decisions, current maintainers, owners, and documented repository rules outweigh stale notes, stray comments, and inference.
 - Check that adoption remains copy/paste-first and does not require downloading this repository, installing a package, adding a dependency, or running a CLI.
 - Check that `docs/PROJECT_INDEPENDENCE.md`, README, LICENSE, and SECURITY agree on public use, personal-project posture, and employer-data hygiene.
+- Check that `AI_USAGE.md` stays concise, public, provider-neutral, and free of private transcripts or employer-specific detail.
 - Check that `CONTRIBUTING.md` preserves inbound MIT contribution terms and warns contributors not to submit employer-confidential, unauthorized third-party, secret, private, or sensitive material.
 - Check that `SECURITY.md` still matches README, prompts, templates, and repository-safe sensitive-reporting expectations.
 - Check that self-unfolding document guidance encourages useful project-specific extension without normalizing empty document ceremony.
@@ -119,6 +123,7 @@ Run these manually after meaningful edits:
 
 - `README.md`: public entry point and immediate-use path.
 - `AGENTS.md`: this repository's agent behavior instructions and YAIML dogfood entrypoint.
+- `AI_USAGE.md`: public AI-assisted development disclosure and generated-output provenance expectations.
 - `LICENSE.md`: MIT License; do not change license terms without explicit maintainer approval.
 - `SECURITY.md`: sensitive-reporting and memory-hygiene policy for the public repository.
 - `CONTRIBUTING.md`: contribution rules and licensing guardrails.
@@ -130,6 +135,7 @@ Run these manually after meaningful edits:
 - `docs/AGENT_INTEGRATION.md`: boundary between agent instruction files and YAIML project memory.
 - `docs/CONTEXT_LOADING.md`: bounded loading model for YAIML context.
 - `docs/EVALUATION.md`: case-study template and cold-start comparison method.
+- `docs/case-studies/YTMMOCC.md`: real maintainer-owned adoption case and evidence limitations.
 - `docs/ADOPTION_AND_UPGRADES.md`: first-time adoption, existing YAIML update, and version-awareness guidance.
 - `docs/PROJECT_INDEPENDENCE.md`: public personal-project posture and employer-data hygiene boundary.
 - `templates/core/`: starter documents users copy into projects.
@@ -151,6 +157,7 @@ Run these manually after meaningful edits:
 - `prompts/init-yaiml.md`: easy place to become too large, omit evidence discipline, accidentally authorize code changes during initialization, make YAIML private-by-default, or allow unsafe legal/IP claims.
 - `prompts/compress-project-memory.md`: easy place to erase useful uncertainty, human directives, or governed retention material while trying to reduce size.
 - `docs/EVALUATION.md`: easy place to accidentally fabricate proof or imply a benchmark suite exists.
+- `docs/case-studies/`: easy place to overclaim maintainer-owned or public-listing evidence as independent proof.
 - `docs/STABLE_HEADERS.md`: easy place to drift into schema design.
 - `docs/ADOPTION_AND_UPGRADES.md`: easy place to accidentally turn adoption or upgrade into a generic template-copy operation.
 
@@ -158,13 +165,13 @@ Run these manually after meaningful edits:
 
 When YAIML itself changes:
 
-1. Update the reference guidance, templates, prompts, examples, and `yaiml.yml` discovery version in this repository.
+1. Update affected reference guidance, templates, prompts, and examples. Change the discovery version only for a discovery-format change; ordinary Markdown edits and path repairs do not require a version change. Follow [discovery migration policy](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) for existing adopters.
 2. Update `docs/SoTY.md` only with material current-state changes, not a full work diary.
 3. Update `docs/ARCHITECTURE.md` when document roles, boundaries, or deferred-tooling posture change.
 4. Update this Maintainer Guide when procedures, checks, or dangerous areas change.
 5. Update `docs/ADOPTION_AND_UPGRADES.md` when adoption, update, or version-awareness behavior changes.
 6. Search for stale legacy terminology and broken renamed links.
-7. For adopting repositories, use `prompts/update-yaiml.md` or the upgrade prompt from `docs/ADOPTION_AND_UPGRADES.md`: compare their adopted docset against the new YAIML reference, preserve repository-specific truth, repair links and terminology, and update their `yaiml.yml` discovery protocol when needed.
+7. For adopting repositories, use `prompts/update-yaiml.md`: compare guidance, preserve repository-specific truth and discovery layout, and repair links and terminology under the policy above.
 
 Do not propagate a revision by copying this repository wholesale over an adopter's mature YAIML documents.
 

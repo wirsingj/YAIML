@@ -15,15 +15,19 @@ agent-guidance: Record limitations honestly. Do not turn one small test into uni
 
 The Canopy Dispatch example demonstrates what YAIML can look like, but it is fictional. It is not proof that YAIML improves agent work.
 
+[YTMMOCC](case-studies/YTMMOCC.md) is a real maintainer-owned adoption case. It shows useful repository-carried memory in a published browser-extension project, but it is still internal dogfooding evidence rather than independent proof.
+
 YAIML needs real-project evidence gathered without inflated claims.
 
-A useful evidence set for the public pilot phase should include at least three independent-quality case studies:
+A useful evidence set for the public pilot phase should include three distinct case studies:
 
 - one mature repository already known to the maintainer, labeled as internal dogfooding rather than outside proof;
 - one unfamiliar public repository initialized without private project context;
 - one repository owned by another developer or team.
 
 Internal portfolio repositories can show that YAIML is useful in practice, but they should not be counted as independent adoption evidence.
+
+Keep fictional examples, maintainer-owned field evidence, and independent trials labeled separately.
 
 ## Case Study Template
 
@@ -36,6 +40,8 @@ Use this shape for a real project trial:
 
 - Project:
 - Repository type:
+- Inspected revision and immutable public source links where accessible:
+- Local changes or unpublished evidence, identified separately:
 - Dates:
 - Agent or tools used:
 - Human reviewers:
@@ -46,6 +52,7 @@ Use this shape for a real project trial:
 - Project size:
 - Existing docs or agent instructions:
 - Test/build/deploy shape:
+- Public release or listing evidence, if relevant:
 
 ## Before YAIML
 
@@ -88,6 +95,8 @@ Use this shape for a real project trial:
 - Implementation, audit, debugging, design, or documentation work completed:
 - Evidence that work respected project constraints:
 - Quality of final YAIML update:
+- Human-reported experience:
+- Measured outcomes:
 
 ## Context Cost
 
@@ -101,6 +110,7 @@ Use this shape for a real project trial:
 - What YAIML appeared to help:
 - What it did not help:
 - Remaining failures:
+- Evidence limits and unverified claims:
 - Why this case study should not be overgeneralized:
 ```
 
@@ -116,6 +126,17 @@ Use bounded comparisons rather than broad claims.
 6. Compare results without pretending one small test proves universal effectiveness. Preserve transcripts, summaries, failures, and limitations when safe to share.
 
 Tasks should be small enough to review and specific enough to reveal project understanding.
+
+Useful baselines:
+
+- same repository revision for both sessions;
+- same human task wording;
+- same ordinary repository instructions;
+- recorded YAIML documents loaded by the YAIML-assisted session;
+- recorded commands run and outcomes;
+- concise reviewer notes explaining which result better respected project constraints.
+
+Do not describe a personal walkthrough or hypothetical comparison as an independent fresh-session trial. If the same maintainer, prior project context, or prior chat history influenced the run, label that limitation.
 
 ## Evaluation Dimensions
 

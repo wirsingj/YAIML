@@ -18,7 +18,8 @@ YAIML remains plain Markdown and YAML project memory. Do not add a package depen
 2. Read `yaiml.yml`.
 3. Read the stable headers for the core YAIML documents before their bodies.
 4. Check the current git status or equivalent worktree state. Treat existing uncommitted changes as intentional work in progress.
-5. Do not reset, discard, overwrite, or hide existing work.
+5. Identify the repository's current YAIML discovery layout before editing. Current recommended layouts use nested `yaiml.version`, `core`, and `supporting`; older recognizable layouts may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`.
+6. Do not reset, discard, overwrite, or hide existing work.
 
 ## Find The YAIML Reference
 
@@ -60,6 +61,8 @@ Apply only updates that are useful and compatible with this repository:
 - update local YAIML templates if this repository keeps copies;
 - update agent-instruction pointers when the current YAIML guidance has changed;
 - update `yaiml.yml` only as a small discovery file, not as a schema, database, or place for machine-specific reference paths;
+- migrate discovery layout only when the human explicitly requests discovery migration, the consumer understands both layouts, and all local paths and roles can be preserved; a general refresh request does not authorize migration;
+- repair stale paths within the existing layout; ordinary Markdown edits and path repairs do not require a discovery-format version change;
 - update the repository's own YAIML documents only when the refresh changes how future AI chats, agents, or contributors should understand or maintain this repository.
 
 Preserve project-specific memory. Do not replace:
@@ -70,6 +73,7 @@ Preserve project-specific memory. Do not replace:
 - project-specific risks;
 - human decisions;
 - local naming choices;
+- recognizable older discovery layouts unless migration meets the explicit-request and compatibility conditions above;
 - supporting documents that contain real project knowledge.
 
 ## Safety Rules
