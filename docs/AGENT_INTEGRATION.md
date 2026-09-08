@@ -19,9 +19,11 @@ Agent instruction files specify how a session should work. YAIML holds project u
 
 Add or preserve a YAIML pointer in each relevant existing instruction surface. Possible surfaces include `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or editor rule files. Respect their existing scope and syntax; these names are examples, not a claim that every tool reads them.
 
-If no agent instruction file exists, the init prompt creates a small provider-neutral `AGENTS.md`. Do not create extra provider-specific files solely for YAIML unless requested.
+Initialization must connect the agent being used, even when its instruction file does not exist yet. Identify its supported persistent repository-instruction mechanism from available configuration or current official documentation. Create the minimal supported file or rule needed for that agent; use `AGENTS.md` when supported. Do not create files for every possible provider or guess that a familiar filename is automatically loaded.
 
-If a tool does not read repository instructions, ask the session to read `yaiml.yml` explicitly.
+Check the instruction file's syntax, activation scope, and path to discovery, including work in subdirectories. Report which mechanism is configured and whether loading was actually observed in a fresh session. File existence alone is not proof of automatic loading. If persistent instructions are unavailable or require a user-controlled setting, report that setup gap during initialization; repeated user reminders are not the intended workflow.
+
+After setup, ordinary requests should trigger memory reading and maintenance without mentioning YAIML. Before finishing material work, record changed facts, decisions, evidence, and unresolved issues in affected memory. Respect read-only scope and review rules; leave unchanged memory alone. Convention refresh from a newer external reference remains a separate maintenance action, not a required step for every task.
 
 Repeated initialization should update an existing pointer instead of appending another copy. Preserve nested instruction scope and re-read files changed by another contributor before writing.
 
@@ -38,7 +40,9 @@ Maintainer Guide for procedures. Read each selected document’s
 stable header before its body. Load supporting material only
 when task-relevant, and verify consequential claims.
 
-After material work, update affected memory and prune stale state.
+Before finishing material work, update affected memory and prune stale state
+without waiting for a separate YAIML request. Respect read-only task scope;
+report pending updates when writing is unavailable. Leave unchanged memory alone.
 Preserve declared direction, evidence scope, uncertainty, and unresolved
 contributor disagreements. Do not append a work diary.
 

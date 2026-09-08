@@ -54,6 +54,8 @@ The init prompt deliberately repeats the minimum convention because it must work
 
 The init prompt is the primary adoption interface. It must retain enough context to work independently, with bounded inspection and no installation requirement. External coordinating tools are optional users of the files; none is a dependency or part of the adoption path.
 
+Persistent repository instructions carry the routine reading and maintenance behavior into later sessions. Initialization connects the active agent's supported mechanism; a discovery file alone cannot activate an agent. Configured instructions and observed loading are different evidence. No background process maintains memory between sessions.
+
 ## Deferred And Retired Approaches
 
 During the convention-first phase, do not add implementation libraries, CLIs, SDKs, provider adapters, package manifests, services, databases, orchestration, or web applications. A future helper would serve project-local files without becoming an adopter’s runtime or build dependency.

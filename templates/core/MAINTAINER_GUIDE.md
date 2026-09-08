@@ -35,6 +35,8 @@ For recurring failures, record symptoms, likely owner, evidence to inspect, and 
 
 ## YAIML Maintenance
 
+Routine memory reading and updates are part of ordinary work, without a separate YAIML request. Record the supported persistent instruction route and any setup gaps. Before finishing material work, update affected memory within task permissions; leave unchanged memory alone and report pending updates for read-only tasks.
+
 “Update YAIML”, “updated YAIML”, or “check new YAIML” means compare local convention guidance, prompts, templates, and instruction pointers against a human-provided or workspace-local reference. Preserve project memory and existing discovery layout; migrate only on explicit request with compatibility established.
 
 Identify the reference revision or supplied snapshot. Preserve unrelated custom fields and concurrent edits; a repeat refresh may need no changes. Coordinated work must carry the original refresh request and reference into each target session and distinguish dispatch from completion.

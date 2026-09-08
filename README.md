@@ -33,7 +33,9 @@ See [Minimal Notes](examples/minimal-notes/) for the smallest fictional example 
 
 ## Use It Day To Day
 
-Ask normally: “Read YAIML and continue through the SoT priorities,” or “Update our SoT after this work.” Future sessions follow the repository’s agent instructions; if your tool does not load them, ask it to read `yaiml.yml`.
+After initialization, ask normally: “Fix this bug,” “Audit the project,” or “Implement the next priority.” You should not need to mention YAIML again for routine work. The agent's persistent repository instructions tell it to read memory and maintain affected documents before finishing.
+
+Init must connect the agent you are using and disclose any setup gap. This depends on the tool loading persistent instructions; a new tool needs a supported instruction route too. YAIML cannot force an agent to follow instructions it never receives.
 
 For meaningful work, load the three core documents and only the supporting material relevant to the task. Afterward, update affected memory and remove stale state. Keep decisions and useful lessons; let Git retain the work history.
 

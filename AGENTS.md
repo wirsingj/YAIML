@@ -21,7 +21,7 @@ Working rules:
 - Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
 - Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas for Markdown memory documents, conformance fixtures, or web applications during the convention-first phase.
 - Preserve the MIT License unless the maintainer explicitly approves a license change.
-- Update only the affected YAIML documents after material changes, prune stale state, and do not append a work diary.
+- Before finishing material work, update only affected YAIML documents without waiting for a separate request, prune stale state, and do not append a work diary. Respect read-only task scope and leave unchanged memory alone.
 - Report contradictions rather than smoothing them into confident prose.
 - Do not treat a command, script, workflow, or test existing in source as proof that it passed; successful execution only applies under the recorded conditions.
 - Do not describe planned tooling as implemented tooling.

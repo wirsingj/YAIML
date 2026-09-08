@@ -27,6 +27,8 @@ Use several focused passes for substantial revisions:
 
 The init prompt is intentionally self-contained. When shortening it, keep the behavior an adopter needs without relying on links to this repository.
 
+Check that init connects the active agent even when its instruction file is absent, verifies scope and discovery paths, and reports unsupported persistence. Future-session checks should use ordinary task requests without naming YAIML; verify both initial reading and maintenance before task completion, including read-only and unchanged-memory cases.
+
 Review init alone against a small repository, mature existing docs, repeated setup, missing access, concurrent edits, and unfamiliar discovery. Check its stopping rule and command scope as well as its length. Track prompt size separately from observed total session cost; word counts do not prove token savings or successful adoption.
 
 For adoption exercises, use isolated snapshots and record their source/reference revisions before editing. Preserve original-file hashes and compare repeat-run changes. Keep generated trial memory out of this reference repository; publish a scoped case summary. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; a same-session exercise does not satisfy that step.

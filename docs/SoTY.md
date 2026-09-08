@@ -21,7 +21,7 @@ Declared: the ambition is broad adoption as a standard. Current status remains a
 
 Declared: keep adoption prompt-first, no-install, and convention-first. Preserve the three core roles, ordinary Markdown, explicit uncertainty, and routine pruning. Do not add tooling or revive formal specification machinery without a human phase change.
 
-Declared: the standalone init prompt is the primary integration point. A user should paste it into a repository-capable agent and obtain useful memory without additional downloads, libraries, installs, or coordinator dependencies. Preserve human readability while controlling inspection and output cost.
+Declared: the standalone init prompt is the primary integration point. A user should paste it into a repository-capable agent and obtain useful memory without additional downloads, libraries, installs, or coordinator dependencies. Routine reading and writing must then follow ordinary task requests without further YAIML reminders. Init must connect the active agent's persistent instructions and disclose setup gaps. Preserve human readability while controlling inspection and output cost.
 
 Declared: keep this a personally maintained, public MIT-licensed project. Preserve the [maintainer’s independence declaration](PROJECT_INDEPENDENCE.md) and exclude employer-confidential material, secrets, and private transcripts. Record reviewed professional constraints without inventing legal or security conclusions.
 

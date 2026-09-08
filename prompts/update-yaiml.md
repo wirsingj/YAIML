@@ -53,7 +53,7 @@ Apply only updates that are useful and compatible with this repository:
 
 - update local YAIML prompts if this repository keeps copies;
 - update local YAIML templates if this repository keeps copies;
-- update agent-instruction pointers when the current YAIML guidance has changed;
+- update agent-instruction pointers when guidance changes or the active agent lacks a supported persistent route; check activation and discovery paths, and disclose setup gaps;
 - update `yaiml.yml` only as a small discovery file, not as a schema, database, or place for machine-specific reference paths;
 - migrate discovery layout only when the human explicitly requests discovery migration, the consumer understands both layouts, and all local paths and roles can be preserved; a general refresh request does not authorize migration;
 - repair stale paths within the existing layout; ordinary Markdown edits and path repairs do not require a discovery-format version change;

@@ -117,7 +117,7 @@ An adoption agent should:
 8. Avoid claiming aspirational work is already implemented.
 9. Consolidate or reference existing documentation rather than duplicating it unnecessarily.
 10. Add or update `yaiml.yml` as a discovery file.
-11. Update relevant existing agent instruction files, or create a small provider-neutral `AGENTS.md` when none exist, so future AI chats, agents, and provider modes discover the same YAIML memory.
+11. Connect the active agent's supported persistent instruction mechanism, creating the minimal required file if absent. Preserve existing instruction scope and rules; verify activation and discovery paths. Report unsupported or unverified loading honestly. See [Agent Integration](AGENT_INTEGRATION.md).
 12. Report which documents were created or modified, what evidence was inspected, what remains uncertain, and what checks were run.
 
 Default core documents are SoT, Architecture, and Maintainer Guide. Supporting documents should be added only when the repository already has several concrete recurring pieces of project knowledge that deserve their own home.

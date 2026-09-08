@@ -86,7 +86,9 @@ Do not put machine-specific reference paths, local drive names, user profile pat
 
 ## Connect Future Sessions
 
-Add or update one concise pointer per relevant instruction surface, preserving scope and rules. If none exists, create a small provider-neutral `AGENTS.md`. Do not create provider-specific files solely for YAIML unless requested.
+Connect YAIML to the current agent's persistent repository instructions. Identify the supported mechanism from available configuration or current official documentation; do not assume a filename is automatically loaded. Add or update one concise pointer per relevant existing surface, preserving scope and rules. Create the minimal supported instruction file needed for the active agent, using `AGENTS.md` when supported. Do not create files for unused tools.
+
+Check activation scope, syntax, and the discovery path, including from subdirectories. Distinguish configured instructions from observed fresh-session loading. If persistence is unavailable or needs a user-controlled setting, report that setup gap now; do not present recurring reminders as completed integration.
 
 Use this text or equivalent:
 
@@ -98,8 +100,10 @@ Read each selected document’s stable header before its body.
 Load supporting documents only when relevant to the task.
 Verify consequential claims against the repository.
 
-After material changes, update affected memory, preserve human direction
-and unresolved conflicts, and prune stale state instead of appending a diary.
+Before finishing material work, update affected memory without a separate
+YAIML request. Preserve human direction and unresolved conflicts; prune stale
+state instead of appending a diary. Respect read-only scope and review rules;
+report pending updates when writing is unavailable. Leave unchanged memory alone.
 
 “Update YAIML”, “updated YAIML”, or “check new YAIML” means compare the local
 convention guidance against a human-provided or workspace-local reference,
@@ -130,4 +134,4 @@ Re-read files that changed during inspection before editing them; preserve concu
 
 Check discovery paths, role boundaries, headers, and instruction pointers. Remove duplicated facts, template residue, and invented claims; confirm human directives survived. Leave the result as a reviewable diff; commit or push only when authorized.
 
-Report the changed files, instruction files connected, evidence inspected, checks actually run, and remaining uncertainty. Keep the report proportional to the work.
+Report changed files, the persistent instruction mechanism connected, evidence inspected, checks actually run, and any setup gaps. Routine reading and maintenance should need no further YAIML reminders. Keep the report proportional to the work.

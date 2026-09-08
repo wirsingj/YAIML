@@ -24,9 +24,15 @@ Review the result: three concise core documents, a discovery map, and one agent-
 
 Start a fresh session in that same scratch folder with only this request:
 
-> Read this project's YAIML memory. What is v1 meant to do, what actually exists, what is deferred, and what still needs a human decision? Cite the local documents. Do not implement anything.
+> What is v1 meant to do, what actually exists, what is deferred, and what still needs a human decision? Cite the local documents. Do not implement anything.
 
-Check that the answer recovers local-only intent, deferred sync, and the lack of application code without receiving the original conversation. Then request:
+Check that the answer recovers local-only intent, deferred sync, and the lack of application code without receiving the original conversation or a YAIML reminder. Then say:
+
+> Change the intended v1 scope: defer search too. Keep create, edit, and delete. Do not build application code.
+
+The agent should update affected memory before finishing without being told to do so. A later fresh session asked “What is deferred from v1?” should recover both search and sync. If reading or writing is missed, record the failure and check the instruction route; do not count manual prompting as successful automatic integration.
+
+For an optional explicit maintenance demonstration, request:
 
 > Compress YAIML if useful. Preserve the local-only decision, deferred sync, and unverified implementation status. Leave already-concise memory unchanged.
 

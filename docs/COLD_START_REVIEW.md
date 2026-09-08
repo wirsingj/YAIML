@@ -14,17 +14,17 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-09-06. Baseline: `c3ba11d`.
+Date: 2026-09-07. Baseline: `f7d8ef8`.
 
 ## Scope And Findings
 
 Audit of YAIML's adoption path, refresh/compression guidance, evidence, human readability, privacy/reporting, license preservation, and current priorities. The same assisting agent reviewed and edited the repository. This is not an independent evaluation, legal opinion, or security certification.
 
-The main actionable finding was a mismatch between bounded context loading and the refresh prompt's near-complete reference inventory. Refresh now starts with init/adoption guidance and local maintenance instructions, expanding only for material differences or local copies. The standalone init prompt remains unchanged at 1,255 whitespace-delimited words; it needs no reference download or installation.
+The main actionable finding was that creating `AGENTS.md` alone did not establish a persistent route for the active agent. Init now identifies and connects its supported instruction mechanism, including a missing file when necessary, checks activation and discovery scope, and reports setup gaps. Routine reading and maintenance before task completion require no separate YAIML request. Read-only tasks and unchanged memory remain respected.
 
-The long evaluation form was replaced with a compact report format and concrete comparison tasks. The minimal fictional example now includes a short demonstration of setup, session recovery, and no-op compression. These preserve examples and practical instructions rather than shortening away necessary context.
+The standalone init prompt is now 1,361 whitespace-delimited words, up from 1,255. It still needs no reference download or installation. The demo now asks ordinary questions and supplies a changed product decision without naming YAIML, so a future run can check both automatic reading and writing. No new fresh-session run occurred in this review; configured instructions are not proof of observed loading.
 
-## Original Top Five Priorities
+## Prior Priority Outcomes (2026-09-06)
 
 | Priority | Outcome and limit |
 | --- | --- |
@@ -38,13 +38,13 @@ The [trial summary](case-studies/ADOPTION_TRIAL.md) records conditions, inspecte
 
 ## Verification
 
-Local checks passed for 49 Markdown files, 76 local links/anchors, three discovery maps, 24 declared document paths with stable headers, and four fenced YAML examples. Checks included case-sensitive paths, fences, UTF-8 decoding, merge markers, and targeted credential/machine-path patterns. `git diff --check` passed. This is structural review and a current-tree pattern scan, not an exhaustive secret or history audit.
+Local checks passed for 49 Markdown files, 77 local links/anchors, three discovery maps, 24 declared document paths with stable headers, and four fenced YAML examples. Checks included case-sensitive paths, fences, UTF-8 decoding, merge markers, and targeted credential/machine-path patterns. `git diff --check` passed. This is structural review and a current-tree pattern scan, not an exhaustive secret or history audit.
 
-The inspection helpers used existing local tools only; no validation framework or runtime was added to YAIML. Final diff review confirmed that the init prompt and license were unchanged.
+The inspection helpers used existing local tools only; no validation framework or runtime was added to YAIML. The license and discovery layouts remain unchanged. Manual instruction review covered existing and missing instruction files, unsupported persistence, scoped paths, read-only tasks, and unchanged memory; these are coverage checks, not executed cross-provider trials.
 
 The existing MIT License remains unchanged. Original source and license files in the public trial checkout were preserved byte-for-byte. This verifies preservation, not ownership or legal compliance. Prior case-study runtime checks and store observations were not rerun.
 
-GitHub reporting state was checked through the [repository reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting). [GitHub's API documentation](https://docs.github.com/en/rest/repos/repos#enable-private-vulnerability-reporting-for-a-repository) describes this setting; the reporting route is linked in [Security](../SECURITY.md).
+GitHub reporting state was checked on 2026-09-06 through the [repository reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting). [GitHub's API documentation](https://docs.github.com/en/rest/repos/repos#enable-private-vulnerability-reporting-for-a-repository) describes this setting; the reporting route is linked in [Security](../SECURITY.md).
 
 ## Remaining Work
 
