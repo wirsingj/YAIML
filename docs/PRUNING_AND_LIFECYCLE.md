@@ -70,6 +70,24 @@ Count whitespace-delimited words across the whole document, including headers, u
 
 When over budget, compress safely first. Preserve human direction, useful facts, evidence limits, uncertainty, unresolved conflicts, and governed retention even if an overage remains. Record its size, reason, and a scoped next action; do not inflate the target just to hide it or block an urgent factual correction. Report before/after counts for compression and overruns, without loading unrelated memory for counting. Inherited overgrowth is a finding, not permission for a bulk rewrite during initialization.
 
+## Instructions That Generate Bloat
+
+A memory document must not tell readers to append to it.
+
+This is the failure mode that beats every pruning rule, and it is invisible while it happens. A document acquires a section like "How To Use This Doc" whose steps say to add new items to an inbox, a checklist, or a running list. That instruction is specific, local, and immediately actionable. The instruction to prune is general, lives in another file, and asks the reader to delete something that still looks useful. The specific instruction wins, and it wins every session.
+
+Measured in one repository: 267 revisions of a document whose header declared `durability: volatile; synthesize and prune aggressively`, containing a step directing new observations into a "New Notes Inbox." Across those revisions 260 increased its size and 7 reduced it; the largest single reduction was 131 bytes. The document reached roughly 22,000 words against a role that wanted 3,000. No session disobeyed anything — the document was followed exactly as written.
+
+Compression cannot fix this. Removing 19,000 words from a document that still instructs readers to append rebuilds the same document. Change the instruction first, then compress.
+
+When reviewing memory, read its procedural sections as part of the audit:
+
+- A step that routes new information *into* this document belongs in the Maintainer Guide as a procedure, or nowhere.
+- An "inbox", "notes", "log", "checklist", or "queue" section inside SoT is a task tracker. Issues, task lists, and Git already hold that; SoT holds what is currently true.
+- If a section's name describes a container rather than a claim, ask what synthesizing it would produce, and keep that instead.
+
+Both update cadences fail, in opposite directions. Frequent updates without pruning produce diary bloat. Rare updates in large audit passes let role boundaries drift unnoticed, because nothing reads the document often enough to feel it. A second repository in the same portfolio showed the low-touch form: 18 of 226 commits touched memory, and roughly 3,400 words of durable architecture accumulated inside the state document under a header reading `not-here: durable architecture`. Neither cadence is safe on its own; what protects a document is a declared budget and a reader willing to act on it.
+
 ## Architecture Lifecycle
 
 Architecture should remain a coherent model.

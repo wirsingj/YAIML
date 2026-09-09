@@ -41,20 +41,20 @@ The [fictional demo](../examples/minimal-notes/README.md#short-paste-and-go-demo
 ## Active Risks And Gaps
 
 - **Pointer integration holds (verified 2026-09-08, 13 deployments):** all thirteen carry a tracked `AGENTS.md` containing a YAIML pointer. An audit pass claimed seven were missing one; direct inspection disproved it. Configured instructions still are not observed loading, so this establishes wiring, not behavior. Init now treats the pointer as pass or fail regardless.
-- **Pruning loses to preservation (verified 2026-09-08, lorekeeper):** across 267 revisions of a declared-volatile SoT, 260 grew it and 7 shrank it, the largest reduction 131 bytes, reaching ~22,000 words under a header reading "prune aggressively." Budget guidance is untested against this.
-- **Discovery has forked (verified 2026-09-08):** twelve deployments use the legacy `documents.*.path` layout, one the recommended shape. Non-migration is deliberate, but no deployment demonstrates the layout the README teaches.
-- **Memory leaks environment detail (verified 2026-09-08, ShepAIrd):** a maintainer profile path reached a public repository through memory. Written after reading a whole project, memory carries higher disclosure risk than ordinary docs. Init now requires a scan; history is unaffected.
-- **Effectiveness and cost:** no controlled fresh-session comparison, independent adoption evidence, or measured total token savings. Growth, stale memory, and missed automatic updates need adopter trials.
-- **Evidence and authority:** agents may promote old results, inference, fictional examples, or unauthenticated approval claims into current fact, or flatten contributor disagreements.
-- **Portability:** a preserved legacy map does not establish compatibility with every reader, layout, instruction mechanism, or concurrent workflow.
-- **Phase drift:** extra tooling, formal requirements, or empty templates could displace the plain-file convention.
+- **Memory degrades at both update cadences (verified 2026-09-08):** lorekeeper grew a volatile SoT to ~22,000 words across 260 of 267 revisions, because a step inside the document routes new observations into an inbox while agent instructions forbid a diary; the specific local instruction wins. ytmmocaptions, updated in 18 of 226 commits, instead drifted ~3,400 words of durable architecture into its state document. Frequency protects nothing; declared budgets and this contradiction are the levers. Detail and remedy in [Pruning And Lifecycle](PRUNING_AND_LIFECYCLE.md#instructions-that-generate-bloat). Neither fix is applied.
+- **Discovery has forked (verified 2026-09-08):** twelve deployments use the legacy `documents.*.path` layout, one the recommended shape. Non-migration is deliberate, but no deployment demonstrates the layout the README teaches. A portfolio tool's migrator also rewrites the version marker unquoted, so the parse hazard regenerates.
+- **Memory leaks environment detail (verified 2026-09-08, ShepAIrd):** a maintainer profile path reached a public repository through memory, six occurrences, now replaced in the working tree; committed history still carries them, and 22 functional path values remain in a registry file pending a maintainer decision. Written after reading a whole project, memory carries higher disclosure risk than ordinary docs.
+- **Effectiveness unmeasured:** no controlled comparison, independent adoption, or measured token savings. Portfolio evidence now describes cost and failure modes, not benefit.
+- **Evidence and authority:** agents may promote old results, inference, or fictional examples into current fact, or flatten disagreements. An audit pass in this session did exactly that, and inspection caught it.
+- **Portability:** one preserved legacy map does not establish compatibility with every reader, layout, or concurrent workflow.
+- **Phase drift:** tooling, formal requirements, or empty templates could displace the plain-file convention.
 
 ## Immediate Priorities
 
-1. Remove the maintainer profile path from ShepAIrd's Maintainer Guide, which violates the rule stated later in the same file. Committed history keeps it; decide whether that matters before the repository gains attention.
-2. Publish the portfolio drift measurement: per repository, SoT size at every revision, growth and shrink counts, and the SoT-to-Architecture ratio. The data is already in Git, costs nothing, and reports negatively on the convention's central mechanism. Publish it before any further adoption claim.
+1. Remove lorekeeper's inbox-routing step, then compress that SoT and re-measure. Doing either alone proves nothing; doing both tests whether the convention can recover a document it lost. This is the strongest available experiment and the data is already collected.
+2. Publish the portfolio drift measurement as a case study, including the negative results and the two failure cadences. Decide the ShepAIrd registry and history questions.
 3. Run the prepared fresh-session comparison; record total context cost and failures without sharing answers between conditions.
-4. Obtain a permitted owner-led trial and feedback from outside the maintainer's projects; a public checkout alone is not independent adoption.
+4. Obtain a permitted owner-led trial from outside the maintainer's projects; a public checkout alone is not independent adoption.
 5. Repeat adoption and refresh in another agent environment, including an unfamiliar layout and concurrent edits; preserve failed and neutral outcomes.
 6. Run the prepared demo with a new reader and record what they misunderstood or could not recover.
 7. Refine only the guidance those trials show needs changing; keep [current review evidence](COLD_START_REVIEW.md) scoped and core memory concise.

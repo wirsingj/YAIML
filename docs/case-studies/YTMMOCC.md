@@ -103,6 +103,14 @@ This case does not prove:
 - independent maintainer value;
 - compatibility across all agents or tools.
 
+## Counter-Evidence In The Same Document
+
+Measured 2026-09-08 during a portfolio refresh: the state document cited above is 6,972 words against an architecture document of 1,463 — 4.8x by words, 8x by lines. Roughly 3,406 of those words are durable architecture (a module dependency map, a 25-row state ownership table, race-protection invariants) sitting in a document whose own header reads `not-here: durable architecture`. Its first hundred-odd lines are a dated audit log of the kind [Pruning And Lifecycle](../PRUNING_AND_LIFECYCLE.md) classes as old progress logs.
+
+So the same document is this repository's best example of preserved constraints and its clearest example of role-boundary failure. Both readings are correct and neither cancels the other. What the document demonstrates is that a constraint can survive in memory that is also badly organized — useful, because it separates the claim that YAIML preserves knowledge from the claim that YAIML keeps memory well-shaped. Only the first is supported here.
+
+Update cadence appears to be the mechanism: 18 of 226 commits touched memory. Boundaries drift when nothing reads a document often enough to notice, which is the opposite failure from a frequently-updated document that grows without pruning. Cite this case study for preservation, not for organization, until a rebalancing pass is done and re-measured.
+
 ## Follow-Up Evaluation Path
 
 A stronger trial would compare fresh sessions on bounded YTMMOCC tasks with and without YAIML context, using documented baselines and the evaluation dimensions in [evaluation guidance](../EVALUATION.md). Useful tasks would include:
