@@ -40,6 +40,10 @@ The [fictional demo](../examples/minimal-notes/README.md#short-paste-and-go-demo
 
 ## Active Risks And Gaps
 
+- **Silent adoption failure (verified 2026-09-08, 13 deployments):** seven carry memory and no agent instruction file, so nothing loads it. Documents look correct and no step reports the gap. Init now treats the pointer as pass or fail; the seven remain unfixed.
+- **Pruning loses to preservation (verified 2026-09-08, lorekeeper):** across 267 revisions of a declared-volatile SoT, 260 grew it and 7 shrank it, the largest reduction 131 bytes, reaching ~22,000 words under a header reading "prune aggressively." Budget guidance is untested against this.
+- **Discovery has forked (verified 2026-09-08):** twelve deployments use the legacy `documents.*.path` layout, one the recommended shape. Non-migration is deliberate, but no deployment demonstrates the layout the README teaches.
+- **Memory leaks environment detail (verified 2026-09-08, ShepAIrd):** a maintainer profile path reached a public repository through memory. Written after reading a whole project, memory carries higher disclosure risk than ordinary docs. Init now requires a scan; history is unaffected.
 - **Effectiveness and cost:** no controlled fresh-session comparison, independent adoption evidence, or measured total token savings. Growth, stale memory, and missed automatic updates need adopter trials.
 - **Evidence and authority:** agents may promote old results, inference, fictional examples, or unauthenticated approval claims into current fact, or flatten contributor disagreements.
 - **Portability:** a preserved legacy map does not establish compatibility with every reader, layout, instruction mechanism, or concurrent workflow.
@@ -47,11 +51,13 @@ The [fictional demo](../examples/minimal-notes/README.md#short-paste-and-go-demo
 
 ## Immediate Priorities
 
-1. Run the prepared fresh-session comparison; record total context cost and failures without sharing answers between conditions.
-2. Obtain a permitted owner-led trial and feedback from outside the maintainer's projects; a public checkout alone is not independent adoption.
-3. Repeat adoption and refresh in another agent environment, including an unfamiliar layout and concurrent edits; preserve failed and neutral outcomes.
-4. Run the prepared demo with a new reader and record what they misunderstood or could not recover.
-5. Refine only the guidance those trials show needs changing; keep [current review evidence](COLD_START_REVIEW.md) scoped and core memory concise.
+1. Repair the seven deployments with no instruction pointer, and remove the leaked profile path from ShepAIrd's memory. Until the pointer exists, those repositories measure nothing.
+2. Publish the portfolio drift measurement: per repository, SoT size at every revision, growth and shrink counts, and the SoT-to-Architecture ratio. The data is already in Git, costs nothing, and reports negatively on the convention's central mechanism. Publish it before any further adoption claim.
+3. Run the prepared fresh-session comparison; record total context cost and failures without sharing answers between conditions.
+4. Obtain a permitted owner-led trial and feedback from outside the maintainer's projects; a public checkout alone is not independent adoption.
+5. Repeat adoption and refresh in another agent environment, including an unfamiliar layout and concurrent edits; preserve failed and neutral outcomes.
+6. Run the prepared demo with a new reader and record what they misunderstood or could not recover.
+7. Refine only the guidance those trials show needs changing; keep [current review evidence](COLD_START_REVIEW.md) scoped and core memory concise.
 
 ## Open Questions
 

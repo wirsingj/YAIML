@@ -69,6 +69,14 @@ Read the target's actual map before editing. Both examples describe roles and pa
 
 A general init or refresh request does not authorize discovery migration. Migrate only on explicit human request, with actual consumer compatibility checked and every local path and role preserved. Ordinary Markdown edits and path repairs do not require a version bump.
 
+### One Shape For New Adoption
+
+Tolerating older layouts is a compatibility rule, not an invitation to add shapes. New adoption uses the recommended shape above. Report an unfamiliar layout rather than inventing a variant of it, and prefer `supporting` over a locally coined key when adding supporting entries to an existing map.
+
+Quote the version value. Written bare, `yaiml: 0.2` parses as a number, so `0.20` and `0.2` become the same value and a future `0.10` sorts below `0.9`. Quoted, it stays the label it was meant to be. This is the one discovery detail worth repairing in place when encountered, because it changes meaning rather than style.
+
+Compatibility has a cost that falls on readers. Every additional recognized shape is one more thing a cold agent must recognize before it can find anything, and a convention that accepts every layout has stopped locating documents reliably. Keep the recognized set small and the recommended shape single.
+
 Readable YAML is not proof that a particular tool accepts it: indentation, comments, and other valid spellings may expose reader limitations. Check the exact map with its consumers before a requested migration. Do not turn a limited reader into restrictions on Markdown memory.
 
 Future incompatible guidance must explain what changed, what can stay unchanged, and migration implications before recommending adoption.

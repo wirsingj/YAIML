@@ -6,6 +6,7 @@ yaiml:
     maintainer_guide: docs/MAINTAINER_GUIDE.md
   supporting:
     concepts: docs/CONCEPTS.md
+    prior_art: docs/PRIOR_ART.md
     core_document_family: docs/CORE_DOCUMENT_FAMILY.md
     stable_headers: docs/STABLE_HEADERS.md
     ambiguity_and_evidence: docs/AMBIGUITY_AND_EVIDENCE.md

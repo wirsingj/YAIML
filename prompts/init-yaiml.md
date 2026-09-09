@@ -93,6 +93,8 @@ Connect YAIML to the current agent's persistent repository instructions. Identif
 
 Check activation scope, syntax, and the discovery path, including from subdirectories. Distinguish configured instructions from observed fresh-session loading. If persistence is unavailable or needs a user-controlled setting, report that setup gap now; do not present recurring reminders as completed integration.
 
+This step decides whether YAIML works at all. Memory that no session loads is inert, and the failure is silent: the files look correct and nothing reports a problem. Treat it as pass or fail, not as a closing detail. Before reporting success, confirm and state: the exact file the pointer was written into, that the file is tracked rather than ignored, and the basis for believing the active agent loads it. If any of the three is missing, report the adoption as incomplete and name the unfinished step. Do not describe setup as connected because the memory documents exist.
+
 Use this text or equivalent:
 
 ```md
@@ -114,6 +116,11 @@ decisions, evidence, uncertainty, and governed retention; necessary growth is
 allowed. Check local budgets without deleting needed knowledge or inflating
 targets to fit. For compression or overruns, report before/after counts and
 retained overages. Do not load unrelated documents merely to count them.
+
+Memory is versioned with this repository and may be public or become public.
+Never write drive letters, home or profile directories, local workspace paths,
+personal account URLs, credentials, tokens, or private personal detail into it.
+Describe sensitive evidence by location and owner instead of copying it.
 
 “Update YAIML”, “updated YAIML”, or “check new YAIML” means compare the local
 convention guidance against a human-provided or workspace-local reference,
@@ -143,5 +150,7 @@ Do not add YAIML runtime infrastructure, dependencies, CLIs, SDKs, provider adap
 Re-read files that changed during inspection before editing them; preserve concurrent work and unresolved conflicts. Rerunning init should fill material gaps, not append duplicate pointers or rewrite healthy memory.
 
 Check discovery paths, role boundaries, headers, instruction pointers, and budgets for created or edited memory. Count whitespace-delimited words across the whole document, including headers, unless its budget specifies otherwise. Remove duplicated facts, template residue, and invented claims; confirm human directives survived. Leave the result as a reviewable diff; commit or push only when authorized.
+
+Scan every file you wrote or edited for content that should not be committed: drive letters, `Users/`, `/home/`, `/Users/`, the current account name, personal cloud or sync directories, `file://` URIs, localhost or private workspace URLs, credentials, tokens, and third-party account handles. Memory is written after reading the whole project, which makes accidental disclosure more likely here than in ordinary documentation. Report what you scanned for and what you found. Resolve the repository's actual visibility rather than assuming it is private.
 
 Report changed files, the persistent instruction mechanism connected, evidence inspected, checks actually run, created or edited memory sizes against declared budgets, and any setup gaps or unresolved overages. Routine reading and maintenance should need no further YAIML reminders. Keep the report proportional to the work.

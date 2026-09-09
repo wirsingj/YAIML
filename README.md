@@ -75,6 +75,7 @@ YAIML needs maintenance and consumes reading context. Stale or overgrown memory 
 ## Reference And Participation
 
 - [Concepts](docs/CONCEPTS.md): purpose, vocabulary, and design tradeoffs.
+- [Prior Art](docs/PRIOR_ART.md): comparable conventions, and when to use one of them instead.
 - [Core Document Family](docs/CORE_DOCUMENT_FAMILY.md): where facts belong.
 - [Stable Headers](docs/STABLE_HEADERS.md), [Context Loading](docs/CONTEXT_LOADING.md), and [Agent Integration](docs/AGENT_INTEGRATION.md): how sessions find and read memory.
 - [Ambiguity And Evidence](docs/AMBIGUITY_AND_EVIDENCE.md) and [Pruning And Lifecycle](docs/PRUNING_AND_LIFECYCLE.md): how memory stays trustworthy.

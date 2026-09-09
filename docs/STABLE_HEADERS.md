@@ -30,6 +30,7 @@ A stable header should answer:
 - how durable or volatile the contents are;
 - related YAIML documents to consult;
 - when and why the document should be updated;
+- when its consequential claims were last checked against the project;
 - reader instructions for evidence, uncertainty, conflicts, pruning, and human direction.
 
 These are semantic responsibilities. Projects may phrase them differently.
@@ -51,11 +52,14 @@ not-here: durable architecture, command reference, full history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
 update-when: direction, verified reality, risks, priorities, or useful engineering lessons change.
+last-verified: 2026-09-05 at a1b2c3d; capability and risk sections checked against source.
 agent-guidance: Verify implementation claims. Preserve human intent. Mark uncertainty. Surface conflicts. Prune stale detail.
 ---
 ```
 
 This is a recommended header shape, not a serialization protocol.
+
+`last-verified` records when the document's consequential claims were last checked against the project, and what that check covered. A document's file timestamp shows when its text changed, not when its claims were revalidated; the two diverge quietly, and a confident document nobody has rechecked is the most expensive failure this convention has. State the date, the revision when it matters, and the scope actually checked — a partial check honestly scoped is more useful than an unqualified one. Leave the field stale rather than refreshing it without doing the work; an old date is information, and an untrue one is worse than none. Update it when you verify, not when you edit.
 
 `role` is the example spelling; existing `kind` fields are equivalent for reader orientation. The optional `yaiml: 0.2` hint identifies the header's convention family. It is not the discovery-format version, a document revision, or a requirement to migrate equivalent headers. Omit it when it adds no useful context.
 
