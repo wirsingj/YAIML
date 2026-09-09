@@ -14,42 +14,46 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-09-08. Baseline: `bd8af12`, plus an inherited uncommitted init-prompt edit.
+Date: 2026-09-08. Baseline: `c9b4c8b`.
 
 ## Scope And Findings
 
-Audit of YAIML's adoption path, refresh/compression guidance, evidence, human readability, privacy/reporting, license preservation, and current priorities. The same assisting agent reviewed and edited the repository. This is not an independent evaluation, legal opinion, or security certification.
+Broad manual review of the reader path, seven prompts, reference guidance, templates, fictional examples, case evidence, licensing consistency, security boundaries, compatibility, and memory cost. The assisting agent reviewed and edited the material in the same session; this is not an independent evaluation or a legal/security certification.
 
-The inherited edit added document budgets and stronger pruning to init, but required deletion whenever memory grew and required every inherited document to fit a new target. Those rules conflicted with preserving useful knowledge, governed retention, and existing headers. The review retained size targets and routine pruning while allowing necessary growth, recording overages, and avoiding bulk migrations.
-
-Budget guidance now agrees across init, stable headers, lifecycle, agent integration, and update/compression prompts. New documents receive role-appropriate targets; existing local choices remain compatible. Whole-document whitespace-delimited counts include headers unless locally specified. Pruning occurs before additions where safe; necessary evidence and retention take precedence. Reports include before/after counts for compression or overruns, not a census of unrelated memory.
-
-The init prompt is 1,545 words, compared with 1,361 at the committed baseline. It remains self-contained and connects persistent agent instructions. YAIML's core documents now dogfood working targets: SoTY 872/1,000 words, Architecture 669/800, and Maintainer Guide 926/1,000. These are size measurements, not token-cost or behavioral results.
-
-## Prior Priority Outcomes (2026-09-06)
-
-| Priority | Outcome and limit |
+| Area | Finding and correction |
 | --- | --- |
-| Trial init, refresh, and compression | Executed isolated document exercises on a public source checkout and a maintainer-owned legacy memory snapshot; recorded sizes and unchanged files. These were same-session exercises, not ongoing adopter field trials. |
-| Comparable fresh-session tasks | Prepared fixed tasks and reviewer criteria. Separate fresh sessions and independent owner participation have not occurred; this priority remains open. |
-| Exercise older discovery | Refreshed and compressed the local guide in the legacy snapshot while preserving the entire map, core memory, and agent instructions. No reader migration or universal compatibility claim. |
-| Short demo and private reporting | Added the fictional demo. Enabled GitHub private reporting; the update returned HTTP 204 and a subsequent uncached read returned `enabled: true`. No vulnerability report was submitted. |
-| Scoped evidence and pruning | Added a bounded trial summary, replaced this review, and updated SoTY's current state and remaining priorities. |
+| Adoption and normal use | The adoption guide still demonstrated explicit YAIML reminders and a reference-dependent setup request. It now uses the standalone init and ordinary task wording. |
+| File safety | Default filenames and path checks left output handling implicit. Init now explicitly preserves unrelated files occupying default names and resolves memory/instruction paths before reads or writes. |
+| Reading cost | Adoption and refresh repeated preservation rules across long checklists. They were consolidated, and context guidance now explicitly permits reusing already-loaded current memory. |
+| Authority and budgets | A label could be mistaken for authenticated approval, or a budget for a length to fill. Guidance now rejects both interpretations while preserving necessary growth and retention. |
+| Phase and evaluation | A milestone implied a separate helper was needed. It now asks for a repeatable maintenance workflow. A comparison request now explicitly permits read-only inspection without running application/build/release commands. |
 
-The [trial summary](case-studies/ADOPTION_TRIAL.md) records conditions, inspected revisions, measured sizes, and limits. The public initialization produced five files totaling 717 words; a same-session repeat and same-reference refresh required no edits. Legacy guide refresh/compression changed 943 words to 1,033, then 596, without changing the map or core documents.
+Core roles, human direction, meaningful local choices, migration safeguards, examples, and evidence limits remain. The init prompt still carries the full setup convention without requiring a reference download or installation.
+
+## Size And Pruning
+
+Whitespace-delimited counts include the entire document and header:
+
+| Document | Before | After |
+| --- | ---: | ---: |
+| prompts/init-yaiml.md | 1545 | 1525 |
+| prompts/update-yaiml.md | 1104 | 658 |
+| docs/ADOPTION_AND_UPGRADES.md | 1718 | 1120 |
+| docs/SoTY.md | 872 | 761 |
+| docs/MAINTAINER_GUIDE.md | 926 | 865 |
+
+SoTY and Maintainer Guide remain within their 1,000-word working targets; unchanged Architecture remains 669/800. Completed audit history was removed from this review in favor of the current findings and links to retained case evidence. No archive or runtime tooling was added. These are size measurements, not measured total token savings.
 
 ## Verification
 
-Local checks passed for 49 Markdown files, 79 local links/anchors, three discovery maps, 24 declared document paths with stable headers, and four fenced YAML examples. Checks included case-sensitive paths, fences, UTF-8 decoding, merge markers, and targeted credential/machine-path patterns. `git diff --check` passed. This is structural review and a current-tree pattern scan, not an exhaustive secret or history audit.
+Temporary local inspection scripts checked 49 Markdown files, 82 local links, three discovery maps, 24 declared document paths and headers, and four fenced YAML examples. Checks passed for balanced fences, tracked link targets and anchors, path scope, YAML parsing, merge markers, and targeted credential/machine-path patterns. The pattern scan covers the current tree, not an exhaustive secret or history audit. The whitespace diff check also passed. These are repository checks, not a YAIML conformance system.
 
-The inspection helpers used existing local tools only; no validation framework or runtime was added to YAIML. The license and discovery layouts remain unchanged. Manual instruction review covered new and inherited memory, legitimate growth, budget overruns, governed retention, read-only tasks, and unchanged memory. These are coverage checks, not executed cross-provider trials.
+The retained [adoption-trial](case-studies/ADOPTION_TRIAL.md) artifacts still match recorded hashes for the original public snapshot, five generated files, and five unchanged legacy files; generated-file word counts also match. All 18 pinned [YTMMOCC case-study](case-studies/YTMMOCC.md) file references resolve in the local Git objects. These checks do not rerun prompt adoption, extension behavior, or store observations.
 
-The existing MIT License remains unchanged. Original source and license files in the public trial checkout were preserved byte-for-byte. This verifies preservation, not ownership or legal compliance. Prior case-study runtime checks and store observations were not rerun.
+The existing MIT text was compared with the [OSI reference](https://opensource.org/license/mit); license and maintainer declarations are unchanged. No ownership or legal-compliance conclusion follows. GitHub's [reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting) returned HTTP 200 with `enabled: true` on 2026-09-08; no setting was changed or report submitted.
 
-GitHub reporting state was checked on 2026-09-06 through the [repository reporting endpoint](https://api.github.com/repos/wirsingj/YAIML/private-vulnerability-reporting). [GitHub's API documentation](https://docs.github.com/en/rest/repos/repos#enable-private-vulnerability-reporting-for-a-repository) describes this setting; the reporting route is linked in [Security](../SECURITY.md).
+## Remaining Limits
 
-## Remaining Work
+No fresh-session comparison, cross-provider execution, independent owner-led trial, or total-session cost measurement was performed. Filename-collision, unsupported-persistence, read-only, concurrency, budget, and uncertain-authority scenarios were reviewed as instruction paths, not executed agent tests. The [prepared comparison](EVALUATION.md#ready-to-run-comparison) and ordinary-request demo remain next evidence steps.
 
-The [prepared comparison](EVALUATION.md#ready-to-run-comparison) still requires separate fresh sessions and permitted independent participation. Same-agent success cannot establish general reliability, total token savings, or cross-provider performance. The demo's fresh-session portion is instructions, not an executed result.
-
-Discovery compatibility remains scoped to the exercised files. Concurrent edits, unfamiliar future layouts, and repeated use in other agent environments need additional trials. Current priorities belong in [SoTY](SoTY.md).
+Current priorities belong in [SoTY](SoTY.md). Future reviews should respond to concrete failures and evidence rather than accumulate more rules by default.

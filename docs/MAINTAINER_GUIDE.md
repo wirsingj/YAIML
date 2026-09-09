@@ -26,15 +26,11 @@ Use several focused passes for substantial revisions:
 4. **Mechanical review:** check changed Markdown links and anchors, discovery paths, stable headers, code fences, placeholders, whitespace, and unintended sensitive or machine-specific values.
 5. **Final diff:** confirm scope, licensing, and phase boundaries. Commit coherent changes and push when authorized. Report actual checks and remaining limits.
 
-The init prompt is intentionally self-contained. When shortening it, keep the behavior an adopter needs without relying on links to this repository.
+Review init by itself for small projects, mature docs, filename collisions, missing access or instruction files, repeat use, concurrent edits, and unfamiliar discovery. Keep the prompt self-contained and inspection bounded. Distinguish configured persistent instructions from observed loading; fresh-session checks should use ordinary requests without naming YAIML and verify both reading and writing, including read-only tasks.
 
-For budget changes, check new, inherited, over-budget, legitimately growing, and governed memory. Count the whole document's whitespace-delimited words unless its budget specifies otherwise. Preserve necessary knowledge, report unresolved overages, and avoid mandatory deletion or bulk header migrations.
+For budgets, check new, inherited, oversized, legitimately growing, and governed memory. Count whole-document whitespace-delimited words unless locally specified. Targets must not force padding, deletion of necessary knowledge, or bulk header migrations. Report compression counts and unresolved overages; word counts do not prove token savings.
 
-Check that init connects the active agent even when its instruction file is absent, verifies scope and discovery paths, and reports unsupported persistence. Future-session checks should use ordinary task requests without naming YAIML; verify both initial reading and maintenance before task completion, including read-only and unchanged-memory cases.
-
-Review init alone against a small repository, mature existing docs, repeated setup, missing access, concurrent edits, and unfamiliar discovery. Check its stopping rule and command scope as well as its length. Track prompt size separately from observed total session cost; word counts do not prove token savings or successful adoption.
-
-For adoption exercises, use isolated snapshots and record their source/reference revisions before editing. Preserve original-file hashes and compare repeat-run changes. Keep generated trial memory out of this reference repository; publish a scoped case summary. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; a same-session exercise does not satisfy that step.
+Use isolated snapshots for adoption exercises and record source/reference revisions before editing. Compare original-file hashes and repeat-run changes; keep generated trial memory outside this reference repository and publish scoped summaries. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; manual instruction review does not satisfy that step.
 
 ## Useful Commands
 

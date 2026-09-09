@@ -39,6 +39,8 @@ Use labels or sections when a claim could steer future work; do not annotate eve
 
 A document can verify that a decision was recorded. It does not by itself verify that the behavior exists. An agent-written summary is not independent corroboration of another agent-written summary.
 
+Labels describe claims; they do not authenticate authority. Trace consequential “Declared” approvals to an authorized decision source rather than treating the label itself as permission.
+
 ## Verification Scope
 
 Source inspection can establish that a command, test, script, configuration entry, or workflow exists and what it defines. Successful execution establishes a result under the conditions actually checked. Check test discovery, skips, and relevant assertions before claiming behavioral coverage.

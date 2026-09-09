@@ -30,25 +30,20 @@ Declared (maintainer request, 2026-09-06): use repeated audits and corrections t
 
 ## Current State And Evidence
 
-Verified by repository inspection: YAIML consists of reference guides, seven helper prompts, core and optional supporting templates, two fictional examples, policy documents, and its own three core memory documents. There is no YAIML application runtime or build/test suite.
+Repository inspection confirms reference guides, seven prompts, core/supporting templates, two fictional examples, policy files, and YAIML's own core memory. There is no application runtime or build/test suite.
 
-The README provides one adoption path. The init prompt is self-contained and reuses existing project documentation. Detailed guidance is organized by topic; [Architecture](ARCHITECTURE.md) maps the artifact responsibilities and [Maintainer Guide](MAINTAINER_GUIDE.md) describes review procedures.
+The self-contained init establishes useful memory and persistent agent instructions. It preserves existing files, discovery layouts, and local choices; meaningful changes trigger routine updates. Role-appropriate budgets guide pruning without requiring deletion, padding, or removal of necessary evidence. [Architecture](ARCHITECTURE.md) owns the artifact boundaries; [Maintainer Guide](MAINTAINER_GUIDE.md) owns review procedures.
 
-Current guidance distinguishes headers from discovery versions, bounds initial inspection, avoids sensitive-file collection and unnecessary command execution, and preserves concurrent work. Repeated init/refresh should leave healthy memory unchanged. Existing layouts and custom fields survive compatible guidance refreshes; actual consumers must be checked before requested migrations.
+The [YTMMOCC case](case-studies/YTMMOCC.md) records maintainer-owned inspection and dated listings. [Local adoption exercises](case-studies/ADOPTION_TRIAL.md) record isolated init, repeat setup, and legacy guide refresh/compression. These are same-session evidence, not independent adoption or runtime validation. The [current audit](COLD_START_REVIEW.md) records corrections and verification limits.
 
-New memory receives role-appropriate word targets. Routine updates check affected memory for stale content and budget overruns; necessary facts and retention outrank size targets. Existing headers remain compatible, and healthy growth is not a deletion quota.
-
-The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned inspection and dated listing observations. [Local adoption exercises](case-studies/ADOPTION_TRIAL.md) add actual isolated document edits: initialization on a public source snapshot, unchanged repeat setup, and a legacy guide refresh/compression with the discovery map and core memory preserved. These are same-session exercises, not independent adoption or runtime validation.
-
-The [minimal example](../examples/minimal-notes/README.md#short-paste-and-go-demo) now includes a short fictional demo. [Evaluation](EVALUATION.md#ready-to-run-comparison) provides concrete matched tasks and reviewer criteria; fresh comparison sessions have not run. GitHub private vulnerability reporting was enabled and verified on 2026-09-06; [Security](../SECURITY.md) links the reporting route.
+The [fictional demo](../examples/minimal-notes/README.md#short-paste-and-go-demo) and [matched comparison tasks](EVALUATION.md#ready-to-run-comparison) are prepared; fresh sessions have not run. Private vulnerability reporting was enabled on 2026-09-06 and rechecked on 2026-09-08; [Security](../SECURITY.md) links the route.
 
 ## Active Risks And Gaps
 
-- **Effectiveness remains unmeasured:** no controlled fresh-session comparison or independent adoption evidence is recorded.
-- **Context and maintenance cost:** even concise instructions can produce overgrown or stale memory; the shortened init path and supporting-document choices need adopter trials.
-- **Evidence and authority errors:** agents may still promote old results, inference, or fictional examples into current fact, or flatten contributor disagreements.
-- **Portability and sharing:** one preserved legacy map does not establish compatibility with every consumer, layout, or concurrent editing workflow.
-- **Phase drift:** added tools, formal requirements, or empty templates could displace the plain-file convention.
+- **Effectiveness and cost:** no controlled fresh-session comparison, independent adoption evidence, or measured total token savings. Growth, stale memory, and missed automatic updates need adopter trials.
+- **Evidence and authority:** agents may promote old results, inference, fictional examples, or unauthenticated approval claims into current fact, or flatten contributor disagreements.
+- **Portability:** a preserved legacy map does not establish compatibility with every reader, layout, instruction mechanism, or concurrent workflow.
+- **Phase drift:** extra tooling, formal requirements, or empty templates could displace the plain-file convention.
 
 ## Immediate Priorities
 

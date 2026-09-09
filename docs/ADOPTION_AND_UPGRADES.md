@@ -13,25 +13,13 @@ agent-guidance: Preserve repository-specific truth. Do not replace mature docume
 
 # YAIML Adoption And Updates
 
-YAIML, Yet Another AI Markup Language, is a lightweight plain-file convention and reusable template docset for making a repository understandable and maintainable across humans, AI chats, coding agents, and contributor handoffs.
+YAIML keeps shared project memory in ordinary Markdown. Adoption establishes that memory and the active agent's persistent instructions; routine work then maintains it without YAIML reminders.
 
 ## Version Awareness
 
-Use `yaiml.yml` as the lightweight discovery protocol when a repository has a YAIML docset.
+`yaiml.yml` locates the core and supporting documents. Its version identifies the discovery layout, not a Markdown revision, roadmap milestone, or conformance claim. Use the supplied reference's Git revision or dated snapshot to distinguish guidance revisions.
 
-The file should help an agent identify:
-
-- whether YAIML is present;
-- which YAIML discovery layout the docset follows;
-- where the core documents live;
-- which supporting documents exist;
-- whether the discovery file needs a compatibility refresh.
-
-The version describes the discovery format. It is not a Markdown revision counter or a claim that document bodies follow a machine-validatable schema.
-
-The recommended discovery marker is the three-part string `0.2.0`. Roadmap milestones and optional Markdown header hints are separate; neither requires a discovery-version bump. To compare revisions of the reference guidance, use the supplied reference's Git revision or dated snapshot, not the discovery marker alone.
-
-Current recommended shape:
+Recommended shape for new adopters:
 
 ```yaml
 yaiml:
@@ -44,17 +32,13 @@ yaiml:
     risk_review: docs/RISK_REVIEW.md
 ```
 
-Paths are relative to the directory containing `yaiml.yml`, normally the repository root. Use portable paths to files inside the repository. Include only existing supporting documents; omit `supporting` when none are needed. The example's `risk_review` entry is illustrative, not a file to create automatically.
+Paths resolve from the map's directory, normally the repository root. Include only existing files; omit `supporting` when unnecessary. The risk-review entry illustrates a mapping, not a file to create automatically. Resolve paths and symlinks before following them; discovery does not authorize access outside the repository.
 
-Keep this file portable. Do not store machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs in it.
+Keep machine-specific paths, drive names, user-profile paths, `file://` URIs, localhost URLs, and private workspace URLs out of versioned guidance. Supply private reference locations through the human request or non-versioned configuration. A stable, team-approved public reference may be recorded when requested.
 
-Future validation, if it exists, should be limited to this small discovery file. YAIML project memory remains human-authored Markdown with stable roles, evidence discipline, and pruning expectations rather than a schema-controlled document body.
+No YAIML parser is required. Any future validation remains limited to discovery; memory bodies stay free-form Markdown.
 
 ## Discovery Layout Compatibility
-
-YAIML consumers should understand the discovery layout used by the target repository before reading or migrating it.
-
-The recommended `0.2.0` layout is shown above.
 
 Recognizable older layout:
 
@@ -73,110 +57,58 @@ supporting:
     role: local-usage-guide
 ```
 
-Safe behavior:
+Read the target's actual map before editing. Both examples describe roles and paths; neither defines a schema for document bodies.
 
-- Read both layouts as discovery hints, not as schemas for the Markdown bodies.
-- Prefer the current nested `yaiml.version` / `core` / `supporting` layout for new adopters.
-- Preserve mature adopter memory and local SoT names during refreshes.
-- Do not silently migrate a repository just because an older recognizable layout is present.
-- Do not confuse discovery-format versioning with ordinary Markdown edits. Updating a paragraph in SoT does not require changing the discovery format version.
-- Migrate discovery only when the human explicitly requests discovery migration, the consumer understands both layouts, and all local paths and roles can be preserved. A general initialization or refresh request does not authorize migration.
-- Repair stale paths within the existing layout. Path repairs do not require a discovery-format version change. If compatibility is unclear, preserve the map and report the gap while completing compatible edits.
-
-For an unfamiliar layout or version, inspect explicit paths and local instructions before interpreting it. Do not guess role mappings, overwrite unknown entries, or downgrade the marker. Report ambiguity that blocks discovery; continue compatible work where possible. No automated consumer compatibility is claimed here.
-
-Compatibility has three separate questions:
-
-| Change | Expected refresh behavior |
+| Change | Expected behavior |
 | --- | --- |
-| Clearer prose, shorter templates, or better evidence guidance | Apply useful guidance to existing memory; no layout or filename migration |
-| Local filenames, headings, `role`/`kind` headers | Preserve equivalent local choices and meaningful content |
-| Older `documents.*.path` map | Read it and repair paths in place; migration is a separate request |
-| Coordinator-specific fields or consumers | Preserve unrelated extensions and check the actual reader before structural or formatting changes |
-| Unfamiliar future discovery format | Do not claim compatibility or silently downgrade; report the unresolved mapping |
+| Clearer prose, shorter templates, or evidence guidance | Apply useful guidance without replacing project facts |
+| Local filenames, headings, `role`/`kind` headers, or word budgets | Preserve equivalent local choices; no cosmetic migration |
+| Older `documents.*.path` map or a stale path | Understand the layout and repair paths in place |
+| Custom fields or tool consumers | Preserve unrelated extensions and working formatting |
+| Unfamiliar layout or version | Retain unknown entries and marker; report ambiguous mappings rather than guessing or downgrading |
 
-Reader compatibility is narrower than human readability. A local tool may accept the shown layouts but mishandle different indentation, inline comments, or other valid YAML spellings. Preserve working formatting during routine refresh; test the exact map with its actual consumers before a requested migration. Do not turn a limited reader into a new restriction on Markdown memory.
+A general init or refresh request does not authorize discovery migration. Migrate only on explicit human request, with actual consumer compatibility checked and every local path and role preserved. Ordinary Markdown edits and path repairs do not require a version bump.
 
-Future incompatible guidance should explain what changed, what can remain unchanged, and the migration implications before recommending adoption. Existing project knowledge should not need rewriting solely to match a newer template.
+Readable YAML is not proof that a particular tool accepts it: indentation, comments, and other valid spellings may expose reader limitations. Check the exact map with its consumers before a requested migration. Do not turn a limited reader into restrictions on Markdown memory.
+
+Future incompatible guidance must explain what changed, what can stay unchanged, and migration implications before recommending adoption.
 
 ## First-Time Adoption
 
-YAIML adoption is evidence-based documentation work, not a generic file-copy operation.
+Paste [Init YAIML](../prompts/init-yaiml.md) into the target repository's agent session. The prompt is self-contained; no other reference download, package, or installation is required.
 
-The default adoption route is copy/paste prompt text into the target repository's AI chat. Do not require a download, package install, CLI, or dependency just to start using YAIML.
+The agent should inspect existing instructions, docs, representative source, and defined checks; reuse documents that serve the three core roles; and write only supported project understanding. Unknown intent remains unknown. Do not overwrite an unrelated file merely because it occupies a default name: select another path and record it in discovery.
 
-An adoption agent should:
+Adapt templates instead of copying empty sections. Add supporting memory only for concrete recurring knowledge or distinct retention needs. New documents receive role-appropriate working budgets; preserve necessary facts and retention when a target is exceeded.
 
-1. Use the self-contained init prompt; no other download or reference is required. Consult additional guidance only when it is available and relevant.
-2. Inspect source, tests, configuration, docs, scripts, visible workflows, and existing agent instructions enough to establish useful project understanding. Bound the inspection and report material areas not inspected.
-3. Identify the repository's actual state, architecture, maintainer procedures, risks, and uncertainty.
-4. Preserve existing useful project documentation.
-5. Select and adapt the appropriate YAIML templates.
-6. Create repository-specific documents rather than copying placeholders unchanged.
-7. Clearly mark unknowns instead of guessing.
-8. Avoid claiming aspirational work is already implemented.
-9. Consolidate or reference existing documentation rather than duplicating it unnecessarily.
-10. Add or update `yaiml.yml` as a discovery file.
-11. Connect the active agent's supported persistent instruction mechanism, creating the minimal required file if absent. Preserve existing instruction scope and rules; verify activation and discovery paths. Report unsupported or unverified loading honestly. See [Agent Integration](AGENT_INTEGRATION.md).
-12. Report which documents were created or modified, what evidence was inspected, what remains uncertain, and what checks were run.
+Connect the active agent's supported persistent instructions, creating the minimal required file if absent. Preserve scope and existing rules; check activation and discovery paths, including work in subdirectories. Report configured versus observed loading honestly, and disclose unsupported persistence during setup. [Agent Integration](AGENT_INTEGRATION.md) explains this boundary.
 
-Default core documents are SoT, Architecture, and Maintainer Guide. Supporting documents should be added only when the repository already has several concrete recurring pieces of project knowledge that deserve their own home.
-
-Example prompt:
-
-```text
-I want this repository to adopt YAIML. Read the YAIML reference, inspect the repository, create an appropriate repository-specific YAIML docset, preserve existing useful documentation, and do not invent project facts.
-```
+Review the diff for lost decisions, invented claims, sensitive material, and unnecessary duplication. Setup should report changed files, inspected evidence, actual checks, and unresolved gaps.
 
 ## Existing YAIML Update
 
-A YAIML update refreshes an adopted YAIML docset to follow newer reference guidance while preserving repository-specific truth.
+A convention refresh applies useful reference changes to local guidance while preserving the project's own memory. It is distinct from updating SoT after ordinary work.
 
-An update agent should:
+1. Check local instructions, discovery, worktree state, and relevant memory, reading headers first. Preserve uncommitted and concurrent work.
+2. Identify the supplied reference revision or snapshot, including material uncommitted reference edits. If no reference is available, request one rather than guessing.
+3. Start with reference init/adoption guidance and local instruction pointers or maintenance notes. Use relevant differences from a previous reference when known; inspect other topics only for material differences or local copies.
+4. Refresh useful local prompts, templates, or instructions, remove obsolete template residue, and repair links or stale paths within the existing layout. Retain meaningful local headings, facts, commands, decisions, risks, supporting knowledge, and uncertainty.
+5. Update project memory only where its meaning changed. Report convention changes separately from any independently verified project drift.
 
-1. Identify the new reference revision or snapshot. Start with its init prompt and adoption guidance; use relevant changes from the previously applied reference when known.
-2. Read the repository's current YAIML documents.
-3. Inspect the current repository implementation enough to distinguish YAIML-reference drift from project-memory drift.
-4. Compare local instructions and maintenance guidance. Load other reference topics only for material differences or local copies; do not read or reproduce the whole reference inventory.
-5. Preserve project-specific SoT, architecture, maintainer knowledge, risks, human decisions, and supporting memory.
-6. Update obsolete structure, terminology, headings, responsibilities, and guidance.
-7. Add newly recommended sections only when they are relevant.
-8. Remove obsolete template residue without removing useful project information.
-9. Repair internal links and renamed files.
-10. Repair discovery paths in the existing layout; apply the discovery migration policy above before changing formats.
-11. Summarize what changed because the YAIML reference changed versus what changed because repository truth had drifted.
+Do not import this reference repository's own facts, personal policies, license, or permissions. Preserve applicable notices on copied material and the target's license. Respect the target's privacy, retention, and review rules; do not change application code, install dependencies, or run expensive checks solely for a refresh.
 
-Never replace mature repository-specific documents with empty or generic templates.
+Remove obsolete machine-specific reference entries only when their purpose is understood, and repair dependent instructions. Re-read concurrent changes before writing; keep contributor conflicts visible. An unchanged reference still warrants checking local drift, but a repeat refresh with no material difference leaves files unchanged.
 
-A repeat refresh with no material guidance or project change should leave files unchanged. Preserve custom fields and working formatting. Remove an obsolete machine-specific reference entry only when its purpose is understood, and repair local instructions that depended on it. Keep reference locations in the human prompt or non-versioned workspace configuration.
-
-Reference guidance is input to review, not authority to copy this repository's own priorities, personal policies, license, or agent permissions into another project. Re-read concurrently changed files before applying edits and preserve unresolved contributor conflicts.
-
-Example prompt:
-
-```text
-I have a new version of the YAIML reference at [path]. Review this repository's current YAIML docset, compare it with the newer reference, preserve repository-specific truth and the existing discovery layout, update relevant guidance and internal references, and summarize the update.
-```
+The optional [update prompt](../prompts/update-yaiml.md) carries this workflow into another repository.
 
 ## Normal Implementation Work
 
-Once YAIML is adopted, routine work should use the docset as repository-carried context.
-
-Example prompt:
-
-```text
-Read my request, read the repository's YAIML documents, inspect the relevant implementation, execute the work, update the YAIML documents where project truth changed, verify the result, and report what was done.
-```
+Ask for the work: “Fix this bug” or “Implement the next priority.” Connected instructions should load current core memory, select relevant supporting context, and update affected documents before finishing. No special prompt is required. Respect read-only tasks and leave unchanged memory alone.
 
 ## Refreshing Multiple Repositories
 
-A coordinator can carry one human request across projects while each repository retains its own memory and rules. YAIML supplies the convention and refresh prompt; it does not supply a dispatcher or automatic migration engine.
+YAIML supplies guidance, not a dispatcher or automatic migration engine. Start with one representative target before expanding a batch.
 
-1. Select the repositories and one identifiable YAIML reference revision or snapshot. If the reference has uncommitted edits, identify that explicitly; a commit ID alone does not describe them.
-2. Inspect each target's current worktree, discovery layout, instruction pointers, and relevant memory. Distinguish convention refresh from a request to audit implementation or pursue SoT priorities.
-3. Pass the original request, reference content or accessible location, revision, repository scope, and permitted actions to each receiving agent. Confirm the handoff retains them instead of reducing the request to a generic documentation audit.
-4. Apply compatible changes in each repository, preserving local decisions, evidence, paths, layout, custom fields, and unrelated work. Application changes and discovery migration require their own scope.
-5. Verify local links, path discovery, instruction integration, and preservation of meaningful memory. Report applied, unchanged, partial, or blocked results per repository. A dispatched task is not a completed upgrade.
-6. Commit and push only where authorized. Keep rollback available through ordinary reviewed diffs and commits; never restore whole files over newer contributor work.
+Each receiving agent needs the original request, selected reference content or accessible location and revision, target scope, and permitted actions. Verify these survive the handoff. Keep private paths and routing metadata in appropriate local configuration, not target memory.
 
-Start with one representative project before expanding the batch. Keep private paths and task-routing metadata in the coordinator's appropriate local context. Do not copy the portfolio registry or another project's facts into target memory.
+Apply the same preservation and migration rules per repository. Verify paths, links, persistent instructions, and retained knowledge; report applied, unchanged, partial, or blocked outcomes. Dispatched work is not a completed upgrade. Commit and push only where authorized; retain ordinary reviewed diffs for rollback without restoring whole files over newer contributor work.

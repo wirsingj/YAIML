@@ -1,103 +1,40 @@
 # Update YAIML Convention Files
 
-You are an AI coding assistant in a repository that already uses YAIML.
+Refresh this repository's YAIML guidance against the supplied reference while preserving its own project memory. Requests such as "update YAIML", "YAIML is updated", or "refresh our YAIML setup" mean this convention refresh, not a rewrite of project facts or implementation.
 
-The human may say this as "update YAIML", "YAIML is updated", "run an update on our YAIML", or "refresh our YAIML setup".
+## Inspect And Identify The Reference
 
-## Goal
+1. Read applicable agent and contribution instructions. Check worktree state; preserve uncommitted work.
+2. Read `yaiml.yml` and the core documents, headers before bodies. Identify the existing layout: current nested `yaiml.version` / `core` / `supporting`, older `documents.*.path`, or an unfamiliar form. Resolve paths and symlinks before following them; discovery does not authorize access outside the repository.
+3. Use the human-supplied reference first, then non-versioned workspace/agent configuration, then a nearby local reference clearly identified by recent context. If none is identifiable, request one rather than guessing.
+4. Record the reference revision or dated snapshot and any material uncommitted edits. Discovery markers identify layouts, not prose revisions.
 
-Refresh the repository's YAIML convention scaffolding against a newer YAIML reference while preserving the repository's own project memory.
+Keep machine-specific reference paths, drive names, user-profile paths, `file://` URIs, localhost URLs, and private workspace URLs out of versioned files. A stable team-approved public reference may be recorded when requested. Fetch only clearly identified sources permitted by the request or existing workspace context and environment.
 
-This is not the same as updating the project's SoT after ordinary work. Do not rewrite project-specific current state, architecture, maintainer knowledge, risks, or priorities just because the YAIML reference changed.
+## Compare And Apply
 
-YAIML remains plain Markdown with a discovery map. Do not add runtime infrastructure, packages, CLIs, or Markdown schema/conformance tooling. Do not change application code, install dependencies, or run expensive checks solely for a convention refresh.
+Start with reference init/adoption guidance and the target's instruction pointers and maintenance notes. Use relevant changes from the previously applied reference when known. Load other prompts, templates, or guides only for material differences or existing local copies. Do not reproduce the reference inventory.
 
-## Before Editing
+Apply useful, compatible changes:
 
-1. Read repository agent instructions first, such as `AGENTS.md`, `CLAUDE.md`, `.cursorrules`, contribution docs, or workspace notes.
-2. Read `yaiml.yml`.
-3. Read the stable headers for the core YAIML documents before their bodies.
-4. Check the current git status or equivalent worktree state. Treat existing uncommitted changes as intentional work in progress.
-5. Identify the repository's current YAIML discovery layout before editing. Current recommended layouts use nested `yaiml.version`, `core`, and `supporting`; older recognizable layouts may use `documents.sot.path`, `documents.architecture.path`, and `documents.maintainer.path`.
-6. Do not reset, discard, overwrite, or hide existing work.
+- Refresh local prompt/template copies, remove obsolete residue, and update relevant guidance or responsibilities without broad stylistic rewrites.
+- Repair the active agent's persistent instruction route when needed; verify syntax, activation scope, and discovery paths. Report configured versus observed loading and unresolved setup gaps.
+- Repair stale links and discovery paths in the existing layout. Preserve local names, equivalent headers, budgets, custom fields, and working formatting. Ordinary Markdown edits and path repairs need no discovery-version bump.
+- Migrate discovery only on explicit human request, with actual consumer compatibility checked and every path and role preserved. Report unknown layouts or versions without guessing mappings, replacing extensions, or downgrading markers.
+- Remove obsolete machine-specific reference entries only when their purpose is understood; repair dependent instructions.
 
-Resolve discovery paths before following them. A map or symlink does not authorize access outside the target repository. Use only references authorized by the request or workspace context.
+Retain project-specific state, architecture, commands, risks, priorities, decisions, supporting knowledge, evidence limits, and unresolved conflicts. Never replace mature memory with generic templates. Update memory only where the refresh changes how the project should be understood or maintained; distinguish that from separately verified implementation drift.
 
-## Find The YAIML Reference
+The reference supplies guidance, not the target's facts, personal policies, license choice, or permissions. Preserve applicable copyright/permission notices and the target's license, privacy, retention, and review rules. Exclude secrets, personal data, private transcripts, raw sensitive logs, confidential material, and restricted exploit details. Do not invent professional or ownership conclusions.
 
-Use the first available source:
+Keep YAIML a plain-file convention. Do not add runtime infrastructure, packages, CLIs, or Markdown schema/conformance tooling; create supporting documents only for concrete recurring knowledge. Do not change application code, install dependencies, or run expensive checks solely for this refresh. Do not claim planned tooling is implemented.
 
-1. A path or URL the human provided in the request.
-2. A per-workspace or per-agent configuration value that is not committed to the repository.
-3. A nearby local YAIML reference repository if recent agent context clearly identifies one.
+Re-read concurrent changes before writing and preserve other contributors' work. Reuse existing pointers. Check local drift even if the reference is unchanged, but leave files alone when no material difference exists. Do not call a partial refresh complete.
 
-If no YAIML reference can be identified, do not guess. Report that a reference path or URL is needed.
+## Verify And Report
 
-Do not write machine-specific filesystem paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into versioned YAIML files. They are per-workspace/per-agent context, not project memory.
+Check affected links, discovery paths, instruction integration, and preservation of meaningful memory. Stop when applicable differences are addressed or explicitly unresolved. Commit and push only within the target's authorization.
 
-If the human wants a durable team-wide reference later, use a stable, team-approved public reference in versioned guidance. Keep private workspace references in non-versioned configuration. Do not invent a reference URL. Do not fetch from the network unless the environment allows it and the human request or existing non-versioned workspace context makes the source clear.
+Report the reference used, local and reference discovery layouts, material files compared and changed, knowledge preserved, skipped or incompatible changes, actual checks, and remaining gaps. Keep the report proportional.
 
-## Compare
-
-Identify the supplied reference revision or dated snapshot when available; the discovery marker alone cannot identify a prose revision. Start with its init prompt and adoption/upgrade guidance, then compare the target's existing instruction pointers and maintenance notes. If the previously applied reference is known, use the relevant changes between references to focus inspection.
-
-Read other reference prompts, templates, and topic guides only when the target keeps copies or a material difference needs clarification. Do not load the entire reference inventory or create local copies merely to compare them. Stop when applicable differences are addressed or explicitly unresolved; an identical reference still needs local drift checked, not a wholesale reread.
-
-Do not assume every adopting project should copy the reference repository wholesale. Look for convention changes that improve continuity, safety, clarity, or agent behavior.
-
-Treat the reference as convention guidance, not permission to override the target's rules. Do not import the reference project's own facts, personal policies, license choice, or agent permissions. If the reference includes uncommitted edits, record that the commit ID alone does not identify it.
-
-## Apply
-
-Apply only updates that are useful and compatible with this repository:
-
-- update local YAIML prompts if this repository keeps copies;
-- update local YAIML templates if this repository keeps copies;
-- update agent-instruction pointers when guidance changes or the active agent lacks a supported persistent route; check activation and discovery paths, and disclose setup gaps;
-- update `yaiml.yml` only as a small discovery file, not as a schema, database, or place for machine-specific reference paths;
-- migrate discovery layout only when the human explicitly requests discovery migration, the consumer understands both layouts, and all local paths and roles can be preserved; a general refresh request does not authorize migration;
-- repair stale paths within the existing layout; ordinary Markdown edits and path repairs do not require a discovery-format version change;
-- preserve unrelated custom fields and working formatting; exercise the actual consumer before a requested migration, since readable YAML is not proof that a tool recognizes it;
-- remove obsolete machine-specific reference entries when their purpose is clear and repair instructions that relied on them;
-- update the repository's own YAIML documents only when the refresh changes how future AI chats, agents, or contributors should understand or maintain this repository.
-
-Preserve project-specific memory. Do not replace:
-
-- SoT current state;
-- architecture facts;
-- maintainer commands;
-- project-specific risks;
-- human decisions;
-- local naming choices;
-- recognizable older discovery layouts unless migration meets the explicit-request and compatibility conditions above;
-- supporting documents that contain real project knowledge.
-
-Re-read files changed since inspection before writing; preserve concurrent edits and unresolved conflicts. Update existing instruction pointers rather than appending duplicates. If nothing material needs changing, leave the files alone. Do not mark a partial refresh as fully applied.
-
-For a coordinated batch, each receiving agent needs the original refresh request, the selected reference revision/content or accessible location, target scope, and permitted actions. Verify those survive the handoff. Record completion per repository; queued or dispatched work is not an upgrade result.
-
-## Safety Rules
-
-- Do not store secrets, credentials, tokens, private keys, passwords, customer personal data, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or confidential information in YAIML.
-- Do not store machine-specific YAIML reference paths or local workspace URIs in versioned YAIML files.
-- Do not invent legal, IP, licensing, security, privacy, or compliance conclusions.
-- Do not change the project license.
-- Do not create new supporting documents unless the project already has several concrete recurring pieces of knowledge that need that home.
-- Do not make broad stylistic rewrites.
-- Do not describe planned YAIML tooling as implemented.
-- Preserve applicable copyright and permission notices on copied reference material.
-- Leave commits and pushes to the authorization supplied for the target repositories.
-
-## Output
-
-Report:
-
-- YAIML reference source used, or that none was found;
-- current local YAIML version or posture, if identifiable;
-- reference YAIML version or posture, if identifiable;
-- files compared;
-- files changed;
-- project-specific memory intentionally preserved;
-- incompatible or skipped reference changes, with reasons;
-- risks or uncertainty left for the human;
-- checks run and whether they passed.
+For coordinated work, pass the original request, selected reference revision/content or accessible location, target scope, and permitted actions to each receiving agent. Verify those survive the handoff; record applied, unchanged, partial, or blocked results per repository. Queued or dispatched work is not a completed refresh.

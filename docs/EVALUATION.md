@@ -86,7 +86,7 @@ Give each fresh session the same bounded requests, with equivalent access and bu
 
 1. “Trace file or stdin input through the CLI to text extraction. Explain where `--first` stops selection. Cite source; do not edit or run the app.”
 2. “Compare the declared Python support range with the configured CI matrix. What does this establish, and what remains unknown? Do not infer passing runs or change support policy.”
-3. “Write a maintenance handoff of at most 120 words: relevant checks, unverified behavior, and release boundaries. Do not install dependencies or execute commands.”
+3. “Write a maintenance handoff of at most 120 words: relevant checks, unverified behavior, and release boundaries. Read-only inspection is allowed; do not install dependencies or run application, build, or release commands.”
 
 Reviewer criteria: the first answer follows the CLI/library boundary and the first-match exit across selectors; the second distinguishes package metadata, configured coverage, and executed results; the third identifies local checks without claiming they passed or authorizing a release. Count unsupported claims, missed constraints, inspected content, and useful correct answers. Report the cost of building the memory package separately from the comparison sessions.
 

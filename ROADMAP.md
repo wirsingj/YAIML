@@ -30,7 +30,7 @@ These are proposed project milestones, not discovery-format versions or release 
 | --- | --- |
 | 0.2 — usable experiment | Small core, usable prompts, honest dogfooding and documented gaps |
 | 0.3 — public pilot | Outside feedback and trials across different agent environments |
-| 0.5 — implemented draft | Unrelated adopters, recorded incompatibilities and failures; a separately maintained helper or workflow |
+| 0.5 — implemented draft | Unrelated adopters, recorded incompatibilities and failures, and a repeatable maintenance workflow |
 | 1.0 — stable convention | Stable core expectations, migration guidance, independent adopters and case evidence |
 
 The separate `yaiml.version` field identifies discovery layout. Editing guidance or reaching a project milestone does not itself require changing that field.

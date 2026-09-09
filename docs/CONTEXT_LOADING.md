@@ -47,6 +47,8 @@ If the map is absent, use local instruction pointers or look for `SOT.md`, `ARCH
 
 A header’s `read-with` is a companion hint, not a recursive import. Follow relevant references without repeatedly loading the same file. A template’s mention of a supporting role does not require that document to exist.
 
+Within a session, reuse already-loaded memory while it remains current. Refresh affected context after edits, branch changes, contributor changes, or context loss; do not mistake remembered text for current file contents. Before writing, re-read concurrently changed files. Routine follow-ups need not reload the whole core unchanged.
+
 Audit, migration, release-readiness, or realignment work may need more context than a narrow edit. Select the scope deliberately; do not turn routine work into a full repository audit.
 
 For initialization, use existing docs and representative source evidence. Skip generated/vendor trees, raw logs, credentials, and exhaustive history unless specifically needed and permitted. Prefer sanitized configuration examples. Stop when the three roles are useful and consequential gaps are named; do not install dependencies or run expensive or state-changing commands just to make the initial memory look fully verified.

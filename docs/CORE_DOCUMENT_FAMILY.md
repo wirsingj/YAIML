@@ -15,6 +15,8 @@ agent-guidance: Keep roles semantically firm and syntactically flexible. Avoid c
 
 YAIML starts with three distinct roles, normally in three Markdown documents. Reuse existing files that already serve those roles; local filenames and headings may vary.
 
+A default filename is not permission to replace unrelated content. Choose a nonconflicting path and record it in discovery. When adapting a template into new memory, set a role-appropriate word budget; existing equivalent headers remain valid.
+
 | Role | Owns | Does not own |
 | --- | --- | --- |
 | SoT | Current identity, human direction, capabilities, risks, priorities, verification limits, divergence, useful lessons | Full history, command reference, durable component model |

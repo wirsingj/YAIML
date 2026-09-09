@@ -64,6 +64,8 @@ Before removing detail because Git can recover it, confirm it is actually commit
 
 Choose a working word target appropriate to the document's role and reading frequency; a frequently loaded SoT usually needs tighter control than a specialist reference. Do not size the target merely to accommodate existing bloat. Preserve established local budgets and equivalent prose rather than requiring a new field everywhere.
 
+A budget is a review threshold, not a length to fill. Keep shorter memory when it carries the necessary understanding; never pad a document to reach its budget.
+
 Count whitespace-delimited words across the whole document, including headers, unless the local budget states another method. Review affected documents before adding: remove stale or repeated content when safe. Growth that records necessary new understanding is legitimate; there is no deletion quota.
 
 When over budget, compress safely first. Preserve human direction, useful facts, evidence limits, uncertainty, unresolved conflicts, and governed retention even if an overage remains. Record its size, reason, and a scoped next action; do not inflate the target just to hide it or block an urgent factual correction. Report before/after counts for compression and overruns, without loading unrelated memory for counting. Inherited overgrowth is a finding, not permission for a bulk rewrite during initialization.

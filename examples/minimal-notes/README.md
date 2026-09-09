@@ -34,6 +34,6 @@ The agent should update affected memory before finishing without being told to d
 
 For an optional explicit maintenance demonstration, request:
 
-> Compress YAIML if useful. Preserve the local-only decision, deferred sync, and unverified implementation status. Leave already-concise memory unchanged.
+> Compress YAIML if useful. Preserve the local-only decision, deferred search and sync, and unverified implementation status. Leave already-concise memory unchanged.
 
 Explain the value in one sentence: project decisions survive the conversation, while uncertainty stays visible. Save actual failures if you run the demo; this walkthrough is not a measured success result. For real-project comparisons, use [Evaluation](../../docs/EVALUATION.md).

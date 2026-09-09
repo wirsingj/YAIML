@@ -40,7 +40,8 @@ Before meaningful work, read yaiml.yml and its core documents:
 SoT for current state, Architecture for system boundaries, and
 Maintainer Guide for procedures. Read each selected document’s
 stable header before its body. Load supporting material only
-when task-relevant, and verify consequential claims.
+when task-relevant, reuse already-loaded context while current,
+and verify consequential claims.
 
 Before finishing material work, update affected memory and prune stale state
 without waiting for a separate YAIML request. Respect read-only task scope;
