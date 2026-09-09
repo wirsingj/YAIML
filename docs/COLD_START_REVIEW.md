@@ -14,15 +14,17 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-09-07. Baseline: `f7d8ef8`.
+Date: 2026-09-08. Baseline: `bd8af12`, plus an inherited uncommitted init-prompt edit.
 
 ## Scope And Findings
 
 Audit of YAIML's adoption path, refresh/compression guidance, evidence, human readability, privacy/reporting, license preservation, and current priorities. The same assisting agent reviewed and edited the repository. This is not an independent evaluation, legal opinion, or security certification.
 
-The main actionable finding was that creating `AGENTS.md` alone did not establish a persistent route for the active agent. Init now identifies and connects its supported instruction mechanism, including a missing file when necessary, checks activation and discovery scope, and reports setup gaps. Routine reading and maintenance before task completion require no separate YAIML request. Read-only tasks and unchanged memory remain respected.
+The inherited edit added document budgets and stronger pruning to init, but required deletion whenever memory grew and required every inherited document to fit a new target. Those rules conflicted with preserving useful knowledge, governed retention, and existing headers. The review retained size targets and routine pruning while allowing necessary growth, recording overages, and avoiding bulk migrations.
 
-The standalone init prompt is now 1,361 whitespace-delimited words, up from 1,255. It still needs no reference download or installation. The demo now asks ordinary questions and supplies a changed product decision without naming YAIML, so a future run can check both automatic reading and writing. No new fresh-session run occurred in this review; configured instructions are not proof of observed loading.
+Budget guidance now agrees across init, stable headers, lifecycle, agent integration, and update/compression prompts. New documents receive role-appropriate targets; existing local choices remain compatible. Whole-document whitespace-delimited counts include headers unless locally specified. Pruning occurs before additions where safe; necessary evidence and retention take precedence. Reports include before/after counts for compression or overruns, not a census of unrelated memory.
+
+The init prompt is 1,545 words, compared with 1,361 at the committed baseline. It remains self-contained and connects persistent agent instructions. YAIML's core documents now dogfood working targets: SoTY 872/1,000 words, Architecture 669/800, and Maintainer Guide 926/1,000. These are size measurements, not token-cost or behavioral results.
 
 ## Prior Priority Outcomes (2026-09-06)
 
@@ -38,9 +40,9 @@ The [trial summary](case-studies/ADOPTION_TRIAL.md) records conditions, inspecte
 
 ## Verification
 
-Local checks passed for 49 Markdown files, 77 local links/anchors, three discovery maps, 24 declared document paths with stable headers, and four fenced YAML examples. Checks included case-sensitive paths, fences, UTF-8 decoding, merge markers, and targeted credential/machine-path patterns. `git diff --check` passed. This is structural review and a current-tree pattern scan, not an exhaustive secret or history audit.
+Local checks passed for 49 Markdown files, 79 local links/anchors, three discovery maps, 24 declared document paths with stable headers, and four fenced YAML examples. Checks included case-sensitive paths, fences, UTF-8 decoding, merge markers, and targeted credential/machine-path patterns. `git diff --check` passed. This is structural review and a current-tree pattern scan, not an exhaustive secret or history audit.
 
-The inspection helpers used existing local tools only; no validation framework or runtime was added to YAIML. The license and discovery layouts remain unchanged. Manual instruction review covered existing and missing instruction files, unsupported persistence, scoped paths, read-only tasks, and unchanged memory; these are coverage checks, not executed cross-provider trials.
+The inspection helpers used existing local tools only; no validation framework or runtime was added to YAIML. The license and discovery layouts remain unchanged. Manual instruction review covered new and inherited memory, legitimate growth, budget overruns, governed retention, read-only tasks, and unchanged memory. These are coverage checks, not executed cross-provider trials.
 
 The existing MIT License remains unchanged. Original source and license files in the public trial checkout were preserved byte-for-byte. This verifies preservation, not ownership or legal compliance. Prior case-study runtime checks and store observations were not rerun.
 

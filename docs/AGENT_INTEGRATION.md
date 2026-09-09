@@ -25,6 +25,8 @@ Check the instruction file's syntax, activation scope, and path to discovery, in
 
 After setup, ordinary requests should trigger memory reading and maintenance without mentioning YAIML. Before finishing material work, record changed facts, decisions, evidence, and unresolved issues in affected memory. Respect read-only scope and review rules; leave unchanged memory alone. Convention refresh from a newer external reference remains a separate maintenance action, not a required step for every task.
 
+Carry local budget and pruning rules into the persistent instruction pointer: review affected memory before adding, prune safely, and report unresolved overages. Necessary growth is allowed; never trade away evidence or retention to meet a number. See [word budgets](PRUNING_AND_LIFECYCLE.md#word-budgets).
+
 Repeated initialization should update an existing pointer instead of appending another copy. Preserve nested instruction scope and re-read files changed by another contributor before writing.
 
 ## Suggested Pointer

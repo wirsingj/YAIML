@@ -61,6 +61,8 @@ This is a recommended header shape, not a serialization protocol.
 
 `read-with` names relevant companions, not mandatory recursive imports. Read a selected document's header before its body; do not load every listed companion regardless of the task. Resolve document names through the discovery map or explicit local links. Missing optional companions are not instructions to create them.
 
+New memory documents should declare a role-appropriate word budget in a `budget` field or equivalent prose. Existing headers need no cosmetic migration. A budget is a working size target, not permission to delete necessary facts or governed records. Use [Pruning And Lifecycle](PRUNING_AND_LIFECYCLE.md#word-budgets) for counting and overages.
+
 ## Minimum Healthy Header
 
 If a project wants fewer fields, the header should still make these clear:

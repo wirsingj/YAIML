@@ -6,6 +6,7 @@ purpose: Preserve current procedures for evolving YAIML without drifting from th
 belongs-here: current commands, review procedures, artifact maintenance, failure playbooks.
 not-here: project identity, conceptual architecture, complete history.
 durability: current-only; remove dead commands and obsolete paths.
+budget: About 1000 words; preserve necessary procedures and evidence if exceeded.
 read-with: SoTY; YAIML Architecture.
 update-when: repository structure, prompts, templates, or procedures change.
 agent-guidance: Verify command claims when practical. Surface conflicts. Preserve human direction.
@@ -26,6 +27,8 @@ Use several focused passes for substantial revisions:
 5. **Final diff:** confirm scope, licensing, and phase boundaries. Commit coherent changes and push when authorized. Report actual checks and remaining limits.
 
 The init prompt is intentionally self-contained. When shortening it, keep the behavior an adopter needs without relying on links to this repository.
+
+For budget changes, check new, inherited, over-budget, legitimately growing, and governed memory. Count the whole document's whitespace-delimited words unless its budget specifies otherwise. Preserve necessary knowledge, report unresolved overages, and avoid mandatory deletion or bulk header migrations.
 
 Check that init connects the active agent even when its instruction file is absent, verifies scope and discovery paths, and reports unsupported persistence. Future-session checks should use ordinary task requests without naming YAIML; verify both initial reading and maintenance before task completion, including read-only and unchanged-memory cases.
 

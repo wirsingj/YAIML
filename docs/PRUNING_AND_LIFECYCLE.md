@@ -60,6 +60,14 @@ Routine pruning is also expected after material work. A normal SoT update should
 
 Before removing detail because Git can recover it, confirm it is actually committed or safely preserved under the project's retention rules. Re-read files changed during the review to avoid overwriting concurrent work. Pruning current text does not remove sensitive content from history or published copies; follow [Security](../SECURITY.md) for that distinction.
 
+## Word Budgets
+
+Choose a working word target appropriate to the document's role and reading frequency; a frequently loaded SoT usually needs tighter control than a specialist reference. Do not size the target merely to accommodate existing bloat. Preserve established local budgets and equivalent prose rather than requiring a new field everywhere.
+
+Count whitespace-delimited words across the whole document, including headers, unless the local budget states another method. Review affected documents before adding: remove stale or repeated content when safe. Growth that records necessary new understanding is legitimate; there is no deletion quota.
+
+When over budget, compress safely first. Preserve human direction, useful facts, evidence limits, uncertainty, unresolved conflicts, and governed retention even if an overage remains. Record its size, reason, and a scoped next action; do not inflate the target just to hide it or block an urgent factual correction. Report before/after counts for compression and overruns, without loading unrelated memory for counting. Inherited overgrowth is a finding, not permission for a bulk rewrite during initialization.
+
 ## Architecture Lifecycle
 
 Architecture should remain a coherent model.

@@ -6,6 +6,7 @@ purpose: Preserve YAIML's current meaning, direction, risks, and immediate prior
 belongs-here: current project identity, purpose, artifact set, strengths, weaknesses, risks, priorities, divergence, useful lessons.
 not-here: complete history, permanent architecture, command reference.
 durability: volatile; synthesize and prune aggressively.
+budget: About 1000 words; preserve necessary evidence and direction if exceeded.
 read-with: YAIML Architecture; YAIML Maintainer Guide.
 update-when: project concept, core artifacts, active risks, or priorities change materially.
 agent-guidance: Verify repository shape. Preserve human direction. Mark uncertainty. Surface conflicts. Prune stale rewrite history.
@@ -34,6 +35,8 @@ Verified by repository inspection: YAIML consists of reference guides, seven hel
 The README provides one adoption path. The init prompt is self-contained and reuses existing project documentation. Detailed guidance is organized by topic; [Architecture](ARCHITECTURE.md) maps the artifact responsibilities and [Maintainer Guide](MAINTAINER_GUIDE.md) describes review procedures.
 
 Current guidance distinguishes headers from discovery versions, bounds initial inspection, avoids sensitive-file collection and unnecessary command execution, and preserves concurrent work. Repeated init/refresh should leave healthy memory unchanged. Existing layouts and custom fields survive compatible guidance refreshes; actual consumers must be checked before requested migrations.
+
+New memory receives role-appropriate word targets. Routine updates check affected memory for stale content and budget overruns; necessary facts and retention outrank size targets. Existing headers remain compatible, and healthy growth is not a deletion quota.
 
 The [YTMMOCC case study](case-studies/YTMMOCC.md) records maintainer-owned inspection and dated listing observations. [Local adoption exercises](case-studies/ADOPTION_TRIAL.md) add actual isolated document edits: initialization on a public source snapshot, unchanged repeat setup, and a legacy guide refresh/compression with the discovery map and core memory preserved. These are same-session exercises, not independent adoption or runtime validation.
 

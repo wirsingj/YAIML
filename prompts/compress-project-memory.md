@@ -31,6 +31,7 @@ This is not a feature implementation task. Do not change application code unless
 - Respect governed retention rules. Legal, compliance, audit, contract, agreement, incident, or decision-history material may require human approval before destructive pruning.
 - Do not create an archive unless the project asks for one.
 - Prefer a coherent rewrite over a patched-down long file.
+- Check declared word budgets using their stated method, or whole-document whitespace-delimited counts including headers. Report before/after counts and retained overages. Preserve necessary knowledge and governed retention; do not inflate a budget or delete facts merely to fit.
 - Use Git history as the archive for old completed work.
 - Confirm detail is committed or otherwise safely retained before relying on history. Re-read concurrently changed files before writing; preserve other contributors' work. Removing sensitive text does not erase prior exposure or Git history.
 

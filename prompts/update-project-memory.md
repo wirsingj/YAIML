@@ -19,6 +19,7 @@ You have completed a meaningful coding, design, documentation, audit, or debuggi
 ## Rules
 
 - Do not append a work diary.
+- Review affected memory for stale or repeated content before adding. Respect local word budgets; prune safely and report unresolved overages. Necessary growth is allowed, and retained evidence, human direction, and governed records take precedence over a size target.
 - Do not preserve resolved implementation details only because they happened.
 - Do not describe intended future work as completed work.
 - Preserve human directives.

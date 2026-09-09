@@ -29,7 +29,7 @@ Choose readable headings and short prose. Omit empty sections; link detailed sou
 
 Add supporting documents only when several concrete recurring facts need a separate home or a different retention rule. A small project may need none. Do not copy a catalog of potential documents.
 
-Every memory document needs a brief stable header identifying its responsibility, exclusions, lifecycle, update trigger, relevant companions, and evidence/conflict guidance. For example:
+Every memory document needs a brief stable header identifying its responsibility, exclusions, lifecycle, update trigger, relevant companions, and evidence/conflict guidance. Give new documents a role-appropriate word budget in the header or equivalent prose. For example:
 
 ```md
 ---
@@ -37,6 +37,7 @@ role: sot
 purpose: Current state, direction, risks, and priorities.
 not-here: Architecture, commands, complete history.
 durability: Replace stale state; preserve active decisions and uncertainty.
+budget: About 1500 words; a working target, subject to evidence and retention needs.
 update-when: Direction, capabilities, risks, or priorities change.
 read-with: ARCHITECTURE.md; MAINTAINER_GUIDE.md.
 agent-guidance: Verify consequential claims. Preserve human intent and unresolved conflicts.
@@ -46,6 +47,8 @@ agent-guidance: Verify consequential claims. Preserve human intent and unresolve
 ```
 
 Equivalent prose or field names are acceptable. `read-with` points to relevant companions; it does not require recursive loading. Existing `kind` fields or `yaiml: 0.2` header hints need no cosmetic migration.
+
+Choose budgets for useful reading cost, not to excuse existing bloat; 1500 words is illustrative, not a universal limit. Preserve existing budgets and equivalent headers. When affected memory is oversized, prune safely before adding; if necessary facts or governed retention prevent that, keep them and report the overage. Do not force a bulk rewrite of inherited memory during setup.
 
 ## Preserve Evidence And Authority
 
@@ -101,9 +104,17 @@ Load supporting documents only when relevant to the task.
 Verify consequential claims against the repository.
 
 Before finishing material work, update affected memory without a separate
-YAIML request. Preserve human direction and unresolved conflicts; prune stale
-state instead of appending a diary. Respect read-only scope and review rules;
-report pending updates when writing is unavailable. Leave unchanged memory alone.
+YAIML request. Preserve human direction and unresolved conflicts. Respect
+read-only scope and review rules; report pending updates when writing is
+unavailable. Leave unchanged memory alone.
+
+Pruning is part of updating. Review affected memory for superseded,
+repetitive, or resolved content before adding. Preserve useful current facts,
+human direction, evidence, uncertainty, and governed retention; growth alone
+is not a defect. Check declared word budgets and prune safely when exceeded.
+Do not delete necessary knowledge or inflate a budget merely to fit.
+For compression or budget overruns, report before/after word counts and
+explain retained overages. Do not load unrelated documents just to count them.
 
 “Update YAIML”, “updated YAIML”, or “check new YAIML” means compare the local
 convention guidance against a human-provided or workspace-local reference,
@@ -132,6 +143,6 @@ Do not add YAIML runtime infrastructure, dependencies, CLIs, SDKs, provider adap
 
 Re-read files that changed during inspection before editing them; preserve concurrent work and unresolved conflicts. Rerunning init should fill material gaps, not append duplicate pointers or rewrite healthy memory.
 
-Check discovery paths, role boundaries, headers, and instruction pointers. Remove duplicated facts, template residue, and invented claims; confirm human directives survived. Leave the result as a reviewable diff; commit or push only when authorized.
+Check discovery paths, role boundaries, headers, instruction pointers, and budgets for created or edited memory. Count whitespace-delimited words across the whole document, including headers, unless its budget specifies otherwise. Remove duplicated facts, template residue, and invented claims; confirm human directives survived. Leave the result as a reviewable diff; commit or push only when authorized.
 
-Report changed files, the persistent instruction mechanism connected, evidence inspected, checks actually run, and any setup gaps. Routine reading and maintenance should need no further YAIML reminders. Keep the report proportional to the work.
+Report changed files, the persistent instruction mechanism connected, evidence inspected, checks actually run, created or edited memory sizes against declared budgets, and any setup gaps or unresolved overages. Routine reading and maintenance should need no further YAIML reminders. Keep the report proportional to the work.

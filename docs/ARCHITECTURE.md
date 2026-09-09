@@ -6,6 +6,7 @@ purpose: Preserve YAIML's durable conceptual model, artifact boundaries, and def
 belongs-here: conceptual architecture, artifact responsibilities, role boundaries, deferred approaches.
 not-here: current priorities, command procedures, complete file inventory.
 durability: durable; update when roles, artifact responsibilities, or deferred tooling boundaries change.
+budget: About 800 words; preserve necessary design constraints if exceeded.
 read-with: SoTY; YAIML Maintainer Guide.
 agent-guidance: Verify repository shape before claiming artifacts. Surface conflicts. Preserve human direction.
 ---
