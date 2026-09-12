@@ -64,15 +64,7 @@ Use bounded comparisons rather than broad claims.
 
 Tasks should be small enough to review and specific enough to reveal project understanding.
 
-Useful baselines:
-
-- same repository revision for both sessions;
-- same human task wording;
-- same ordinary repository instructions;
-- a baseline that cannot accidentally load the added YAIML files through search, history, or preexisting session context;
-- recorded YAIML documents loaded by the YAIML-assisted session;
-- recorded commands run and outcomes;
-- concise reviewer notes explaining which result better respected project constraints.
+Prevent baseline sessions from discovering added YAIML files through search, history, or preexisting context. Retain concise reviewer notes explaining which result better respected project constraints.
 
 Do not describe a personal walkthrough or hypothetical comparison as an independent fresh-session trial. If the same maintainer, prior project context, or prior chat history influenced the run, label that limitation.
 
@@ -91,6 +83,14 @@ Give each fresh session the same bounded requests, with equivalent access and bu
 Reviewer criteria: the first answer follows the CLI/library boundary and the first-match exit across selectors; the second distinguishes package metadata, configured coverage, and executed results; the third identifies local checks without claiming they passed or authorizing a release. Count unsupported claims, missed constraints, inspected content, and useful correct answers. Report the cost of building the memory package separately from the comparison sessions.
 
 No comparison result is recorded yet. A project owner reviewing or performing their own trial is still needed for independent adoption evidence. Publish only permitted, sanitized results through [Contributing](../CONTRIBUTING.md#feedback-and-adoption-reports).
+
+## Repeated-Update Pruning Check
+
+Fix a bounded sequence before execution: ordinary work that resolves a risk, changes a decision, adds a necessary constraint, then repeats an unchanged request. Use fresh sessions where practical; do not ask them to prune or mention YAIML.
+
+After each task, inspect whether existing facts were replaced, resolved items removed, and required decisions, evidence limits, and uncertainty retained. Measure the entire affected memory family so moving history into supporting files cannot masquerade as compression. Record unjustified growth, lost knowledge, and manual reminders as failures; necessary growth is acceptable. Compare old and revised instruction pointers on equivalent isolated snapshots if testing this revision's effect.
+
+This is a proposed check, not an executed result.
 
 ## Evaluation Dimensions
 

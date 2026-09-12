@@ -13,57 +13,22 @@ agent-guidance: Keep this provider-neutral. Do not imply official adapters or du
 
 # Agent Integration
 
-Agent instruction files specify how a session should work. YAIML holds project understanding: state, direction, evidence, architecture, procedures, and uncertainty. Keep the detailed memory in its owning document and use short pointers from instructions.
+Agent instructions carry behavior; YAIML holds the project knowledge they point to. Instructions can also contain state, but keeping detailed memory in its owning documents avoids duplicating it across tools.
 
 ## Initialization
 
-Add or preserve a YAIML pointer in each relevant existing instruction surface. Possible surfaces include `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, or editor rule files. Respect their existing scope and syntax; these names are examples, not a claim that every tool reads them.
+Identify the active agent's supported persistent repository-instruction mechanism from available configuration or current official documentation. Names such as AGENTS.md, CLAUDE.md, and GEMINI.md are examples, not evidence of automatic loading. Create only the minimal supported surface needed, and preserve relevant existing and nested instructions.
 
-Initialization must connect the agent being used, even when its instruction file does not exist yet. Identify its supported persistent repository-instruction mechanism from available configuration or current official documentation. Create the minimal supported file or rule needed for that agent; use `AGENTS.md` when supported. Do not create files for every possible provider or guess that a familiar filename is automatically loaded.
+Check syntax, activation scope, and discovery paths, including from subdirectories. Report the exact pointer location, whether it is tracked or covered by an explicit private-instruction policy, and the basis for expecting it to load. A newly created file awaiting an authorized commit should be reported as such.
 
-Check the instruction file's syntax, activation scope, and path to discovery, including work in subdirectories. Report which mechanism is configured and whether loading was actually observed in a fresh session. File existence alone is not proof of automatic loading. If persistent instructions are unavailable or require a user-controlled setting, report that setup gap during initialization; repeated user reminders are not the intended workflow.
-
-After setup, ordinary requests should trigger memory reading and maintenance without mentioning YAIML. Before finishing material work, record changed facts, decisions, evidence, and unresolved issues in affected memory. Respect read-only scope and review rules; leave unchanged memory alone. Convention refresh from a newer external reference remains a separate maintenance action, not a required step for every task.
-
-Carry local budget and pruning rules into the persistent instruction pointer: review affected memory before adding, prune safely, and report unresolved overages. Necessary growth is allowed; never trade away evidence or retention to meet a number. See [word budgets](PRUNING_AND_LIFECYCLE.md#word-budgets).
-
-Repeated initialization should update an existing pointer instead of appending another copy. Preserve nested instruction scope and re-read files changed by another contributor before writing.
+Distinguish configured instructions from observed fresh-session loading. If persistence is unsupported or requires a user-controlled setting, disclose the unfinished step; repeated reminders do not complete integration. Ordinary work should then read and maintain affected memory without mentioning YAIML.
 
 ## Suggested Pointer
 
-Adapt paths through the discovery map:
+[Init YAIML's Connect Future Sessions section](../prompts/init-yaiml.md#connect-future-sessions) owns the complete copyable pointer. Adapt it to local paths and policies instead of maintaining a second generic version here. Repeated setup updates the existing pointer rather than appending another.
 
-```md
-## YAIML Project Memory
-
-Before meaningful work, read yaiml.yml and its core documents:
-SoT for current state, Architecture for system boundaries, and
-Maintainer Guide for procedures. Read each selected document’s
-stable header before its body. Load supporting material only
-when task-relevant, reuse already-loaded context while current,
-and verify consequential claims.
-
-Before finishing material work, update affected memory and prune stale state
-without waiting for a separate YAIML request. Respect read-only task scope;
-report pending updates when writing is unavailable. Leave unchanged memory alone.
-Preserve declared direction, evidence scope, uncertainty, and unresolved
-contributor disagreements. Do not append a work diary.
-
-“Update YAIML”, “updated YAIML”, or “check new YAIML” means refresh
-convention guidance from a human-provided or workspace-local reference.
-Preserve project memory and the existing discovery layout.
-
-“Clean up YAIML”, “compress YAIML”, “compact project memory”,
-“prune project memory”, or “prune SoT” means remove stale or repetitive
-memory while preserving current truth, direction, evidence, and uncertainty.
-
-See the Maintainer Guide for local YAIML maintenance.
-```
-
-Routine refreshes preserve local document names and older recognizable maps. See [discovery compatibility](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) before migration.
+The pointer carries routine reading, synthesis, retention, and privacy rules. The local Maintainer Guide supplies project-specific maintenance details. [Context Loading](CONTEXT_LOADING.md) owns reading behavior; [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns convention refresh and discovery compatibility.
 
 ## Keeping Responsibilities Clear
 
-Tool permissions, response style, branch rules, and collaboration behavior belong in agent instructions. YAIML can record the project procedures those instructions refer to, such as a current test command or release checklist.
-
-Project preferences may live in supporting memory when their rationale matters. Link to them instead of duplicating their full text in every provider’s instruction file. An agent still follows applicable instructions and project review authority; memory does not grant new permissions.
+Tool permissions, response style, branch rules, and collaboration behavior belong in agent instructions. Project procedures and the rationale for lasting preferences can live in linked memory. Neither the discovery map nor memory grants new permissions.

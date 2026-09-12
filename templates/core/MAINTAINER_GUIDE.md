@@ -35,12 +35,8 @@ For recurring failures, record symptoms, likely owner, evidence to inspect, and 
 
 ## YAIML Maintenance
 
-Routine memory reading and updates are part of ordinary work, without a separate YAIML request. Record the supported persistent instruction route and any setup gaps. Before finishing material work, update affected memory within task permissions; leave unchanged memory alone and report pending updates for read-only tasks.
+Record the active agent's persistent instruction route and any setup gaps. Routine work updates affected memory without a separate request; respect read-only scope.
 
-“Update YAIML”, “updated YAIML”, or “check new YAIML” means compare local convention guidance, prompts, templates, and instruction pointers against a human-provided or workspace-local reference. Preserve project memory and existing discovery layout; migrate only on explicit request with compatibility established.
+For a convention refresh (“update YAIML”), identify a supplied or workspace-local reference and revision; request one if missing. Preserve project knowledge, discovery layout, custom fields, and concurrent edits. Migrate only with explicit authorization and checked compatibility.
 
-Identify the reference revision or supplied snapshot. Preserve unrelated custom fields and concurrent edits; a repeat refresh may need no changes. Coordinated work must carry the original refresh request and reference into each target session and distinguish dispatch from completion.
-
-“Clean up YAIML”, “compress YAIML”, “compact project memory”, “prune project memory”, or “prune SoT” means remove stale, repeated, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons. Respect governed retention rules.
-
-Keep machine-specific reference paths and private workspace URLs out of versioned files. If a refresh reference is unavailable, request one rather than guessing.
+For compression (“prune SoT” or “compress YAIML”), replace stale state and repeated history with current understanding. Preserve decisions, evidence limits, unresolved issues, and governed records. Measure affected memory before/after; explain net growth and necessary overages in the task response, not memory. Keep private reference locations out of versioned files.

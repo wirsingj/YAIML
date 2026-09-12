@@ -34,4 +34,5 @@ When updating YAIML documents:
 - Preserve multi-agent or multi-contributor conflicts until evidence or human direction resolves them.
 - Remove resolved active risks from active sections.
 - Mark uncertainty honestly.
-- Prune before appending if the relevant document is getting bloated.
+- For affected memory, replace the existing account of changed facts; remove superseded claims and resolved active items. Keep completed work only as current capability, an active constraint, or a lesson that changes future action. Do not relocate history into new supporting files.
+- Measure affected memory before/after. Report net growth with its reason and any budget overage in the task response, not the memory. Preserve necessary knowledge and governed retention.

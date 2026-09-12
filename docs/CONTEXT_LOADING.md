@@ -51,4 +51,4 @@ Within a session, reuse already-loaded memory while it remains current. Refresh 
 
 Audit, migration, release-readiness, or realignment work may need more context than a narrow edit. Select the scope deliberately; do not turn routine work into a full repository audit.
 
-For initialization, use existing docs and representative source evidence. Skip generated/vendor trees, raw logs, credentials, and exhaustive history unless specifically needed and permitted. Prefer sanitized configuration examples. Stop when the three roles are useful and consequential gaps are named; do not install dependencies or run expensive or state-changing commands just to make the initial memory look fully verified.
+For setup inspection and its stopping conditions, use [Init YAIML](../prompts/init-yaiml.md#inspect-first).

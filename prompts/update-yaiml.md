@@ -18,6 +18,7 @@ Start with reference init/adoption guidance and the target's instruction pointer
 Apply useful, compatible changes:
 
 - Refresh local prompt/template copies, remove obsolete residue, and update relevant guidance or responsibilities without broad stylistic rewrites.
+- Carry current synthesis rules into local persistent instructions: replace changed facts, remove superseded and resolved state, retain only actionable lessons, and report justified net growth outside memory. Do not merely add another reminder to prune.
 - Repair the active agent's persistent instruction route when needed; verify syntax, activation scope, and discovery paths. Report configured versus observed loading and unresolved setup gaps.
 - Repair stale links and discovery paths in the existing layout. Preserve local names, equivalent headers, budgets, custom fields, and working formatting. Ordinary Markdown edits and path repairs need no discovery-version bump.
 - Migrate discovery only on explicit human request, with actual consumer compatibility checked and every path and role preserved. Report unknown layouts or versions without guessing mappings, replacing extensions, or downgrading markers.

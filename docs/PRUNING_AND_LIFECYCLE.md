@@ -13,136 +13,57 @@ agent-guidance: Preserve useful continuity without append-only bloat. Keep human
 
 # Pruning And Lifecycle
 
-Healthy project memory requires forgetting.
-
-An agent-maintained SoT can become valuable because it accumulates understanding from the developer-agent loop. It can also become unusable because it accumulates everything.
-
-YAIML asks agents to rewrite, condense, and remove.
+Pruning is part of each material memory update, not a later cleanup phase. A document below its word budget can still contain unnecessary history.
 
 ## SoT Lifecycle
 
-SoT should prune aggressively.
+Before writing, identify what changed and where that fact already lives:
 
-Preserve:
+1. Replace its existing account with current understanding rather than adding a dated update.
+2. Remove superseded claims and resolved risks or priorities in the affected sections. Preserve relevant decision sources and unresolved disagreements.
+3. Keep completed work only when it describes a current capability, a constraint or decision still in force, or a lesson that changes a future action.
+4. Keep one detailed home per fact. Replace duplicates with a short pointer when readers need awareness.
+5. Read the result as someone starting the next task. Remove content that only explains what this session did.
 
-- project identity;
-- north star;
-- active risks;
-- current priorities;
-- declared human intent;
-- current divergence;
-- current uncertainty;
-- meaningful accomplishments that still describe current capability;
-- important lessons that should shape future work;
-- recent changes that still affect present reasoning.
+A useful lesson names the condition and the action it changes. “Reviewed documentation” is history; “After renaming a core document, repair discovery and instruction links” can be a useful procedure. Put it in the role that owns it.
 
-Remove or compress:
-
-- resolved risks;
-- stale priorities;
-- implementation details that no longer affect future work;
-- duplicated principles;
-- superseded decisions;
-- old progress logs;
-- completed work recoverable from Git history.
-
-If SoT starts feeling like a diary, prune it.
-
-SoT is allowed to remember accomplishments. It should not remember them as a chronological trophy case. It should synthesize them into current capabilities, active lessons, or changed priorities.
+Do not preserve every dated result as “evidence.” Keep the consequential current result and its limits; retain older results only when they explain an active regression, decision, or governed record. Let committed history retain superseded detail. Never claim that editing a summary revalidated its contents.
 
 ## Cleanup Trigger
 
-Repository agent instructions may define phrases such as "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as YAIML maintenance requests.
+“Clean up YAIML”, “compress YAIML”, “compact project memory”, “prune project memory”, and “prune SoT” request the same synthesis over the selected documents. They do not authorize feature changes or new archives.
 
-Those phrases should not start feature work, a broad architecture rewrite, or an archive creation pass. They mean: read the YAIML discovery file, inspect the affected memory documents, rewrite stale or repetitive sections, remove resolved active items, and preserve current truth, human direction, evidence, uncertainty, active risk, and useful lessons.
-
-Routine pruning is also expected after material work. A normal SoT update should remove stale or resolved state while recording the new current truth. An explicit compression request is useful when the memory has become repetitive, too large, contradictory, or log-like.
-
-Before removing detail because Git can recover it, confirm it is actually committed or safely preserved under the project's retention rules. Re-read files changed during the review to avoid overwriting concurrent work. Pruning current text does not remove sensitive content from history or published copies; follow [Security](../SECURITY.md) for that distinction.
+During ordinary work, clean affected sections; an explicit compression request can justify a wider pass. Respect read-only scope. Re-read concurrent changes and confirm detail is committed or otherwise safely retained before relying on history. Removing sensitive text does not erase prior exposure; see [Security](../SECURITY.md).
 
 ## Word Budgets
 
-Choose a working word target appropriate to the document's role and reading frequency; a frequently loaded SoT usually needs tighter control than a specialist reference. Do not size the target merely to accommodate existing bloat. Preserve established local budgets and equivalent prose rather than requiring a new field everywhere.
+Choose targets by role and reading frequency. Preserve local budgets and equivalent prose; do not pad text or inflate a target to fit existing bloat. Count whole-document whitespace-delimited words, including headers, unless the local budget specifies otherwise.
 
-A budget is a review threshold, not a length to fill. Keep shorter memory when it carries the necessary understanding; never pad a document to reach its budget.
+Measure affected documents before and after editing. Compress safely first; necessary new knowledge and governed retention may justify growth. Report net growth with the knowledge that requires it, and any overage with a scoped next action. Put these measurements in the task response, not another historical section in memory. Do not load unrelated files merely to count them.
 
-Count whitespace-delimited words across the whole document, including headers, unless the local budget states another method. Review affected documents before adding: remove stale or repeated content when safe. Growth that records necessary new understanding is legitimate; there is no deletion quota.
-
-When over budget, compress safely first. Preserve human direction, useful facts, evidence limits, uncertainty, unresolved conflicts, and governed retention even if an overage remains. Record its size, reason, and a scoped next action; do not inflate the target just to hide it or block an urgent factual correction. Report before/after counts for compression and overruns, without loading unrelated memory for counting. Inherited overgrowth is a finding, not permission for a bulk rewrite during initialization.
+A budget is a review threshold, not a deletion quota. Preserve human direction, current facts, consequential evidence, uncertainty, unresolved conflicts, and governed records even when an overage remains. Inherited overgrowth does not authorize a bulk rewrite during initialization.
 
 ## Instructions That Generate Bloat
 
-A memory document must not tell readers to append to it.
+Look for competing instructions that route every observation into an inbox, append a session summary, or preserve every completed item. Resolve their authority before changing them; relocation into the Maintainer Guide does not fix an instruction that still accumulates history.
 
-This is the failure mode that beats every pruning rule, and it is invisible while it happens. A document acquires a section like "How To Use This Doc" whose steps say to add new items to an inbox, a checklist, or a running list. That instruction is specific, local, and immediately actionable. The instruction to prune is general, lives in another file, and asks the reader to delete something that still looks useful. The specific instruction wins, and it wins every session.
+A prior local review recorded both frequent-update growth and infrequent-update role drift. Those observations motivate checking the update rule itself; they do not prove that one instruction always wins or that a budget prevents recurrence. [SoTY](SoTY.md) retains the unresolved evidence questions.
 
-Measured in one repository: 267 revisions of a document whose header declared `durability: volatile; synthesize and prune aggressively`, containing a step directing new observations into a "New Notes Inbox." Across those revisions 260 increased its size and 7 reduced it; the largest single reduction was 131 bytes. The document reached roughly 22,000 words against a role that wanted 3,000. No session disobeyed anything — the document was followed exactly as written.
-
-Compression cannot fix this. Removing 19,000 words from a document that still instructs readers to append rebuilds the same document. Change the instruction first, then compress.
-
-When reviewing memory, read its procedural sections as part of the audit:
-
-- A step that routes new information *into* this document belongs in the Maintainer Guide as a procedure, or nowhere.
-- An "inbox", "notes", "log", "checklist", or "queue" section inside SoT is a task tracker. Issues, task lists, and Git already hold that; SoT holds what is currently true.
-- If a section's name describes a container rather than a claim, ask what synthesizing it would produce, and keep that instead.
-
-Both update cadences fail, in opposite directions. Frequent updates without pruning produce diary bloat. Rare updates in large audit passes let role boundaries drift unnoticed, because nothing reads the document often enough to feel it. A second repository in the same portfolio showed the low-touch form: 18 of 226 commits touched memory, and roughly 3,400 words of durable architecture accumulated inside the state document under a header reading `not-here: durable architecture`. Neither cadence is safe on its own; what protects a document is a declared budget and a reader willing to act on it.
+Replace accumulation rules with the synthesis steps above, then compress within scope. A short current priority list can belong in SoT; an ever-growing completed-task list does not. Do not open new “lessons,” “verification,” or supporting documents just to relocate a diary.
 
 ## Architecture Lifecycle
 
-Architecture should remain a coherent model.
-
-Preserve:
-
-- durable ownership decisions;
-- system boundaries;
-- important invariants;
-- transitional architecture while it is still true;
-- rejected approaches whose return would be dangerous.
-
-Remove or mark:
-
-- descriptions that are no longer true;
-- transitional paths that have ended;
-- file-by-file tours that no longer explain meaning;
-- architecture debt that has been resolved.
+Keep the current and intended system model, active transitions, invariants, and useful decision rationale. Remove ended transitions and obsolete component tours. Retain rejected designs only while their rationale helps prevent a concrete mistake. [Core Document Family](CORE_DOCUMENT_FAMILY.md) owns role boundaries.
 
 ## Maintainer Lifecycle
 
-Maintainer Guide should stay practical and current.
-
-Preserve:
-
-- verified setup and command procedures;
-- focused checks;
-- diagnostics;
-- danger files;
-- current failure playbooks;
-- release or recovery procedures.
-
-Remove or mark:
-
-- dead commands;
-- moved paths;
-- obsolete procedures;
-- old environment notes that no longer apply;
-- historical instructions kept only because they once worked.
+Keep actionable procedures and their assumptions. Replace dead commands, moved paths, and obsolete recovery steps; do not accumulate execution logs. Link current evidence when needed rather than copying the same result from SoT.
 
 ## Self-Unfolded Documents
 
-Not every document should prune the same way.
+Split only concrete recurring knowledge that needs its own responsibility or retention rule. Splitting does not itself reduce total memory.
 
-Legal, compliance, audit, contract, agreement, or decision-history documents may require human approval before destructive pruning. Preferences, terms, concepts, risk reviews, product doctrine, world/lore, operations, release, and provider documents may each need different retention rules.
-
-Supporting documents should declare their own lifecycle in the stable header:
-
-- what memory they own;
-- what does not belong there;
-- whether the content is durable, volatile, governed, or audit-sensitive;
-- when stale entries should be removed, compressed, or retained;
-- when human approval is needed before pruning.
-
-The principle is not "delete everything." The principle is that each document should know what kind of memory it is.
+Legal, compliance, audit, contract, incident, or decision-history records may require retention or human approval before destructive pruning. Follow their declared lifecycle and review rules. Preserve required records in their authorized home; do not apply volatile SoT rules to them.
 
 ## Worked Maintenance Examples
 

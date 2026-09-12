@@ -37,8 +37,6 @@ After initialization, ask normally: “Fix this bug,” “Audit the project,”
 
 Init must connect the agent you are using and disclose any setup gap. This depends on the tool loading persistent instructions; a new tool needs a supported instruction route too. YAIML cannot force an agent to follow instructions it never receives.
 
-For meaningful work, load the three core documents and only the supporting material relevant to the task. Afterward, update affected memory and remove stale state. Keep decisions and useful lessons; let Git retain the work history.
-
 The key distinction is intent versus evidence. In a fictional example:
 
 ```text
@@ -47,24 +45,13 @@ Verified by source inspection: settings still expose a cloud-sync option.
 Divergence: the interface does not yet match the v1 decision.
 ```
 
-A test definition is evidence that a check exists. A passing run establishes an outcome only under the conditions actually checked. Missing evidence and unresolved disagreements should stay visible.
-
 YAIML records project understanding alongside code, tests, issues, and agent instructions. Those sources still matter. Memory does not override repository rules, permissions, or current authorized direction.
 
 ## Maintenance Helpers
 
-Setup is a one-time starting point; these prompts help when explicit maintenance is useful.
+Routine work needs no extra prompts. For occasional maintenance, “Update YAIML” means refresh convention guidance from a supplied reference; “Compress YAIML” means prune the project's memory.
 
-| Need | Prompt |
-| --- | --- |
-| Orient a fresh session | [Hydrate](prompts/hydrate-agent-session.md) |
-| Record material changes | [Update project memory](prompts/update-project-memory.md) |
-| Check claims against reality | [Audit](prompts/audit-against-reality.md) |
-| Remove repetition and stale state | [Compress](prompts/compress-project-memory.md) |
-| Compare with a newer YAIML reference | [Update YAIML](prompts/update-yaiml.md) |
-| Apply a human-directed change in project direction | [Realign](prompts/major-project-realignment.md) |
-
-“Update YAIML” means refresh convention guidance from a reference you supply, preserving the project’s own memory. “Compress YAIML” means prune that memory. See [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md) for existing-document reuse and older discovery layouts.
+See [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md) for compatibility and the [maintenance prompt catalog](docs/ADOPTION_AND_UPGRADES.md#maintenance-prompts) for explicit orientation, auditing, compression, and realignment.
 
 ## Evidence And Limits
 

@@ -83,15 +83,9 @@ Future incompatible guidance must explain what changed, what can stay unchanged,
 
 ## First-Time Adoption
 
-Paste [Init YAIML](../prompts/init-yaiml.md) into the target repository's agent session. The prompt is self-contained; no other reference download, package, or installation is required.
+Paste the standalone [Init YAIML](../prompts/init-yaiml.md) prompt into the target repository's agent session. It covers bounded inspection, reuse of existing documents, filename collisions, and verification without downloads or installation.
 
-The agent should inspect existing instructions, docs, representative source, and defined checks; reuse documents that serve the three core roles; and write only supported project understanding. Unknown intent remains unknown. Do not overwrite an unrelated file merely because it occupies a default name: select another path and record it in discovery.
-
-Adapt templates instead of copying empty sections. Add supporting memory only for concrete recurring knowledge or distinct retention needs. New documents receive role-appropriate working budgets; preserve necessary facts and retention when a target is exceeded.
-
-Connect the active agent's supported persistent instructions, creating the minimal required file if absent. Preserve scope and existing rules; check activation and discovery paths, including work in subdirectories. Report configured versus observed loading honestly, and disclose unsupported persistence during setup. [Agent Integration](AGENT_INTEGRATION.md) explains this boundary.
-
-Review the diff for lost decisions, invented claims, sensitive material, and unnecessary duplication. Setup should report changed files, inspected evidence, actual checks, and unresolved gaps.
+Review the result for preserved project knowledge and honest setup gaps. [Agent Integration](AGENT_INTEGRATION.md) explains persistent activation; [Core Document Family](CORE_DOCUMENT_FAMILY.md) explains fact placement.
 
 ## Existing YAIML Update
 
@@ -111,7 +105,7 @@ The optional [update prompt](../prompts/update-yaiml.md) carries this workflow i
 
 ## Normal Implementation Work
 
-Ask for the work: “Fix this bug” or “Implement the next priority.” Connected instructions should load current core memory, select relevant supporting context, and update affected documents before finishing. No special prompt is required. Respect read-only tasks and leave unchanged memory alone.
+Ask for the work normally. [Connected instructions](AGENT_INTEGRATION.md) carry routine reading and maintenance; refreshing against an external YAIML reference is a separate action.
 
 ## Refreshing Multiple Repositories
 
@@ -120,3 +114,16 @@ YAIML supplies guidance, not a dispatcher or automatic migration engine. Start w
 Each receiving agent needs the original request, selected reference content or accessible location and revision, target scope, and permitted actions. Verify these survive the handoff. Keep private paths and routing metadata in appropriate local configuration, not target memory.
 
 Apply the same preservation and migration rules per repository. Verify paths, links, persistent instructions, and retained knowledge; report applied, unchanged, partial, or blocked outcomes. Dispatched work is not a completed upgrade. Commit and push only where authorized; retain ordinary reviewed diffs for rollback without restoring whole files over newer contributor work.
+
+## Maintenance Prompts
+
+These optional prompts are for explicit maintenance, not steps required during routine work.
+
+| Need | Prompt |
+| --- | --- |
+| Orient a session | [Hydrate](../prompts/hydrate-agent-session.md) |
+| Record material changes | [Update project memory](../prompts/update-project-memory.md) |
+| Check claims against reality | [Audit](../prompts/audit-against-reality.md) |
+| Remove repetition and stale state | [Compress](../prompts/compress-project-memory.md) |
+| Compare with a newer reference | [Update YAIML](../prompts/update-yaiml.md) |
+| Apply an approved change in direction | [Realign](../prompts/major-project-realignment.md) |

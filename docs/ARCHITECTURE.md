@@ -51,9 +51,7 @@ The normal loading sequence is discovery, three concise core documents, then tas
 
 Headers communicate role, responsibility, lifecycle, update triggers, and evidence/conflict behavior. Field names, titles, wording, and body sections remain adaptable. No Markdown parser or conformance checker is required.
 
-The init prompt deliberately repeats the minimum convention because it must work when copied alone. Other guides should link to the topic’s owner instead of repeating full explanations.
-
-The init prompt is the primary adoption interface. It must retain enough context to work independently, with bounded inspection and no installation requirement. External coordinating tools are optional users of the files; none is a dependency or part of the adoption path.
+The init prompt owns the complete copyable instruction pointer and repeats the minimum convention needed for standalone, bounded adoption without installation. Reference guides explain their own topics and link across boundaries. Templates and fictional examples may repeat essentials for independent use; they must not introduce competing policy. External coordinating tools are optional users of the files.
 
 Persistent repository instructions carry the routine reading and maintenance behavior into later sessions. Initialization connects the active agent's supported mechanism; a discovery file alone cannot activate an agent. Configured instructions and observed loading are different evidence. No background process maintains memory between sessions.
 

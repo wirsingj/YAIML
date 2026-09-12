@@ -15,7 +15,7 @@ agent-guidance: Verify implementation claims. Preserve human intent. Mark uncert
 
 SoT means State Of The. Use `SOT.md` by default or preserve an established project-specific name.
 
-Adapt these headings to the project. Remove empty or irrelevant sections; retain unknowns that affect decisions. Do not repeat the same fact under several headings.
+Adapt these headings to the project. Remove empty or irrelevant sections; retain unknowns that affect decisions. Replace an existing account when facts change; do not append a session summary or repeat the fact under several headings.
 
 ## Purpose And Direction
 
@@ -39,4 +39,4 @@ Name the next few useful actions and questions that shape them. Link a larger ba
 
 ## Useful Lessons
 
-Keep decisions or lessons that still change future work, including rejected approaches worth preventing. Let Git retain routine run history.
+Keep a lesson only if it names a condition and changes a future action. Preserve still-relevant decisions and rejected approaches worth preventing. Let Git retain routine run history.

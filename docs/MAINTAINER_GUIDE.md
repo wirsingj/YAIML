@@ -22,13 +22,13 @@ Use several focused passes for substantial revisions:
 
 1. **Reader path:** read README as a newcomer, then the init prompt by itself. Check that adoption is understandable without opening every guide or creating empty documents.
 2. **Meaning and consistency:** compare affected reference guidance with prompts, templates, examples, agent instructions, and living memory. Preserve document roles, human directives, uncertainty, and discovery compatibility.
-3. **Evidence and retention:** distinguish source inspection, executed checks, prior reports, fictional examples, and independent trials. Remove stale active risks and duplicate prose. Preserve unresolved conflicts and governed retention.
+3. **Evidence and retention:** distinguish inspected evidence, prior reports, and fictional examples. Apply the [synthesis steps](PRUNING_AND_LIFECYCLE.md#sot-lifecycle) to affected memory; check that history was removed rather than renamed as lessons or moved into supporting files.
 4. **Mechanical review:** check changed Markdown links and anchors, discovery paths, stable headers, code fences, placeholders, whitespace, and unintended sensitive or machine-specific values.
 5. **Final diff:** confirm scope, licensing, and phase boundaries. Commit coherent changes and push when authorized. Report actual checks and remaining limits.
 
 Review init by itself for small projects, mature docs, filename collisions, missing access or instruction files, repeat use, concurrent edits, and unfamiliar discovery. Keep the prompt self-contained and inspection bounded. Distinguish configured persistent instructions from observed loading; fresh-session checks should use ordinary requests without naming YAIML and verify both reading and writing, including read-only tasks.
 
-For budgets, check new, inherited, oversized, legitimately growing, and governed memory. Count whole-document whitespace-delimited words unless locally specified. Targets must not force padding, deletion of necessary knowledge, or bulk header migrations. Report compression counts and unresolved overages; word counts do not prove token savings.
+For budgets, check new, inherited, oversized, legitimately growing, and governed memory. Count whole-document whitespace-delimited words unless locally specified. Targets must not force padding, deletion of necessary knowledge, or bulk header migrations. Report before/after counts, justified net growth, and unresolved overages in the task response; word counts do not prove token savings.
 
 Use isolated snapshots for adoption exercises and record source/reference revisions before editing. Compare original-file hashes and repeat-run changes; keep generated trial memory outside this reference repository and publish scoped summaries. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; manual instruction review does not satisfy that step.
 
