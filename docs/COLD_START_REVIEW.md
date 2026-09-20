@@ -14,27 +14,28 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-09-11. Baseline: 7c5e451.
+Date: 2026-09-20. Baseline: 4111d4f.
 
-## Scope And Findings
+## Findings And Corrections
 
-Audience-based redundancy review and corrections by the assisting agent. README serves newcomers; init remains independently pasteable; reference guides own detailed topics; templates and examples remain independently useful. This is editorial and instruction-path review, not an independent behavioral trial.
+Reviewed the multi-contributor path across branch work, memory updates, compression, integration, authority, and evidence. The prior guidance protected concurrent edits but did not define how shared memory should be reconciled at PR/MR integration.
 
-- Consolidated the generic persistent pointer in init; the integration guide links to it.
-- Shortened README procedures, setup repetition, inherited template doctrine, and internal repetition in helper prompts.
-- Replaced vague pruning reminders with synthesis steps for ordinary adopter updates. Net growth needs a reason; measurements stay in task responses. Moving a diary into supporting files or calling it lessons does not count as pruning.
-- Clarified pointer tracking versus authorized private instructions and new files awaiting commit. Preserved configured-versus-observed loading limits.
-- Pruned SoTY's audit chronology and reference explanations. Retained unresolved portfolio questions as prior reports, including the contradictory layout claims. No downstream results were revalidated.
-- Retained worked maintenance examples and dated case-study evidence; no new archive or runtime machinery.
+- Routine synthesis now edits the smallest coherent affected passages, leaving unrelated structure stable. Broad compression and moves are separately scoped and coordinated.
+- Memory describes its checkout; proposals, approved direction, implementation, and deployed behavior remain distinct.
+- Integration compares the common ancestor, actual target, and combined implementation/memory. Independent contributions survive; whole-document side selection is rejected.
+- Clean merges still need semantic review. Decision conflicts follow existing authority and only dependent work waits for resolution.
+- Target advances, reverts, and other integration changes trigger affected-claim checks; prior verification is not promoted to combined-tree success.
+- Concurrent writers use separate workspaces or coordinate ownership. Re-reading files does not provide locking.
+- Init's persistent pointer, refresh/update/compression prompts, templates, and local instructions carry the relevant behavior. No coordinator, subagent, CI service, schema, or discovery migration was added.
 
 ## Verification
 
-Temporary inspection checked 50 Markdown files, 90 local links and anchors, three discovery maps, and 25 declared paths/headers. Fences, UTF-8 decoding, targeted machine-path/secret patterns, and whitespace checks passed. License, discovery, independence declaration, and retained case-study files are unchanged. This is a current-tree check, not an exhaustive security audit.
+Four temporary synthetic three-way merges were executed with Git: independent edits combined cleanly; competing decisions and delete-versus-update produced textual conflicts; different sections containing contradictory direction and shipped-state claims merged cleanly. Assertions checked exit status and retained claims. These demonstrate merge mechanics, not successful autonomous reconciliation.
 
-Manual review covered the standalone init path, repeat updates, necessary growth, governed retention, and prevention of history relocation. No agent behavior or downstream adoption trial was executed.
+Temporary inspection passed for 50 Markdown files, 96 local links/anchors, three discovery maps, and 25 declared paths/headers, plus fences, UTF-8, conflict markers, targeted private-path/secret patterns, and whitespace. The scan is not an exhaustive security audit. Core memory remains within its existing budgets. License, discovery map, independence declaration, and dated case studies are unchanged.
 
 ## Remaining Limits
 
-Shorter text does not establish lower total session cost or reliable pruning. The next test is repeated ordinary work in an adopter after refreshing its persistent instructions; compare growth and retained knowledge, not just one successful compression. Fresh-session and cross-provider evidence remain outstanding.
+Manual instruction-path review also considered unavailable target context, shared checkouts, target advance, reverts, retained evidence and separately scoped compression. Those scenarios were not executed as agent trials. Multi-developer review burden, repeated pruning, fresh-session reliability and total cost remain unmeasured. [Evaluation](EVALUATION.md#concurrent-contributor-check) supplies a bounded next trial.
 
-Current priorities belong in [SoTY](SoTY.md). Prior audit measurements and external checks remain dated evidence in Git rather than accumulating here.
+Current priorities belong in [SoTY](SoTY.md); earlier audit history remains in Git.

@@ -35,7 +35,7 @@ For recurring failures, record symptoms, likely owner, evidence to inspect, and 
 
 ## YAIML Maintenance
 
-Record the active agent's persistent instruction route and any setup gaps. Routine work updates affected memory without a separate request; respect read-only scope.
+Record the active agent's persistent instruction route and any setup gaps. Name existing branch/reviewer responsibilities when known. Routine changes edit affected passages; coordinate broad cleanup separately. Before integration, reconcile memory with the actual target and combined implementation, including clean merges. Preserve independent contributions and unresolved decisions; recheck affected evidence after branch changes. Routine work updates affected memory without a separate request; respect read-only scope.
 
 For a convention refresh (“update YAIML”), identify a supplied or workspace-local reference and revision; request one if missing. Preserve project knowledge, discovery layout, custom fields, and concurrent edits. Migrate only with explicit authorization and checked compatibility.
 

@@ -1,6 +1,6 @@
 # Compress YAIML Project Memory
 
-Synthesize current project understanding from stale, repetitive, oversized, or historical memory. Do not change application code.
+Synthesize current project understanding from stale, repetitive, oversized, or historical memory. Do not change application code. Scope broad cleanup separately from feature work, coordinating touched documents with active contributors; preserve unrelated structure and wording.
 
 1. Read applicable agent instructions and yaiml.yml. Resolve paths and symlinks within authorized scope. Check the worktree; preserve uncommitted work. Read core headers before bodies and select supporting documents relevant to the cleanup.
 2. Identify what must survive: human direction, current capabilities and constraints, active risks and priorities, useful procedures, consequential evidence, unresolved conflicts, and uncertainty.
@@ -8,6 +8,8 @@ Synthesize current project understanding from stale, repetitive, oversized, or h
 4. Inspect instructions that encourage appending observations or session summaries. Resolve competing authority before revising them; compressing text while leaving its accumulation rule intact invites recurrence.
 5. Keep one detailed home per fact. Do not disguise run history as lessons or verification, or relocate it into new supporting documents. Keep older evidence only when an active decision, regression, or governed record needs it.
 6. Re-read concurrent changes before writing. Confirm removed detail is committed or otherwise safely retained. Leave already-healthy documents unchanged.
+
+Before integration, reconcile deletions and rewrites against the actual target and common ancestor, preserving independent additions and unresolved decisions. Check the combined meaning even when Git reports no conflict; do not take a whole document from one side. Report unavailable target context. Use existing branch permissions and reviewers; recheck after target advances.
 
 Preserve role boundaries, evidence labels and verification limits. Do not invent rationale, promote an inference, or treat a recent edit as verification. Human intent remains distinct from implementation; age alone does not resolve a conflict or retire a constraint.
 

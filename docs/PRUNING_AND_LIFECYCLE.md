@@ -35,11 +35,35 @@ Do not preserve every dated result as “evidence.” Keep the consequential cur
 
 During ordinary work, clean affected sections; an explicit compression request can justify a wider pass. Respect read-only scope. Re-read concurrent changes and confirm detail is committed or otherwise safely retained before relying on history. Removing sensitive text does not erase prior exposure; see [Security](../SECURITY.md).
 
+## Concurrent Branches And Review
+
+Memory travels with the code in each branch. A capability described there applies to that checkout, not automatically to the integration branch or a deployed release. State branch/revision and environment when that distinction affects a claim; avoid routine branch stamps on every paragraph. Proposed direction needs an explicit proposal label until the project's decision authority approves it.
+
+### During A Change
+
+Include material memory corrections in the same PR/MR as the work. Edit the smallest coherent affected passage and its consequential references; keep unrelated wording, headings, ordering, and line wrapping stable. Prune superseded facts there, even below budget. Do not sweep the entire core merely because it was read.
+
+Keep task progress and review discussion in issues or PRs. Do not create per-developer SoTs or copy the core into branch-named files. Git branches already isolate work. Use separate checkouts/worktrees for concurrent writers when practical; in a shared checkout, coordinate file ownership and re-read before writing. Reading twice is not a lock.
+
+Broad compression, document moves, and role reorganization belong in a separately scoped change, coordinated with active contributors. They are not a prerequisite for an unrelated feature merge. Report inherited overgrowth and defer unrelated cleanup without deferring factual corrections. No mandatory coordinator, CI job, or subagent is required.
+
+### Before Integration
+
+The PR author or integrating contributor follows the repository's existing branch and review policy:
+
+1. Identify the actual target branch and the revision inspected; do not assume main. Compare the common ancestor, current target, and proposed changes to memory and relevant implementation. If the target is unavailable or stale, report reconciliation as incomplete.
+2. Reconcile meaning as well as conflict markers. Preserve independent additions, re-evaluate changed/deleted claims, and do not resolve a whole document by choosing ours or theirs. A clean merge can still contradict another role or restore stale state.
+3. Trace competing decisions to their authorized sources. Do not prefer the newest timestamp, merge order, or agent confidence. Keep unresolved positions and evidence visible; block only decisions or changes that depend on resolving them.
+4. Review the combined result. Recheck paths after moves and affected claims after merges, rebases, squash, cherry-picks, or reverts. Earlier passing checks apply to their recorded revision, not automatically to the combined tree. Run relevant authorized checks or name what remains unverified.
+5. Include memory changes and remaining disagreements in the ordinary review. Use existing owners/reviewers; if ownership is unclear for a consequential decision, request that decision rather than inventing authority.
+
+Recheck affected meaning if the target advances. Do not merge, rewrite branches, commit, or push merely to satisfy reconciliation without authorization. After integration, remove temporary proposal/branch wording only when the resulting state supports it; merging is not deployment. Reverts restore current understanding as well as code, without resurrecting unrelated stale history.
+
 ## Word Budgets
 
 Choose targets by role and reading frequency. Preserve local budgets and equivalent prose; do not pad text or inflate a target to fit existing bloat. Count whole-document whitespace-delimited words, including headers, unless the local budget specifies otherwise.
 
-Measure affected documents before and after editing. Compress safely first; necessary new knowledge and governed retention may justify growth. Report net growth with the knowledge that requires it, and any overage with a scoped next action. Put these measurements in the task response, not another historical section in memory. Do not load unrelated files merely to count them.
+Measure affected documents before and after editing. Compress the affected scope safely first; necessary new knowledge and governed retention may justify growth. Report net growth with the knowledge that requires it, and any overage with a scoped next action. Put these measurements in the task response, not another historical section in memory. Do not load unrelated files merely to count them.
 
 A budget is a review threshold, not a deletion quota. Preserve human direction, current facts, consequential evidence, uncertainty, unresolved conflicts, and governed records even when an overage remains. Inherited overgrowth does not authorize a bulk rewrite during initialization.
 

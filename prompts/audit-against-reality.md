@@ -17,7 +17,9 @@ Read repository agent instructions and `yaiml.yml`, then read YAIML stable heade
 - missing active risks;
 - missing operational procedures;
 - overgrown sections;
-- contradictions between documents;
+- contradictions between documents or branches, including clean textual merges;
+- branch implementation misrepresented as approved direction or deployed behavior;
+- unrelated rewrites bundled into routine memory updates;
 - human corrections at risk of being overwritten.
 
 ## Rules

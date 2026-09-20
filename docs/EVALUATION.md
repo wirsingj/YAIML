@@ -92,6 +92,14 @@ After each task, inspect whether existing facts were replaced, resolved items re
 
 This is a proposed check, not an executed result.
 
+## Concurrent-Contributor Check
+
+Use isolated branches from one baseline and the same task permissions. Assign bounded changes without a YAIML reminder: independent facts, competing decisions, a deletion against another contributor's update, and code changes whose memory claims land in different sections. Include a broad-compression branch to assess review churn.
+
+Before integration, apply the project's review policy. Check retained independent facts, unresolved authority, branch versus deployment claims, discovery paths after moves, and evidence scope in the combined tree. Repeat after a target advance or revert. Measure unrelated lines changed, lost constraints, resurrected risks, manual corrections, and final memory size. An old passing result cannot certify merged code.
+
+Text-merge experiments can demonstrate conflict mechanics; they do not test agent behavior. An optional second reviewer may be compared with the same-agent pass, but neither CI nor a subagent is an adoption requirement.
+
 ## Evaluation Dimensions
 
 Track:

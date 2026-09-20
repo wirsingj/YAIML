@@ -83,6 +83,10 @@ Follow [SECURITY.md](../SECURITY.md) and [Project Independence](PROJECT_INDEPEND
 
 Case studies must retain dates, evidence sources, ownership, and limits. A documentation edit does not revalidate an external repository or store listing. Before a public pilot, verify that the private reporting route in Security still works; do not submit a dummy vulnerability report to test it.
 
+## Branch Review
+
+Use the [concurrent-branch workflow](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review): keep routine edits focused, coordinate broad cleanup separately, compare against the actual target, and review combined meaning and evidence before authorized integration. Preserve unresolved contributor decisions. No extra reviewer service or CI setup is required.
+
 ## Publication
 
 Review the worktree before staging so unrelated work is preserved. Use ordinary commits; do not rewrite shared history. Check remote state before pushing. If it has advanced, inspect and integrate compatible changes without discarding another contributor’s work.

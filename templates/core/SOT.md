@@ -23,7 +23,7 @@ Record project identity, current human asks, accepted decisions, and corrected d
 
 ## Current State And Capabilities
 
-Summarize verified behavior with consequential evidence references. Describe completed work as current capability, not a chronological log. Mark inferred or unknown areas.
+Summarize verified behavior in this checkout with consequential evidence references; distinguish proposed direction and deployed state. Keep unrelated passages stable during routine edits. Describe completed work as current capability, not a chronological log. Mark inferred or unknown areas.
 
 ## Active Risks And Divergence
 

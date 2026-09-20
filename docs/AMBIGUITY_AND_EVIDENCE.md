@@ -45,7 +45,7 @@ Labels describe claims; they do not authenticate authority. Trace consequential 
 
 Source inspection can establish that a command, test, script, configuration entry, or workflow exists and what it defines. Successful execution establishes a result under the conditions actually checked. Check test discovery, skips, and relevant assertions before claiming behavioral coverage.
 
-For consequential results, record the evidence source, outcome, and relevant date, revision, and environment. A branch name alone may move; prefer a commit identifier and note material uncommitted changes when reproducibility matters.
+For consequential results, record the evidence source, outcome, and relevant date, revision, and environment. A branch name alone may move; prefer a commit identifier and note material uncommitted changes when reproducibility matters. Evidence from one branch does not establish the merged result or a deployed release. A contributor proposal is not approved direction. Use [branch reconciliation](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review) when integrating changes.
 
 Do not promote old successful checks into current verification. Recheck when the task depends on code, data, dependencies, environment, or external behavior that may have changed. A document’s recent timestamp does not prove its claims were revalidated.
 

@@ -53,7 +53,7 @@ Headers communicate role, responsibility, lifecycle, update triggers, and eviden
 
 The init prompt owns the complete copyable instruction pointer and repeats the minimum convention needed for standalone, bounded adoption without installation. Reference guides explain their own topics and link across boundaries. Templates and fictional examples may repeat essentials for independent use; they must not introduce competing policy. External coordinating tools are optional users of the files.
 
-Persistent repository instructions carry the routine reading and maintenance behavior into later sessions. Initialization connects the active agent's supported mechanism; a discovery file alone cannot activate an agent. Configured instructions and observed loading are different evidence. No background process maintains memory between sessions.
+Persistent repository instructions carry the routine reading and maintenance behavior into later sessions. Initialization connects the active agent's supported mechanism; a discovery file alone cannot activate an agent. Configured instructions and observed loading are different evidence. No background process maintains memory between sessions. Memory follows its checkout through ordinary branch review. Routine edits reconcile affected passages; broad compression is separately scoped. Semantic integration follows existing decision authority, with no required coordinator or CI service.
 
 ## Deferred And Retired Approaches
 

@@ -47,6 +47,8 @@ Divergence: the interface does not yet match the v1 decision.
 
 YAIML records project understanding alongside code, tests, issues, and agent instructions. Those sources still matter. Memory does not override repository rules, permissions, or current authorized direction.
 
+For teams, include focused memory edits with each change. Coordinate broad cleanup separately and review meaning against the target branch before merging. See [concurrent branches and review](docs/PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review); no additional tooling is required.
+
 ## Maintenance Helpers
 
 Routine work needs no extra prompts. For occasional maintenance, “Update YAIML” means refresh convention guidance from a supplied reference; “Compress YAIML” means prune the project's memory.

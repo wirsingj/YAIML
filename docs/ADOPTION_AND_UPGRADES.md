@@ -107,6 +107,8 @@ The optional [update prompt](../prompts/update-yaiml.md) carries this workflow i
 
 Ask for the work normally. [Connected instructions](AGENT_INTEGRATION.md) carry routine reading and maintenance; refreshing against an external YAIML reference is a separate action.
 
+Refresh existing pointers with [concurrent-branch maintenance](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review), preserving the target project's branch and review policy. A convention refresh does not authorize broad memory reorganization or branch operations.
+
 ## Refreshing Multiple Repositories
 
 YAIML supplies guidance, not a dispatcher or automatic migration engine. Start with one representative target before expanding a batch.

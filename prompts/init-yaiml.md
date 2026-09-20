@@ -118,6 +118,16 @@ still-relevant decision or constraint, or lesson that changes future action.
 Keep one detailed home per fact; link from other roles. Do not move run history
 into new supporting files merely to shorten the core.
 
+Keep routine edits within the smallest affected passages; preserve unrelated
+wording and structure. Broad compression belongs in separately scoped work.
+Memory describes this checkout; distinguish proposed, implemented, and deployed.
+With a PR/MR, reconcile affected memory against the actual target and combined
+changes before integration, including clean textual merges. Preserve independent
+contributions; never choose an entire conflicting document by side. Keep decision
+conflicts visible and route dependent choices to existing review authority.
+Recheck affected claims and evidence after integration changes; report unavailable
+target context or unrun checks. Follow repository branch permissions.
+
 Preserve human direction, evidence scope, uncertainty, unresolved conflicts,
 and governed records. Measure affected documents before/after and check budgets;
 compress safely first.
@@ -140,7 +150,7 @@ memory while preserving current truth, evidence, direction, and uncertainty.
 See the Maintainer Guide for local YAIML maintenance.
 ```
 
-Add a short YAIML maintenance note in the Maintainer Guide covering local procedures for those requests; do not duplicate the full pointer. Keep reference locations out of committed memory. If no reference is available for a later refresh, request one instead of guessing.
+Add a short YAIML maintenance note covering local refresh/compression procedures and existing branch/reviewer responsibilities. Use separate workspaces or coordinated file ownership for concurrent writers; re-reading is not a lock. Do not duplicate the full pointer. Keep reference locations out of committed memory. If no reference is available for a later refresh, request one instead of guessing.
 
 ## Retention And Sharing
 
