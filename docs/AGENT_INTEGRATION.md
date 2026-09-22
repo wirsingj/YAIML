@@ -17,9 +17,15 @@ Agent instructions carry behavior; YAIML holds the project knowledge they point 
 
 ## Initialization
 
-Identify the active agent's supported persistent repository-instruction mechanism from available configuration or current official documentation. Names such as AGENTS.md, CLAUDE.md, and GEMINI.md are examples, not evidence of automatic loading. Create only the minimal supported surface needed, and preserve relevant existing and nested instructions.
+Inspect existing repository instruction routes, including root and nested AGENTS.md, CLAUDE.md, GEMINI.md, tool rule directories, and project-specific equivalents. Include hidden configuration when relevant; exclude examples, templates, generated files, and vendor copies. Preserve actual filenames and casing; do not create case-only duplicates. Names alone do not establish automatic loading.
 
-Check syntax, activation scope, and discovery paths, including from subdirectories. Report the exact pointer location, whether it is tracked or covered by an explicit private-instruction policy, and the basis for expecting it to load. A newly created file awaiting an authorized commit should be reported as such.
+Connect each applicable existing route, including tools other than the agent running initialization. Reuse working include chains and shared instruction owners; add or update a section only where needed. Preserve unrelated instructions, metadata, activation conditions, and nested scope. Routes for the same project share memory; preserve separately scoped subproject memory and avoid provider-specific families.
+
+Where supported, keep the complete maintenance guidance in one existing shared instruction location and have other entry points explicitly tell agents to read and follow it. Verify that route; a bare link may not cause loading. Otherwise, keep equivalent concise guidance in each applicable entry point. Avoid circular references and repeated insertion.
+
+Use available configuration or current official documentation to establish each mechanism's behavior. If the active agent has no supported instruction file, create the smallest one needed, using AGENTS.md when supported. Do not create a catalog of unused tool files. Report uncertain or unsupported routes without guessing syntax or broadening their scope.
+
+Check syntax, activation scope, and discovery paths, including from subdirectories. For each route, report connected, already connected, or incomplete, its pointer location, tracking status or explicit private-instruction policy, and the basis for expecting it to load. Identify new files awaiting an authorized commit.
 
 Distinguish configured instructions from observed fresh-session loading. If persistence is unsupported or requires a user-controlled setting, disclose the unfinished step; repeated reminders do not complete integration. Ordinary work should then read and maintain affected memory without mentioning YAIML.
 
@@ -27,7 +33,7 @@ Distinguish configured instructions from observed fresh-session loading. If pers
 
 [Init YAIML's Connect Future Sessions section](../prompts/init-yaiml.md#connect-future-sessions) owns the complete copyable pointer. Adapt it to local paths and policies instead of maintaining a second generic version here. Repeated setup updates the existing pointer rather than appending another.
 
-The pointer carries routine reading, synthesis, retention, and privacy rules. The local Maintainer Guide supplies project-specific maintenance details. [Context Loading](CONTEXT_LOADING.md) owns reading behavior; [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns convention refresh and discovery compatibility.
+The pointer carries routine reading, evidence distinctions, verification scope, synthesis, retention, and privacy rules into later sessions. Those sessions may never see the init conversation. The local Maintainer Guide supplies project-specific maintenance details. [Context Loading](CONTEXT_LOADING.md) owns reading behavior; [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns convention refresh and discovery compatibility.
 
 ## Keeping Responsibilities Clear
 

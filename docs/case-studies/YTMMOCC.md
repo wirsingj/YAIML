@@ -105,11 +105,11 @@ This case does not prove:
 
 ## Counter-Evidence In The Same Document
 
-Measured 2026-09-08 during a portfolio refresh: the state document cited above is 6,972 words against an architecture document of 1,463 — 4.8x by words, 8x by lines. Roughly 3,406 of those words are durable architecture (a module dependency map, a 25-row state ownership table, race-protection invariants) sitting in a document whose own header reads `not-here: durable architecture`. Its first hundred-odd lines are a dated audit log of the kind [Pruning And Lifecycle](../PRUNING_AND_LIFECYCLE.md) classes as old progress logs.
+Reported in a 2026-09-08 portfolio review: a 6,972-word state document versus 1,463 words of architecture, with roughly 3,406 state-document words classified as durable architecture and an opening audit log. The inspected revision and counting/classification method were not recorded in this case study. These figures are historical reports, not measurements established for the pinned baseline above or the current project; reconcile them before using them in a public comparison.
 
-So the same document is this repository's best example of preserved constraints and its clearest example of role-boundary failure. Both readings are correct and neither cancels the other. What the document demonstrates is that a constraint can survive in memory that is also badly organized — useful, because it separates the claim that YAIML preserves knowledge from the claim that YAIML keeps memory well-shaped. Only the first is supported here.
+The report raises a useful failure mode: constraints may survive while role boundaries and pruning deteriorate. Preserved knowledge does not establish that memory stays concise or well organized. Reinspect the same revision before comparing that report with the preservation evidence above.
 
-Update cadence appears to be the mechanism: 18 of 226 commits touched memory. Boundaries drift when nothing reads a document often enough to notice, which is the opposite failure from a frequently-updated document that grows without pruning. Cite this case study for preservation, not for organization, until a rebalancing pass is done and re-measured.
+The earlier review also reported 18 of 226 commits touching memory and proposed update cadence as the cause. That causal explanation is inferred; commit counts alone do not establish whether agents read or maintained the documents. Current organization, any subsequent repairs, and the cause of reported drift remain unverified here. [SoTY](../SoTY.md) tracks reconciliation of this evidence.
 
 ## Follow-Up Evaluation Path
 

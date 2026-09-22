@@ -19,7 +19,7 @@ Apply useful, compatible changes:
 
 - Refresh local prompt/template copies, remove obsolete residue, and update relevant guidance or responsibilities without broad stylistic rewrites.
 - Carry current synthesis rules into local persistent instructions: replace changed facts, remove superseded and resolved state, retain only actionable lessons, and report justified net growth outside memory. Keep routine changes passage-scoped; carry branch-aware claims, target-branch semantic reconciliation and existing review authority into the pointer. Do not merely add another reminder to prune.
-- Repair the active agent's persistent instruction route when needed; verify syntax, activation scope, and discovery paths. Report configured versus observed loading and unresolved setup gaps.
+- Repair applicable existing instruction routes across agents and the active tool when needed. Preserve scope, metadata, and shared includes; connect each route to the same memory family without duplicate sections. Verify syntax and discovery paths, and report configured versus observed loading and gaps per route.
 - Repair stale links and discovery paths in the existing layout. Preserve local names, equivalent headers, budgets, custom fields, and working formatting. Ordinary Markdown edits and path repairs need no discovery-version bump.
 - Migrate discovery only on explicit human request, with actual consumer compatibility checked and every path and role preserved. Report unknown layouts or versions without guessing mappings, replacing extensions, or downgrading markers.
 - Remove obsolete machine-specific reference entries only when their purpose is understood; repair dependent instructions.

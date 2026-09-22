@@ -30,7 +30,6 @@ A stable header should answer:
 - how durable or volatile the contents are;
 - related YAIML documents to consult;
 - when and why the document should be updated;
-- when its consequential claims were last checked against the project;
 - reader instructions for evidence, uncertainty, conflicts, pruning, and human direction.
 
 These are semantic responsibilities. Projects may phrase them differently.
@@ -59,7 +58,7 @@ agent-guidance: Verify implementation claims. Preserve human intent. Mark uncert
 
 This is a recommended header shape, not a serialization protocol.
 
-`last-verified` records when the document's consequential claims were last checked against the project, and what that check covered. A document's file timestamp shows when its text changed, not when its claims were revalidated; the two diverge quietly, and a confident document nobody has rechecked is the most expensive failure this convention has. State the date, the revision when it matters, and the scope actually checked — a partial check honestly scoped is more useful than an unqualified one. Leave the field stale rather than refreshing it without doing the work; an old date is information, and an untrue one is worse than none. Update it when you verify, not when you edit.
+`last-verified` is optional. Record consequential verification beside the relevant claims; a header can summarize a document-level review when useful. State the date, relevant revision, and scope actually checked. The example above is illustrative, not evidence about the adopting project. A file timestamp or a newly edited header does not revalidate its contents. Update verification notes only when checks support them; preserve older results with their limits. A partial review must not make unrelated claims appear current.
 
 `role` is the example spelling; existing `kind` fields are equivalent for reader orientation. The optional `yaiml: 0.2` hint identifies the header's convention family. It is not the discovery-format version, a document revision, or a requirement to migrate equivalent headers. Omit it when it adds no useful context.
 

@@ -13,62 +13,60 @@ agent-guidance: Describe other projects accurately and without disparagement. Do
 
 # Prior Art
 
-YAIML did not invent keeping project context in Markdown. Several conventions already do, some with far more adoption. This document states what they solve, what YAIML adds, and when to use one of them instead.
+YAIML did not invent keeping project context in Markdown. The approaches below overlap with it and can supply the documentation YAIML points to. Choose by the knowledge and workflow your project needs.
 
-Descriptions reflect the maintainer's reading at the time of writing and may lag those projects. Correct them rather than preserving a stale summary.
+The linked primary descriptions were checked on 2026-09-22. These are scoped comparisons of documented purposes, not tested rankings, exclusive feature claims, or compatibility guarantees.
 
 ## Agent Instruction Files
 
-`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`, Cursor rule files, and Kiro steering files tell an agent how to behave in a repository: commands, style, boundaries, review rules.
+[AGENTS.md](https://agents.md/) provides repository context and instructions for coding agents, including project overviews, commands, and working rules. Other tools have their own instruction mechanisms; check the active tool's support.
 
-These are the incumbent, and YAIML depends on one of them. The init prompt writes its pointer into whichever file the active agent actually loads; without that step YAIML never enters context. They are instructions, not state — none carries a record of what the project currently *is*, what was decided, or what remains unverified.
+Instruction files can contain current state, decisions, and uncertainty too. YAIML's choice is to give evolving project knowledge distinct document roles and a maintenance loop, with a pointer in the agent's instructions. An explicit reading request can also load YAIML; routine use depends on a working persistent instruction route.
 
-**Use them alone when** the repository is small enough that an agent can rebuild current understanding by reading the code.
+**Use existing instructions alone when** they already keep the necessary context concise and current. Additional files need to earn their maintenance cost.
 
 ## Structured Memory Sets
 
-Cline and Roo **Memory Bank** is the closest existing convention: a fixed Markdown set (`projectbrief`, `productContext`, `activeContext`, `systemPatterns`, `techContext`, `progress`) plus an "update memory bank" trigger phrase.
+[Cline Memory Bank](https://docs.cline.bot/best-practices/memory-bank) documents a Markdown family covering project purpose, active context, architecture, technical context, and progress, connected through persistent rules and update requests. Its documentation also describes use with other AI tools.
 
-The overlap is substantial and should be acknowledged plainly. `activeContext` + `progress` cover roughly what YAIML's SoT covers; `systemPatterns` + `techContext` cover roughly what Architecture covers. The trigger-phrase mechanism is the same idea as YAIML's "update project memory."
+The overlap is substantial. YAIML groups knowledge into three core roles, adds supporting roles as needed, and emphasizes evidence scope, explicit uncertainty, selective reading, and replacing stale state. This describes YAIML's emphasis; it does not establish that another memory workflow cannot provide the same discipline.
 
-YAIML differs in three ways: roles are defined by exclusion as well as content, so every document declares what it does *not* own; retention is explicit, so documents declare durability and a working size budget rather than growing indefinitely; and claims carry provenance. Memory Bank records that something works. YAIML asks whether that was verified, declared, observed, or inferred — and under what conditions.
-
-**Use Memory Bank instead when** your team already runs Cline or Roo and wants a convention the tool understands natively.
+**Keep an existing memory workflow when** it serves the team well. Avoid parallel memory sets describing the same project.
 
 ## Decision Records
 
-**ADR** (Nygard) and **MADR** keep one immutable file per architectural decision, with a status field and the context that produced it.
+[Nygard's architecture decision records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) preserve a decision, its context, status, and consequences, retaining superseded decisions. [MADR](https://adr.github.io/madr/) offers a Markdown template for recording decisions and their rationale.
 
-ADRs are a history of decisions. YAIML's SoT is a synthesis of current state, and it explicitly discards what no longer matters. These are complementary, not competing: a project with ADRs already has the decision trail YAIML tells you not to reconstruct, and YAIML should link to them rather than restate them.
+YAIML summarizes the current consequences of decisions and links to those records. Its pruning guidance respects their separate retention rules.
 
 **Use ADRs instead when** the durable question is *why was this chosen* rather than *what is true now*.
 
 ## Architecture And Documentation Frameworks
 
-**arc42** supplies a twelve-section architecture template. **C4** supplies a diagram hierarchy. **Diátaxis** classifies documentation by reader need (tutorial, how-to, reference, explanation).
+[arc42](https://arc42.org/overview/) supplies a tailorable architecture template. [C4](https://c4model.com/) organizes architecture diagrams by levels of abstraction. [Diátaxis](https://diataxis.fr/) organizes documentation around tutorials, how-to guides, reference, and explanation.
 
-All three are aimed at human readers and are considerably more thorough than YAIML's single Architecture document. None addresses staleness, agent loading order, or evidence status.
+Existing material using these approaches can remain the detailed source. YAIML can point to it and summarize what a recurring session needs; adopting YAIML does not require replacing it.
 
-**Use them instead when** the audience is human and the goal is comprehensive documentation rather than context an agent reloads every session.
+**Use these approaches when** the main need is architecture communication or organizing documentation for its readers.
 
 ## Specification-Driven Development
 
-**GitHub Spec Kit** and similar spec-first workflows drive work forward: specification, then plan, then tasks, then implementation.
+[GitHub Spec Kit](https://github.com/github/spec-kit) provides structured workflows for specifying, planning, implementing, and checking work. Its current documentation also covers bug fixing and idea assessment.
 
-They describe intended future change. YAIML describes present reality, including where implementation has diverged from intent. A project can run both; the spec says where it is going, memory says where it actually is.
+Such workflows can record decisions and verification too. YAIML's focus is the maintained project-wide understanding used across tasks; it can link to feature specifications and their outcomes.
 
 **Use a spec workflow instead when** the problem is coordinating what to build next, not recovering what already exists.
 
 ## What YAIML Claims
 
-One thing, stated narrowly: **project memory should distinguish what was verified from what was declared, observed, or inferred, and should record the scope under which that was established.**
+YAIML combines current-state synthesis, distinct responsibilities, evidence and uncertainty, selective loading, and pruning into a portable maintenance convention.
 
-The role separation, the Markdown format, the discovery file, and the trigger phrases are all conventional. The evidence vocabulary in [Ambiguity And Evidence](AMBIGUITY_AND_EVIDENCE.md) is the part with no direct equivalent in the conventions above, and it is the reason to prefer YAIML over a simpler alternative.
+The [evidence vocabulary](AMBIGUITY_AND_EVIDENCE.md) makes the difference between intent, inspected implementation, and uncertainty explicit. This is a design choice, not a claim to have invented evidence-aware documentation.
 
-If that distinction does not matter for a given project, one of the conventions above is likely a better fit, and adopting YAIML will cost more than it returns.
+Whether this combination improves a particular team's work enough to justify its cost remains a question to test.
 
 ## What YAIML Does Not Claim
 
-No adoption beyond the maintainer's own repositories. No measured productivity effect. No benchmark against any convention named here. No compatibility guarantee with any tool that reads these files.
+No documented independent adoption or measured productivity effect. No benchmark against any convention named here. No compatibility guarantee with any tool that reads these files.
 
 See [Evaluation](EVALUATION.md) for the evidence that would be needed to say more, and [SoTY](SoTY.md) for current status.

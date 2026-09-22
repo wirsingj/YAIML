@@ -13,7 +13,7 @@ agent-guidance: Preserve repository-specific truth. Do not replace mature docume
 
 # YAIML Adoption And Updates
 
-YAIML keeps shared project memory in ordinary Markdown. Adoption establishes that memory and the active agent's persistent instructions; routine work then maintains it without YAIML reminders.
+YAIML keeps shared project memory in ordinary Markdown. Adoption connects applicable existing agent instructions and the active tool to that memory; routine work then maintains it without YAIML reminders.
 
 ## Version Awareness
 

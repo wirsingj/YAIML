@@ -14,28 +14,36 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-09-20. Baseline: 4111d4f.
+Date: 2026-09-22. Baseline: d391962; review includes the documentation changes prepared with this note.
 
 ## Findings And Corrections
 
-Reviewed the multi-contributor path across branch work, memory updates, compression, integration, authority, and evidence. The prior guidance protected concurrent edits but did not define how shared memory should be reconciled at PR/MR integration.
+Reviewed all repository documents, prompts, templates, and examples for adoption clarity and support for README claims.
 
-- Routine synthesis now edits the smallest coherent affected passages, leaving unrelated structure stable. Broad compression and moves are separately scoped and coordinated.
-- Memory describes its checkout; proposals, approved direction, implementation, and deployed behavior remain distinct.
-- Integration compares the common ancestor, actual target, and combined implementation/memory. Independent contributions survive; whole-document side selection is rejected.
-- Clean merges still need semantic review. Decision conflicts follow existing authority and only dependent work waits for resolution.
-- Target advances, reverts, and other integration changes trigger affected-claim checks; prior verification is not promoted to combined-tree success.
-- Concurrent writers use separate workspaces or coordinate ownership. Re-reading files does not provide locking.
-- Init's persistent pointer, refresh/update/compression prompts, templates, and local instructions carry the relevant behavior. No coordinator, subagent, CI service, schema, or discovery migration was added.
+- Init's pointer now carries evidence and authority distinctions into later sessions, including defined versus executed checks. Setup connects applicable existing instruction routes across agents, preserves their scope and shared includes, and reports incomplete routes individually.
+- New-repository handling now explicitly leaves absent implementation and undecided design unclaimed; new discovery is explicitly rooted at the repository top level.
+- README now explains individual continuity, team review, and portable project knowledge; defines SoT before use; and distinguishes YAIML's lack of a service from the chosen AI tool's data handling.
+- Stable Headers called verification timing required while its minimum example omitted it. Verification remains scoped to claims, with an optional document-level summary.
+- Prior Art overstated other approaches' limitations and YAIML's uniqueness. Descriptions now cite checked primary sources and acknowledge overlap. Older case-study counts lack a recorded baseline/method; the report now labels those limits and the causal hypothesis.
+
+## README-To-Init Check
+
+| Reader expectation | Prompt support |
+| --- | --- |
+| One self-contained prompt, no installation | Opening and Inspect First bound setup to repository evidence and inexpensive checks |
+| Preserve existing work and useful docs | Inspect First and Add Discovery preserve dirty work, role owners, filenames, and older layouts |
+| Small, evidence-aware memory | Core roles, supporting-file threshold, budgets, labels, and verification scope |
+| Ordinary future work across agents maintains memory | Connect Future Sessions updates applicable existing instruction routes to one memory family and reports activation gaps |
+| Shareable team workflow | Pointer preserves review authority, focused edits, branch reconciliation, and retention rules |
+
+These are verified instruction provisions, not observed success in a fresh agent session.
 
 ## Verification
 
-Four temporary synthetic three-way merges were executed with Git: independent edits combined cleanly; competing decisions and delete-versus-update produced textual conflicts; different sections containing contradictory direction and shipped-state claims merged cleanly. Assertions checked exit status and retained claims. These demonstrate merge mechanics, not successful autonomous reconciliation.
-
-Temporary inspection passed for 50 Markdown files, 96 local links/anchors, three discovery maps, and 25 declared paths/headers, plus fences, UTF-8, conflict markers, targeted private-path/secret patterns, and whitespace. The scan is not an exhaustive security audit. Core memory remains within its existing budgets. License, discovery map, independence declaration, and dated case studies are unchanged.
+Temporary parser-based inspection passed for 50 Markdown files, 97 local links/anchors, three YAML discovery maps, and 25 declared paths/headers. The init map matches the minimal example. UTF-8, fences, conflict markers, targeted private-path/token patterns, whitespace, and unchanged license checks passed. Comparison sources are linked in [Prior Art](PRIOR_ART.md). No application build or runtime tests exist here.
 
 ## Remaining Limits
 
-Manual instruction-path review also considered unavailable target context, shared checkouts, target advance, reverts, retained evidence and separately scoped compression. Those scenarios were not executed as agent trials. Multi-developer review burden, repeated pruning, fresh-session reliability and total cost remain unmeasured. [Evaluation](EVALUATION.md#concurrent-contributor-check) supplies a bounded next trial.
+The standalone prompt was manually reviewed for empty repositories, mature docs, filename collisions, uncommitted/concurrent work, older discovery, repeat use, read-only access, multiple instruction files, shared includes, nested scope, and missing tool support. No fresh-agent adoption or provider-switch trial was run. Team review burden, repeated pruning, and total cost remain unmeasured. External adopter state and historical measurements were not revalidated. Pattern scans are limited checks, not a security assurance. [Evaluation](EVALUATION.md) supplies the next trials.
 
 Current priorities belong in [SoTY](SoTY.md); earlier audit history remains in Git.
