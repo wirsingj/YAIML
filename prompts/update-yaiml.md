@@ -18,6 +18,7 @@ Start with reference init/adoption guidance and the target's instruction pointer
 Apply useful, compatible changes:
 
 - Refresh local prompt/template copies, remove obsolete residue, and update relevant guidance or responsibilities without broad stylistic rewrites.
+- Carry the reference's independent-check and contradiction guidance into persistent instructions: separate reports, evidence, and hypotheses; ground expected outcomes independently of candidates; preserve decision authority. Keep refresh documentation-only rather than attempting to fix reported application regressions.
 - Carry current synthesis rules into local persistent instructions: replace changed facts, remove superseded and resolved state, retain only actionable lessons, and report justified net growth outside memory. Keep routine changes passage-scoped; carry branch-aware claims, target-branch semantic reconciliation and existing review authority into the pointer. Do not merely add another reminder to prune.
 - Repair applicable existing instruction routes across agents and the active tool when needed. Preserve scope, metadata, and shared includes; connect each route to the same memory family without duplicate sections. Verify syntax and discovery paths, and report configured versus observed loading and gaps per route.
 - Repair stale links and discovery paths in the existing layout. Preserve local names, equivalent headers, budgets, custom fields, and working formatting. Ordinary Markdown edits and path repairs need no discovery-version bump.

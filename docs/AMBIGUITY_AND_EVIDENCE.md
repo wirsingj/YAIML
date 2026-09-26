@@ -59,6 +59,26 @@ Unknown: store publish credentials were not exercised.
 
 Keep concise evidence references rather than a full output log. Missing evidence is a gap to name, not permission to invent a result.
 
+## Contradictions And Regression Checks
+
+Before changing shared behavior, identify the affected user-visible invariants and any authorized intended change. Reuse or add proportionate checks whose inputs and expected outcomes have a basis independent of the candidate: an approved example, a hand-checked fixture, or a requirement. Agreement between implementations, echoed settings, and expected values copied from the candidate do not alone establish correctness. Check that the procedure distinguishes the reported wrong behavior from the intended outcome. A focused manual check can be appropriate; no particular test framework, second agent, or external service is required.
+
+Compare an accepted baseline and the candidate under equivalent inputs and conditions when available. The baseline establishes prior behavior, not that it was correct. Do not preserve a known defect or reject an authorized change merely to match it. Report missing reference evidence rather than inventing it.
+
+When feedback conflicts with checks, separate the attributed report, inspected evidence, and hypothesis. Check whether they concern the same conditions and outcome. Keep disputed candidates out of shared defaults while investigating; continue independent authorized work. Do not claim a report is refuted because it was not reproduced or unrelated tests passed.
+
+Resolve factual concerns with evidence addressing the reported behavior. Changing intended behavior or acceptance criteria requires the project's decision authority; test results cannot make that decision. Update memory with the correction or remaining uncertainty, not an explanation invented to justify the code. Keep lasting invariants in Architecture, relevant check procedures in the Maintainer Guide, and active contradictions in SoT.
+
+Fictional example:
+
+```text
+Declared (approved fixture F): foreground A must occlude background B.
+Observed (human report): B appears in front of A.
+Verified: two renderers produce matching output for F; neither output was checked against the approved ordering.
+Inferred: both may share an ordering error; cause is not established.
+Next check: inspect A/B occlusion against fixture F's expected ordering under the reported conditions before changing the default.
+```
+
 ## Intent And Implementation
 
 Fictional example:

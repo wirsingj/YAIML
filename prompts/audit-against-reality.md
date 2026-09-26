@@ -20,7 +20,9 @@ Read repository agent instructions and `yaiml.yml`, then read YAIML stable heade
 - contradictions between documents or branches, including clean textual merges;
 - branch implementation misrepresented as approved direction or deployed behavior;
 - unrelated rewrites bundled into routine memory updates;
-- human corrections at risk of being overwritten.
+- human corrections at risk of being overwritten;
+- correctness claims supported only by matching implementations, echoed settings, or expectations copied from the candidate;
+- reported regressions dismissed by unrelated passing checks, or acceptance criteria rewritten to match current behavior.
 
 ## Rules
 
@@ -37,6 +39,7 @@ Read repository agent instructions and `yaiml.yml`, then read YAIML stable heade
 - Do not treat a test or command existing in source as proof that it passed.
 - Do not promote an old successful check into current verification without rerunning it or recording it as prior evidence with date, revision, and limits.
 - Distinguish verified findings from suspicion.
+- Separate attributed reports, inspected results, and hypotheses. Look for independently grounded expected outcomes and equivalent baseline conditions; an old baseline is not automatically correct. Name gaps rather than inventing checks, outcomes, or causes. Factual evidence does not authorize a change in intended behavior.
 - Do not copy secrets, credentials, private chat transcripts, raw sensitive logs, sensitive raw values, exploit details, or speculative legal/IP conclusions into YAIML documents.
 - Do not present agent-written security, legal, compliance, privacy, licensing, or IP notes as professional recommendations.
 

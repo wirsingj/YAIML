@@ -24,6 +24,8 @@ Working rules:
 - Before finishing material work, update only affected YAIML documents without waiting for a separate request, prune stale state, and do not append a work diary. Respect read-only task scope and leave unchanged memory alone.
 - Report contradictions rather than smoothing them into confident prose.
 - Do not treat a command, script, workflow, or test existing in source as proof that it passed; successful execution only applies under the recorded conditions.
+- Before changing shared behavior, identify affected invariants and authorized changes; ground expected outcomes independently of the candidate. Compare an accepted baseline under equivalent conditions when available, without treating old behavior as inherently correct.
+- Separate reported concerns, evidence, and hypotheses. Keep disputed candidates out of shared defaults while investigating; continue independent authorized work. Resolve factual concerns with relevant evidence, not unrelated passing checks or failure to reproduce. Changes to intent or acceptance criteria require established authority. Follow the [evidence guidance](docs/AMBIGUITY_AND_EVIDENCE.md#contradictions-and-regression-checks).
 - Do not describe planned tooling as implemented tooling.
 - Do not revive `SPEC.md`, schema-first language for Markdown memory documents, or formal conformance machinery unless a human explicitly changes the project phase.
 

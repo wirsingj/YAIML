@@ -25,6 +25,8 @@ Separate commands actually run from commands found by source inspection and proc
 
 List useful test, build, lint, or diagnostic procedures and how to interpret results. Mark service, hardware, account, or credential requirements without storing sensitive values. Prefer sanitized outcomes to raw logs.
 
+For consequential checks, name the invariant, independent basis for expected outcomes, and comparison conditions. Distinguish matching outputs from intended behavior; record missing reference evidence.
+
 ## Important And Dangerous Files
 
 Map files and boundaries a contributor needs before editing; omit a complete file inventory.

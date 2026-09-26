@@ -30,7 +30,7 @@ Declared (maintainer requests, September 2026): reduce repetition by audience an
 
 The repository supplies reference guides, seven prompts, templates, two fictional examples, policies, and its own core memory. There is no application runtime or build/test suite. [Architecture](ARCHITECTURE.md) owns artifact responsibilities; [Maintainer Guide](MAINTAINER_GUIDE.md) owns review procedures.
 
-Init owns the complete copyable pointer, including evidence scope and authority rules needed after setup. It connects applicable existing agent instruction routes to one memory family and reports gaps per route. It covers empty repositories without inventing implementation and creates root discovery for new setups. Ordinary updates replace changed facts and remove superseded state; completed work survives only as current capability, an active constraint, or an actionable lesson. Growth explanations belong in task responses. Branch guidance separates routine edits from broad cleanup and requires reconciliation before integration. These are instructions, not proven enforcement.
+Init owns the complete copyable pointer, including evidence scope, independently grounded checks, contradiction handling, and decision authority needed after setup. Refresh carries these into existing adopters. Init connects applicable instruction routes to one memory family, reports gaps, and creates root discovery without inventing absent implementation. Updates replace changed facts and remove superseded state; completed work survives only as current capability, an active constraint, or an actionable lesson. Growth explanations belong in task responses. Branch guidance separates routine edits from broad cleanup and requires reconciliation before integration. These are instructions, not proven enforcement.
 
 The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-studies/ADOPTION_TRIAL.md) contain dated maintainer-owned evidence. The [current review](COLD_START_REVIEW.md) describes this repository's latest changes and verification limits. Neither establishes independent adoption or productivity gains.
 
@@ -41,7 +41,7 @@ The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-
 - **Disclosure and portability:** prior reports describe private environment details entering shared memory and a consumer rewriting version values. Sanitization and compatibility require checking actual files and consumers; neither old audit prose nor a preserved map establishes current safety.
 - **Concurrent work:** team-scale merge burden and agent adherence remain unmeasured. Textual conflict resolution does not establish consistent meaning or combined verification.
 - **Effectiveness:** no controlled fresh-session comparison, independent adoption, or measured token savings. Configured pointers do not establish observed reading or maintenance.
-- **Evidence and authority:** agents can promote old results or inference into current fact and flatten contributor conflicts. Preserve sources and unresolved disagreements.
+- **Evidence and authority:** agents can promote inference or internally consistent tests into correctness and flatten contributor conflicts. A maintainer-reported depth-order regression motivated stronger independent-check guidance; its cause was not inspected here and prevention remains untested. Preserve sources, intended behavior, and unresolved disagreements.
 
 ## Immediate Priorities
 

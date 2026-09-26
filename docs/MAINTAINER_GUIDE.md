@@ -28,6 +28,8 @@ Use several focused passes for substantial revisions:
 
 Review init by itself for small projects, mature docs, filename collisions, missing access, multiple instruction routes, nested scope, include chains, repeat use, concurrent edits, and unfamiliar discovery. Keep the prompt self-contained and inspection bounded. Distinguish configured persistent instructions from observed loading; fresh-session checks should use ordinary requests without naming YAIML and verify both reading and writing, including read-only tasks.
 
+Check evidence guidance against shared-error agreement, irrelevant passing tests, missing baselines, authorized behavior changes, and unreproduced reports. Expected outcomes must not merely echo candidate output.
+
 For budgets, check new, inherited, oversized, legitimately growing, and governed memory. Count whole-document whitespace-delimited words unless locally specified. Targets must not force padding, deletion of necessary knowledge, or bulk header migrations. Report before/after counts, justified net growth, and unresolved overages in the task response; word counts do not prove token savings.
 
 Use isolated snapshots for adoption exercises and record source/reference revisions before editing. Compare original-file hashes and repeat-run changes; keep generated trial memory outside this reference repository and publish scoped summaries. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; manual instruction review does not satisfy that step.
