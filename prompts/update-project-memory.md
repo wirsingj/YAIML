@@ -1,6 +1,6 @@
 # Update Project Memory After Work
 
-Reflect the completed work in affected YAIML memory, without creating a session log.
+Reflect material changes to project understanding, including confirmed conversational direction without code edits, in affected YAIML memory. Leave unchanged memory alone; do not promote brainstorming into decisions or create a session log.
 
 1. Read applicable instructions and yaiml.yml, resolving paths and symlinks within authorized scope. Read affected document headers before bodies. Check the worktree and re-read concurrent changes before writing; preserve unrelated edits.
 2. Identify changed understanding and its existing home: SoT for current state, direction, risks and priorities; Architecture for boundaries and design; Maintainer Guide for procedures. Use the smallest coherent passage; leave unrelated wording, headings, ordering and wrapping alone. Scope implementation claims to this checkout; distinguish proposals, approved direction and deployed behavior.

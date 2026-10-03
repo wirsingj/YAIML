@@ -39,11 +39,11 @@ YAIML is a project-memory initiative centered on a documentation convention. Thi
 | Other docs/ guides | Reference explanations by topic |
 | templates/ | Document starters and portable operating guidance; sources for embedded init text |
 | prompts/init-yaiml.md | Self-contained seed: setup, pointer, operating guide, templates, coordination, and copied-material notice |
-| Other prompts/ | Explicit orientation, audit, update, compression, refresh, and realignment helpers |
+| Other prompts/ | Optional standalone entry points to six workflows also carried by init's saved operating guide |
 | examples/ | Minimal and larger fictional document families, plus a short demo; no application code |
 | docs/case-studies/ and COLD_START_REVIEW.md | Evidence notes with scope and limitations |
 
-Init retains reusable procedures and dormant starters locally. Project-specific memory unfolds only for useful knowledge; reference-project facts, policies, case studies, and inventories do not transfer.
+Init retains reusable procedures and dormant starters locally. Saved instructions support ordinary work and explicit requests, context reuse, and maintenance of material changes, including confirmed conversational direction. Project-specific memory unfolds only for useful knowledge; reference-project facts, policies, case studies, and inventories do not transfer.
 
 ## Reading And Maintenance Boundaries
 

@@ -3,7 +3,7 @@
 Before making changes:
 
 1. Read `yaiml.yml`.
-2. Read the three core documents below and task-relevant supporting material. For each selected YAIML document, read its stable header before its body; `read-with` is a relevance hint, not a recursive loading requirement.
+2. Read the three core documents below and task-relevant supporting material. Reuse current context; refresh when stale or insufficient, including relevant changes or context loss. For each selected YAIML document, read its stable header before its body; `read-with` is a relevance hint, not a recursive loading requirement.
 3. Treat `docs/SoTY.md`, `docs/ARCHITECTURE.md`, and `docs/MAINTAINER_GUIDE.md` as this repository's living project memory.
 4. Treat examples, templates, prompts, and guides as supporting artifacts that must stay synchronized with the living-memory concept.
 5. At startup and whenever loading or refreshing YAIML context, consider serverless subagent coordination from available context without extra scans or calls. For a concrete benefit, read `docs/YAIMLACP.md`. Describe the option, access, limits, cost, and single-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Without confirmation, continue independent work without delegation. Reuse valid scoped approval and current guidance. Do not build a server or install anything for this convention.
@@ -22,7 +22,7 @@ Working rules:
 - Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
 - YAIMLACP documents coordination through existing host capabilities. It adds no server, SDK, installation, or separate runtime. Do not add implementation libraries, CLIs, provider adapters, package manifests, or web applications here without an authorized implementation scope. Keep Markdown memory free of schemas and conformance fixtures.
 - Preserve the MIT License unless the maintainer explicitly approves a license change.
-- Before finishing material work, update only affected YAIML documents without waiting for a separate request, prune stale state, and do not append a work diary. Respect read-only task scope and leave unchanged memory alone.
+- Before finishing, persist material changes to project understanding, including confirmed human direction from conversation without code edits. Do not promote brainstorming into decisions. Update only affected YAIML documents without a separate request, prune stale state, and do not append a work diary. Respect read-only task scope and leave unchanged memory alone.
 - Report contradictions rather than smoothing them into confident prose.
 - Do not treat a command, script, workflow, or test existing in source as proof that it passed; successful execution only applies under the recorded conditions.
 - Before changing shared behavior, identify affected invariants and authorized changes; ground expected outcomes independently of the candidate. Compare an accepted baseline under equivalent conditions when available, without treating old behavior as inherently correct.

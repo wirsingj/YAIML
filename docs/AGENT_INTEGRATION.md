@@ -27,7 +27,7 @@ Use available host instructions, configuration, or local documentation to establ
 
 Check syntax, activation scope, and discovery paths, including from subdirectories. For each route, report connected, already connected, or incomplete, its pointer location, tracking status or explicit private-instruction policy, and the basis for expecting it to load. Identify new files awaiting an authorized commit.
 
-Distinguish configured instructions from observed fresh-session loading. If persistence is unsupported or requires a user-controlled setting, disclose the unfinished step; repeated reminders do not complete integration. Ordinary work should then read and maintain affected memory without mentioning YAIML.
+Distinguish configured instructions from observed fresh-session loading. If persistence is unsupported or requires a user-controlled setting, disclose the unfinished step; repeated reminders do not complete integration. Saved instructions support ordinary work and explicit YAIML requests through the same procedures: reuse current context, refresh when stale/insufficient, and maintain material project changes, including confirmed conversational direction. No YAIML reminder or code edit is required; read-only scope and unchanged memory remain respected.
 
 ## Suggested Pointer
 

@@ -45,7 +45,7 @@ See [Minimal Notes](examples/minimal-notes/) for the smallest fictional example 
 
 ## Use It Day To Day
 
-After initialization, ask normally: “Fix this bug,” “Audit the project,” or “Implement the next priority.” Persistent repository instructions tell the agent to read and maintain affected memory without routine YAIML reminders.
+After initialization, ask normally: “Fix this bug,” “Audit the project,” or “Implement the next priority.” The saved instructions support both everyday work and explicit YAIML requests. They tell agents to reuse current context, read more when needed, and maintain affected memory without reminders—including confirmed project decisions made in conversation. Unchanged follow-ups need no routine reread or rewrite. The README and complete init prompt are enough to get started; reusable procedures are saved locally for agents.
 
 Init connects applicable existing agent instructions, such as `AGENTS.md` and `CLAUDE.md`, to the same memory and reports setup gaps. A tool added later needs a supported instruction route too. This depends on each tool loading those instructions.
 
@@ -63,9 +63,9 @@ For teams, include focused memory edits with each change. Coordinate broad clean
 
 ## Maintenance Helpers
 
-Routine work needs no extra prompts. For occasional maintenance, “Update YAIML” means refresh convention guidance from a supplied reference; “Compress YAIML” means prune the project's memory.
+**The maintenance workflows come with init.** Orientation, memory updates, audits, compression, convention refresh, and realignment are saved as local procedures with their safeguards and reporting steps. Ask your agent naturally; no additional prompt paste is needed. “Update YAIML” refreshes conventions from a supplied reference; “Compress YAIML” prunes project memory.
 
-See [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md) for compatibility and the [maintenance prompt catalog](docs/ADOPTION_AND_UPGRADES.md#maintenance-prompts) for explicit orientation, auditing, compression, and realignment.
+The [maintenance prompt catalog](docs/ADOPTION_AND_UPGRADES.md#maintenance-prompts) offers optional task-specific entry points to those same workflows. [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md) explains compatibility.
 
 Persistent instructions also remind agents to consider optional coordination at startup and whenever YAIML context is loaded or refreshed. [YAIMLACP](docs/YAIMLACP.md) defines handoffs for the host's existing subagents, with a clear option/cost explanation and user confirmation before first use or changed scope/cost. It requires no server or installation and does not implement standard MCP. Ordinary work with one agent remains the default when delegation offers no clear benefit.
 

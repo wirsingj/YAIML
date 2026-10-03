@@ -137,7 +137,7 @@ Apply the same preservation and migration rules per repository. Verify paths, li
 
 ## Maintenance Prompts
 
-These optional prompts are for explicit maintenance, not steps required during routine work.
+These optional prompts are standalone entry points to workflows already saved by init in the local operating guide. Natural requests select the same procedures and shared safeguards; users need no additional paste or source-repository access. When maintaining these prompts, reconcile their actions, conditions and outputs with the embedded procedures.
 
 | Need | Prompt |
 | --- | --- |

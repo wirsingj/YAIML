@@ -50,7 +50,7 @@ At startup and whenever loading or refreshing YAIML context, consider serverless
 
 A header’s `read-with` is a companion hint, not a recursive import. Follow relevant references without repeatedly loading the same file. A template’s mention of a supporting role does not require that document to exist.
 
-Within a session, reuse already-loaded memory while it remains current. Refresh affected context after edits, branch changes, contributor changes, or context loss; do not mistake remembered text for current file contents. Before writing, re-read concurrently changed files. Routine follow-ups need not reload the whole core unchanged.
+Within a session, reuse already-loaded memory while current and sufficient. Refresh affected context when stale or insufficient, including relevant edits, branch changes, contributor changes, or context loss; do not mistake remembered text for current file contents. Before writing, re-read concurrently changed files. Unchanged follow-ups need no routine reread or rewrite. Efficiency must not skip necessary reads or maintenance.
 
 Audit, migration, release-readiness, or realignment work may need more context than a narrow edit. Select the scope deliberately; do not turn routine work into a full repository audit.
 

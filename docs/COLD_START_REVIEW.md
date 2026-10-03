@@ -13,15 +13,17 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Source review: 2026-10-02, published in `15ff0c3` against baseline `02911f4`. Behavioral evidence updated 2026-10-03; the published seed is unchanged.
+Source review updated 2026-10-03 against `cc5b9e2`, including maintenance triggers and all six non-init prompts. Behavioral trials used the earlier `15ff0c3` seed; the revised procedures have no new fresh-session trial.
 
-Assessment: a credible candidate for a controlled pilot; broad rollout still needs behavioral evidence. This is a source/document review, not a penetration test, platform certification, or an enterprise approval. No critical exploit was demonstrated. The seed reviewed here has LF-normalized SHA-256 `b94a23b8dacb91658c9d27cb584b59b636faf2e1e1306b54907d24c6a750be0a`.
+Assessment: a credible candidate for a controlled pilot; broad rollout still needs behavioral evidence. This is a source/document review, not a penetration test, platform certification, or an enterprise approval. No critical exploit was demonstrated. The seed reviewed here has LF-normalized SHA-256 `4b027c45c3bd8a0c9dbab61871fcbbc0e09d0f4d937643756573d2cd13a0c73c`.
 
 ## Findings And Corrections
 
 Scope: standalone initialization and dense embedded guidance/templates, local instruction activation, YAIMLACP, and affected reference guidance, examples, and core memory. Discovery version and project license remain unchanged.
 
 Init embeds local procedures, YAIMLACP, three core and seven specialist starters, and the copied-material notice. Pasting it supplies both the initialization/refresh request and its complete reference, including for older adopters with the same discovery version. It saves or reconciles local files and supported instruction routes without downloads or separate upgrade wording. Project facts remain evidence-based; starters stay dormant until useful.
+
+Saved instructions cover ordinary work, explicit requests, context reuse/refresh, and material changes including confirmed conversational direction without code edits. The operating guide retains procedure-specific actions, safeguards and reporting. Shared evidence, retention and concurrency rules apply to every procedure; read-only scope and tentative decisions remain protected. Maintainer review traces prompt clauses to saved content, beyond topic names and matching embedded copies.
 
 Maintainer direction prioritizes complete, agent-consumed instructions over seed length. Init retains its human-readable opening; payloads use concise directives and minimal whitespace. Source guides/starters match embedded copies. Comparison against the preceding text checks obligations, triggers, exceptions, authority, and context routes; restored qualifiers keep verified evidence, human intent, decision sources, and stop conditions explicit. Headings, permission/retention boundaries, and the notice remain.
 
@@ -44,10 +46,10 @@ The comparison uses the earlier full-seed snapshot retained in this review sessi
 
 |Measure|Expanded seed|Current seed|Net reduction|
 |---|---:|---:|---:|
-|Whitespace-delimited words|8,240|5,318|35.5%|
-|UTF-8 bytes|61,224|45,538|25.6%|
+|Whitespace-delimited words|8,240|6,004|27.1%|
+|UTF-8 bytes|61,224|51,247|16.3%|
 
-The persistent pointer is 340 words, 2,715 characters, and 2,747 UTF-8 bytes before local adaptation. The complete seed is a setup artifact; the pointer and relevant local documents govern later reading. No model tokenizer or end-to-end usage comparison was run. These figures do not establish recurring context savings. Further shrinking must preserve readable conditions and independently checked meaning.
+The persistent pointer is 392 words, 3,132 characters, and 3,164 UTF-8 bytes before local adaptation. The complete seed is a setup artifact; the pointer and relevant local documents govern later reading. No model tokenizer or end-to-end usage comparison was run. These figures do not establish recurring context savings. Further shrinking must preserve readable conditions and independently checked meaning.
 
 ## Security And Platform Assessment
 
@@ -85,26 +87,29 @@ These are review judgments about likely decision criteria, not feedback from int
 
 The appropriate claim remains an experimental documentation convention. Broad standardization, productivity improvement, and security acceptance require evidence and governance beyond a polished seed.
 
-## Earlier Init Versus The Seed
+## Maintenance Prompt Coverage
 
-Compared the committed init at 02911f4 with the working seed. This identifies distributed content, not historical behavior in uninspected adopters.
+Compared each non-init prompt's actions, conditions, exceptions and outputs with the guide saved after initialization. Common evidence, retention, concurrency and reporting rules apply alongside each procedure. This is manual source coverage, not behavioral equivalence or a comparison of word overlap.
 
-|Area|Committed init|Current seed benefit|
+|Optional prompt|Saved procedure|Consequential coverage|
 |---|---|---|
-|Core roles, evidence, authority, synthesis, retention, branch reconciliation|Already included, with persistent instructions|Preserved; these are not newly invented capabilities|
-|Audit/alignment, realignment, priority execution, maintenance procedures|Basic rules and refresh/compression notes; no saved procedure collection|Named procedures remain locally available after the init conversation|
-|Core and specialist starters|Role outlines and one header example; no complete template collection|Ten starters preserve role-specific boundaries and retention for later growth|
-|YAIMLACP|Absent; introduced during this work|New optional coordination capability with local handoff, consent, limit, and cancellation guidance|
-|Existing-adopter correction|Preservation, rerun, and activation checks already present|Explicit missing/equivalent/adapted/conflicting/unverified coverage comparison and targeted repair|
+|[Hydrate](../prompts/hydrate-agent-session.md)|[Orient](../templates/supporting/YAIML_GUIDE.md#orient), persistent coordination pointer|Current/legacy discovery, missing-map fallback, scoped paths, selective reading, evidence checks, authority, brief understanding/gaps before proceeding|
+|[Update memory](../prompts/update-project-memory.md)|[Maintain](../templates/supporting/YAIML_GUIDE.md#maintain), shared integration rules|Changed facts in owning passages; confirmed conversational decisions; no diaries; scoped verification, safe retention, related-change review, counts/growth and unresolved issues in responses|
+|[Audit](../prompts/audit-against-reality.md)|[Audit](../templates/supporting/YAIML_GUIDE.md#audit), Evidence And Authority|Accidental versus designed architecture, unrelated churn, candidate-derived expectations, regression reports; safe checks, no silent repairs; severity-ordered findings, locations, evidence, corrections, uncertainty|
+|[Compress](../prompts/compress-project-memory.md)|[Compress](../templates/supporting/YAIML_GUIDE.md#compress), Maintain and retention/integration rules|Accumulation-rule authority, one current account, useful older evidence, safe history, governed approval, no application changes or deletion quotas, measured synthesis and remaining uncertainty|
+|[Update YAIML](../prompts/update-yaiml.md)|[Refresh Conventions](../templates/supporting/YAIML_GUIDE.md#refresh-conventions), saved pointer and YAIMLACP|Reference precedence/revision, local drift, preservation/coverage comparison, instruction semantics and scoped routes, discovery compatibility, private-reference repair, verified handoff inputs and per-target partial/blocked outcomes|
+|[Realign](../prompts/major-project-realignment.md)|[Realign](../templates/supporting/YAIML_GUIDE.md#realign), shared safeguards|Approved superseding direction, criticism is not permission, authorized moves/removals, preserved transitions/retention, consistent local artifacts, reviewable changes, actual checks and remaining divergence|
 
-The [prior adoption exercises](case-studies/ADOPTION_TRIAL.md) explicitly used a reference-aware agent in an ongoing session. They do not isolate the old prompt's effect. Expected benefits are portable access, persistence, consistent procedures, and inspectable gaps; no measured outcome improvement or lost-capability percentage is established. Local reference access could supply omitted detail, but the contents actually retained in each adopter must be inspected before claiming drift.
+Restored details include discovery fallback, refresh route repair after the init conversation, specific audit checks, realignment review, shared reporting, and coordinated-refresh completion states. Previously matching source/embedded copies did not establish this coverage. No procedure requires fetching the optional prompt. A reference fetch during refresh still requires an identified source and authorization; complete pasted init needs none.
+
+Fresh sessions must exercise these procedures using saved files alone before claiming equivalent execution, completeness across all reference guides, or measured efficiency. [Prior trials](case-studies/ADOPTION_TRIAL.md) do not establish those outcomes.
 
 ## Acceptance Checks Still To Run
 
 Use bounded isolated snapshots and [Evaluation](EVALUATION.md), with criteria fixed before execution and actual host access/budgets recorded. Do not launch workers merely to satisfy this note.
 
 1. Initialize a fresh project from the pasted seed alone, without the YAIML repository or previous conversation. Verify all local bodies, notice, and instruction routes; no downloads, application changes, empty specialist documents, or workers.
-2. In a separate fresh session, request ordinary work without naming YAIML. Observe relevant loading and focused maintenance. Repeat unchanged work; check unnecessary rereads, rewrites, and growth. Include a read-only task.
+2. In separate fresh sessions, exercise the six saved procedures through ordinary requests without supplying their standalone prompts or source-repository access. Include confirmed conversational decisions, tentative ideas, read-only tasks, missing discovery, route repair and incomplete refreshes. Repeat unchanged follow-ups; check unnecessary rereads/rewrites/growth. Change relevant files or lose context; check needed refreshes occur.
 3. Repeat on mature memory with legacy discovery, local adaptations, nested instructions, and existing files at default paths. Preserve knowledge and custom fields; report unsupported activation. Check exact version-label preservation and compatibility decisions.
 4. Exercise synthetic untrusted instructions, forged standing approval, secrets, and out-of-scope symlinks without real sensitive data. Reject instruction promotion and unauthorized access; preserve useful attributed facts. Check governed records survive compression.
 5. Under separately confirmed delegation scope, test no-answer/decline, allowed reuse, changed scope/cost, missing capabilities, descendants, cancellation, and revocation. Observe host controls and residual work; a prose walkthrough does not pass these cases.
@@ -114,9 +119,9 @@ The minimal example illustrates core roles, not complete init output. Its demo r
 
 ## Verification
 
-Offline extraction of the identified seed matched thirteen embedded texts to their owners (two guides, ten starters, LICENSE.md); payload metadata and six tables parsed. Extracted guides and template collection fit their budgets. Review checked standalone adoption/refresh, trust boundaries, exact version-label preservation, consent, retention, and unchanged local adaptations. YAML examples preserved `0.20`, `0.10`, and `0.2` as quoted source labels and retained an unrelated field. The linked official sources informed the acceptance assessment. These checks establish text and YAML properties, not agent behavior or consumer compatibility.
+Offline extraction matched thirteen embedded texts to their owners (two guides, ten starters, LICENSE.md); headers, fences, tables, local links/anchors, whitespace and budgets were checked. The prompt coverage mapping records manual review beyond source parity. Earlier YAML checks preserved `0.20`, `0.10`, and `0.2` as quoted source labels and retained an unrelated field; those clauses are unchanged. Linked official sources informed the earlier acceptance assessment and were not rechecked for this revision. These checks establish text properties, not agent behavior or consumer compatibility.
 
-The correction pass checked UTF-8, conflict markers, and local links/anchors across 52 Markdown files; Git whitespace checks passed. Earlier checks of three discovery maps, 26 declared paths/headers, and targeted private-path/token patterns across 31 changed files remain prior scoped results. None is a security assurance. No application build or runtime suite exists here.
+An earlier correction pass checked UTF-8, conflict markers, and local links/anchors across 52 Markdown files. Checks of three discovery maps, 26 declared paths/headers, and targeted private-path/token patterns across 31 changed files also remain prior scoped results. None is a security assurance. No application build or runtime suite exists here.
 
 One explicitly approved native subagent completed a bounded read-only review and returned findings with source locations. It identified the reminder-only gap before these edits. The worker reported no edits, network, installation, retries, descendants, or leftover processes. This demonstrates one dispatched review and returned result; the reviewer also read reference documents, so it was not a blinded paste-only adoption trial.
 
