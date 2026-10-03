@@ -2,41 +2,25 @@
 yaiml: 0.2
 role: sot
 title: SOT
-purpose: Current engineering state and direction for the project.
-belongs-here: goals, developer asks, current capabilities, risks, testing and verification state, priorities, divergence, useful recent lessons.
+purpose: Current engineering state and direction.
+belongs-here: Goals, developer asks, current capabilities, risks, test/verification state, priorities, divergence, useful recent lessons.
 not-here: durable architecture, command reference, complete history.
 durability: volatile; synthesize and prune aggressively.
 read-with: Architecture; Maintainer Guide.
 update-when: direction, verified reality, risks, priorities, or useful engineering lessons change.
-agent-guidance: Verify implementation claims. Preserve human intent. Mark uncertainty. Surface conflicts. Prune stale detail.
+agent-guidance: Verify implementation; preserve human intent; mark uncertainty/conflicts; prune stale detail.
 ---
-
 # SOT
-
-SoT means State Of The. Use `SOT.md` by default or preserve an established project-specific name.
-
-Adapt these headings to the project. Remove empty or irrelevant sections; retain unknowns that affect decisions. Replace an existing account when facts change; do not append a session summary or repeat the fact under several headings.
-
+SoT = State Of The. Use `SOT.md` or the established local filename. Adapt headings, omit empty sections, retain consequential unknowns. Replace changed facts in place; no session summaries or duplicate facts.
 ## Purpose And Direction
-
-Record project identity, current human asks, accepted decisions, and corrected directions. Name decision sources or owners where relevant. Keep declared intent separate from implementation.
-
+Identity, human asks, approved decisions, corrections, and relevant decision sources/owners; distinguish intent from implementation.
 ## Current State And Capabilities
-
-Summarize verified behavior in this checkout with consequential evidence references; distinguish proposed direction and deployed state. Keep unrelated passages stable during routine edits. Describe completed work as current capability, not a chronological log. Mark inferred or unknown areas.
-
+Verified checkout capabilities with consequential evidence; separate proposals/deployment, label inference/unknowns. Keep unrelated passages stable; summarize completion as current capability.
 ## Active Risks And Divergence
-
-Record unresolved risks, debt, and conflicts among direction, design, code, tests, or contributor accounts. Remove resolved active items; preserve accepted risks with their decision source.
-
+Unresolved risks, debt, and conflicts among direction, design, code, tests, or contributors. Remove resolved items; preserve accepted risks and decision sources.
 ## Verification
-
-Keep a short replaceable summary of consequential checks and gaps. Separate successful execution from source-defined checks. For prior results, preserve relevant date, revision, environment, and limits. A newer edit does not revalidate a claim.
-
+Replaceable consequential results/gaps; distinguish defined/executed checks. Preserve prior date, revision, environment, limits; edits do not revalidate.
 ## Immediate Priorities And Open Questions
-
-Name the next few useful actions and questions that shape them. Link a larger backlog if one exists.
-
+Next useful actions and shaping questions; link a larger backlog.
 ## Useful Lessons
-
-Keep a lesson only if it names a condition and changes a future action. Preserve still-relevant decisions and rejected approaches worth preventing. Let Git retain routine run history.
+Retain only conditions that change future action, active decisions, and rejected approaches worth preventing. Routine history belongs in Git.

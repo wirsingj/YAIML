@@ -56,4 +56,4 @@ Memory should normally travel with its repository, regardless of business or lic
 
 Memory takes effort to maintain and consumes context. A stale summary can mislead; excessive splitting can make reading harder. A project whose existing documentation already carries this understanding may gain little from additional files.
 
-YAIML’s current phase favors trying the plain-file workflow and recording failures before adding tooling or claiming standard status. The [evaluation guide](EVALUATION.md) describes how to gather evidence.
+YAIML's current phase centers on plain files, with [YAIMLACP](YAIMLACP.md) describing optional, user-confirmed coordination through existing subagents. Compare against one-agent work and record cost and failures before claiming benefits or standard status. The [evaluation guide](EVALUATION.md) describes how to gather evidence.

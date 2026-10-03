@@ -2,11 +2,12 @@
 
 YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
 
-The immediate route is the self-contained [init prompt](prompts/init-yaiml.md). Improve the plain-file workflow before adding tools.
+The immediate route is the self-contained [init prompt](prompts/init-yaiml.md). Improve the plain-file workflow and evaluate optional coordination against actual needs.
 
 ## Now
 
 - Trial initialization, refresh, and compression in real repositories; keep YAIML’s own core memory short.
+- Trial [YAIMLACP coordination](docs/YAIMLACP.md): verify confirmation, bounded handoffs, cancellation, and actual cost against one-agent work. Add no server or installation.
 - Test portability across machines, contributors, and AI providers, including mature adopters with older discovery layouts.
 - Gather three kinds of case evidence: a maintainer-owned project, an unfamiliar public repository, and a project owned by someone else. [YTMMOCC](docs/case-studies/YTMMOCC.md) supplies maintainer-owned inspection evidence only.
 - Run comparable fresh-session tasks and retain failures and neutral results. Measure context cost as well as useful work.
@@ -37,9 +38,9 @@ The separate `yaiml.version` field identifies discovery layout. Editing guidance
 
 ## Later
 
-Possible helpers include initialization, stale-claim review, pruning, context assembly, editor snippets, and team review workflows. They remain deferred until the plain-file approach has enough use to justify them.
+YAIMLACP describes optional serverless coordination for memory maintenance and project workflows. Use trials to establish whether the handoff convention improves on ordinary one-agent work; it makes no claim of standard MCP interoperability.
 
-No runtime services, databases, orchestration, package dependencies, web apps, SDKs, provider adapters, or Markdown validators are planned during this phase. Any future validation would be limited to `yaiml.yml`.
+This reference repository supplies no runtime services, databases, orchestration engine, package dependencies, web apps, SDKs, or provider adapters. Ordinary adoption requires none. Memory-format validation remains limited to `yaiml.yml`; coordination messages impose no Markdown schema.
 
 ## Human Decisions
 

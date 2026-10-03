@@ -36,7 +36,7 @@ Paths resolve from the map's directory, normally the repository root. Include on
 
 Keep machine-specific paths, drive names, user-profile paths, `file://` URIs, localhost URLs, and private workspace URLs out of versioned guidance. Supply private reference locations through the human request or non-versioned configuration. A stable, team-approved public reference may be recorded when requested.
 
-No YAIML parser is required. Any future validation remains limited to discovery; memory bodies stay free-form Markdown.
+No YAIML parser is required. Memory-format validation remains limited to discovery; memory bodies stay free-form Markdown. Coordination handoffs describe message meaning without requiring a parser or schema.
 
 ## Discovery Layout Compatibility
 
@@ -73,7 +73,7 @@ A general init or refresh request does not authorize discovery migration. Migrat
 
 Tolerating older layouts is a compatibility rule, not an invitation to add shapes. New adoption uses the recommended shape above. Report an unfamiliar layout rather than inventing a variant of it, and prefer `supporting` over a locally coined key when adding supporting entries to an existing map.
 
-Quote the version value. Written bare, `yaiml: 0.2` parses as a number, so `0.20` and `0.2` become the same value and a future `0.10` sorts below `0.9`. Quoted, it stays the label it was meant to be. This is the one discovery detail worth repairing in place when encountered, because it changes meaning rather than style.
+Quote the discovery version value. Written bare, `yaiml: 0.2` parses as a number, so `0.20` and `0.2` become the same value and a future `0.10` sorts below `0.9`. Repair a bare numeric label by quoting its exact source spelling, not a parsed number. If spelling is unavailable or consumer compatibility unclear, report the gap before changing it. This exception preserves the label; it does not authorize layout migration or cosmetic Markdown-header changes.
 
 Compatibility has a cost that falls on readers. Every additional recognized shape is one more thing a cold agent must recognize before it can find anything, and a convention that accepts every layout has stopped locating documents reliably. Keep the recognized set small and the recommended shape single.
 
@@ -83,13 +83,23 @@ Future incompatible guidance must explain what changed, what can stay unchanged,
 
 ## First-Time Adoption
 
-Paste the standalone [Init YAIML](../prompts/init-yaiml.md) prompt into the target repository's agent session. It covers bounded inspection, reuse of existing documents, filename collisions, and verification without downloads or installation.
+Paste the complete standalone [Init YAIML](../prompts/init-yaiml.md), including its embedded texts, into the target repository's agent session. It covers bounded inspection, reuse, filename collisions, and verification without downloads or installation. The agent creates or updates supported instruction files locally from the prompt; users do not obtain them separately.
+
+Completeness takes priority over seed length. Keep a human-readable opening; optimize embedded text for agents using concise directives, useful headers, minimal whitespace, valid Markdown/YAML. Preserve every obligation, trigger, exception, permission, retention rule, notice, and context route. Human readability remains necessary; ambiguous shorthand is not compression.
 
 Review the result for preserved project knowledge and honest setup gaps. [Agent Integration](AGENT_INTEGRATION.md) explains persistent activation; [Core Document Family](CORE_DOCUMENT_FAMILY.md) explains fact placement.
+
+Init is the seed; the adopting project owns the evolving memory. Its embedded operating guide preserves everyday maintenance procedures, its dormant template collection preserves the three core and seven specialist starters, and its complete [YAIMLACP](YAIMLACP.md) text preserves optional handoffs. Save these locally or reconcile them with equivalent existing owners, index actual paths, and retain the embedded notice with copied material. Do not report complete setup with missing bodies or remote-only pointers.
+
+The startup/context reminder considers coordination without extra calls. Explain the option, cost, access, and limits and obtain affirmative confirmation before first use or changed scope/cost. Saving guidance does not authorize workers. Runtime support still belongs to the host.
+
+The seed carries procedures and writing aids, not this reference project's facts or policies. Instantiate specialist memory only for useful project knowledge; keep unused starters dormant and out of routine context. A new project needs no source-repository access to use them. Future convention refreshes use a supplied snapshot and preserve local adaptations; there is no automatic upstream dependency.
 
 ## Existing YAIML Update
 
 A convention refresh applies useful reference changes to local guidance while preserving the project's own memory. It is distinct from updating SoT after ordinary work.
+
+Paste the complete current init to perform this refresh. The prompt supplies both the request and reference; no separate upgrade wording, source-repository access, or URL is needed. Existing adoption triggers reconciliation rather than regeneration, even when discovery versions match.
 
 1. Check local instructions, discovery, worktree state, and relevant memory, reading headers first. Preserve uncommitted and concurrent work.
 2. Identify the supplied reference revision or snapshot, including material uncommitted reference edits. If no reference is available, request one rather than guessing.
@@ -102,6 +112,14 @@ Do not import this reference repository's own facts, personal policies, license,
 Remove obsolete machine-specific reference entries only when their purpose is understood, and repair dependent instructions. Re-read concurrent changes before writing; keep contributor conflicts visible. An unchanged reference still warrants checking local drift, but a repeat refresh with no material difference leaves files unchanged.
 
 The optional [update prompt](../prompts/update-yaiml.md) carries this workflow into another repository.
+
+Refresh persistent instructions and their local operating, template, and coordination content together. A complete pasted init can be the reference; use its embedded texts to repair missing guides without downloads. Preserve scoped decisions and distinguish revised instructions from observed behavior. A documentation refresh does not approve delegation, server creation, or configuration changes.
+
+### Correcting An Incomplete Adoption
+
+Repository access during one session does not establish that later agents received equivalent local guidance. Compare meaning across the installed core roles, evidence/synthesis/retention/branch rules, maintenance procedures, ten starters, YAIMLACP, notices, and active instruction routes. Classify each as missing, equivalent, intentionally adapted, conflicting, or unverified; different filenames are not defects.
+
+Add missing reusable guidance, repair unreachable bodies and stale instructions, and reconcile conflicting rules through established authority. Preserve project facts, decisions, local protections, and healthy equivalent guidance; do not regenerate mature memory. Report what is present, what is configured to load, and what a fresh session actually used separately. Unknown prior guidance cannot establish historical drift. Record unresolved gaps, not an accumulating scorecard.
 
 ## Normal Implementation Work
 

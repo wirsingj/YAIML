@@ -1,6 +1,6 @@
 # Minimal Notes YAIML Example
 
-This is a tiny fictional example that shows the smallest useful YAIML shape.
+This is a tiny fictional example focused on YAIML's core memory roles.
 
 It has:
 
@@ -10,7 +10,7 @@ It has:
 - `ARCHITECTURE.md` for durable system shape;
 - `MAINTAINER_GUIDE.md` for procedures.
 
-It intentionally has no application code and no supporting YAIML documents. The point is to show that YAIML can start small.
+It intentionally has no application code or specialist project memory. This core-only illustration omits the reusable operating guide, dormant templates, and YAIMLACP that standalone init saves locally. It is not a complete snapshot of init output.
 
 ## Short Paste-And-Go Demo
 
@@ -20,7 +20,7 @@ Give the agent this brief, followed by the contents of [Init YAIML](../../prompt
 
 > This scratch project is Minimal Notes. Its intended v1 lets one person create, edit, search, and delete plain-text notes locally. Keep v1 local-only; sync is deferred. There is no application source yet. Initialize project memory only. Do not build the app, install anything, or commit. Record missing design decisions as unknown.
 
-Review the result: three concise core documents, a discovery map, and one agent-instruction pointer. Local-only is declared intent; the absence of application source prevents runtime claims. There should be no empty supporting documents or invented test results. The files in this example illustrate a possible shape, not exact required output.
+Review the result: three concise core documents, discovery, a supported agent-instruction pointer, and local operating guidance, templates, and YAIMLACP from the embedded text, with its copied-material notice. Local-only is declared intent; absent source prevents runtime claims. There should be no empty specialist documents, downloads, workers, or invented test results. Existing equivalent guidance may be reused.
 
 Start a fresh session in that same scratch folder with only this request:
 

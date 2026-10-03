@@ -6,7 +6,7 @@ YAIML keeps a project's current engineering understanding in its repository, so 
 
 A fresh session can read the code and still miss why a feature was deliberately limited, which approach was rejected, or whether a test actually passed. YAIML gives that knowledge a maintained home alongside the code.
 
-YAIML is an early experiment with the ambition to become a widely adopted standard. You can use it today without installing anything; independent evidence of its effectiveness is still needed.
+YAIML is an early project-memory initiative with the ambition to become a widely adopted standard. Its convention and documentation are usable without installing anything; independent evidence of its effectiveness is still needed.
 
 ## Why Keep Project Memory?
 
@@ -18,11 +18,11 @@ The loop is simple: read the current understanding, check it against the task, d
 
 ## Try It In A Repo
 
-Open your project in a repository-aware AI chat or coding agent. Copy the contents of [Init YAIML](prompts/init-yaiml.md) into that session. The prompt is self-contained: you do not need to download this repository.
+**Start with one complete prompt.** Open your project in a repository-aware AI chat or coding agent and paste [Init YAIML](prompts/init-yaiml.md), including its embedded texts. Setup instructions, maintenance procedures, document templates, and optional coordination guidance arrive together, ready to use locally.
 
-The agent needs project read/write access. It inspects the repository, reuses useful documentation, writes a small memory set, and connects your agent instructions. It reports evidence and setup gaps. No dependency installation or full code audit is required. Review the diff for invented facts, lost decisions, or sensitive information before accepting it.
+With project read/write access, the agent builds on your existing documentation, connects supported agent instructions, and saves the reusable guidance in your repository. You get project memory and the procedures to maintain it, with no separate downloads or installations. The resulting changes are available for your review.
 
-Initialization can recover context from available files and supplied decisions. It cannot recover intent that existed only in a vanished chat.
+**Upgrade through the same simple workflow.** Reapply the latest complete init prompt to refresh guidance and agent instructions around your project's accumulated knowledge, local decisions, and existing discovery layout. The prompt carries its own reference, so upgrading takes the same paste as first-time setup. Reviewable changes keep you in control of each update.
 
 ## What Lives In Your Repository
 
@@ -36,6 +36,8 @@ Initialization can recover context from available files and supplied decisions. 
 | `yaiml.yml` | Paths to those documents |
 
 Each memory document has a short header explaining its role and maintenance. Names and headings can fit the project. Add supporting documents only when recurring knowledge needs its own home.
+
+**Ready to grow with your project.** The init leaves local guidance and templates that agents can use to maintain core memory and add specialist documents as needs emerge. Your project owns the files, decisions, and adaptations. Agents select relevant sections and keep unused templates dormant, keeping everyday reading focused. The guidance stays available across new chats, independently of the original conversation or the YAIML repository.
 
 `AGENTS.md` or its equivalent tells the agent how to work, including when to read and update YAIML. The memory documents hold what the project currently understands. These roles can overlap; reuse existing documentation where it fits.
 
@@ -65,11 +67,13 @@ Routine work needs no extra prompts. For occasional maintenance, “Update YAIML
 
 See [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md) for compatibility and the [maintenance prompt catalog](docs/ADOPTION_AND_UPGRADES.md#maintenance-prompts) for explicit orientation, auditing, compression, and realignment.
 
+Persistent instructions also remind agents to consider optional coordination at startup and whenever YAIML context is loaded or refreshed. [YAIMLACP](docs/YAIMLACP.md) defines handoffs for the host's existing subagents, with a clear option/cost explanation and user confirmation before first use or changed scope/cost. It requires no server or installation and does not implement standard MCP. Ordinary work with one agent remains the default when delegation offers no clear benefit.
+
 ## Evidence And Limits
 
 [YTMMOCC](docs/case-studies/YTMMOCC.md) records maintainer-owned adoption. [Local adoption exercises](docs/case-studies/ADOPTION_TRIAL.md) record isolated initialization, legacy refresh, and compression with measured document sizes. Neither establishes productivity gains or independent adoption. [The current review](docs/COLD_START_REVIEW.md) records repository findings and remaining gaps.
 
-YAIML needs maintenance and consumes reading context. Agents read the concise core, then supporting material relevant to the task. Stale or overgrown memory can mislead them. If your existing docs already preserve this understanding, adopting another convention may add little.
+YAIML needs maintenance and consumes reading context. Agents read the concise core, then supporting material relevant to the task. Stale or overgrown memory can mislead them. Initialization draws on available files and supplied decisions; intent lost with an old chat still needs human input. If your existing docs already preserve this understanding, adopting another convention may add little.
 
 For a team trial, use one bounded maintenance task and compare fresh sessions with and without YAIML. Track missed constraints, human corrections, useful work, and context cost. [Evaluation](docs/EVALUATION.md) provides the method; benefits beyond the maintainer's projects remain unproven.
 

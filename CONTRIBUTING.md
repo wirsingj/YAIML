@@ -9,7 +9,7 @@ The value of YAIML is the convention for preserving project understanding, not t
 ## Ground Rules
 
 - Keep the center on living project memory, not schema design for Markdown documents.
-- Do not add CLIs, SDKs, package manifests, provider adapters, web apps, or parser implementations during the convention-first phase.
+- [YAIMLACP](docs/YAIMLACP.md) supplies optional coordination guidance using existing host capabilities, without a server or installation. Adding a runtime, CLI, SDK, package manifest, provider adapter, web app, or parser here requires an authorized implementation scope; ordinary adoption remains usable without them.
 - Do not add conformance fixtures or formal validation machinery for Markdown memory documents unless the project explicitly changes phase.
 - Preserve the distinction between human intent and implementation evidence.
 - Preserve the distinction between SoT, durable Architecture, and procedural Maintainer guidance.

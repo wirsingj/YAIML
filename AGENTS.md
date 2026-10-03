@@ -6,6 +6,7 @@ Before making changes:
 2. Read the three core documents below and task-relevant supporting material. For each selected YAIML document, read its stable header before its body; `read-with` is a relevance hint, not a recursive loading requirement.
 3. Treat `docs/SoTY.md`, `docs/ARCHITECTURE.md`, and `docs/MAINTAINER_GUIDE.md` as this repository's living project memory.
 4. Treat examples, templates, prompts, and guides as supporting artifacts that must stay synchronized with the living-memory concept.
+5. At startup and whenever loading or refreshing YAIML context, consider serverless subagent coordination from available context without extra scans or calls. For a concrete benefit, read `docs/YAIMLACP.md`. Describe the option, access, limits, cost, and single-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Without confirmation, continue independent work without delegation. Reuse valid scoped approval and current guidance. Do not build a server or install anything for this convention.
 
 Working rules:
 
@@ -19,7 +20,7 @@ Working rules:
 - Treat "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as project-memory cleanup/compression language: rewrite affected YAIML documents to remove stale, repetitive, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
 - Treat older recognizable discovery layouts such as `documents.sot.path` as compatibility inputs to understand before migrating, not as a reason to overwrite mature adopter memory.
 - Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
-- Do not introduce implementation libraries, CLIs, SDKs, provider adapters, package manifests, schemas for Markdown memory documents, conformance fixtures, or web applications during the convention-first phase.
+- YAIMLACP documents coordination through existing host capabilities. It adds no server, SDK, installation, or separate runtime. Do not add implementation libraries, CLIs, provider adapters, package manifests, or web applications here without an authorized implementation scope. Keep Markdown memory free of schemas and conformance fixtures.
 - Preserve the MIT License unless the maintainer explicitly approves a license change.
 - Before finishing material work, update only affected YAIML documents without waiting for a separate request, prune stale state, and do not append a work diary. Respect read-only task scope and leave unchanged memory alone.
 - Report contradictions rather than smoothing them into confident prose.

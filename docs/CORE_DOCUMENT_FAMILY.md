@@ -15,6 +15,8 @@ agent-guidance: Keep roles semantically firm and syntactically flexible. Avoid c
 
 YAIML starts with three distinct roles, normally in three Markdown documents. Reuse existing files that already serve those roles; local filenames and headings may vary.
 
+Standalone init also retains embedded operating guidance, dormant document templates, and YAIMLACP locally. These reusable writing and workflow aids are distinct from project facts. They let the project grow its own memory without fetching the reference repository; their presence does not require every possible memory document or extra agent work.
+
 A default filename is not permission to replace unrelated content. Choose a nonconflicting path and record it in discovery. When adapting a template into new memory, set a role-appropriate word budget; existing equivalent headers remain valid.
 
 | Role | Owns | Does not own |

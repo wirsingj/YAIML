@@ -2,7 +2,7 @@
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
-purpose: Preserve YAIML's durable conceptual model, artifact boundaries, and deferred tooling boundaries.
+purpose: Preserve YAIML's durable conceptual model, artifact responsibilities, and tooling boundaries.
 belongs-here: conceptual architecture, artifact responsibilities, role boundaries, deferred approaches.
 not-here: current priorities, command procedures, complete file inventory.
 durability: durable; update when roles, artifact responsibilities, or deferred tooling boundaries change.
@@ -15,7 +15,7 @@ agent-guidance: Verify repository shape before claiming artifacts. Surface confl
 
 ## System Model
 
-YAIML is a documentation convention. This repository supplies reference guidance, prompts, templates, examples, and its own living project memory. Adopters keep ordinary Markdown files in their repositories; no YAIML runtime participates in their application or build.
+YAIML is a project-memory initiative centered on a documentation convention. This repository supplies guidance, prompts, templates, examples, and living project memory. Adopters keep ordinary Markdown files; no YAIML runtime is required in their application or build.
 
 `yaiml.yml` maps document roles to paths. It is a discovery index, not a schema for memory bodies. Discovery compatibility belongs in [Adoption And Updates](ADOPTION_AND_UPGRADES.md).
 
@@ -37,28 +37,28 @@ YAIML is a documentation convention. This repository supplies reference guidance
 | AGENTS.md | Instructions for contributors’ agents working on YAIML itself |
 | docs/SoTY.md, this file, Maintainer Guide | YAIML’s own current state, architecture, and procedures |
 | Other docs/ guides | Reference explanations by topic |
-| templates/ | Optional starters, adapted rather than copied as empty forms |
-| prompts/init-yaiml.md | Self-contained adoption instructions |
+| templates/ | Document starters and portable operating guidance; sources for embedded init text |
+| prompts/init-yaiml.md | Self-contained seed: setup, pointer, operating guide, templates, coordination, and copied-material notice |
 | Other prompts/ | Explicit orientation, audit, update, compression, refresh, and realignment helpers |
 | examples/ | Minimal and larger fictional document families, plus a short demo; no application code |
 | docs/case-studies/ and COLD_START_REVIEW.md | Evidence notes with scope and limitations |
 
-The reference repository contains more documents than a typical adopter needs because it explains the convention. Initialization should not reproduce this inventory in an adopting project.
+Init retains reusable procedures and dormant starters locally. Project-specific memory unfolds only for useful knowledge; reference-project facts, policies, case studies, and inventories do not transfer.
 
 ## Reading And Maintenance Boundaries
 
-The normal loading sequence is discovery, three concise core documents, then task-relevant supporting material. History and specialist references load only when needed. A `read-with` header is a relevance hint, not a recursive import.
+The normal loading sequence is discovery, three concise core documents, then task-relevant support. At startup and on context loading or refresh, consider coordination using available context; consult [YAIMLACP](YAIMLACP.md) for a concrete benefit. Persistent instructions carry its user-confirmation gate. History and specialist references load only when needed; `read-with` is a relevance hint, not a recursive import.
 
 Headers communicate role, responsibility, lifecycle, update triggers, and evidence/conflict behavior. Field names, titles, wording, and body sections remain adaptable. No Markdown parser or conformance checker is required.
 
-The init prompt owns the complete copyable instruction pointer and repeats the minimum convention needed for standalone, bounded adoption without installation. Reference guides explain their own topics and link across boundaries. Templates and fictional examples may repeat essentials for independent use; they must not introduce competing policy. External coordinating tools are optional users of the files.
+Init owns the instruction pointer and complete text for adoption/growth without downloads. Humans receive a readable opening; agents are the primary operational readers. Compress payloads while preserving obligations, conditions, exceptions, authority, context routes, headers, and syntax. Agents reconcile local instructions, operating guidance, dormant templates, and YAIMLACP; adopters own adaptations. Embedded copies match source guides/templates. No automatic upstream update or competing example policy is implied.
 
 Persistent repository instructions carry reading and maintenance into later sessions. Initialization connects applicable existing tool routes and the active agent's supported mechanism to one shared memory family, preserving instruction scope. A discovery file alone cannot activate an agent. Configured instructions and observed loading are different evidence. No background process maintains memory between sessions. Memory follows its checkout through ordinary branch review. Routine edits reconcile affected passages; broad compression is separately scoped. Semantic integration follows existing decision authority, with no required coordinator or CI service.
 
 ## Deferred And Retired Approaches
 
-During the convention-first phase, do not add implementation libraries, CLIs, SDKs, provider adapters, package manifests, services, databases, orchestration, or web applications. A future helper would serve project-local files without becoming an adopter’s runtime or build dependency.
+YAIMLACP is a serverless handoff convention using native host subagents, not standard MCP. It adds no server, SDK, installation, or runner. Skills supply methods; the lead owns delegation, evidence review, and memory integration. Describe the option and obtain affirmative user confirmation before first use or changed scope/cost. Existing host controls govern access and enforceable limits; documentation alone cannot enforce them. Basic adoption remains no-install.
 
-`SPEC.md` as the normative center, Markdown schemas, JSON-LD metadata systems, conformance fixtures, RFC-style requirements, and custom `.yaiml` memory files are retired for this phase. Do not revive them without an explicit human phase change. Any future validation should be limited to the discovery map.
+`SPEC.md` as the normative center, Markdown schemas, JSON-LD metadata systems, conformance fixtures, RFC-style requirements, and custom `.yaiml` memory files are retired for this phase. Do not revive them without an explicit human phase change. Memory-format validation stays limited to discovery; coordination messages require no parser or schema.
 
 Preserve the MIT License and the maintainer’s [independence declaration](PROJECT_INDEPENDENCE.md). Tooling, licensing, release labeling, and governance changes remain human decisions.

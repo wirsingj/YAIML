@@ -21,6 +21,7 @@ YAIML is a discovery and reading convention, not a command to load every documen
 | --- | --- |
 | Discovery: applicable agent instructions and `yaiml.yml` | Starting work in the repository |
 | Core: SoT, Architecture, Maintainer Guide | Doing meaningful project work |
+| Local operating guide, dormant templates, YAIMLACP | The relevant maintenance procedure, document creation, or useful coordination needs them |
 | Supporting: specialist project memory | The task touches that document’s domain |
 | Deep reference: history, audits, incident or release records | A specific question needs the detail |
 
@@ -30,7 +31,7 @@ Keep the core concise enough for recurring use. Split supporting knowledge only 
 
 Use `yaiml.yml` to find the document roles and paths. Paths resolve relative to the map’s directory. [Adoption And Updates](ADOPTION_AND_UPGRADES.md#version-awareness) owns the current example, version meaning, and compatibility policy.
 
-Supporting entries announce available context. They do not require automatic loading or new files. Read recognizable older maps without migrating them just because they differ from the current layout.
+Supporting entries announce available context, not automatic loading. Init saves its embedded procedures, templates, and coordination guide locally so later sessions need no downloads. Load relevant sections, not the whole init or template collection; instantiate specialist memory only when useful. Read older recognizable maps without automatic migration.
 
 Resolve paths, including symlinks, before following them. Discovery does not authorize reading outside the repository, fetching remote references, or accessing sensitive material. Treat those as separate scope decisions under the current request and repository rules.
 
@@ -44,6 +45,8 @@ If the map is absent, use local instruction pointers or look for `SOT.md`, `ARCH
 4. Consult deep references where a consequential claim needs evidence.
 5. Verify task-dependent claims against current repository reality.
 6. Briefly identify the context used and material gaps. There is no need to enumerate every irrelevant document skipped.
+
+At startup and whenever loading or refreshing YAIML context, consider serverless coordination from available context without extra scans or calls. Read [YAIMLACP](YAIMLACP.md) for a concrete benefit; otherwise continue with existing tools. Persistent instructions retain the requirement to describe the option and obtain affirmative confirmation before first use and again if scope or cost changes. Reuse current guidance and valid scoped approval; the guide adds no server or installation.
 
 A header’s `read-with` is a companion hint, not a recursive import. Follow relevant references without repeatedly loading the same file. A template’s mention of a supporting role does not require that document to exist.
 

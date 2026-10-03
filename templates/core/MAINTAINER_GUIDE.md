@@ -4,41 +4,24 @@ role: maintainer
 title: Maintainer Guide
 purpose: Current procedures, commands, diagnostics, and failure playbooks.
 belongs-here: setup, commands, tests, build/run flows, debugging paths, important files, operations, release, recovery.
-not-here: product intent, durable architecture, complete history.
+not-here: Product intent, durable architecture, full history.
 durability: current-only; remove dead commands and obsolete paths.
 read-with: SoT; Architecture.
 update-when: commands, setup, diagnostics, release, or recovery procedures change.
 agent-guidance: Verify command claims when practical. Mark environment-dependent or unverified procedures.
 ---
-
 # Maintainer Guide
-
-Adapt these headings; omit empty or irrelevant sections. Keep procedures current and actionable.
-
+Adapt headings; omit unused sections; keep procedures actionable/current.
 ## Setup And Commands
-
-Record the shortest useful path from checkout to local work. Identify required tools and environment assumptions.
-
-Separate commands actually run from commands found by source inspection and procedures still unverified. Record the command, outcome, and relevant date, revision, and environment for results that matter. Do not imply a script passed because it exists.
-
+Shortest checkout-to-work path, tools, assumptions. Separate executed/defined commands and unverified procedures. Retain consequential command, outcome, date, revision, environment; existence is not a pass.
 ## Focused Checks And Diagnostics
-
-List useful test, build, lint, or diagnostic procedures and how to interpret results. Mark service, hardware, account, or credential requirements without storing sensitive values. Prefer sanitized outcomes to raw logs.
-
-For consequential checks, name the invariant, independent basis for expected outcomes, and comparison conditions. Distinguish matching outputs from intended behavior; record missing reference evidence.
-
+Test/build/lint/diagnostic procedures and interpretation; service/hardware/account/credential requirements without sensitive values. Retain sanitized outcomes, not logs. Name consequential invariants, independent expectation sources, comparison conditions, evidence gaps; matching outputs alone do not establish intent.
 ## Important And Dangerous Files
-
-Map files and boundaries a contributor needs before editing; omit a complete file inventory.
-
+Editing boundaries and important files; no complete inventory.
 ## Failure, Release, And Recovery Procedures
-
-For recurring failures, record symptoms, likely owner, evidence to inspect, and recovery steps. Include release, rollback, backup, or restore procedures when applicable, with verification limits.
-
+Recurring symptoms, likely owners, evidence, recovery. Relevant release, rollback, backup/restore procedures and verification limits.
 ## YAIML Maintenance
-
-Record applicable agent instruction routes, their shared guidance, and any setup gaps. Name existing branch/reviewer responsibilities when known. Routine changes edit affected passages; coordinate broad cleanup separately. Before integration, reconcile memory with the actual target and combined implementation, including clean merges. Preserve independent contributions and unresolved decisions; recheck affected evidence after branch changes. Routine work updates affected memory without a separate request; respect read-only scope.
-
-For a convention refresh (“update YAIML”), identify a supplied or workspace-local reference and revision; request one if missing. Preserve project knowledge, discovery layout, custom fields, and concurrent edits. Migrate only with explicit authorization and checked compatibility.
-
-For compression (“prune SoT” or “compress YAIML”), replace stale state and repeated history with current understanding. Preserve decisions, evidence limits, unresolved issues, and governed records. Measure affected memory before/after; explain net growth and necessary overages in the task response, not memory. Keep private reference locations out of versioned files.
+Local operating-guide/template/YAIMLACP routes from init or equivalent guidance; no downloads/servers. Persistent instructions assess coordination from context and require first-use or changed-scope/cost confirmation. Record current scoped decisions, sources, limits, cancellation, gaps.
+Record instruction routes, shared guidance, activation gaps, branch/reviewer responsibilities. Update affected memory without reminders; respect read-only scope. Keep edits passage-scoped; coordinate broad cleanup. Before integration reconcile actual target and combined code/memory despite clean merges; preserve independent work/conflicts and recheck affected evidence.
+“Update YAIML”: identify supplied/local reference and revision; request missing references. Preserve memory, discovery layout/extensions, and concurrent edits. Migrate only with explicit authorization and checked compatibility.
+“Prune SoT”/“compress YAIML”: synthesize current understanding; preserve decisions, evidence limits, unresolved issues, governed records. Report before/after sizes, justified growth, and necessary overages in the response. Keep private reference locations out of versioned files.

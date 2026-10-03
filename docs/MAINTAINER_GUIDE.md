@@ -20,13 +20,15 @@ This is a documentation repository. There is no application build or test suite 
 
 Use several focused passes for substantial revisions:
 
-1. **Reader path:** read README as a newcomer, then init by itself. Trace adoption claims through setup and the persistent pointer a later session receives. Check that adoption needs no other guides or empty documents.
+1. **Reader path:** read README, then init alone for adoption/refresh. Check instructions, procedures, templates, YAIMLACP, older-adopter coverage, trust boundaries, and version labels. Require no separate upgrade wording, downloads, vanished context, or empty documents; preserve project knowledge.
 2. **Meaning and consistency:** compare affected guides, prompts, templates, examples, instructions, and memory. Preserve roles, direction, uncertainty, and discovery compatibility. Check external comparisons against primary sources; avoid unsupported exclusivity claims.
 3. **Evidence and retention:** distinguish inspected evidence, prior reports, and fictional examples. Apply the [synthesis steps](PRUNING_AND_LIFECYCLE.md#sot-lifecycle) to affected memory; check that history was removed rather than renamed as lessons or moved into supporting files.
 4. **Mechanical review:** check changed Markdown links and anchors, discovery paths, stable headers, code fences, placeholders, whitespace, and unintended sensitive or machine-specific values.
 5. **Final diff:** confirm scope, licensing, and phase boundaries. Commit coherent changes and push when authorized. Report actual checks and remaining limits.
 
-Review init by itself for small projects, mature docs, filename collisions, missing access, multiple instruction routes, nested scope, include chains, repeat use, concurrent edits, and unfamiliar discovery. Keep the prompt self-contained and inspection bounded. Distinguish configured persistent instructions from observed loading; fresh-session checks should use ordinary requests without naming YAIML and verify both reading and writing, including read-only tasks.
+Review standalone init for small/mature projects, collisions, missing access, routes, nested scope, repeat use, concurrency, and unfamiliar discovery. Fresh-session checks use ordinary requests without naming YAIML; distinguish configured instructions from observed reading and maintenance, including read-only tasks.
+
+Trace [YAIMLACP](YAIMLACP.md) through startup, confirmation/decline/no-answer, changed scope/cost, and missing-guide/host cases. Check context-only assessment, bounded handoffs, cancellation, and no infrastructure setup. Manual review establishes wording coverage; actual delegation and cost require a confirmed trial.
 
 Check evidence guidance against shared-error agreement, irrelevant passing tests, missing baselines, authorized behavior changes, and unreproduced reports. Expected outcomes must not merely echo candidate output.
 
@@ -56,7 +58,7 @@ These are inspection procedures, not evidence that a review passed. Record actua
 
 ## Propagating Revisions
 
-Update the affected reference guide first, then dependent prompts, templates, and examples. Keep:
+Update owners first; sync init with templates/supporting/YAIML_GUIDE.md, docs/YAIMLACP.md, ten starters, LICENSE.md. Preserve a readable opening; optimize agent reading. Compare obligations, triggers, exceptions, authority, and reading routes before/after compression. Check headers, fences, tables, extraction, source parity offline. Keep:
 
 - SoTY current when meaning, risks, priorities, or evidence changes;
 - Architecture current when roles or artifact boundaries change;

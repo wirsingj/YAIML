@@ -23,7 +23,7 @@ Connect each applicable existing route, including tools other than the agent run
 
 Where supported, keep the complete maintenance guidance in one existing shared instruction location and have other entry points explicitly tell agents to read and follow it. Verify that route; a bare link may not cause loading. Otherwise, keep equivalent concise guidance in each applicable entry point. Avoid circular references and repeated insertion.
 
-Use available configuration or current official documentation to establish each mechanism's behavior. If the active agent has no supported instruction file, create the smallest one needed, using AGENTS.md when supported. Do not create a catalog of unused tool files. Report uncertain or unsupported routes without guessing syntax or broadening their scope.
+Use available host instructions, configuration, or local documentation to establish loading behavior. Create the active tool's instruction file locally from init's embedded pointer when needed, using AGENTS.md when supported. No downloaded instruction file is required. Names such as agent.md are not universal activation mechanisms. Avoid unused tool files; report uncertain routes instead of guessing syntax or requiring a network lookup for setup.
 
 Check syntax, activation scope, and discovery paths, including from subdirectories. For each route, report connected, already connected, or incomplete, its pointer location, tracking status or explicit private-instruction policy, and the basis for expecting it to load. Identify new files awaiting an authorized commit.
 
@@ -33,7 +33,9 @@ Distinguish configured instructions from observed fresh-session loading. If pers
 
 [Init YAIML's Connect Future Sessions section](../prompts/init-yaiml.md#connect-future-sessions) owns the complete copyable pointer. Adapt it to local paths and policies instead of maintaining a second generic version here. Repeated setup updates the existing pointer rather than appending another.
 
-The pointer carries routine reading, evidence distinctions, verification scope, synthesis, retention, and privacy rules into later sessions. Those sessions may never see the init conversation. The local Maintainer Guide supplies project-specific maintenance details. [Context Loading](CONTEXT_LOADING.md) owns reading behavior; [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns convention refresh and discovery compatibility.
+The pointer carries routine reading, the conditional [YAIMLACP](YAIMLACP.md) reminder, evidence distinctions, synthesis, retention, and privacy into later sessions. Init also saves embedded operating procedures, dormant templates, and the full coordination guide locally; losing the init conversation must not lose these capabilities. The project's Maintainer Guide points to their actual paths. [Context Loading](CONTEXT_LOADING.md) owns selective reading; [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns refresh and discovery compatibility.
+
+Connect the reminder at startup and on context loading or refresh. Retain context-only assessment, option/cost explanation, affirmative confirmation before first use, and renewed confirmation for scope or cost changes; silence is not consent. Verify the saved local guide is reachable. If it is later missing, or confirmation or native delegation is unavailable, continue independent work without workers. No server configuration or runtime is involved.
 
 ## Keeping Responsibilities Clear
 

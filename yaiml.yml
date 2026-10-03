@@ -13,6 +13,7 @@ yaiml:
     pruning_and_lifecycle: docs/PRUNING_AND_LIFECYCLE.md
     agent_integration: docs/AGENT_INTEGRATION.md
     context_loading: docs/CONTEXT_LOADING.md
+    yaimlacp: docs/YAIMLACP.md
     evaluation: docs/EVALUATION.md
     ytmmocc_case_study: docs/case-studies/YTMMOCC.md
     adoption_trial: docs/case-studies/ADOPTION_TRIAL.md

@@ -18,9 +18,11 @@ agent-guidance: Verify repository shape. Preserve human direction. Mark uncertai
 
 YAIML means Yet Another AI Markup Language: shared, repository-owned project memory for AI chats, coding agents, and human contributors.
 
-Declared: the ambition is broad adoption as a standard; current status is an early public experiment. Keep adoption convention-first and no-install, with three distinct roles, ordinary Markdown, explicit uncertainty, and synthesis. Tooling or formal specification requires a human phase change.
+Declared: the ambition is broad adoption as a standard; current status is an early public experiment. Keep ordinary adoption convention-first and no-install, with three distinct roles, ordinary Markdown, explicit uncertainty, and synthesis. A bundled runtime or formal specification remains outside the current scope.
 
-Declared: the standalone init prompt is the primary integration point. Pasting it should establish useful memory and persistent agent instructions; ordinary requests should then trigger reading and maintenance without YAIML reminders. Disclose unsupported integration. Preserve human readability and control reading/output cost.
+Declared (maintainer direction, October 2026): [YAIMLACP](YAIMLACP.md) is optional serverless coordination through existing subagents, with no server or installation. At startup and on context loading or refresh, consider usefulness without extra scans or calls. For a concrete benefit, describe the option, access, limits, cost, and one-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Reuse valid scoped approval; silence is not consent.
+
+Declared: standalone init is the seed; adopters own evolving memory. Embed procedures, templates, coordination, and instructions needed without downloads or source-repository access. Completeness takes priority over length criticism. Agents are the primary functional readers: compress embedded text without losing obligations, triggers, exceptions, authority, or context routes; retain a human-readable opening, useful headers, and valid syntax. Ordinary requests trigger maintenance without YAIML reminders. Preserve local authority, disclose activation gaps, and control recurring reading cost. Present adoption, upgrades, and local expansion through practical benefits; keep evidence limits clear.
 
 Declared: maintain this as a personal public MIT project. Preserve the [independence declaration](PROJECT_INDEPENDENCE.md); exclude employer-confidential material, secrets, private transcripts, and dependencies on private coordinator projects. Do not invent professional conclusions.
 
@@ -28,9 +30,9 @@ Declared (maintainer requests, September 2026): reduce repetition by audience an
 
 ## Current State And Evidence
 
-The repository supplies reference guides, seven prompts, templates, two fictional examples, policies, and its own core memory. There is no application runtime or build/test suite. [Architecture](ARCHITECTURE.md) owns artifact responsibilities; [Maintainer Guide](MAINTAINER_GUIDE.md) owns review procedures.
+The repository supplies reference guides including YAIMLACP's handoff convention, seven prompts, templates, two fictional examples, policies, and its own core memory. There is no MCP implementation, coordination runtime, or build/test suite. [Architecture](ARCHITECTURE.md) owns artifact responsibilities; [Maintainer Guide](MAINTAINER_GUIDE.md) owns review procedures.
 
-Init owns the complete copyable pointer, including evidence scope, independently grounded checks, contradiction handling, and decision authority needed after setup. Refresh carries these into existing adopters. Init connects applicable instruction routes to one memory family, reports gaps, and creates root discovery without inventing absent implementation. Updates replace changed facts and remove superseded state; completed work survives only as current capability, an active constraint, or an actionable lesson. Growth explanations belong in task responses. Branch guidance separates routine edits from broad cleanup and requires reconciliation before integration. These are instructions, not proven enforcement.
+Pasted init alone initializes or refreshes adoption, supplying its own reference. It owns the pointer and embeds local procedures, ten starters, YAIMLACP, and copied-material notice. Later sessions select relevant sections; unused starters remain dormant. Adoption repair compares meaning, fills missing guidance, and preserves local adaptations; content, configured loading, and observed behavior remain separate claims. Instructions carry evidence scope, independent checks, mixed-trust boundaries, incident handling, discovery-label preservation, synthesis, and branch reconciliation. Setup reports activation gaps without inventing implementation. Updates replace changed facts and remove superseded state; completion survives as capability, constraint, or actionable lesson. Growth explanations belong in responses. These are instructions, not proven enforcement.
 
 The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-studies/ADOPTION_TRIAL.md) contain dated maintainer-owned evidence. The [current review](COLD_START_REVIEW.md) describes this repository's latest changes and verification limits. Neither establishes independent adoption or productivity gains.
 
@@ -40,7 +42,7 @@ The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-
 - **Unreconciled portfolio evidence:** the September 8 account retained at Git revision 7c5e451 reports 13 tracked pointers, twelve legacy layouts and one recommended layout, but also says no deployment demonstrates that layout. Resolve that contradiction before publishing the figures. Its claims about downstream repairs and disclosure cleanup have not been rechecked here.
 - **Disclosure and portability:** prior reports describe private environment details entering shared memory and a consumer rewriting version values. Sanitization and compatibility require checking actual files and consumers; neither old audit prose nor a preserved map establishes current safety.
 - **Concurrent work:** team-scale merge burden and agent adherence remain unmeasured. Textual conflict resolution does not establish consistent meaning or combined verification.
-- **Effectiveness:** no controlled fresh-session comparison, independent adoption, or measured token savings. Configured pointers do not establish observed reading or maintenance.
+- **Effectiveness:** no controlled fresh-session comparison, independent adoption, or measured token savings. Prior adoption exercises used reference-aware sessions; they do not establish prompt-only parity. One confirmed read-only subagent review completed, without testing paste-only setup, later-session loading, refusal, cancellation, or cost enforcement. Pointers and documentation do not establish adherence or safety.
 - **Evidence and authority:** agents can promote inference or internally consistent tests into correctness and flatten contributor conflicts. A maintainer-reported depth-order regression motivated stronger independent-check guidance; its cause was not inspected here and prevention remains untested. Preserve sources, intended behavior, and unresolved disagreements.
 
 ## Immediate Priorities
@@ -53,6 +55,6 @@ The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-
 
 ## Open Questions
 
-Should discovery become essential rather than strongly recommended? Which supporting roles recur enough to warrant templates? What evidence and participation justify the [maturity milestones](../ROADMAP.md)? If tooling later becomes appropriate, which helper would improve continuity without becoming infrastructure?
+Should discovery become essential rather than strongly recommended? Which supporting roles recur enough to warrant templates? What evidence and participation justify the [maturity milestones](../ROADMAP.md)? Does YAIMLACP coordination improve outcomes enough to justify its cost over one-agent work?
 
 Retired approaches and phase boundaries belong in [Architecture](ARCHITECTURE.md). Completed audit history remains in Git; current memory keeps only findings that still affect decisions.

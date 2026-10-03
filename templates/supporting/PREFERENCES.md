@@ -2,25 +2,18 @@
 yaiml: 0.2
 role: preferences
 title: Preferences
-purpose: Durable human and project preferences that should shape agent decisions.
-belongs-here: style preferences, workflow preferences, product taste, collaboration norms, recurring human corrections.
-not-here: transient tasks, full history, implementation evidence unless it explains a preference conflict.
-durability: durable but revisable; remove preferences that are superseded or no longer true.
+purpose: Durable human/project preferences guiding agents.
+belongs-here: Style, workflow, product taste, collaboration norms, recurring human corrections.
+not-here: Transient tasks, full history, implementation evidence except to explain preference conflicts.
+durability: Durable, revisable; remove superseded/false preferences.
 read-with: SoT; Architecture; Maintainer Guide.
-update-when: a human states, corrects, or retires a preference that should affect future work.
-agent-guidance: Preserve human wording when it matters. Mark inferred preferences as inferred. Do not turn one-off choices into permanent rules.
+update-when: Human states/corrects/retires preferences affecting future work.
+agent-guidance: Preserve consequential human wording; label inference; one-off choices are not permanent rules.
 ---
-
 # Preferences
-
 ## Human Preferences
-
 ## Product Preferences
-
 ## Engineering Preferences
-
 ## Collaboration Preferences
-
 ## Inferred Preferences
-
 ## Retired Preferences
