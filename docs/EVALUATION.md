@@ -66,6 +66,8 @@ Tasks should be small enough to review and specific enough to reveal project und
 
 Prevent baseline sessions from discovering added YAIML files through search, history, or preexisting context. Retain concise reviewer notes explaining which result better respected project constraints.
 
+Verify actual startup instructions: a no-history worker can still inherit its parent's project guidance. Exclude contaminated controls from comparisons. Record runner failures separately from convention failures; unchanged files after blocked execution do not establish idempotence. The [synthetic trials](case-studies/ADOPTION_TRIAL.md#synthetic-projects-and-session-boundaries) encountered both limitations.
+
 Do not describe a personal walkthrough or hypothetical comparison as an independent fresh-session trial. If the same maintainer, prior project context, or prior chat history influenced the run, label that limitation.
 
 This comparison tests the added memory package, not whether YAIML outperforms equally informative ordinary documentation. For that question, add a condition with the same facts in existing docs without YAIML organization. Account for the cost of creating and maintaining either version.

@@ -13,7 +13,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Date: 2026-10-02. Baseline: 02911f4; review includes the uncommitted documentation changes prepared with this note.
+Source review: 2026-10-02, published in `15ff0c3` against baseline `02911f4`. Behavioral evidence updated 2026-10-03; the published seed is unchanged.
 
 Assessment: a credible candidate for a controlled pilot; broad rollout still needs behavioral evidence. This is a source/document review, not a penetration test, platform certification, or an enterprise approval. No critical exploit was demonstrated. The seed reviewed here has LF-normalized SHA-256 `b94a23b8dacb91658c9d27cb584b59b636faf2e1e1306b54907d24c6a750be0a`.
 
@@ -120,8 +120,10 @@ The correction pass checked UTF-8, conflict markers, and local links/anchors acr
 
 One explicitly approved native subagent completed a bounded read-only review and returned findings with source locations. It identified the reminder-only gap before these edits. The worker reported no edits, network, installation, retries, descendants, or leftover processes. This demonstrates one dispatched review and returned result; the reviewer also read reference documents, so it was not a blinded paste-only adoption trial.
 
+The [October 3 synthetic trials](case-studies/ADOPTION_TRIAL.md#synthetic-projects-and-session-boundaries) added verified new-adoption and legacy-preservation results. Those native workers inherited reference instructions, invalidating a prompt-only or clean-control claim. Separate CLI sessions observed one local discovery/core/guide reading route from an ordinary request, but runner failures blocked writes/tests and independent repeat-init. Unchanged hashes after those failures are not successful rerun evidence. The case study retains conditions, partial usage, negative results, and a constructed clean-merge/contradictory-behavior example.
+
 ## Remaining Limits
 
-No agent-driven initialization from the revised prompt alone, fresh-session activation, cancellation, refusal/no-answer, provider-switch, or comparative cost trial was run. Extraction proves text availability, not adherence or equal comprehension after compaction. Permission enforcement, repeated pruning, team burden, and total context cost remain unmeasured. External adopter state and historical measurements were not revalidated. Pattern scans are not a security assurance. [Evaluation](EVALUATION.md) supplies comparison methods.
+Prompt-only initialization without inherited reference guidance remains unproved. One separate-session reading route was observed, but completed maintenance, repeat-init, cancellation, refusal/no-answer, provider-switch, and comparative cost checks remain open. Extraction proves availability, not equal comprehension after compaction. Permission enforcement, repeated pruning, team burden, and total context cost remain unmeasured. External adopter state and historical measurements were not revalidated. Pattern scans are not a security assurance. [Evaluation](EVALUATION.md) supplies comparison methods.
 
 Current priorities belong in [SoTY](SoTY.md); earlier audit history remains in Git.
