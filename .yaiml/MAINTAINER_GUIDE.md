@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.8.6816f30767769e53"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -73,7 +73,7 @@ Use [Adoption And Updates](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibili
 
 | Symptom | Correction |
 | --- | --- |
-| README loses newcomers | Lead with value, self-contained setup, ordinary use and optional skills; keep deeper references optional |
+| Init is hard to find | Put a direct init link near the README title; show setup/upgrades before conceptual details; keep deeper references optional |
 | Core memory becomes a diary or catalog | Use the compression prompt; preserve current decisions, evidence, risks, and lessons |
 | Every task loads every document | Restore task-based selection; treat `read-with` as a hint |
 | Templates produce empty sections | Omit irrelevant headings and add supporting files only for concrete knowledge |

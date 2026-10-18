@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.7.ade4d0be103521e4"
+yaiml-revision: "0.8.6816f30767769e53"
 role: changes
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
@@ -11,7 +11,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current head: `0.7.ade4d0be103521e4`.
+Current head: `0.8.6816f30767769e53`.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 
@@ -199,3 +199,15 @@ Outcome: five bounded sessions passed public setup, conversational decision, pla
 Verification: inspected clean startup and actual session checks; independently checked both schedules, pack arithmetic, source preservation, thirty resources, twelve routes, revision lineage/path coverage and unchanged read-only hashes. Changed-document links, seed parity, revision stamps, preserved audit entries and whitespace passed. Full conditions and limits are in COLD_START_REVIEW.md.
 
 Affected paths: `README.md`, `.yaiml/SoTY.md`, `.yaiml/COLD_START_REVIEW.md`, `.yaiml/changes.md`.
+
+## 0.8.6816f30767769e53 — 2026-10-18
+
+Parents: `0.7.ade4d0be103521e4`.
+
+Intent/source: maintainer reported that the init prompt was difficult to find on the repository front page.
+
+Outcome: placed a direct prompt link below the README title/tagline, added an in-page shortcut and exposed plain-text access outside the disclosure. Moved setup and upgrade instructions before the conceptual explanation; retained the embedded prompt. Maintainer guidance preserves this entry-point priority.
+
+Verification: browser inspection confirmed the former prompt link was hidden inside a collapsed disclosure. Checked source placement, prompt parity, local links/anchors, revision/path coverage, retained audit entries and whitespace. No new agent trial; bootstrap behavior and product release 0.4.0 are unchanged.
+
+Affected paths: `README.md`, `.yaiml/MAINTAINER_GUIDE.md`, `.yaiml/changes.md`.

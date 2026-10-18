@@ -1,7 +1,11 @@
-<!-- yaiml-revision: 0.7.ade4d0be103521e4 -->
+<!-- yaiml-revision: 0.8.6816f30767769e53 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
+
+### [Get the init prompt →](.yaiml/prompts/init-yaiml.md)
+
+Copy it into your project's agent for **new setup or an upgrade**. [Copy it from this README instead ↓](#start-with-one-prompt)
 
 A new chat shouldn't mean explaining your project all over again.
 
@@ -11,18 +15,12 @@ Your project might be an event, a book, a research study, a team's operating pro
 
 **Paste one prompt to get started. Work normally while your agent maintains context. Choose a skill when you want more control.**
 
-## Think Of It As “Softerware”
-
-YAIML provides memory and instructions that an AI agent—an assistant able to work with your files and tools—turns into action. The agent reads, writes, reviews and checks; YAIML guides that work. There is no separate YAIML application to launch or background service to keep running. Setup creates project files and connects them to your agent.
-
-Those files have an effect when the agent uses them. That is why YAIML asks it to read current context, check actual results and write back meaningful changes. The working cycle matters as much as the words on the page.
-
 ## Start With One Prompt
 
-Put your project materials—notes, plans, drafts or code—in a folder your AI agent can read and edit. Expand the prompt below, copy it, and paste it into the agent. It retrieves the detailed guidance for you; you do not need to learn YAIML's file structure or read its manuals to get started. Continued access to those files lets later sessions recover and maintain the context.
+Put your project materials—notes, plans, drafts or code—in a folder your AI agent can read and edit. Open the [plain-text init prompt](https://raw.githubusercontent.com/wirsingj/YAIML/main/.yaiml/prompts/init-yaiml.md) or expand it below, copy the whole prompt, and paste it into the agent. It retrieves the detailed guidance for you; you do not need to learn YAIML's file structure or read its manuals to get started. Continued access to those files lets later sessions recover and maintain the context.
 
 <details>
-<summary><strong>Copy the setup prompt</strong></summary>
+<summary><strong>Copy the init prompt here</strong></summary>
 
 ```text
 # Init YAIML
@@ -47,13 +45,19 @@ Run bootstrap now in the target project. One invocation covers acquiring guidanc
 This setup creates no runtime, background task or automatic backlog execution. Existing authority still governs publication, destructive actions and YAIMLACP delegation.
 ```
 
-[Standalone copy of this prompt](.yaiml/prompts/init-yaiml.md).
-
 </details>
 
 The agent reads your project, preserves existing knowledge, creates useful memory and connects supported instructions and skills for later sessions. It should finish by reporting what is ready and any remaining setup gaps. No second skill invocation is needed.
 
 Setup needs access to YAIML's public guidance or a supplied copy. Your agent's normal permissions and usage costs still apply.
+
+**Already using an older YAIML?** Paste this init again to acquire current guidance and skills. It preserves existing memory and local rules; moving them into `.yaiml/` requires your approval. Once connected, “Update YAIML” requests future refreshes. Updates preserve project-specific skills and adaptations.
+
+## Think Of It As “Softerware”
+
+YAIML provides memory and instructions that an AI agent—an assistant able to work with your files and tools—turns into action. The agent reads, writes, reviews and checks; YAIML guides that work. There is no separate YAIML application to launch or background service to keep running. Setup creates project files and connects them to your agent.
+
+Those files have an effect when the agent uses them. That is why YAIML asks it to read current context, check actual results and write back meaningful changes. The working cycle matters as much as the words on the page.
 
 ## Work Normally; Keep Context Current
 
@@ -89,8 +93,6 @@ Choose a workflow or set its scope in ordinary language, or select a named skill
 Where supported, use slash commands such as `/yaiml-to-do 10`. In [Codex CLI/IDE](https://learn.chatgpt.com/docs/build-skills), use `/skills` or `$yaiml-to-do 10`. Ordinary requests and explicit skill invocations use the same methods.
 
 A count limits work to feasible priorities. Starting a session does not launch the backlog. You can also ask the agent to create a project-specific skill for a recurring procedure.
-
-**Already using an older YAIML?** Paste this init again to acquire current guidance and skills. It preserves existing memory and local rules; moving them into `.yaiml/` requires your approval. Once connected, “Update YAIML” requests future refreshes. Updates preserve project-specific skills and adaptations.
 
 ## What Lives In Your Project
 
