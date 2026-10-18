@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.4.15281bd42709497b"
+yaiml-revision: "0.6.bc33f2ed89763ef4"
 role: changes
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
@@ -11,7 +11,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current head: `0.4.15281bd42709497b`.
+Current head: `0.6.bc33f2ed89763ef4`.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 
@@ -165,3 +165,25 @@ Intent/source: complete the maintainer-authorized publication check and replace 
 Outcome/verification: `main` and annotated `v0.4.0` published product commit `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public README, init and all thirty resources matched Git blobs; the normalized package matches the corrected trial snapshot. Bundle fingerprint and scope are in COLD_START_REVIEW.md. This adds publication evidence, not a fresh agent trial or a new product release.
 
 Affected paths: `.yaiml/COLD_START_REVIEW.md`, `.yaiml/changes.md`.
+
+## 0.5.0b52518dbd3a7b8f — 2026-10-18
+
+Parents: `0.4.15281bd42709497b`.
+
+Intent/source: maintainer reaffirmed applicability beyond software to project, content and systems management, and reported sharing YAIML with his brother with feedback pending.
+
+Outcome/verification: clarified current direction and feedback status against existing project guidance. Sharing does not establish adoption; broader-domain usability remains unverified. Documentation consistency and revision/path checks only; no new behavioral trial or product change.
+
+Affected paths: `.yaiml/SoTY.md`, `.yaiml/changes.md`.
+
+## 0.6.bc33f2ed89763ef4 — 2026-10-18
+
+Parents: `0.5.0b52518dbd3a7b8f`.
+
+Intent/source: maintainer requested a newcomer-friendly README explaining “softerware,” applicability beyond software, and why reading, writing and input/output checks make the method functional.
+
+Outcome: introduces agent-executed memory/instructions, cross-domain examples and a workshop decision/recall scenario; explains proportional result checks, meaningful updates and file-access needs. Keeps revision mechanics optional, the init payload intact, and nondeveloper usability explicitly unverified.
+
+Verification: source-guidance consistency, unchanged seed payload and local links/structure reviewed; no fresh-session or nondeveloper trial was run for this editorial change.
+
+Affected paths: `README.md`, `.yaiml/SoTY.md`, `.yaiml/changes.md`.

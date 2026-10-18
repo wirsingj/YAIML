@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.6.bc33f2ed89763ef4"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -17,7 +17,7 @@ agent-guidance: Verify repository shape. Preserve human direction. Mark uncertai
 
 ## North Star And Human Direction
 
-YAIML means Yet Another AI Markup Language: shared, repository-owned project memory for humans and AI agents. Declared scope spans domains; source code is optional. Current guidance/examples emphasize software, with broader-domain behavior unverified.
+YAIML means Yet Another AI Markup Language: shared, project-owned memory and methods for humans and agents. The maintainer endorses “softerware”: agents read context, act, check actual inputs/outputs and maintain changed understanding. Scope spans projects, content and systems across fields; code is optional. Broader-domain usability remains unverified.
 
 Declared: pursue broad adoption while remaining an early public experiment: no installation, ordinary Markdown, explicit uncertainty and synthesis. A runtime or formal specification remains outside scope.
 
@@ -29,7 +29,7 @@ Declared: personal public project; require credit, permit commercial/client use,
 
 Declared (maintainer direction, October 2026): stamp YAIML-managed Markdown per material iteration; audit all affected project paths in core `changes.md`. Use YAIML major, local counter and random tag, preserving concurrent lineage. Updaters must establish prospective legacy baselines. [Versioning](VERSIONING.md) owns the method; no-op/read-only work stays unchanged.
 
-Declared (maintainer direction, October 2026): reduce repeated rules and normal-work overhead without losing context, evidence or maintenance. Put shared mechanics in one owner and test an unfamiliar adopter. The maintainer reports no known independent adoption; internal installations/trials do not establish outside use. Preserve project-specific constraints during consolidation.
+Declared (maintainer direction, October 2026): reduce repeated rules and normal-work overhead without losing context, evidence or maintenance. Put shared mechanics in one owner and test an unfamiliar adopter. No independent adoption is known. Reader feedback from the maintainer's brother is pending; sharing is not adoption. Preserve project-specific constraints during consolidation.
 
 ## Current State And Evidence
 
