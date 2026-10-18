@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.4.15281bd42709497b"
+yaiml-revision: "0.7.ade4d0be103521e4"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -14,7 +14,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-18. Experimental 0.4.0 consolidates ordinary work into the shared guide; specialized skills add detail and host entries route to their owners. The ShelfList draft trial below tests this shorter path separately from source-project dogfooding. Release `v0.4.0` is published at `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public retrieval matched committed README, init and all thirty package resources; bundle SHA-256 is `227d5b646cccff369369012411e5fd750dff75b75649b54970f7a6e9657085f2` over case-sensitive sorted package-relative paths, NUL and Git blob bytes. This verifies availability, not another agent bootstrap. Earlier public bootstrap and maintenance evidence remains scoped to its recorded revisions; it does not establish current whole-product reliability.
+Current review: 2026-10-18. Experimental 0.4.0 consolidates ordinary work into the shared guide; specialized skills add detail and host entries route to their owners. ShelfList tested the draft; the workshop sequence below tests the published product beyond software. Release `v0.4.0` is published at `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public retrieval matched committed README, init and all thirty package resources; bundle SHA-256 is `227d5b646cccff369369012411e5fd750dff75b75649b54970f7a6e9657085f2` over case-sensitive sorted package-relative paths, NUL and Git blob bytes. Retrieval establishes availability; behavioral evidence remains scoped to each trial's conditions and does not establish whole-product reliability.
 
 ## Maintenance Prompt Coverage
 
@@ -35,6 +35,25 @@ Maintainer-directed artifact exercises covered legacy root discovery, legacy dis
 Two real Git branches created equal next counters with distinct tags and independent state/design decisions. The audit produced a textual conflict; manual reconciliation preserved both entries and decisions, linked both parents and advanced the counter while retaining imported file stamps. A subsequent reversal used a new revision and preserved the earlier record. Artifact assertions passed. This demonstrates workable records in controlled examples, not an implemented merge engine or reliable autonomous conflict resolution.
 
 The first repository baseline stamps owned Markdown prospectively; legal notices and legacy sample memory retain their formats, and prior checks are not revalidated by stamping. Release identity, discovery layout and local iterations have separate owners. ShelfList below exercises fresh-session revisions and retained audit entries for a new adopter. Autonomous legacy baselines, interruption/collision recovery and broad consumer compatibility remain unverified. Older CLI trials precede this convention and do not justify 1.0.
+
+## Published Non-Software Workshop Trial
+
+On 2026-10-18, fictional Mend Together began with a workshop brief, venue offer and materials CSV, without YAIML files or application code. Five approved fresh Codex CLI sessions used Windows, CLI `0.163.0-alpha.10.2` and default `gpt-6.1-sol`. Each had a fresh profile, no imported chat/plugins/global memory, scratch-only writes and a ten-minute limit. Only setup could retrieve the public reference; subsequent sessions stayed offline. No descendants, installs, services or publication were permitted.
+
+Setup received exactly the published README init. Startup records showed no preloaded YAIML instructions or skills. The agent retrieved commit `16a22124a3593d523bfed57a8f811084b034d4d1`: its thirty-resource bundle matches the fingerprint above. Twenty-nine resources remained byte-identical; the notice retained the complete license with local attribution appended. All three original inputs survived setup unchanged; twelve native routes and four core roles were created. No local reference, reviewer criteria or manual repair reached the sessions.
+
+| Ordinary follow-up | Observed result |
+| --- | --- |
+| Conversation-only decision | Recorded cap 30, noon cutoff and printed cards in the brief/memory; QR codes stayed tentative; corrected the obsolete activation note |
+| Draft schedule and shopping list | Recovered decisions; calculated whole packs for 30 attendees in a USD 67 draft quote; required activities and separate pack-up finished at 11:40 |
+| Adjust to a new venue notice | Used 24 attendees and 09:45 check-in; revised quote USD 53 and pack-up finish 11:55; preserved the human cap of 30 separately and replaced superseded current evidence |
+| Read-only explanation before sharing | Recovered decisions, revised plans, recorded checks and outstanding confirmations; every project-file hash stayed unchanged |
+
+Later startup records contained project instructions and twelve skill entries; requests contained no YAIML command or reminder. Sessions read local memory/shared guidance; the decision session also read the maintain method. The corrected activation note distinguished instruction/metadata availability and actual reads from untested native invocation and interactive menus.
+
+Acceptance criteria and expected quantities were fixed before execution. The planning sessions recalculated CSV demand and checked actual schedule rows; the revised session also parsed shopping rows. Independent review parsed both resulting schedules and shopping tables against those criteria. Current memory preserved draft status, unconfirmed booking/attendance/stock/accessibility and unpriced equipment gaps. No application tests were invented. Artifact checks passed for original requirement preservation, unchanged resources, four local iterations, complete changed-path audits, parent links and retained earlier entries. Three live-memory documents grew from 1,158 to 1,349 words, within individual budgets; retained audit grew from 281 to 649 words.
+
+All five sessions passed within their limits; no correction or optional sixth replay was needed. CLI counters totaled 647,655 input tokens (527,744 cached) and 15,019 output tokens across calls, excluding preparation/reviewer work; these are not unique context size, monetary cost or savings. Snapshots and logs remain outside the repository. This is a maintainer-designed non-software task in a coding-agent host, not independent adoption, nondeveloper usability evidence or a controlled effectiveness comparison.
 
 ## Lighter Ordinary-Work Trial
 

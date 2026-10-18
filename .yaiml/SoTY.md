@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.6.bc33f2ed89763ef4"
+yaiml-revision: "0.7.ade4d0be103521e4"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -35,7 +35,7 @@ Declared (maintainer direction, October 2026): reduce repeated rules and normal-
 
 This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product resources from repository memory. Experimental [0.4.0](RELEASE.md) supplies eleven methods plus an alias, seven optional prompts, eleven starters and four core roles. Latest working files remain canonical; commits identify provenance, not deployment. The [Maintainer Guide](MAINTAINER_GUIDE.md) covers source and adopter reviews.
 
-[Bootstrap](BOOTSTRAP.md) connects hosts; fifteen internal installations have twelve entries. Earlier CLI trials cover published setup, ordinary work, custom growth, composition, refresh and header repair. The new ShelfList draft trial used the shared loop without ritual skill-body reads: feature work and a conversational decision updated memory, revisions and path audits; fresh recall preserved files. It exposed a stale activation note; one corrected replay replaced it while retaining untested scope. [Current review](COLD_START_REVIEW.md) records conditions, assistance and remaining gaps; [upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
+[Bootstrap](BOOTSTRAP.md) connects hosts; fifteen internal installations have twelve entries. Earlier trials cover setup, growth, composition, refresh and header repair. ShelfList exposed a stale activation note; its corrected replay replaced it. Published 0.4.0 passed five fresh workshop sessions: setup, conversational decision, ordinary planning, revised venue evidence and read-only recall. Decisions, checked schedules/costs, activation notes, revisions and audits stayed current without reminders or repairs. This tests non-software work in Codex; nondeveloper usability remains unverified. [Current review](COLD_START_REVIEW.md) scopes evidence; [upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
 
 The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-studies/ADOPTION_TRIAL.md) contain dated maintainer-owned evidence. The [current review](COLD_START_REVIEW.md) describes this repository's latest changes and verification limits. Neither establishes independent adoption or productivity gains.
 
@@ -50,7 +50,7 @@ The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-
 
 ## Immediate Priorities
 
-1. Broaden fresh-session revision/audit coverage to legacy baselines, interruption and concurrent reconciliation. Repeat ordinary maintenance across longer sequences and other hosts; one corrected replay cannot establish reliability. Extend non-code and partial-update trials.
+1. Broaden fresh-session revision/audit coverage to legacy baselines, interruption and concurrent reconciliation. Repeat ordinary maintenance across longer sequences and other hosts; bounded trials cannot establish reliability. Test nondeveloper usability and partial updates.
 2. Assess remaining migration/version compatibility and historical disclosure before broader rollout. Keep current working-copy measurements separate from historical deployment claims.
 3. Use a working isolated runner for the [prepared comparison](EVALUATION.md#ready-to-run-comparison) and [new-reader demo](examples/minimal-notes/README.md#short-paste-and-go-demo). Measure total context cost, missed reads/writes, and misunderstandings.
 4. Run the [concurrent-contributor check](EVALUATION.md#concurrent-contributor-check), then obtain an owner-led trial outside the maintainer's projects and another agent environment. Measure unrelated diff churn and lost constraints.

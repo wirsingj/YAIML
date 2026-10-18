@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.6.bc33f2ed89763ef4 -->
+<!-- yaiml-revision: 0.7.ade4d0be103521e4 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -109,7 +109,7 @@ The files stay with your project, so humans and compatible agents can inspect an
 
 ## Evidence And Limits
 
-YAIML [0.4.0](.yaiml/RELEASE.md) is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary requests. A fictional adopter trial also exercised revisions, decision recall and read-only stability; a stale setup note required a correction and replay. Evidence is concentrated in coding-agent workflows. Usability for nondevelopers, other agent applications and interactive skill menus remains unverified. These maintainer-run trials do not establish sustained reliability, independent adoption or productivity gains; 1.0 readiness is pending. The [current review](.yaiml/COLD_START_REVIEW.md) records conditions and gaps.
+YAIML [0.4.0](.yaiml/RELEASE.md) is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary requests. A fictional community-workshop trial used only the published init, then remembered decisions, checked schedules and costs, and updated plans and memory when the venue changed. Five fresh sessions passed without reminders or repairs. Earlier software trials exposed stale verification notes that needed correction. All used a coding-agent host: usability for nondevelopers, other agent applications and interactive skill menus remains unverified. These maintainer-run trials do not establish sustained reliability, independent adoption or productivity gains; 1.0 readiness is pending. The [current review](.yaiml/COLD_START_REVIEW.md) records conditions and gaps.
 
 Agents can miss instructions or preserve stale information. Review consequential changes; memory is context, not proof of correctness. YAIML retains normal project permissions and review controls. Optional delegation requires scoped confirmation. Use approved AI tools and keep confidential information out of public examples and memory.
 

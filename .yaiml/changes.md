@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.6.bc33f2ed89763ef4"
+yaiml-revision: "0.7.ade4d0be103521e4"
 role: changes
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
@@ -11,7 +11,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current head: `0.6.bc33f2ed89763ef4`.
+Current head: `0.7.ade4d0be103521e4`.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 
@@ -187,3 +187,15 @@ Outcome: introduces agent-executed memory/instructions, cross-domain examples an
 Verification: source-guidance consistency, unchanged seed payload and local links/structure reviewed; no fresh-session or nondeveloper trial was run for this editorial change.
 
 Affected paths: `README.md`, `.yaiml/SoTY.md`, `.yaiml/changes.md`.
+
+## 0.7.ade4d0be103521e4 — 2026-10-18
+
+Parents: `0.6.bc33f2ed89763ef4`.
+
+Intent/source: maintainer requested a non-software workshop trial using only the published init and ordinary requests across fresh sessions, with decision persistence, output checks and repairs where needed.
+
+Outcome: five bounded sessions passed public setup, conversational decision, plan creation, revised venue evidence and read-only recall without reminders or repairs. Updated current evidence and README claims; product methods/release remain 0.4.0. Nondeveloper usability and independent adoption remain unverified.
+
+Verification: inspected clean startup and actual session checks; independently checked both schedules, pack arithmetic, source preservation, thirty resources, twelve routes, revision lineage/path coverage and unchanged read-only hashes. Changed-document links, seed parity, revision stamps, preserved audit entries and whitespace passed. Full conditions and limits are in COLD_START_REVIEW.md.
+
+Affected paths: `README.md`, `.yaiml/SoTY.md`, `.yaiml/COLD_START_REVIEW.md`, `.yaiml/changes.md`.
