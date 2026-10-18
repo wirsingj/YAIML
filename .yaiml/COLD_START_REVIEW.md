@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.4.15281bd42709497b"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -14,7 +14,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-18. Experimental 0.4.0 consolidates ordinary work into the shared guide; specialized skills add detail and host entries route to their owners. The ShelfList draft trial below tests this shorter path separately from source-project dogfooding. Publication of this candidate is not yet verified. Earlier public bootstrap and maintenance evidence remains scoped to its recorded revisions; it does not establish current whole-product reliability.
+Current review: 2026-10-18. Experimental 0.4.0 consolidates ordinary work into the shared guide; specialized skills add detail and host entries route to their owners. The ShelfList draft trial below tests this shorter path separately from source-project dogfooding. Release `v0.4.0` is published at `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public retrieval matched committed README, init and all thirty package resources; bundle SHA-256 is `227d5b646cccff369369012411e5fd750dff75b75649b54970f7a6e9657085f2` over case-sensitive sorted package-relative paths, NUL and Git blob bytes. This verifies availability, not another agent bootstrap. Earlier public bootstrap and maintenance evidence remains scoped to its recorded revisions; it does not establish current whole-product reliability.
 
 ## Maintenance Prompt Coverage
 
@@ -26,7 +26,7 @@ The product/source-project audit found ambiguous self-reference in copied bootst
 
 ## Structural Checks
 
-The 0.4.0 candidate passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
+Release 0.4.0 passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
 
 ## Revision And Legacy Upgrade Review
 

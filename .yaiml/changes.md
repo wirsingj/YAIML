@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.4.15281bd42709497b"
 role: changes
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
@@ -11,7 +11,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current head: `0.3.e5a6701538b64592`.
+Current head: `0.4.15281bd42709497b`.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 
@@ -155,3 +155,13 @@ Affected paths:
 - `.yaiml/templates/core/MAINTAINER_GUIDE.md`
 - `AGENTS.md`
 - `README.md`
+
+## 0.4.15281bd42709497b — 2026-10-18
+
+Parents: `0.3.e5a6701538b64592`.
+
+Intent/source: complete the maintainer-authorized publication check and replace pending availability with observed evidence.
+
+Outcome/verification: `main` and annotated `v0.4.0` published product commit `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public README, init and all thirty resources matched Git blobs; the normalized package matches the corrected trial snapshot. Bundle fingerprint and scope are in COLD_START_REVIEW.md. This adds publication evidence, not a fresh agent trial or a new product release.
+
+Affected paths: `.yaiml/COLD_START_REVIEW.md`, `.yaiml/changes.md`.
