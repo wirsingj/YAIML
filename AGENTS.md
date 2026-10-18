@@ -2,11 +2,13 @@
 
 Before making changes:
 
-1. Read `yaiml.yml`.
+1. Read `.yaiml/yaiml.yml`.
 2. Read the three core documents below and task-relevant supporting material. Reuse current context; refresh when stale or insufficient, including relevant changes or context loss. For each selected YAIML document, read its stable header before its body; `read-with` is a relevance hint, not a recursive loading requirement.
-3. Treat `docs/SoTY.md`, `docs/ARCHITECTURE.md`, and `docs/MAINTAINER_GUIDE.md` as this repository's living project memory.
+3. Treat `.yaiml/SoTY.md`, `.yaiml/ARCHITECTURE.md`, and `.yaiml/MAINTAINER_GUIDE.md` as this repository's living project memory.
 4. Treat examples, templates, prompts, and guides as supporting artifacts that must stay synchronized with the living-memory concept.
-5. At startup and whenever loading or refreshing YAIML context, consider serverless subagent coordination from available context without extra scans or calls. For a concrete benefit, read `docs/YAIMLACP.md`. Describe the option, access, limits, cost, and single-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Without confirmation, continue independent work without delegation. Reuse valid scoped approval and current guidance. Do not build a server or install anything for this convention.
+5. At startup and whenever loading or refreshing YAIML context, consider serverless subagent coordination from available context without extra scans or calls. For a concrete benefit, read `.yaiml/YAIMLACP.md`. Describe the option, access, limits, cost, and single-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Without confirmation, continue independent work without delegation. Reuse valid scoped approval and current guidance. Do not build a server or install anything for this convention.
+
+Read and follow [.yaiml/YAIML_GUIDE.md](.yaiml/YAIML_GUIDE.md) for shared workflow rules and [.yaiml/skills/INDEX.md](.yaiml/skills/INDEX.md) to select relevant methods. Read selected skill bodies and needed references; reuse current context. Natural requests and named skills share the same methods; preserve counts, perspectives and scope. Compose requested workflows without separate invocations. Routine work uses local context and maintains material understanding; init/refresh or a specific missing resource triggers acquisition, never startup alone. Native command syntax depends on the host.
 
 Working rules:
 
@@ -16,17 +18,17 @@ Working rules:
 - Use "Yet Another AI Markup Language" as YAIML's intended expansion.
 - Dogfood YAIML retention and uncertainty rules in this repository.
 - Treat natural-language requests such as "continue through the SoT list" or "update our SoT" as instructions to use this repository's YAIML memory, not as requests for separate prompt choreography.
-- Treat "update YAIML", "updated YAIML", or "check new YAIML" as convention-refresh language: in adopting repositories, compare local YAIML scaffolding with a human-provided or workspace-local YAIML reference; in this repository, update the reference guidance itself and then update SoTY if the meaning changed.
+- Treat "update YAIML", "updated YAIML", or "check new YAIML" as convention-refresh language: in adopting repositories, compare local YAIML methods and guidance with the human-provided, recorded or authorized workspace reference; in this repository, update the reference guidance itself and then update SoTY if the meaning changed.
 - Treat "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as project-memory cleanup/compression language: rewrite affected YAIML documents to remove stale, repetitive, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
 - Treat older recognizable discovery layouts such as `documents.sot.path` as compatibility inputs to understand before migrating, not as a reason to overwrite mature adopter memory.
 - Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
 - YAIMLACP documents coordination through existing host capabilities. It adds no server, SDK, installation, or separate runtime. Do not add implementation libraries, CLIs, provider adapters, package manifests, or web applications here without an authorized implementation scope. Keep Markdown memory free of schemas and conformance fixtures.
-- Preserve the MIT License unless the maintainer explicitly approves a license change.
+- Preserve the approved terms in `LICENSE.md`, required attribution and earlier grants; further license changes require explicit maintainer approval. Commercial/client use is allowed, but selling YAIML or charging for forks is restricted. Do not describe these custom terms as MIT or OSI-approved open source.
 - Before finishing, persist material changes to project understanding, including confirmed human direction from conversation without code edits. Do not promote brainstorming into decisions. Update only affected YAIML documents without a separate request, prune stale state, and do not append a work diary. Respect read-only task scope and leave unchanged memory alone.
 - Report contradictions rather than smoothing them into confident prose.
 - Do not treat a command, script, workflow, or test existing in source as proof that it passed; successful execution only applies under the recorded conditions.
 - Before changing shared behavior, identify affected invariants and authorized changes; ground expected outcomes independently of the candidate. Compare an accepted baseline under equivalent conditions when available, without treating old behavior as inherently correct.
-- Separate reported concerns, evidence, and hypotheses. Keep disputed candidates out of shared defaults while investigating; continue independent authorized work. Resolve factual concerns with relevant evidence, not unrelated passing checks or failure to reproduce. Changes to intent or acceptance criteria require established authority. Follow the [evidence guidance](docs/AMBIGUITY_AND_EVIDENCE.md#contradictions-and-regression-checks).
+- Separate reported concerns, evidence, and hypotheses. Keep disputed candidates out of shared defaults while investigating; continue independent authorized work. Resolve factual concerns with relevant evidence, not unrelated passing checks or failure to reproduce. Changes to intent or acceptance criteria require established authority. Follow the [evidence guidance](.yaiml/AMBIGUITY_AND_EVIDENCE.md#contradictions-and-regression-checks).
 - Do not describe planned tooling as implemented tooling.
 - Do not revive `SPEC.md`, schema-first language for Markdown memory documents, or formal conformance machinery unless a human explicitly changes the project phase.
 

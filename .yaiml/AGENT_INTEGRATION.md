@@ -1,0 +1,44 @@
+---
+yaiml: 0.2
+kind: agent-integration-guide
+title: Agent Integration
+purpose: Explain how YAIML relates to repository agent instruction files without becoming one.
+belongs-here: integration patterns for AGENTS.md, CLAUDE.md, GEMINI.md, .cursorrules, .windsurfrules, and similar instruction files.
+not-here: provider adapters, SDKs, exhaustive tool-specific instructions, project-specific agent rules.
+durability: durable; update when YAIML's relationship to agent instruction files changes.
+read-with: SoTY; Context Loading; Core Document Family.
+update-when: integration guidance, context-loading expectations, or instruction-file boundaries change.
+agent-guidance: Keep this provider-neutral. Do not imply official adapters or duplicate every behavioral rule inside YAIML.
+---
+
+# Agent Integration
+
+Agent instructions carry behavior; YAIML holds the project knowledge they point to. Instructions can also contain state, but keeping detailed memory in its owning documents avoids duplicating it across tools.
+
+## Initialization
+
+Inspect existing repository instruction routes, including root and nested AGENTS.md, CLAUDE.md, GEMINI.md, tool rule directories, and project-specific equivalents. Include hidden configuration when relevant; exclude examples, templates, generated files, and vendor copies. Preserve actual filenames and casing; do not create case-only duplicates. Names alone do not establish automatic loading.
+
+Connect each applicable existing route, including tools other than the agent running initialization. Reuse working include chains and shared instruction owners; add or update a section only where needed. Preserve unrelated instructions, metadata, activation conditions, and nested scope. Routes for the same project share memory; preserve separately scoped subproject memory and avoid provider-specific families.
+
+Where supported, keep the complete maintenance guidance in one existing shared instruction location and have other entry points explicitly tell agents to read and follow it. Verify that route; a bare link may not cause loading. Otherwise, keep equivalent concise guidance in each applicable entry point. Avoid circular references and repeated insertion.
+
+The seed is executable guidance supplied by the user, so it can bootstrap before any native YAIML skill is registered. It contains the public source and bootstrap path; assume no prior YAIML context or maintainer-local checkout. During init, retrieve the complete local base and record source/adaptation notes.
+
+Persistent instruction routes must explicitly read/follow the shared operating guide and catalog, select relevant skill bodies and pass user arguments through. Ordinary work loads context and maintains material understanding; explicit audit, to-do or composed requests select additional methods. Routine startup does not rerun bootstrap or fetch upstream.
+
+Where the host supports native skills, expose canonical names/descriptions through its supported discovery location, retaining canonical relative-reference resolution. Use documented host support without requiring YAIML to be preinstalled; [Bootstrap](BOOTSTRAP.md#connect-future-sessions) supplies the Codex route. Verify other hosts before writing formats or locations. File-based instructions provide usable methods without a native menu; slash syntax may be intercepted by the host and is not a portable parser. Preserve the user's count, perspectives and scope in wrappers. Report required reloads or unavailable native registration separately from persistent file routing.
+
+Check syntax, activation scope, and discovery paths, including from subdirectories. For each route, report connected, already connected, or incomplete, its pointer location, tracking status or explicit private-instruction policy, and the basis for expecting it to load. Identify new files awaiting an authorized commit.
+
+Distinguish configured instructions from observed fresh-session loading. If persistence is unsupported or requires a user-controlled setting, disclose the unfinished step; repeated reminders do not complete integration. Saved instructions support ordinary work and explicit YAIML requests through the same procedures: reuse current context, refresh when stale/insufficient, and maintain material project changes, including confirmed conversational direction. No YAIML reminder or code edit is required; read-only scope and unchanged memory remain respected.
+
+## Suggested Pointer
+
+[Bootstrap’s Connect Future Sessions section](BOOTSTRAP.md#connect-future-sessions) owns the complete copyable pointer. Adapt it to local paths and policies instead of maintaining a second generic version here. Repeated setup updates the existing pointer rather than appending another.
+
+Connect the reminder at startup and on context loading or refresh. Retain context-only assessment, option/cost explanation, affirmative confirmation before first use, and renewed confirmation for scope or cost changes; silence is not consent. Verify the saved local guide is reachable. If it is later missing, or confirmation or native delegation is unavailable, continue independent work without workers. No server configuration or runtime is involved.
+
+## Keeping Responsibilities Clear
+
+Tool permissions, response style, branch rules, and collaboration behavior belong in agent instructions. Project procedures and the rationale for lasting preferences can live in linked memory. Neither the discovery map nor memory grants new permissions.

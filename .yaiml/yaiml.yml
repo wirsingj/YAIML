@@ -1,0 +1,27 @@
+yaiml:
+  version: "0.2.0"
+  core:
+    state: SoTY.md
+    architecture: ARCHITECTURE.md
+    maintainer_guide: MAINTAINER_GUIDE.md
+  supporting:
+    concepts: CONCEPTS.md
+    prior_art: PRIOR_ART.md
+    core_document_family: CORE_DOCUMENT_FAMILY.md
+    stable_headers: STABLE_HEADERS.md
+    ambiguity_and_evidence: AMBIGUITY_AND_EVIDENCE.md
+    pruning_and_lifecycle: PRUNING_AND_LIFECYCLE.md
+    agent_integration: AGENT_INTEGRATION.md
+    context_loading: CONTEXT_LOADING.md
+    yaimlacp: YAIMLACP.md
+    evaluation: EVALUATION.md
+    ytmmocc_case_study: case-studies/YTMMOCC.md
+    adoption_trial: case-studies/ADOPTION_TRIAL.md
+    cold_start_review: COLD_START_REVIEW.md
+    adoption_and_upgrades: ADOPTION_AND_UPGRADES.md
+    project_independence: PROJECT_INDEPENDENCE.md
+    ai_usage: AI_USAGE.md
+    bootstrap: BOOTSTRAP.md
+    skills: skills/INDEX.md
+    operating_guide: YAIML_GUIDE.md
+    skills_lifecycle: SKILLS_AND_LIFECYCLE.md

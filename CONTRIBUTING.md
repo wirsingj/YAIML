@@ -9,7 +9,7 @@ The value of YAIML is the convention for preserving project understanding, not t
 ## Ground Rules
 
 - Keep the center on living project memory, not schema design for Markdown documents.
-- [YAIMLACP](docs/YAIMLACP.md) supplies optional coordination guidance using existing host capabilities, without a server or installation. Adding a runtime, CLI, SDK, package manifest, provider adapter, web app, or parser here requires an authorized implementation scope; ordinary adoption remains usable without them.
+- [YAIMLACP](.yaiml/YAIMLACP.md) supplies optional coordination guidance using existing host capabilities, without a server or installation. Adding a runtime, CLI, SDK, package manifest, provider adapter, web app, or parser here requires an authorized implementation scope; ordinary adoption remains usable without them.
 - Do not add conformance fixtures or formal validation machinery for Markdown memory documents unless the project explicitly changes phase.
 - Preserve the distinction between human intent and implementation evidence.
 - Preserve the distinction between SoT, durable Architecture, and procedural Maintainer guidance.
@@ -23,9 +23,9 @@ The value of YAIML is the convention for preserving project understanding, not t
 
 ## Licensing
 
-YAIML is licensed under the [MIT License](LICENSE.md), which names Jeff Wirsing as copyright holder. Copies or substantial portions must retain its copyright and permission notice; see the [OSI MIT text](https://opensource.org/license/mit). Keep those notices when redistributing copied prompts or templates. Do not apply YAIML's license to an adopting project's own material by default.
+Current local YAIML uses the [YAIML Attribution and No-Resale License](LICENSE.md): commercial products and client work may use it, but selling YAIML or charging for its forks requires separate permission. Keep the license, copyright, author/project credit and change notices with copied material. These custom source-available terms await professional legal review before publication. Earlier MIT grants remain unaffected; preserve applicable third-party notices. Do not apply YAIML's license to an adopting project's own material by default.
 
-By submitting a contribution, you agree that your contribution is provided under the MIT License used by this repository. Submit only material you have the right to contribute. Do not include employer-confidential material, third-party material without permission, secrets, private transcripts, raw sensitive logs, customer or personal data, unreleased vulnerability details, or proprietary project text from another repository.
+By submitting a new contribution under these terms, you agree that it is provided under this repository's license; you retain ownership of your contribution. This does not change earlier contribution grants. Submit only material you have the right to contribute. Do not include employer-confidential material, third-party material without permission, secrets, private transcripts, raw sensitive logs, customer or personal data, unreleased vulnerability details, or proprietary project text from another repository.
 
 Do not change the license, add license headers, or make new trademark, ownership, or endorsement claims without explicit maintainer approval.
 
@@ -43,6 +43,6 @@ Before changing YAIML, ask:
 
 ## Feedback And Adoption Reports
 
-Open a GitHub issue or pull request with a concrete unclear passage, contradiction, or proposed correction. For adoption feedback, include the YAIML reference revision, repository context you may share, agent environment, task, observed result, and what required correction. Use [Evaluation](docs/EVALUATION.md) for comparisons; small failure reports are welcome too.
+Open a GitHub issue or pull request with a concrete unclear passage, contradiction, or proposed correction. For adoption feedback, include the YAIML reference revision, repository context you may share, agent environment, task, observed result, and what required correction. Use [Evaluation](.yaiml/EVALUATION.md) for comparisons; small failure reports are welcome too.
 
 Use the private-contact guidance in [SECURITY.md](SECURITY.md) for sensitive reports. Do not publish private project memory or transcripts to make a report reproducible.

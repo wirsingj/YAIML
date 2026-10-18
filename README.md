@@ -2,92 +2,66 @@
 
 Agents forget. Projects shouldn’t.
 
-YAIML keeps a project's current engineering understanding in its repository, so a new AI session or contributor can pick up the work with its decisions, constraints, and open questions intact. The name stands for **Yet Another AI Markup Language**. The files are ordinary Markdown, with a small YAML index.
+**Yet Another AI Markup Language** is a context and project management convention for humans and AI agents. It keeps the project's understanding in ordinary Markdown and gives agents reusable skills for working with it: orienting, auditing, completing priorities, verifying results and keeping that understanding current.
 
-A fresh session can read the code and still miss why a feature was deliberately limited, which approach was rejected, or whether a test actually passed. YAIML gives that knowledge a maintained home alongside the code.
+## Start With One Prompt
 
-YAIML is an early project-memory initiative with the ambition to become a widely adopted standard. Its convention and documentation are usable without installing anything; independent evidence of its effectiveness is still needed.
+Paste [Init YAIML](.yaiml/prompts/init-yaiml.md) into your project's repository-aware agent. The prompt contains a bootstrap skill that runs immediately. It identifies the public reference, retrieves the needed guidance and skills, creates useful project context, and connects the agent's supported instruction files. No prior YAIML knowledge, manual downloads or second skill invocation is required.
 
-## Why Keep Project Memory?
+Use a prompt whose reference resources have been published together. A supplied development snapshot can also be used; an unpublished local change is not available to a new user through the public URL. [Current review](.yaiml/COLD_START_REVIEW.md) records what has actually been checked.
 
-- **For your own work:** preserve decisions and corrections between sessions, including what you still need to verify.
-- **For a team:** give contributors a shared starting point and include changes to project understanding in normal code review.
-- **For a long-lived project:** keep knowledge available across contributor, machine, and AI-provider changes. Different tools can use the same memory once their repository instructions are connected.
+The agent needs project read/write access and either reference access or a supplied snapshot. It reports missing access or unsupported persistence rather than claiming setup worked. YAIML introduces no runtime, service or package dependency. Your existing documents and decisions remain the starting point.
 
-The loop is simple: read the current understanding, check it against the task, do the work, then update and prune affected memory.
+After setup, **work normally**. Ask for a feature, discuss a project decision or continue a task. Connected instructions tell the agent to read relevant context, do the work and maintain material understanding before finishing. You do not need to remember a YAIML maintenance command.
 
-## Try It In A Repo
+**Already using an older YAIML?** Paste the current init into that project again. It can add the new skills even when the old installation has no skill catalog or recorded source. Existing memory and local rules are reconciled; moving them into `.yaiml/` requires your approval. See [upgrading an existing project](.yaiml/ADOPTION_AND_UPGRADES.md#existing-yaiml-update).
 
-**Start with one complete prompt.** Open your project in a repository-aware AI chat or coding agent and paste [Init YAIML](prompts/init-yaiml.md), including its embedded texts. Setup instructions, maintenance procedures, document templates, and optional coordination guidance arrive together, ready to use locally.
+## Optional Skills When You Want More Control
 
-With project read/write access, the agent builds on your existing documentation, connects supported agent instructions, and saves the reusable guidance in your repository. You get project memory and the procedures to maintain it, with no separate downloads or installations. The resulting changes are available for your review.
-
-**Upgrade through the same simple workflow.** Reapply the latest complete init prompt to refresh guidance and agent instructions around your project's accumulated knowledge, local decisions, and existing discovery layout. The prompt carries its own reference, so upgrading takes the same paste as first-time setup. Reviewable changes keep you in control of each update.
-
-## What Lives In Your Repository
-
-**SoT means “State Of The.”** It describes the whole project; this repository uses `docs/SoTY.md`. The agent normally starts with `SOT.md` unless your project already has a useful name.
-
-| File | Responsibility |
+| Request | Result |
 | --- | --- |
-| `SOT.md` | Current state, human direction, risks, uncertainty, and next priorities |
-| `ARCHITECTURE.md` | Durable system shape, boundaries, and intended design |
-| `MAINTAINER_GUIDE.md` | Setup, checks, diagnostics, release, and recovery procedures |
-| `yaiml.yml` | Paths to those documents |
+| `/yaiml-audit accessibility, maintainability` | Review the requested perspectives and return evidence-ranked findings |
+| `/yaiml-to-do 10` | Complete up to ten feasible priorities, verify the work and update memory |
+| “Audit as a maintainer, do the next ten things, then test” | Carry findings, priorities and evidence through one composed task |
+| `/yaiml-compress` | Synthesize stale or repetitive memory while preserving useful knowledge |
+| “Update YAIML” | Reconcile newer guidance with local methods and adaptations |
 
-Each memory document has a short header explaining its role and maintenance. Names and headings can fit the project. Add supporting documents only when recurring knowledge needs its own home.
+Slash commands are available where the host supports them; use that host's native syntax or ordinary language otherwise. In [Codex CLI/IDE](https://learn.chatgpt.com/docs/build-skills), use `/skills` or `$yaiml-to-do 10`. The same local methods support both interaction styles. Setup connects the supported discovery route and reports gaps. See the [skill catalog](.yaiml/skills/INDEX.md) for orientation, maintenance, verification, growth and realignment too.
 
-**Ready to grow with your project.** The init leaves local guidance and templates that agents can use to maintain core memory and add specialist documents as needs emerge. Your project owns the files, decisions, and adaptations. Agents select relevant sections and keep unused templates dormant, keeping everyday reading focused. The guidance stays available across new chats, independently of the original conversation or the YAIML repository.
+A count is a work limit, not a demand to invent tasks. Audits preserve uncertainty; tests are reported as passed only when actually run under the stated conditions. Ordinary startup does not launch the backlog.
 
-`AGENTS.md` or its equivalent tells the agent how to work, including when to read and update YAIML. The memory documents hold what the project currently understands. These roles can overlap; reuse existing documentation where it fits.
+## What Lives In Your Project
 
-See [Minimal Notes](examples/minimal-notes/) for the smallest fictional example and a short paste-and-go demo, or [Canopy Dispatch](examples/canopy-dispatch/) for a larger one.
+New adoption keeps YAIML-owned material in `.yaiml/`:
 
-## Use It Day To Day
+| Resource | Responsibility |
+| --- | --- |
+| `SOT.md` — State Of The project | Current direction, capabilities, risks, uncertainty and priorities |
+| `ARCHITECTURE.md` | Durable boundaries, responsibilities and intended design |
+| `MAINTAINER_GUIDE.md` | Procedures, checks, recovery and current YAIML source/adaptation notes |
+| `yaiml.yml` | Paths to the actual memory owners and supporting resources |
+| `skills/INDEX.md` and `skills/yaiml-*/SKILL.md` | Discoverable methods and their workflows |
+| `YAIML_GUIDE.md`, `YAIMLACP.md`, templates and notice | Shared operating rules, optional coordination, writing aids and copied-material attribution |
 
-After initialization, ask normally: “Fix this bug,” “Audit the project,” or “Implement the next priority.” The saved instructions support both everyday work and explicit YAIML requests. They tell agents to reuse current context, read more when needed, and maintain affected memory without reminders—including confirmed project decisions made in conversation. Unchanged follow-ups need no routine reread or rewrite. The README and complete init prompt are enough to get started; reusable procedures are saved locally for agents.
+Host instructions such as `AGENTS.md` stay where the host expects them. They route future sessions to memory and skills. Existing mature layouts remain usable; a requested relocation preserves knowledge and repairs consumers.
 
-Init connects applicable existing agent instructions, such as `AGENTS.md` and `CLAUDE.md`, to the same memory and reports setup gaps. A tool added later needs a supported instruction route too. This depends on each tool loading those instructions.
+Memory holds project facts; skills read those facts when they act. A recurring domain topic can grow into a supporting document, and a useful recurring method can grow into a project-specific `yaiml-` skill. Unused templates stay dormant. Local knowledge and skills survive convention refreshes, which reconcile changes rather than replace the project with a generic template.
 
-The key distinction is intent versus evidence. In a fictional example:
-
-```text
-Declared (maintainer decision): v1 stays local-only.
-Verified by source inspection: settings still expose a cloud-sync option.
-Divergence: the interface does not yet match the v1 decision.
-```
-
-Code, tests, decisions, and issues remain the sources behind the summaries. Memory does not override repository rules, permissions, or authorized direction.
-
-For teams, include focused memory edits with each change. Coordinate broad cleanup separately and review meaning against the target branch before merging. See [concurrent branches and review](docs/PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review); no additional tooling is required.
-
-## Maintenance Helpers
-
-**The maintenance workflows come with init.** Orientation, memory updates, audits, compression, convention refresh, and realignment are saved as local procedures with their safeguards and reporting steps. Ask your agent naturally; no additional prompt paste is needed. “Update YAIML” refreshes conventions from a supplied reference; “Compress YAIML” prunes project memory.
-
-The [maintenance prompt catalog](docs/ADOPTION_AND_UPGRADES.md#maintenance-prompts) offers optional task-specific entry points to those same workflows. [Adoption And Updates](docs/ADOPTION_AND_UPGRADES.md) explains compatibility.
-
-Persistent instructions also remind agents to consider optional coordination at startup and whenever YAIML context is loaded or refreshed. [YAIMLACP](docs/YAIMLACP.md) defines handoffs for the host's existing subagents, with a clear option/cost explanation and user confirmation before first use or changed scope/cost. It requires no server or installation and does not implement standard MCP. Ordinary work with one agent remains the default when delegation offers no clear benefit.
+The base resources are local after init. Agents load relevant material, reuse current context and acquire extra reference material only for a concrete need. Updates record the reference revision and preserve local adaptations. No background process or routine upstream polling is implied. [Skills And Project Lifecycle](.yaiml/SKILLS_AND_LIFECYCLE.md) explains the design.
 
 ## Evidence And Limits
 
-[YTMMOCC](docs/case-studies/YTMMOCC.md) records maintainer-owned adoption. [Local adoption exercises](docs/case-studies/ADOPTION_TRIAL.md) record isolated initialization, legacy refresh, and compression with measured document sizes. Neither establishes productivity gains or independent adoption. [The current review](docs/COLD_START_REVIEW.md) records repository findings and remaining gaps.
+YAIML is an early public experiment with the ambition of broader adoption. The [YTMMOCC case](.yaiml/case-studies/YTMMOCC.md) and [local adoption exercises](.yaiml/case-studies/ADOPTION_TRIAL.md) are maintainer-owned evidence. Earlier trials do not establish that the new skills lifecycle works across hosts. [Evaluation](.yaiml/EVALUATION.md) defines trials; [Cold Start Review](.yaiml/COLD_START_REVIEW.md) distinguishes structural checks from observed behavior.
 
-YAIML needs maintenance and consumes reading context. Agents read the concise core, then supporting material relevant to the task. Stale or overgrown memory can mislead them. Initialization draws on available files and supplied decisions; intent lost with an old chat still needs human input. If your existing docs already preserve this understanding, adopting another convention may add little.
-
-For a team trial, use one bounded maintenance task and compare fresh sessions with and without YAIML. Track missed constraints, human corrections, useful work, and context cost. [Evaluation](docs/EVALUATION.md) provides the method; benefits beyond the maintainer's projects remain unproven.
-
-YAIML itself runs no service and uploads nothing. The AI tool you use has its own access and data-handling behavior.
+The agent and host still determine whether instructions are loaded and followed. Memory costs context and requires upkeep; stale or overgrown files can mislead. Project intent, implementation and verification remain distinct. Optional [YAIMLACP](.yaiml/YAIMLACP.md) uses existing host subagents only after its scoped confirmation; it adds no infrastructure.
 
 ## Reference And Participation
 
-- [Concepts](docs/CONCEPTS.md): purpose, vocabulary, and design tradeoffs.
-- [Prior Art](docs/PRIOR_ART.md): comparable conventions, and when to use one of them instead.
-- [Core Document Family](docs/CORE_DOCUMENT_FAMILY.md): where facts belong.
-- [Stable Headers](docs/STABLE_HEADERS.md), [Context Loading](docs/CONTEXT_LOADING.md), and [Agent Integration](docs/AGENT_INTEGRATION.md): how sessions find and read memory.
-- [Ambiguity And Evidence](docs/AMBIGUITY_AND_EVIDENCE.md) and [Pruning And Lifecycle](docs/PRUNING_AND_LIFECYCLE.md): how memory stays trustworthy.
-- [Contributing](CONTRIBUTING.md) and [Roadmap](ROADMAP.md): feedback and future direction.
+- [Minimal Notes](.yaiml/examples/minimal-notes/) and [Canopy Dispatch](.yaiml/examples/canopy-dispatch/): fictional memory examples; Minimal Notes includes a cold-start walkthrough.
+- [Core Document Family](.yaiml/CORE_DOCUMENT_FAMILY.md), [Context Loading](.yaiml/CONTEXT_LOADING.md) and [Agent Integration](.yaiml/AGENT_INTEGRATION.md): ownership, reading and activation.
+- [Adoption And Updates](.yaiml/ADOPTION_AND_UPGRADES.md), [Ambiguity And Evidence](.yaiml/AMBIGUITY_AND_EVIDENCE.md) and [Pruning And Lifecycle](.yaiml/PRUNING_AND_LIFECYCLE.md): compatibility and trustworthy maintenance.
+- [Concepts](.yaiml/CONCEPTS.md), [Prior Art](.yaiml/PRIOR_ART.md), [Contributing](CONTRIBUTING.md) and [Roadmap](.yaiml/ROADMAP.md): background and future direction.
 
-Licensed under [MIT](LICENSE.md). Maintained with [AI assistance](AI_USAGE.md) as a [personal, independent project](docs/PROJECT_INDEPENDENCE.md). Keep memory appropriate for its repository’s audience; follow [Security And Sensitive Information](SECURITY.md) for handling and reporting concerns.
+The [YAIML Attribution and No-Resale License](LICENSE.md) allows use in commercial products and client work. Give credit to YAIML and Jeff Wirsing; you may not sell YAIML itself or charge for access to a modified or rebranded fork. Free sharing and free forks are allowed. These are custom, source-available terms; they preserve rights already granted for earlier MIT releases and do not set your application's license. Professional legal review is still needed before publishing these new terms.
 
-When redistributing copied YAIML prompts, templates, or other substantial material, retain the applicable copyright and permission notice from [LICENSE.md](LICENSE.md). Adoption does not ask an agent to change your project's license.
+Maintained with [AI assistance](.yaiml/AI_USAGE.md) as a [personal, independent project](.yaiml/PROJECT_INDEPENDENCE.md). Follow [Security And Sensitive Information](SECURITY.md), and keep the applicable license and attribution with copied YAIML material.
