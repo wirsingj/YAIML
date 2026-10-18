@@ -13,7 +13,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-17, local development changes on `a0d381cbba1bcecc0ac1cd77dda1b0ab5c9f1ae1`. The design is one-prompt context and project management: immediate bootstrap, locally available methods, ordinary-work maintenance, optional named/composed workflows, useful growth and adaptation-preserving refresh. Skills own methods; prompts and host entries route to them.
+Current review: 2026-10-17; the skills package is published at `89c883d9a66dffc3b8671d975f7fa6c46535d676`. The design is one-prompt context and project management: immediate bootstrap, locally available methods, ordinary-work maintenance, optional named/composed workflows, useful growth and adaptation-preserving refresh. Skills own methods; prompts and host entries route to them.
 
 ## Maintenance Prompt Coverage
 
@@ -95,6 +95,8 @@ A targeted location-pattern review of twelve ShepAIrd memory/instruction files a
 
 Earlier setup/context cases used MIT-licensed bundles; the growth/composition/refresh cases cover the current local base. Professional legal review and independent-user acceptance of changed terms remain untested.
 
-Read-only inspection resolved public `main` to `a0d381c`; its `.yaiml/BOOTSTRAP.md` returned HTTP 404 because this development layout remains local. That is expected before publication. Publish the matching seed and resources together, then verify the public route; a supplied local snapshot establishes no public retrieval success.
+The publication pass pushed this reference and twelve adopters on their existing branches after intent review, applicable application checks and document/resource checks; remote commits matched and worktrees were clean. Three local experiments were excluded by the maintainer. Commit messages retain source, layout/adaptations and scoped validation. Application checks covered Go/Node suites and builds, browser smoke, Godot gameplay/rendering and extension packaging; document-only projects received document checks. LoreKeeper packaging required the process's built-in Windows PowerShell module path after bundled-module loading failed. A frozen ooze-tactics opponent now retains its recorded byte hash through Git. These findings informed the upgrade recording guidance; they establish neither release acceptance nor independent adoption.
+
+Public retrieval passed on 2026-10-17 at `89c883d9a66dffc3b8671d975f7fa6c46535d676`: the init prompt and all 27 package resources returned bytes matching the committed blobs. The bundle SHA-256 is `3958b3c802cef951147d316c41a48e0aa7ad6c2aa72c84954c3cac003c169e07` (sorted package-relative paths, NUL, Git blob bytes). The earlier working-file digest differs only through CRLF-to-LF conversion in 26 resources; staged content was compared before advancing source notes. This verifies public availability and byte integrity, not a fresh public-source agent bootstrap.
 
 Still untested behavior: conflicting upstream/local method changes, interrupted acquisition, native-route permission repair, interactive menus and other hosts. Unchanged refresh and local reuse passed in the scoped cases above; broader repeat-setup and offline reliability remain unmeasured. Broader adoption, context savings and productivity claims require independent evidence.
