@@ -58,7 +58,7 @@ Commands are procedures, not passes. Record executed checks and scope in the rev
 
 ## Propagating Revisions
 
-Skills own workflows; the shared guide owns common rules; prompts and host entries route to them. Update owners first, then catalog, bootstrap and routes. Keep the embedded init skill equal to its canonical source. Check local resource closure in an isolated copy, skill/frontmatter/argument parity, links including anchors, ten starters, notice and [current coverage](COLD_START_REVIEW.md#maintenance-prompt-coverage). Keep:
+Skills own workflows; the shared guide owns common rules; prompts and host entries route to them. Update owners first, then catalog, bootstrap and routes. Keep prompt/README init copies equal to the canonical skill. Check local resource closure in an isolated copy, skill/frontmatter/argument parity, links including anchors, ten starters, notice and [current coverage](COLD_START_REVIEW.md#maintenance-prompt-coverage). Keep:
 
 - SoTY current when meaning, risks, priorities, or evidence changes;
 - Architecture current when roles or artifact boundaries change;
@@ -71,7 +71,7 @@ Use [Adoption And Updates](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibili
 
 | Symptom | Correction |
 | --- | --- |
-| README becomes a second reference manual | Keep definition, adoption, example, limits, and navigation; link detailed rules |
+| README loses newcomers | Lead with value, self-contained setup, ordinary use and optional skills; keep deeper references optional |
 | Core memory becomes a diary or catalog | Use the compression prompt; preserve current decisions, evidence, risks, and lessons |
 | Every task loads every document | Restore task-based selection; treat `read-with` as a hint |
 | Templates produce empty sections | Omit irrelevant headings and add supporting files only for concrete knowledge |

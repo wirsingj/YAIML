@@ -141,7 +141,7 @@ Evaluate the published entry point from a new user's position: only the init pro
 | Fresh ordinary session | Recovers relevant decisions and updates material understanding without a YAIML reminder |
 | Conversational decision and recall | A confirmed decision without an edit request persists; another fresh session recovers it from project files without the earlier chat or a YAIML reminder; a read-only follow-up changes no files |
 | Explicit audit / to-do | Honors perspectives/count, existing priorities and task scope; verifies work and reports blocked/fewer items honestly |
-| New verification evidence | Updates stale verification claims in their existing owners from observed results, retaining untested scope and contrary evidence; unrelated claims stay unchanged |
+| New verification evidence | Reconciles owning passages, stable-header status/date/scope and summaries; replaces stale fresh-session uncertainty with observed instruction/catalog availability and actual method use, preserving untested workflows, menus, other hosts and contrary evidence |
 | Composed request | Carries findings into authorized selection/work/verification without requiring separate user invocations |
 | Offline reuse | Available local methods work without upstream access or recursive fetching |
 | Useful growth | Adds a justified fact owner or reusable method in the established home, checks local references/catalog/native routes, avoids speculative rules/empty artifacts; exercise both default and custom homes |

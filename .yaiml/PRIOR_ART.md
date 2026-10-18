@@ -15,7 +15,7 @@ agent-guidance: Describe other projects accurately and without disparagement. Do
 
 YAIML did not invent keeping project context in Markdown. The approaches below overlap with it and can supply the documentation YAIML points to. Choose by the knowledge and workflow your project needs.
 
-The linked primary descriptions were checked on 2026-09-22. These are scoped comparisons of documented purposes, not tested rankings, exclusive feature claims, or compatibility guarantees.
+Unless dated separately, linked primary descriptions were checked on 2026-09-22. These are scoped comparisons of documented purposes, not tested rankings, exclusive feature claims, or compatibility guarantees.
 
 ## Agent Instruction Files
 
@@ -24,6 +24,14 @@ The linked primary descriptions were checked on 2026-09-22. These are scoped com
 Instruction files can contain current state, decisions, and uncertainty too. YAIML's choice is to give evolving project knowledge distinct document roles and a maintenance loop, with a pointer in the agent's instructions. An explicit reading request can also load YAIML; routine use depends on a working persistent instruction route.
 
 **Use existing instructions alone when** they already keep the necessary context concise and current. Additional files need to earn their maintenance cost.
+
+## Agent Skills
+
+The [Agent Skills specification](https://agentskills.io/specification) defines `SKILL.md` metadata and instructions, with supporting resources loaded as needed. Its [integration guidance](https://agentskills.io/client-implementation/adding-skills-support) distinguishes discovery, activation and host trust controls. These sources were checked on 2026-10-18.
+
+YAIML uses that skill format for project-memory workflows. Its contribution is the combination of one-prompt setup, maintained project knowledge and reusable methods across ordinary work, explicit requests and updates. Skill packaging and selective loading are existing conventions.
+
+YAIML's native entries reference canonical methods and shared guidance elsewhere in the project; copying one entry folder alone does not produce a complete skill package. Keep those dependencies reachable. Format alignment does not establish discovery, permissions or reliable behavior in another host; those require host-specific trials.
 
 ## Structured Memory Sets
 
@@ -59,7 +67,7 @@ Such workflows can record decisions and verification too. YAIML's focus is the m
 
 ## What YAIML Claims
 
-YAIML combines current-state synthesis, distinct responsibilities, evidence and uncertainty, selective loading, and pruning into a portable maintenance convention.
+YAIML combines one-prompt setup, reusable skills, current-state synthesis, distinct responsibilities, evidence and uncertainty, selective loading, and pruning into a portable maintenance convention.
 
 The [evidence vocabulary](AMBIGUITY_AND_EVIDENCE.md) makes the difference between intent, inspected implementation, and uncertainty explicit. This is a design choice, not a claim to have invented evidence-aware documentation.
 
