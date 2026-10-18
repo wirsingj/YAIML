@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.2.419200c031fce44c"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -14,7 +14,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-18. The maintenance correction is published at `008b2ad7d3c301d21f9a7dd85f6a6f8289b52fd5`; the public-only bootstrap trial used `76fae01f263177186fd09a65df3c080e6eecf804`. The 0.3.0 candidate separates product distribution from source-project use and adds local revisions and a core change audit. Publication of this candidate has not yet been checked. The design remains one-prompt context and project management, with locally available methods, ordinary maintenance and optional workflows. Skills own methods; prompts and host entries route to them.
+Current review: 2026-10-18. The maintenance correction is published at `008b2ad7d3c301d21f9a7dd85f6a6f8289b52fd5`; the public-only bootstrap trial used `76fae01f263177186fd09a65df3c080e6eecf804`. Release 0.3.0 is published at `6a012b02dadfbfd5004c568b92cf5e156f277f59` under tag `v0.3.0`. It separates product distribution from source-project use and adds local revisions and a core change audit. Public retrieval matched committed bytes for README, init and all 30 resources; bundle SHA-256 is `496473419abb1ac445778f73ba5e28ddd395b75629f1fa82e5a71815797d295e` using sorted package paths, NUL and Git blob bytes. This establishes availability, not a new agent bootstrap. The design remains one-prompt context and project management, with locally available methods, ordinary maintenance and optional workflows. Skills own methods; prompts and host entries route to them.
 
 ## Maintenance Prompt Coverage
 
@@ -22,11 +22,11 @@ Eleven standard methods cover init, orientation, maintenance, audit, to-do, veri
 
 Source review traced the [lifecycle scenarios](EVALUATION.md#one-prompt-skills-lifecycle): one paste must start acquisition without preinstalled YAIML; ordinary work reuses local resources; perspectives/counts retain user scope; methods pass evidence forward; missing resources remain unavailable; refresh preserves local skills/adaptations and records partial-version exceptions. This wording coverage does not prove execution.
 
-The product/source-project audit found ambiguous self-reference in copied bootstrap guidance, no explicit distribution boundary for project-grown skills, a no-code rule that confused document products with unbuilt apps, and stale unpublished-release language. The working draft distinguishes source authoring from adopter acquisition, labels reusable methods, preserves local skills, and matches evidence to the intended deliverable. Contributor and evaluation guidance distinguish repository health, assisted dogfooding and unassisted product trials. Manual review covers these decisions; earlier fresh-session results below do not validate the new branches. No independent adopter evidence or new agent trial was added by this audit.
+The product/source-project audit found ambiguous self-reference in copied bootstrap guidance, no explicit distribution boundary for project-grown skills, a no-code rule that confused document products with unbuilt apps, and stale unpublished-release language. Release 0.3.0 distinguishes source authoring from adopter acquisition, labels reusable methods, preserves local skills, and matches evidence to the intended deliverable. Contributor and evaluation guidance distinguish repository health, assisted dogfooding and unassisted product trials. Manual review covers these decisions; earlier fresh-session results below do not validate the new branches. No independent adopter evidence or new agent trial was added by this audit.
 
 ## Structural Checks
 
-The 0.3.0 candidate passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
+Release 0.3.0 passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
 
 ## Revision And Legacy Upgrade Review
 

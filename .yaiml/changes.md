@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.2.419200c031fce44c"
 role: changes
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
@@ -11,7 +11,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current head: `0.1.01b3573c87d5279e`.
+Current head: `0.2.419200c031fce44c`.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 
@@ -101,3 +101,16 @@ Affected paths (added or modified; no removals):
 - `AGENTS.md`
 - `CONTRIBUTING.md`
 - `README.md`
+
+
+## 0.2.419200c031fce44c — 2026-10-18
+
+Parent: `0.1.01b3573c87d5279e`.
+
+Intent: record publication evidence after the authorized release push.
+
+Outcome: `v0.3.0` and remote main resolved to release commit `6a012b02dadfbfd5004c568b92cf5e156f277f59` at verification. Public README, init and all 30 resources matched its exact Git bytes. The current review now replaces the pending-publication claim; fresh-agent revision adherence remains untested. This memory-only iteration changes no product resources or release label.
+
+Affected paths: `.yaiml/COLD_START_REVIEW.md`, `.yaiml/changes.md`.
+
+Verification: 32 public byte comparisons passed on 2026-10-18. Parent links, affected stamps, unchanged release resources and retained baseline entry checked locally. Publication availability does not revalidate earlier runtime or adoption claims.
