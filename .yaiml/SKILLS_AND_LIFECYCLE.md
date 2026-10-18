@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -11,7 +11,7 @@ agent-guidance: Preserve the one-prompt ordinary path and distinguish design fro
 ---
 # YAIML Skills And Project Lifecycle
 
-Material iterations also maintain project revisions and the fourth core role, `changes.md`, under [VERSIONING.md](VERSIONING.md). Current facts stay in their existing owners; the retained audit connects decisions, affected paths, evidence and concurrent parents. Read-only and unchanged tasks create no revision.
+[Using YAIML](YAIML_GUIDE.md) owns the ordinary context/work/verification/maintenance loop. Named skills provide explicit or specialized methods, rather than mandatory extra steps for every task. [VERSIONING.md](VERSIONING.md) owns revision and audit mechanics; ordinary completion reads its routine section, while migration and integration load their own detail.
 
 YAIML is a context and project management convention. Memory preserves what the project understands; skills preserve reusable ways to use and maintain that understanding. The minimum user interaction is one init prompt. Optional named skills make the same behavior easier to request precisely, without making command choreography a prerequisite.
 

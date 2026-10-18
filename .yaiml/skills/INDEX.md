@@ -1,7 +1,7 @@
-<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
+<!-- yaiml-revision: 0.3.e5a6701538b64592 -->
 # YAIML Skills
 
-Use this catalog to select a relevant method, then read and follow its `SKILL.md` and needed references. The standard methods work through host instructions during ordinary work; named commands are optional. Shared rules live in [Using YAIML](../YAIML_GUIDE.md). Read selected bodies only; reuse current context.
+Use this catalog to select a relevant method, then read and follow its `SKILL.md` and needed references. Ordinary work follows [Using YAIML](../YAIML_GUIDE.md) directly. Open this catalog when selecting a named/specialized workflow; host metadata may already provide that selection. Read selected bodies only; reuse current context.
 
 `yaiml-to-do 10` means up to ten feasible project priorities, with verification and memory maintenance. `yaiml-audit` accepts requested perspectives. Natural language selects the same methods; slash or other native invocation syntax depends on the host. Pass arguments through rather than interpreting them as shell commands. A combined request stays one task: orient, perform requested methods, verify, maintain.
 

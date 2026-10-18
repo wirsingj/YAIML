@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -144,6 +144,8 @@ Good evidence can be modest. A useful result might be: "In this one repository, 
 ## One-Prompt Skills Lifecycle
 
 Evaluate the published entry point from a new user's position: only the init prompt, target project and ordinary host tools. No maintainer paths, preloaded YAIML memory or prior conversation. If testing unpublished work, supply an isolated reference snapshot and label the source override; do not claim public retrieval was exercised. Inspect preloaded host instructions/skill catalogs for contamination even with no chat history.
+
+For a lighter normal-work path, record whether the shared loop suffices without ritual catalog/skill reads, while constraints, verification updates and revision records still survive. Measure guidance words separately from actual session usage; neither a shorter file nor one successful trial establishes token savings. A targeted replay after a fix supplements, rather than erases, the original failure.
 
 | Scenario | Independent acceptance criteria |
 | --- | --- |

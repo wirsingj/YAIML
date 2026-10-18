@@ -2,12 +2,12 @@
 name: yaiml-grow
 description: Add or improve useful project-specific memory and reusable YAIML methods when recurring work reveals a need.
 metadata:
-  yaiml-revision: "0.1.01b3573c87d5279e"
+  yaiml-revision: "0.3.e5a6701538b64592"
 ---
 
 # yaiml-grow
 
-Read [Using YAIML](../../YAIML_GUIDE.md) for shared context, evidence, authority and retention rules; reuse it and current core memory if already loaded. Identify the concrete need and its current owner before creating anything. Facts, vocabulary, constraints and decisions belong in existing memory or a specialist document when responsibility/retention warrants one. A recurring method with a clear trigger, inputs and useful outcome can become a project-local skill. A one-off task or speculative idea need not become a new file.
+Apply the [shared loop](../../YAIML_GUIDE.md) once, reusing current context. Identify the concrete need and its current owner before creating anything. Facts, vocabulary, constraints and decisions belong in existing memory or a specialist document when responsibility/retention warrants one. A recurring method with a clear trigger, inputs and useful outcome can become a project-local skill. A one-off task or speculative idea need not become a new file.
 
 Prefer improving an existing owner. Read an available local template for a new memory role; populate from project evidence, omit empty headings and set responsibility/lifecycle/budget. Place a new skill beside the established canonical skills, resolving the home from the active catalog and maintenance/source notes; otherwise default to `.yaiml/skills/`. Use `yaiml-<project-purpose>/SKILL.md`, a lowercase hyphenated name and concise YAML `name`/`description`. Preserve existing locations and names; resolve ambiguous owners before writing and check collisions with upstream and local skills. Describe the trigger, inputs, actions, evidence and stop conditions. Keep project facts in linked memory; avoid speculative rules.
 

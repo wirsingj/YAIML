@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -59,7 +59,7 @@ Commands are procedures, not passes. Record executed checks and scope in the rev
 
 ## Propagating Revisions
 
-Skills own workflows; shared guidance owns common rules; prompts/host entries route to them. Update owners and callers together. Check seed parity, isolated package closure, skill metadata/arguments, links/anchors, eleven starters, notice and [coverage](COLD_START_REVIEW.md#maintenance-prompt-coverage). Keep:
+The shared guide owns ordinary work; skills add specialized methods; prompts/host entries route to their owners. Update owners and callers together. Check seed parity, isolated package closure, skill metadata/arguments, links/anchors, eleven starters, notice and [coverage](COLD_START_REVIEW.md#maintenance-prompt-coverage). Keep:
 
 - SoTY current when meaning, risks, priorities, or evidence changes;
 - Architecture current when roles or artifact boundaries change;

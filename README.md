@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
+<!-- yaiml-revision: 0.3.e5a6701538b64592 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -49,7 +49,7 @@ You need project read/write access and access to the public reference or a suppl
 
 ## Work Normally; Keep Context Current
 
-Ask for a feature, discuss a decision or continue a task. YAIML instructs the agent to read relevant context, do the work, verify outcomes where appropriate, and update affected memory before finishing. You do not need to add “remember this” or invoke a maintenance command each time.
+Ask for a feature, discuss a decision or continue a task. One shared guide carries the normal loop: read current project context, do the work, verify outcomes where appropriate, and update affected memory before finishing. Specialized skills add detail when the task needs it. You do not need to add “remember this” or invoke a maintenance command each time.
 
 For example, you might decide:
 
@@ -87,7 +87,7 @@ The files stay with your project, so humans and compatible agents can inspect an
 
 ## Evidence And Limits
 
-YAIML [0.3.0](.yaiml/RELEASE.md) is an early public experiment. The new revision/audit convention remains unverified across fresh agent sessions; 1.0 readiness is still pending. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary requests. Other hosts and interactive skill menus remain unverified. These maintainer-run trials do not establish sustained reliability, independent adoption or productivity gains. The [current review](.yaiml/COLD_START_REVIEW.md) records the tested conditions and gaps.
+YAIML [0.4.0](.yaiml/RELEASE.md) is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary requests. A fictional adopter trial of this release also exercised local revisions, decision recall and read-only stability; a stale setup note required a targeted correction and replay. 1.0 readiness is still pending. Other hosts and interactive skill menus remain unverified. These maintainer-run trials do not establish sustained reliability, independent adoption or productivity gains. The [current review](.yaiml/COLD_START_REVIEW.md) records the tested conditions and gaps.
 
 Agents can miss instructions or preserve stale information. Review consequential changes; memory is context, not proof of correctness. YAIML retains normal project permissions and review controls. Optional delegation requires scoped confirmation. Use approved AI tools and keep confidential information out of public examples and memory.
 

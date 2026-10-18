@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 role: revision-guide
 title: Revisions And Change Records
 purpose: Connect file revisions, project changes and YAIML releases without losing concurrent contributions.
@@ -9,6 +9,8 @@ update-when: Revision, migration, integration or audit responsibilities change.
 agent-guidance: Record actual changes and evidence; never invent missing history or infer authority from a stamp.
 ---
 # Revisions And Change Records
+
+For routine completion, read **Complete One Iteration** only. Read the other sections when interpreting versions, establishing tracking, changing retention or integrating concurrent work. Reuse rules already current in context.
 
 ## Three Separate Versions
 
@@ -24,20 +26,15 @@ Use a fresh 16-character lowercase hexadecimal tag from available cryptographic 
 
 ## Complete One Iteration
 
-An iteration is one coherent, completed change: implementation, documentation, a confirmed conversational decision, an applied refresh, or new evidence that changes recorded understanding. Repeated writes while preparing that change share one revision. Several independent completed tasks may have separate revisions before a commit. Read-only work, unchanged refresh, speculative discussion and rerunning unchanged checks create none.
+One coherent material change is one iteration, including a confirmed conversational decision or new evidence that changes understanding. Multiple draft writes share its revision. Read-only, tentative and unchanged work creates none.
 
-1. Read the change record's header and current heads; inspect the actual worktree and relevant prior entries. Re-read concurrent edits before writing.
-2. Preserve existing facts and perform the authorized change. Reconcile current memory and verification claims in their owners.
-3. Allocate `y` as one greater than the highest counter in the known project lineage, initially 1. Use a decimal integer without a fixed width; do not sort it lexically or round it through floating point. Retain the counter across a YAIML major upgrade; `x` follows the applied release major. Source-resource counters belong to the source project and never raise the adopter's counter.
-4. Stamp changed YAIML-managed Markdown with the iteration revision. Leave untouched files and their stamps unchanged. Audit affected code, configuration and other project files by path without injecting headers into them.
-5. Add one concise entry to the core `changes.md` and update its current heads and own stamp. Include all files actually added, modified, removed or renamed by this iteration, including memory, routes, discovery and the change record itself. Identify unrelated existing work separately; never claim another contributor's edits as this task's work.
-6. Check the entry against the final diff and affected stamps. Verification results must name what actually ran and its limits. A check failure is a result, not permission to conceal the change. Report incomplete writes or records honestly.
+1. Inspect the final task diff and existing audit heads; reread concurrent edits. Preserve unrelated work and reconcile current memory/evidence in their owners.
+2. Allocate `x.y.z`: applied YAIML release major; one above the highest known **local** counter; a fresh 16-character lowercase hex tag from available cryptographic randomness. Retain the counter across major upgrades; upstream resource counters do not raise it. Quote the revision; use decimal integers without fixed width or floating-point rounding. Check known tag collisions; if generation fails, report incomplete assignment.
+3. Stamp changed YAIML-managed Markdown only: `yaiml-revision: "x.y.z"` in memory headers, under `metadata` in skill frontmatter, or `<!-- yaiml-revision: x.y.z -->` on plain entry pages outside copyable payloads. Untouched files and unmodified acquired resources retain their stamps. A newly instantiated template gets a local stamp; preserve legal notices exactly. Code/configuration receive no injected headers.
+4. Append one concise `changes.md` entry: revision, parent(s), date, intent/decision source, outcome, **all affected paths** including this record, and actual checks/limits. Identify renames/deletions. Update current heads and its own stamp. Do not predict a commit hash or claim another contributor's work.
+5. Compare the entry/stamps with the final diff. Preserve previous entries; subsequent corrections get linked revisions. Report incomplete writes or failed checks honestly.
 
-Use `yaiml-revision: "0.27.1f463a82b7dc905e"` in a memory header. In `SKILL.md`, place that string under frontmatter `metadata` to preserve host-supported fields. For a plain Markdown entry page, prompt or instruction route, use `<!-- yaiml-revision: 0.27.1f463a82b7dc905e -->` outside copyable payloads. Preserve equivalent local metadata when its meaning is clear. This adds no Markdown body schema or parser requirement.
-
-Managed Markdown comprises declared YAIML memory, owned guidance/templates, canonical skills, and YAIML-owned entry pages/routes. Do not stamp unrelated project Markdown merely because it exists. A shared host instruction file can carry a stamp for its YAIML section without claiming ownership of other instructions.
-
-Unmodified acquired resources retain their upstream stamps and exact bytes; source provenance distinguishes them from local revisions. A locally adapted resource receives a local stamp, with the incoming source revision recorded in maintenance guidance and the audit entry. Instantiating a template creates local memory with a local revision; a starter's stamp describes the starter, not the target's history. Preserve legal/notices byte-for-byte when required. Historical examples and compatibility fixtures can retain old formats when clearly labeled. Record these exceptions rather than silently claiming universal stamp coverage.
+Managed Markdown means declared memory, owned YAIML guidance/templates/skills and entry routes, not every Markdown file in the project. Source stamps are scoped by provenance; local adaptations use local stamps and retain their source note. Missing tracking uses **Adopt From Older YAIML**; divergent heads use **Concurrent Work And Integration**. Those procedures own the exceptional cases.
 
 ## Core Change Record
 

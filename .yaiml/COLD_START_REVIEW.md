@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.2.419200c031fce44c"
+yaiml-revision: "0.3.e5a6701538b64592"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -14,7 +14,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-18. The maintenance correction is published at `008b2ad7d3c301d21f9a7dd85f6a6f8289b52fd5`; the public-only bootstrap trial used `76fae01f263177186fd09a65df3c080e6eecf804`. Release 0.3.0 is published at `6a012b02dadfbfd5004c568b92cf5e156f277f59` under tag `v0.3.0`. It separates product distribution from source-project use and adds local revisions and a core change audit. Public retrieval matched committed bytes for README, init and all 30 resources; bundle SHA-256 is `496473419abb1ac445778f73ba5e28ddd395b75629f1fa82e5a71815797d295e` using sorted package paths, NUL and Git blob bytes. This establishes availability, not a new agent bootstrap. The design remains one-prompt context and project management, with locally available methods, ordinary maintenance and optional workflows. Skills own methods; prompts and host entries route to them.
+Current review: 2026-10-18. Experimental 0.4.0 consolidates ordinary work into the shared guide; specialized skills add detail and host entries route to their owners. The ShelfList draft trial below tests this shorter path separately from source-project dogfooding. Publication of this candidate is not yet verified. Earlier public bootstrap and maintenance evidence remains scoped to its recorded revisions; it does not establish current whole-product reliability.
 
 ## Maintenance Prompt Coverage
 
@@ -26,7 +26,7 @@ The product/source-project audit found ambiguous self-reference in copied bootst
 
 ## Structural Checks
 
-Release 0.3.0 passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
+The 0.4.0 candidate passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
 
 ## Revision And Legacy Upgrade Review
 
@@ -34,7 +34,27 @@ Maintainer-directed artifact exercises covered legacy root discovery, legacy dis
 
 Two real Git branches created equal next counters with distinct tags and independent state/design decisions. The audit produced a textual conflict; manual reconciliation preserved both entries and decisions, linked both parents and advanced the counter while retaining imported file stamps. A subsequent reversal used a new revision and preserved the earlier record. Artifact assertions passed. This demonstrates workable records in controlled examples, not an implemented merge engine or reliable autonomous conflict resolution.
 
-The first repository baseline stamps owned Markdown prospectively; legal notices and legacy sample memory retain their formats, and prior checks are not revalidated by stamping. Release identity, discovery layout and local iterations have separate owners. Fresh-session revision/audit adherence, interruption/collision recovery and broad consumer compatibility remain unverified. The earlier CLI trials below precede this convention and do not justify 1.0.
+The first repository baseline stamps owned Markdown prospectively; legal notices and legacy sample memory retain their formats, and prior checks are not revalidated by stamping. Release identity, discovery layout and local iterations have separate owners. ShelfList below exercises fresh-session revisions and retained audit entries for a new adopter. Autonomous legacy baselines, interruption/collision recovery and broad consumer compatibility remain unverified. Older CLI trials precede this convention and do not justify 1.0.
+
+## Lighter Ordinary-Work Trial
+
+On 2026-10-18, fictional ShelfList started as an offline, standard-library Python pantry library with four tests and no YAIML files. Five approved standalone Codex CLI sessions used fresh profiles, Windows, CLI `0.163.0-alpha.10.2` and default `gpt-6.1-sol`, with no imported chat, plugins or global project memory. Each had a ten-minute limit and scratch-only writes; no descendants, installs, services or publication. Setup received only the exact init and a disclosed local draft snapshot based on `b733fb3`; later requests contained no YAIML command or maintenance reminder. This did not test public acquisition.
+
+Startup records showed no YAIML base instructions or native catalog at initialization. Later sessions received the target AGENTS instructions and twelve installed entries. They read the shared guide, discovery and core memory without opening the catalog or orient/maintain/verify skill bodies. Material work also read VERSIONING, including more than its routine section; selective section reading is not established.
+
+| Request | Observed result |
+| --- | --- |
+| Init | Acquired thirty byte-identical resources and twelve reachable native routes; created four core roles; all original application files stayed unchanged; four tests passed |
+| Ordinary CSV feature | Preserved public columns, private IDs, Unicode/order/duplicates and saved bytes; seven tests passed; implementation evidence and all seven changed paths entered local revision 2 |
+| Conversation-only decision | Saved the first-release exclusion of prices/totals; barcode scanning stayed tentative; three changed paths entered revision 3 without code edits |
+| Read-only recall | Recovered export behavior, the decision and test limits; every project-file hash stayed unchanged; repeated the stale activation claim below |
+| Focused corrected replay | Same feature prompt from the post-init baseline, with only the revised shared guide and recomputed source fingerprint supplied by the reviewer; seven tests passed and the obsolete activation note was replaced |
+
+The first feature session left “fresh-session discovery unobserved” despite host-provided metadata. Compression had retained the concept but lost the explicit action trigger. The correction now requires comparing session observations with setup claims even during unrelated ordinary work. Replay recorded instruction/metadata availability and actual shared-guide reading, while leaving specialized invocation and menus unverified. This is one successful targeted replay after a failure, not an unassisted five-session pass or a new full-chain test of the correction.
+
+Independent checks on both feature outputs covered CSV escaping, duplicates, Unicode, insertion order, excluded IDs, missing-file noncreation, byte preservation and legacy quantity rejection. Artifact checks confirmed complete affected-path records, parent links, preserved earlier entries, local counters independent of upstream stamps and unchanged acquired resources. Source/package checks cover default/custom placement, metadata, links and seed parity; this trial did not exercise legacy refresh, concurrent revisions, stale verification header fields or another host.
+
+All sessions completed within their limits. CLI counters totaled 626,295 input tokens (513,664 cached) and 15,611 output tokens across repeated calls, not unique context size. These exclude reviewer/preparation work; monetary cost and controlled savings were not measured. Trial snapshots/logs remain outside the repository. This is a maintainer-designed unfamiliar fictional adopter, not independent adoption.
 
 ## Clean CLI Lifecycle Trial
 
@@ -70,7 +90,7 @@ Independent checks confirmed tag semantics, no-overwrite behavior, blank-title r
 
 Earlier explicit native-task checks demonstrated replacement of a stale activation claim after wrapper injection and canonical-method use; that success did not establish ordinary-work reliability. In the published Workshop Log sequence, test results stayed current but a blanket "fresh-session loading unobserved" note survived despite the host supplying the catalog and the agent reading relevant methods. Read-only recall propagated that obsolete claim.
 
-The `yaiml-maintain` correction explicitly reconciles stable-header fields, owning passages and summaries. It distinguishes host-supplied instructions/metadata, actual canonical-method use, interactive menus and untested workflows. Only observations already available in the session support corrections; no private host-log inspection or new activation scan is required.
+The earlier `yaiml-maintain` correction explicitly reconciled stable-header fields, owning passages and summaries; the current shared guide owns that procedure. It distinguishes host-supplied instructions/metadata, actual canonical-method use, interactive menus and untested workflows. Only observations already available in the session support corrections; no private host-log inspection or new activation scan is required.
 
 Two matched fresh sessions started from the same post-init project snapshot, with a deliberately stale `last-verified` header and the same ordinary tag-change request. The candidate changed only the maintenance method and the source note disclosing that local override. Both passed seven functional tests and corrected the header. The published control retained the obsolete host-loading claim; the candidate replaced it with observed instruction/catalog availability and orient/verify/maintain use, preserving untested menus, automatic skill-body injection and other workflows. A further fresh candidate rerun passed seven tests without changing any project file.
 

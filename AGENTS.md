@@ -1,45 +1,19 @@
-<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
+<!-- yaiml-revision: 0.3.e5a6701538b64592 -->
 # Instructions for Agents Working on YAIML
 
-Before making changes:
+Read `.yaiml/yaiml.yml` and follow [.yaiml/YAIML_GUIDE.md](.yaiml/YAIML_GUIDE.md) for context, evidence, authority, ordinary maintenance and revision records. Read selected stable headers before bodies; reuse current context. Our current-memory owners are `.yaiml/SoTY.md`, `.yaiml/ARCHITECTURE.md` and `.yaiml/MAINTAINER_GUIDE.md`; `.yaiml/changes.md` retains the change audit. Select specialized methods from host metadata or [.yaiml/skills/INDEX.md](.yaiml/skills/INDEX.md) when the task needs them.
 
-1. Read `.yaiml/yaiml.yml`.
-2. Read the three current-memory documents below. For core `.yaiml/changes.md`, read its header, current heads and relevant entries. Select supporting material by task. Reuse current context; refresh when stale or insufficient, including relevant changes or context loss. For each selected YAIML document, read its stable header before its body; `read-with` is a relevance hint, not a recursive loading requirement.
-3. Treat `.yaiml/SoTY.md`, `.yaiml/ARCHITECTURE.md`, and `.yaiml/MAINTAINER_GUIDE.md` as this repository's living project memory; `.yaiml/changes.md` owns the retained change audit. Follow `.yaiml/VERSIONING.md` for revisions.
-4. Treat examples, templates, prompts, and guides as supporting artifacts that must stay synchronized with the living-memory concept.
-5. At startup and whenever loading or refreshing YAIML context, consider serverless subagent coordination from available context without extra scans or calls. For a concrete benefit, read `.yaiml/YAIMLACP.md`. Describe the option, access, limits, cost, and single-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Without confirmation, continue independent work without delegation. Reuse valid scoped approval and current guidance. Do not build a server or install anything for this convention.
+At startup and on context loading/refresh, consider serverless coordination from available context without extra scans/calls. For a concrete benefit, read [.yaiml/YAIMLACP.md](.yaiml/YAIMLACP.md), disclose scope, access, limits, cost and the single-agent alternative, and obtain affirmative confirmation before first use or changed scope/cost. Reuse valid scoped approval; otherwise continue independently.
 
-Read and follow [.yaiml/YAIML_GUIDE.md](.yaiml/YAIML_GUIDE.md) for shared workflow rules and [.yaiml/skills/INDEX.md](.yaiml/skills/INDEX.md) to select relevant methods. Read selected skill bodies and needed references; reuse current context. Natural requests and named skills share the same methods; preserve counts, perspectives and scope. Compose requested workflows without separate invocations. Routine work uses local context and maintains material understanding; init/refresh or a specific missing resource triggers acquisition, never startup alone. Native command syntax depends on the host.
+## Source-Project Boundaries
 
-Working rules:
+- YAIML means **Yet Another AI Markup Language**: shared project memory for humans and agents. Preserve human direction in SoTY and the distinction between intent and implementation evidence.
+- This repository develops the reusable product while using it. Canonical product methods live in `.yaiml/skills/`; `.agents/skills/yaiml-*` are native routes. Bootstrap identifies distribution resources. Our core facts, roadmap, policies and source-only skills do not become adopter defaults.
+- Here, “update YAIML” means improve reference guidance within scope and maintain affected project memory, not install a published package over authored sources. “Update our SoT” selects ordinary maintenance; cleanup/compression requests select synthesis. Preserve legacy discovery inputs and mature adopter knowledge.
+- Synchronize affected guides, templates, prompts and routes with their owning method. Keep examples explicitly scoped; source-project dogfooding and fresh adopter behavior require separate evidence.
+- Follow the [evidence guidance](.yaiml/AMBIGUITY_AND_EVIDENCE.md#contradictions-and-regression-checks) for disputed behavior and acceptance authority. Keep disputed candidates out of shared defaults while investigating.
+- Keep this phase convention-first: no runtime, server, SDK, provider adapter, package manifest or web app without authorized implementation scope. Do not revive `SPEC.md`, Markdown schemas or formal conformance machinery. YAIMLACP uses existing host capabilities only.
+- Preserve `LICENSE.md`, attribution and earlier grants. Commercial/client use is allowed; selling YAIML or charging for forks is restricted. Further terms changes require explicit maintainer approval. Do not call the custom terms MIT or OSI-approved open source.
+- Preserve the independence declaration and exclude confidential/private material. Machine-specific reference paths, drive/profile names, file URIs, localhost and private workspace URLs belong in prompts, workspace configuration or ignored notes, never committed guidance.
 
-- Preserve the distinction between SoT, architecture, and maintainer procedures.
-- Preserve the distinction between declared intent and implementation evidence.
-- Treat YAIML as shared project memory for AI chats, coding agents, and human contributors, not private scratch notes for one agent.
-- Use "Yet Another AI Markup Language" as YAIML's intended expansion.
-- Dogfood YAIML retention and uncertainty rules in this repository.
-- Treat natural-language requests such as "continue through the SoT list" or "update our SoT" as instructions to use this repository's YAIML memory, not as requests for separate prompt choreography.
-- Treat "update YAIML", "updated YAIML", or "check new YAIML" as convention-refresh language: in adopting repositories, compare local YAIML methods and guidance with the human-provided, recorded or authorized workspace reference; in this repository, update the reference guidance itself and then update SoTY if the meaning changed.
-- Treat "clean up YAIML", "compress YAIML", "compact project memory", "prune project memory", or "prune SoT" as project-memory cleanup/compression language: rewrite affected YAIML documents to remove stale, repetitive, resolved, or log-like content while preserving current truth, human direction, evidence, uncertainty, active risks, and useful lessons.
-- Treat older recognizable discovery layouts such as `documents.sot.path` as compatibility inputs to understand before migrating, not as a reason to overwrite mature adopter memory.
-- Do not commit machine-specific reference paths, local drive names, user profile paths, `file://` URIs, localhost URLs, or private workspace URLs into YAIML guidance; those belong in the human prompt, agent/workspace configuration, environment, or ignored local notes.
-- YAIMLACP documents coordination through existing host capabilities. It adds no server, SDK, installation, or separate runtime. Do not add implementation libraries, CLIs, provider adapters, package manifests, or web applications here without an authorized implementation scope. Keep Markdown memory free of schemas and conformance fixtures.
-- Preserve the approved terms in `LICENSE.md`, required attribution and earlier grants; further license changes require explicit maintainer approval. Commercial/client use is allowed, but selling YAIML or charging for forks is restricted. Do not describe these custom terms as MIT or OSI-approved open source.
-- Before finishing, persist material changes to project understanding, including confirmed human direction from conversation without code edits. Do not promote brainstorming into decisions. Update only affected YAIML documents without a separate request, prune stale state, and do not append a work diary to current-state memory. Complete one project revision and concise changes.md entry for each material iteration; stamp changed managed Markdown and audit all affected project paths. Preserve audit entries and concurrent parents; read-only/no-op tasks create no revision. Respect read-only task scope and leave unchanged memory alone.
-- Report contradictions rather than smoothing them into confident prose.
-- Do not treat a command, script, workflow, or test existing in source as proof that it passed; successful execution only applies under the recorded conditions.
-- Before changing shared behavior, identify affected invariants and authorized changes; ground expected outcomes independently of the candidate. Compare an accepted baseline under equivalent conditions when available, without treating old behavior as inherently correct.
-- Separate reported concerns, evidence, and hypotheses. Keep disputed candidates out of shared defaults while investigating; continue independent authorized work. Resolve factual concerns with relevant evidence, not unrelated passing checks or failure to reproduce. Changes to intent or acceptance criteria require established authority. Follow the [evidence guidance](.yaiml/AMBIGUITY_AND_EVIDENCE.md#contradictions-and-regression-checks).
-- Do not describe planned tooling as implemented tooling.
-- Do not revive `SPEC.md`, schema-first language for Markdown memory documents, or formal conformance machinery unless a human explicitly changes the project phase.
-
-When updating YAIML documents:
-
-- Read the stable header first.
-- Preserve human directives.
-- Preserve multi-agent or multi-contributor conflicts until evidence or human direction resolves them.
-- Remove resolved active risks from active sections.
-- Mark uncertainty honestly.
-- For affected memory, replace the existing account of changed facts; remove superseded claims and resolved active items. Keep completed work only as current capability, an active constraint, or a lesson that changes future action. Do not relocate history into new supporting files; the core change audit intentionally retains concise revision records under its own policy.
-- Keep routine edits passage-scoped and unrelated structure stable. Coordinate broad compression separately. Before authorized integration, reconcile affected memory with the actual target and common ancestor; a clean merge does not prove consistent meaning. Preserve independent changes, distinguish branch from deployed facts, and route unresolved decisions to existing review authority. Recheck affected evidence after integration changes.
-- Measure affected memory before/after. Report net growth with its reason and any budget overage in the task response, not the memory. Preserve necessary knowledge and governed retention.
+Before finishing, apply the shared guide's maintenance and revision steps without a separate request. Keep current memory concise and retain the audit under its policy. Report affected memory counts, growth reasons and budget overages outside memory. Respect read-only scope and leave unchanged understanding alone.

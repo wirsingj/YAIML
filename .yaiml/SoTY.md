@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -21,7 +21,7 @@ YAIML means Yet Another AI Markup Language: shared, repository-owned project mem
 
 Declared: pursue broad adoption while remaining an early public experiment: no installation, ordinary Markdown, explicit uncertainty and synthesis. A runtime or formal specification remains outside scope.
 
-Declared (maintainer direction, October 2026): [YAIMLACP](YAIMLACP.md) is optional serverless coordination through existing subagents, with no server or installation. At startup and on context loading or refresh, consider usefulness without extra scans or calls. For a concrete benefit, describe the option, access, limits, cost, and one-agent alternative; obtain affirmative confirmation before first use and again if scope or cost changes. Reuse valid scoped approval; silence is not consent.
+Declared: [YAIMLACP](YAIMLACP.md) supplies optional serverless coordination with scoped affirmative approval. Its owner preserves startup consideration, disclosure, limits and confirmation rules; no server or installation is authorized.
 
 Declared (maintainer direction, October 2026): YAIML is context/project management with a one-prompt minimum interaction. Assume a new user and agent have no YAIML context or maintainer checkout. The small seed immediately retrieves guidance, establishes memory and embeds discoverable `yaiml-` skills. Ordinary work uses and maintains context automatically; optional commands such as `yaiml-to-do 10` and `yaiml-audit` select the same methods. Compose requested work without command choreography. Grow useful knowledge and methods, preserving local adaptations during refresh. Keep YAIML-owned material in `.yaiml/`, with supported host/public entry points outside. Distinguish local development snapshots from published references.
 
@@ -29,13 +29,13 @@ Declared: personal public project; require credit, permit commercial/client use,
 
 Declared (maintainer direction, October 2026): stamp YAIML-managed Markdown per material iteration; audit all affected project paths in core `changes.md`. Use YAIML major, local counter and random tag, preserving concurrent lineage. Updaters must establish prospective legacy baselines. [Versioning](VERSIONING.md) owns the method; no-op/read-only work stays unchanged.
 
-Declared: reduce repetition and adopter under-pruning. Keep routine edits local and reconcile branch meaning through existing review, without mandatory CI or subagents.
+Declared (maintainer direction, October 2026): reduce repeated rules and normal-work overhead without losing context, evidence or maintenance. Put shared mechanics in one owner and test an unfamiliar adopter. The maintainer reports no known independent adoption; internal installations/trials do not establish outside use. Preserve project-specific constraints during consolidation.
 
 ## Current State And Evidence
 
-This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product resources from repository memory. Experimental [0.3.0](RELEASE.md) supplies eleven methods plus an alias, seven optional prompts, eleven starters and four core roles. Latest working files remain canonical; commits identify provenance, not deployment. The [Maintainer Guide](MAINTAINER_GUIDE.md) covers source and adopter reviews.
+This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product resources from repository memory. Experimental [0.4.0](RELEASE.md) supplies eleven methods plus an alias, seven optional prompts, eleven starters and four core roles. Latest working files remain canonical; commits identify provenance, not deployment. The [Maintainer Guide](MAINTAINER_GUIDE.md) covers source and adopter reviews.
 
-[Bootstrap](BOOTSTRAP.md) connects hosts; fifteen local adopters have twelve entries. CLI trials cover public-only setup, ordinary requests, conversational recall, verification updates, custom growth, composition, unchanged refresh and pending license approval. Structural/discovery/repeat checks passed; native-write cases remained partial. A matched trial supports correcting stale activation notes. Replaying the original AIWIKI request with the corrected method updated affected headers and activation evidence; fresh reuse left files unchanged. [Current review](COLD_START_REVIEW.md) scopes evidence; [upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
+[Bootstrap](BOOTSTRAP.md) connects hosts; fifteen internal installations have twelve entries. Earlier CLI trials cover published setup, ordinary work, custom growth, composition, refresh and header repair. The new ShelfList draft trial used the shared loop without ritual skill-body reads: feature work and a conversational decision updated memory, revisions and path audits; fresh recall preserved files. It exposed a stale activation note; one corrected replay replaced it while retaining untested scope. [Current review](COLD_START_REVIEW.md) records conditions, assistance and remaining gaps; [upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
 
 The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-studies/ADOPTION_TRIAL.md) contain dated maintainer-owned evidence. The [current review](COLD_START_REVIEW.md) describes this repository's latest changes and verification limits. Neither establishes independent adoption or productivity gains.
 
@@ -50,7 +50,7 @@ The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-
 
 ## Immediate Priorities
 
-1. Test revision/audit adherence and legacy baselines across fresh sessions, including ordinary decisions, no-ops and concurrent reconciliation. Earlier CLI passes do not validate these additions. Broaden distribution, non-code and partial-update trials.
+1. Broaden fresh-session revision/audit coverage to legacy baselines, interruption and concurrent reconciliation. Repeat ordinary maintenance across longer sequences and other hosts; one corrected replay cannot establish reliability. Extend non-code and partial-update trials.
 2. Assess remaining migration/version compatibility and historical disclosure before broader rollout. Keep current working-copy measurements separate from historical deployment claims.
 3. Use a working isolated runner for the [prepared comparison](EVALUATION.md#ready-to-run-comparison) and [new-reader demo](examples/minimal-notes/README.md#short-paste-and-go-demo). Measure total context cost, missed reads/writes, and misunderstandings.
 4. Run the [concurrent-contributor check](EVALUATION.md#concurrent-contributor-check), then obtain an owner-led trial outside the maintainer's projects and another agent environment. Measure unrelated diff churn and lost constraints.

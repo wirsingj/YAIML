@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.2.419200c031fce44c"
+yaiml-revision: "0.3.e5a6701538b64592"
 role: changes
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
@@ -11,7 +11,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current head: `0.2.419200c031fce44c`.
+Current head: `0.3.e5a6701538b64592`.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 
@@ -114,3 +114,44 @@ Outcome: `v0.3.0` and remote main resolved to release commit `6a012b02dadfbfd500
 Affected paths: `.yaiml/COLD_START_REVIEW.md`, `.yaiml/changes.md`.
 
 Verification: 32 public byte comparisons passed on 2026-10-18. Parent links, affected stamps, unchanged release resources and retained baseline entry checked locally. Publication availability does not revalidate earlier runtime or adoption claims.
+
+## 0.3.e5a6701538b64592 — 2026-10-18
+
+Parents: `0.2.419200c031fce44c`.
+
+Intent/source: maintainer requested less repetitive guidance and lighter ordinary work without losing context, evidence or maintenance, checked in an unfamiliar adopter. Existing scoped authorization covers five isolated sessions and checked publication.
+
+Outcome: experimental product 0.4.0 centralizes the ordinary loop, shortens host/template/skill routing, makes revision exceptions conditional and preserves stricter local rules during refresh. Source-project policies remain separate. A draft trial exposed an obsolete activation claim; a focused shared-guide correction and replay replaced it without claiming specialized invocation.
+
+Verification: five bounded fresh CLI sessions covered draft setup, CSV work, conversational decision, read-only recall and one corrected feature replay. Both feature outputs passed seven tests and independent privacy, escaping, ordering, nonmutation and legacy-input checks. Revision/path/parent checks preserved earlier entries and upstream stamps; recall changed no files. Package checks cover thirty resources in default/custom homes, twenty-four skill entries, links/anchors, discovery and seed parity. Staged/working comparison and whitespace review passed. Full trial conditions and the original failure are retained in COLD_START_REVIEW.md; snapshots/logs remain isolated.
+
+Limits: replay was reviewer-prepared from the post-init baseline; the corrected whole sequence, legacy refresh, concurrent revisions, header-field regression, other hosts and independent adoption were not tested here. Usage counters do not establish cost savings. Publication is not established by these local checks.
+
+Affected paths:
+- `.yaiml/AGENT_INTEGRATION.md`
+- `.yaiml/ARCHITECTURE.md`
+- `.yaiml/BOOTSTRAP.md`
+- `.yaiml/COLD_START_REVIEW.md`
+- `.yaiml/CONTEXT_LOADING.md`
+- `.yaiml/EVALUATION.md`
+- `.yaiml/MAINTAINER_GUIDE.md`
+- `.yaiml/RELEASE.md`
+- `.yaiml/SKILLS_AND_LIFECYCLE.md`
+- `.yaiml/SoTY.md`
+- `.yaiml/VERSIONING.md`
+- `.yaiml/YAIML_GUIDE.md`
+- `.yaiml/changes.md`
+- `.yaiml/skills/INDEX.md`
+- `.yaiml/skills/yaiml-audit/SKILL.md`
+- `.yaiml/skills/yaiml-compress/SKILL.md`
+- `.yaiml/skills/yaiml-git/SKILL.md`
+- `.yaiml/skills/yaiml-grow/SKILL.md`
+- `.yaiml/skills/yaiml-maintain/SKILL.md`
+- `.yaiml/skills/yaiml-orient/SKILL.md`
+- `.yaiml/skills/yaiml-realign/SKILL.md`
+- `.yaiml/skills/yaiml-refresh/SKILL.md`
+- `.yaiml/skills/yaiml-to-do/SKILL.md`
+- `.yaiml/skills/yaiml-verify/SKILL.md`
+- `.yaiml/templates/core/MAINTAINER_GUIDE.md`
+- `AGENTS.md`
+- `README.md`

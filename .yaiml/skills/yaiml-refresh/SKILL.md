@@ -2,7 +2,7 @@
 name: yaiml-refresh
 description: Update YAIML methods and guidance from the recorded or supplied reference while preserving project memory and local skills.
 metadata:
-  yaiml-revision: "0.1.01b3573c87d5279e"
+  yaiml-revision: "0.3.e5a6701538b64592"
 ---
 
 # yaiml-refresh
@@ -15,6 +15,6 @@ For adopter refresh, use a supplied reference first, then the recorded source or
 
 For each affected upstream-owned method/source, compare incoming guidance with the previously applied revision and current local file where available. Apply compatible changes in focused passages, preserving project facts, custom skills, names, headers, budgets, retention and stricter local authority. If the base is unavailable, make conservative semantic comparisons and disclose uncertainty. Preserve unknown extensions and conflicting decisions; block only dependent changes. Never replace a whole mature memory family with templates.
 
-Repair missing/reachable bodies, notices, catalogs and host routes together. Handle upstream renames/removals by checking local callers and value; preserve adapted useful methods until their replacement is reconciled. Apply the acquired transition in this update session: establish the core changes role and prospective revision baseline when missing, retaining existing records, labels and layout. Do not stop at copying the new instructions. Never import the source project's audit or treat upstream file counters as local progress. Update the existing source note only for applied resources; retain per-resource revision exceptions or unresolved differences instead of claiming everything updated. An unchanged repeat run leaves healthy files unchanged.
+Repair missing/reachable bodies, notices, catalogs and host routes together. Handle upstream renames/removals by checking local callers and value; preserve adapted useful methods until their replacement is reconciled. Consolidate equivalent old YAIML boilerplate into the incoming shared-guide route, preserving unique project constraints, stricter local rules and unresolved differences. Apply the acquired transition in this update session: establish the core changes role and prospective revision baseline when missing, retaining existing records, labels and layout. Do not stop at copying the new instructions. Never import the source project's audit or treat upstream file counters as local progress. Update the existing source note only for applied resources; retain per-resource revision exceptions or unresolved differences instead of claiming everything updated. An unchanged repeat run leaves healthy files unchanged.
 
 For requested relocation, use Bootstrap's existing-layout procedure. Re-init offers consolidation but no answer preserves paths while refresh continues. No discovery migration, application work or delegation is implied. Check exact paths with actual consumers; quote numeric version labels without changing their spelling. Report applied/unchanged/partial/conflicting results and actual checks. Maintain project memory only for changed understanding.

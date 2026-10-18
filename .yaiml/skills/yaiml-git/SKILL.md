@@ -2,7 +2,7 @@
 name: yaiml-git
 description: Carry out requested Git work such as reviewing changes, committing, branching, syncing or resolving conflicts while preserving project context and existing work.
 metadata:
-  yaiml-revision: "0.1.01b3573c87d5279e"
+  yaiml-revision: "0.3.e5a6701538b64592"
 ---
 
 # yaiml-git
@@ -21,4 +21,4 @@ For YAIML conflicts, compare claims by responsibility: SoT current state and dec
 
 For a requested push, verify the destination, branch, outgoing commits and expected remote state. A rejection is evidence to inspect, not permission to force or retry blindly. Preserve current work on access failures or changed remote history and report the precise blocker. Publication, deployment and unrelated repository changes remain separate actions.
 
-Finish with what ran, resulting branch/commit state, verification scope and anything unresolved. Use `yaiml-maintain` for material project understanding; a routine Git action alone does not require a memory diary. No new Git wrapper, hosting service or background process is required.
+Finish with what ran, resulting branch/commit state, verification scope and anything unresolved. Use the shared maintenance step for material project understanding; a routine Git action alone does not require a memory diary. No new Git wrapper, hosting service or background process is required.

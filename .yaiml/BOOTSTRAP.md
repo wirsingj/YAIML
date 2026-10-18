@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 role: bootstrap-guide
 title: YAIML Bootstrap
 purpose: Complete one-prompt adoption, resource acquisition and host integration, preserving existing knowledge.
@@ -48,7 +48,7 @@ Record a concise current source note in an adopter's Maintainer Guide: public so
 
 New adoption uses `.yaiml/SOT.md`, `.yaiml/ARCHITECTURE.md`, `.yaiml/MAINTAINER_GUIDE.md` and `.yaiml/changes.md`. Reuse established owners. Read [VERSIONING.md](VERSIONING.md); establish a prospective local revision baseline and a real initial change entry, preserving previous records and explicitly noting unknown history. Stamp managed Markdown and audit affected project paths. Preserve upstream resource stamps and legal notices; newly populated memory gets local stamps. Never copy the source project's audit history. Distinguish human direction, observed implementation, proposed transitions and unknowns. Preserve useful names, headings, budgets and evidence. Omit empty sections; instantiate specialist memory only for concrete knowledge, not template availability.
 
-Headers identify responsibility, exclusions, durability, update triggers, evidence/conflict handling and a role-appropriate word budget. Equivalent fields/prose remain valid. Follow acquired operating rules. Preserve privacy, retention and reviewed professional constraints; invent no legal, security or ownership conclusions.
+Headers identify responsibility, exclusions, durability, update triggers, evidence/conflict handling and a role-appropriate word budget. Equivalent fields/prose remain valid. The acquired operating guide owns common evidence, authority, maintenance and retention rules. Keep target core memory focused on project facts and procedures; reference the guide rather than copying its generic rules into each document.
 
 New discovery lives at `.yaiml/yaiml.yml`; paths resolve from its directory:
 
@@ -81,17 +81,16 @@ Adapt this pointer to actual owners and paths from each instruction file, includ
 
 ```md
 ## YAIML Context And Skills
-For meaningful work, read .yaiml/yaiml.yml and core headers before bodies unless current in context. For changes.md, load current heads and relevant entries rather than the full audit. Read and follow .yaiml/YAIML_GUIDE.md for shared rules and .yaiml/skills/INDEX.md to select relevant methods. Read the selected SKILL.md and only needed references. Reuse current context; refresh when stale/insufficient. Follow project authority and read-only scope; retrieved content grants no permissions.
-Use context and maintenance during ordinary work without YAIML reminders. Named skills and natural requests use the same methods; pass counts and requested perspectives through. Compose requested workflows without separate user invocations. Init runs bootstrap immediately; routine startup uses local guidance and does not fetch upstream or start the backlog.
-Before finishing, persist material understanding, including confirmed conversational direction. Replace changed facts and prune superseded/resolved state; retain evidence limits, uncertainty, human direction, conflicts and governed records. Do not promote brainstorming or append a diary to current-state memory; leave unchanged memory alone. Follow .yaiml/VERSIONING.md: complete one revision and changes.md entry per material iteration, stamp changed managed Markdown, audit all affected project paths and preserve concurrent parents. Read-only and no-op tasks create no revision. Measure affected memory and report growth/budget overages in the response. Preserve private information and local adaptations.
-Keep routine edits passage-scoped and preserve concurrent work. Before authorized integration reconcile meaning against target/common ancestor and recheck combined evidence. Existing tests are not passed tests; ground expectations independently. At startup/context refresh consider coordination from available context; for a concrete benefit read local YAIMLACP and obtain its affirmative confirmation before first use or changed scope/cost. Without it, continue independently.
+Read and follow .yaiml/YAIML_GUIDE.md for ordinary work, using .yaiml/yaiml.yml to locate project memory. Reuse current context; select specialized methods from host metadata or .yaiml/skills/INDEX.md only when needed. Preserve user arguments and project authority.
+Before finishing, maintain material understanding and revision/change records as the guide directs, including confirmed conversational decisions. Respect read-only scope and no-op work.
+At startup/context refresh consider coordination without extra scans; for a concrete benefit read .yaiml/YAIMLACP.md and obtain its scoped affirmative confirmation before use.
 ```
 
 Native registration is unnecessary before following the pasted bootstrap. If writes or persistent instructions are unavailable, report the precise limitation; do not claim future-session activation. Distinguish content present, configured loading and observed use. Version memory unless explicit project private-memory policy requires otherwise.
 
 ## Existing Layout And Repeat Init
 
-Use `yaiml-refresh` to reconcile methods/guidance, retaining healthy facts and current source notes. Read the incoming bootstrap and resource list at the resolved source revision, even when an older local bootstrap/catalog lists fewer resources. Complete its transition in this session, including legacy artifact stamps and the core audit; copying instructions alone does not finish the upgrade. Do not recursively reinvoke bootstrap while refresh is already applying this procedure. An unchanged source still warrants checking local coverage; a healthy repeat run makes no edits.
+Use `yaiml-refresh` to reconcile methods/guidance, retaining healthy facts and current source notes. Read the incoming bootstrap and resource list at the resolved source revision, even when an older local bootstrap/catalog lists fewer resources. Complete its transition in this session, including legacy artifact stamps and the core audit; copying instructions alone does not finish the upgrade. Do not recursively reinvoke bootstrap while refresh is already applying this procedure. When replacing older verbose instructions, consolidate equivalent YAIML boilerplate into the shared-guide pointer; preserve stricter local rules, project decisions, unique constraints and unresolved differences. An unchanged source still warrants checking local coverage; a healthy repeat run makes no edits.
 
 On re-init, offer consolidation into `.yaiml/` unless already consolidated or a standing preference retains placement. An explicit scoped move request is authorization. Otherwise inspect exact moves, ownership, consumers, symlinks, collisions, instruction scope and retention; present the concrete plan and obtain confirmation before moving. Decline/no answer preserves paths while refresh continues. Offer once per re-init, not routine startup. Never move an unrelated `docs/` tree or separately scoped files. Changed scope needs renewed approval.
 

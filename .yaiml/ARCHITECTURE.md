@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.3.e5a6701538b64592"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -46,7 +46,7 @@ The seed knows the public reference location and bootstrap path; it assumes no Y
 
 The base supplies skills, shared/revision rules, release identity, coordination guidance, starters and notice for offline use. Retrieve missing extensions from the recorded source. Maintenance guidance owns current applied source and adaptations; the fourth core role retains change records without private paths.
 
-For meaningful work, load instructions, discovery, current memory and relevant audit heads/entries; then select methods/support. Reuse sufficient context. Headers identify responsibility; `read-with` is a hint, not recursion. No Markdown parser or body schema is required.
+The guide owns context, work, verification and maintenance. Reuse current core memory; select specialized methods when needed. Routine completion loads revision steps; migration/integration detail is conditional. Headers identify responsibility; `read-with` is a hint, not recursion.
 
 Composition carries one task's scope, findings, priorities and evidence through selected skills. Orient once, perform authorized work, verify at relevant checkpoints, then synthesize material understanding. `yaiml-to-do` bounds feasible original priorities; `yaiml-audit` accepts perspectives. Neither task counts nor skill invocations authorize subagents. Read-only and unchanged tasks remain respected.
 
