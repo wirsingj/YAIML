@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: stable-header-guide
 title: Stable Headers
@@ -30,7 +31,8 @@ A stable header should answer:
 - how durable or volatile the contents are;
 - related YAIML documents to consult;
 - when and why the document should be updated;
-- reader instructions for evidence, uncertainty, conflicts, pruning, and human direction.
+- reader instructions for evidence, uncertainty, conflicts, pruning, and human direction;
+- the document's last change revision, distinct from verification evidence.
 
 These are semantic responsibilities. Projects may phrase them differently.
 
@@ -56,11 +58,11 @@ agent-guidance: Verify implementation claims. Preserve human intent. Mark uncert
 ---
 ```
 
-This is a recommended header shape, not a serialization protocol.
+This is a recommended header shape, not a serialization protocol. Add `yaiml-revision: "0.27.1f463a82b7dc905e"` for the last completed local iteration; this value is illustrative. [VERSIONING.md](VERSIONING.md) governs assignment, skills/entry-page spellings, source-resource provenance and baseline migration. Revision changes do not update `last-verified` automatically.
 
 `last-verified` is optional. Record consequential verification beside the relevant claims; a header can summarize a document-level review when useful. State the date, relevant revision, and scope actually checked. The example above is illustrative, not evidence about the adopting project. A file timestamp or a newly edited header does not revalidate its contents. Update verification notes only when checks support them; preserve older results with their limits. A partial review must not make unrelated claims appear current.
 
-`role` is the example spelling; existing `kind` fields are equivalent for reader orientation. The optional `yaiml: 0.2` hint identifies the header's convention family. It is not the discovery-format version, a document revision, or a requirement to migrate equivalent headers. Omit it when it adds no useful context.
+`role` is the example spelling; existing `kind` fields are equivalent for reader orientation. The optional `yaiml: 0.2` hint identifies the header's convention family. It is not the discovery-format version, a document revision, or a requirement to migrate equivalent headers. Omit it when it adds no useful context. Preserve legacy hints during the separate revision-stamp migration; they do not replace `yaiml-revision`.
 
 `read-with` names relevant companions, not mandatory recursive imports. Read a selected document's header before its body; do not load every listed companion regardless of the task. Resolve document names through the discovery map or explicit local links. Missing optional companions are not instructions to create them.
 

@@ -1,6 +1,7 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # Minimal Notes YAIML Example
 
-This is a tiny fictional example focused on YAIML's core memory roles.
+This is a tiny fictional legacy example focused on the three original current-memory roles. It intentionally predates changes.md and revision stamps; use it as an upgrade input, not current init output. The updater must establish the fourth role and a prospective baseline under [VERSIONING.md](../../VERSIONING.md).
 
 It has:
 

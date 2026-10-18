@@ -1,6 +1,7 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # Update YAIML
 
-Refresh conventions against the supplied or recorded reference, preserving project knowledge and local methods.
+Update YAIML guidance within the requested project scope, preserving project knowledge and local methods. The skill distinguishes adopter refresh from authoring YAIML itself.
 
 Use the installed `yaiml-refresh` skill from the local YAIML catalog, passing through the user's scope and arguments. Read and follow its `SKILL.md` and required local references; reuse current context. The [reference skill](../skills/yaiml-refresh/SKILL.md) owns the method. If local guidance is missing, use the recorded accessible YAIML reference to repair it; report unavailable access without inventing content or claiming completion.
 

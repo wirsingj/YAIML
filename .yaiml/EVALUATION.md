@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -12,6 +13,13 @@ agent-guidance: Record limitations honestly. Do not turn one small test into uni
 ---
 
 # Evaluation And Case Studies
+
+## Revision And Audit Acceptance
+
+Evaluate against the requested outcomes, not just presence of metadata: a normal implementation and a confirmed conversation-only decision each produce one revision and complete affected-path entry; a no-op, read-only task and unchanged check rerun produce none. Untouched files retain stamps. New evidence corrects its owning claim and records the limited check. Legacy upgrades preserve prior facts, labels, audit entries and paths while declaring unknown history; custom-layout routes resolve. Acquired source counters never advance local counters.
+
+Fork from one parent: both branches may choose the same next counter with different tags. Reconcile independent changes and both entries; the resulting revision exceeds both counters and links both heads, without treating ordering as authority. Exercise fast-forward, revert, interruption and duplicate-ID handling. Distinguish a manual protocol exercise or structural check from actual fresh-session adherence; test the latter across ordinary requests before a 1.0 claim.
+
 
 The Canopy Dispatch example demonstrates what YAIML can look like, but it is fictional. It is not proof that YAIML improves agent work.
 
@@ -29,6 +37,8 @@ Internal portfolio repositories can show that YAIML is useful in practice, but t
 
 Keep fictional examples, maintainer-owned field evidence, and independent trials labeled separately.
 
+Separate the object being evaluated. This repository's memory, contribution process and package consistency establish source-project health. A newcomer receiving the product must independently acquire it, recover their own context and use its methods. Our daily use benefits from accumulated maintainer conversation and direct repairs; it is useful dogfooding, not evidence that the same experience requires only one prompt elsewhere.
+
 ## Case Study Template
 
 Keep one short report per trial, with these fields. Use “not measured” or “not run” where appropriate; omit empty narrative sections.
@@ -43,7 +53,7 @@ Keep one short report per trial, with these fields. Use “not measured” or �
 - Starting docs, selected task, and criteria fixed before execution:
 - Files actually read; files created or changed; documents deliberately skipped:
 - Actual commands and outcomes, including unrun checks:
-- Result, failures, human corrections, and unresolved uncertainty:
+- Result, failures, extra context/reminders/manual repairs supplied, and unresolved uncertainty:
 - Prompt size, inspected content, generated memory, and repeat-run changes:
 - Total session cost when available; measurement method and excluded costs:
 - Evidence retained, where permitted; limitations and next question:
@@ -137,7 +147,8 @@ Evaluate the published entry point from a new user's position: only the init pro
 
 | Scenario | Independent acceptance criteria |
 | --- | --- |
-| First paste | Agent retrieves complete resources and establishes useful project facts and persistent routes without a second workflow prompt |
+| First paste | Agent retrieves complete reusable resources and establishes target facts/routes without a second workflow prompt; source-project memory, policies and private/local skills stay outside the adoption |
+| Non-code product | Assesses actual document/skill deliverables without treating code absence as an unimplemented product; preserves the distinction between an application proposal and working software |
 | Fresh ordinary session | Recovers relevant decisions and updates material understanding without a YAIML reminder |
 | Conversational decision and recall | A confirmed decision without an edit request persists; another fresh session recovers it from project files without the earlier chat or a YAIML reminder; a read-only follow-up changes no files |
 | Explicit audit / to-do | Honors perspectives/count, existing priorities and task scope; verifies work and reports blocked/fewer items honestly |
@@ -146,9 +157,10 @@ Evaluate the published entry point from a new user's position: only the init pro
 | Offline reuse | Available local methods work without upstream access or recursive fetching |
 | Useful growth | Adds a justified fact owner or reusable method in the established home, checks local references/catalog/native routes, avoids speculative rules/empty artifacts; exercise both default and custom homes |
 | Acquisition with changed terms | A missing upstream resource triggers license comparison; changed permissions require authorization before dependent adoption, refusal/pending approval preserves working files, and unchanged terms cause no repeat approval |
-| Refresh and repeat | Preserves local skills/adaptations; surfaces conflicting changes; repeated unchanged setup produces no churn |
+| Refresh and repeat | Preserves local skills/adaptations; excludes source-project-only additions; surfaces conflicting changes; repeated unchanged setup produces no churn |
+| Source-project use | Its own instructions identify the authoring role; init/refresh preserves authored canonical resources and does not install a published version over development work; copied methods or a matching name alone do not make an adopter the source project |
 | Upgrade an earlier installation | Acquires methods from the current reference without requiring installed skills; preserves legacy discovery, project facts, local protections, custom methods and unfinished edits; reports blocked host routes as partial |
 | Interrupted acquisition | Working routes remain intact; missing methods are not advertised as ready; applied revision exceptions remain explicit |
 | Host change / nested scope | Correct instruction owner, relative routes, arguments and separate subproject boundaries survive |
 
-Record actual artifacts, original-file hashes and skill selections, not merely instruction wording. Distinguish canonical files present, native entries discovered in a fresh session, and invocation with arguments following the canonical method. Plain-text `/...` in a noninteractive runner does not test a host's slash menu. Structural package/link checks can run without another agent, but do not establish behavior. Independent workers require YAIMLACP confirmation. Separate source-availability failures, host activation limitations and workflow failures. Keep trial artifacts isolated from this reference repository; publish only concise current evidence and limitations.
+Record actual artifacts, original-file hashes and skill selections, not merely instruction wording. Distinguish canonical files present, native entries discovered in a fresh session, and invocation with arguments following the canonical method. Plain-text `/...` in a noninteractive runner does not test a host's slash menu. Structural package/link checks can run without another agent, but do not establish behavior. Independent workers require YAIMLACP confirmation. Separate source-availability failures, host activation limitations and workflow failures. Count follow-up reminders or manual repairs as assisted recovery; a later success does not turn the original attempt into an unassisted pass. Keep trial artifacts isolated from this reference repository; publish only concise current evidence and limitations.

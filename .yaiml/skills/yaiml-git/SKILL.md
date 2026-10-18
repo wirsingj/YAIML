@@ -1,6 +1,8 @@
 ---
 name: yaiml-git
 description: Carry out requested Git work such as reviewing changes, committing, branching, syncing or resolving conflicts while preserving project context and existing work.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 
 # yaiml-git
@@ -15,7 +17,7 @@ For branch creation or switching, establish the intended starting state. Preserv
 
 For sync, pull, merge or rebase, inspect the actual target and common ancestor where available. Fetch relevant remote state when needed for the requested action and access is authorized. Choose the repository's established integration strategy; if divergent intent leaves a consequential choice unresolved, prepare the comparison before asking. A clean textual merge still needs meaning review. Resolve conflicts by preserving independent contributions and current human direction, then recheck affected behavior and memory; never select whole files by side as a shortcut. Stop dependent integration on an unresolved decision while continuing independent authorized work.
 
-For YAIML conflicts, compare claims by responsibility: SoT current state and decisions, Architecture boundaries, Maintainer procedures and verification. Preserve each claim's evidence and authority; a newer timestamp alone does not resolve conflicting intent. Reconcile summaries with their detailed owners after integration so a clean merge cannot leave contradictory project memory. A semantic merge tool may assist comparison, but its output still needs this evidence and authority review.
+For YAIML conflicts, compare claims by responsibility: SoT current state and decisions, Architecture boundaries, Maintainer procedures and verification. Preserve each claim's evidence and authority; a newer timestamp alone does not resolve conflicting intent. Reconcile summaries with their detailed owners after integration so a clean merge cannot leave contradictory project memory. Follow [revision lineage](../../VERSIONING.md#concurrent-work-and-integration): preserve both branches' audit entries, connect a completed reconciliation to both heads, and assign a counter above both known lineages. A fast-forward needs no invented iteration. Keep revision IDs through squash/cherry-pick and record reverts as new changes. A semantic merge tool may assist comparison, but its output still needs this evidence and authority review.
 
 For a requested push, verify the destination, branch, outgoing commits and expected remote state. A rejection is evidence to inspect, not permission to force or retry blindly. Preserve current work on access failures or changed remote history and report the precise blocker. Publication, deployment and unrelated repository changes remain separate actions.
 

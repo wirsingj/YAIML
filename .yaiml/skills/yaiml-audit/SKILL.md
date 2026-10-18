@@ -1,6 +1,8 @@
 ---
 name: yaiml-audit
 description: Audit a project, its memory or specified aspects through requested perspectives, with evidence-ranked findings.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 
 # yaiml-audit

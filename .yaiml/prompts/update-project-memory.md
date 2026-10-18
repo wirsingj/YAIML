@@ -1,3 +1,4 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # Update Project Memory
 
 Persist material changed understanding, including confirmed conversational direction, without a work diary.

@@ -4,11 +4,14 @@ yaiml:
     state: SoTY.md
     architecture: ARCHITECTURE.md
     maintainer_guide: MAINTAINER_GUIDE.md
+    changes: changes.md
   supporting:
     concepts: CONCEPTS.md
     prior_art: PRIOR_ART.md
     core_document_family: CORE_DOCUMENT_FAMILY.md
     stable_headers: STABLE_HEADERS.md
+    versioning: VERSIONING.md
+    release: RELEASE.md
     ambiguity_and_evidence: AMBIGUITY_AND_EVIDENCE.md
     pruning_and_lifecycle: PRUNING_AND_LIFECYCLE.md
     agent_integration: AGENT_INTEGRATION.md

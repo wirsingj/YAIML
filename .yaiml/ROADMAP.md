@@ -1,3 +1,4 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # YAIML Roadmap
 
 YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
@@ -26,14 +27,14 @@ Add or refine examples and supporting templates only when actual use reveals rec
 
 ## Maturity Milestones
 
-These are proposed project milestones, not discovery-format versions or release promises.
+These are evidence milestones, separate from product release numbers, discovery labels and local revision counters. [RELEASE.md](RELEASE.md) owns the current product identity; publishing 0.3.0 does not claim the public-pilot evidence milestone.
 
 | Milestone | Evidence sought |
 | --- | --- |
-| 0.2 — usable experiment | Small core, usable prompts, honest dogfooding and documented gaps |
-| 0.3 — public pilot | Outside feedback and trials across different agent environments |
-| 0.5 — implemented draft | Unrelated adopters, recorded incompatibilities and failures, and a repeatable maintenance workflow |
-| 1.0 — stable convention | Stable core expectations, migration guidance, independent adopters and case evidence |
+| Usable experiment | Small core, usable prompts, honest dogfooding and documented gaps |
+| Public pilot | Outside feedback and trials across different agent environments |
+| Implemented draft | Unrelated adopters, recorded incompatibilities and failures, and a repeatable maintenance workflow |
+| 1.0 readiness — stable convention | Stable core expectations, migration guidance, independent adopters and case evidence |
 
 The separate `yaiml.version` field identifies discovery layout. Editing guidance or reaching a project milestone does not itself require changing that field.
 

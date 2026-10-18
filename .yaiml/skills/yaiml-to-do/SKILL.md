@@ -1,6 +1,8 @@
 ---
 name: yaiml-to-do
 description: Complete the next requested number of feasible project priorities, then verify and maintain memory.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 
 # yaiml-to-do

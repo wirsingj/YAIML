@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 role: operating-guide
 title: Using YAIML
 purpose: Shared operating rules for project context, skill selection, composition, and retention.
@@ -15,7 +16,7 @@ YAIML means Yet Another AI Markup Language: project-owned context and ways to wo
 
 ## Start And Select
 
-Follow applicable host/project instructions. For meaningful work, locate `.yaiml/yaiml.yml` or established discovery, then read the three core headers before bodies unless current and sufficient in context. Recognize `yaiml.core` and older `documents.*.path`; preserve mature layouts, names, budgets and custom fields. Without a map, use instruction pointers and core files in `.yaiml/`, legacy `yaimldocs/`, root or `docs/`. Report missing/ambiguous owners rather than combining families. Resolve paths/symlinks within authorized scope.
+Follow applicable host/project instructions. For meaningful work, locate `.yaiml/yaiml.yml` or established discovery, then read the four core headers before bodies unless current and sufficient in context. For `changes.md`, read current heads and relevant entries, not the entire retained audit. Recognize `yaiml.core` and older `documents.*.path`; preserve mature layouts, names, budgets and custom fields. Without a map, use instruction pointers and core files in `.yaiml/`, legacy `yaimldocs/`, root or `docs/`. Report missing/ambiguous owners rather than combining families. Resolve paths/symlinks within authorized scope.
 
 Read [the skill catalog](skills/INDEX.md) when choosing a method. Match the user's purpose and supplied arguments, whether phrased naturally or as a native skill command. Slash syntax is a host convenience, not a YAIML command interpreter. If the host passes the words `yaiml-to-do 10` as text, they still request the same workflow. If the host rejects a slash command before delivery, use natural language or its supported skill syntax.
 
@@ -33,9 +34,9 @@ At startup and context refresh, consider native coordination from available cont
 
 ## Memory Ownership And Retention
 
-SoT owns current direction, capabilities, active risks, ordered priorities, uncertainty and actionable lessons. Architecture owns durable responsibilities, boundaries, intended transitions and useful rationale. Maintainer Guide owns actual procedures, environment assumptions, checks and recovery. Skills own reusable methods; project facts stay in memory and are read when needed.
+SoT owns current direction, capabilities, active risks, ordered priorities, uncertainty and actionable lessons. Architecture owns durable responsibilities, boundaries, intended transitions and useful rationale. Maintainer Guide owns actual procedures, environment assumptions, checks and recovery. The fourth core role, `changes.md`, retains concise change records and lineage; it does not own current facts. Skills own reusable methods; project facts stay in memory and are read when needed.
 
-Before finishing, persist material changes including confirmed conversational direction without code edits. New verification evidence also changes memory: use `yaiml-maintain` to reconcile affected verification claims in their owners, retaining still-untested scope rather than superseded uncertainty. Do not promote brainstorming into decisions. Respect read-only scope, report unavailable writes and leave unchanged memory alone. Replace changed facts in their existing coherent passages; remove superseded claims and resolved active items. Keep completion only as current capability, active constraint or a lesson with a future action. Use one detailed home with pointers elsewhere; no diaries, renamed history or supporting files created to hide accumulation.
+Before finishing, persist material changes including confirmed conversational direction without code edits. New verification evidence also changes memory: use `yaiml-maintain` to reconcile affected verification claims in their owners, retaining still-untested scope rather than superseded uncertainty. Do not promote brainstorming into decisions. Respect read-only scope, report unavailable writes and leave unchanged memory alone. Replace changed facts in their existing coherent passages; remove superseded claims and resolved active items. Keep completion only as current capability, active constraint or a lesson with a future action. Use one detailed home with pointers elsewhere; no diaries in current-state memory or supporting files created to hide accumulation. Complete one revision and audit entry per material iteration using [VERSIONING.md](VERSIONING.md). Stamp changed managed Markdown and record all affected project paths, including code/configuration, in `changes.md`. Retain its entries under audit policy; unchanged or read-only work creates no revision.
 
 Headers identify responsibility, exclusions, lifecycle, update triggers, evidence/conflict handling and a role-appropriate budget. Equivalent fields/prose are valid; no cosmetic header migration or Markdown schema is required. Count affected whole-document whitespace-delimited words including headers unless locally specified. Prune safely, report before/after counts, net growth reasons and overages in the task response. Budgets never require padding, inflated targets or deletion of needed knowledge.
 
@@ -53,7 +54,7 @@ Separate reports, inspected results, hypotheses. Agent agreement, unrelated pass
 ## Concurrent Work And Integration
 Check worktree before edits or recommendations; re-read concurrent changes before writing; preserve uncommitted work. Separate workspaces or coordinate ownership; re-reading is not a lock. Include material memory corrections with the related change. Keep routine edits passage-scoped, unrelated structure stable; coordinate broad reorganization separately. Inherited overgrowth does not justify unrelated rewrites.
 Memory describes its checkout; distinguish proposed, implemented, merged, and deployed. Before authorized integration, compare affected memory/implementation with actual target and common ancestor. Reconcile meaning despite clean textual merges; preserve independent additions, never select entire documents by side, and route unresolved decisions to existing reviewers. Report unavailable/stale target context; block dependent choices only.
-Recheck affected claims after merges, rebases, squashes, cherry-picks, reverts, or target advances; prior checks do not verify the combined tree. No added permission to commit, push, merge, or deploy; no coordinator service required.
+Preserve independent audit entries and parents; a completed reconciliation gets a new revision above both known counters. Recheck affected claims after merges, rebases, squashes, cherry-picks, reverts, or target advances; prior checks do not verify the combined tree. No added permission to commit, push, merge, or deploy; no coordinator service required.
 
 ## Finish
 

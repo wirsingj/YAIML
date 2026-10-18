@@ -1,3 +1,4 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # Init YAIML
 
 Paste this whole prompt into your project’s repository-aware agent. It runs bootstrap immediately: the agent obtains guidance, creates project context, and connects reusable skills. After setup, work normally. Named commands are optional.
@@ -5,6 +6,8 @@ Paste this whole prompt into your project’s repository-aware agent. It runs bo
 ---
 name: yaiml-init
 description: Establish or refresh YAIML project context and local skills from one pasted prompt or skill invocation.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 # YAIML Init
 

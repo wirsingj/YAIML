@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: context-loading-guide
 title: Context Loading
@@ -21,6 +22,7 @@ YAIML is a discovery and reading convention, not a command to load every documen
 | --- | --- |
 | Discovery: applicable agent instructions and `yaiml.yml` | Starting work in the repository |
 | Core: SoT, Architecture, Maintainer Guide | Doing meaningful project work |
+| Core: changes.md | Header, current revision heads and relevant entries during meaningful work; older entries only for the task |
 | Skill catalog, selected methods and shared operating rules | Choosing and performing a workflow; reuse between composed steps |
 | Dormant templates and YAIMLACP | Creating useful memory or considering useful coordination |
 | Supporting: specialist project memory | The task touches that document’s domain |
@@ -36,7 +38,7 @@ Acquisition saves a complete local base; context loading selects only what the t
 
 Resolve paths, including symlinks, before following them. Discovery does not authorize reading outside the repository, fetching remote references, or accessing sensitive material. Treat those as separate scope decisions under the current request and repository rules.
 
-If the map is absent, use local instruction pointers, then look for `SOT.md`, `ARCHITECTURE.md`, and `MAINTAINER_GUIDE.md` in `.yaiml/`, legacy `yaimldocs/`, root or `docs/`. Report missing or ambiguous discovery; do not combine competing memory families or invent facts. Preserve established locations.
+If the map is absent, use local instruction pointers, then look for `SOT.md`, `ARCHITECTURE.md`, `MAINTAINER_GUIDE.md` and `changes.md` in `.yaiml/`, legacy `yaimldocs/`, root or `docs/`. Report missing or ambiguous discovery; do not combine competing memory families or invent facts. Preserve established locations.
 
 ## Reading Behavior
 

@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -17,7 +18,7 @@ YAIML keeps shared project context and reusable methods in ordinary files. One p
 
 ## Version Awareness
 
-`yaiml.yml` locates the core and supporting documents. Its version identifies the discovery layout, not a Markdown revision, roadmap milestone, or conformance claim. Use the supplied reference's Git revision or dated snapshot to distinguish guidance revisions.
+`yaiml.yml` locates the core and supporting documents. Its version identifies the discovery layout, not a Markdown revision, roadmap milestone, or conformance claim. Read [RELEASE.md](RELEASE.md) for the product release and record the exact source commit or disclosed snapshot. [VERSIONING.md](VERSIONING.md) defines independent project-local file stamps and the core change audit.
 
 Recommended shape for new adopters:
 
@@ -28,8 +29,11 @@ yaiml:
     state: SOT.md
     architecture: ARCHITECTURE.md
     maintainer_guide: MAINTAINER_GUIDE.md
+    changes: changes.md
   supporting:
     operating_guide: YAIML_GUIDE.md
+    versioning: VERSIONING.md
+    release: RELEASE.md
     skills: skills/INDEX.md
     yaimlacp: YAIMLACP.md
 ```
@@ -77,7 +81,7 @@ Read the target's actual map before editing. Both examples describe roles and pa
 | Custom fields or tool consumers | Preserve unrelated extensions and working formatting |
 | Unfamiliar layout or version | Retain unknown entries and marker; report ambiguous mappings rather than guessing or downgrading |
 
-A general init or refresh request does not authorize discovery migration. Migrate only on explicit human request, with actual consumer compatibility checked and every local path and role preserved. Ordinary Markdown edits and path repairs do not require a version bump.
+A general init or refresh request does not authorize discovery migration. Migrate only on explicit human request, with actual consumer compatibility checked and every local path and role preserved. Ordinary Markdown edits and path repairs do not require a discovery-version bump. Changed managed Markdown does receive a project revision under the separate revision convention.
 
 ### One Shape For New Adoption
 
@@ -103,15 +107,19 @@ Use an accessible published reference containing the resources the seed names. A
 
 ## Existing YAIML Update
 
-For an early installation without skills, paste the complete current [Init YAIML](prompts/init-yaiml.md) into the existing project's agent session. The seed supplies source resolution and bootstrap without depending on an installed refresh skill, catalog or recorded source. It recognizes existing memory and acquires the missing methods. Until the new resources are published, supply an accessible local development snapshot with the prompt; the public URL cannot retrieve unpublished changes.
+For an early installation without skills, paste the complete current [Init YAIML](prompts/init-yaiml.md) into the existing project's agent session. The seed supplies source resolution and bootstrap without depending on an installed refresh skill, catalog or recorded source. It recognizes existing memory and acquires the missing methods from the public reference. Supply a local development snapshot only when intentionally testing unpublished changes.
 
 Once a usable source and current methods are installed, “update YAIML” selects [yaiml-refresh](skills/yaiml-refresh/SKILL.md). Reapplying init selects the same reconciliation. Updating the project's current facts selects `yaiml-maintain`. Keep these operations distinct.
+
+These are adopter instructions. In the project developing YAIML, its contributor instructions govern editing canonical resources and its own memory. Its roadmap, publication policies and project-specific skills are not adopter defaults; improving them alone does not update the distributed product.
 
 Refresh uses the supplied or recorded source and revision, including disclosed dirty-reference changes. The current Maintainer Guide records applied upstream guidance, local ownership/adaptations and resource exceptions. Compare incoming content with the applied baseline and current local versions where available. Without a baseline, disclose the limits of semantic comparison; do not infer historical drift.
 
 Preserve local methods and project knowledge. Apply compatible changes, reconcile meaningful conflicts through established authority, repair catalog/host routes and required references, and advance only the source records actually applied. Renames and removals require checking callers and useful adaptations; retain working resources when an update is incomplete. A healthy repeat refresh leaves files unchanged.
 
 Convention refresh stays within documentation/method scope and preserves project license, notices, privacy and retention. It grants no application work, broad reorganization, branch mutation or delegation. Existing-layout relocation follows its separate scoped authority. Unknown map fields and mature roles remain intact.
+
+Add the fourth core role in place and establish revision tracking prospectively using [the legacy transition](VERSIONING.md#adopt-from-older-yaiml). Preserve existing audit records and legacy version labels, report unknown earlier history, and check consumers before adding a map role. A pointer can expose the role without changing a restrictive discovery format.
 
 Review the upgrade for preserved decisions, open questions, local protections and unfinished work, then check that the catalog, method bodies and host routes are reachable. Existing memory in `docs/` or at the root remains there unless relocation is approved; the new `.yaiml/` default does not require starting over. A new session should discover the installed skills and recover project context. File installation alone does not establish that behavior.
 
@@ -121,7 +129,7 @@ The optional [update prompt](prompts/update-yaiml.md) routes to the same method.
 
 ### Correcting An Incomplete Adoption
 
-Repository access during one session does not establish that later agents received equivalent local guidance. Compare meaning across the installed core roles, evidence/synthesis/retention/branch rules, skill catalog/bodies and required references, shared rules, ten starters, YAIMLACP, notices, source/adaptation notes and active instruction routes. Classify each as missing, equivalent, intentionally adapted, conflicting, or unverified; different filenames are not defects.
+Repository access during one session does not establish that later agents received equivalent local guidance. Compare meaning across the installed core roles, evidence/synthesis/retention/branch rules, skill catalog/bodies and required references, shared rules, eleven starters, YAIMLACP, notices, source/adaptation notes and active instruction routes. Classify each as missing, equivalent, intentionally adapted, conflicting, or unverified; different filenames are not defects.
 
 Add missing reusable guidance, repair unreachable bodies and stale instructions, and reconcile conflicting rules through established authority. Preserve project facts, decisions, local protections, and healthy equivalent guidance; do not regenerate mature memory. Report what is present, what is configured to load, and what a fresh session actually used separately. Unknown prior guidance cannot establish historical drift. Record unresolved gaps, not an accumulating scorecard.
 

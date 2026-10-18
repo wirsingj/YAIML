@@ -1,3 +1,4 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # Orient This Session
 
 Recover relevant project understanding, then continue the requested work.

@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -10,11 +11,13 @@ agent-guidance: Preserve the one-prompt ordinary path and distinguish design fro
 ---
 # YAIML Skills And Project Lifecycle
 
+Material iterations also maintain project revisions and the fourth core role, `changes.md`, under [VERSIONING.md](VERSIONING.md). Current facts stay in their existing owners; the retained audit connects decisions, affected paths, evidence and concurrent parents. Read-only and unchanged tasks create no revision.
+
 YAIML is a context and project management convention. Memory preserves what the project understands; skills preserve reusable ways to use and maintain that understanding. The minimum user interaction is one init prompt. Optional named skills make the same behavior easier to request precisely, without making command choreography a prerequisite.
 
 ## From Seed To Working Project
 
-The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves an accessible reference revision, reads [Bootstrap](BOOTSTRAP.md), acquires the base resources, grounds the three memory roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
+The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves an accessible reference revision, reads [Bootstrap](BOOTSTRAP.md), acquires the base resources, grounds the four core roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
 
 Acquisition and context loading are different operations. The base includes the standard methods, shared rules, coordination guidance and dormant starters so normal use survives an unavailable upstream repository. Agents need not read every saved file into context. The catalog selects methods; methods read current project facts and relevant sources. Additional reference docs or skills are acquired when a concrete need appears. A source revision, local adaptations and incomplete resources remain visible.
 

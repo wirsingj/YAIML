@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -15,7 +16,9 @@ agent-guidance: Verify repository shape before claiming artifacts. Surface confl
 
 ## System Model
 
-YAIML is shared project context plus reusable methods for managing and using it. The minimum interaction is one pasted init prompt. It runs bootstrap through existing host tools, establishes target-owned memory and skills, and connects future sessions. Optional named commands select the same methods used during ordinary work. There is no YAIML application runtime, scheduler or workflow engine.
+One pasted init runs bootstrap through host tools, establishes project memory and skills, and connects future sessions. Optional commands select ordinary-work methods. YAIML adds no runtime or background process.
+
+This repository develops and publishes YAIML while using it to manage its own development. Its core memory describes this project; adopters receive methods and establish their own context. Repository maintenance and adopter behavior require separate evidence.
 
 `.yaiml/` is the default home for discovery, memory, skills and reusable resources. Host instructions and public/legal entry points remain in their supported locations. Discovery paths resolve relative to their map; mature layouts are compatibility inputs, not replacement targets. [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns compatibility.
 
@@ -25,7 +28,8 @@ YAIML is shared project context plus reusable methods for managing and using it.
 | --- | --- |
 | SoT | Current direction, capabilities, risks, priorities, divergence and uncertainty |
 | Architecture | Durable responsibilities, invariants, design and relevant rationale |
-| Maintainer Guide | Actual project procedures, verification/recovery and current source/adaptation notes |
+| Maintainer Guide | Procedures, verification/recovery and current source/adaptation notes |
+| changes.md | Retained iteration audit: intent, parents, affected paths and scoped verification |
 | Supporting memory | Recurring specialist knowledge or distinct retention |
 | `skills/yaiml-*/SKILL.md` | Reusable methods with triggers, inputs, actions and outcomes |
 | `YAIML_GUIDE.md` | Shared context, composition, evidence, authority and retention rules |
@@ -40,9 +44,9 @@ Facts have one detailed memory owner; methods read current facts rather than emb
 
 The seed knows the public reference location and bootstrap path; it assumes no YAIML context or preinstalled skill. Bootstrap resolves a revision, acquires a complete local base and creates useful memory from target evidence. Source-project facts and policies do not transfer. Acquiring a resource does not require loading its whole body into reasoning context or executing it.
 
-The base supplies standard skills, shared rules, optional coordination guidance, dormant starters and applicable notice. These provide ordinary offline use. Specific missing extensions can be retrieved later from the recorded source. Current source revision, local ownership/adaptations and partial-update exceptions live in maintenance guidance, without a log or machine-specific paths.
+The base supplies skills, shared/revision rules, release identity, coordination guidance, starters and notice for offline use. Retrieve missing extensions from the recorded source. Maintenance guidance owns current applied source and adaptations; the fourth core role retains change records without private paths.
 
-On meaningful work, load applicable instructions, discovery and concise core, then select relevant methods/support. Reuse current context until stale or insufficient. Headers identify responsibility/lifecycle; `read-with` is a hint, not recursion. No Markdown parser or body schema is required.
+For meaningful work, load instructions, discovery, current memory and relevant audit heads/entries; then select methods/support. Reuse sufficient context. Headers identify responsibility; `read-with` is a hint, not recursion. No Markdown parser or body schema is required.
 
 Composition carries one task's scope, findings, priorities and evidence through selected skills. Orient once, perform authorized work, verify at relevant checkpoints, then synthesize material understanding. `yaiml-to-do` bounds feasible original priorities; `yaiml-audit` accepts perspectives. Neither task counts nor skill invocations authorize subagents. Read-only and unchanged tasks remain respected.
 
@@ -52,7 +56,7 @@ Growth distinguishes facts from methods: add specialist memory for recurring kno
 
 Present files, configured routes and observed fresh-session use are distinct claims. The public prompt cannot retrieve unpublished working-tree resources. Missing access yields explicit partial setup, not fabricated completeness. No background maintenance is implied.
 
-Memory describes its checkout. Routine edits stay passage-scoped; broad reorganization is separately authorized. Before integration compare actual target/common ancestor, preserve independent contributions, resolve semantic conflicts through existing authority and recheck affected evidence. A clean merge is insufficient.
+Memory describes its checkout. [Revision lineage](VERSIONING.md) separates product release, discovery layout and local iteration. Changed managed Markdown shares an iteration stamp; all affected project paths enter the audit. Concurrent heads survive integration, which reconciles meaning and evidence through existing authority. A clean merge is insufficient.
 
 ## Deferred And Retired Approaches
 

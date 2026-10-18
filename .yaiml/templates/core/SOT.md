@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 role: sot
 title: SOT
@@ -23,4 +24,4 @@ Replaceable consequential results/gaps; distinguish defined/executed checks. Pre
 ## Immediate Priorities And Open Questions
 Next useful actions and shaping questions; link a larger backlog.
 ## Useful Lessons
-Retain only conditions that change future action, active decisions, and rejected approaches worth preventing. Routine history belongs in Git.
+Retain only conditions that change future action, active decisions, and rejected approaches worth preventing. The concise change audit belongs in core changes.md; exact diffs belong in Git when available.

@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: lifecycle-guide
 title: Pruning And Lifecycle
@@ -82,6 +83,10 @@ Keep the current and intended system model, active transitions, invariants, and 
 ## Maintainer Lifecycle
 
 Keep actionable procedures and their assumptions. Replace dead commands, moved paths, and obsolete recovery steps; do not accumulate execution logs. Link current evidence when needed rather than copying the same result from SoT.
+
+## Change Record Lifecycle
+
+The core `changes.md` is an intentional retained audit, distinct from volatile current-state memory. Keep concise entries identifying completed changes, paths, rationale, evidence and revision parents under [VERSIONING.md](VERSIONING.md). Ordinary compression preserves them; explicit project retention/privacy authority governs archiving or consolidation. Load relevant entries rather than the full audit. Material compression itself receives one revision; no-op reviews do not.
 
 ## Self-Unfolded Documents
 

@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -13,7 +14,7 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-18. The maintenance correction is published at `008b2ad7d3c301d21f9a7dd85f6a6f8289b52fd5`; the public-only bootstrap trial used `76fae01f263177186fd09a65df3c080e6eecf804`. The design is one-prompt context and project management: bootstrap, locally available methods, ordinary-work maintenance, optional workflows, growth and adaptation-preserving refresh. Skills own methods; prompts and host entries route to them.
+Current review: 2026-10-18. The maintenance correction is published at `008b2ad7d3c301d21f9a7dd85f6a6f8289b52fd5`; the public-only bootstrap trial used `76fae01f263177186fd09a65df3c080e6eecf804`. The 0.3.0 candidate separates product distribution from source-project use and adds local revisions and a core change audit. Publication of this candidate has not yet been checked. The design remains one-prompt context and project management, with locally available methods, ordinary maintenance and optional workflows. Skills own methods; prompts and host entries route to them.
 
 ## Maintenance Prompt Coverage
 
@@ -21,9 +22,19 @@ Eleven standard methods cover init, orientation, maintenance, audit, to-do, veri
 
 Source review traced the [lifecycle scenarios](EVALUATION.md#one-prompt-skills-lifecycle): one paste must start acquisition without preinstalled YAIML; ordinary work reuses local resources; perspectives/counts retain user scope; methods pass evidence forward; missing resources remain unavailable; refresh preserves local skills/adaptations and records partial-version exceptions. This wording coverage does not prove execution.
 
+The product/source-project audit found ambiguous self-reference in copied bootstrap guidance, no explicit distribution boundary for project-grown skills, a no-code rule that confused document products with unbuilt apps, and stale unpublished-release language. The working draft distinguishes source authoring from adopter acquisition, labels reusable methods, preserves local skills, and matches evidence to the intended deliverable. Contributor and evaluation guidance distinguish repository health, assisted dogfooding and unassisted product trials. Manual review covers these decisions; earlier fresh-session results below do not validate the new branches. No independent adopter evidence or new agent trial was added by this audit.
+
 ## Structural Checks
 
-The package resolved all required local references in two isolated destinations: default `.yaiml/` and an existing custom memory home. Neither needed reference-project facts, examples or optional prompts. Three core and seven specialist starters remained dormant files. On 2026-10-18, twelve canonical skill folders passed skill-creator validation; corresponding host metadata/routes matched. Checks covered the 27-resource closure, README/standalone/canonical init equality, discovery paths, 178 local links/anchors across 80 Markdown files and whitespace. These structural checks do not establish agent behavior beyond the trials below.
+The 0.3.0 candidate passed source/package checks on 2026-10-18: 30 resources in both default `.yaiml/` and custom `context/` homes, twelve native routes per package, and four core/seven specialist starters. Source-project memory/audit, policies, examples and the greeting skill stayed outside distribution. All twelve canonical and twelve native skill files passed skill-creator validation; names/descriptions/argument forwarding matched. README/standalone/canonical seed payloads, discovery targets and local links/anchors were checked. These are structural results, not fresh-session execution.
+
+## Revision And Legacy Upgrade Review
+
+Maintainer-directed artifact exercises covered legacy root discovery, legacy discovery pointing into a custom folder, and the current hidden-folder shape. Nine original memory bodies, old version labels, custom fields, prior audit entries and local skills survived adding prospective revision baselines. An unchanged repeat was a manual no-op review, not an autonomous updater run. ShepAIrd's actual local portfolio/intake readers still resolved the original three roles in all three fixtures and this YAIML checkout. They ignore the new audit role; this preserves prior functionality but does not establish audit ingestion. Explicit host/maintenance pointers provide agent access. No adopting project or ShepAIrd source was changed.
+
+Two real Git branches created equal next counters with distinct tags and independent state/design decisions. The audit produced a textual conflict; manual reconciliation preserved both entries and decisions, linked both parents and advanced the counter while retaining imported file stamps. A subsequent reversal used a new revision and preserved the earlier record. Artifact assertions passed. This demonstrates workable records in controlled examples, not an implemented merge engine or reliable autonomous conflict resolution.
+
+The first repository baseline stamps owned Markdown prospectively; legal notices and legacy sample memory retain their formats, and prior checks are not revalidated by stamping. Release identity, discovery layout and local iterations have separate owners. Fresh-session revision/audit adherence, interruption/collision recovery and broad consumer compatibility remain unverified. The earlier CLI trials below precede this convention and do not justify 1.0.
 
 ## Clean CLI Lifecycle Trial
 

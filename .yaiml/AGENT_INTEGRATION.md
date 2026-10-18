@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: agent-integration-guide
 title: Agent Integration
@@ -25,7 +26,7 @@ Where supported, keep the complete maintenance guidance in one existing shared i
 
 The seed is executable guidance supplied by the user, so it can bootstrap before any native YAIML skill is registered. It contains the public source and bootstrap path; assume no prior YAIML context or maintainer-local checkout. During init, retrieve the complete local base and record source/adaptation notes.
 
-Persistent instruction routes must explicitly read/follow the shared operating guide and catalog, select relevant skill bodies and pass user arguments through. Ordinary work loads context and maintains material understanding; explicit audit, to-do or composed requests select additional methods. Routine startup does not rerun bootstrap or fetch upstream.
+Persistent instruction routes must explicitly read/follow the shared operating guide and catalog, select relevant skill bodies and pass user arguments through. Ordinary work loads context and maintains material understanding, including revision stamps and the core change record under [VERSIONING.md](VERSIONING.md); explicit audit, to-do or composed requests select additional methods. Routine startup does not rerun bootstrap or fetch upstream.
 
 Where the host supports native skills, expose canonical names/descriptions through its supported discovery location, retaining canonical relative-reference resolution. Use documented host support without requiring YAIML to be preinstalled; [Bootstrap](BOOTSTRAP.md#connect-future-sessions) supplies the Codex route. Verify other hosts before writing formats or locations. File-based instructions provide usable methods without a native menu; slash syntax may be intercepted by the host and is not a portable parser. Preserve the user's count, perspectives and scope in wrappers. Report required reloads or unavailable native registration separately from persistent file routing.
 

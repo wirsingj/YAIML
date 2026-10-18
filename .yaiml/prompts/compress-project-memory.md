@@ -1,3 +1,4 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # Compress Project Memory
 
 Synthesize stale or repetitive memory while preserving human direction, evidence, uncertainty and governed retention.

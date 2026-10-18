@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: project-independence
 title: Project Independence
@@ -15,9 +16,9 @@ agent-guidance: Preserve the maintainer declaration. Do not infer legal conclusi
 
 YAIML is intended to be a public, personally maintained project.
 
-The repository is shared so people can read it, try it, adapt it, and give feedback. The local draft uses the [YAIML Attribution and No-Resale License](../LICENSE.md), with Jeff Wirsing credited for the original work. The maintainer permits use in commercial products and client work, including supporting integration, but prohibits selling YAIML itself or charging for access to a modified or rebranded fork without separate permission. Free sharing/forks retain attribution and the license; adopting projects keep their own ownership and licensing.
+The repository is shared so people can read it, try it, adapt it, and give feedback. Published YAIML uses the [YAIML Attribution and No-Resale License](../LICENSE.md), with Jeff Wirsing credited for the original work. The maintainer permits use in commercial products and client work, including supporting integration, but prohibits selling YAIML itself or charging for access to a modified or rebranded fork without separate permission. Free sharing/forks retain attribution and the license; adopting projects keep their own ownership and licensing.
 
-These custom source-available terms are not OSI-approved open source and need professional legal review before publication. They do not revoke earlier MIT grants. The restriction covers licensed material and adaptations, not ownership of ideas, methods or independent work; [copyright distinguishes expression from ideas](https://www.copyright.gov/what-is-copyright/). No known outside adoption has been reported by the maintainer; that does not establish that no earlier copies exist.
+These custom source-available terms are not OSI-approved open source; professional legal review remains outstanding despite publication. They do not revoke earlier MIT grants. The restriction covers licensed material and adaptations, not ownership of ideas, methods or independent work; [copyright distinguishes expression from ideas](https://www.copyright.gov/what-is-copyright/). No known outside adoption has been reported by the maintainer; that does not establish that no earlier copies exist.
 
 ## Maintainer Declaration
 
@@ -28,7 +29,7 @@ Declared by the maintainer:
 - YAIML must not be developed from employer-owned confidential ideas, documents, systems, or data.
 - YAIML does not store user or project data externally.
 - YAIML does not run as a hosted service, runtime framework, package dependency, background service, database, SDK, or required CLI.
-- YAIML is a plain-file convention made of documentation, prompts, templates, examples, and repository-local project memory.
+- YAIML is a plain-file convention made of reusable skills, guidance, prompts, templates, examples, and project-owned memory.
 
 These declarations describe YAIML itself. An agent or hosted AI service used to read the files has its own data handling; storing memory in a repository does not guarantee that a session processes it locally.
 

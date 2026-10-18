@@ -1,6 +1,8 @@
 ---
 name: yaiml-maintain
 description: Persist material project understanding after work or confirmed conversational decisions; update our SoT.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 
 # yaiml-maintain
@@ -11,6 +13,6 @@ New verification evidence changes understanding even without implementation chan
 
 For an existing "fresh-session loading unobserved" note, use evidence already visible in this session: project instructions or native skill metadata supplied by the host establish their availability; actual reads and use of a canonical method establish that workflow's use. Replace the obsolete uncertainty only to that extent. A discovered catalog does not prove every skill executed, an interactive command menu worked or another host is supported. Do not inspect private host logs or global configuration merely to manufacture activation evidence. If current input does not establish the observation, keep the uncertainty.
 
-Re-read affected concurrent changes and update the smallest coherent passages. Replace superseded accounts and remove resolved active items. Preserve approved direction, meaningful local structure, remaining evidence limits, conflicts, uncertainty and governed records. Distinguish proposed, implemented, merged and deployed facts. Do not append a session log or move history into new supporting documents.
+Re-read affected concurrent changes and update the smallest coherent passages. Replace superseded accounts and remove resolved active items. Preserve approved direction, meaningful local structure, remaining evidence limits, conflicts, uncertainty and governed records. Distinguish proposed, implemented, merged and deployed facts. Do not append a session log to current-state memory or move it into new supporting documents. Read [Revisions And Change Records](../../VERSIONING.md) when finalizing a material iteration: allocate one project revision, stamp changed managed Markdown, and record intent, parents, every affected project path and scoped results in the core `changes.md`. Include implementation/configuration paths without adding headers to those files; keep unrelated pre-existing work separate. Preserve audit entries and upstream-resource provenance. New evidence or a confirmed decision can warrant an iteration without code edits; unchanged checks and read-only tasks do not.
 
 Recheck affected headers, owning passages, summaries and pointers for consistency; measure affected whole-document words before/after and report growth reasons or overages outside memory. Include material corrections with the related change, including decisions made without code edits. Read-only tasks produce findings without writes; unchanged understanding produces no maintenance edit. Broad cleanup uses `yaiml-compress` within its own scope. Report what changed and what remains unknown.

@@ -1,6 +1,8 @@
 ---
 name: yaiml-verify
 description: Verify changed work or consequential project claims against requirements and available independent evidence.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 
 # yaiml-verify

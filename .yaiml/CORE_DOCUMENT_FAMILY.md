@@ -1,9 +1,10 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: core-family-guide
 title: Core Document Family
 purpose: Define the core YAIML document roles and how self-unfolded supporting documents relate to them.
-belongs-here: SoT, Architecture, Maintainer Guide responsibilities, supporting document split criteria, fact-placement guidance.
+belongs-here: SoT, Architecture, Maintainer Guide and changes responsibilities, supporting document split criteria, fact-placement guidance.
 not-here: current project state, command procedures, complete examples, implementation tooling.
 durability: durable; update when document responsibilities or split criteria change.
 read-with: SoTY; Stable Headers; Pruning And Lifecycle.
@@ -13,7 +14,7 @@ agent-guidance: Keep roles semantically firm and syntactically flexible. Avoid c
 
 # Core Document Family
 
-YAIML starts with three distinct roles, normally in three Markdown documents. Reuse existing files that already serve those roles; local filenames and headings may vary.
+YAIML starts with four distinct core roles, normally in four Markdown documents: three current-memory owners and a retained change record. Reuse existing files that already serve those roles; local filenames and headings may vary.
 
 Skills are reusable methods for working with this memory family. They read current project facts rather than owning competing copies. Shared operating rules, dormant templates and optional coordination guidance support those methods; they are not additional project-state documents. Add a specialist fact owner or project-specific skill only when recurring knowledge or work gives it a concrete purpose.
 
@@ -24,6 +25,7 @@ New memory and reusable guidance use the established memory home, otherwise proj
 | SoT | Current identity, human direction, capabilities, risks, priorities, verification limits, divergence, useful lessons | Full history, command reference, durable component model |
 | Architecture | Components, data flow, ownership, invariants, current and intended design, relevant rejected approaches | Current task list, procedures, full file inventory |
 | Maintainer Guide | Setup, commands, checks, diagnostics, environment assumptions, release and recovery | Product manifesto, architecture rationale, run history |
+| changes.md | Completed iterations, parents, intent, affected paths and scoped verification | Transcripts, raw logs, current backlog, duplicated current facts |
 
 ## SoT
 
@@ -44,6 +46,10 @@ A known implementation violation belongs beside the relevant design boundary. Re
 Give the next contributor actionable procedures and the assumptions they depend on. Distinguish source-defined commands from successfully executed checks; include conditions and limits for results that matter.
 
 Remove dead commands and obsolete paths. Link detailed operational references rather than copying them into several documents.
+
+## Changes
+
+Use `.yaiml/changes.md` by default or an established equivalent audit owner. [Revisions And Change Records](VERSIONING.md) defines project-local stamps, concise entries, prospective legacy baselines and concurrent lineage. This fourth role preserves the audit while the other three synthesize current truth. Load its header, current heads and relevant entries routinely; deep history remains selective. Retain entries unless explicit project retention/privacy authority permits a traceable correction or consolidation.
 
 ## Adding Supporting Documents
 

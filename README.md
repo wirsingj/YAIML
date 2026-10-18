@@ -1,3 +1,4 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -23,6 +24,8 @@ Paste this whole prompt into your project’s repository-aware agent. It runs bo
 ---
 name: yaiml-init
 description: Establish or refresh YAIML project context and local skills from one pasted prompt or skill invocation.
+metadata:
+  yaiml-revision: "0.1.01b3573c87d5279e"
 ---
 # YAIML Init
 
@@ -76,13 +79,15 @@ A count limits work to feasible priorities. Starting a session does not launch t
 
 ## What Lives In Your Project
 
-New projects keep YAIML material in `.yaiml/`: current state and priorities, architecture, working procedures, and skills. Existing projects can keep their established layout. Supported agent instructions, such as `AGENTS.md`, point later sessions to that context.
+New projects keep YAIML material in `.yaiml/`: current state and priorities, architecture, working procedures, a core `changes.md` audit, and skills. Existing projects can keep their established layout. Supported agent instructions, such as `AGENTS.md`, point later sessions to that context.
+
+Each material iteration stamps changed YAIML Markdown and records what changed, why, affected project paths and verification in `changes.md`. A revision such as `0.27.1f463a82b7dc905e` means YAIML major 0, local iteration 27 and a random change tag. Parent revisions distinguish concurrent branches; code and configuration are audited without added headers. Unchanged or read-only work causes no bump. Older installations start a prospective baseline without invented history.
 
 The files stay with your project, so humans and compatible agents can inspect and use them. Base guidance is local after setup, with no background updater. Your AI provider's data handling still applies when an agent reads those files; local files do not guarantee local processing.
 
 ## Evidence And Limits
 
-YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary requests. Other hosts and interactive skill menus remain unverified. These maintainer-run trials do not establish sustained reliability, independent adoption or productivity gains. The [current review](.yaiml/COLD_START_REVIEW.md) records the tested conditions and gaps.
+YAIML [0.3.0](.yaiml/RELEASE.md) is an early public experiment. The new revision/audit convention remains unverified across fresh agent sessions; 1.0 readiness is still pending. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary requests. Other hosts and interactive skill menus remain unverified. These maintainer-run trials do not establish sustained reliability, independent adoption or productivity gains. The [current review](.yaiml/COLD_START_REVIEW.md) records the tested conditions and gaps.
 
 Agents can miss instructions or preserve stale information. Review consequential changes; memory is context, not proof of correctness. YAIML retains normal project permissions and review controls. Optional delegation requires scoped confirmation. Use approved AI tools and keep confidential information out of public examples and memory.
 
@@ -94,7 +99,7 @@ Feedback on confusing setup, missed context or unnecessary memory changes is wel
 <summary>Optional: examples, full skill catalog and design details</summary>
 
 - [Skill catalog](.yaiml/skills/INDEX.md) and [project lifecycle](.yaiml/SKILLS_AND_LIFECYCLE.md).
-- [Minimal Notes](.yaiml/examples/minimal-notes/) and [Canopy Dispatch](.yaiml/examples/canopy-dispatch/): fictional examples.
+- [Minimal Notes](.yaiml/examples/minimal-notes/) and [Canopy Dispatch](.yaiml/examples/canopy-dispatch/): fictional legacy layouts suitable for upgrade exercises; they predate revision tracking.
 - [Upgrade guidance](.yaiml/ADOPTION_AND_UPGRADES.md#existing-yaiml-update), [agent integration](.yaiml/AGENT_INTEGRATION.md) and [memory roles](.yaiml/CORE_DOCUMENT_FAMILY.md).
 - [Evaluation](.yaiml/EVALUATION.md), [case study](.yaiml/case-studies/YTMMOCC.md) and [adoption exercises](.yaiml/case-studies/ADOPTION_TRIAL.md).
 - [Prior art](.yaiml/PRIOR_ART.md), [contributing](CONTRIBUTING.md) and [roadmap](.yaiml/ROADMAP.md).

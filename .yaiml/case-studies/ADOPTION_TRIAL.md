@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 role: adoption-trial
 purpose: Scoped evidence from isolated initialization, refresh, and compression exercises.
 not-here: Independent adoption claims, benchmark results, or upstream project memory.

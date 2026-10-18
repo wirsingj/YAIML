@@ -1,8 +1,11 @@
+<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
 # YAIML Skills
 
 Use this catalog to select a relevant method, then read and follow its `SKILL.md` and needed references. The standard methods work through host instructions during ordinary work; named commands are optional. Shared rules live in [Using YAIML](../YAIML_GUIDE.md). Read selected bodies only; reuse current context.
 
 `yaiml-to-do 10` means up to ten feasible project priorities, with verification and memory maintenance. `yaiml-audit` accepts requested perspectives. Natural language selects the same methods; slash or other native invocation syntax depends on the host. Pass arguments through rather than interpreting them as shell commands. A combined request stays one task: orient, perform requested methods, verify, maintain.
+
+The following table is the reusable YAIML distribution. Keep project-owned additions in a separately labeled section when needed; source-project-only entries are not acquired by other projects during init or refresh. Publishing a new reusable method is a deliberate contribution, not a side effect of growing local skills.
 
 | Skill | Trigger and purpose | Method |
 | --- | --- | --- |
@@ -19,4 +22,4 @@ Use this catalog to select a relevant method, then read and follow its `SKILL.md
 | `yaiml-realign` | Reconcile project memory and methods with an approved change in project direction. | [yaiml-realign](yaiml-realign/SKILL.md) |
 | `yaiml-work-priorities` | Compatibility name for yaiml-to-do; complete the requested number of project priorities. | [yaiml-work-priorities](yaiml-work-priorities/SKILL.md) |
 
-`yaiml-work-priorities` is a compatibility alias for `yaiml-to-do`. Project-created skills use distinctive `yaiml-` names and are added here with their real paths and descriptions. Preserve local entries during refresh; expose a method as ready only when required resources are present. Source revisions, local ownership/adaptations and activation gaps belong in the current Maintainer Guide. No upstream poll or backlog run is triggered by reading this catalog.
+`yaiml-work-priorities` is a compatibility alias for `yaiml-to-do`. Project-created skills use distinctive `yaiml-` names and are listed with their real paths and descriptions. Preserve local entries during refresh; expose a method as ready only when required resources are present. Source revisions, local ownership/adaptations and activation gaps belong in the current Maintainer Guide. No upstream poll or backlog run is triggered by reading this catalog.

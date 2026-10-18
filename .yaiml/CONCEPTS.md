@@ -1,4 +1,5 @@
 ---
+yaiml-revision: "0.1.01b3573c87d5279e"
 yaiml: 0.2
 kind: concept-guide
 title: Concepts
@@ -35,7 +36,7 @@ A development conversation mixes decisions, experiments, corrections, and obsole
 
 YAIML does not claim to have invented persistent Markdown context. It brings current-state synthesis, evidence distinctions, role separation, and pruning into one convention.
 
-Agent instructions tell a session how to work. Feature specs define desired changes; issues track work; changelogs record history. YAIML preserves the current understanding that connects these sources and points back to them. Reuse existing documentation that already fills a role.
+Agent instructions tell a session how to work. Feature specs define desired changes; issues track work; changelogs record history. YAIML preserves the current understanding that connects these sources and points back to them. Its core changes.md records concise iterations and lineage while other memory owners synthesize current facts. Reuse existing documentation that already fills a role.
 
 The code is evidence of implementation, not proof that the implementation reflects approved intent. In a fictional tabletop app:
 
