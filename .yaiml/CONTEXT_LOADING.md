@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.19.c34127f5dc031f2f"
 yaiml: 0.2
 kind: context-loading-guide
 title: Context Loading
@@ -19,7 +19,7 @@ agent-guidance: Keep the core bounded. Load supporting and deep-reference materi
 | Resource | Trigger |
 | --- | --- |
 | Host instructions, discovery, shared guide and current core memory | Meaningful project work; reuse while current |
-| Change audit | Header/current heads and relevant entries; deeper lineage only when needed |
+| Change audit | Receipt and all pending records before relying on snapshots; incorporated history only when needed |
 | Skill catalog or host skill metadata | Selecting a named or specialized workflow; either can supply the selection |
 | Canonical skill and required references | Performing that selected workflow |
 | Templates, bootstrap, release and migration details | Creating memory or initializing/updating guidance |

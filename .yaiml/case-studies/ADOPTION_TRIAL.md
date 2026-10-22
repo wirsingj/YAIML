@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.11.3aa1b621fbb958f4"
 role: adoption-trial
 purpose: Scoped evidence from isolated initialization, refresh, and compression exercises.
 not-here: Independent adoption claims, benchmark results, or upstream project memory.
@@ -82,4 +82,4 @@ The refresh exercise exposed an avoidable reading burden: the reference prompt l
 
 These are actual local document edits and hash checks, not proof of universal prompt reliability. The reviewing agent also authored the outputs. Temporary checking scripts needed UTF-8 and portable-path corrections before completing; those were inspection-helper errors, not application test failures.
 
-Local snapshots and generated documents were retained for review; this summary does not publish the complete trial diffs. The earlier word/character counts are not tokenizer measurements or evidence of savings. The later trials above add limited session-loading evidence, while completed comparisons, repeated maintenance, consumer compatibility, and owner-led adoption remain open. Use the [comparison procedure](../EVALUATION.md#ready-to-run-comparison) with a working isolated runner.
+Local snapshots and generated documents were retained for review; this summary does not publish the complete trial diffs. Word/character counts are not tokenizer measurements or savings evidence. These earlier exercises did not establish completed comparison, repeated maintenance, consumer compatibility or owner-led adoption. [Current review](../COLD_START_REVIEW.md) records subsequent bounded evidence and remaining gaps; keep each result attributed to its own conditions.

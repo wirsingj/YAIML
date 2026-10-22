@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.24.835a3cca49fadd16"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -84,7 +84,7 @@ This comparison tests the added memory package, not whether YAIML outperforms eq
 
 ## Ready-To-Run Comparison
 
-The [local adoption exercise](case-studies/ADOPTION_TRIAL.md) identifies a public `strip-tags` revision and the inspected files. It supplies a candidate, not a completed comparison. Use isolated copies of that same revision; create and retain the YAIML package before either comparison session starts. Keep these reviewer criteria outside both sessions.
+The earlier [local adoption exercise](case-studies/ADOPTION_TRIAL.md) supplied the public `strip-tags` revision used in the pair reported below. For repeats, use isolated copies of that same revision; create and retain the YAIML package before either session starts. Keep these reviewer criteria outside both sessions.
 
 Give each fresh session the same bounded requests, with equivalent access and budget:
 
@@ -94,7 +94,7 @@ Give each fresh session the same bounded requests, with equivalent access and bu
 
 Reviewer criteria: the first answer follows the CLI/library boundary and the first-match exit across selectors; the second distinguishes package metadata, configured coverage, and executed results; the third identifies local checks without claiming they passed or authorizing a release. Count unsupported claims, missed constraints, inspected content, and useful correct answers. Report the cost of building the memory package separately from the comparison sessions.
 
-No comparison result is recorded yet. A project owner reviewing or performing their own trial is still needed for independent adoption evidence. Publish only permitted, sanitized results through [Contributing](../CONTRIBUTING.md#feedback-and-adoption-reports).
+A completed pair is recorded in [Cold Start Review](COLD_START_REVIEW.md#prepared-comparison): both sessions met these criteria, with no observed correctness advantage or savings claim. The YAIML package was manually prepared before either session; setup cost was not isolated. This does not replace an equally informative ordinary-doc condition, repeated trials or owner-led adoption. Publish only permitted, sanitized results through [Contributing](../CONTRIBUTING.md#feedback-and-adoption-reports).
 
 ## Repeated-Update Pruning Check
 
@@ -102,7 +102,7 @@ Fix a bounded sequence before execution: ordinary work that resolves a risk, cha
 
 After each task, inspect whether existing facts were replaced, resolved items removed, and required decisions, evidence limits, and uncertainty retained. Measure the entire affected memory family so moving history into supporting files cannot masquerade as compression. Record unjustified growth, lost knowledge, and manual reminders as failures; necessary growth is acceptable. Compare old and revised instruction pointers on equivalent isolated snapshots if testing this revision's effect.
 
-This is a proposed check, not an executed result.
+A bounded fictional clinic sequence is recorded in [Cold Start Review](COLD_START_REVIEW.md#legacy-and-repeated-maintenance): resolved venue risk, changed capacity, added participant constraints and an unchanged follow-up. It does not establish recurring pruning in a mature adopter or recovery from oversized memory; those remain open.
 
 ## Concurrent-Contributor Check
 
@@ -111,6 +111,12 @@ Use isolated branches from one baseline and the same task permissions. Assign bo
 Before integration, apply the project's review policy. Check retained independent facts, unresolved authority, branch versus deployment claims, discovery paths after moves, and evidence scope in the combined tree. Repeat after a target advance or revert. Measure unrelated lines changed, lost constraints, resurrected risks, manual corrections, and final memory size. An old passing result cannot certify merged code.
 
 Text-merge experiments can demonstrate conflict mechanics; they do not test agent behavior. An optional second reviewer may be compared with the same-agent pass, but neither CI nor a subagent is an adoption requirement.
+
+[Current review](COLD_START_REVIEW.md#concurrent-reconciliation) records one fresh-session independent-change reconciliation. The [five-contributor stress test](COLD_START_REVIEW.md#five-contributor-merge-stress-test) adds actual merge conflicts, rename/update overlap, a pending proposal and concurrent compression; its five-way reconciliation was performed by the lead. The isolated [intent-record prototype](experiments/INTENT_LOG_PROTOTYPE.md) removed memory/audit conflicts in one replay and passed pending-record recall, while deferring compression and increasing active reading.
+
+The earlier [team-mode lifecycle](COLD_START_REVIEW.md#opt-in-team-mode-lifecycle) tested upgrade/enable, two ordinary branches, a conversation-only decision, fresh reconciliation/recall and disabling. Immediate navigation repair and shorter pending records worked. The first reconciliation omitted its audit path; corrected guidance passed a focused replay. Native route creation was blocked, and size reporting remained inconsistent. This is a different task mix, not a paired performance comparison. Remaining cases include interrupted records/consolidation, substantive target advances, competing approved authority/consolidators, reverts and sustained growth. Measure reading, retention and integration effort alongside conflicts; independent owner use remains open.
+
+The subsequent [unified trial](COLD_START_REVIEW.md#unified-records-and-review-preparation) exercises both consolidation timings, pending recall and review preparation with declared ownership. It preserves the initial excess-reading outcome and focused correction. [Main-review trials](COLD_START_REVIEW.md#main-review-and-transition-checks) add coordinator-declared uncertain ownership, a legacy/custom record transition and unchanged refresh. This does not establish automatic ownership inference: a clean worktree cannot establish exclusivity. [Later Git/file exercises](COLD_START_REVIEW.md#concurrency-edge-cases-and-receipt-growth) measure conflicting authority/consolidators, interruption, revert retention and receipt growth. They establish mechanics and lead repairs, not fresh-agent adherence. Public migration, hidden contributors, atomic exclusion and sustained use remain unproven.
 
 ## Evaluation Dimensions
 
@@ -150,6 +156,7 @@ For a lighter normal-work path, record whether the shared loop suffices without 
 | Scenario | Independent acceptance criteria |
 | --- | --- |
 | First paste | Agent retrieves complete reusable resources and establishes target facts/routes without a second workflow prompt; source-project memory, policies and private/local skills stay outside the adoption |
+| Upstream selection | Init, refresh and missing-resource repair use official GitHub despite nearby checkouts or old alternate-source notes; explicit overrides honor user scope; failed access preserves installed files without switching sources; ordinary offline work still uses local methods |
 | Non-code product | Assesses actual document/skill deliverables without treating code absence as an unimplemented product; preserves the distinction between an application proposal and working software |
 | Fresh ordinary session | Recovers relevant decisions and updates material understanding without a YAIML reminder |
 | Conversational decision and recall | A confirmed decision without an edit request persists; another fresh session recovers it from project files without the earlier chat or a YAIML reminder; a read-only follow-up changes no files |
@@ -157,12 +164,14 @@ For a lighter normal-work path, record whether the shared loop suffices without 
 | New verification evidence | Reconciles owning passages, stable-header status/date/scope and summaries; replaces stale fresh-session uncertainty with observed instruction/catalog availability and actual method use, preserving untested workflows, menus, other hosts and contrary evidence |
 | Composed request | Carries findings into authorized selection/work/verification without requiring separate user invocations |
 | Offline reuse | Available local methods work without upstream access or recursive fetching |
+| Referenced path boundaries | Exercise direct parent paths, directory symlinks/junctions and audit-directory pointers; unauthorized targets stay unread/unmodified while safe work continues. An explicitly allowed external input remains usable without renewed approval. Review tool traces; unchanged hashes alone prove no writes, not no reads. Record host enforcement and opaque access limits separately |
 | Useful growth | Adds a justified fact owner or reusable method in the established home, checks local references/catalog/native routes, avoids speculative rules/empty artifacts; exercise both default and custom homes |
 | Acquisition with changed terms | A missing upstream resource triggers license comparison; changed permissions require authorization before dependent adoption, refusal/pending approval preserves working files, and unchanged terms cause no repeat approval |
 | Refresh and repeat | Preserves local skills/adaptations; excludes source-project-only additions; surfaces conflicting changes; repeated unchanged setup produces no churn |
+| Unified records and consolidation | One retained record per material iteration; ordinary sole ownership consolidates immediately; known overlap/uncertainty defers snapshots and receipt with immediate navigation repair; pending recall stays current; review preparation preserves records and covers every affected path; consolidated recall skips historical bodies; no mode switch or automatic overlap-detection claim |
 | Source-project use | Its own instructions identify the authoring role; init/refresh preserves authored canonical resources and does not install a published version over development work; copied methods or a matching name alone do not make an adopter the source project |
 | Upgrade an earlier installation | Acquires methods from the current reference without requiring installed skills; preserves legacy discovery, project facts, local protections, custom methods and unfinished edits; reports blocked host routes as partial |
-| Interrupted acquisition | Working routes remain intact; missing methods are not advertised as ready; applied revision exceptions remain explicit |
+| Interrupted acquisition | Working routes remain intact; missing methods are not advertised as ready; applied revision exceptions remain explicit. Preserve the pre-update comparison through partial writes; the affected-path list contains actual changes, with unchanged verification resources separate |
 | Host change / nested scope | Correct instruction owner, relative routes, arguments and separate subproject boundaries survive |
 
 Record actual artifacts, original-file hashes and skill selections, not merely instruction wording. Distinguish canonical files present, native entries discovered in a fresh session, and invocation with arguments following the canonical method. Plain-text `/...` in a noninteractive runner does not test a host's slash menu. Structural package/link checks can run without another agent, but do not establish behavior. Independent workers require YAIMLACP confirmation. Separate source-availability failures, host activation limitations and workflow failures. Count follow-up reminders or manual repairs as assisted recovery; a later success does not turn the original attempt into an unassisted pass. Keep trial artifacts isolated from this reference repository; publish only concise current evidence and limitations.

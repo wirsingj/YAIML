@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.7.ade4d0be103521e4"
+yaiml-revision: "0.28.7d93533c77a2b118"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -15,49 +15,53 @@ agent-guidance: Verify repository shape. Preserve human direction. Mark uncertai
 
 # SoTY
 
+Include any [pending corrections](changes.md).
+
 ## North Star And Human Direction
 
-YAIML means Yet Another AI Markup Language: shared, project-owned memory and methods for humans and agents. The maintainer endorses “softerware”: agents read context, act, check actual inputs/outputs and maintain changed understanding. Scope spans projects, content and systems across fields; code is optional. Broader-domain usability remains unverified.
+YAIML means Yet Another AI Markup Language: a lightweight Markdown convention for project-owned context shared by humans and agents. Preserve that identity as skills and integration evolve; aim for clarity and portability across fields and tools. The maintainer endorses “softerware”: agents read, act, check results and maintain understanding. Code is optional; broader-domain usability remains unverified.
 
-Declared: pursue broad adoption while remaining an early public experiment: no installation, ordinary Markdown, explicit uncertainty and synthesis. A runtime or formal specification remains outside scope.
+Declared: pursue adoption as an early public experiment: no installation, ordinary Markdown, explicit uncertainty and synthesis. Runtime/formal specification remain outside scope.
 
-Declared: [YAIMLACP](YAIMLACP.md) supplies optional serverless coordination with scoped affirmative approval. Its owner preserves startup consideration, disclosure, limits and confirmation rules; no server or installation is authorized.
+Declared: [YAIMLACP](YAIMLACP.md) owns optional serverless coordination: startup consideration, disclosure, limits and scoped affirmative confirmation; no server or installation.
 
-Declared (maintainer direction, October 2026): YAIML is context/project management with a one-prompt minimum interaction. Assume a new user and agent have no YAIML context or maintainer checkout. The small seed immediately retrieves guidance, establishes memory and embeds discoverable `yaiml-` skills. Ordinary work uses and maintains context automatically; optional commands such as `yaiml-to-do 10` and `yaiml-audit` select the same methods. Compose requested work without command choreography. Grow useful knowledge and methods, preserving local adaptations during refresh. Keep YAIML-owned material in `.yaiml/`, with supported host/public entry points outside. Distinguish local development snapshots from published references.
+Maintainer direction: one prompt establishes context and discoverable `yaiml-` skills without prior YAIML knowledge or a maintainer checkout. Hands-off context maintenance during normal work is the default; users need no YAIML reminders or manual memory upkeep. Named skills are optional controls, not a required interaction model. Grow knowledge/methods while preserving local adaptations. Keep YAIML-owned material in `.yaiml/`, except supported host/public entries. Acquire official GitHub's latest `main`; alternatives require explicit requests. Distinguish drafts from published references.
 
 Declared: personal public project; require credit, permit commercial/client use, prohibit selling YAIML or charging for forks. Preserve [independence](PROJECT_INDEPENDENCE.md); exclude employer-confidential material, secrets, private transcripts and private-project dependencies. [Licensing](../LICENSE.md) preserves earlier grants. Invent no professional conclusions.
 
-Declared (maintainer direction, October 2026): stamp YAIML-managed Markdown per material iteration; audit all affected project paths in core `changes.md`. Use YAIML major, local counter and random tag, preserving concurrent lineage. Updaters must establish prospective legacy baselines. [Versioning](VERSIONING.md) owns the method; no-op/read-only work stays unchanged.
+Maintainer direction: [Versioning](VERSIONING.md) stamps changed YAIML Markdown and audits all affected paths, preserving concurrent lineage through major/local-counter/random-tag revisions. Updaters establish prospective legacy baselines; no-op/read-only work stays unchanged.
 
-Declared (maintainer direction, October 2026): reduce repeated rules and normal-work overhead without losing context, evidence or maintenance. Put shared mechanics in one owner and test an unfamiliar adopter. No independent adoption is known. Reader feedback from the maintainer's brother is pending; sharing is not adoption. Preserve project-specific constraints during consolidation.
+Stabilization direction: no new features; check regressions and reading/maintenance overhead before merging. Keep shared mechanics in one owner, one workflow without a mode switch, and existing Git guidance for review preparation. Preserve context, evidence and project-specific constraints. No independent adoption is known; the maintainer's brother's feedback is pending.
 
 ## Current State And Evidence
 
-This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product resources from repository memory. Experimental [0.4.0](RELEASE.md) supplies eleven methods plus an alias, seven optional prompts, eleven starters and four core roles. Latest working files remain canonical; commits identify provenance, not deployment. The [Maintainer Guide](MAINTAINER_GUIDE.md) covers source and adopter reviews.
+This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product from repository memory. Experimental [0.5.0](RELEASE.md) changes acquisition/upgrades and prototypes unified records; 0.4.0 is the comparison baseline. Working files are canonical; commits identify provenance, not deployment. The maintainer authorized review-branch commit/push and will integrate through an MR. Ask before subsequent pushes.
 
-[Bootstrap](BOOTSTRAP.md) connects hosts; fifteen internal installations have twelve entries. Earlier trials cover setup, growth, composition, refresh and header repair. ShelfList exposed a stale activation note; its corrected replay replaced it. Published 0.4.0 passed five fresh workshop sessions: setup, conversational decision, ordinary planning, revised venue evidence and read-only recall. Decisions, checked schedules/costs, activation notes, revisions and audits stayed current without reminders or repairs. This tests non-software work in Codex; nondeveloper usability remains unverified. [Current review](COLD_START_REVIEW.md) scopes evidence; [upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
+[Current review](COLD_START_REVIEW.md) separates published/draft trials and retains corrected failures. One comparison pair found no advantage. [Simulated readers](COLD_START_REVIEW.md#simulated-newcomer-reading) informed README's starting point, recall check and saved-context example; human usability remains unverified. [Upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
 
-The [YTMMOCC case](case-studies/YTMMOCC.md) and [local adoption exercises](case-studies/ADOPTION_TRIAL.md) contain dated maintainer-owned evidence. The [current review](COLD_START_REVIEW.md) describes this repository's latest changes and verification limits. Neither establishes independent adoption or productivity gains.
+[Stabilization review](COLD_START_REVIEW.md#stabilization-against-main) found no new merge-blocking regression in source/package checks; methods match the corrected security trial. Release wording now distinguishes review-branch availability from default-main acquisition. Experimental 0.5.0 is ready for scoped MR review. Ordinary traces overread versioning despite selective-loading instructions; no new agent trial accompanied publication preparation.
 
 ## Active Risks And Gaps
 
-- **Under-pruning:** earlier local review reported a roughly 22,000-word SoT with an inbox instruction and architecture accumulating in another project's state document. The causal explanation is a hypothesis, not a controlled result. Recovery and recurrence must be measured after updating adopter instructions.
-- **Consumer compatibility:** ShepAIrd's local repair reads migrated YAIML/Chaitroom memory and retains root-layout support. It does not ingest changes.md yet. Its ARCS migration still emits an unquoted version. [Current portfolio evidence](COLD_START_REVIEW.md#portfolio-compatibility-and-disclosure) scopes verified compatibility; broader consumers, deployment and historical aggregates remain unverified.
-- **Historical disclosure:** selected current ShepAIrd memory and registry values contain no actual machine-specific locations under the targeted check. Earlier exposure/history remains unassessed; this is not comprehensive secret detection or proof of safety.
-- **Concurrent work:** team-scale merge burden and agent adherence remain unmeasured. Textual conflict resolution does not establish consistent meaning or combined verification.
-- **Effectiveness:** controlled effectiveness comparison, independent adoption and token savings remain unestablished. Maintainer support here can mask newcomer friction. Maintenance reliability, recurring pruning and coordination safety remain unproven; total cost remains incomplete.
+- **Two audiences:** [adopter trials](COLD_START_REVIEW.md#adopter-path-boundaries-and-partial-updates) exercised path boundaries, permitted external input, ordinary maintenance and updates. A partial-write audit overcount was corrected and replayed; native metadata writes remain host-restricted. These bounded traces do not prove general access enforcement. Source review still needs compression; its evidence is excluded from adopter context.
+
+- **Under-pruning:** local review reported a roughly 22,000-word SoT with an inbox instruction, and architecture accumulating in another project's state document. Causation remains hypothetical; measure recovery and recurrence after instruction updates.
+- **Consumer compatibility:** ShepAIrd reads migrated and root-layout memory, but omits the audit role, misses revision-first frontmatter without discovery, and writes continuation notes without advancing revisions/audits. ARCS cleanup still emits an unquoted label. [Portfolio evidence](COLD_START_REVIEW.md#portfolio-compatibility-and-disclosure) separates passing discovery checks from these reproduced gaps; broader consumers remain unverified.
+- **Historical disclosure:** targeted current ShepAIrd files are clear of location-pattern matches; a profile path remains retrievable in public registry history. No history repair was authorized or performed. The check is not comprehensive secret detection.
+- **Concurrent work:** [unified records](CHANGE_RECORDS.md) use declared ownership; silent cross-host overlap cannot be excluded. Competing consolidators still conflicted in Git exercises, and clean record merges retained unresolved authority. Revert/interruption repairs were lead-performed. At 10,000 records, receipt/listing output exceeded 537 KB; local comparison avoids reading that output into context but does not establish sustained scalability. Core-only consumers need pending corrections. General code reconciliation remains outside scope.
+- **Effectiveness:** effectiveness gains, independent adoption and token savings remain unestablished. Maintainer support here can mask newcomer friction. Maintenance reliability, recurring pruning and coordination safety remain unproven; total cost remains incomplete.
 - **Evidence and authority:** agents can promote inference or internally consistent tests into correctness and flatten contributor conflicts. A maintainer-reported depth-order regression motivated stronger independent-check guidance; its cause was not inspected here and prevention remains untested. Preserve sources, intended behavior, and unresolved disagreements.
 
 ## Immediate Priorities
 
-1. Broaden fresh-session revision/audit coverage to legacy baselines, interruption and concurrent reconciliation. Repeat ordinary maintenance across longer sequences and other hosts; bounded trials cannot establish reliability. Test nondeveloper usability and partial updates.
-2. Assess remaining migration/version compatibility and historical disclosure before broader rollout. Keep current working-copy measurements separate from historical deployment claims.
-3. Use a working isolated runner for the [prepared comparison](EVALUATION.md#ready-to-run-comparison) and [new-reader demo](examples/minimal-notes/README.md#short-paste-and-go-demo). Measure total context cost, missed reads/writes, and misunderstandings.
-4. Run the [concurrent-contributor check](EVALUATION.md#concurrent-contributor-check), then obtain an owner-led trial outside the maintainer's projects and another agent environment. Measure unrelated diff churn and lost constraints.
-5. Measure recurring maintenance and under-pruning in an authorized adopter. Change guidance from observed failures; avoid accumulating speculative rules.
+1. Keep methods frozen through MR review. Publication wording is synchronized; verify committed/public resources and preserve the maintainer's control of main integration. Resolve demonstrated defects without expanding scope to satisfy 1.0.
+2. Future evidence: official-source selection against ambient alternatives; broader interruption/recovery/revert/authority handling; target advances; longer maintenance sequences and hosts; native invocation. Measure overreading before changing the shared loop.
+3. Repair ShepAIrd's reader/writer revision gaps and decide historical-disclosure handling before broader rollout; distinguish current-file, history and deployment evidence.
+4. Repeat the [comparison](EVALUATION.md#ready-to-run-comparison) with equivalent ordinary docs and setup cost; seek [new-reader](examples/minimal-notes/README.md#short-paste-and-go-demo) and independent owner feedback.
+5. Measure recurring maintenance and under-pruning in an authorized adopter; change guidance from observed failures.
 
 ## Open Questions
 
-Should discovery become essential rather than strongly recommended? Which supporting roles recur enough to warrant templates? What evidence and participation justify the [maturity milestones](ROADMAP.md)? Does YAIMLACP coordination improve outcomes enough to justify its cost over one-agent work? Could `yaiml-git` inform the maintainer's semantic merge tool for conflicting branch memory? That connection is exploratory; no tool integration is established.
+Should discovery become essential rather than strongly recommended? Which supporting roles recur enough to warrant templates? What evidence and participation justify the [maturity milestones](ROADMAP.md)? Does YAIMLACP coordination improve outcomes enough to justify its cost over one-agent work? Where should memory reconciliation end and general code merging begin? Investigate YAIML-induced friction now; code-merger scope and semantic-tool integration remain undecided.
 
 Retired approaches belong in [Architecture](ARCHITECTURE.md). [changes.md](changes.md) retains revision records; Git holds exact diffs. Current memory retains actionable understanding.

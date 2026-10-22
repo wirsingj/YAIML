@@ -27,4 +27,5 @@ yaiml:
     bootstrap: BOOTSTRAP.md
     skills: skills/INDEX.md
     operating_guide: YAIML_GUIDE.md
+    change_records: CHANGE_RECORDS.md
     skills_lifecycle: SKILLS_AND_LIFECYCLE.md

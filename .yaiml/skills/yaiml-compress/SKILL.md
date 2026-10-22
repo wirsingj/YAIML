@@ -2,12 +2,14 @@
 name: yaiml-compress
 description: Synthesize stale, repetitive or oversized YAIML memory while preserving direction, evidence and governed retention.
 metadata:
-  yaiml-revision: "0.3.e5a6701538b64592"
+  yaiml-revision: "0.16.a60b7e8c56b0ef6a"
 ---
 
 # yaiml-compress
 
 Apply the [shared loop](../../YAIML_GUIDE.md) once, reusing current context. Scope the affected memory and coordinate broad cleanup with contributors. Identify necessary facts, direction, constraints, evidence limits, uncertainty, active risks/priorities, procedures and governed records. Read affected stable headers before bodies; preserve healthy unrelated sections.
+
+Follow [current ownership](../../CHANGE_RECORDS.md#decide-whether-to-consolidate): overlapping work queues a brief synthesis request; an exclusive writer applies it against current records. Report queued versus completed work accurately. With consolidation ownership, synthesize below.
 
 Replace repeated accounts with one current account. Remove superseded claims and resolved active items; retain completion only as present capability, active constraint or a lesson naming condition and future action. Age alone cannot retire decisions or resolve conflicts. Keep rationale when useful, invent none, and never move a diary into new support files.
 
