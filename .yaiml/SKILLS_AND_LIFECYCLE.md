@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.16.a60b7e8c56b0ef6a"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -17,7 +17,7 @@ YAIML is a context and project management convention. Memory preserves what the 
 
 ## From Seed To Working Project
 
-The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves an accessible reference revision, reads [Bootstrap](BOOTSTRAP.md), acquires the base resources, grounds the four core roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
+The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves a revision under [Bootstrap's source policy](BOOTSTRAP.md#resolve-and-acquire), acquires the base resources, grounds the four core roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
 
 Acquisition and context loading are different operations. The base includes the standard methods, shared rules, coordination guidance and dormant starters so normal use survives an unavailable upstream repository. Agents need not read every saved file into context. The catalog selects methods; methods read current project facts and relevant sources. Additional reference docs or skills are acquired when a concrete need appears. A source revision, local adaptations and incomplete resources remain visible.
 
@@ -30,6 +30,10 @@ After setup, “fix this issue” or a confirmed project decision triggers relev
 A particular user can request `yaiml-audit` with perspectives or `yaiml-to-do 10` with a count. Where the host supports slash commands these can appear as `/yaiml-audit` and `/yaiml-to-do 10`; other hosts use their supported invocation or ordinary language. Host syntax changes the entry point, not the method. Project-only skills can use the same `yaiml-` prefix with a specific purpose name.
 
 Skills own the methods. [Using YAIML](YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
+
+## Concurrent Memory
+
+[Change Records](CHANGE_RECORDS.md) supplies one workflow: each material change has one retained record; normal work consolidates with sole ownership, while known overlap or uncertain ownership defers factual snapshots and the shared receipt. Current context includes pending records; navigation is repaired immediately. Existing coordination establishes ownership; YAIML provides no global worker detector or lock. “Prepare these changes for review” uses the existing Git method to check intent, evidence and pending consolidation, without granting commit or publication authority.
 
 ## Combined Work
 

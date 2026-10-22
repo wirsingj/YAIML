@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.8.6816f30767769e53"
+yaiml-revision: "0.22.de453c49744672f7"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -14,6 +14,8 @@ agent-guidance: Verify command claims when practical. Surface conflicts. Preserv
 ---
 
 # YAIML Maintainer Guide
+
+Include any [pending corrections](changes.md).
 
 Documentation repository; no application build or test suite.
 
@@ -35,7 +37,7 @@ Check evidence guidance against shared-error agreement, irrelevant passing tests
 
 Count affected whole-document whitespace-delimited words, including headers. Report growth reasons and overages outside memory. Preserve necessary knowledge and governed records; budgets never require padding or destructive pruning. Word counts do not prove token savings.
 
-Use isolated snapshots for adoption exercises and record source/reference revisions before editing. Compare original-file hashes and repeat-run changes; keep generated trial memory outside this reference repository and publish scoped summaries. The [comparison tasks](EVALUATION.md#ready-to-run-comparison) require separate fresh sessions; manual instruction review does not satisfy that step.
+Use isolated snapshots for adoption exercises; record tested revisions, compare original-file hashes and repeat-run changes. Keep raw fixtures, session profiles, logs and generated reports outside this repo or in ignored `.yaiml/tmp/`; commit only reviewed, scoped summaries. [Comparison tasks](EVALUATION.md#ready-to-run-comparison) require fresh sessions; manual review cannot establish fresh-agent behavior.
 
 ## Useful Commands
 
@@ -91,10 +93,10 @@ Case studies must retain dates, evidence sources, ownership, and limits. A docum
 
 ## Branch Review
 
-Use the [concurrent-branch workflow](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review): keep routine edits focused, coordinate broad cleanup separately, compare against the actual target, and review combined meaning and evidence before authorized integration. Preserve unresolved contributor decisions. No extra reviewer service or CI setup is required.
+Use the [branch workflow](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review) and [record procedure](CHANGE_RECORDS.md). Check ordinary consolidation, overlap deferral, pending recall, navigation repair, retained history and preparation for review. Preserve unresolved authority. Apply this source project's updates under actual task ownership; acquiring guidance grants no exclusivity.
 
 ## Publication
 
-Review the worktree before staging so unrelated work is preserved. Use ordinary commits; do not rewrite shared history. Check remote state before pushing. If it has advanced, inspect and integrate compatible changes without discarding another contributor’s work.
+Review the worktree before staging; preserve unrelated work and shared history. Ask the maintainer before every push to `origin` and await approval for that push; prior blanket approvals no longer apply. Check remote state and preserve concurrent changes.
 
 Publish resources with the seed; verify public retrieval at the committed revision. [RELEASE.md](RELEASE.md) owns product identity; tag checked product releases without replacing tags. Project-memory-only changes need no release bump. Current evidence belongs in [Cold Start Review](COLD_START_REVIEW.md); snapshots cannot prove public availability.

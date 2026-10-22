@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.28.7d93533c77a2b118"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -97,23 +97,23 @@ Future incompatible guidance must explain what changed, what can stay unchanged,
 
 ## First-Time Adoption
 
-[Init YAIML](prompts/init-yaiml.md) is the only required user prompt. It includes the bootstrap skill and the public reference location; an unfamiliar agent needs no prior YAIML knowledge or installed YAIML skills. It executes [Bootstrap](BOOTSTRAP.md) immediately, acquiring one revision's base methods and guidance with its own tools. A supplied local snapshot is optional, not a cold-start prerequisite.
+[Init YAIML](prompts/init-yaiml.md) is the only required user prompt. It names https://github.com/wirsingj/YAIML as the default upstream; an unfamiliar agent needs no prior YAIML knowledge or installed skills. It executes [Bootstrap](BOOTSTRAP.md) immediately, acquiring one revision's base resources. A local checkout, snapshot, fork or other source requires an explicit user request within its stated scope, never mere workspace presence or a recorded path. [Acquisition policy](BOOTSTRAP.md#resolve-and-acquire) also governs refresh and missing resources.
 
 Bootstrap preserves useful target documentation, grounds distinct memory roles in evidence, saves a complete local base and connects supported host instructions and native skill discovery. The base supports ordinary offline work; extra reference docs/methods are acquired for concrete needs. Copying files differs from loading their bodies into context. No user-managed downloads, extra workflow pastes or runtime installation are required.
 
-Use an accessible published reference containing the resources the seed names. An unpublished development layout cannot be retrieved through the public URL. Missing access, writes or host support yields explicit partial setup, with working guidance preserved and actionable gaps. Configuration alone is not fresh-session evidence.
+An unpublished development layout cannot be retrieved through the official public URL. Missing access, writes or host support yields explicit partial setup, with working guidance preserved and actionable gaps. Do not silently fall back to another source; a user-requested alternative can resolve missing access. Configuration alone is not fresh-session evidence.
 
 [Agent Integration](AGENT_INTEGRATION.md) owns host routing; [Core Document Family](CORE_DOCUMENT_FAMILY.md) owns facts; [Skills And Project Lifecycle](SKILLS_AND_LIFECYCLE.md) explains ownership and growth. Saving YAIMLACP or skills does not authorize delegation.
 
 ## Existing YAIML Update
 
-For an early installation without skills, paste the complete current [Init YAIML](prompts/init-yaiml.md) into the existing project's agent session. The seed supplies source resolution and bootstrap without depending on an installed refresh skill, catalog or recorded source. It recognizes existing memory and acquires the missing methods from the public reference. Supply a local development snapshot only when intentionally testing unpublished changes.
+For an early installation without skills, paste the complete current [Init YAIML](prompts/init-yaiml.md) into the existing project's agent session. The seed supplies source resolution and bootstrap without depending on an installed refresh skill, catalog or recorded source. It recognizes existing memory and acquires the missing methods from the public reference. Explicitly request an alternative when needed, for example a local snapshot for unpublished development.
 
 Once a usable source and current methods are installed, “update YAIML” selects [yaiml-refresh](skills/yaiml-refresh/SKILL.md). Reapplying init selects the same reconciliation. Updating the project's current facts selects `yaiml-maintain`. Keep these operations distinct.
 
 These are adopter instructions. In the project developing YAIML, its contributor instructions govern editing canonical resources and its own memory. Its roadmap, publication policies and project-specific skills are not adopter defaults; improving them alone does not update the distributed product.
 
-Refresh uses the supplied or recorded source and revision, including disclosed dirty-reference changes. The current Maintainer Guide records applied upstream guidance, local ownership/adaptations and resource exceptions. Compare incoming content with the applied baseline and current local versions where available. Without a baseline, disclose the limits of semantic comparison; do not infer historical drift.
+Refresh uses the official upstream unless the user explicitly requests another source. The current Maintainer Guide records applied provenance, override scope when requested, local adaptations and resource exceptions. Retain older source notes for comparison, not as automatic permission to acquire from them. Compare incoming content with the available baseline and local versions; disclose material reference edits. Without a baseline, disclose comparison limits; do not infer historical drift.
 
 Preserve local methods and project knowledge. Apply compatible changes, reconcile meaningful conflicts through established authority, repair catalog/host routes and required references, and advance only the source records actually applied. Renames and removals require checking callers and useful adaptations; retain working resources when an update is incomplete. A healthy repeat refresh leaves files unchanged.
 
@@ -132,6 +132,12 @@ The optional [update prompt](prompts/update-yaiml.md) routes to the same method.
 Repository access during one session does not establish that later agents received equivalent local guidance. Compare meaning across the installed core roles, evidence/synthesis/retention/branch rules, skill catalog/bodies and required references, shared rules, eleven starters, YAIMLACP, notices, source/adaptation notes and active instruction routes. Classify each as missing, equivalent, intentionally adapted, conflicting, or unverified; different filenames are not defects.
 
 Add missing reusable guidance, repair unreachable bodies and stale instructions, and reconcile conflicting rules through established authority. Preserve project facts, decisions, local protections, and healthy equivalent guidance; do not regenerate mature memory. Report what is present, what is configured to load, and what a fresh session actually used separately. Unknown prior guidance cannot establish historical drift. Record unresolved gaps, not an accumulating scorecard.
+
+## Change Records And Consolidation
+
+Once this guidance is on official `main`, an ordinary update or re-pasted init acquires the record workflow; no mode selection is required. Before integration, testing requires an explicitly requested review-branch revision or local draft. [Change Records](CHANGE_RECORDS.md#transition-and-recovery) preserves existing paths, inline audit history, records, receipts and stricter local rules, and retires obsolete mode flags after reconciling their meaning. Unknown history remains unknown.
+
+Normal work consolidates when task ownership permits; overlapping or uncertain ownership defers factual snapshot updates while preserving pending corrections and repairing navigation. An ordinary request to prepare changes for review uses the existing Git skill. Core-only consumers must account for pending records before claiming current state. No worker, hook, runtime or publication permission is added.
 
 ## Normal Implementation Work
 

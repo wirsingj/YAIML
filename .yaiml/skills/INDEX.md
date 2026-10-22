@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.3.e5a6701538b64592 -->
+<!-- yaiml-revision: 0.16.a60b7e8c56b0ef6a -->
 # YAIML Skills
 
 Use this catalog to select a relevant method, then read and follow its `SKILL.md` and needed references. Ordinary work follows [Using YAIML](../YAIML_GUIDE.md) directly. Open this catalog when selecting a named/specialized workflow; host metadata may already provide that selection. Read selected bodies only; reuse current context.
@@ -16,7 +16,7 @@ The following table is the reusable YAIML distribution. Keep project-owned addit
 | `yaiml-to-do` | Complete the next requested number of feasible project priorities, then verify and maintain memory. | [yaiml-to-do](yaiml-to-do/SKILL.md) |
 | `yaiml-verify` | Verify changed work or consequential project claims against requirements and available independent evidence. | [yaiml-verify](yaiml-verify/SKILL.md) |
 | `yaiml-grow` | Add or improve useful project-specific memory and reusable YAIML methods when recurring work reveals a need. | [yaiml-grow](yaiml-grow/SKILL.md) |
-| `yaiml-refresh` | Update YAIML methods and guidance from the recorded or supplied reference while preserving project memory and local skills. | [yaiml-refresh](yaiml-refresh/SKILL.md) |
+| `yaiml-refresh` | Update YAIML methods and guidance while preserving project memory and local skills. | [yaiml-refresh](yaiml-refresh/SKILL.md) |
 | `yaiml-git` | Review changes, commit, branch, sync or resolve conflicts within the requested Git scope, preserving current work. | [yaiml-git](yaiml-git/SKILL.md) |
 | `yaiml-compress` | Synthesize stale, repetitive or oversized YAIML memory while preserving direction, evidence and governed retention. | [yaiml-compress](yaiml-compress/SKILL.md) |
 | `yaiml-realign` | Reconcile project memory and methods with an approved change in project direction. | [yaiml-realign](yaiml-realign/SKILL.md) |

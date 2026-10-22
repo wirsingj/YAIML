@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.19.c34127f5dc031f2f"
 yaiml: 0.2
 kind: lifecycle-guide
 title: Pruning And Lifecycle
@@ -14,7 +14,7 @@ agent-guidance: Preserve useful continuity without append-only bloat. Keep human
 
 # Pruning And Lifecycle
 
-Pruning is part of each material memory update, not a later cleanup phase. A document below its word budget can still contain unnecessary history.
+Pruning accompanies material snapshot updates. Apply the synthesis rules below when [consolidation ownership](CHANGE_RECORDS.md#decide-whether-to-consolidate) permits; otherwise record corrections and any queued synthesis without rewriting snapshots. A document below its word budget can still contain unnecessary history.
 
 ## SoT Lifecycle
 
@@ -38,11 +38,13 @@ During ordinary work, clean affected sections; an explicit compression request c
 
 ## Concurrent Branches And Review
 
+[Change Records](CHANGE_RECORDS.md) defers factual synthesis during overlapping or uncertain ownership, preserving a brief synthesis request and immediate navigation repairs. A sole consolidation writer applies compression against current intent/evidence; otherwise report it queued.
+
 Memory travels with the code in each branch. A capability described there applies to that checkout, not automatically to the integration branch or a deployed release. State branch/revision and environment when that distinction affects a claim; avoid routine branch stamps on every paragraph. Proposed direction needs an explicit proposal label until the project's decision authority approves it.
 
 ### During A Change
 
-Include material memory corrections in the same PR/MR as the work. Edit the smallest coherent affected passage and its consequential references; keep unrelated wording, headings, ordering, and line wrapping stable. Prune superseded facts there, even below budget. Do not sweep the entire core merely because it was read.
+Include material memory corrections in the same PR/MR as the work, in pending records or consolidated snapshots according to ownership. When consolidating, edit the smallest coherent affected passage and its consequential references; keep unrelated wording, headings, ordering, and line wrapping stable. Prune superseded facts there, even below budget. Do not sweep the entire core merely because it was read.
 
 Keep task progress and review discussion in issues or PRs. Do not create per-developer SoTs or copy the core into branch-named files. Git branches already isolate work. Use separate checkouts/worktrees for concurrent writers when practical; in a shared checkout, coordinate file ownership and re-read before writing. Reading twice is not a lock.
 

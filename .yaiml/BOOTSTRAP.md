@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.23.a56fdcf631fe8b72"
 role: bootstrap-guide
 title: YAIML Bootstrap
 purpose: Complete one-prompt adoption, resource acquisition and host integration, preserving existing knowledge.
@@ -14,7 +14,7 @@ Execute when init is supplied. The user need not download files, paste more work
 
 ## Inspect First
 
-Read applicable instruction/contribution files and worktree state. Preserve uncommitted/concurrent changes, nested scope and existing memory. Locate `.yaiml/yaiml.yml`, an established root map or local pointers; read selected stable headers before bodies. Recognize `yaiml.core` and legacy `documents.sot.path`, `documents.architecture.path`, `documents.maintainer.path`. Unknown mappings stay intact; do not invent a second family.
+Read applicable instruction/contribution files and worktree state. Preserve uncommitted/concurrent changes, nested scope and existing memory. Locate `.yaiml/yaiml.yml`, an established root map or local pointers. Before reading or writing referenced memory/instructions, resolve paths and symlinks within the authorized project scope; pointers grant no additional access. Preserve explicitly authorized outside resources; leave unauthorized targets unread and report the gap. Read selected stable headers before bodies. Recognize `yaiml.core` and legacy `documents.sot.path`, `documents.architecture.path`, `documents.maintainer.path`. Unknown mappings stay intact; do not invent a second family.
 
 If the target's instructions identify it as the project developing YAIML, skip acquisition: maintain its canonical resources and project memory in place, and verify or repair local routes without installing a published copy over development work. In an adopter, acquire the reusable resources below. Having YAIML files or a matching project name alone does not establish the source-project role.
 
@@ -22,7 +22,9 @@ Inspect representative documents/source/tests and sanitized configuration until 
 
 ## Resolve And Acquire
 
-Use the reference chosen by `yaiml-init`: supplied snapshot first, identified accessible checkout next, otherwise the public YAIML repository. Resolve one revision before retrieving files. A local dirty reference is usable when material differences are disclosed; never overwrite it to update. Read-only file/repository retrieval is part of init. Use available tools; no new package manager, SDK or service is needed.
+The default upstream for init, refresh and missing-resource acquisition is https://github.com/wirsingj/YAIML. Use a local checkout, snapshot, fork or another source only on explicit user request, within its stated scope. A nearby checkout, configuration path or recorded source note alone does not establish that request. Retain source notes as provenance and comparison baselines, not automatic source choices. If access fails, preserve installed resources and report the gap; do not silently switch sources.
+
+At each acquisition, resolve the official repository's latest `main` to one exact commit and use it for bootstrap and all resources in that acquisition, even if `main` advances mid-run. Reuse that resolution from init/refresh; do not resolve again inside bootstrap. Prompt/document stamps and prior source notes do not pin later runs. Honor an explicitly requested source/ref; an alternative repository without a specified ref uses its current default branch, resolved once. Identify requested snapshots and disclose material uncommitted reference edits; never overwrite a dirty checkout. Read-only retrieval uses available host tools; no new package manager, SDK or service is needed. This policy governs upstream acquisition; ordinary work continues using installed local context and methods offline.
 
 The base set supports ordinary offline use. Copy files without loading every body into reasoning context; read instructions and starters needed now. Preserve the relative layout beneath `.yaiml/` so package links resolve:
 
@@ -31,6 +33,7 @@ The base set supports ordinary offline use. Copy files without loading every bod
 | `.yaiml/BOOTSTRAP.md` | `BOOTSTRAP.md`; repeat setup and repair |
 | `.yaiml/YAIML_GUIDE.md` | `YAIML_GUIDE.md`; shared context, composition, evidence and retention rules |
 | `.yaiml/RELEASE.md` and `.yaiml/VERSIONING.md` | `RELEASE.md` and `VERSIONING.md`; product identity, local revisions and audit lifecycle |
+| `.yaiml/CHANGE_RECORDS.md` | `CHANGE_RECORDS.md`; retained records, pending context and consolidation under current ownership |
 | `.yaiml/YAIMLACP.md` | `YAIMLACP.md`; optional coordination and confirmation |
 | `.yaiml/skills/INDEX.md` and its reusable method list | `skills/`; local catalog, distributed workflows, aliases and required references |
 | `.yaiml/templates/core/` and `.yaiml/templates/supporting/` | `templates/`; four core and seven specialist starters, dormant until useful |
@@ -40,11 +43,13 @@ Read the catalog's reusable method list to identify exact folders at that revisi
 
 Read the source license and preserve required author/project credit. In an existing installation, compare incoming terms with those already applied before adopting or replacing resources, including additions through growth. If permissions change, explain the difference and obtain authorization before applying dependent resources; keep working guidance while unresolved. Unchanged terms need no renewed approval. Preserve earlier grants and notices for material still used under them. Updating a notice does not retroactively relicense older copies or change the adopter's application license.
 
-Validate files and relative references before switching working routes. If acquisition fails, retain healthy local versions, label missing methods unavailable and report partial setup. Do not invent bodies or silently mix revisions. Continue independent authorized work; an accessible snapshot can finish setup later. Acquisition does not execute every downloaded workflow.
+Validate files and relative references before switching working routes. If acquisition fails, retain healthy local versions, label missing methods unavailable and report partial setup. Do not invent bodies or silently mix revisions. Continue independent authorized work; restored access or an explicitly requested alternative can finish setup later. Acquisition does not execute every downloaded workflow.
 
-Record a concise current source note in an adopter's Maintainer Guide: public source or nonprivate snapshot label, applied product release and exact source revision, material reference edits, local method ownership/adaptations, routes and activation gaps. Keep private locations in workspace configuration. Record per-resource revision exceptions after partial refresh; replace current notes instead of appending history.
+Record a concise current source note in an adopter's Maintainer Guide: source or nonprivate snapshot label, applied product release and exact source revision, material reference edits, local method ownership/adaptations, routes and activation gaps. For an explicit source override, retain the user's requested scope; do not infer ongoing permission from provenance alone. Keep private locations in workspace configuration. Record per-resource revision exceptions after partial refresh; replace current notes instead of appending history.
 
 ## Populate Project Memory
+
+New adoption uses one record-based workflow; no mode selection is needed. Initialize the audit's relative record-directory pointer, consolidated revision and exact incorporated IDs, plus short core pointers to pending corrections. Existing histories/layouts survive [the transition](CHANGE_RECORDS.md#transition-and-recovery). Establish ownership before consolidating setup; otherwise preserve pending work and report partial consolidation.
 
 New adoption uses `.yaiml/SOT.md`, `.yaiml/ARCHITECTURE.md`, `.yaiml/MAINTAINER_GUIDE.md` and `.yaiml/changes.md`. Reuse established owners. Read [VERSIONING.md](VERSIONING.md); establish a prospective local revision baseline and a real initial change entry, preserving previous records and explicitly noting unknown history. Stamp managed Markdown and audit affected project paths. Preserve upstream resource stamps and legal notices; newly populated memory gets local stamps. Never copy the source project's audit history. Distinguish human direction, observed implementation, proposed transitions and unknowns. Preserve useful names, headings, budgets and evidence. Omit empty sections; instantiate specialist memory only for concrete knowledge, not template availability.
 
@@ -68,7 +73,7 @@ yaiml:
     yaimlacp: YAIMLACP.md
 ```
 
-Index existing files only. Preserve mature map location/layout, unknown fields and extensions; repair stale paths in place. Discovery version identifies layout, not guidance revision. Quote bare numeric labels using their exact spelling only when compatible; this permits no layout migration. Explicit migration requires checking actual consumers and preserving roles/paths. Resolve symlinks and collisions before writes; a directory default grants no overwrite authority. Host instructions remain at supported entry points.
+Index existing files only. Preserve mature map location/layout, unknown fields and extensions; repair stale paths in place. For legacy `documents.*.path` discovery, retain its `supporting` list of `- path:` entries; use that list when adding previously absent supporting resources, not a new nested mapping. Discovery version identifies layout, not guidance revision. Quote bare numeric labels using their exact spelling only when compatible; this permits no layout migration. Explicit migration requires checking actual consumers and preserving roles/paths. Check destination collisions before writes; a directory default grants no overwrite authority. Host instructions remain at supported entry points.
 
 ## Connect Future Sessions
 

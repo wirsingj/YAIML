@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.17.cd27b89d4466f476"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -13,6 +13,8 @@ agent-guidance: Verify repository shape before claiming artifacts. Surface confl
 ---
 
 # YAIML Architecture
+
+Include any [pending corrections](changes.md).
 
 ## System Model
 
@@ -32,7 +34,7 @@ This repository develops and publishes YAIML while using it to manage its own de
 | changes.md | Retained iteration audit: intent, parents, affected paths and scoped verification |
 | Supporting memory | Recurring specialist knowledge or distinct retention |
 | `skills/yaiml-*/SKILL.md` | Reusable methods with triggers, inputs, actions and outcomes |
-| `YAIML_GUIDE.md` | Shared context, composition, evidence, authority and retention rules |
+| `YAIML_GUIDE.md` / `CHANGE_RECORDS.md` | Shared loop / retained records and ownership-based consolidation |
 | `skills/INDEX.md` | Selection by purpose and local reachability |
 | Host instructions / native entries | Activation, scope and argument forwarding into canonical methods |
 | Init / Bootstrap | Entry seed, source acquisition, adoption and repair |
@@ -42,11 +44,11 @@ Facts have one detailed memory owner; methods read current facts rather than emb
 
 ## Lifecycle
 
-The seed knows the public reference location and bootstrap path; it assumes no YAIML context or preinstalled skill. Bootstrap resolves a revision, acquires a complete local base and creates useful memory from target evidence. Source-project facts and policies do not transfer. Acquiring a resource does not require loading its whole body into reasoning context or executing it.
+The seed names the official repository and bootstrap path without assuming YAIML context. Init/refresh resolves latest `main` anew and uses one commit throughout acquisition. Prompt stamps track documents, not upstream pins. Alternative sources/refs require explicit user requests. Bootstrap grounds memory in target evidence, excluding source-project facts and policies; acquisition need not load every body or execute each method.
 
-The base supplies skills, shared/revision rules, release identity, coordination guidance, starters and notice for offline use. Retrieve missing extensions from the recorded source. Maintenance guidance owns current applied source and adaptations; the fourth core role retains change records without private paths.
+The offline base supplies methods, shared/revision rules, release identity, coordination guidance, starters and notice. Bootstrap governs further acquisition; maintenance guidance records applied sources/adaptations, and the audit retains changes without private paths.
 
-The guide owns context, work, verification and maintenance. Reuse current core memory; select specialized methods when needed. Routine completion loads revision steps; migration/integration detail is conditional. Headers identify responsibility; `read-with` is a hint, not recursion.
+The guide owns context, work, verification and maintenance. Reuse context; select specialized methods when needed. Routine completion loads revision steps; migration/integration detail is conditional. `read-with` is a relevance hint.
 
 Composition carries one task's scope, findings, priorities and evidence through selected skills. Orient once, perform authorized work, verify at relevant checkpoints, then synthesize material understanding. `yaiml-to-do` bounds feasible original priorities; `yaiml-audit` accepts perspectives. Neither task counts nor skill invocations authorize subagents. Read-only and unchanged tasks remain respected.
 
@@ -56,10 +58,10 @@ Growth distinguishes facts from methods: add specialist memory for recurring kno
 
 Present files, configured routes and observed fresh-session use are distinct claims. The public prompt cannot retrieve unpublished working-tree resources. Missing access yields explicit partial setup, not fabricated completeness. No background maintenance is implied.
 
-Memory describes its checkout. [Revision lineage](VERSIONING.md) separates product release, discovery layout and local iteration. Changed managed Markdown shares an iteration stamp; all affected project paths enter the audit. Concurrent heads survive integration, which reconciles meaning and evidence through existing authority. A clean merge is insufficient.
+[Revision lineage](VERSIONING.md) separates product, discovery and local versions. Changed managed Markdown is stamped; all affected paths enter the audit. [Change Records](CHANGE_RECORDS.md) composes snapshots with pending corrections. Sole ownership permits ordinary consolidation; overlap or uncertainty defers it. Navigation is repaired immediately; incorporated records remain history. No mode switch or global worker detector is supplied. No code-merging service is supplied; a clean merge still requires authority/evidence review.
 
 ## Deferred And Retired Approaches
 
-YAIMLACP uses existing host subagents after affirmative scoped confirmation; it adds no server, SDK, installation or runner and claims no standard MCP interoperability. Skills can be used by one agent. Host controls govern enforceable limits; documentation cannot enforce them.
+YAIMLACP uses host subagents after affirmative scoped confirmation, without added infrastructure or claimed MCP interoperability. Skills can be used by one agent. Host controls govern enforceable limits; documentation cannot enforce them.
 
 `SPEC.md` as normative center, Markdown schemas, JSON-LD systems, conformance fixtures, custom `.yaiml` file formats and provider implementation libraries remain retired or outside this phase. The `.yaiml/` directory is ordinary storage. Preserve the [approved license](../LICENSE.md) and [independence declaration](PROJECT_INDEPENDENCE.md); tooling, licensing and governance changes remain human decisions.

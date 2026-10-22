@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.16.a60b7e8c56b0ef6a"
 yaiml: 0.2
 kind: core-family-guide
 title: Core Document Family
@@ -49,7 +49,7 @@ Remove dead commands and obsolete paths. Link detailed operational references ra
 
 ## Changes
 
-Use `.yaiml/changes.md` by default or an established equivalent audit owner. [Revisions And Change Records](VERSIONING.md) defines project-local stamps, concise entries, prospective legacy baselines and concurrent lineage. This fourth role preserves the audit while the other three synthesize current truth. Load its header, current heads and relevant entries routinely; deep history remains selective. Retain entries unless explicit project retention/privacy authority permits a traceable correction or consolidation.
+Use `.yaiml/changes.md` or an established audit owner. [Versioning](VERSIONING.md) defines local stamps and lineage; [Change Records](CHANGE_RECORDS.md) defines retained records, pending context and consolidation. This fourth role locates records and their incorporation receipt, preserving older inline entries. The other three owners synthesize current truth when task ownership permits; pending corrections supplement them until then. Repair navigation immediately. Read the receipt and pending records routinely, deep history selectively. Retain records unless explicit retention/privacy authority permits a traceable correction or archival.
 
 ## Adding Supporting Documents
 

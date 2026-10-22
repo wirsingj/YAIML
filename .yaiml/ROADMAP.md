@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
+<!-- yaiml-revision: 0.11.3aa1b621fbb958f4 -->
 # YAIML Roadmap
 
 YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
@@ -15,7 +15,7 @@ The immediate route is one [init prompt](prompts/init-yaiml.md) that starts refe
 - Run comparable fresh-session tasks and retain failures and neutral results. Measure context cost as well as useful work.
 - Refine headers, prompt length, and supporting-document split decisions from those trials.
 - Run the [prepared sanitized demo](examples/minimal-notes/README.md#short-paste-and-go-demo) with new readers and check what a fresh session recovers.
-- Keep the [private sensitive-reporting route](../SECURITY.md) available; it was enabled and verified on 2026-09-06.
+- Keep the [private sensitive-reporting route](../SECURITY.md) available; GitHub's read-only API confirmed it enabled on 2026-10-18. Delivery remains untested.
 
 ## Public Pilot
 
