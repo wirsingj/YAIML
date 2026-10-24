@@ -1,9 +1,9 @@
 ---
-yaiml-revision: "0.32.d04c4f7d102d2c77"
+yaiml-revision: "0.33.73aaa0d992e327de"
 role: changes
 record-directory: changes/
-consolidated-revision: "0.32.d04c4f7d102d2c77"
-incorporated-record-ids: ["0.16.a60b7e8c56b0ef6a", "0.17.cd27b89d4466f476", "0.18.e1ee435fbf9eaf35", "0.19.c34127f5dc031f2f", "0.20.a03ceb847ec89110", "0.21.07ad3d8af566e501", "0.22.de453c49744672f7", "0.23.a56fdcf631fe8b72", "0.24.835a3cca49fadd16", "0.25.fcfdeee126046f1c", "0.26.bed769325ac5a721", "0.27.d6ed19c078105af2", "0.28.7d93533c77a2b118", "0.29.a0191b4be09ca7d6", "0.30.f52999e0aedde815", "0.31.31824cd280445331", "0.32.d04c4f7d102d2c77"]
+consolidated-revision: "0.33.73aaa0d992e327de"
+incorporated-record-ids: ["0.16.a60b7e8c56b0ef6a", "0.17.cd27b89d4466f476", "0.18.e1ee435fbf9eaf35", "0.19.c34127f5dc031f2f", "0.20.a03ceb847ec89110", "0.21.07ad3d8af566e501", "0.22.de453c49744672f7", "0.23.a56fdcf631fe8b72", "0.24.835a3cca49fadd16", "0.25.fcfdeee126046f1c", "0.26.bed769325ac5a721", "0.27.d6ed19c078105af2", "0.28.7d93533c77a2b118", "0.29.a0191b4be09ca7d6", "0.30.f52999e0aedde815", "0.31.31824cd280445331", "0.32.d04c4f7d102d2c77", "0.33.73aaa0d992e327de"]
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
 not-here: Transcripts, raw logs, current backlog or duplicated current facts.
@@ -14,7 +14,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current consolidated head: `0.32.d04c4f7d102d2c77`. Read pending files in `changes/` that are absent from the receipt above; older inline entries remain retained history.
+Current consolidated head: `0.33.73aaa0d992e327de`. Read pending files in `changes/` that are absent from the receipt above; older inline entries remain retained history.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` memory/resources, the README/contributor/agent entry pages and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices, SECURITY.md and the unrelated greeting skill retain their existing formats. Their retention or policy content is not revalidated by stamping.
 

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.32.d04c4f7d102d2c77"
+yaiml-revision: "0.33.73aaa0d992e327de"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -42,7 +42,7 @@ Paths resolve from the map's directory, `.yaiml/` for new adoption; preserve est
 
 Keep machine-specific paths, drive names, user-profile paths, `file://` URIs, localhost URLs, and private workspace URLs out of versioned guidance. Supply private reference locations through the human request or non-versioned configuration. A stable, team-approved public reference may be recorded when requested.
 
-No YAIML parser is required. Memory-format validation remains limited to discovery; memory bodies stay free-form Markdown. Coordination handoffs describe message meaning without requiring a parser or schema.
+No YAIML parser is required or built here. Memory bodies stay free-form Markdown; the [record schema and external validation contract](CHANGE_RECORDS.md#record-schema-and-external-validation-contract) names stable integration points for external tools. Coordination handoffs describe message meaning without requiring a parser.
 
 ## Default Placement
 

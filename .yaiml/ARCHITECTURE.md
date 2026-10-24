@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.30.f52999e0aedde815"
+yaiml-revision: "0.33.73aaa0d992e327de"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -64,4 +64,4 @@ Present files, configured routes and observed fresh-session use are distinct cla
 
 YAIMLACP uses host subagents after affirmative scoped confirmation, without added infrastructure or claimed MCP interoperability. Skills can be used by one agent. Host controls govern enforceable limits; documentation cannot enforce them.
 
-`SPEC.md` as normative center, Markdown schemas, JSON-LD systems, conformance fixtures, custom `.yaiml` file formats and provider implementation libraries remain retired or outside this phase. The `.yaiml/` directory is ordinary storage. Preserve the [approved license](../LICENSE.md) and [independence declaration](PROJECT_INDEPENDENCE.md); tooling, licensing and governance changes remain human decisions.
+`SPEC.md` as normative center, schemas for free-form memory bodies, JSON-LD systems, conformance fixtures, custom `.yaiml` file formats and provider implementation libraries remain retired or outside this phase. The small record frontmatter/body contract is owned by Change Records for external consumers; it adds no tooling. The `.yaiml/` directory is ordinary storage. Preserve the [approved license](../LICENSE.md) and [independence declaration](PROJECT_INDEPENDENCE.md); tooling, licensing and governance changes remain human decisions.

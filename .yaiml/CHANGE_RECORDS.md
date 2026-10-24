@@ -1,10 +1,10 @@
 ---
-yaiml-revision: "0.32.d04c4f7d102d2c77"
+yaiml-revision: "0.33.73aaa0d992e327de"
 role: change-record-guide
 title: Change Records And Current Memory
 purpose: Preserve intent and evidence while choosing when shared memory can be consolidated.
 not-here: A mode switch, automatic code merger, global worker detector or lock service.
-budget: About 1400 words total; normative rules take precedence over explanatory rationale.
+budget: About 2000 words total; normative rules take precedence over explanatory rationale.
 durability: Shared procedure; preserve project authority, established paths and audit retention.
 update-when: Recording, consolidation, recovery or retention procedures change.
 agent-guidance: Reuse current context; routine recording is in VERSIONING. Read integration/recovery detail only when relevant.
@@ -27,9 +27,34 @@ Incorporated means accounted for, including a correction explicitly superseded o
 
 Compose pending corrections by stated scope and human authority with actual artifacts. A retained baseline or later filename cannot undo another contributor's approved change. Preserve unresolved claims and recompute derived facts. Core-only readers cannot claim current context while records are pending. Short pointers in the core headers/openings locate this audit; they need no edits per pending change.
 
+## Record Schema And External Validation Contract
+
+This is the normative stable record contract for 0.5.x. It defines integration points for external consumers; YAIML implements no validator, gatekeeper or semantic merger. Project memory bodies remain free-form Markdown. The retained [0.28 record](changes/0.28.7d93533c77a2b118.md) is the source-project exemplar, not an adopter acquisition dependency. An adopter may use this contract without downloading source history.
+
+A finalized record has YAML frontmatter with these required fields:
+
+| Field | Required meaning |
+| --- | --- |
+| `yaiml-revision` | Quoted project revision ID under VERSIONING; must equal the filename stem |
+| `parents` | List of immediate prior revision IDs; empty only for a declared prospective baseline |
+| `date` | Calendar date in `YYYY-MM-DD` form; never an ordering or authority rule |
+| `role` | Literal `change-record` |
+
+The required body sections are **Authority**, **Outcome**, **Checks**, **Limits**, **Affected paths**, each represented by a named Markdown heading or a paragraph label followed by a colon, as in the exemplar. Authority identifies intent and authorized decision source; Outcome records changed facts/owners and results; Checks states actual verification; Limits preserves unrun checks, uncertainty and gaps; Affected paths lists every actually changed project-relative path, including the record, in code spans, identifying additions/deletions and both paths of renames when applicable. Compatible local extensions may add fields/sections without changing these meanings. Existing historical records are retained as written; upgrades do not rewrite them into this schema.
+
+External tools may validate the following invariants against the iteration's recorded baseline/final state and retained finalization evidence. They must report unavailable evidence as **unverified**, not a pass; structural consistency never proves human authority, correctness or exclusive ownership.
+
+1. **Receipt and pending set:** every exact incorporated ID in `changes.md` corresponds to a retained record file on disk; pending IDs equal record files on disk minus the incorporated set. The consolidated revision identifies the accounted-for snapshot head, while pending records still contribute current context. Retained older inline entries are not fabricated per-record files.
+2. **Diff coverage:** a record's Affected paths equals the actual changed-path set of its iteration, including its own path, partial writes, receipt/snapshots, all non-Markdown paths, deletions and both rename endpoints. Use the iteration boundary, not an accumulated branch diff; inspected/unchanged files are check scope only.
+3. **Changed stamps:** each changed managed Markdown file carries that iteration's revision in its prescribed stamp location. Unchanged files retain their stamps; unchanged imports and unmodified acquired resources retain source stamps. Legal notices and code/configuration receive no injected stamps. Template placeholders and copied prompt payloads are not the containing document's stamp.
+4. **Lineage:** parents identify actual immediate revision ancestry; ordinary local counters advance above known local heads. Reconciliation counters exceed both parent lineages and list both consumed heads as parents. Git ancestry, when available, corroborates the iteration mapping without confusing Git commits with revision IDs: retained IDs survive permitted squashes/cherry-picks and new reverts. Missing ancestry evidence stays unverified; timestamps/tags never settle competing meaning.
+5. **Finalization immutability:** no completed record's bytes change after finalization. Compare retained finalized bytes or another established historical baseline; a current stamp alone cannot establish immutability. Corrections/reverts create linked new records and preserve the old bytes, including when `git revert` would delete them or roll the receipt backward. Explicit retention/privacy exceptions still require their own authority and traceable treatment.
+
+These rules are the single normative schema/invariant definition. Other guides link here for record structure and external checks; workflow instructions still own when to record, consolidate or recover. No parser, runtime enforcement or automatic conflict decision is implied.
+
 ## Record Once
 
-Use [the iteration steps](VERSIONING.md#complete-one-iteration). One `<revision>.md` is both the audit and memory correction: revision/parents/date; purpose and decision source; changed facts and their owners; all affected paths including the record itself; actual checks and limits. Aim for 100–200 words, expanding for necessary authority/evidence. Use code spans for historical paths. Avoid duplicate audit narratives, full replacement snapshots, unchanged constraints and transcripts.
+Use [the iteration steps](VERSIONING.md#complete-one-iteration) and [the record contract](#record-schema-and-external-validation-contract). One `<revision>.md` is both the audit and memory correction. Aim for 100–200 words, expanding for necessary authority/evidence. Use code spans for historical paths. Avoid duplicate audit narratives, full replacement snapshots, unchanged constraints and transcripts.
 
 Confirmed conversation-only decisions follow the same procedure. Tentative, read-only and unchanged work writes nothing. Completed records are immutable; corrections get linked new records. A task that also consolidates uses the same iteration, not another ritual revision. Later consolidation of completed pending records gets its own record and links all consumed heads.
 

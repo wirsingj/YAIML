@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.32.d04c4f7d102d2c77"
+yaiml-revision: "0.33.73aaa0d992e327de"
 role: revision-guide
 title: Revisions And Change Records
 purpose: Connect file revisions, project changes and YAIML releases without losing concurrent contributions.
@@ -35,7 +35,7 @@ One coherent material change is one iteration, including a confirmed conversatio
 
 1. Inspect the final task diff and existing audit heads; reread concurrent edits. Preserve unrelated work; select immediate or deferred consolidation under the record procedure.
 2. Allocate `x.y.z`: applied YAIML release major; one above the highest known **local** counter; a fresh 16-character lowercase hex tag from available cryptographic randomness. Retain the counter across major upgrades; upstream resource counters do not raise it. Quote the revision; use decimal integers without fixed width or floating-point rounding. Check known tag collisions; if generation fails, report incomplete assignment.
-3. Stamp changed YAIML-managed Markdown only: `yaiml-revision: "x.y.z"` in memory headers, under `metadata` in skill frontmatter, or `<!-- yaiml-revision: 0.32.d04c4f7d102d2c77 -->` on plain entry pages outside copyable payloads. Untouched files and unmodified acquired resources retain their stamps. A newly instantiated template gets a local stamp; preserve legal notices exactly. Code/configuration receive no injected headers.
+3. Stamp changed YAIML-managed Markdown only: `yaiml-revision: "x.y.z"` in memory headers, under `metadata` in skill frontmatter, or `<!-- yaiml-revision: 0.33.73aaa0d992e327de -->` on plain entry pages outside copyable payloads. Untouched files and unmodified acquired resources retain their stamps. A newly instantiated template gets a local stamp; preserve legal notices exactly. Code/configuration receive no injected headers.
 4. Create one concise `<revision>.md` in the audit's record directory: revision, parent(s), date, intent/decision source, changed facts/owners, outcome, **all affected paths** including the record, and actual checks/limits. Identify renames/deletions. If consolidating, include snapshot and audit-receipt paths and incorporated IDs; otherwise leave their factual contents unchanged. Finalize after checks. Do not predict a commit hash or claim another contributor's work.
 5. Compare the entry/stamps with the final diff against the pre-task state, including writes completed before a partial failure. List only actually changed paths as affected; put inspected or copied-but-unchanged resources in verification scope, not that list. Preserve previous entries; subsequent corrections get linked revisions. Report incomplete writes or failed checks honestly.
 
@@ -45,7 +45,7 @@ Managed Markdown means declared memory, owned YAIML guidance/templates/skills an
 
 Default to `.yaiml/changes.md`; reuse an existing equivalent audit owner, preserve its entries and retention, or choose a nonconflicting path. Keep SoT, Architecture and Maintainer Guide current and concise. The fourth core role owns a durable audit of changes, not a transcript, command log or second backlog. It locates retained per-change records and identifies those already incorporated. There is one workflow; immediate versus deferred consolidation follows current ownership, not a saved mode.
 
-Each retained record identifies its revision, parent revision(s), date, intent/authorized decision source, concise outcome, affected paths and consequential verification/limitations. Include old and new paths for renames, and mark deletions. An exact commit can be added when known; do not predict the hash of a commit containing the entry. Git supplies exact diffs and ancestry when available; a revision ID is a lookup aid, not a content hash. Without Git, retain the record and state the evidence limits.
+Each retained record follows the required [schema and external validation contract](CHANGE_RECORDS.md#record-schema-and-external-validation-contract). An exact commit can be added when known; do not predict the hash of a commit containing the entry. Git supplies exact diffs and ancestry when available; a revision ID is a lookup aid, not a content hash. Without Git, retain the record and state the evidence limits.
 
 Read the header/receipt, pending records and relevant prior evidence during normal orientation, not the entire accumulated audit. Preserve entries by default. Corrections after a completed iteration get a new linked entry; do not silently rewrite past outcomes. Compression of current memory does not erase the audit. Archive, redact or consolidate records only under the project's explicit retention/privacy authority, preserving traceability and never assuming Git alone satisfies it. Exclude sensitive content from the start.
 
