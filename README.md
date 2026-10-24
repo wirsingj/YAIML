@@ -1,9 +1,9 @@
-<!-- yaiml-revision: 0.31.31824cd280445331 -->
+<!-- yaiml-revision: 0.35.4b577caa77f80cc3 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
 
-### [Get the init prompt →](.yaiml/prompts/init-yaiml.md)
+### Choose [networked init](.yaiml/prompts/init-yaiml.md) or [offline init](.yaiml/prompts/init-yaiml-offline.md)
 
 Copy it into your project's agent for **new setup or an upgrade**. [Copy it from this README instead ↓](#start-with-one-prompt)
 
@@ -18,8 +18,8 @@ Paste the init prompt once, then work as usual. Your agent recovers context, che
 ## Start With One Prompt
 
 1. Put your notes, plans, drafts or code in a project folder.
-2. Open an AI agent on that folder. It needs permission to read and edit the files, retrieve guidance from GitHub during setup, and revisit the folder in later sessions. **Tested starting point: [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) on Windows.** With Codex already available, open a terminal in your project folder and run `codex`.
-3. Paste the whole [init prompt](https://raw.githubusercontent.com/wirsingj/YAIML/v0.5.1/.yaiml/prompts/init-yaiml.md), also available below. The agent handles the detailed setup.
+2. Open an AI agent on that folder. It needs permission to read and edit the files and revisit the folder in later sessions. Networked init additionally needs access to its approved source; offline init needs none. **Tested starting point: [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) on Windows.** With Codex already available, open a terminal in your project folder and run `codex`.
+3. Paste one complete prompt: [networked init](.yaiml/prompts/init-yaiml.md), also available below, or [offline init](.yaiml/prompts/init-yaiml-offline.md). Each is one paste, two keystrokes (paste and send). The agent handles setup.
 
 The technical instructions inside the prompt are for the agent; you do not need to learn their terminology. A chat that cannot persistently access your project files cannot maintain this context. Other agents need equivalent file access and instruction support; their behavior remains to be verified.
 
@@ -104,7 +104,7 @@ A count limits work to feasible priorities. Starting a session does not launch t
 
 ## Working With A Team
 
-**Experimental 0.5.0:** one workflow supports one contributor or many. Each meaningful change gets a short record of intent, outcome and checks. With sole ownership, the agent updates current memory; during overlap, separate records preserve changes until reconciliation. No team-mode switch is required.
+**Experimental 0.5.1 candidate:** one workflow supports one contributor or many. Each meaningful change gets a short record of intent, outcome and checks. With sole ownership, the agent updates current memory; during overlap, separate records preserve changes until reconciliation. No team-mode switch is required.
 
 Before a commit or merge request, “Prepare these changes for review” selects the existing Git method. It reviews changes and evidence and consolidates memory when ownership permits; conflicting decisions still require project authority. The request does not commit or publish. The [record guide](.yaiml/CHANGE_RECORDS.md) explains the limits: hidden overlap can go undetected, and YAIML supplies no automatic code merger or hook.
 
@@ -136,7 +136,9 @@ For organizational security review, [retrieval and internal mirrors](.yaiml/ADOP
 
 ## Evidence And Limits
 
-YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](.yaiml/COLD_START_REVIEW.md) separates published evidence from [0.5.0 draft](.yaiml/RELEASE.md) trials and records their limits.
+YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](.yaiml/COLD_START_REVIEW.md) separates published evidence from 0.5.0 draft trials and records their limits.
+
+The [0.5.1 check](.yaiml/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) adds source/package checks and a manual offline fixture only. The requested additional-host trials remain blocked: neither Claude Code nor Copilot was available on this host, and the candidate public pin has not been published. No fresh-session or enforced-network-disabled result is claimed for the new offline prompt.
 
 Nondeveloper usability, other hosts, interactive skill menus, sustained reliability and productivity gains remain unverified; independent adoption and 1.0 readiness are not established. Agents can miss instructions or retain stale information. Review consequential changes: memory supplies context, not proof of correctness. Existing permissions and review controls apply; optional delegation requires scoped confirmation.
 

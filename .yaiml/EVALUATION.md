@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.24.835a3cca49fadd16"
+yaiml-revision: "0.35.4b577caa77f80cc3"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -13,6 +13,25 @@ agent-guidance: Record limitations honestly. Do not turn one small test into uni
 ---
 
 # Evaluation And Case Studies
+
+## Post-Review Cross-Host Trial Gate (2026-10-24)
+
+The 0.5.1 hardening session ran in Codex desktop on Windows with source-project context already supplied. Local command discovery found neither `claude` nor `copilot` on PATH. No additional host, account or fresh-session launcher was available through the task's tools. No host was installed and no private host logs were inspected. This is an environment blocker, not evidence of failure by either product. Availability of another executable outside PATH was not investigated.
+
+| Requested observation | Result in this session |
+| --- | --- |
+| Additional-host offline init, network disabled | Blocked: additional host/fresh-session facility unavailable; OS network access was not disabled |
+| Additional-host pinned networked init | Blocked: additional host unavailable; candidate public ref not published/verified |
+| Ordinary task with memory maintenance on that host | Not run |
+| Fresh recall check on that host | Not run |
+
+A separate manual local fixture used only the embedded offline prompt and a fictional workshop brief. It populated four memory roles, local operating rules/discovery, notice and instruction pointer, then maintained the confirmed Hall B decision with a second linked record. File checks found the original attendance cap of 30 and free afternoons retained, booking still unconfirmed, receipt IDs equal to the two record filenames, and the original finalized record bytes unchanged. No retrieval calls were made by that exercise. It was constructed and checked by the same agent with source context: **not** a fresh-session, independently executed, cross-host or enforced-network-disabled adoption trial. No new reliability claim follows.
+
+### Bounded Trial To Run When A Host Is Available
+
+Use one additional host with two isolated fresh target folders, one per init variant. Record host name/version, model, permissions, candidate commit/ref, source origin, network enforcement, exact prompts, assistance/repairs, changed artifacts, checks, recall answer and failures. Supply only a fictional brief: “Plan a workshop; attendance is capped at 30 and afternoons remain free. Venue booking is unconfirmed.” Supply one complete init prompt; the networked arm must resolve its default pin without a special override, while the offline arm must run with retrieval/network disabled by host controls. Do not supply source-project memory or a full checkout as extra context.
+
+For each arm, start a fresh ordinary session without YAIML reminders: “Use Hall B for the workshop. Draft a schedule and preserve the existing constraints; booking remains unconfirmed.” Check actual output and memory/record maintenance. Start another fresh session: “Which venue and constraints govern the workshop, and is it booked?” Compare its answer with the brief/decision and on-disk records without coaching it. Preserve failed outputs and repairs as evidence; configuration and same-session answers are not recall passes. Stop after this bounded sequence rather than expanding into a benchmark. Until both arms have evidence, leave the corresponding row unverified; no general host compatibility or reliability claim is justified.
 
 ## Revision And Audit Acceptance
 

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.22.de453c49744672f7"
+yaiml-revision: "0.35.4b577caa77f80cc3"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -17,7 +17,7 @@ agent-guidance: Verify command claims when practical. Surface conflicts. Preserv
 
 Include any [pending corrections](changes.md).
 
-Documentation repository; no application build or test suite.
+Documentation repository; no application build or test suite. Post-review 0.5.1 checks and the blocked additional-host trial are scoped in [Evaluation](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24). This fresh session received project instructions and native skill metadata, and read canonical realign/Git methods; this does not validate every native invocation or another host.
 
 ## Review Procedure
 
