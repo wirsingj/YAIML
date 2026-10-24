@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.36.1bd6924ec93349f6"
+yaiml-revision: "0.37.7616c3f95f79315f"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -40,6 +40,8 @@ Maintainer-authorized manual trial upgraded an isolated copy of the synthetic St
 `npm test` passed 7/7 groups before and after, including 10,000 differential cases, rejection paths and a real Git conflict/gated two-parent merge. Post-refresh `npm run verify` passed 100/100 fixtures. A separate demo reproduced the conflict and passed 100 historical plus four feature cases using the supplied candidate replay. This demonstrates this manual guidance upgrade did not break those bounded behavior checks; it does not test autonomous refresh adherence, fresh recall, cross-host use, live synthesis or general semantic merging. The copy and generated repositories provide file isolation; subprocesses retain user permissions.
 
 The trial exposed an external-writer integration gap: StateMesh reconciliation acceptance records omit frontmatter `date` and revision `parents`, lack Outcome, use Git commit IDs as prose parents, and describe affected paths without exact project-path enumeration. The writer also starts reconciliation revisions at counter 1. Behavior-gate acceptance therefore does not establish compliance with the new record/lineage contract. Historical records were preserved, and no StateMesh implementation repair was made. External consumer repair remains separate scope; no validator or merger was added to YAIML. Additional-host fresh-session acceptance remains unverified.
+
+A subsequent user-requested Step 1 changed only the isolated StateMesh copy to expose candidate rejection through its demo CLI, with two end-to-end negative controls. Targeted tests passed 2/2 and the full suite passed 9/9, including the original successful merge. Both a historical payout mutation and a missing feature exited 1, left HEAD at the refactor branch, left exactly three setup commits and zero merge commits across all refs, preserved MERGE_HEAD and unresolved conflict/index state, and created no acceptance receipt. Tests queried Git independently of reported fields. A separate mutation run named INV-017, INV-041 and FEATURE-003, with identical before/after HEAD and null merge commit. Original source fingerprints remained unchanged. This establishes rejection behavior for these bounded cases, not a universal shield; receipt repair and live synthesis were not performed.
 
 ## Revision And Audit Acceptance
 
