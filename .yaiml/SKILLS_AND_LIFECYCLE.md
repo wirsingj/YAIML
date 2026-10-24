@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.16.a60b7e8c56b0ef6a"
+yaiml-revision: "0.34.ed658fd69cfa09e9"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -29,7 +29,7 @@ After setup, “fix this issue” or a confirmed project decision triggers relev
 
 A particular user can request `yaiml-audit` with perspectives or `yaiml-to-do 10` with a count. Where the host supports slash commands these can appear as `/yaiml-audit` and `/yaiml-to-do 10`; other hosts use their supported invocation or ordinary language. Host syntax changes the entry point, not the method. Project-only skills can use the same `yaiml-` prefix with a specific purpose name.
 
-Skills own the methods. [Using YAIML](YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
+Skills own the methods. [Using YAIML](YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Stubs must never carry method content; retain only canonical references, argument pass-through and reference-resolution directions. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
 
 ## Concurrent Memory
 

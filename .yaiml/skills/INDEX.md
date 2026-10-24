@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.16.a60b7e8c56b0ef6a -->
+<!-- yaiml-revision: 0.34.ed658fd69cfa09e9 -->
 # YAIML Skills
 
 Use this catalog to select a relevant method, then read and follow its `SKILL.md` and needed references. Ordinary work follows [Using YAIML](../YAIML_GUIDE.md) directly. Open this catalog when selecting a named/specialized workflow; host metadata may already provide that selection. Read selected bodies only; reuse current context.
@@ -23,3 +23,11 @@ The following table is the reusable YAIML distribution. Keep project-owned addit
 | `yaiml-work-priorities` | Compatibility name for yaiml-to-do; complete the requested number of project priorities. | [yaiml-work-priorities](yaiml-work-priorities/SKILL.md) |
 
 `yaiml-work-priorities` is a compatibility alias for `yaiml-to-do`. Project-created skills use distinctive `yaiml-` names and are listed with their real paths and descriptions. Preserve local entries during refresh; expose a method as ready only when required resources are present. Source revisions, local ownership/adaptations and activation gaps belong in the current Maintainer Guide. No upstream poll or backlog run is triggered by reading this catalog.
+
+## Source-Project-Local Skills
+
+These entries are not part of adopter acquisition. Preserve the existing greeting name as a local compatibility route.
+
+| Skill | Purpose | Method |
+| --- | --- | --- |
+| `hello-world` | Existing local greeting demonstration | [hello-world](hello-world/SKILL.md) |
