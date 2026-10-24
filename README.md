@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.39.cb85eb31d410d62d -->
+<!-- yaiml-revision: 0.40.c25058fd1fd068e3 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -138,7 +138,7 @@ For organizational security review, [retrieval and internal mirrors](.yaiml/ADOP
 
 YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](.yaiml/COLD_START_REVIEW.md) separates published evidence from 0.5.0 draft trials and records their limits.
 
-The [0.5.1 check](.yaiml/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) adds source/package checks and a manual offline fixture. Later [isolated StateMesh trials](.yaiml/EVALUATION.md#statemesh-local-upgrade-trial-2026-10-24) exercised a manual upgrade, external writer repair and one live Codex CLI synthesis under bounded synthetic gates; these do not establish general reliability or fresh memory recall. The requested additional-host trials remain blocked: neither Claude Code nor Copilot was available on this host, and the candidate public pin has not been published. No fresh-session or enforced-network-disabled result is claimed for the new offline prompt.
+The [0.5.1 check](.yaiml/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) adds source/package checks and a manual offline fixture. Later [isolated StateMesh trials](.yaiml/EVALUATION.md#statemesh-local-upgrade-trial-2026-10-24) exercised a manual upgrade, external writer repair and one live Codex CLI synthesis under bounded synthetic gates; a separate [supplied document trial](.yaiml/EVALUATION.md#yaiml-document-reconciliation-trial-2026-10-24) checked retained decisions/history and rejecting controls. These do not establish general reliability, autonomous semantic document merging or fresh memory recall. The requested additional-host trials remain blocked: neither Claude Code nor Copilot was available on this host, and the candidate public pin has not been published. No fresh-session or enforced-network-disabled result is claimed for the new offline prompt.
 
 Nondeveloper usability, other hosts, interactive skill menus, sustained reliability and productivity gains remain unverified; independent adoption and 1.0 readiness are not established. Agents can miss instructions or retain stale information. Review consequential changes: memory supplies context, not proof of correctness. Existing permissions and review controls apply; optional delegation requires scoped confirmation.
 

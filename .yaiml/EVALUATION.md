@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.39.cb85eb31d410d62d"
+yaiml-revision: "0.40.c25058fd1fd068e3"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -50,6 +50,16 @@ The full suite passed 13/13, including Step 1 controls, independent record-field
 Step 3 then ran one explicitly authorized live Codex CLI generation through a one-shot adapter in the isolated copy. CLI 0.163.0-alpha.11 used its configured model default (ID absent from captured header), read-only empty scratch working directory, ephemeral mode and a saved final response. Synthetic sources/intents/feature cases were supplied; no tools or descendants were observed in JSONL. Generation had a 55-second limit within the existing 60-second generator bound; no outer retry or source repair. This used the configured hosted service/account, not local inference.
 
 The untouched output passed 100/100 historical and 4/4 feature cases, then 10,000 selected unflagged differential cases. Final response, gated retained snapshot and applied code shared SHA-256 `1e806c07de44123d1b1132c8c1db6d1e6ab1c9e038d38b1a110bf7266464be0d`. Generation took 7,749 ms, whole reconcile process 8,438 ms, fixture loop 1.841 ms excluding startup/import/loading. Usage reported 19,366 input tokens (13,440 cached), 666 output and 20 reasoning-output tokens; monetary cost was not established. Reconcile retained a pending counter-3 record with both counter-2 revision parents, left HEAD unchanged and created no merge commit. Original 70-file fingerprint remained unchanged. This is one bounded synthetic synthesis result, not repeated reliability, fresh memory recall, another-host acceptance, document reconciliation or transaction-safety evidence. Product tooling remains external; the source release tag is unchanged.
+
+## YAIML Document Reconciliation Trial (2026-10-24)
+
+Step 4 exported local YAIML `db6123c` into an isolated Git repository with no remote. Two deliberate fixture branches restated accepted direction in the same SoTY paragraph and Architecture: zero-retrieval offline init and release-pinned acquisition without fallback. Both received counter-40 records parented by the inherited counter-39 head; Git produced body-level conflicts. The fixture intentionally exercises conflicting snapshot edits, not recommended overlap behavior. A lead-assisted supplied candidate retained both decisions, protected the existing scope/licensing/versioning paragraphs, and reconciled at counter 41 with both branch revision heads as parents. No new CLI worker or provider call was made.
+
+Fourteen checks passed: a positive gated two-parent sandbox merge, twelve rejecting controls, and a budget-policy check. Negatives dropped offline/pinning/licensing decisions, added a known contradiction despite retained keywords, deleted/rewrote history, used Git IDs as revision parents, failed to advance the counter, omitted an affected path, broke a local link, used a stale stamp, or lost an incorporated ID. Each was rejected before writes: HEAD, conflict/index state and files remained unchanged, zero merge commits and no new record. Budget overages were reported rather than used as a hard 10% rejection or deletion rule.
+
+The accepted merge retained all 24 inherited and two branch records byte-for-byte, preserved inline audit text/line endings, and incorporated all 27 final records with no pending IDs. Its five-path record matched the staged/committed integration diff, including the unchanged-stamped imported branch record. Links/anchors, changed stamps, counter/parents and a clean two-parent final commit were checked. SoTY was 1,178 words versus about 1,000 and Architecture 885 versus about 800; necessary declared direction was retained and the overages reported outside memory. Initial harness quoting and CRLF setup errors were repaired before these checks; prior records were never normalized or rewritten.
+
+This is a bounded document-contract experiment with a literal decision manifest, one explicitly recognized contradiction and lead review. It does not establish arbitrary semantic consistency, autonomous document synthesis, broad Markdown/YAML compatibility, cross-host recall or production transaction safety. The external harness and sandbox merge remain outside YAIML product sources; the source branch receives evidence only. Original StateMesh stayed unchanged. No push or publication occurred.
 
 ## Revision And Audit Acceptance
 
