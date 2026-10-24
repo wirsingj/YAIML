@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.37.7616c3f95f79315f"
+yaiml-revision: "0.38.e772ce48496fa913"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -42,6 +42,10 @@ Maintainer-authorized manual trial upgraded an isolated copy of the synthetic St
 The trial exposed an external-writer integration gap: StateMesh reconciliation acceptance records omit frontmatter `date` and revision `parents`, lack Outcome, use Git commit IDs as prose parents, and describe affected paths without exact project-path enumeration. The writer also starts reconciliation revisions at counter 1. Behavior-gate acceptance therefore does not establish compliance with the new record/lineage contract. Historical records were preserved, and no StateMesh implementation repair was made. External consumer repair remains separate scope; no validator or merger was added to YAIML. Additional-host fresh-session acceptance remains unverified.
 
 A subsequent user-requested Step 1 changed only the isolated StateMesh copy to expose candidate rejection through its demo CLI, with two end-to-end negative controls. Targeted tests passed 2/2 and the full suite passed 9/9, including the original successful merge. Both a historical payout mutation and a missing feature exited 1, left HEAD at the refactor branch, left exactly three setup commits and zero merge commits across all refs, preserved MERGE_HEAD and unresolved conflict/index state, and created no acceptance receipt. Tests queried Git independently of reported fields. A separate mutation run named INV-017, INV-041 and FEATURE-003, with identical before/after HEAD and null merge commit. Original source fingerprints remained unchanged. This establishes rejection behavior for these bounded cases, not a universal shield; receipt repair and live synthesis were not performed.
+
+Step 2 subsequently repaired the writers **only in that isolated copy**. New harvest, demo-branch and acceptance records include the required frontmatter/body sections and exact project-relative affected paths. Record DAG parents are separate from Git commits; two sibling counter-2 revisions reconcile at counter 3, and a later acceptance advances to 4. Accepted working-tree code/intents and retained evidence use the gated snapshot; existing shared receipts and completed record bytes are preserved, leaving new records pending. Reconcile prepares files but does not stage or commit; the demo commits its disposable merge.
+
+The full suite passed 13/13, including Step 1 controls, independent record-field/path/stamp/history checks, exact branch commit diffs, repeat acceptance, unequal heads, counters beyond floating-point integer precision, missing-parent rejection and preservation of existing invariant notes. A separate replay demo passed 100 historical plus four feature cases and produced a two-parent Git merge. Original StateMesh fingerprints still matched. This is bounded external-consumer evidence: the original writer is unchanged, the narrow reader supports its emitted quoted-ID/JSON-array subset, and crash-safe multi-file recovery/general YAML compatibility are not established. No writer or validator was added to YAIML itself; live synthesis and document reconciliation remain unrun.
 
 ## Revision And Audit Acceptance
 
