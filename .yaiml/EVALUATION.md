@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.38.e772ce48496fa913"
+yaiml-revision: "0.39.cb85eb31d410d62d"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -46,6 +46,10 @@ A subsequent user-requested Step 1 changed only the isolated StateMesh copy to e
 Step 2 subsequently repaired the writers **only in that isolated copy**. New harvest, demo-branch and acceptance records include the required frontmatter/body sections and exact project-relative affected paths. Record DAG parents are separate from Git commits; two sibling counter-2 revisions reconcile at counter 3, and a later acceptance advances to 4. Accepted working-tree code/intents and retained evidence use the gated snapshot; existing shared receipts and completed record bytes are preserved, leaving new records pending. Reconcile prepares files but does not stage or commit; the demo commits its disposable merge.
 
 The full suite passed 13/13, including Step 1 controls, independent record-field/path/stamp/history checks, exact branch commit diffs, repeat acceptance, unequal heads, counters beyond floating-point integer precision, missing-parent rejection and preservation of existing invariant notes. A separate replay demo passed 100 historical plus four feature cases and produced a two-parent Git merge. Original StateMesh fingerprints still matched. This is bounded external-consumer evidence: the original writer is unchanged, the narrow reader supports its emitted quoted-ID/JSON-array subset, and crash-safe multi-file recovery/general YAML compatibility are not established. No writer or validator was added to YAIML itself; live synthesis and document reconciliation remain unrun.
+
+Step 3 then ran one explicitly authorized live Codex CLI generation through a one-shot adapter in the isolated copy. CLI 0.163.0-alpha.11 used its configured model default (ID absent from captured header), read-only empty scratch working directory, ephemeral mode and a saved final response. Synthetic sources/intents/feature cases were supplied; no tools or descendants were observed in JSONL. Generation had a 55-second limit within the existing 60-second generator bound; no outer retry or source repair. This used the configured hosted service/account, not local inference.
+
+The untouched output passed 100/100 historical and 4/4 feature cases, then 10,000 selected unflagged differential cases. Final response, gated retained snapshot and applied code shared SHA-256 `1e806c07de44123d1b1132c8c1db6d1e6ab1c9e038d38b1a110bf7266464be0d`. Generation took 7,749 ms, whole reconcile process 8,438 ms, fixture loop 1.841 ms excluding startup/import/loading. Usage reported 19,366 input tokens (13,440 cached), 666 output and 20 reasoning-output tokens; monetary cost was not established. Reconcile retained a pending counter-3 record with both counter-2 revision parents, left HEAD unchanged and created no merge commit. Original 70-file fingerprint remained unchanged. This is one bounded synthetic synthesis result, not repeated reliability, fresh memory recall, another-host acceptance, document reconciliation or transaction-safety evidence. Product tooling remains external; the source release tag is unchanged.
 
 ## Revision And Audit Acceptance
 
