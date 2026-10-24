@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.28.7d93533c77a2b118"
+yaiml-revision: "0.30.f52999e0aedde815"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -97,7 +97,7 @@ Future incompatible guidance must explain what changed, what can stay unchanged,
 
 ## First-Time Adoption
 
-[Init YAIML](prompts/init-yaiml.md) is the only required user prompt. It names https://github.com/wirsingj/YAIML as the default upstream; an unfamiliar agent needs no prior YAIML knowledge or installed skills. It executes [Bootstrap](BOOTSTRAP.md) immediately, acquiring one revision's base resources. A local checkout, snapshot, fork or other source requires an explicit user request within its stated scope, never mere workspace presence or a recorded path. [Acquisition policy](BOOTSTRAP.md#resolve-and-acquire) also governs refresh and missing resources.
+Choose one single-paste peer: [networked init](prompts/init-yaiml.md) for the complete method package, or [offline init](prompts/init-yaiml-offline.md) for embedded minimal memory and records with no retrieval. Networked init defaults to reviewed `v0.5.1`, resolved once; floating `main` is only for explicitly requested testing. If that pin is unavailable, report incomplete acquisition without fallback. The prepared candidate is not publicly available until its ref is published. It names https://github.com/wirsingj/YAIML as the default upstream; an unfamiliar agent needs no prior YAIML knowledge or installed skills. It executes [Bootstrap](BOOTSTRAP.md) immediately, acquiring one revision's base resources. A local checkout, snapshot, fork or other source requires an explicit user request within its stated scope, never mere workspace presence or a recorded path. [Acquisition policy](BOOTSTRAP.md#resolve-and-acquire) also governs refresh and missing resources.
 
 Bootstrap preserves useful target documentation, grounds distinct memory roles in evidence, saves a complete local base and connects supported host instructions and native skill discovery. The base supports ordinary offline work; extra reference docs/methods are acquired for concrete needs. Copying files differs from loading their bodies into context. No user-managed downloads, extra workflow pastes or runtime installation are required.
 
@@ -135,7 +135,7 @@ Add missing reusable guidance, repair unreachable bodies and stale instructions,
 
 ## Change Records And Consolidation
 
-Once this guidance is on official `main`, an ordinary update or re-pasted init acquires the record workflow; no mode selection is required. Before integration, testing requires an explicitly requested review-branch revision or local draft. [Change Records](CHANGE_RECORDS.md#transition-and-recovery) preserves existing paths, inline audit history, records, receipts and stricter local rules, and retires obsolete mode flags after reconciling their meaning. Unknown history remains unknown.
+Once release ref `v0.5.1` is published, an ordinary networked update or re-pasted init acquires this record workflow; no mode selection is required. Before publication, testing requires an explicitly requested candidate snapshot/ref. Offline init establishes minimal records without retrieval. [Change Records](CHANGE_RECORDS.md#transition-and-recovery) preserves existing paths, inline audit history, records, receipts and stricter local rules, and retires obsolete mode flags after reconciling their meaning. Unknown history remains unknown.
 
 Normal work consolidates when task ownership permits; overlapping or uncertain ownership defers factual snapshot updates while preserving pending corrections and repairing navigation. An ordinary request to prepare changes for review uses the existing Git skill. Core-only consumers must account for pending records before claiming current state. No worker, hook, runtime or publication permission is added.
 

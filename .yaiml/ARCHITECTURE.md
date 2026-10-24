@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.29.a0191b4be09ca7d6"
+yaiml-revision: "0.30.f52999e0aedde815"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -44,7 +44,7 @@ Facts have one detailed memory owner; methods read current facts rather than emb
 
 ## Lifecycle
 
-The seed names the official repository and bootstrap path without assuming YAIML context. Init/refresh resolves latest `main` anew and uses one commit throughout acquisition. Prompt stamps track documents, not upstream pins. Alternative sources/refs require explicit user requests. Bootstrap grounds memory in target evidence, excluding source-project facts and policies; acquisition need not load every body or execute each method.
+The seed names the official repository and bootstrap path without assuming YAIML context. Init/refresh defaults to reviewed release ref `v0.5.1`, resolved once to an exact commit throughout acquisition. Prompt stamps track documents; the release ref pins the source. Alternative sources/refs require explicit user requests; floating `main` is for explicit testing only. Unavailable pins never trigger fallback. Bootstrap grounds memory in target evidence, excluding source-project facts and policies; acquisition need not load every body or execute each method.
 
 The offline base supplies methods, shared/revision rules, release identity, coordination guidance, starters and notice. Bootstrap governs further acquisition; maintenance guidance records applied sources/adaptations, and the audit retains changes without private paths.
 

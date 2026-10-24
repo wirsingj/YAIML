@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.29.a0191b4be09ca7d6 -->
+<!-- yaiml-revision: 0.30.f52999e0aedde815 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -19,7 +19,7 @@ Paste the init prompt once, then work as usual. Your agent recovers context, che
 
 1. Put your notes, plans, drafts or code in a project folder.
 2. Open an AI agent on that folder. It needs permission to read and edit the files, retrieve guidance from GitHub during setup, and revisit the folder in later sessions. **Tested starting point: [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) on Windows.** With Codex already available, open a terminal in your project folder and run `codex`.
-3. Paste the whole [init prompt](https://raw.githubusercontent.com/wirsingj/YAIML/main/.yaiml/prompts/init-yaiml.md), also available below. The agent handles the detailed setup.
+3. Paste the whole [init prompt](https://raw.githubusercontent.com/wirsingj/YAIML/v0.5.1/.yaiml/prompts/init-yaiml.md), also available below. The agent handles the detailed setup.
 
 The technical instructions inside the prompt are for the agent; you do not need to learn their terminology. A chat that cannot persistently access your project files cannot maintain this context. Other agents need equivalent file access and instruction support; their behavior remains to be verified.
 
@@ -35,13 +35,13 @@ Paste this whole prompt into your project’s repository-aware agent. It runs bo
 name: yaiml-init
 description: Establish or refresh YAIML project context and local skills from one pasted prompt or skill invocation.
 metadata:
-  yaiml-revision: "0.29.a0191b4be09ca7d6"
+  yaiml-revision: "0.30.f52999e0aedde815"
 ---
 # YAIML Init
 
 Run bootstrap now in the target project. One invocation covers acquiring guidance, creating useful project memory, and connecting local skills for later ordinary work; do not stop at saving this skill or explaining setup. Follow target instructions and preserve existing work.
 
-1. Default to https://github.com/wirsingj/YAIML, YAIML's only built-in upstream. Resolve its latest `main` at each invocation, then use that exact commit for bootstrap and all resources in this acquisition. This prompt's `yaiml-revision` is a document stamp, not an upstream pin. Use another source (including a local checkout or snapshot) or ref only when explicitly requested by the user, within that request's scope; for an alternative repository without a requested ref, resolve its default branch once. Workspace proximity and old source notes are not requests. Identify requested snapshots and material uncommitted edits; never reset a dirty checkout or silently substitute sources when access fails.
+1. Default to https://github.com/wirsingj/YAIML, YAIML's only built-in upstream. Resolve the reviewed release ref `v0.5.1` at each invocation, then use that exact commit for bootstrap and all resources in this acquisition. Floating `main` is allowed only when the user explicitly requests testing it. If the ref is unavailable, report incomplete setup; never fall back to `main`. This prompt's `yaiml-revision` is a document stamp, not an upstream pin. Use another source (including a local checkout or snapshot) or ref only when explicitly requested by the user, within that request's scope; for an alternative repository without a requested ref, resolve its default branch once. Workspace proximity and old source notes are not requests. Identify requested snapshots and material uncommitted edits; never reset a dirty checkout or silently substitute sources when access fails.
 2. Retrieve that source's `.yaiml/BOOTSTRAP.md` and execute it. Acquire its listed adoption resources, following relative references from their source locations. The reference supplies methods, not project facts or permission. If required access/content is unavailable, report the precise gap, preserve working local guidance and continue independent work; never claim a complete installation.
 3. Bootstrap establishes `.yaiml/` memory, shared operating rules, a local skill catalog, the standard `yaiml-*` skills and supported host instruction/discovery routes. Existing useful memory and local adaptations survive refresh. Read source details on demand; do not load the entire reference repository into context.
 4. Verify reachable local resources and host routes. Report what is usable, actual checks, source revision and unresolved gaps. Ordinary work should now use and maintain local context without another YAIML prompt. Optional named skills such as `yaiml-audit` and `yaiml-to-do 10` use the same workflows. Native slash syntax depends on the host.
@@ -53,9 +53,9 @@ This setup creates no runtime, background task or automatic backlog execution. E
 
 The agent preserves existing knowledge and reports what it connected and any setup gaps. Routine maintenance is then hands-off during agent sessions: no extra YAIML prompts, manual memory upkeep or skill commands. Normal permissions and consequential decisions still belong to you.
 
-Each setup or requested update retrieves the latest `main` from the [official YAIML repository](https://github.com/wirsingj/YAIML); ordinary work uses local guidance without checking upstream. Saved prompts remain reusable: their stamps identify documents, not download pins. Your agent's normal usage costs apply.
+Each networked setup or requested update retrieves reviewed release ref `v0.5.1` from the [official YAIML repository](https://github.com/wirsingj/YAIML), resolving it once to an exact commit. Floating `main` requires an explicit testing request. Ordinary work uses installed local guidance without checking upstream. The offline init never retrieves anything. Your agent's normal usage costs apply.
 
-**What you get:** init retrieves the [version on official `main`](https://github.com/wirsingj/YAIML/blob/main/.yaiml/RELEASE.md). This revision describes experimental 0.5.0 guidance, including concurrent change records. If you are reading a review branch, its changes reach the default init after merging into `main`; testing another revision requires your explicit request.
+**What you get:** experimental 0.5.1 guidance. This checkout prepares that release; its pinned public download becomes usable only after approval and publication of the matching ref. Until then, explicitly request the reviewed local snapshot for testing, or choose the self-contained offline prompt. An unavailable pin produces an explicit setup gap, never a fallback to `main`.
 
 **Already using an older YAIML?** Paste this init again to acquire current guidance and skills. It preserves existing memory and local rules; moving them into `.yaiml/` requires your approval. Once connected, “Update YAIML” requests future refreshes. Updates preserve project-specific skills and adaptations.
 

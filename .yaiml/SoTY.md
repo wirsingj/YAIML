@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.29.a0191b4be09ca7d6"
+yaiml-revision: "0.30.f52999e0aedde815"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -35,11 +35,11 @@ Stabilization direction: no new features; check regressions and reading/maintena
 
 ## Current State And Evidence
 
-This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product from repository memory. Experimental [0.5.0](RELEASE.md) changes acquisition/upgrades and prototypes unified records; 0.4.0 is the comparison baseline. Working files are canonical; commits identify provenance, not deployment. The maintainer authorized review-branch commit/push and will integrate through an MR. Ask before subsequent pushes.
+This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates product from repository memory. Experimental [0.5.1 candidate](RELEASE.md) hardens offline adoption, pins acquisition and defines an external record contract; 0.4.0 remains the published comparison baseline. Working files are canonical; commits identify provenance, not deployment. The maintainer authorized review-branch commit/push and will integrate through an MR. Ask before subsequent pushes.
 
 [Current review](COLD_START_REVIEW.md) separates published/draft trials and retains corrected failures. One comparison pair found no advantage. [Simulated readers](COLD_START_REVIEW.md#simulated-newcomer-reading) informed README's starting point, recall check and saved-context example; human usability remains unverified. [Upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
 
-[Stabilization review](COLD_START_REVIEW.md#stabilization-against-main) found no new merge-blocking regression in source/package checks; methods match the corrected security trial. Release wording now distinguishes review-branch availability from default-main acquisition. Experimental 0.5.0 is ready for scoped MR review. Ordinary traces overread versioning despite selective-loading instructions; no new agent trial accompanied publication preparation.
+[Stabilization review](COLD_START_REVIEW.md#stabilization-against-main) found no new merge-blocking regression in source/package checks; methods match the corrected security trial. The post-review candidate supersedes default-main acquisition with a release pin; public availability awaits approved publication. Earlier 0.5.0 MR checks do not validate the new candidate. Ordinary traces overread versioning despite selective-loading instructions; no new agent trial accompanied publication preparation.
 
 ## Active Risks And Gaps
 

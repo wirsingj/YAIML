@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.23.a56fdcf631fe8b72"
+yaiml-revision: "0.30.f52999e0aedde815"
 role: bootstrap-guide
 title: YAIML Bootstrap
 purpose: Complete one-prompt adoption, resource acquisition and host integration, preserving existing knowledge.
@@ -24,7 +24,7 @@ Inspect representative documents/source/tests and sanitized configuration until 
 
 The default upstream for init, refresh and missing-resource acquisition is https://github.com/wirsingj/YAIML. Use a local checkout, snapshot, fork or another source only on explicit user request, within its stated scope. A nearby checkout, configuration path or recorded source note alone does not establish that request. Retain source notes as provenance and comparison baselines, not automatic source choices. If access fails, preserve installed resources and report the gap; do not silently switch sources.
 
-At each acquisition, resolve the official repository's latest `main` to one exact commit and use it for bootstrap and all resources in that acquisition, even if `main` advances mid-run. Reuse that resolution from init/refresh; do not resolve again inside bootstrap. Prompt/document stamps and prior source notes do not pin later runs. Honor an explicitly requested source/ref; an alternative repository without a specified ref uses its current default branch, resolved once. Identify requested snapshots and disclose material uncommitted reference edits; never overwrite a dirty checkout. Read-only retrieval uses available host tools; no new package manager, SDK or service is needed. This policy governs upstream acquisition; ordinary work continues using installed local context and methods offline.
+At each acquisition, resolve the official repository's reviewed release ref `v0.5.1` to one exact commit and use it for bootstrap and all resources in that acquisition. Floating `main` is only for explicitly requested testing. An unavailable release ref means incomplete acquisition, never permission to fall back to `main`. Reuse that resolution from init/refresh; do not resolve again inside bootstrap. The release ref is the source pin; prompt/document stamps identify edited documents. Prior source notes are comparison evidence, not authorization to change source. Honor an explicitly requested source/ref; an alternative repository without a specified ref uses its current default branch, resolved once. Identify requested snapshots and disclose material uncommitted reference edits; never overwrite a dirty checkout. Read-only retrieval uses available host tools; no new package manager, SDK or service is needed. This policy governs upstream acquisition; ordinary work continues using installed local context and methods offline.
 
 The base set supports ordinary offline use. Copy files without loading every body into reasoning context; read instructions and starters needed now. Preserve the relative layout beneath `.yaiml/` so package links resolve:
 
