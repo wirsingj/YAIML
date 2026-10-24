@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.30.f52999e0aedde815 -->
+<!-- yaiml-revision: 0.31.31824cd280445331 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -131,6 +131,8 @@ Changed YAIML Markdown receives a revision stamp, with the iteration recorded in
 </details>
 
 **Privacy:** memory follows the project's access, sharing and retention rules. Keep authorized context and sanitized evidence references; exclude credentials and private transcripts. Confidential material must stay out of public repositories and examples. Use an approved agent: its provider's data handling applies when it reads files, including private project memory. Local storage does not guarantee local processing.
+
+For organizational security review, [retrieval and internal mirrors](.yaiml/ADOPTION_AND_UPGRADES.md#security-review-retrieval-and-internal-mirrors) explains what is fetched, when, source/ref controls and self-hosting.
 
 ## Evidence And Limits
 

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.30.f52999e0aedde815"
+yaiml-revision: "0.31.31824cd280445331"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -104,6 +104,18 @@ Bootstrap preserves useful target documentation, grounds distinct memory roles i
 An unpublished development layout cannot be retrieved through the official public URL. Missing access, writes or host support yields explicit partial setup, with working guidance preserved and actionable gaps. Do not silently fall back to another source; a user-requested alternative can resolve missing access. Configuration alone is not fresh-session evidence.
 
 [Agent Integration](AGENT_INTEGRATION.md) owns host routing; [Core Document Family](CORE_DOCUMENT_FAMILY.md) owns facts; [Skills And Project Lifecycle](SKILLS_AND_LIFECYCLE.md) explains ownership and growth. Saving YAIMLACP or skills does not authorize delegation.
+
+## Security Review: Retrieval And Internal Mirrors
+
+**What and when:** networked init and an explicitly requested refresh resolve one ref to one exact commit, retrieve `.yaiml/BOOTSTRAP.md`, then its adoption resource set and required relative dependencies: operating/revision/record guidance, release identity, optional-coordination rules, distributed skills/catalog, core starters and the copied-material license. Missing-guidance acquisition is a separate, scoped action under the same source policy; it is not an ordinary-work poll. Copying resources does not execute every method. No package manager, runtime, service, validator or telemetry is installed by YAIML.
+
+**From where:** the built-in source is `https://github.com/wirsingj/YAIML` at reviewed `v0.5.1`, resolved once for the acquisition. GitHub/raw retrieval endpoints depend on host tools; inspect and permit those tools through your normal controls. An unavailable ref/access fails explicitly without source substitution. Floating `main` requires an explicit testing request. YAIML document instructions cannot enforce a host's network controls.
+
+**Internal hosting:** fork or mirror the repository inside the organization, review the copied content and notices, and create an internally reviewed immutable ref. Supply the complete init prompt through your approved channel with an explicit request such as: “Initialize YAIML from our approved internal mirror at <organization-provided source>, ref <reviewed internal ref>; use no public upstream for this operation.” The existing explicit-source mechanism resolves that source/ref once and uses it for bootstrap and all resources. If an alternative repository has no requested ref, its default branch is resolved once; security-controlled adoption should always specify the reviewed ref. Maintain the mirror through the organization's separate review process; YAIML performs no automatic synchronization. Keep private mirror addresses in the request or unversioned workspace configuration, not public guidance.
+
+**Later work:** ordinary tasks use installed local files and perform no upstream retrieval. A provenance note alone never authorizes another acquisition or makes a mirror the persistent default. To cover later refreshes, explicitly state a standing source/ref restriction in project instructions; otherwise repeat the override on each acquisition request. Installed methods still defer to stricter project/host policies. The [offline init](prompts/init-yaiml-offline.md) retrieves nothing ever: its entire minimal payload and notice are pasted, with no skills fetched. Obtain that prompt before entering an air-gapped environment. A later full upgrade requires a separate request under the applicable policy.
+
+**Data boundary:** YAIML adds no network client. Your selected agent and provider may process project content under their own policies even when YAIML makes no retrieval; approve the host and enforce network/data controls independently. Local memory does not guarantee local inference.
 
 ## Existing YAIML Update
 
