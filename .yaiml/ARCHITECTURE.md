@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.17.cd27b89d4466f476"
+yaiml-revision: "0.29.a0191b4be09ca7d6"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -18,7 +18,7 @@ Include any [pending corrections](changes.md).
 
 ## System Model
 
-One pasted init runs bootstrap through host tools, establishes project memory and skills, and connects future sessions. Optional commands select ordinary-work methods. YAIML adds no runtime or background process.
+One pasted networked init runs bootstrap through host tools; its self-contained offline peer embeds minimal memory/record rules without retrieval or skill acquisition. Both establish project memory and connect supported future sessions. Optional commands select ordinary-work methods. YAIML adds no runtime or background process.
 
 This repository develops and publishes YAIML while using it to manage its own development. Its core memory describes this project; adopters receive methods and establish their own context. Repository maintenance and adopter behavior require separate evidence.
 
@@ -58,7 +58,7 @@ Growth distinguishes facts from methods: add specialist memory for recurring kno
 
 Present files, configured routes and observed fresh-session use are distinct claims. The public prompt cannot retrieve unpublished working-tree resources. Missing access yields explicit partial setup, not fabricated completeness. No background maintenance is implied.
 
-[Revision lineage](VERSIONING.md) separates product, discovery and local versions. Changed managed Markdown is stamped; all affected paths enter the audit. [Change Records](CHANGE_RECORDS.md) composes snapshots with pending corrections. Sole ownership permits ordinary consolidation; overlap or uncertainty defers it. Navigation is repaired immediately; incorporated records remain history. No mode switch or global worker detector is supplied. No code-merging service is supplied; a clean merge still requires authority/evidence review.
+[Revision lineage](VERSIONING.md) separates product, discovery and local versions. Changed managed Markdown is stamped; all affected paths enter the audit. [Change Records](CHANGE_RECORDS.md) composes snapshots with pending corrections. Sole ownership permits ordinary consolidation; overlap or uncertainty defers it. Navigation is repaired immediately; incorporated records remain history. No mode switch or global worker detector is supplied. Semantic-merge tooling, gatekeepers and CI validators are external projects consuming stable YAIML formats and integration points; this repository builds none. A clean merge still requires authority/evidence review.
 
 ## Deferred And Retired Approaches
 

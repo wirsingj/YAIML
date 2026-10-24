@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.28.7d93533c77a2b118 -->
+<!-- yaiml-revision: 0.29.a0191b4be09ca7d6 -->
 # YAIML
 
 Agents forget. Projects shouldn’t.
@@ -35,7 +35,7 @@ Paste this whole prompt into your project’s repository-aware agent. It runs bo
 name: yaiml-init
 description: Establish or refresh YAIML project context and local skills from one pasted prompt or skill invocation.
 metadata:
-  yaiml-revision: "0.17.cd27b89d4466f476"
+  yaiml-revision: "0.29.a0191b4be09ca7d6"
 ---
 # YAIML Init
 
@@ -58,6 +58,10 @@ Each setup or requested update retrieves the latest `main` from the [official YA
 **What you get:** init retrieves the [version on official `main`](https://github.com/wirsingj/YAIML/blob/main/.yaiml/RELEASE.md). This revision describes experimental 0.5.0 guidance, including concurrent change records. If you are reading a review branch, its changes reach the default init after merging into `main`; testing another revision requires your explicit request.
 
 **Already using an older YAIML?** Paste this init again to acquire current guidance and skills. It preserves existing memory and local rules; moving them into `.yaiml/` requires your approval. Once connected, “Update YAIML” requests future refreshes. Updates preserve project-specific skills and adaptations.
+
+## Choose An Init
+
+Both choices are one paste, two keystrokes (paste and send). Choose [networked init](.yaiml/prompts/init-yaiml.md) for the complete local skill package, or [self-contained offline init](.yaiml/prompts/init-yaiml-offline.md) for restricted networks, air-gapped projects or corporate policy. Obtain the offline prompt through an approved channel before entering the restricted environment; paste its entire contents, including the notice. It creates working memory and change records with zero retrieval, and can later be upgraded in place by a separately requested full init or `yaiml-refresh`. It fetches no skills and installs no native skill bodies.
 
 ## Think Of It As “Softerware”
 

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.28.7d93533c77a2b118"
+yaiml-revision: "0.29.a0191b4be09ca7d6"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -19,13 +19,13 @@ Include any [pending corrections](changes.md).
 
 ## North Star And Human Direction
 
-YAIML means Yet Another AI Markup Language: a lightweight Markdown convention for project-owned context shared by humans and agents. Preserve that identity as skills and integration evolve; aim for clarity and portability across fields and tools. The maintainer endorses “softerware”: agents read, act, check results and maintain understanding. Code is optional; broader-domain usability remains unverified.
+YAIML means Yet Another AI Markup Language: a lightweight Markdown convention for project-owned context shared by humans and agents. Preserve that identity as skills and integration evolve; aim for clarity and portability across fields and tools. The maintainer endorses “softerware”: agents read, act, check results and maintain understanding. YAIML is a document standard for memory, change records, skills and init. Semantic-merge tools, gatekeepers and CI validators are external consumers; this repository defines integration contracts and builds no tooling. Broader-domain usability remains unverified.
 
 Declared: pursue adoption as an early public experiment: no installation, ordinary Markdown, explicit uncertainty and synthesis. Runtime/formal specification remain outside scope.
 
 Declared: [YAIMLACP](YAIMLACP.md) owns optional serverless coordination: startup consideration, disclosure, limits and scoped affirmative confirmation; no server or installation.
 
-Maintainer direction: one prompt establishes context and discoverable `yaiml-` skills without prior YAIML knowledge or a maintainer checkout. Hands-off context maintenance during normal work is the default; users need no YAIML reminders or manual memory upkeep. Named skills are optional controls, not a required interaction model. Grow knowledge/methods while preserving local adaptations. Keep YAIML-owned material in `.yaiml/`, except supported host/public entries. Acquire official GitHub's latest `main`; alternatives require explicit requests. Distinguish drafts from published references.
+Maintainer direction: one prompt establishes context and discoverable `yaiml-` skills without prior YAIML knowledge or a maintainer checkout. Hands-off context maintenance during normal work is the default; users need no YAIML reminders or manual memory upkeep. Named skills are optional controls, not a required interaction model. Grow knowledge/methods while preserving local adaptations. Keep YAIML-owned material in `.yaiml/`, except supported host/public entries. Offline and networked init are first-class peers. Default networked acquisition must use a reviewed release ref; floating `main` is only for explicitly requested testing. Alternatives require explicit requests. Distinguish drafts from published references.
 
 Declared: personal public project; require credit, permit commercial/client use, prohibit selling YAIML or charging for forks. Preserve [independence](PROJECT_INDEPENDENCE.md); exclude employer-confidential material, secrets, private transcripts and private-project dependencies. [Licensing](../LICENSE.md) preserves earlier grants. Invent no professional conclusions.
 
@@ -54,7 +54,7 @@ This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates 
 
 ## Immediate Priorities
 
-1. Keep methods frozen through MR review. Publication wording is synchronized; verify committed/public resources and preserve the maintainer's control of main integration. Resolve demonstrated defects without expanding scope to satisfy 1.0.
+1. Execute the accepted post-review hardening directive: offline init, release-pinned acquisition, enterprise mirror guidance, lean distribution, frozen record contract, pointer hygiene and bounded cross-host evidence. Prepare local changes for review; no push or publication without approval.
 2. Future evidence: official-source selection against ambient alternatives; broader interruption/recovery/revert/authority handling; target advances; longer maintenance sequences and hosts; native invocation. Measure overreading before changing the shared loop.
 3. Repair ShepAIrd's reader/writer revision gaps and decide historical-disclosure handling before broader rollout; distinguish current-file, history and deployment evidence.
 4. Repeat the [comparison](EVALUATION.md#ready-to-run-comparison) with equivalent ordinary docs and setup cost; seek [new-reader](examples/minimal-notes/README.md#short-paste-and-go-demo) and independent owner feedback.
@@ -62,6 +62,6 @@ This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates 
 
 ## Open Questions
 
-Should discovery become essential rather than strongly recommended? Which supporting roles recur enough to warrant templates? What evidence and participation justify the [maturity milestones](ROADMAP.md)? Does YAIMLACP coordination improve outcomes enough to justify its cost over one-agent work? Where should memory reconciliation end and general code merging begin? Investigate YAIML-induced friction now; code-merger scope and semantic-tool integration remain undecided.
+Should discovery become essential rather than strongly recommended? Which supporting roles recur enough to warrant templates? What evidence and participation justify the [maturity milestones](ROADMAP.md)? Does YAIMLACP coordination improve outcomes enough to justify its cost over one-agent work? Which external consumers will use the record integration contract? Semantic merging and validation tooling are outside this repository; investigate YAIML-induced friction within document scope.
 
 Retired approaches belong in [Architecture](ARCHITECTURE.md). [changes.md](changes.md) retains revision records; Git holds exact diffs. Current memory retains actionable understanding.
