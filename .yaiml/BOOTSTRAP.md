@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.30.f52999e0aedde815"
+yaiml-revision: "0.32.d04c4f7d102d2c77"
 role: bootstrap-guide
 title: YAIML Bootstrap
 purpose: Complete one-prompt adoption, resource acquisition and host integration, preserving existing knowledge.
@@ -36,10 +36,10 @@ The base set supports ordinary offline use. Copy files without loading every bod
 | `.yaiml/CHANGE_RECORDS.md` | `CHANGE_RECORDS.md`; retained records, pending context and consolidation under current ownership |
 | `.yaiml/YAIMLACP.md` | `YAIMLACP.md`; optional coordination and confirmation |
 | `.yaiml/skills/INDEX.md` and its reusable method list | `skills/`; local catalog, distributed workflows, aliases and required references |
-| `.yaiml/templates/core/` and `.yaiml/templates/supporting/` | `templates/`; four core and seven specialist starters, dormant until useful |
+| `.yaiml/templates/core/` | `templates/core/`; four core starters for adoption/repair |
 | Root `LICENSE.md` | `YAIML_NOTICE.md` or an existing scoped notice; copied-material coverage without changing the project license |
 
-Read the catalog's reusable method list to identify exact folders at that revision; acquire required in-package references before exposing entries as ready. Exclude source-project-only entries when preparing the target catalog, preserving the target's own entries. A skill appearing elsewhere in the source checkout is not automatically part of the distribution. Do not copy reference SoTY, Architecture, Maintainer Guide, changes record, policies, examples or case-study facts into target memory. Additional explanatory docs are selected for a question, not mandatory adopter memory. Optional prompt entry points need not be installed because skills own workflows.
+Read the catalog's reusable method list to identify exact folders at that revision; acquire required in-package references before exposing entries as ready. Exclude source-project-only entries when preparing the target catalog, preserving the target's own entries. A skill appearing elsewhere in the source checkout is not automatically part of the distribution. Do not copy reference SoTY, Architecture, Maintainer Guide, changes record, policies, examples or case-study facts into target memory. Specialist starters in `templates/supporting/` are optional, acquired only for a concrete role. Additional explanatory docs are selected for a question, not mandatory adopter memory. Source-only reviews (`COLD_START_REVIEW.md`), case studies, experiments, trial logs, source project snapshots and retained records are never part of the adoption acquisition set. Optional prompt entry points need not be installed because skills own workflows.
 
 Read the source license and preserve required author/project credit. In an existing installation, compare incoming terms with those already applied before adopting or replacing resources, including additions through growth. If permissions change, explain the difference and obtain authorization before applying dependent resources; keep working guidance while unresolved. Unchanged terms need no renewed approval. Preserve earlier grants and notices for material still used under them. Updating a notice does not retroactively relicense older copies or change the adopter's application license.
 

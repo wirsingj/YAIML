@@ -1,14 +1,19 @@
 ---
-yaiml-revision: "0.21.07ad3d8af566e501"
+yaiml-revision: "0.32.d04c4f7d102d2c77"
 role: change-record-guide
 title: Change Records And Current Memory
 purpose: Preserve intent and evidence while choosing when shared memory can be consolidated.
 not-here: A mode switch, automatic code merger, global worker detector or lock service.
+budget: About 1400 words total; normative rules take precedence over explanatory rationale.
 durability: Shared procedure; preserve project authority, established paths and audit retention.
 update-when: Recording, consolidation, recovery or retention procedures change.
 agent-guidance: Reuse current context; routine recording is in VERSIONING. Read integration/recovery detail only when relevant.
 ---
 # Change Records And Current Memory
+
+## Normative Rules
+
+All procedures below are required when their stated conditions apply. The final explanatory section provides rationale only; it adds no requirements.
 
 Every material iteration has one retained record. Current memory combines the core snapshots with pending corrections. Consolidate during ordinary work when ownership permits; defer during overlap. There is no single-user/team mode and no extra user prompt for routine maintenance.
 
@@ -49,3 +54,7 @@ For requested Git integration, inspect the actual target/common ancestor and eve
 An upgrade preserves existing memory, record directories, receipts and inline history. Establish missing record pointers prospectively; retain the recognized local heads/counter from the inline audit rather than resetting them. The receipt identifies incorporated per-change files, not every historical inline entry. Include existing record IDs only after confirming their corrections are represented in current snapshots or explicitly superseded/reversed with traceable outcomes; ambiguous records stay pending. Do not split or rewrite old entries. An old `maintenance-mode` flag is retired after its rules are reconciled, preserving stricter local authority; it does not erase pending work or make an uncertain receipt complete. Applied-source notes identify the transition and exceptions. Unchanged refresh is a no-op.
 
 After interruption, compare records, snapshots and receipt with actual changes. Report incomplete work until they agree; a receipt cannot manufacture past checks. Missing records, divergent receipts or identical IDs with different bytes require preserving both claims and explicit repair. Reverts are new linked records. Archive/redact only under retention/privacy authority; do not discard history merely because the exact incorporation list grows. Sustained growth and competing consolidators need evaluation; no automatic pipeline is supplied.
+
+## Explanatory Rationale
+
+The exact incorporation set separates historical retention from current corrections: a reversed decision stays accounted for without becoming active again. Ownership-based deferral avoids pretending that a clean worktree detects other contributors. These conventions preserve claims for later reconciliation; they cannot enforce exclusivity or prove that recorded checks were actually run.

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.31.31824cd280445331"
+yaiml-revision: "0.32.d04c4f7d102d2c77"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -141,7 +141,7 @@ The optional [update prompt](prompts/update-yaiml.md) routes to the same method.
 
 ### Correcting An Incomplete Adoption
 
-Repository access during one session does not establish that later agents received equivalent local guidance. Compare meaning across the installed core roles, evidence/synthesis/retention/branch rules, skill catalog/bodies and required references, shared rules, eleven starters, YAIMLACP, notices, source/adaptation notes and active instruction routes. Classify each as missing, equivalent, intentionally adapted, conflicting, or unverified; different filenames are not defects.
+Repository access during one session does not establish that later agents received equivalent local guidance. Compare meaning across the installed core roles, evidence/synthesis/retention/branch rules, skill catalog/bodies and required references, shared rules, four core starters (specialist starters only when needed), YAIMLACP, notices, source/adaptation notes and active instruction routes. Classify each as missing, equivalent, intentionally adapted, conflicting, or unverified; different filenames are not defects.
 
 Add missing reusable guidance, repair unreachable bodies and stale instructions, and reconcile conflicting rules through established authority. Preserve project facts, decisions, local protections, and healthy equivalent guidance; do not regenerate mature memory. Report what is present, what is configured to load, and what a fresh session actually used separately. Unknown prior guidance cannot establish historical drift. Record unresolved gaps, not an accumulating scorecard.
 
