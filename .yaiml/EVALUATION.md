@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.35.4b577caa77f80cc3"
+yaiml-revision: "0.36.1bd6924ec93349f6"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -16,7 +16,7 @@ agent-guidance: Record limitations honestly. Do not turn one small test into uni
 
 ## Post-Review Cross-Host Trial Gate (2026-10-24)
 
-The 0.5.1 hardening session ran in Codex desktop on Windows with source-project context already supplied. Local command discovery found neither `claude` nor `copilot` on PATH. No additional host, account or fresh-session launcher was available through the task's tools. No host was installed and no private host logs were inspected. This is an environment blocker, not evidence of failure by either product. Availability of another executable outside PATH was not investigated.
+The 0.5.1 hardening session ran in Codex desktop on Windows with source-project context already supplied. Local command discovery found neither `claude` nor `copilot` on PATH. No additional host was available through the task's tools, and no fresh-session trial was launched. Later StateMesh setup found Codex CLI on PATH; its availability is not execution or additional-host evidence. No host was installed and no private host logs were inspected. This is an environment blocker, not evidence of failure by either product. Availability of another executable outside PATH was not investigated.
 
 | Requested observation | Result in this session |
 | --- | --- |
@@ -32,6 +32,14 @@ A separate manual local fixture used only the embedded offline prompt and a fict
 Use one additional host with two isolated fresh target folders, one per init variant. Record host name/version, model, permissions, candidate commit/ref, source origin, network enforcement, exact prompts, assistance/repairs, changed artifacts, checks, recall answer and failures. Supply only a fictional brief: “Plan a workshop; attendance is capped at 30 and afternoons remain free. Venue booking is unconfirmed.” Supply one complete init prompt; the networked arm must resolve its default pin without a special override, while the offline arm must run with retrieval/network disabled by host controls. Do not supply source-project memory or a full checkout as extra context.
 
 For each arm, start a fresh ordinary session without YAIML reminders: “Use Hall B for the workshop. Draft a schedule and preserve the existing constraints; booking remains unconfirmed.” Check actual output and memory/record maintenance. Start another fresh session: “Which venue and constraints govern the workshop, and is it booked?” Compare its answer with the brief/decision and on-disk records without coaching it. Preserve failed outputs and repairs as evidence; configuration and same-session answers are not recall passes. Stop after this bounded sequence rather than expanding into a benchmark. Until both arms have evidence, leave the corresponding row unverified; no general host compatibility or reliability claim is justified.
+
+## StateMesh Local Upgrade Trial (2026-10-24)
+
+Maintainer-authorized manual trial upgraded an isolated copy of the synthetic StateMesh spike from official 0.5.0 (`db1dcd120ede0b59ebef16ed82f77ee7ea8cabaa`) to the explicitly selected local 0.5.1 candidate (`c19c4c2`). Node 22.22.3 on Windows; no dependency installation, remote acquisition or live model call. All 24 incoming resources were compared with their exact prior-source baseline; no local resource adaptations needed conflict resolution. Ten project paths changed during refresh. Existing project state, architecture, invariants, discovery, native pointers, historical record bytes, notice and previously installed specialist templates were preserved. Original project fingerprints matched 70 files after testing, excluding Git metadata and pre-existing generated-run trees.
+
+`npm test` passed 7/7 groups before and after, including 10,000 differential cases, rejection paths and a real Git conflict/gated two-parent merge. Post-refresh `npm run verify` passed 100/100 fixtures. A separate demo reproduced the conflict and passed 100 historical plus four feature cases using the supplied candidate replay. This demonstrates this manual guidance upgrade did not break those bounded behavior checks; it does not test autonomous refresh adherence, fresh recall, cross-host use, live synthesis or general semantic merging. The copy and generated repositories provide file isolation; subprocesses retain user permissions.
+
+The trial exposed an external-writer integration gap: StateMesh reconciliation acceptance records omit frontmatter `date` and revision `parents`, lack Outcome, use Git commit IDs as prose parents, and describe affected paths without exact project-path enumeration. The writer also starts reconciliation revisions at counter 1. Behavior-gate acceptance therefore does not establish compliance with the new record/lineage contract. Historical records were preserved, and no StateMesh implementation repair was made. External consumer repair remains separate scope; no validator or merger was added to YAIML. Additional-host fresh-session acceptance remains unverified.
 
 ## Revision And Audit Acceptance
 
