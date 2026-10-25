@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.40.c25058fd1fd068e3"
+yaiml-revision: "0.41.8e8d7861c89600fb"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -60,6 +60,16 @@ Fourteen checks passed: a positive gated two-parent sandbox merge, twelve reject
 The accepted merge retained all 24 inherited and two branch records byte-for-byte, preserved inline audit text/line endings, and incorporated all 27 final records with no pending IDs. Its five-path record matched the staged/committed integration diff, including the unchanged-stamped imported branch record. Links/anchors, changed stamps, counter/parents and a clean two-parent final commit were checked. SoTY was 1,178 words versus about 1,000 and Architecture 885 versus about 800; necessary declared direction was retained and the overages reported outside memory. Initial harness quoting and CRLF setup errors were repaired before these checks; prior records were never normalized or rewritten.
 
 This is a bounded document-contract experiment with a literal decision manifest, one explicitly recognized contradiction and lead review. It does not establish arbitrary semantic consistency, autonomous document synthesis, broad Markdown/YAML compatibility, cross-host recall or production transaction safety. The external harness and sandbox merge remain outside YAIML product sources; the source branch receives evidence only. Original StateMesh stayed unchanged. No push or publication occurred.
+
+## StateMesh Against Actual Local Main (2026-10-24)
+
+The requested test compared clean YAIML `v0.5.1` at `d39a682` with local `main` at `d796943`: 14 commits ahead, none behind, 70 changed paths. Cached `origin/main` was `db1dcd1`; it was not the requested local baseline and no fetch occurred. A disposable clone retained the exact Git objects and had its remote removed. Original StateMesh and the previously repaired isolated copy were each copied for testing; neither implementation was changed.
+
+Both actual `reconcile` CLI calls exited 1 before candidate processing because their fixed `codex/refactor` / `codex/feature` refs were absent. Calling exported `promptFor` with explicit `main` and the current commit resolved those refs, then exited 1 because `.yaiml/changes/intent.md` was absent. Source inspection additionally found fixed `claim.ts`, `CalculateClaimPayout` and synthetic payout gates. These are unsupported-input failures, not evidence that YAIML changes violate an invariant. No generator or provider call ran; neither tool reviewed or reconciled the document changes.
+
+On Windows with Node 22.22.3, the copied original suite passed 7/7 and the repaired suite 13/13. Those synthetic passes do not validate document merging. Each failed tool probe preserved target files, HEAD/refs, index and status. Git alone then fast-forwarded the disposable `main` checkout to the exact candidate tree, cleanly, with no divergence to reconcile. Pre/post fingerprints matched 117 YAIML, 70 original StateMesh and 78 repaired-copy files, excluding Git metadata and generated-run trees. Source branch/HEAD/index stayed unchanged during testing.
+
+The preceding document trial used a separate Python harness with a supplied candidate, not StateMesh's CLI. Applying that tool to real document branches requires separate external implementation scope; no such repair, source integration or publication occurred.
 
 ## Revision And Audit Acceptance
 

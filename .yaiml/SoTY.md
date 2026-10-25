@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.40.c25058fd1fd068e3"
+yaiml-revision: "0.41.8e8d7861c89600fb"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -55,7 +55,7 @@ This project develops and uses YAIML; [Architecture](ARCHITECTURE.md) separates 
 ## Immediate Priorities
 
 1. Review the 0.5.1 hardening candidate and its local release ref before approving publication. Offline init, pinned acquisition, enterprise source guidance, reduced base, external record contract and pointer hygiene are implemented; fresh-session acceptance is incomplete. No push or publication without approval.
-2. [StateMesh and document trials](EVALUATION.md#yaiml-document-reconciliation-trial-2026-10-24) cover manual upgrade/writer checks, one live synthetic code candidate and a supplied document merge with rejection controls. Original StateMesh remains unchanged; autonomous semantic document merging and repeated reliability remain unverified. Run the [bounded additional-host trial](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) for both init variants, ordinary maintenance and fresh recall. Claude Code/Copilot were unavailable here; manual offline file checks establish no new host reliability. Public pinned retrieval awaits approved publication. Retain broader source-selection, interruption/revert and longer-sequence evidence gaps.
+2. [StateMesh and document trials](EVALUATION.md#statemesh-against-actual-local-main-2026-10-24) cover manual upgrade/writer checks, one live synthetic code candidate and a supplied document merge with rejection controls. Actual-branch testing found both local StateMesh versions blocked by synthetic branch/file contracts; autonomous document merging and repeated reliability remain unverified. Run the [bounded additional-host trial](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) for both init variants, ordinary maintenance and fresh recall. Claude Code/Copilot were unavailable here; manual offline file checks establish no new host reliability. Public pinned retrieval awaits approved publication. Retain broader source-selection, interruption/revert and longer-sequence evidence gaps.
 3. Repair ShepAIrd's reader/writer revision gaps and decide historical-disclosure handling before broader rollout; distinguish current-file, history and deployment evidence.
 4. Repeat the [comparison](EVALUATION.md#ready-to-run-comparison) with equivalent ordinary docs and setup cost; seek [new-reader](examples/minimal-notes/README.md#short-paste-and-go-demo) and independent owner feedback.
 5. Measure recurring maintenance and under-pruning in an authorized adopter; change guidance from observed failures.
