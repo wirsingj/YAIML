@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.47.a709c1ceed90c210"
+yaiml-revision: "0.50.741e4ad5c7f6f656"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -59,6 +59,8 @@ rg -n 'documents:|discovery|version' .yaiml/yaiml.yml reference docs examples
 
 Commands are procedures, not passes. Record executed checks and scope in the review note. Use `git diff --cached --check` for staged changes; inspect the commit range after committing.
 
+For diagram-method changes, check isolated format-note acquisition, XML/reference integrity, evidence labels and preservation of human edits. Render with existing local tools when available; distinguish structural checks from visual acceptance. [Diagram review](../docs/evaluation/COLD_START_REVIEW.md#diagram-skill-review) records the tested scope.
+
 ## Propagating Revisions
 
 The shared guide owns ordinary work; skills add specialized methods; prompts/host entries route to their owners. Update owners and callers together. Check seed parity, isolated package closure, skill metadata/arguments, links/anchors, eleven starters, notice and [coverage](../docs/evaluation/COLD_START_REVIEW.md#maintenance-prompt-coverage). Keep:
@@ -99,6 +101,6 @@ Use the [branch workflow](../docs/PRUNING_AND_LIFECYCLE.md#concurrent-branches-a
 
 Review the worktree before staging; preserve unrelated work and shared history. Ask the maintainer before every push to `origin` and await approval for that push; prior blanket approvals no longer apply. Check remote state and preserve concurrent changes.
 
-Keep feature work on feature branches. `main` is stable development; merging there is the maintainer's public-ready decision. The source-only [latest workflow](../.github/workflows/latest.yml) advances only `refs/tags/latest` after main updates, without creating a GitHub Release. Numbered tags, if used, stay immutable. Publish resources with the seed, then verify the workflow and public retrieval at the resolved commit. If tag rules or token permissions block advancement, report the failure; do not bypass protections. A manual workflow rerun on main can retry after the maintainer resolves the cause.
+Collect work on revision-cycle branches; test/review the batch before merging. Choose any product-version bump separately under [release guidance](../docs/development/RELEASE.md). `main` is stable development; merging there is the maintainer's public-ready decision. The source-only [latest workflow](../.github/workflows/latest.yml) advances only `refs/tags/latest` after main updates, without creating a GitHub Release. Numbered tags, if used, stay immutable. Publish resources with the seed, then verify the workflow and public retrieval at the resolved commit. If tag rules or token permissions block advancement, report the failure; do not bypass protections. A manual workflow rerun on main can retry after the maintainer resolves the cause.
 
 `reference/BOOTSTRAP.md` owns consumer product identity; [RELEASE.md](../docs/development/RELEASE.md) owns source readiness. Project-memory-only changes need no product-version bump. Current evidence belongs in [Cold Start Review](../docs/evaluation/COLD_START_REVIEW.md); local checks cannot prove publication.

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.54.58ecbd56ad7274ae"
 role: operating-guide
 title: Using YAIML
 purpose: Shared operating rules for project context, skill selection, composition, and retention.
@@ -13,7 +13,7 @@ agent-guidance: Read once when relevant; reuse current context and load only sel
 
 # Using YAIML
 
-YAIML is project-owned memory and reusable methods. This guide owns the ordinary-work loop: recover context, do the requested work, verify, maintain. It runs during agent sessions, without a background service or another user prompt.
+Project memory and reusable methods live in ordinary files. This guide owns the ordinary-work loop: recover context, do the requested work, verify, maintain. The agent follows it during ordinary work, without a background service or separate maintenance prompt.
 
 ## Start And Select
 

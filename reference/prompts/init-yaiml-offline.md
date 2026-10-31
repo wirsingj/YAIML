@@ -1,11 +1,11 @@
-<!-- yaiml-revision: 0.43.65c0797e642cbbde -->
+<!-- yaiml-revision: 0.54.58ecbd56ad7274ae -->
 # Init YAIML Offline
 
-Paste this entire document once into a project-aware agent. This is a first-class, self-contained init: one paste, two keystrokes (paste and send), no retrieval. All required guidance and the license are embedded below.
+Paste this entire document into a project-aware agent to set up memory in local project files. All required guidance and the license are embedded below. "Offline" means no setup retrieval; it does not turn a hosted AI into a local model.
 
 ## Execute Now
 
-Initialize working project memory now using only this prompt and authorized local project files. Make no network calls, resolve no remote refs, fetch no skills, follow no external links, install nothing. This prompt never retrieves anything, including on repeat use. URLs in the notice are attribution, not retrieval instructions. A later, separately requested full init or `yaiml-refresh` may acquire guidance under its own source policy; it is not part of this operation.
+Initialize project-memory files now using only this prompt and authorized local project files, so later sessions can read them without this conversation. Make no network calls, resolve no remote refs, fetch no skills, follow no external links, install nothing. This prompt never retrieves anything, including on repeat use. URLs in the notice are attribution, not retrieval instructions. A later, separately requested full init or `yaiml-refresh` may acquire guidance under its own source policy; it is not part of this operation.
 
 Follow applicable project/host instructions and permissions. Inspect worktree state, existing memory and representative project documents/source/checks. Resolve paths and symlinks within authorized scope; a pointer grants no additional access. Preserve mature knowledge, local methods, unknown map fields, existing layouts, uncommitted work and stricter authority. This payload supplies only agnostic rules/templates and required notices/provenance, never YAIML's own populated memory, decisions, checks, release plans or audit history. Generate facts and local revisions from the target, not source artifacts or examples. Do not run deployment, destructive or expensive checks, install dependencies or start backlog work for setup.
 

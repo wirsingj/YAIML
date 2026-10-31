@@ -1,9 +1,9 @@
 ---
-yaiml-revision: "0.48.57e622f47b1fbd54"
+yaiml-revision: "0.54.58ecbd56ad7274ae"
 role: changes
 record-directory: changes/
-consolidated-revision: "0.48.57e622f47b1fbd54"
-incorporated-record-ids: ["0.16.a60b7e8c56b0ef6a", "0.17.cd27b89d4466f476", "0.18.e1ee435fbf9eaf35", "0.19.c34127f5dc031f2f", "0.20.a03ceb847ec89110", "0.21.07ad3d8af566e501", "0.22.de453c49744672f7", "0.23.a56fdcf631fe8b72", "0.24.835a3cca49fadd16", "0.25.fcfdeee126046f1c", "0.26.bed769325ac5a721", "0.27.d6ed19c078105af2", "0.28.7d93533c77a2b118", "0.29.a0191b4be09ca7d6", "0.30.f52999e0aedde815", "0.31.31824cd280445331", "0.32.d04c4f7d102d2c77", "0.33.73aaa0d992e327de", "0.34.ed658fd69cfa09e9", "0.35.4b577caa77f80cc3", "0.36.1bd6924ec93349f6", "0.37.7616c3f95f79315f", "0.38.e772ce48496fa913", "0.39.cb85eb31d410d62d", "0.40.c25058fd1fd068e3", "0.41.8e8d7861c89600fb", "0.42.54a58044545ce977", "0.43.65c0797e642cbbde", "0.44.3eb4ff661fa1be94", "0.45.7ded1679f14c93b4", "0.46.42a0394f3a2abb59", "0.47.a709c1ceed90c210", "0.48.57e622f47b1fbd54"]
+consolidated-revision: "0.54.58ecbd56ad7274ae"
+incorporated-record-ids: ["0.16.a60b7e8c56b0ef6a", "0.17.cd27b89d4466f476", "0.18.e1ee435fbf9eaf35", "0.19.c34127f5dc031f2f", "0.20.a03ceb847ec89110", "0.21.07ad3d8af566e501", "0.22.de453c49744672f7", "0.23.a56fdcf631fe8b72", "0.24.835a3cca49fadd16", "0.25.fcfdeee126046f1c", "0.26.bed769325ac5a721", "0.27.d6ed19c078105af2", "0.28.7d93533c77a2b118", "0.29.a0191b4be09ca7d6", "0.30.f52999e0aedde815", "0.31.31824cd280445331", "0.32.d04c4f7d102d2c77", "0.33.73aaa0d992e327de", "0.34.ed658fd69cfa09e9", "0.35.4b577caa77f80cc3", "0.36.1bd6924ec93349f6", "0.37.7616c3f95f79315f", "0.38.e772ce48496fa913", "0.39.cb85eb31d410d62d", "0.40.c25058fd1fd068e3", "0.41.8e8d7861c89600fb", "0.42.54a58044545ce977", "0.43.65c0797e642cbbde", "0.44.3eb4ff661fa1be94", "0.45.7ded1679f14c93b4", "0.46.42a0394f3a2abb59", "0.47.a709c1ceed90c210", "0.48.57e622f47b1fbd54", "0.49.6a2a46bd2164ed7f", "0.50.741e4ad5c7f6f656", "0.51.76d4cca6ae474b9c", "0.52.a7dc04ee6153bfeb", "0.53.fe47b90e38459516", "0.54.58ecbd56ad7274ae"]
 title: YAIML Project Changes
 purpose: Retain completed changes to this project and their revision lineage.
 not-here: Transcripts, raw logs, current backlog or duplicated current facts.
@@ -14,7 +14,7 @@ agent-guidance: Audit actual paths and evidence; revisions do not prove correctn
 ---
 # YAIML Project Changes
 
-Current consolidated head: `0.48.57e622f47b1fbd54`. Read pending files in `changes/` that are absent from the receipt above; older inline entries remain retained history.
+Current consolidated head: `0.54.58ecbd56ad7274ae`. Read pending files in `changes/` that are absent from the receipt above; older inline entries remain retained history.
 
 Tracking begins prospectively here. Earlier iterations have no reconstructed IDs; Git retains earlier source history. Managed scope is `.yaiml/` project memory and `reference/` reusable resources, `docs/`, the root roadmap, README/contributor/agent entry pages and example reader guides and native `yaiml-*` routes. Legacy sample memory/discovery, legal notices and SECURITY.md retain their existing formats. The local greeting now uses a managed pointer/canonical split; it remains excluded from distribution. Their retention or policy content is not revalidated by stamping.
 

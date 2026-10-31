@@ -1,9 +1,9 @@
-<!-- yaiml-revision: 0.47.a709c1ceed90c210 -->
+<!-- yaiml-revision: 0.54.58ecbd56ad7274ae -->
 # YAIML Roadmap
 
-YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
+YAIML's goal is useful, project-owned memory across agents and teams. Industry-standard adoption is the long-term ambition; maturity claims should follow outside use and evidence.
 
-The immediate route is one [init prompt](reference/prompts/init-yaiml.md) that starts reference retrieval, project context and embedded methods. Evaluate the full [skills lifecycle](docs/SKILLS_AND_LIFECYCLE.md) from a new user’s perspective, with no prior YAIML knowledge or maintainer-local paths.
+One [init prompt](reference/prompts/init-yaiml.md) asks the agent to establish memory and guidance files in the target project. Evaluate the full [skills lifecycle](docs/SKILLS_AND_LIFECYCLE.md) from a new user's perspective, with no prior YAIML knowledge or maintainer-local paths.
 
 ## Now
 
@@ -27,7 +27,7 @@ Add or refine examples and supporting templates only when actual use reveals rec
 
 ## Maturity Milestones
 
-These are evidence milestones, separate from product release numbers, discovery labels and local revision counters. [RELEASE.md](docs/development/RELEASE.md) owns the current product identity; publishing 0.3.0 does not claim the public-pilot evidence milestone.
+These are evidence milestones, separate from product release numbers, discovery labels and local revision counters. [RELEASE.md](docs/development/RELEASE.md) owns product identity; publishing a release does not establish adoption or maturity.
 
 | Milestone | Evidence sought |
 | --- | --- |
@@ -42,7 +42,7 @@ The separate `yaiml.version` field identifies discovery layout. Editing guidance
 
 YAIMLACP describes optional serverless coordination for memory maintenance and project workflows. Use trials to establish whether the handoff convention improves on ordinary one-agent work; it makes no claim of standard MCP interoperability.
 
-This reference repository supplies no runtime services, databases, orchestration engine, package dependencies, web apps, SDKs, or provider adapters. Ordinary adoption requires none. Memory-format validation remains limited to `yaiml.yml`; coordination messages impose no Markdown schema.
+This reference repository supplies no runtime, service, package, SDK or provider adapter. Current-state Markdown stays free-form. Discovery and [retained change records](reference/CHANGE_RECORDS.md#record-schema-and-external-validation-contract) have structural conventions for external consumers; YAIML supplies no validator. Coordination messages impose no Markdown schema.
 
 ## Human Decisions
 

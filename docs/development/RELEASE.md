@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.47.a709c1ceed90c210"
+yaiml-revision: "0.54.58ecbd56ad7274ae"
 role: release-identity
 title: YAIML Release
 purpose: Identify YAIML's product release and source-maintainer publication readiness.
@@ -24,7 +24,9 @@ The 1.0 claim remains pending: stable core and revision expectations, checked le
 
 ## Publication Boundary
 
-Feature work belongs on feature branches; optional release branches can collect reviewed changes. `main` is stable development. Under the maintainer's chosen workflow, merging to main is the public-ready decision: [.github/workflows/latest.yml](../../.github/workflows/latest.yml) advances `refs/tags/latest` on main updates. No GitHub Release object is required. Only `latest` moves; numbered tags remain fixed.
+Pending revision: `yaiml-diagram` and its portable draw.io notes add an optional method; the working package has twelve methods plus the compatibility alias. Public explanations and both init openings now clarify file-based memory and agent responsibilities without changing acquisition or maintenance rules. These edits are outside the published 0.5.2 baseline; the next release label remains a maintainer decision. Full setup follows the acquired catalog; self-contained setup still installs no skill package.
+
+The maintainer's 1:1 workflow batches work on revision-cycle branches rather than one branch per feature. Roughly two weeks is a working rhythm, not a deadline. Test and review the batch before merging; choose any product-version bump deliberately, not from the branch name or elapsed time. `main` is stable development. Merging to main is the public-ready decision: [.github/workflows/latest.yml](../../.github/workflows/latest.yml) advances `refs/tags/latest` on main updates. No GitHub Release object is required. Only `latest` moves; numbered tags remain fixed.
 
 The workflow serializes its runs, reads live main rather than an older event commit, and creates or updates only the latest tag with job-scoped contents-write permission. It uses no checkout or third-party action. Repository rules or token restrictions can block it; report failure instead of bypassing protections. This is source maintenance, never an adopter dependency or copied release procedure.
 

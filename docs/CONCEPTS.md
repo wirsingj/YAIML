@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.47.a709c1ceed90c210"
+yaiml-revision: "0.54.58ecbd56ad7274ae"
 yaiml: 0.2
 kind: concept-guide
 title: Concepts
@@ -14,14 +14,14 @@ agent-guidance: Preserve the lightweight convention-first frame. Do not turn con
 
 # Concepts
 
-YAIML means Yet Another AI Markup Language: a convention for context and project management through shared understanding and reusable methods in a repository. Its audience includes AI chats, coding agents, and human contributors.
+YAIML means Yet Another AI Markup Language: a convention for preserving project understanding in ordinary repository files. Humans and agents read the same saved context; continuity does not depend on carrying a chat's history into the next session.
 
 A development conversation mixes decisions, experiments, corrections, and obsolete ideas. YAIML preserves the part that should survive the conversation: what the project currently is, what humans intend, what evidence establishes, and what future work must account for.
 
 ## Design Choices
 
 - **Plain files:** ordinary Markdown is editable, searchable, reviewable in Git, and usable without YAIML software. The small discovery file locates the documents.
-- **Reusable methods:** skills preserve ways to audit, act on priorities, verify and maintain context. A small bootstrap brings these into the project; ordinary use needs no command choreography. Methods read current facts from memory.
+- **Reusable methods:** skills are written instructions for recurring work, not workers. Full init saves them locally; ordinary use needs no command choreography. Agents apply them to current project facts.
 - **Distinct roles:** SoT holds current state, Architecture holds durable design, and Maintainer Guide holds procedures. [Core Document Family](CORE_DOCUMENT_FAMILY.md) explains placement.
 - **Explicit uncertainty:** declared intent and implementation evidence may disagree. Preserve both until evidence or an authorized decision resolves the difference.
 - **Synthesis:** replace stale state rather than accumulating a session diary. Keep rejected approaches only while they prevent repeated mistakes.

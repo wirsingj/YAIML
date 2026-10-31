@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.47.a709c1ceed90c210"
+yaiml-revision: "0.54.58ecbd56ad7274ae"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -13,11 +13,11 @@ agent-guidance: Preserve the one-prompt ordinary path and distinguish design fro
 
 [Using YAIML](../reference/YAIML_GUIDE.md) owns the ordinary context/work/verification/maintenance loop. Named skills provide explicit or specialized methods, rather than mandatory extra steps for every task. [VERSIONING.md](../reference/VERSIONING.md) owns revision and audit mechanics; ordinary completion reads its routine section, while migration and integration load their own detail.
 
-YAIML is a context and project management convention. Memory preserves what the project understands; skills preserve reusable ways to use and maintain that understanding. The minimum user interaction is one init prompt. Optional named skills make the same behavior easier to request precisely, without making command choreography a prerequisite.
+Memory files preserve what the project understands; skill files describe recurring ways to use and maintain it. Agents interpret those instructions with their existing tools. One init prompt starts setup; named skills are optional.
 
 ## From Seed To Working Project
 
-The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves a revision under [Bootstrap's source policy](../reference/BOOTSTRAP.md#resolve-and-acquire), acquires the base resources, grounds the four core roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
+The agent follows the pasted `yaiml-init` using its existing file/repository tools. It resolves a revision under [Bootstrap's source policy](../reference/BOOTSTRAP.md#resolve-and-acquire), saves the reusable resources, grounds the four core roles in the target project, and connects supported instructions. The prompt is text to act on, not a program or model installation.
 
 Acquisition and context loading are different operations. The base includes the standard methods, shared rules, coordination guidance and dormant starters so normal use survives an unavailable upstream repository. Agents need not read every saved file into context. The catalog selects methods; methods read current project facts and relevant sources. Additional reference docs or skills are acquired when a concrete need appears. A source revision, local adaptations and incomplete resources remain visible.
 
@@ -28,6 +28,8 @@ A ready adoption has useful memory, complete local workflow dependencies, preser
 After setup, “fix this issue” or a confirmed project decision triggers relevant context loading and material memory maintenance through host instructions. YAIML does not launch audits, empty-document creation or backlog implementation merely because a session started.
 
 A particular user can request `yaiml-audit` with perspectives or `yaiml-to-do 10` with a count. Where the host supports slash commands these can appear as `/yaiml-audit` and `/yaiml-to-do 10`; other hosts use their supported invocation or ordinary language. Host syntax changes the entry point, not the method. Project-only skills can use the same `yaiml-` prefix with a specific purpose name.
+
+[yaiml-diagram](../reference/skills/yaiml-diagram/SKILL.md) creates or updates an editable draw.io view from relevant project memory: "Diagram our architecture and flag uncertain connections." Diagrams are requested deliverables, not required memory files or a competing source of truth. They retain source references and evidence distinctions; updating a view preserves unrelated human edits. See the [fictional example](../examples/diagrams/README.md).
 
 Skills own the methods. [Using YAIML](../reference/YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Stubs must never carry method content; retain only canonical references, argument pass-through and reference-resolution directions. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
 

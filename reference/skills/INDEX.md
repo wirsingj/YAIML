@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.45.7ded1679f14c93b4 -->
+<!-- yaiml-revision: 0.50.741e4ad5c7f6f656 -->
 # YAIML Skills
 
 Use this catalog to select a relevant method, then read and follow its `SKILL.md` and needed references. Ordinary work follows [Using YAIML](../YAIML_GUIDE.md) directly. Open this catalog when selecting a named/specialized workflow; host metadata may already provide that selection. Read selected bodies only; reuse current context.
@@ -15,6 +15,7 @@ The following table is the reusable YAIML distribution. Adopters may keep their 
 | `yaiml-audit` | Audit a project, its memory or specified aspects through requested perspectives, with evidence-ranked findings. | [yaiml-audit](yaiml-audit/SKILL.md) |
 | `yaiml-to-do` | Complete the next requested number of feasible project priorities, then verify and maintain memory. | [yaiml-to-do](yaiml-to-do/SKILL.md) |
 | `yaiml-verify` | Verify changed work or consequential project claims against requirements and available independent evidence. | [yaiml-verify](yaiml-verify/SKILL.md) |
+| `yaiml-diagram` | Create or update editable draw.io views of project understanding, preserving evidence distinctions and human edits. | [yaiml-diagram](yaiml-diagram/SKILL.md) |
 | `yaiml-grow` | Add or improve useful project-specific memory and reusable YAIML methods when recurring work reveals a need. | [yaiml-grow](yaiml-grow/SKILL.md) |
 | `yaiml-refresh` | Update YAIML methods and guidance while preserving project memory and local skills. | [yaiml-refresh](yaiml-refresh/SKILL.md) |
 | `yaiml-git` | Review changes, commit, branch, sync or resolve conflicts within the requested Git scope, preserving current work. | [yaiml-git](yaiml-git/SKILL.md) |
