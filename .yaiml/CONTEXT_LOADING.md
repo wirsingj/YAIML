@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.19.c34127f5dc031f2f"
+yaiml-revision: "0.43.65c0797e642cbbde"
 yaiml: 0.2
 kind: context-loading-guide
 title: Context Loading
@@ -14,7 +14,7 @@ agent-guidance: Keep the core bounded. Load supporting and deep-reference materi
 
 # Context Loading
 
-[Using YAIML — Start And Select](YAIML_GUIDE.md#start-and-select) owns normal loading. Read current core memory once, reuse it while sufficient, and select deeper material by task. The core preserves project knowledge; removing repeated generic rules must not remove project constraints.
+[Using YAIML — Start And Select](../reference/YAIML_GUIDE.md#start-and-select) owns normal loading. Read current core memory once, reuse it while sufficient, and select deeper material by task. The core preserves project knowledge; removing repeated generic rules must not remove project constraints.
 
 | Resource | Trigger |
 | --- | --- |

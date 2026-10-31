@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.34.ed658fd69cfa09e9"
+yaiml-revision: "0.43.65c0797e642cbbde"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -11,13 +11,13 @@ agent-guidance: Preserve the one-prompt ordinary path and distinguish design fro
 ---
 # YAIML Skills And Project Lifecycle
 
-[Using YAIML](YAIML_GUIDE.md) owns the ordinary context/work/verification/maintenance loop. Named skills provide explicit or specialized methods, rather than mandatory extra steps for every task. [VERSIONING.md](VERSIONING.md) owns revision and audit mechanics; ordinary completion reads its routine section, while migration and integration load their own detail.
+[Using YAIML](../reference/YAIML_GUIDE.md) owns the ordinary context/work/verification/maintenance loop. Named skills provide explicit or specialized methods, rather than mandatory extra steps for every task. [VERSIONING.md](../reference/VERSIONING.md) owns revision and audit mechanics; ordinary completion reads its routine section, while migration and integration load their own detail.
 
 YAIML is a context and project management convention. Memory preserves what the project understands; skills preserve reusable ways to use and maintain that understanding. The minimum user interaction is one init prompt. Optional named skills make the same behavior easier to request precisely, without making command choreography a prerequisite.
 
 ## From Seed To Working Project
 
-The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves a revision under [Bootstrap's source policy](BOOTSTRAP.md#resolve-and-acquire), acquires the base resources, grounds the four core roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
+The pasted `yaiml-init` executes immediately through the host's existing file/repository tools. It resolves a revision under [Bootstrap's source policy](../reference/BOOTSTRAP.md#resolve-and-acquire), acquires the base resources, grounds the four core roles in the target project, and connects supported instructions. The seed itself is executable natural-language guidance; it needs no preinstalled YAIML skill or runtime.
 
 Acquisition and context loading are different operations. The base includes the standard methods, shared rules, coordination guidance and dormant starters so normal use survives an unavailable upstream repository. Agents need not read every saved file into context. The catalog selects methods; methods read current project facts and relevant sources. Additional reference docs or skills are acquired when a concrete need appears. A source revision, local adaptations and incomplete resources remain visible.
 
@@ -29,11 +29,11 @@ After setup, “fix this issue” or a confirmed project decision triggers relev
 
 A particular user can request `yaiml-audit` with perspectives or `yaiml-to-do 10` with a count. Where the host supports slash commands these can appear as `/yaiml-audit` and `/yaiml-to-do 10`; other hosts use their supported invocation or ordinary language. Host syntax changes the entry point, not the method. Project-only skills can use the same `yaiml-` prefix with a specific purpose name.
 
-Skills own the methods. [Using YAIML](YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Stubs must never carry method content; retain only canonical references, argument pass-through and reference-resolution directions. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
+Skills own the methods. [Using YAIML](../reference/YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Stubs must never carry method content; retain only canonical references, argument pass-through and reference-resolution directions. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
 
 ## Concurrent Memory
 
-[Change Records](CHANGE_RECORDS.md) supplies one workflow: each material change has one retained record; normal work consolidates with sole ownership, while known overlap or uncertain ownership defers factual snapshots and the shared receipt. Current context includes pending records; navigation is repaired immediately. Existing coordination establishes ownership; YAIML provides no global worker detector or lock. “Prepare these changes for review” uses the existing Git method to check intent, evidence and pending consolidation, without granting commit or publication authority.
+[Change Records](../reference/CHANGE_RECORDS.md) supplies one workflow: each material change has one retained record; normal work consolidates with sole ownership, while known overlap or uncertain ownership defers factual snapshots and the shared receipt. Current context includes pending records; navigation is repaired immediately. Existing coordination establishes ownership; YAIML provides no global worker detector or lock. “Prepare these changes for review” uses the existing Git method to check intent, evidence and pending consolidation, without granting commit or publication authority.
 
 ## Combined Work
 
@@ -45,7 +45,7 @@ Methods pass results forward: findings with uncertainty, selected items with acc
 
 Use the existing owner first. Recurring domain knowledge can justify a supporting document with a distinct responsibility and retention rule. Recurring work can justify a project-specific skill with a clear trigger, inputs, steps and completion conditions. One-off observations and speculative preferences do not need permanent artifacts. `yaiml-grow` maintains this distinction.
 
-A missing useful upstream resource follows [Bootstrap's acquisition rules](BOOTSTRAP.md#resolve-and-acquire), including comparison and authorization for changed license terms, before its dependencies and notices enter local discovery. New skills use the established canonical skill home, defaulting to `.yaiml/skills/` only when none exists. A new project skill is project-owned and stays local unless separately contributed. Updating methods may fix demonstrated shortcomings; it does not silently change project goals or permissions. Growth includes retiring obsolete methods after checking callers and useful knowledge.
+A missing useful upstream resource follows [Bootstrap's acquisition rules](../reference/BOOTSTRAP.md#resolve-and-acquire), including comparison and authorization for changed license terms, before its dependencies and notices enter local discovery. New skills use the established canonical skill home, defaulting to `.yaiml/skills/` only when none exists. A new project skill is project-owned and stays local unless separately contributed. Updating methods may fix demonstrated shortcomings; it does not silently change project goals or permissions. Growth includes retiring obsolete methods after checking callers and useful knowledge.
 
 ## Updating And Repairing
 

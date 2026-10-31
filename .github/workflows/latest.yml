@@ -1,0 +1,73 @@
+name: Advance latest to main
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: advance-latest
+  cancel-in-progress: false
+
+jobs:
+  advance:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Point latest at the current main commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import urllib.error
+          import urllib.request
+
+          base = os.environ['GITHUB_API_URL'].rstrip('/')
+          repo = os.environ['GITHUB_REPOSITORY']
+
+          def api(method, path, payload=None):
+              request = urllib.request.Request(
+                  f'{base}/repos/{repo}/git/{path}',
+                  data=None if payload is None else json.dumps(payload).encode(),
+                  headers={
+                      'Authorization': f'Bearer {os.environ["GH_TOKEN"]}',
+                      'Accept': 'application/vnd.github+json',
+                      'Content-Type': 'application/json',
+                      'X-GitHub-Api-Version': '2026-03-10',
+                  },
+                  method=method,
+              )
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return json.load(response)
+
+          # Query live main so an older queued run cannot restore its event SHA.
+          main = api('GET', 'ref/heads/main')
+          sha = main['object']['sha']
+          if main['ref'] != 'refs/heads/main' or main['object']['type'] != 'commit' or not re.fullmatch(r'[0-9a-f]{40}', sha):
+              raise RuntimeError('Main did not resolve to a commit')
+          try:
+              latest = api('GET', 'ref/tags/latest')
+          except urllib.error.HTTPError as error:
+              if error.code != 404:
+                  raise
+              api('POST', 'refs', {'ref': 'refs/tags/latest', 'sha': sha})
+          else:
+              if latest['ref'] != 'refs/tags/latest':
+                  raise RuntimeError('Unexpected latest reference')
+              if latest['object']['sha'] != sha or latest['object']['type'] != 'commit':
+                  api('PATCH', 'refs/tags/latest', {'sha': sha, 'force': True})
+
+          result = api('GET', 'ref/tags/latest')
+          if result['ref'] != 'refs/tags/latest' or result['object']['type'] != 'commit' or result['object']['sha'] != sha:
+              raise RuntimeError('Latest did not resolve to the selected main commit')
+          print(f'latest -> {sha}')
+          PY

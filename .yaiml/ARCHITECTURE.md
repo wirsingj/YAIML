@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.33.73aaa0d992e327de"
+yaiml-revision: "0.43.65c0797e642cbbde"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -20,9 +20,9 @@ Include any [pending corrections](changes.md).
 
 One pasted networked init runs bootstrap through host tools; its self-contained offline peer embeds minimal memory/record rules without retrieval or skill acquisition. Both establish project memory and connect supported future sessions. Optional commands select ordinary-work methods. YAIML adds no runtime or background process.
 
-This repository develops and publishes YAIML while using it to manage its own development. Its core memory describes this project; adopters receive methods and establish their own context. Repository maintenance and adopter behavior require separate evidence.
+This repository develops and publishes YAIML while using it to manage its own development. Its `.yaiml/` describes this project; `reference/` contains the reusable guides, prompts, skills and templates. Adopters read only that distribution and required notices, then establish their own context. This separation applies to both linked and embedded init. Repository maintenance and adopter behavior require separate evidence. Source-only GitHub automation advances `latest` on approved updates to stable `main`; no GitHub Release object is required. Feature branches are not published by that workflow. Numbered tags, when used, remain immutable. This publication automation is not distributed or required by adopters.
 
-`.yaiml/` is the default home for discovery, memory, skills and reusable resources. Host instructions and public/legal entry points remain in their supported locations. Discovery paths resolve relative to their map; mature layouts are compatibility inputs, not replacement targets. [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns compatibility.
+An adopter's `.yaiml/` remains the default home for discovery, memory and installed reusable resources; the source distribution's `reference/` location requires no adopter migration. Host instructions and public/legal entry points remain in their supported locations. Discovery paths resolve relative to their map; mature layouts are compatibility inputs, not replacement targets. [Adoption And Updates](ADOPTION_AND_UPGRADES.md) owns compatibility.
 
 ## Owners And Boundaries
 
@@ -40,13 +40,13 @@ This repository develops and publishes YAIML while using it to manage its own de
 | Init / Bootstrap | Entry seed, source acquisition, adoption and repair |
 | Templates / optional prompts | Dormant writing aids / alternative entry points to owning skills |
 
-Facts have one detailed memory owner; methods read current facts rather than embedding copies. Host entries are thin routes, not competing implementations. This repository uses `.agents/skills/` entries pointing to `.yaiml/skills/`; other hosts need their supported mechanisms. [Core Document Family](CORE_DOCUMENT_FAMILY.md) owns role guidance.
+Facts have one detailed memory owner; methods read current facts rather than embedding copies. Host entries are thin routes, not competing implementations. This repository uses `.agents/skills/` entries pointing to `reference/skills/`; other hosts need their supported mechanisms. [Core Document Family](CORE_DOCUMENT_FAMILY.md) owns role guidance.
 
 ## Lifecycle
 
-The seed names the official repository and bootstrap path without assuming YAIML context. Init/refresh defaults to reviewed release ref `v0.5.1`, resolved once to an exact commit throughout acquisition. Prompt stamps track documents; the release ref pins the source. Alternative sources/refs require explicit user requests; floating `main` is for explicit testing only. Unavailable pins never trigger fallback. Bootstrap grounds memory in target evidence, excluding source-project facts and policies; acquisition need not load every body or execute each method.
+The seed names the official repository and bootstrap path without assuming YAIML context. Init/refresh defaults to exact tag ref `refs/tags/latest`, peeled once to a commit throughout acquisition. The tag moves; the recorded commit fixes the applied source. Prompt stamps track documents. Alternative sources/refs require explicit user requests; `main` is not a fallback. A same-named branch is not the tag; missing/ambiguous tag resolution never triggers fallback. Bootstrap grounds memory in target evidence, excluding source-project facts and policies; acquisition need not load every body or execute each method.
 
-The offline base supplies methods, shared/revision rules, release identity, coordination guidance, starters and notice. Bootstrap governs further acquisition; maintenance guidance records applied sources/adaptations, and the audit retains changes without private paths.
+The acquired offline base supplies methods, shared/revision rules, coordination guidance, starters and notice. Product identity comes from reference bootstrap metadata; our release plans and review/history files are never consumer inputs. Discovery also indexes relevant target-owned documents without duplicating their owners. Bootstrap governs acquisition; the audit retains changes without private paths.
 
 The guide owns context, work, verification and maintenance. Reuse context; select specialized methods when needed. Routine completion loads revision steps; migration/integration detail is conditional. `read-with` is a relevance hint.
 
@@ -58,7 +58,7 @@ Growth distinguishes facts from methods: add specialist memory for recurring kno
 
 Present files, configured routes and observed fresh-session use are distinct claims. The public prompt cannot retrieve unpublished working-tree resources. Missing access yields explicit partial setup, not fabricated completeness. No background maintenance is implied.
 
-[Revision lineage](VERSIONING.md) separates product, discovery and local versions. Changed managed Markdown is stamped; all affected paths enter the audit. [Change Records](CHANGE_RECORDS.md) composes snapshots with pending corrections. Sole ownership permits ordinary consolidation; overlap or uncertainty defers it. Navigation is repaired immediately; incorporated records remain history. No mode switch or global worker detector is supplied. Semantic-merge tooling, gatekeepers and CI validators are external projects consuming stable YAIML formats and integration points; this repository builds none. A clean merge still requires authority/evidence review.
+[Revision lineage](../reference/VERSIONING.md) separates product, discovery and local versions. Changed managed Markdown is stamped; all affected paths enter the audit. [Change Records](../reference/CHANGE_RECORDS.md) composes snapshots with pending corrections. Sole ownership permits ordinary consolidation; overlap or uncertainty defers it. Navigation is repaired immediately; incorporated records remain history. No mode switch or global worker detector is supplied. Semantic-merge tooling, gatekeepers and CI validators are external projects consuming stable YAIML formats and integration points; this repository builds none. A clean merge still requires authority/evidence review.
 
 ## Deferred And Retired Approaches
 

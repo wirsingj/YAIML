@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.16.a60b7e8c56b0ef6a"
+yaiml-revision: "0.43.65c0797e642cbbde"
 role: experiment
 title: Intent Records For Concurrent Memory
 purpose: Preserve the tested prototype, tradeoffs and remaining adoption questions.
@@ -10,7 +10,7 @@ agent-guidance: This source-project experiment grants no adopter configuration o
 ---
 # Intent Records For Concurrent Memory
 
-**Status: historical isolated prototype.** The later [opt-in lifecycle trial](../COLD_START_REVIEW.md#opt-in-team-mode-lifecycle) refined this design. The current [record procedure](../CHANGE_RECORDS.md) prototypes one workflow without a mode switch. [Trial evidence](../COLD_START_REVIEW.md#intent-record-prototype) compares five ordinary tasks against the earlier merge experiment. The source project's normal maintenance still follows [Using YAIML](../YAIML_GUIDE.md).
+**Status: historical isolated prototype.** The later [opt-in lifecycle trial](../COLD_START_REVIEW.md#opt-in-team-mode-lifecycle) refined this design. The current [record procedure](../../reference/CHANGE_RECORDS.md) prototypes one workflow without a mode switch. [Trial evidence](../COLD_START_REVIEW.md#intent-record-prototype) compares five ordinary tasks against the earlier merge experiment. The source project's normal maintenance still follows [Using YAIML](../../reference/YAIML_GUIDE.md).
 
 ## Tested Method
 

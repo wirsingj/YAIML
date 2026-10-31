@@ -1,18 +1,18 @@
-<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
+<!-- yaiml-revision: 0.43.65c0797e642cbbde -->
 # Contributing to YAIML
 
 YAIML is an early public context and project management convention: one prompt establishes project memory and reusable skills, ordinary work maintains that context, and optional named workflows provide more control.
 
 Contributions should make the convention clearer, more useful, easier to apply, or harder for agents to misuse.
 
-This repository both develops YAIML and uses it. Reusable product resources serve adopting projects; our core memory, roadmap and contributor policies govern this project. A shared-method change affects both audiences, while a correction to our own backlog need not change the product. [Architecture](.yaiml/ARCHITECTURE.md) owns that boundary; [Bootstrap](.yaiml/BOOTSTRAP.md#resolve-and-acquire) identifies what adopters receive.
+This repository both develops YAIML and uses it. `reference/` contains only reusable guides, prompts, skills and templates; `.yaiml/` holds our own memory, roadmap, reviews and release plans. Consumer flows use the former and never depend on the latter. Required license notices remain included. A shared-method change affects both audiences; our backlog does not become an adopter default. [Architecture](.yaiml/ARCHITECTURE.md) owns that boundary; [Bootstrap](reference/BOOTSTRAP.md#resolve-and-acquire) identifies what adopters receive.
 
 The value of YAIML is the convention for preserving project understanding, not the volume of documents around it. Favor refinement over expansion.
 
 ## Ground Rules
 
 - Keep the center on living project memory, not schema design for Markdown documents.
-- [YAIMLACP](.yaiml/YAIMLACP.md) supplies optional coordination guidance using existing host capabilities, without a server or installation. Adding a runtime, CLI, SDK, package manifest, provider adapter, web app, or parser here requires an authorized implementation scope; ordinary adoption remains usable without them.
+- [YAIMLACP](reference/YAIMLACP.md) supplies optional coordination guidance using existing host capabilities, without a server or installation. Adding a runtime, CLI, SDK, package manifest, provider adapter, web app, or parser here requires an authorized implementation scope; ordinary adoption remains usable without them.
 - Do not add conformance fixtures or formal validation machinery for Markdown memory documents unless the project explicitly changes phase.
 - Preserve the distinction between human intent and implementation evidence.
 - Preserve the distinction between SoT, durable Architecture, and procedural Maintainer guidance.
@@ -52,4 +52,4 @@ Open a GitHub issue or pull request with a concrete unclear passage, contradicti
 
 Use the private-contact guidance in [SECURITY.md](SECURITY.md) for sensitive reports. Do not publish private project memory or transcripts to make a report reproducible.
 
-Use [revision guidance](.yaiml/VERSIONING.md) to finish material changes: stamp affected managed Markdown and record intent, parents, all affected project paths and actual checks in the core [changes.md](.yaiml/changes.md). Preserve audit records while pruning current memory. Product releases and discovery labels are separate from local iteration counters.
+Use [revision guidance](reference/VERSIONING.md) to finish material changes: stamp affected managed Markdown and record intent, parents, all affected project paths and actual checks in the core [changes.md](.yaiml/changes.md). Preserve audit records while pruning current memory. Product releases and discovery labels are separate from local iteration counters.

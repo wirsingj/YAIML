@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.28.7d93533c77a2b118"
+yaiml-revision: "0.45.7ded1679f14c93b4"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -14,7 +14,37 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
-Current review: 2026-10-21. Experimental 0.5.0 changes acquisition source selection; the earlier opt-in trial and subsequent unified-workflow prototype are reviewed below. Published 0.4.0 consolidated ordinary work into the shared guide. ShelfList tested that draft; the workshop sequence tested the published product beyond software. Release `v0.4.0` is published at `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public retrieval matched committed README, init and all thirty package resources; bundle SHA-256 is `227d5b646cccff369369012411e5fd750dff75b75649b54970f7a6e9657085f2` over case-sensitive sorted package-relative paths, NUL and Git blob bytes. Retrieval establishes availability; behavioral evidence remains scoped to each trial's conditions and does not establish whole-product reliability.
+## 0.5.2 Publication Review
+
+On 2026-10-31, the maintainer authorized committing, pushing and merging the complete local work. Main is the common ancestor at `db1dcd120ede0b59ebef16ed82f77ee7ea8cabaa`; the feature branch contains thirteen additional commits and the reference separation, latest-tag workflow and README edits. No independent main changes require reconciliation. This task owns integration and consolidates the pending README review record.
+
+The README now leads with project creation, a document standard and included skills. It links directly to full/networked and flat/offline prompt files; the offline option supplies core memory and rules, not the skill package. The obsolete embedded-README parity check becomes direct-link validation while standalone/canonical init parity remains required. License and earlier audit records remain unchanged.
+
+The combined candidate passed isolated closure for 37 reference resources and both 23-resource home layouts, standalone/canonical init parity, direct README links, offline placeholders/notices, twelve native routes, discovery and active links/anchors. All ten mocked workflow cases passed. Public workflow execution and exact-source retrieval must be checked after merge. These checks do not establish fresh-session setup, repair, other-host support or independent newcomer usability; those acceptance gaps remain.
+
+## Structural Distribution Check
+
+Maintainer direction on 2026-10-29 made the separation structural: reusable resources live in `reference/`; `.yaiml/` is this project's memory. Consumers need no source-authoring exceptions. Source discovery/native routes use the reference directly. Legacy adopter locations remain valid; no remote refs or external project files were changed.
+
+The broader check found concrete omissions in the initial containment pass: README embedded an older init; offline templates/record instructions prefilled actual source revision `0.29.a0191b4be09ca7d6`; the catalog contained a source-local demo. All are corrected. Product identity now comes from portable bootstrap metadata, not the source release plan. The Maintainer template's ambiguous “current product release” and Versioning's unqualified release-numbering wording were corrected: target releases are independent of YAIML provenance and memory stamps. Both init forms state that boundary; wording checks do not establish agent compliance.
+
+Parser-based checks passed for all 37 reference resources in isolation, the 23-resource base in default/custom homes, twelve native route metadata pairs, README/prompt/canonical parity, offline revision placeholders and exact embedded notice, source discovery and active Markdown links/anchors. These are artifact checks, not fresh-agent adoption or repair. Read-only remote inspection found a v0.5.1 branch but no v0.5.1 tag; its local tag points elsewhere. No remote latest tag was found.
+
+The maintainer selected `latest` as the moving public-ready tag, with approved main updates as the publication boundary; numbered tags stay fixed and no GitHub Release is required. Init/refresh resolve the exact tag once to a commit. The source-only workflow passed YAML/trigger/permission checks and ten mocked API cases: create, advance using live main despite an older event, unchanged no-op, annotated-tag replacement, read denial, invalid main, unexpected tag, post-write mismatch, write denial and creation race. Failure cases stopped without unrelated writes or bypasses. No live API writes ran. GitHub execution, ruleset compatibility, public retrieval and fresh-session acceptance remain pending.
+
+## Adopter Distribution Boundary
+
+On 2026-10-29, inspection of a maintainer-owned adopter at applied source `eda2b918f9d29fd683a015092d5958d61b8e8eeb` confirmed bootstrap explicitly installed YAIML's `RELEASE.md`, including source release-preparation instructions. The adopter's core snapshots and retained records were project-specific. Twenty-three unadapted acquired resources matched that source after line-ending normalization; the catalog had its expected source-only-entry adaptation. Correct copying did not establish appropriate ownership.
+
+An acquisition-only link check reproduced two missing targets: the release document's source evaluation link and Change Records' source audit exemplar. The discovery map also indexed YAIML's release plan while omitting existing target specialist docs. Importing those source-only targets would worsen the boundary error.
+
+The corrected bootstrap excludes source release plans, records applied YAIML release/status and commit in target maintenance notes, and indexes relevant existing project owners. Init and refresh carry the boundary through; repair distinguishes confirmed upstream copies from adapted/ambiguous content and preserves target history/notices. Versioning no longer depends on a local YAIML release document; the record contract needs no source exemplar.
+
+Mechanical checks passed for the 23-resource acquired set in default/custom homes, links/anchors, twelve method metadata pairs, seed parity and discovery examples. Manual repair review covered unchanged upstream copies, locally adapted/ambiguous files and existing target release owners. These are primary-agent artifact/wording checks, not fresh-agent execution. The adopter was inspected only; no application correctness, automatic repair, published fix or cross-host reliability is established. Earlier package checks do not validate this source revision.
+
+## Earlier Review Baseline
+
+Review baseline: 2026-10-21. Experimental 0.5.0 changes acquisition source selection; the earlier opt-in trial and subsequent unified-workflow prototype are reviewed below. Published 0.4.0 consolidated ordinary work into the shared guide. ShelfList tested that draft; the workshop sequence tested the published product beyond software. Release `v0.4.0` is published at `54c80c699ccfc05f35b55d9244cf501cf754d7ce`. Public retrieval matched committed README, init and all thirty package resources; bundle SHA-256 is `227d5b646cccff369369012411e5fd750dff75b75649b54970f7a6e9657085f2` over case-sensitive sorted package-relative paths, NUL and Git blob bytes. Retrieval establishes availability; behavioral evidence remains scoped to each trial's conditions and does not establish whole-product reliability.
 
 ## Review-Branch Publication Preparation
 
@@ -221,7 +251,7 @@ Revision `0.15.66ca5418653ba569` introduced conditional team guidance. Revision 
 
 ## Maintenance Prompt Coverage
 
-The [catalog](skills/INDEX.md) owns eleven methods and the compatibility alias. Shared operating/revision/record guides own common rules; Bootstrap owns acquisition and routing. Six optional maintenance prompts select skills; init embeds its bootstrap skill. Fresh MR preparation exercised Git/compression through local routes, not interactive menus or arbitrary merges.
+The [catalog](../reference/skills/INDEX.md) owns eleven methods and the compatibility alias. Shared operating/revision/record guides own common rules; Bootstrap owns acquisition and routing. Six optional maintenance prompts select skills; init embeds its bootstrap skill. Fresh MR preparation exercised Git/compression through local routes, not interactive menus or arbitrary merges.
 
 Manual [lifecycle review](EVALUATION.md#one-prompt-skills-lifecycle) covered immediate acquisition, offline reuse, scope/argument forwarding, unavailable resources, adaptation preservation and partial updates. Wording coverage is not execution.
 
@@ -342,7 +372,7 @@ A maintainer-owned application was also upgraded through its existing refresh in
 
 ## Growth, Composition And Refresh
 
-[Growth](skills/yaiml-grow/SKILL.md) now derives the canonical skill home from existing routes and follows [Bootstrap's acquisition rules](BOOTSTRAP.md#resolve-and-acquire), including changed-license authorization. Four fresh CLI profiles tested these corrections and related workflows on 2026-10-17, using the same CLI/model settings as above, workspace-write restrictions, no conversation history, no descendants/retries, and ten-minute limits. Fixtures were prepared from the earlier fictional Field Notes project with current methods and a retained `context/` home; these were workflow trials, not new initialization trials.
+[Growth](../reference/skills/yaiml-grow/SKILL.md) now derives the canonical skill home from existing routes and follows [Bootstrap's acquisition rules](../reference/BOOTSTRAP.md#resolve-and-acquire), including changed-license authorization. Four fresh CLI profiles tested these corrections and related workflows on 2026-10-17, using the same CLI/model settings as above, workspace-write restrictions, no conversation history, no descendants/retries, and ten-minute limits. Fixtures were prepared from the earlier fictional Field Notes project with current methods and a retained `context/` home; these were workflow trials, not new initialization trials.
 
 - **Growth:** created a project skill in `context/skills/` and registered it in the catalog, preserving the brief and export specifications. The sandbox denied its native wrapper; the agent reported partial registration and preserved file-based use.
 - **Composition:** a natural audit/work/verify request read all corresponding canonical methods, completed the sole remaining original priority despite a limit of two, verified examples/links, and maintained memory without inventing work or settling open decisions.

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.19.c34127f5dc031f2f"
+yaiml-revision: "0.43.65c0797e642cbbde"
 yaiml: 0.2
 kind: lifecycle-guide
 title: Pruning And Lifecycle
@@ -14,7 +14,7 @@ agent-guidance: Preserve useful continuity without append-only bloat. Keep human
 
 # Pruning And Lifecycle
 
-Pruning accompanies material snapshot updates. Apply the synthesis rules below when [consolidation ownership](CHANGE_RECORDS.md#decide-whether-to-consolidate) permits; otherwise record corrections and any queued synthesis without rewriting snapshots. A document below its word budget can still contain unnecessary history.
+Pruning accompanies material snapshot updates. Apply the synthesis rules below when [consolidation ownership](../reference/CHANGE_RECORDS.md#decide-whether-to-consolidate) permits; otherwise record corrections and any queued synthesis without rewriting snapshots. A document below its word budget can still contain unnecessary history.
 
 ## SoT Lifecycle
 
@@ -38,7 +38,7 @@ During ordinary work, clean affected sections; an explicit compression request c
 
 ## Concurrent Branches And Review
 
-[Change Records](CHANGE_RECORDS.md) defers factual synthesis during overlapping or uncertain ownership, preserving a brief synthesis request and immediate navigation repairs. A sole consolidation writer applies compression against current intent/evidence; otherwise report it queued.
+[Change Records](../reference/CHANGE_RECORDS.md) defers factual synthesis during overlapping or uncertain ownership, preserving a brief synthesis request and immediate navigation repairs. A sole consolidation writer applies compression against current intent/evidence; otherwise report it queued.
 
 Memory travels with the code in each branch. A capability described there applies to that checkout, not automatically to the integration branch or a deployed release. State branch/revision and environment when that distinction affects a claim; avoid routine branch stamps on every paragraph. Proposed direction needs an explicit proposal label until the project's decision authority approves it.
 
@@ -88,7 +88,7 @@ Keep actionable procedures and their assumptions. Replace dead commands, moved p
 
 ## Change Record Lifecycle
 
-The core `changes.md` is an intentional retained audit, distinct from volatile current-state memory. Keep concise entries identifying completed changes, paths, rationale, evidence and revision parents under [VERSIONING.md](VERSIONING.md). Ordinary compression preserves them; explicit project retention/privacy authority governs archiving or consolidation. Load relevant entries rather than the full audit. Material compression itself receives one revision; no-op reviews do not.
+The core `changes.md` is an intentional retained audit, distinct from volatile current-state memory. Keep concise entries identifying completed changes, paths, rationale, evidence and revision parents under [VERSIONING.md](../reference/VERSIONING.md). Ordinary compression preserves them; explicit project retention/privacy authority governs archiving or consolidation. Load relevant entries rather than the full audit. Material compression itself receives one revision; no-op reviews do not.
 
 ## Self-Unfolded Documents
 

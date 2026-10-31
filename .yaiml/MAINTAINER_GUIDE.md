@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.35.4b577caa77f80cc3"
+yaiml-revision: "0.45.7ded1679f14c93b4"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -17,7 +17,7 @@ agent-guidance: Verify command claims when practical. Surface conflicts. Preserv
 
 Include any [pending corrections](changes.md).
 
-Documentation repository; no application build or test suite. Post-review 0.5.1 checks and the blocked additional-host trial are scoped in [Evaluation](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24). This fresh session received project instructions and native skill metadata, and read canonical realign/Git methods; this does not validate every native invocation or another host.
+Documentation repository; no application build/test suite. Current [distribution review](COLD_START_REVIEW.md#structural-distribution-check) checks reference closure, both init forms and routes, not fresh-agent behavior. Earlier [0.5.1 checks](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) retain their own scope. Host-delivered instructions/skill metadata and actual method reads do not validate every invocation or another host.
 
 ## Review Procedure
 
@@ -26,12 +26,12 @@ Review substantial revisions:
 1. **Adopter experience:** start with init alone and no YAIML context; trace public source or labeled draft through bootstrap, local methods and fresh sessions. Check [lifecycle scenarios](EVALUATION.md#one-prompt-skills-lifecycle). Record extra context, reminders and manual repairs as assistance.
 2. **Source project:** reconcile memory with this checkout; keep product resources separate from our facts, policies and local skills. Shared-method changes require both adopter and self-use review. Check affected guides, prompts, templates, examples and routes; preserve direction and compatibility. Ground external comparisons in primary sources.
 3. **Evidence and retention:** distinguish source checks, internal dogfooding, isolated product trials and independent adoption. Apply [synthesis](PRUNING_AND_LIFECYCLE.md#sot-lifecycle); remove superseded history without disguising or relocating it.
-4. **Mechanical review:** check changed Markdown links and anchors, discovery paths, stable headers, code fences, placeholders, whitespace, and unintended sensitive or machine-specific values.
+4. **Package and mechanical review:** check acquired-set links/anchors with source-only files absent, not just in the full checkout. Review document ownership as well as reachability/hashes; check the whole `reference/` tree without `.yaiml/` present, verify embedded revision placeholders, README prompt links and standalone/canonical init parity, and index relevant target docs. Check headers, fences, placeholders, whitespace and sensitive/location values.
 5. **Final diff:** check scope, licensing and phase boundaries; commit/push when authorized. Report checks and limits.
 
 Review standalone init for small/mature projects, placement/relocation/collisions, missing access, routes, nested scope, repeat use, concurrency, unfamiliar discovery. Fresh-session checks omit YAIML reminders; distinguish configured instructions from observed reading/maintenance. Cover confirmed conversational decisions, tentative ideas, unchanged follow-ups, read-only tasks.
 
-Trace [YAIMLACP](YAIMLACP.md) through startup, confirmation/decline/no-answer, changed scope/cost, and missing-guide/host cases. Check context-only assessment, bounded handoffs, cancellation, and no infrastructure setup. Manual review establishes wording coverage; actual delegation and cost require a confirmed trial.
+Trace [YAIMLACP](../reference/YAIMLACP.md) through startup, confirmation/decline/no-answer, changed scope/cost, and missing-guide/host cases. Check context-only assessment, bounded handoffs, cancellation, and no infrastructure setup. Manual review establishes wording coverage; actual delegation and cost require a confirmed trial.
 
 Check evidence guidance against shared-error agreement, irrelevant passing tests, missing baselines, authorized behavior changes, and unreproduced reports. Expected outcomes must not merely echo candidate output.
 
@@ -66,7 +66,7 @@ The shared guide owns ordinary work; skills add specialized methods; prompts/hos
 - SoTY current when meaning, risks, priorities, or evidence changes;
 - Architecture current when roles or artifact boundaries change;
 - this guide current when procedures change;
-- [changes.md](changes.md) complete for material iterations under [VERSIONING.md](VERSIONING.md);
+- [changes.md](changes.md) complete for material iterations under [VERSIONING.md](../reference/VERSIONING.md);
 - [Cold Start Review](COLD_START_REVIEW.md) current after a substantial reader-path revision.
 
 Use [Adoption And Updates](ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility) for discovery compatibility. Ordinary Markdown edits and path repairs do not require a discovery-version bump. In adopters, a convention refresh preserves local memory and does not copy this repository wholesale.
@@ -93,10 +93,12 @@ Case studies must retain dates, evidence sources, ownership, and limits. A docum
 
 ## Branch Review
 
-Use the [branch workflow](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review) and [record procedure](CHANGE_RECORDS.md). Check ordinary consolidation, overlap deferral, pending recall, navigation repair, retained history and preparation for review. Preserve unresolved authority. Apply this source project's updates under actual task ownership; acquiring guidance grants no exclusivity.
+Use the [branch workflow](PRUNING_AND_LIFECYCLE.md#concurrent-branches-and-review) and [record procedure](../reference/CHANGE_RECORDS.md). Check ordinary consolidation, overlap deferral, pending recall, navigation repair, retained history and preparation for review. Preserve unresolved authority. Apply this source project's updates under actual task ownership; acquiring guidance grants no exclusivity.
 
 ## Publication
 
 Review the worktree before staging; preserve unrelated work and shared history. Ask the maintainer before every push to `origin` and await approval for that push; prior blanket approvals no longer apply. Check remote state and preserve concurrent changes.
 
-Publish resources with the seed; verify public retrieval at the committed revision. [RELEASE.md](RELEASE.md) owns product identity; tag checked product releases without replacing tags. Project-memory-only changes need no release bump. Current evidence belongs in [Cold Start Review](COLD_START_REVIEW.md); snapshots cannot prove public availability.
+Keep feature work on feature branches. `main` is stable development; merging there is the maintainer's public-ready decision. The source-only [latest workflow](../.github/workflows/latest.yml) advances only `refs/tags/latest` after main updates, without creating a GitHub Release. Numbered tags, if used, stay immutable. Publish resources with the seed, then verify the workflow and public retrieval at the resolved commit. If tag rules or token permissions block advancement, report the failure; do not bypass protections. A manual workflow rerun on main can retry after the maintainer resolves the cause.
+
+`reference/BOOTSTRAP.md` owns consumer product identity; [RELEASE.md](RELEASE.md) owns source readiness. Project-memory-only changes need no product-version bump. Current evidence belongs in [Cold Start Review](COLD_START_REVIEW.md); local checks cannot prove publication.

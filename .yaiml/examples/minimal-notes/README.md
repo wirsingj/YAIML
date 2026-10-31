@@ -1,7 +1,7 @@
-<!-- yaiml-revision: 0.1.01b3573c87d5279e -->
+<!-- yaiml-revision: 0.43.65c0797e642cbbde -->
 # Minimal Notes YAIML Example
 
-This is a tiny fictional legacy example focused on the three original current-memory roles. It intentionally predates changes.md and revision stamps; use it as an upgrade input, not current init output. The updater must establish the fourth role and a prospective baseline under [VERSIONING.md](../../VERSIONING.md).
+This is a tiny fictional legacy example focused on the three original current-memory roles. It intentionally predates changes.md and revision stamps; use it as an upgrade input, not current init output. The updater must establish the fourth role and a prospective baseline under [VERSIONING.md](../../../reference/VERSIONING.md).
 
 It has:
 
@@ -17,7 +17,7 @@ It intentionally has no application code or specialist project memory. This core
 
 Use an empty scratch folder outside existing repositories, with a repository-capable agent. This is a fictional documentation exercise, not an app build or adoption trial. The agent retrieves reference files during setup; no runtime installation is needed.
 
-Give the agent this brief, followed by the contents of [Init YAIML](../../prompts/init-yaiml.md):
+Give the agent this brief, followed by the contents of [Init YAIML](../../../reference/prompts/init-yaiml.md):
 
 > This scratch project is Minimal Notes. Its intended v1 lets one person create, edit, search, and delete plain-text notes locally. Keep v1 local-only; sync is deferred. There is no application source yet. Initialize project memory only. Do not build the app, install anything, or commit. Record missing design decisions as unknown.
 

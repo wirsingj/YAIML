@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.33.73aaa0d992e327de"
+yaiml-revision: "0.45.7ded1679f14c93b4"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -18,7 +18,7 @@ YAIML keeps shared project context and reusable methods in ordinary files. One p
 
 ## Version Awareness
 
-`yaiml.yml` locates the core and supporting documents. Its version identifies the discovery layout, not a Markdown revision, roadmap milestone, or conformance claim. Read [RELEASE.md](RELEASE.md) for the product release and record the exact source commit or disclosed snapshot. [VERSIONING.md](VERSIONING.md) defines independent project-local file stamps and the core change audit.
+`yaiml.yml` locates core and supporting documents; its version identifies discovery layout, not guidance freshness. The portable [bootstrap](../reference/BOOTSTRAP.md) supplies product identity/status. Record those and the resolved source commit in the target's Maintainer Guide. Adopters never need this source project's release plans. [VERSIONING.md](../reference/VERSIONING.md) defines project-local stamps and the audit.
 
 Recommended shape for new adopters:
 
@@ -33,16 +33,15 @@ yaiml:
   supporting:
     operating_guide: YAIML_GUIDE.md
     versioning: VERSIONING.md
-    release: RELEASE.md
     skills: skills/INDEX.md
     yaimlacp: YAIMLACP.md
 ```
 
-Paths resolve from the map's directory, `.yaiml/` for new adoption; preserve established map locations. Include only existing files; omit `supporting` when unnecessary. The supporting entries name base resources acquired by init; add specialist memory only when useful. Resolve paths and symlinks before following them; discovery does not authorize access outside the repository.
+Paths resolve from the map's directory, `.yaiml/` for new adoption; preserve established map locations. Include only existing files; omit `supporting` when unnecessary. These supporting entries locate acquired guidance, not the complete target index. Add relevant existing project documents at their actual paths, without moving or duplicating them. A release entry, when useful, points to the target's release procedure, never YAIML's publication plan. Create specialist memory only when concrete knowledge needs an owner. Resolve paths and symlinks before following them; discovery does not authorize access outside the repository.
 
 Keep machine-specific paths, drive names, user-profile paths, `file://` URIs, localhost URLs, and private workspace URLs out of versioned guidance. Supply private reference locations through the human request or non-versioned configuration. A stable, team-approved public reference may be recorded when requested.
 
-No YAIML parser is required or built here. Memory bodies stay free-form Markdown; the [record schema and external validation contract](CHANGE_RECORDS.md#record-schema-and-external-validation-contract) names stable integration points for external tools. Coordination handoffs describe message meaning without requiring a parser.
+No YAIML parser is required or built here. Memory bodies stay free-form Markdown; the [record schema and external validation contract](../reference/CHANGE_RECORDS.md#record-schema-and-external-validation-contract) names stable integration points for external tools. Coordination handoffs describe message meaning without requiring a parser.
 
 ## Default Placement
 
@@ -50,7 +49,7 @@ For new adoption without an established memory home, use project-root `.yaiml/` 
 
 Preserve useful existing files and locations, including root, `docs/` or mixed layouts, unless relocation is confirmed. Additions follow the established memory home; index actual paths without duplicating owners. Inspect directory/file collisions and symlinks before writing; select a nonconflicting location and report it. The folder default changes neither discovery shape nor version.
 
-On re-init, offer consolidation into `.yaiml/` even when guidance is unchanged. Follow the saved [Relocate Memory procedure](BOOTSTRAP.md#existing-layout-and-repeat-init): inspect ownership and consumers, present exact moves/reference repairs and impacts, then obtain affirmative confirmation. Reuse valid scoped approval; honor explicit standing placement preferences and skip already-consolidated setups. Decline/no answer preserves locations while independent in-place refresh continues. Move only approved files, preserve knowledge and concurrent work, repair references and verify scope. Unrelated documents, discovery layout and host instruction locations do not move with memory.
+On re-init, offer consolidation into `.yaiml/` even when guidance is unchanged. Follow the saved [Relocate Memory procedure](../reference/BOOTSTRAP.md#existing-layout-and-repeat-init): inspect ownership and consumers, present exact moves/reference repairs and impacts, then obtain affirmative confirmation. Reuse valid scoped approval; honor explicit standing placement preferences and skip already-consolidated setups. Decline/no answer preserves locations while independent in-place refresh continues. Move only approved files, preserve knowledge and concurrent work, repair references and verify scope. Unrelated documents, discovery layout and host instruction locations do not move with memory.
 
 ## Discovery Layout Compatibility
 
@@ -97,7 +96,7 @@ Future incompatible guidance must explain what changed, what can stay unchanged,
 
 ## First-Time Adoption
 
-Choose one single-paste peer: [networked init](prompts/init-yaiml.md) for the complete method package, or [offline init](prompts/init-yaiml-offline.md) for embedded minimal memory and records with no retrieval. Networked init defaults to reviewed `v0.5.1`, resolved once; floating `main` is only for explicitly requested testing. If that pin is unavailable, report incomplete acquisition without fallback. The prepared candidate is not publicly available until its ref is published. It names https://github.com/wirsingj/YAIML as the default upstream; an unfamiliar agent needs no prior YAIML knowledge or installed skills. It executes [Bootstrap](BOOTSTRAP.md) immediately, acquiring one revision's base resources. A local checkout, snapshot, fork or other source requires an explicit user request within its stated scope, never mere workspace presence or a recorded path. [Acquisition policy](BOOTSTRAP.md#resolve-and-acquire) also governs refresh and missing resources.
+Choose one single-paste peer: [networked init](../reference/prompts/init-yaiml.md) for the complete method package, or [offline init](../reference/prompts/init-yaiml-offline.md) for embedded minimal memory and records with no retrieval. Networked init defaults to exact tag `refs/tags/latest`, peeled once to its commit. The public-ready tag can move; installed provenance records the resolved commit. `main` is only for explicitly requested testing. If that exact tag is unavailable or ambiguous, report incomplete acquisition without a same-named branch or other fallback. A development revision becomes available through default acquisition when the latest tag reaches it. It names https://github.com/wirsingj/YAIML as the default upstream; an unfamiliar agent needs no prior YAIML knowledge or installed skills. It executes [Bootstrap](../reference/BOOTSTRAP.md) immediately, acquiring one revision's base resources. A local checkout, snapshot, fork or other source requires an explicit user request within its stated scope, never mere workspace presence or a recorded path. [Acquisition policy](../reference/BOOTSTRAP.md#resolve-and-acquire) also governs refresh and missing resources.
 
 Bootstrap preserves useful target documentation, grounds distinct memory roles in evidence, saves a complete local base and connects supported host instructions and native skill discovery. The base supports ordinary offline work; extra reference docs/methods are acquired for concrete needs. Copying files differs from loading their bodies into context. No user-managed downloads, extra workflow pastes or runtime installation are required.
 
@@ -107,23 +106,23 @@ An unpublished development layout cannot be retrieved through the official publi
 
 ## Security Review: Retrieval And Internal Mirrors
 
-**What and when:** networked init and an explicitly requested refresh resolve one ref to one exact commit, retrieve `.yaiml/BOOTSTRAP.md`, then its adoption resource set and required relative dependencies: operating/revision/record guidance, release identity, optional-coordination rules, distributed skills/catalog, core starters and the copied-material license. Missing-guidance acquisition is a separate, scoped action under the same source policy; it is not an ordinary-work poll. Copying resources does not execute every method. No package manager, runtime, service, validator or telemetry is installed by YAIML.
+**What and when:** networked init and an explicitly requested refresh resolve one ref to one exact commit, read `reference/BOOTSTRAP.md` and its embedded product identity, then acquire only the adoption resource set: operating/revision/record guidance, optional-coordination rules, distributed skills/catalog, core starters and the copied-material license. The upstream `.yaiml/` tree is not an adoption input. All reusable dependencies stay inside `reference/`; the root license is the sole notice exception. Missing-guidance acquisition is a separate, scoped action under the same source policy; it is not an ordinary-work poll. Copying resources does not execute every method. No package manager, runtime, service, validator or telemetry is installed by YAIML.
 
-**From where:** the built-in source is `https://github.com/wirsingj/YAIML` at reviewed `v0.5.1`, resolved once for the acquisition. GitHub/raw retrieval endpoints depend on host tools; inspect and permit those tools through your normal controls. An unavailable ref/access fails explicitly without source substitution. Floating `main` requires an explicit testing request. YAIML document instructions cannot enforce a host's network controls.
+**From where:** the built-in source is `https://github.com/wirsingj/YAIML` at exact tag `refs/tags/latest`, peeled once to its commit for the acquisition. A later tag move does not change installed files or authorize an automatic update. GitHub/raw retrieval endpoints depend on host tools; inspect and permit those tools through your normal controls. An unavailable ref/access fails explicitly without source substitution. Floating `main` requires an explicit testing request. YAIML document instructions cannot enforce a host's network controls.
 
 **Internal hosting:** fork or mirror the repository inside the organization, review the copied content and notices, and create an internally reviewed immutable ref. Supply the complete init prompt through your approved channel with an explicit request such as: “Initialize YAIML from our approved internal mirror at <organization-provided source>, ref <reviewed internal ref>; use no public upstream for this operation.” The existing explicit-source mechanism resolves that source/ref once and uses it for bootstrap and all resources. If an alternative repository has no requested ref, its default branch is resolved once; security-controlled adoption should always specify the reviewed ref. Maintain the mirror through the organization's separate review process; YAIML performs no automatic synchronization. Keep private mirror addresses in the request or unversioned workspace configuration, not public guidance.
 
-**Later work:** ordinary tasks use installed local files and perform no upstream retrieval. A provenance note alone never authorizes another acquisition or makes a mirror the persistent default. To cover later refreshes, explicitly state a standing source/ref restriction in project instructions; otherwise repeat the override on each acquisition request. Installed methods still defer to stricter project/host policies. The [offline init](prompts/init-yaiml-offline.md) retrieves nothing ever: its entire minimal payload and notice are pasted, with no skills fetched. Obtain that prompt before entering an air-gapped environment. A later full upgrade requires a separate request under the applicable policy.
+**Later work:** ordinary tasks use installed local files and perform no upstream retrieval. A provenance note alone never authorizes another acquisition or makes a mirror the persistent default. To cover later refreshes, explicitly state a standing source/ref restriction in project instructions; otherwise repeat the override on each acquisition request. Installed methods still defer to stricter project/host policies. The [offline init](../reference/prompts/init-yaiml-offline.md) retrieves nothing ever: its entire minimal payload and notice are pasted, with no skills fetched. Obtain that prompt before entering an air-gapped environment. A later full upgrade requires a separate request under the applicable policy.
 
 **Data boundary:** YAIML adds no network client. Your selected agent and provider may process project content under their own policies even when YAIML makes no retrieval; approve the host and enforce network/data controls independently. Local memory does not guarantee local inference.
 
 ## Existing YAIML Update
 
-For an early installation without skills, paste the complete current [Init YAIML](prompts/init-yaiml.md) into the existing project's agent session. The seed supplies source resolution and bootstrap without depending on an installed refresh skill, catalog or recorded source. It recognizes existing memory and acquires the missing methods from the public reference. Explicitly request an alternative when needed, for example a local snapshot for unpublished development.
+For an early installation without skills, paste the complete current [Init YAIML](../reference/prompts/init-yaiml.md) into the existing project's agent session. The seed supplies source resolution and bootstrap without depending on an installed refresh skill, catalog or recorded source. It recognizes existing memory and acquires the missing methods from the public reference. Explicitly request an alternative when needed, for example a local snapshot for unpublished development.
 
-Once a usable source and current methods are installed, “update YAIML” selects [yaiml-refresh](skills/yaiml-refresh/SKILL.md). Reapplying init selects the same reconciliation. Updating the project's current facts selects `yaiml-maintain`. Keep these operations distinct.
+Once a usable source and current methods are installed, “update YAIML” selects [yaiml-refresh](../reference/skills/yaiml-refresh/SKILL.md). Reapplying init selects the same reconciliation. Updating the project's current facts selects `yaiml-maintain`. Keep these operations distinct.
 
-These are adopter instructions. In the project developing YAIML, its contributor instructions govern editing canonical resources and its own memory. Its roadmap, publication policies and project-specific skills are not adopter defaults; improving them alone does not update the distributed product.
+These are adopter instructions. In this source project, contributor instructions govern authoring `reference/` and maintaining `.yaiml/`; consumer prompts need no source-project exception. Its roadmap, publication policies and project-specific skills are not adopter defaults; improving them alone does not update the distributed product.
 
 Refresh uses the official upstream unless the user explicitly requests another source. The current Maintainer Guide records applied provenance, override scope when requested, local adaptations and resource exceptions. Retain older source notes for comparison, not as automatic permission to acquire from them. Compare incoming content with the available baseline and local versions; disclose material reference edits. Without a baseline, disclose comparison limits; do not infer historical drift.
 
@@ -131,13 +130,13 @@ Preserve local methods and project knowledge. Apply compatible changes, reconcil
 
 Convention refresh stays within documentation/method scope and preserves project license, notices, privacy and retention. It grants no application work, broad reorganization, branch mutation or delegation. Existing-layout relocation follows its separate scoped authority. Unknown map fields and mature roles remain intact.
 
-Add the fourth core role in place and establish revision tracking prospectively using [the legacy transition](VERSIONING.md#adopt-from-older-yaiml). Preserve existing audit records and legacy version labels, report unknown earlier history, and check consumers before adding a map role. A pointer can expose the role without changing a restrictive discovery format.
+Add the fourth core role in place and establish revision tracking prospectively using [the legacy transition](../reference/VERSIONING.md#adopt-from-older-yaiml). Preserve existing audit records and legacy version labels, report unknown earlier history, and check consumers before adding a map role. A pointer can expose the role without changing a restrictive discovery format.
 
 Review the upgrade for preserved decisions, open questions, local protections and unfinished work, then check that the catalog, method bodies and host routes are reachable. Existing memory in `docs/` or at the root remains there unless relocation is approved; the new `.yaiml/` default does not require starting over. A new session should discover the installed skills and recover project context. File installation alone does not establish that behavior.
 
 If host permissions block native skill entries, report partial setup and preserve usable instruction/catalog routes. After the user grants the required access through the host's supported controls, rerun init to repair the missing entries. Do not bypass a denied write or describe file-based use as verified native registration.
 
-The optional [update prompt](prompts/update-yaiml.md) routes to the same method. A current bootstrap request supplies acquisition instructions, not embedded copies of every resource.
+The optional [update prompt](../reference/prompts/update-yaiml.md) routes to the same method. A current bootstrap request supplies acquisition instructions, not embedded copies of every resource.
 
 ### Correcting An Incomplete Adoption
 
@@ -147,7 +146,7 @@ Add missing reusable guidance, repair unreachable bodies and stale instructions,
 
 ## Change Records And Consolidation
 
-Once release ref `v0.5.1` is published, an ordinary networked update or re-pasted init acquires this record workflow; no mode selection is required. Before publication, testing requires an explicitly requested candidate snapshot/ref. Offline init establishes minimal records without retrieval. [Change Records](CHANGE_RECORDS.md#transition-and-recovery) preserves existing paths, inline audit history, records, receipts and stricter local rules, and retires obsolete mode flags after reconciling their meaning. Unknown history remains unknown.
+An ordinary networked update or re-pasted init acquires the record workflow from the public-ready `refs/tags/latest` tag; no mode selection is required. Testing an unpublished revision requires an explicitly requested snapshot/ref. Offline init establishes minimal records without retrieval. [Change Records](../reference/CHANGE_RECORDS.md#transition-and-recovery) preserves existing paths, inline audit history, records, receipts and stricter local rules, and retires obsolete mode flags after reconciling their meaning. Unknown history remains unknown.
 
 Normal work consolidates when task ownership permits; overlapping or uncertain ownership defers factual snapshot updates while preserving pending corrections and repairing navigation. An ordinary request to prepare changes for review uses the existing Git skill. Core-only consumers must account for pending records before claiming current state. No worker, hook, runtime or publication permission is added.
 
@@ -169,13 +168,13 @@ For an authorized publication pass, record the source revision or snapshot diges
 
 ## Maintenance Prompts
 
-Skills own the methods. These optional prompts route to the same skills; ordinary requests and supported native commands need no extra paste. See the [catalog](skills/INDEX.md) for argument-bearing tasks such as `yaiml-to-do 10`.
+Skills own the methods. These optional prompts route to the same skills; ordinary requests and supported native commands need no extra paste. See the [catalog](../reference/skills/INDEX.md) for argument-bearing tasks such as `yaiml-to-do 10`.
 
 | Need | Prompt |
 | --- | --- |
-| Orient a session | [Hydrate](prompts/hydrate-agent-session.md) |
-| Record material changes | [Update project memory](prompts/update-project-memory.md) |
-| Check claims against reality | [Audit](prompts/audit-against-reality.md) |
-| Remove repetition and stale state | [Compress](prompts/compress-project-memory.md) |
-| Compare with a newer reference | [Update YAIML](prompts/update-yaiml.md) |
-| Apply an approved change in direction | [Realign](prompts/major-project-realignment.md) |
+| Orient a session | [Hydrate](../reference/prompts/hydrate-agent-session.md) |
+| Record material changes | [Update project memory](../reference/prompts/update-project-memory.md) |
+| Check claims against reality | [Audit](../reference/prompts/audit-against-reality.md) |
+| Remove repetition and stale state | [Compress](../reference/prompts/compress-project-memory.md) |
+| Compare with a newer reference | [Update YAIML](../reference/prompts/update-yaiml.md) |
+| Apply an approved change in direction | [Realign](../reference/prompts/major-project-realignment.md) |
