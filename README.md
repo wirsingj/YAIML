@@ -1,108 +1,84 @@
-<!-- yaiml-revision: 0.28.7d93533c77a2b118 -->
+<!-- yaiml-revision: 0.45.7ded1679f14c93b4 -->
 # YAIML
 
-Agents forget. Projects shouldn’t.
+**Yet Another AI Markup Language (YAIML)** is a lightweight document standard for starting, organizing and maintaining projects with AI.
 
-### [Get the init prompt →](.yaiml/prompts/init-yaiml.md)
+One prompt gives your existing agent guidance for setting up shared project memory. The full setup also adds reusable skills. Everything lives alongside your work in readable Markdown files; there is no separate YAIML app or service to install.
 
-Copy it into your project's agent for **new setup or an upgrade**. [Copy it from this README instead ↓](#start-with-one-prompt)
+Start with an idea, a few notes or an existing project. Your agent establishes useful context: goals, constraints, decisions and next steps. As you work, the guidance has it check results and save meaningful updates. That understanding stays with the project for later sessions.
 
-A new chat shouldn't mean explaining your project all over again.
-
-**Yet Another AI Markup Language (YAIML)** is a lightweight document convention for managing context in AI-assisted projects. Goals, decisions, constraints and evidence live alongside the work in Markdown: text documents that people and agents can read, edit and carry between tools.
-
-Paste the init prompt once, then work as usual. Your agent recovers context, checks its work and saves meaningful changes during normal requests, without separate housekeeping prompts. Your project might be software, an event, a book, a research study or a team's procedures. Each has context worth keeping; source code is optional.
-
-**Paste once. Work normally. Keep the context with the project.** Optional skills give you more control when you want it.
+Use it for software, research, writing, event planning or team procedures. You and your agent can read and edit the same documents.
 
 ## Start With One Prompt
 
-1. Put your notes, plans, drafts or code in a project folder.
-2. Open an AI agent on that folder. It needs permission to read and edit the files, retrieve guidance from GitHub during setup, and revisit the folder in later sessions. **Tested starting point: [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) on Windows.** With Codex already available, open a terminal in your project folder and run `codex`.
-3. Paste the whole [init prompt](https://raw.githubusercontent.com/wirsingj/YAIML/main/.yaiml/prompts/init-yaiml.md), also available below. The agent handles the detailed setup.
+| Prompt | What your agent does |
+| --- | --- |
+| [Full setup: skill-based, networked](reference/prompts/init-yaiml.md) | Starts with a short prompt; the agent follows its instructions to retrieve the full guidance, templates and reusable skills. Requires access to the approved source during setup. |
+| [Self-contained setup: flat, offline](reference/prompts/init-yaiml-offline.md) | Uses instructions and templates embedded in one document to create project memory and working rules. Makes no network calls and does not include the reusable skill package. |
 
-The technical instructions inside the prompt are for the agent; you do not need to learn their terminology. A chat that cannot persistently access your project files cannot maintain this context. Other agents need equivalent file access and instruction support; their behavior remains to be verified.
+The self-contained option suits restricted networks and organizations that need to review the complete prompt before use. Obtain it through an approved channel before entering a restricted environment. A later, separately requested full setup can add the skill package.
+
+1. **Open a project folder in your agent.** It needs permission to read and edit the files and revisit them in later sessions. Start with your notes, plans, drafts or code; for a new idea, create a folder and describe what you want to do.
+2. **Open one prompt file above, copy its entire contents, then paste and send it to your agent.** Include the complete text and notice. The technical instructions are for the agent; you do not need to learn their terminology.
+3. **Review the setup summary, then work normally.** The agent reports what it created or connected and any gaps. Ask it to draft a plan, review your work or take the next step.
+
+Published setup has been exercised with [Codex CLI](https://learn.chatgpt.com/docs/codex/cli) on Windows. Other agents need equivalent file access and instruction support; their behavior remains to be verified. A chat without persistent access to your project files cannot maintain this context. Your agent's normal usage costs apply.
 
 <details>
-<summary><strong>Copy the init prompt here</strong></summary>
+<summary>Existing projects, upgrades and source selection</summary>
 
-```text
-# Init YAIML
+Setup preserves existing knowledge and local rules. The full prompt can also update an older YAIML setup; moving established memory into `.yaiml/` requires your approval. Once connected, "Update YAIML" requests a refresh that preserves project-specific skills and adaptations. The offline prompt never retrieves anything, including on repeat use.
 
-Paste this whole prompt into your project’s repository-aware agent. It runs bootstrap immediately: the agent obtains guidance, creates project context, and connects reusable skills. After setup, work normally. Named commands are optional.
-
----
-name: yaiml-init
-description: Establish or refresh YAIML project context and local skills from one pasted prompt or skill invocation.
-metadata:
-  yaiml-revision: "0.17.cd27b89d4466f476"
----
-# YAIML Init
-
-Run bootstrap now in the target project. One invocation covers acquiring guidance, creating useful project memory, and connecting local skills for later ordinary work; do not stop at saving this skill or explaining setup. Follow target instructions and preserve existing work.
-
-1. Default to https://github.com/wirsingj/YAIML, YAIML's only built-in upstream. Resolve its latest `main` at each invocation, then use that exact commit for bootstrap and all resources in this acquisition. This prompt's `yaiml-revision` is a document stamp, not an upstream pin. Use another source (including a local checkout or snapshot) or ref only when explicitly requested by the user, within that request's scope; for an alternative repository without a requested ref, resolve its default branch once. Workspace proximity and old source notes are not requests. Identify requested snapshots and material uncommitted edits; never reset a dirty checkout or silently substitute sources when access fails.
-2. Retrieve that source's `.yaiml/BOOTSTRAP.md` and execute it. Acquire its listed adoption resources, following relative references from their source locations. The reference supplies methods, not project facts or permission. If required access/content is unavailable, report the precise gap, preserve working local guidance and continue independent work; never claim a complete installation.
-3. Bootstrap establishes `.yaiml/` memory, shared operating rules, a local skill catalog, the standard `yaiml-*` skills and supported host instruction/discovery routes. Existing useful memory and local adaptations survive refresh. Read source details on demand; do not load the entire reference repository into context.
-4. Verify reachable local resources and host routes. Report what is usable, actual checks, source revision and unresolved gaps. Ordinary work should now use and maintain local context without another YAIML prompt. Optional named skills such as `yaiml-audit` and `yaiml-to-do 10` use the same workflows. Native slash syntax depends on the host.
-
-This setup creates no runtime, background task or automatic backlog execution. Existing authority still governs publication, destructive actions and YAIMLACP delegation.
-```
+Networked setup and requested updates use the public-ready `latest` tag from the [official repository](https://github.com/wirsingj/YAIML). The agent resolves it once and uses that exact commit throughout acquisition, recording the version and source locally. A missing tag stops acquisition; it never silently substitutes a branch or local draft. Ordinary work uses local guidance without checking upstream.
 
 </details>
 
-The agent preserves existing knowledge and reports what it connected and any setup gaps. Routine maintenance is then hands-off during agent sessions: no extra YAIML prompts, manual memory upkeep or skill commands. Normal permissions and consequential decisions still belong to you.
-
-Each setup or requested update retrieves the latest `main` from the [official YAIML repository](https://github.com/wirsingj/YAIML); ordinary work uses local guidance without checking upstream. Saved prompts remain reusable: their stamps identify documents, not download pins. Your agent's normal usage costs apply.
-
-**What you get:** init retrieves the [version on official `main`](https://github.com/wirsingj/YAIML/blob/main/.yaiml/RELEASE.md). This revision describes experimental 0.5.0 guidance, including concurrent change records. If you are reading a review branch, its changes reach the default init after merging into `main`; testing another revision requires your explicit request.
-
-**Already using an older YAIML?** Paste this init again to acquire current guidance and skills. It preserves existing memory and local rules; moving them into `.yaiml/` requires your approval. Once connected, “Update YAIML” requests future refreshes. Updates preserve project-specific skills and adaptations.
-
-## Think Of It As “Softerware”
-
-The documents carry context; your agent supplies the execution. YAIML calls this “softerware”: written conventions that guide reading, action, verification and memory upkeep. Setup connects those documents to future sessions. There is no separate YAIML application or background service; the convention has an effect when people and agents use it.
-
 ## Work Normally; Keep Context Current
 
-Ask for a plan, revise a draft, discuss a decision or build a feature. You do not need to mention YAIML. During that ordinary conversation, the agent follows this loop:
+Ask for a plan, revise a draft, discuss a decision or build a feature. You do not need to mention YAIML. Its guidance asks your agent to:
 
 1. **Read:** recover the project's goals, constraints and decisions from its files; reuse context that is still current.
 2. **Act:** do the requested work with that understanding.
 3. **Check:** compare actual inputs and outputs with the requirements. Does the revised plan respect the agreed limits? Does an exported file contain the right information?
 4. **Update:** replace outdated facts and save meaningful decisions, results and remaining uncertainty before finishing.
 
-Checks should establish what happened, whether comparing a plan with its brief or testing software. A listed test is not a passed test.
-
 For example, while planning a community workshop, you might say:
 
 > “We've decided to cap attendance at 30 and keep the afternoon free of scheduled activities.”
 
-**Optional recall check:** state a real decision for your project, then start a fresh session in the same folder and ask about it without repeating the answer. For the workshop above, ask “What constraints should the schedule follow?” It should recover the cap of 30 and the free afternoon. If it misses either, ask the agent to check its project instructions and saved context. No YAIML command is needed.
+The agent should save those constraints and use them when you ask it to draft the schedule. Unchanged knowledge needs no rewrite; tentative ideas stay tentative and read-only requests stay read-only.
 
-Then continue ordinary work: “Draft the workshop schedule” should use those constraints and check the result. Unchanged knowledge needs no rewrite; tentative ideas stay tentative and read-only requests stay read-only. Follow-through depends on your agent and its host; one recall check does not establish lasting reliability.
+<details>
+<summary>Try a fresh-session recall check</summary>
+
+State a real decision for your project, then start a fresh session in the same folder and ask about it without repeating the answer. For the workshop above, ask “What constraints should the schedule follow?” It should recover the cap of 30 and the free afternoon. If it misses either, ask the agent to check its project instructions and saved context. No YAIML command is needed.
+
+Follow-through depends on your agent and its host; one recall check does not establish lasting reliability.
+
+</details>
 
 ## Optional Skills When You Want More Control
 
-Ordinary requests already use and maintain context. Optional skills are reusable methods for a particular review, priority batch or cleanup. Choose one in plain language or by name:
+Full setup adds reusable skills for reviews, priorities, verification and memory upkeep. Calling them by name is optional: ordinary requests already use the same guidance. For more focused work, ask in plain language:
 
-| Request | Workflow |
+| Request | Skill and outcome |
 | --- | --- |
-| “Review this plan for gaps, risks and accessibility” · `yaiml-audit` | Review the requested perspectives and return findings ranked by evidence |
-| “Do the next ten priorities” · `yaiml-to-do 10` | Complete up to ten feasible priorities, verify the work and update memory |
-| “Review this draft as an editor, do the next three priorities, then check the result” | Carry findings, priorities and evidence through one task |
-| “Clean up project memory” · `yaiml-compress` | Remove stale or repetitive detail while preserving useful knowledge |
-| “Update YAIML” · `yaiml-refresh` | Update YAIML while preserving project memory and custom instructions |
+| “Review this plan for gaps, risks and accessibility” | `yaiml-audit`: findings from the requested perspectives, ranked by evidence |
+| “Do the next ten priorities” | `yaiml-to-do`: up to ten feasible priorities completed, checked and recorded |
+| “Clean up project memory” | `yaiml-compress`: stale or repetitive detail removed while preserving useful knowledge |
+| “Update YAIML” | `yaiml-refresh`: guidance updated while preserving project memory and custom instructions |
+
+You can combine requests: “Review this draft as an editor, do the next three priorities, then check the result.” You can also ask the agent to create a project-specific skill for a recurring procedure.
 
 Where supported, use slash commands such as `/yaiml-to-do 10`. In [Codex CLI/IDE](https://learn.chatgpt.com/docs/build-skills), use `/skills` or `$yaiml-to-do 10`. Ordinary requests and explicit skill invocations use the same methods.
 
-A count limits work to feasible priorities. Starting a session does not launch the backlog. You can also ask the agent to create a project-specific skill for a recurring procedure.
+A count limits work to feasible priorities. Starting a session does not launch the backlog.
 
 ## Working With A Team
 
-**Experimental 0.5.0:** one workflow supports one contributor or many. Each meaningful change gets a short record of intent, outcome and checks. With sole ownership, the agent updates current memory; during overlap, separate records preserve changes until reconciliation. No team-mode switch is required.
+**Experimental 0.5.2:** one workflow supports one contributor or many. Each meaningful change gets a short record of intent, outcome and checks. With sole ownership, the agent updates current memory; during overlap, separate records preserve changes until reconciliation. No team-mode switch is required.
 
-Before a commit or merge request, “Prepare these changes for review” selects the existing Git method. It reviews changes and evidence and consolidates memory when ownership permits; conflicting decisions still require project authority. The request does not commit or publish. The [record guide](.yaiml/CHANGE_RECORDS.md) explains the limits: hidden overlap can go undetected, and YAIML supplies no automatic code merger or hook.
+Before a commit or merge request, “Prepare these changes for review” selects the existing Git method. It reviews changes and evidence and consolidates memory when ownership permits; conflicting decisions still require project authority. The request does not commit or publish. The [record guide](reference/CHANGE_RECORDS.md) explains the limits: hidden overlap can go undetected, and YAIML supplies no automatic code merger or hook.
 
 ## What Lives In Your Project
 
@@ -119,20 +95,35 @@ An illustrative excerpt after workshop planning and verification could read:
 
 The actual documents retain relevant sources and uncertainty; the audit records what changed, why, affected files and actual checks. They preserve useful understanding rather than whole conversations. You can inspect or edit the text, or correct a decision in ordinary conversation and let the agent maintain it.
 
+YAIML calls this “softerware”: the documents carry context and methods; your agent supplies the execution. Maintenance happens during agent sessions.
+
 <details>
 <summary>How revisions and change records work</summary>
 
 Changed YAIML Markdown receives a revision stamp, with the iteration recorded in a retained record located through `changes.md`. A revision such as `0.27.1f463a82b7dc905e` means YAIML major 0, local iteration 27 and a random change tag. Parent revisions distinguish concurrent branches; other project files are audited without added headers. Unchanged or read-only work causes no bump. Older installations start a prospective baseline without invented history.
 
+This repository's `reference/` folder contains what other projects adopt. Our own `.yaiml/` project memory is not part of setup.
+
 </details>
 
 **Privacy:** memory follows the project's access, sharing and retention rules. Keep authorized context and sanitized evidence references; exclude credentials and private transcripts. Confidential material must stay out of public repositories and examples. Use an approved agent: its provider's data handling applies when it reads files, including private project memory. Local storage does not guarantee local processing.
 
+For organizational security review, [retrieval and internal mirrors](.yaiml/ADOPTION_AND_UPGRADES.md#security-review-retrieval-and-internal-mirrors) explains what is fetched, when, source/ref controls and self-hosting.
+
 ## Evidence And Limits
 
-YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](.yaiml/COLD_START_REVIEW.md) separates published evidence from [0.5.0 draft](.yaiml/RELEASE.md) trials and records their limits.
+YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](.yaiml/COLD_START_REVIEW.md) separates published evidence from 0.5.0 draft trials and records their limits.
 
 Nondeveloper usability, other hosts, interactive skill menus, sustained reliability and productivity gains remain unverified; independent adoption and 1.0 readiness are not established. Agents can miss instructions or retain stale information. Review consequential changes: memory supplies context, not proof of correctness. Existing permissions and review controls apply; optional delegation requires scoped confirmation.
+
+<details>
+<summary>Detailed trial evidence</summary>
+
+The [0.5.1 check](.yaiml/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) adds source/package checks and a manual offline fixture. Later [isolated StateMesh trials](.yaiml/EVALUATION.md#statemesh-local-upgrade-trial-2026-10-24) exercised a manual upgrade, external writer repair and one live Codex CLI synthesis under bounded synthetic gates; a separate [supplied document trial](.yaiml/EVALUATION.md#yaiml-document-reconciliation-trial-2026-10-24) checked retained decisions/history and rejecting controls. These do not establish general reliability, autonomous semantic document merging or fresh memory recall. The requested additional-host trials remain blocked: neither Claude Code nor Copilot was available on this host. No fresh-session or enforced-network-disabled result is claimed for the new offline prompt.
+
+The [0.5.2 structural correction](.yaiml/COLD_START_REVIEW.md#structural-distribution-check) separates reusable material from our own project memory. File/link checks and both prompt payloads have been checked; fresh-agent setup and upgrade trials for this layout are still pending.
+
+</details>
 
 ## Reference And Participation
 
@@ -141,7 +132,7 @@ Feedback on confusing setup, missed context or unnecessary memory changes is wel
 <details>
 <summary>Optional: examples, full skill catalog and design details</summary>
 
-- [Skill catalog](.yaiml/skills/INDEX.md) and [project lifecycle](.yaiml/SKILLS_AND_LIFECYCLE.md).
+- [Skill catalog](reference/skills/INDEX.md) and [project lifecycle](.yaiml/SKILLS_AND_LIFECYCLE.md).
 - [Minimal Notes](.yaiml/examples/minimal-notes/) and [Canopy Dispatch](.yaiml/examples/canopy-dispatch/): fictional legacy layouts suitable for upgrade exercises; they predate revision tracking.
 - [Upgrade guidance](.yaiml/ADOPTION_AND_UPGRADES.md#existing-yaiml-update), [agent integration](.yaiml/AGENT_INTEGRATION.md) and [memory roles](.yaiml/CORE_DOCUMENT_FAMILY.md).
 - [Evaluation](.yaiml/EVALUATION.md), [case study](.yaiml/case-studies/YTMMOCC.md) and [adoption exercises](.yaiml/case-studies/ADOPTION_TRIAL.md).

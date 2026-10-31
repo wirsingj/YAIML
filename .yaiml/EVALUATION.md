@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.24.835a3cca49fadd16"
+yaiml-revision: "0.41.8e8d7861c89600fb"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -13,6 +13,63 @@ agent-guidance: Record limitations honestly. Do not turn one small test into uni
 ---
 
 # Evaluation And Case Studies
+
+## Post-Review Cross-Host Trial Gate (2026-10-24)
+
+The 0.5.1 hardening session ran in Codex desktop on Windows with source-project context already supplied. Local command discovery found neither `claude` nor `copilot` on PATH. No additional host was available through the task's tools, and no fresh-session trial was launched. Later StateMesh setup found Codex CLI on PATH; its availability is not execution or additional-host evidence. No host was installed and no private host logs were inspected. This is an environment blocker, not evidence of failure by either product. Availability of another executable outside PATH was not investigated.
+
+| Requested observation | Result in this session |
+| --- | --- |
+| Additional-host offline init, network disabled | Blocked: additional host/fresh-session facility unavailable; OS network access was not disabled |
+| Additional-host pinned networked init | Blocked: additional host unavailable; candidate public ref not published/verified |
+| Ordinary task with memory maintenance on that host | Not run |
+| Fresh recall check on that host | Not run |
+
+A separate manual local fixture used only the embedded offline prompt and a fictional workshop brief. It populated four memory roles, local operating rules/discovery, notice and instruction pointer, then maintained the confirmed Hall B decision with a second linked record. File checks found the original attendance cap of 30 and free afternoons retained, booking still unconfirmed, receipt IDs equal to the two record filenames, and the original finalized record bytes unchanged. No retrieval calls were made by that exercise. It was constructed and checked by the same agent with source context: **not** a fresh-session, independently executed, cross-host or enforced-network-disabled adoption trial. No new reliability claim follows.
+
+### Bounded Trial To Run When A Host Is Available
+
+Use one additional host with two isolated fresh target folders, one per init variant. Record host name/version, model, permissions, candidate commit/ref, source origin, network enforcement, exact prompts, assistance/repairs, changed artifacts, checks, recall answer and failures. Supply only a fictional brief: “Plan a workshop; attendance is capped at 30 and afternoons remain free. Venue booking is unconfirmed.” Supply one complete init prompt; the networked arm must resolve its default pin without a special override, while the offline arm must run with retrieval/network disabled by host controls. Do not supply source-project memory or a full checkout as extra context.
+
+For each arm, start a fresh ordinary session without YAIML reminders: “Use Hall B for the workshop. Draft a schedule and preserve the existing constraints; booking remains unconfirmed.” Check actual output and memory/record maintenance. Start another fresh session: “Which venue and constraints govern the workshop, and is it booked?” Compare its answer with the brief/decision and on-disk records without coaching it. Preserve failed outputs and repairs as evidence; configuration and same-session answers are not recall passes. Stop after this bounded sequence rather than expanding into a benchmark. Until both arms have evidence, leave the corresponding row unverified; no general host compatibility or reliability claim is justified.
+
+## StateMesh Local Upgrade Trial (2026-10-24)
+
+Maintainer-authorized manual trial upgraded an isolated copy of the synthetic StateMesh spike from official 0.5.0 (`db1dcd120ede0b59ebef16ed82f77ee7ea8cabaa`) to the explicitly selected local 0.5.1 candidate (`c19c4c2`). Node 22.22.3 on Windows; no dependency installation, remote acquisition or live model call. All 24 incoming resources were compared with their exact prior-source baseline; no local resource adaptations needed conflict resolution. Ten project paths changed during refresh. Existing project state, architecture, invariants, discovery, native pointers, historical record bytes, notice and previously installed specialist templates were preserved. Original project fingerprints matched 70 files after testing, excluding Git metadata and pre-existing generated-run trees.
+
+`npm test` passed 7/7 groups before and after, including 10,000 differential cases, rejection paths and a real Git conflict/gated two-parent merge. Post-refresh `npm run verify` passed 100/100 fixtures. A separate demo reproduced the conflict and passed 100 historical plus four feature cases using the supplied candidate replay. This demonstrates this manual guidance upgrade did not break those bounded behavior checks; it does not test autonomous refresh adherence, fresh recall, cross-host use, live synthesis or general semantic merging. The copy and generated repositories provide file isolation; subprocesses retain user permissions.
+
+The trial exposed an external-writer integration gap: StateMesh reconciliation acceptance records omit frontmatter `date` and revision `parents`, lack Outcome, use Git commit IDs as prose parents, and describe affected paths without exact project-path enumeration. The writer also starts reconciliation revisions at counter 1. Behavior-gate acceptance therefore does not establish compliance with the new record/lineage contract. Historical records were preserved, and no StateMesh implementation repair was made. External consumer repair remains separate scope; no validator or merger was added to YAIML. Additional-host fresh-session acceptance remains unverified.
+
+A subsequent user-requested Step 1 changed only the isolated StateMesh copy to expose candidate rejection through its demo CLI, with two end-to-end negative controls. Targeted tests passed 2/2 and the full suite passed 9/9, including the original successful merge. Both a historical payout mutation and a missing feature exited 1, left HEAD at the refactor branch, left exactly three setup commits and zero merge commits across all refs, preserved MERGE_HEAD and unresolved conflict/index state, and created no acceptance receipt. Tests queried Git independently of reported fields. A separate mutation run named INV-017, INV-041 and FEATURE-003, with identical before/after HEAD and null merge commit. Original source fingerprints remained unchanged. This establishes rejection behavior for these bounded cases, not a universal shield; receipt repair and live synthesis were not performed.
+
+Step 2 subsequently repaired the writers **only in that isolated copy**. New harvest, demo-branch and acceptance records include the required frontmatter/body sections and exact project-relative affected paths. Record DAG parents are separate from Git commits; two sibling counter-2 revisions reconcile at counter 3, and a later acceptance advances to 4. Accepted working-tree code/intents and retained evidence use the gated snapshot; existing shared receipts and completed record bytes are preserved, leaving new records pending. Reconcile prepares files but does not stage or commit; the demo commits its disposable merge.
+
+The full suite passed 13/13, including Step 1 controls, independent record-field/path/stamp/history checks, exact branch commit diffs, repeat acceptance, unequal heads, counters beyond floating-point integer precision, missing-parent rejection and preservation of existing invariant notes. A separate replay demo passed 100 historical plus four feature cases and produced a two-parent Git merge. Original StateMesh fingerprints still matched. This is bounded external-consumer evidence: the original writer is unchanged, the narrow reader supports its emitted quoted-ID/JSON-array subset, and crash-safe multi-file recovery/general YAML compatibility are not established. No writer or validator was added to YAIML itself; live synthesis and document reconciliation remain unrun.
+
+Step 3 then ran one explicitly authorized live Codex CLI generation through a one-shot adapter in the isolated copy. CLI 0.163.0-alpha.11 used its configured model default (ID absent from captured header), read-only empty scratch working directory, ephemeral mode and a saved final response. Synthetic sources/intents/feature cases were supplied; no tools or descendants were observed in JSONL. Generation had a 55-second limit within the existing 60-second generator bound; no outer retry or source repair. This used the configured hosted service/account, not local inference.
+
+The untouched output passed 100/100 historical and 4/4 feature cases, then 10,000 selected unflagged differential cases. Final response, gated retained snapshot and applied code shared SHA-256 `1e806c07de44123d1b1132c8c1db6d1e6ab1c9e038d38b1a110bf7266464be0d`. Generation took 7,749 ms, whole reconcile process 8,438 ms, fixture loop 1.841 ms excluding startup/import/loading. Usage reported 19,366 input tokens (13,440 cached), 666 output and 20 reasoning-output tokens; monetary cost was not established. Reconcile retained a pending counter-3 record with both counter-2 revision parents, left HEAD unchanged and created no merge commit. Original 70-file fingerprint remained unchanged. This is one bounded synthetic synthesis result, not repeated reliability, fresh memory recall, another-host acceptance, document reconciliation or transaction-safety evidence. Product tooling remains external; the source release tag is unchanged.
+
+## YAIML Document Reconciliation Trial (2026-10-24)
+
+Step 4 exported local YAIML `db6123c` into an isolated Git repository with no remote. Two deliberate fixture branches restated accepted direction in the same SoTY paragraph and Architecture: zero-retrieval offline init and release-pinned acquisition without fallback. Both received counter-40 records parented by the inherited counter-39 head; Git produced body-level conflicts. The fixture intentionally exercises conflicting snapshot edits, not recommended overlap behavior. A lead-assisted supplied candidate retained both decisions, protected the existing scope/licensing/versioning paragraphs, and reconciled at counter 41 with both branch revision heads as parents. No new CLI worker or provider call was made.
+
+Fourteen checks passed: a positive gated two-parent sandbox merge, twelve rejecting controls, and a budget-policy check. Negatives dropped offline/pinning/licensing decisions, added a known contradiction despite retained keywords, deleted/rewrote history, used Git IDs as revision parents, failed to advance the counter, omitted an affected path, broke a local link, used a stale stamp, or lost an incorporated ID. Each was rejected before writes: HEAD, conflict/index state and files remained unchanged, zero merge commits and no new record. Budget overages were reported rather than used as a hard 10% rejection or deletion rule.
+
+The accepted merge retained all 24 inherited and two branch records byte-for-byte, preserved inline audit text/line endings, and incorporated all 27 final records with no pending IDs. Its five-path record matched the staged/committed integration diff, including the unchanged-stamped imported branch record. Links/anchors, changed stamps, counter/parents and a clean two-parent final commit were checked. SoTY was 1,178 words versus about 1,000 and Architecture 885 versus about 800; necessary declared direction was retained and the overages reported outside memory. Initial harness quoting and CRLF setup errors were repaired before these checks; prior records were never normalized or rewritten.
+
+This is a bounded document-contract experiment with a literal decision manifest, one explicitly recognized contradiction and lead review. It does not establish arbitrary semantic consistency, autonomous document synthesis, broad Markdown/YAML compatibility, cross-host recall or production transaction safety. The external harness and sandbox merge remain outside YAIML product sources; the source branch receives evidence only. Original StateMesh stayed unchanged. No push or publication occurred.
+
+## StateMesh Against Actual Local Main (2026-10-24)
+
+The requested test compared clean YAIML `v0.5.1` at `d39a682` with local `main` at `d796943`: 14 commits ahead, none behind, 70 changed paths. Cached `origin/main` was `db1dcd1`; it was not the requested local baseline and no fetch occurred. A disposable clone retained the exact Git objects and had its remote removed. Original StateMesh and the previously repaired isolated copy were each copied for testing; neither implementation was changed.
+
+Both actual `reconcile` CLI calls exited 1 before candidate processing because their fixed `codex/refactor` / `codex/feature` refs were absent. Calling exported `promptFor` with explicit `main` and the current commit resolved those refs, then exited 1 because `.yaiml/changes/intent.md` was absent. Source inspection additionally found fixed `claim.ts`, `CalculateClaimPayout` and synthetic payout gates. These are unsupported-input failures, not evidence that YAIML changes violate an invariant. No generator or provider call ran; neither tool reviewed or reconciled the document changes.
+
+On Windows with Node 22.22.3, the copied original suite passed 7/7 and the repaired suite 13/13. Those synthetic passes do not validate document merging. Each failed tool probe preserved target files, HEAD/refs, index and status. Git alone then fast-forwarded the disposable `main` checkout to the exact candidate tree, cleanly, with no divergence to reconcile. Pre/post fingerprints matched 117 YAIML, 70 original StateMesh and 78 repaired-copy files, excluding Git metadata and generated-run trees. Source branch/HEAD/index stayed unchanged during testing.
+
+The preceding document trial used a separate Python harness with a supplied candidate, not StateMesh's CLI. Applying that tool to real document branches requires separate external implementation scope; no such repair, source integration or publication occurred.
 
 ## Revision And Audit Acceptance
 

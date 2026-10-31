@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.3.e5a6701538b64592"
+yaiml-revision: "0.43.65c0797e642cbbde"
 yaiml: 0.2
 kind: agent-integration-guide
 title: Agent Integration
@@ -14,7 +14,7 @@ agent-guidance: Keep this provider-neutral. Do not imply official adapters or du
 
 # Agent Integration
 
-Host instructions connect sessions to project knowledge. [Bootstrap — Connect Future Sessions](BOOTSTRAP.md#connect-future-sessions) owns route inspection, supported native entries, argument forwarding, activation checks and the copyable pointer. Reuse that procedure instead of maintaining a competing integration checklist here.
+Host instructions connect sessions to project knowledge. [Bootstrap — Connect Future Sessions](../reference/BOOTSTRAP.md#connect-future-sessions) owns route inspection, supported native entries, argument forwarding, activation checks and the copyable pointer. Reuse that procedure instead of maintaining a competing integration checklist here.
 
 ## Keeping Responsibilities Clear
 
@@ -30,7 +30,7 @@ Keep supported root/nested tool entry points, unrelated rules and subproject sco
 
 ## Suggested Pointer
 
-Use [Bootstrap's pointer](BOOTSTRAP.md#connect-future-sessions), adapted to actual paths. It explicitly reads/follows the shared guide and preserves the coordination reminder. A bare link is insufficient; repeated init repairs the existing section rather than appending another. Stricter local rules and unique project constraints survive consolidation.
+Use [Bootstrap's pointer](../reference/BOOTSTRAP.md#connect-future-sessions), adapted to actual paths. It explicitly reads/follows the shared guide and preserves the coordination reminder. A bare link is insufficient; repeated init repairs the existing section rather than appending another. Stricter local rules and unique project constraints survive consolidation.
 
 ## What Activation Establishes
 

@@ -10,13 +10,13 @@ yaiml:
     prior_art: PRIOR_ART.md
     core_document_family: CORE_DOCUMENT_FAMILY.md
     stable_headers: STABLE_HEADERS.md
-    versioning: VERSIONING.md
+    versioning: ../reference/VERSIONING.md
     release: RELEASE.md
     ambiguity_and_evidence: AMBIGUITY_AND_EVIDENCE.md
     pruning_and_lifecycle: PRUNING_AND_LIFECYCLE.md
     agent_integration: AGENT_INTEGRATION.md
     context_loading: CONTEXT_LOADING.md
-    yaimlacp: YAIMLACP.md
+    yaimlacp: ../reference/YAIMLACP.md
     evaluation: EVALUATION.md
     ytmmocc_case_study: case-studies/YTMMOCC.md
     adoption_trial: case-studies/ADOPTION_TRIAL.md
@@ -24,8 +24,8 @@ yaiml:
     adoption_and_upgrades: ADOPTION_AND_UPGRADES.md
     project_independence: PROJECT_INDEPENDENCE.md
     ai_usage: AI_USAGE.md
-    bootstrap: BOOTSTRAP.md
-    skills: skills/INDEX.md
-    operating_guide: YAIML_GUIDE.md
-    change_records: CHANGE_RECORDS.md
+    bootstrap: ../reference/BOOTSTRAP.md
+    skills: ../reference/skills/INDEX.md
+    operating_guide: ../reference/YAIML_GUIDE.md
+    change_records: ../reference/CHANGE_RECORDS.md
     skills_lifecycle: SKILLS_AND_LIFECYCLE.md

@@ -1,15 +1,15 @@
-<!-- yaiml-revision: 0.11.3aa1b621fbb958f4 -->
+<!-- yaiml-revision: 0.43.65c0797e642cbbde -->
 # YAIML Roadmap
 
 YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
 
-The immediate route is one [init prompt](prompts/init-yaiml.md) that starts reference retrieval, project context and embedded methods. Evaluate the full [skills lifecycle](SKILLS_AND_LIFECYCLE.md) from a new user’s perspective, with no prior YAIML knowledge or maintainer-local paths.
+The immediate route is one [init prompt](../reference/prompts/init-yaiml.md) that starts reference retrieval, project context and embedded methods. Evaluate the full [skills lifecycle](SKILLS_AND_LIFECYCLE.md) from a new user’s perspective, with no prior YAIML knowledge or maintainer-local paths.
 
 ## Now
 
 - Validate the published seed-to-resource path, fresh-session ordinary use, named and composed skills, useful growth, offline behavior and refresh with local adaptations. Keep structural checks separate from observed behavior.
 - Trial initialization, refresh, and compression in real repositories; keep YAIML’s own core memory short.
-- Trial [YAIMLACP coordination](YAIMLACP.md): verify confirmation, bounded handoffs, cancellation, and actual cost against one-agent work. Add no server or installation.
+- Trial [YAIMLACP coordination](../reference/YAIMLACP.md): verify confirmation, bounded handoffs, cancellation, and actual cost against one-agent work. Add no server or installation.
 - Test portability across machines, contributors, and AI providers, including mature adopters with older discovery layouts.
 - Gather three kinds of case evidence: a maintainer-owned project, an unfamiliar public repository, and a project owned by someone else. [YTMMOCC](case-studies/YTMMOCC.md) supplies maintainer-owned inspection evidence only.
 - Run comparable fresh-session tasks and retain failures and neutral results. Measure context cost as well as useful work.
