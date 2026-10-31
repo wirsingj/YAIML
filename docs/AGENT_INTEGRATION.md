@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: agent-integration-guide
 title: Agent Integration
@@ -7,7 +7,7 @@ purpose: Explain how YAIML relates to repository agent instruction files without
 belongs-here: integration patterns for AGENTS.md, CLAUDE.md, GEMINI.md, .cursorrules, .windsurfrules, and similar instruction files.
 not-here: provider adapters, SDKs, exhaustive tool-specific instructions, project-specific agent rules.
 durability: durable; update when YAIML's relationship to agent instruction files changes.
-read-with: SoTY; Context Loading; Core Document Family.
+read-with: Context Loading; Core Document Family.
 update-when: integration guidance, context-loading expectations, or instruction-file boundaries change.
 agent-guidance: Keep this provider-neutral. Do not imply official adapters or duplicate every behavioral rule inside YAIML.
 ---
@@ -36,4 +36,4 @@ Use [Bootstrap's pointer](../reference/BOOTSTRAP.md#connect-future-sessions), ad
 
 A pasted init can execute before native skills exist. Supported native registration improves discovery; file-based instructions remain useful when a native menu is unavailable. Native syntax is host-specific.
 
-Distinguish saved resources, connected instructions and observed fresh-session use. Failed persistent writes or required host settings remain explicit gaps. A reminder from the human is assistance, not proof that the saved route worked. [Evaluation](EVALUATION.md#one-prompt-skills-lifecycle) owns realistic startup and ordinary-work checks.
+Distinguish saved resources, connected instructions and observed fresh-session use. Failed persistent writes or required host settings remain explicit gaps. A reminder from the human is assistance, not proof that the saved route worked. [Evaluation](evaluation/EVALUATION.md#one-prompt-skills-lifecycle) owns realistic startup and ordinary-work checks.

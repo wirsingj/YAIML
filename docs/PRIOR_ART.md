@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: comparison-guide
 title: Prior Art
@@ -78,4 +78,4 @@ Whether this combination improves a particular team's work enough to justify its
 
 No documented independent adoption or measured productivity effect. No benchmark against any convention named here. No compatibility guarantee with any tool that reads these files.
 
-See [Evaluation](EVALUATION.md) for the evidence that would be needed to say more, and [SoTY](SoTY.md) for current status.
+See [Evaluation](evaluation/EVALUATION.md) for the evidence that would be needed to say more, and [Evidence And Limits](../README.md#evidence-and-limits) for the public status.

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: stable-header-guide
 title: Stable Headers

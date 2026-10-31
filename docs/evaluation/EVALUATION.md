@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.41.8e8d7861c89600fb"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: evaluation-guide
 title: Evaluation And Case Studies
@@ -151,7 +151,7 @@ Give each fresh session the same bounded requests, with equivalent access and bu
 
 Reviewer criteria: the first answer follows the CLI/library boundary and the first-match exit across selectors; the second distinguishes package metadata, configured coverage, and executed results; the third identifies local checks without claiming they passed or authorizing a release. Count unsupported claims, missed constraints, inspected content, and useful correct answers. Report the cost of building the memory package separately from the comparison sessions.
 
-A completed pair is recorded in [Cold Start Review](COLD_START_REVIEW.md#prepared-comparison): both sessions met these criteria, with no observed correctness advantage or savings claim. The YAIML package was manually prepared before either session; setup cost was not isolated. This does not replace an equally informative ordinary-doc condition, repeated trials or owner-led adoption. Publish only permitted, sanitized results through [Contributing](../CONTRIBUTING.md#feedback-and-adoption-reports).
+A completed pair is recorded in [Cold Start Review](COLD_START_REVIEW.md#prepared-comparison): both sessions met these criteria, with no observed correctness advantage or savings claim. The YAIML package was manually prepared before either session; setup cost was not isolated. This does not replace an equally informative ordinary-doc condition, repeated trials or owner-led adoption. Publish only permitted, sanitized results through [Contributing](../../CONTRIBUTING.md#feedback-and-adoption-reports).
 
 ## Repeated-Update Pruning Check
 
@@ -169,7 +169,7 @@ Before integration, apply the project's review policy. Check retained independen
 
 Text-merge experiments can demonstrate conflict mechanics; they do not test agent behavior. An optional second reviewer may be compared with the same-agent pass, but neither CI nor a subagent is an adoption requirement.
 
-[Current review](COLD_START_REVIEW.md#concurrent-reconciliation) records one fresh-session independent-change reconciliation. The [five-contributor stress test](COLD_START_REVIEW.md#five-contributor-merge-stress-test) adds actual merge conflicts, rename/update overlap, a pending proposal and concurrent compression; its five-way reconciliation was performed by the lead. The isolated [intent-record prototype](experiments/INTENT_LOG_PROTOTYPE.md) removed memory/audit conflicts in one replay and passed pending-record recall, while deferring compression and increasing active reading.
+[Current review](COLD_START_REVIEW.md#concurrent-reconciliation) records one fresh-session independent-change reconciliation. The [five-contributor stress test](COLD_START_REVIEW.md#five-contributor-merge-stress-test) adds actual merge conflicts, rename/update overlap, a pending proposal and concurrent compression; its five-way reconciliation was performed by the lead. The isolated [intent-record prototype](../development/INTENT_LOG_PROTOTYPE.md) removed memory/audit conflicts in one replay and passed pending-record recall, while deferring compression and increasing active reading.
 
 The earlier [team-mode lifecycle](COLD_START_REVIEW.md#opt-in-team-mode-lifecycle) tested upgrade/enable, two ordinary branches, a conversation-only decision, fresh reconciliation/recall and disabling. Immediate navigation repair and shorter pending records worked. The first reconciliation omitted its audit path; corrected guidance passed a focused replay. Native route creation was blocked, and size reporting remained inconsistent. This is a different task mix, not a paired performance comparison. Remaining cases include interrupted records/consolidation, substantive target advances, competing approved authority/consolidators, reverts and sustained growth. Measure reading, retention and integration effort alongside conflicts; independent owner use remains open.
 

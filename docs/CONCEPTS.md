@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: concept-guide
 title: Concepts
@@ -7,7 +7,7 @@ purpose: Explain YAIML's conceptual frame and vocabulary for AI Project Engineer
 belongs-here: purpose, design choices, vocabulary, shared ownership, tradeoffs.
 not-here: current project priorities, command procedures, complete template inventory.
 durability: durable; update when YAIML's conceptual frame changes materially.
-read-with: SoTY; Core Document Family; Ambiguity And Evidence.
+read-with: Core Document Family; Ambiguity And Evidence.
 update-when: YAIML's meaning, audience, or core conceptual vocabulary changes.
 agent-guidance: Preserve the lightweight convention-first frame. Do not turn concepts into schema or conformance language.
 ---
@@ -58,4 +58,4 @@ Memory should normally travel with its repository, regardless of business or lic
 
 Memory takes effort to maintain and consumes context. A stale summary can mislead; excessive splitting can make reading harder. A project whose existing documentation already carries this understanding may gain little from additional files.
 
-YAIML's current phase centers on plain files, with [YAIMLACP](../reference/YAIMLACP.md) describing optional, user-confirmed coordination through existing subagents. Compare against one-agent work and record cost and failures before claiming benefits or standard status. The [evaluation guide](EVALUATION.md) describes how to gather evidence.
+YAIML's current phase centers on plain files, with [YAIMLACP](../reference/YAIMLACP.md) describing optional, user-confirmed coordination through existing subagents. Compare against one-agent work and record cost and failures before claiming benefits or standard status. The [evaluation guide](evaluation/EVALUATION.md) describes how to gather evidence.

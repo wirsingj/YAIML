@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: project-independence
 title: Project Independence
@@ -7,7 +7,7 @@ purpose: State YAIML's public, personal, and repository-safe independence postur
 belongs-here: maintainer independence declaration, public-use boundary, employer-data hygiene, sharing posture.
 not-here: legal advice, employment-contract interpretation, private employer details, confidential examples.
 durability: durable; update when ownership, licensing, public-sharing, or independence posture changes.
-read-with: README; LICENSE; SECURITY; SoTY.
+read-with: README; LICENSE; SECURITY.
 update-when: maintainer declaration, licensing posture, or public-sharing boundary changes.
 agent-guidance: Preserve the maintainer declaration. Do not infer legal conclusions. Do not add employer-specific details without explicit human approval.
 ---

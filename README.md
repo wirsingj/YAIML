@@ -1,20 +1,22 @@
-<!-- yaiml-revision: 0.45.7ded1679f14c93b4 -->
+<!-- yaiml-revision: 0.48.57e622f47b1fbd54 -->
 # YAIML
 
 **Yet Another AI Markup Language (YAIML)** is a lightweight document standard for starting, organizing and maintaining projects with AI.
 
-One prompt gives your existing agent guidance for setting up shared project memory. The full setup also adds reusable skills. Everything lives alongside your work in readable Markdown files; there is no separate YAIML app or service to install.
+Paste one prompt into your agent to set up shared project memory. The full setup also adds reusable skills. Everything lives alongside your work in readable Markdown files; there is no separate YAIML app or service to install.
 
-Start with an idea, a few notes or an existing project. Your agent establishes useful context: goals, constraints, decisions and next steps. As you work, the guidance has it check results and save meaningful updates. That understanding stays with the project for later sessions.
+Start with an idea, a few notes or an existing project. Your agent establishes useful context: goals, constraints, decisions and next steps. As you work, it uses that context, checks results and saves meaningful updates. That understanding stays with the project for later sessions.
 
 Use it for software, research, writing, event planning or team procedures. You and your agent can read and edit the same documents.
+
+Want to look around first? Start with the [documentation guide](docs/README.md) or [examples](examples/README.md).
 
 ## Start With One Prompt
 
 | Prompt | What your agent does |
 | --- | --- |
 | [Full setup: skill-based, networked](reference/prompts/init-yaiml.md) | Starts with a short prompt; the agent follows its instructions to retrieve the full guidance, templates and reusable skills. Requires access to the approved source (this repo) during setup. |
-| [Self-contained setup: flat, offline](reference/prompts/init-yaiml-offline.md) | Uses instructions and templates embedded in one document to create project memory and working rules. Makes no network calls and does not include the reusable skill package. |
+| [Self-contained setup (offline)](reference/prompts/init-yaiml-offline.md) | Uses instructions and templates embedded in one document to create project memory and working rules. Makes no network calls and does not include the reusable skill package. |
 
 The self-contained option suits restricted networks and organizations that need to review the complete prompt before use. Obtain it through an approved channel before entering a restricted environment. A later, separately requested full setup can add the skill package.
 
@@ -106,40 +108,52 @@ This repository's `reference/` folder contains what other projects adopt. Our ow
 
 </details>
 
-**Privacy:** memory follows the project's access, sharing and retention rules. Keep authorized context and sanitized evidence references; exclude credentials and private transcripts. Confidential material must stay out of public repositories and examples. Use an approved agent: its provider's data handling applies when it reads files, including private project memory. Local storage does not guarantee local processing.
+**Privacy:** memory follows the project's access, sharing and retention rules. Keep authorized context and sanitized evidence references; exclude credentials and private transcripts. Confidential material must stay out of public repositories and examples. Your agent's data-handling rules apply when it reads files, including private project memory. Local storage does not guarantee local processing.
 
-For organizational security review, [retrieval and internal mirrors](.yaiml/ADOPTION_AND_UPGRADES.md#security-review-retrieval-and-internal-mirrors) explains what is fetched, when, source/ref controls and self-hosting.
+For organizational security review, [retrieval and internal mirrors](docs/ADOPTION_AND_UPGRADES.md#security-review-retrieval-and-internal-mirrors) explains what is fetched, when, source/ref controls and self-hosting.
 
 ## Evidence And Limits
 
-YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](.yaiml/COLD_START_REVIEW.md) separates published evidence from 0.5.0 draft trials and records their limits.
+YAIML is an early public experiment. Fresh Codex CLI sessions on Windows have exercised published setup, upgrades and ordinary work. A fictional workshop trial used published 0.4.0 across five sessions: decisions persisted, schedules and costs were checked, and changed venue information reached memory without reminders or repairs. Earlier software trials exposed stale verification notes needing correction. The [current review](docs/evaluation/COLD_START_REVIEW.md) separates published evidence from 0.5.0 draft trials and records their limits.
 
 Nondeveloper usability, other hosts, interactive skill menus, sustained reliability and productivity gains remain unverified; independent adoption and 1.0 readiness are not established. Agents can miss instructions or retain stale information. Review consequential changes: memory supplies context, not proof of correctness. Existing permissions and review controls apply; optional delegation requires scoped confirmation.
 
 <details>
 <summary>Detailed trial evidence</summary>
 
-The [0.5.1 check](.yaiml/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) adds source/package checks and a manual offline fixture. Later [isolated StateMesh trials](.yaiml/EVALUATION.md#statemesh-local-upgrade-trial-2026-10-24) exercised a manual upgrade, external writer repair and one live Codex CLI synthesis under bounded synthetic gates; a separate [supplied document trial](.yaiml/EVALUATION.md#yaiml-document-reconciliation-trial-2026-10-24) checked retained decisions/history and rejecting controls. These do not establish general reliability, autonomous semantic document merging or fresh memory recall. The requested additional-host trials remain blocked: neither Claude Code nor Copilot was available on this host. No fresh-session or enforced-network-disabled result is claimed for the new offline prompt.
+The [0.5.1 check](docs/evaluation/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) adds source/package checks and a manual offline fixture. Later [isolated StateMesh trials](docs/evaluation/EVALUATION.md#statemesh-local-upgrade-trial-2026-10-24) exercised a manual upgrade, external writer repair and one live Codex CLI synthesis under bounded synthetic gates; a separate [supplied document trial](docs/evaluation/EVALUATION.md#yaiml-document-reconciliation-trial-2026-10-24) checked retained decisions/history and rejecting controls. These do not establish general reliability, autonomous semantic document merging or fresh memory recall. The requested additional-host trials remain blocked: neither Claude Code nor Copilot was available on this host. No fresh-session or enforced-network-disabled result is claimed for the new offline prompt.
 
-The [0.5.2 structural correction](.yaiml/COLD_START_REVIEW.md#structural-distribution-check) separates reusable material from our own project memory. File/link checks and both prompt payloads have been checked; fresh-agent setup and upgrade trials for this layout are still pending.
+The [0.5.2 structural correction](docs/evaluation/COLD_START_REVIEW.md#structural-distribution-check) separates reusable material from our own project memory. File/link checks and both prompt payloads have been checked; fresh-agent setup and upgrade trials for this layout are still pending.
 
 </details>
 
-## Reference And Participation
+## Find Your Way Around
+
+| Location | What's there |
+| --- | --- |
+| [reference/](reference/) | The reusable product: init prompts, skills, templates and operating guidance. |
+| [docs/](docs/README.md) | Explanations, design notes, evaluation evidence and contributor guidance. |
+| [examples/](examples/README.md) | Fictional projects you can explore. |
+| [ROADMAP.md](ROADMAP.md) | Where YAIML is headed and what still needs evidence. |
+| [.yaiml/](.yaiml/) | This repository's own project memory, change records and local methods. |
+
+The last folder is YAIML being used to develop YAIML. You do not need it to adopt the convention or understand the product. Our agent instructions point there for contributor context; public documentation and examples live outside it.
+
+## Participation
 
 Feedback on confusing setup, missed context or unnecessary memory changes is welcome. Use [issues](https://github.com/wirsingj/YAIML/issues) for sanitized reports and [the private reporting route](SECURITY.md) for sensitive findings.
 
 <details>
 <summary>Optional: examples, full skill catalog and design details</summary>
 
-- [Skill catalog](reference/skills/INDEX.md) and [project lifecycle](.yaiml/SKILLS_AND_LIFECYCLE.md).
-- [Minimal Notes](.yaiml/examples/minimal-notes/) and [Canopy Dispatch](.yaiml/examples/canopy-dispatch/): fictional legacy layouts suitable for upgrade exercises; they predate revision tracking.
-- [Upgrade guidance](.yaiml/ADOPTION_AND_UPGRADES.md#existing-yaiml-update), [agent integration](.yaiml/AGENT_INTEGRATION.md) and [memory roles](.yaiml/CORE_DOCUMENT_FAMILY.md).
-- [Evaluation](.yaiml/EVALUATION.md), [case study](.yaiml/case-studies/YTMMOCC.md) and [adoption exercises](.yaiml/case-studies/ADOPTION_TRIAL.md).
-- [Prior art](.yaiml/PRIOR_ART.md), [contributing](CONTRIBUTING.md) and [roadmap](.yaiml/ROADMAP.md).
+- [Skill catalog](reference/skills/INDEX.md) and [project lifecycle](docs/SKILLS_AND_LIFECYCLE.md).
+- [Minimal Notes](examples/minimal-notes/) and [Canopy Dispatch](examples/canopy-dispatch/): fictional legacy layouts suitable for upgrade exercises; they predate revision tracking.
+- [Upgrade guidance](docs/ADOPTION_AND_UPGRADES.md#existing-yaiml-update), [agent integration](docs/AGENT_INTEGRATION.md) and [memory roles](docs/CORE_DOCUMENT_FAMILY.md).
+- [Evaluation](docs/evaluation/EVALUATION.md), [case study](docs/evaluation/case-studies/YTMMOCC.md) and [adoption exercises](docs/evaluation/case-studies/ADOPTION_TRIAL.md).
+- [Prior art](docs/PRIOR_ART.md), [contributing](CONTRIBUTING.md) and [roadmap](ROADMAP.md).
 
 </details>
 
 The [YAIML Attribution and No-Resale License](LICENSE.md) permits commercial/client use and free sharing with attribution. Selling YAIML itself or charging for forks is restricted. These custom source-available terms preserve earlier MIT grants and do not change your application's license. Professional legal review remains outstanding.
 
-Maintained with [AI assistance](.yaiml/AI_USAGE.md) as a [personal, independent project](.yaiml/PROJECT_INDEPENDENCE.md).
+Maintained with [AI assistance](docs/AI_USAGE.md) as a [personal, independent project](docs/PROJECT_INDEPENDENCE.md).

@@ -6,26 +6,26 @@ yaiml:
     maintainer_guide: MAINTAINER_GUIDE.md
     changes: changes.md
   supporting:
-    concepts: CONCEPTS.md
-    prior_art: PRIOR_ART.md
-    core_document_family: CORE_DOCUMENT_FAMILY.md
-    stable_headers: STABLE_HEADERS.md
+    concepts: ../docs/CONCEPTS.md
+    prior_art: ../docs/PRIOR_ART.md
+    core_document_family: ../docs/CORE_DOCUMENT_FAMILY.md
+    stable_headers: ../docs/STABLE_HEADERS.md
     versioning: ../reference/VERSIONING.md
-    release: RELEASE.md
-    ambiguity_and_evidence: AMBIGUITY_AND_EVIDENCE.md
-    pruning_and_lifecycle: PRUNING_AND_LIFECYCLE.md
-    agent_integration: AGENT_INTEGRATION.md
-    context_loading: CONTEXT_LOADING.md
+    release: ../docs/development/RELEASE.md
+    ambiguity_and_evidence: ../docs/AMBIGUITY_AND_EVIDENCE.md
+    pruning_and_lifecycle: ../docs/PRUNING_AND_LIFECYCLE.md
+    agent_integration: ../docs/AGENT_INTEGRATION.md
+    context_loading: ../docs/CONTEXT_LOADING.md
     yaimlacp: ../reference/YAIMLACP.md
-    evaluation: EVALUATION.md
-    ytmmocc_case_study: case-studies/YTMMOCC.md
-    adoption_trial: case-studies/ADOPTION_TRIAL.md
-    cold_start_review: COLD_START_REVIEW.md
-    adoption_and_upgrades: ADOPTION_AND_UPGRADES.md
-    project_independence: PROJECT_INDEPENDENCE.md
-    ai_usage: AI_USAGE.md
+    evaluation: ../docs/evaluation/EVALUATION.md
+    ytmmocc_case_study: ../docs/evaluation/case-studies/YTMMOCC.md
+    adoption_trial: ../docs/evaluation/case-studies/ADOPTION_TRIAL.md
+    cold_start_review: ../docs/evaluation/COLD_START_REVIEW.md
+    adoption_and_upgrades: ../docs/ADOPTION_AND_UPGRADES.md
+    project_independence: ../docs/PROJECT_INDEPENDENCE.md
+    ai_usage: ../docs/AI_USAGE.md
     bootstrap: ../reference/BOOTSTRAP.md
     skills: ../reference/skills/INDEX.md
     operating_guide: ../reference/YAIML_GUIDE.md
     change_records: ../reference/CHANGE_RECORDS.md
-    skills_lifecycle: SKILLS_AND_LIFECYCLE.md
+    skills_lifecycle: ../docs/SKILLS_AND_LIFECYCLE.md

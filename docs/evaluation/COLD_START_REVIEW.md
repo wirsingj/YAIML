@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.46.42a0394f3a2abb59"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -13,6 +13,12 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 ---
 
 # Cold Start Review
+
+## Repository Navigation
+
+On 2026-10-31, maintainer feedback identified that acquisition isolation had not made the source repository navigable: public guides, examples and evaluation material still lived beside internal memory. Thirty files now live under public documentation/examples or the root roadmap, with reader indexes. Only this project's current memory, discovery, retained records and local method remain in `.yaiml/`; source instructions and discovery point to the moved owners.
+
+Local checks passed for active Markdown links/anchors, three discovery maps, old-path references, unchanged fenced examples, unchanged reference package/native routes/workflow/license and preserved prior audit records. Plain-text review also corrected Canopy Dispatch's stale memory paths to match its existing `docs/` layout. This is a source-navigation revision, not a new adoption workflow or fresh-user trial. Human usability of the revised navigation and publication remain unverified.
 
 ## 0.5.2 Publication Review
 
@@ -183,7 +189,7 @@ Candidate solutions are independent retained change entries, deliberate reconcil
 
 ## Intent-Record Prototype
 
-On 2026-10-21, five approved fresh CLI sessions repeated the exact Harbor Workshop tasks from a normalized, equivalent fictional baseline with an explicitly isolated [intent-record method](experiments/INTENT_LOG_PROTOTYPE.md). Same CLI/default model, fresh profiles, no chat history or YAIML task reminders; at most three ran concurrently, each limited to eight minutes, without descendants, retries, installs or publication. This prepared adopter did not exercise init or upgrade. All completed within 85 seconds and wrote one immutable record each, leaving shared core/audit files unchanged; affected paths and new verification corrections were retained.
+On 2026-10-21, five approved fresh CLI sessions repeated the exact Harbor Workshop tasks from a normalized, equivalent fictional baseline with an explicitly isolated [intent-record method](../development/INTENT_LOG_PROTOTYPE.md). Same CLI/default model, fresh profiles, no chat history or YAIML task reminders; at most three ran concurrently, each limited to eight minutes, without descendants, retries, installs or publication. This prepared adopter did not exercise init or upgrade. All completed within 85 seconds and wrote one immutable record each, leaving shared core/audit files unchanged; affected paths and new verification corrections were retained.
 
 | Ten pairwise comparisons | Original trial | Prototype replay |
 | --- | ---: | ---: |
@@ -251,7 +257,7 @@ Revision `0.15.66ca5418653ba569` introduced conditional team guidance. Revision 
 
 ## Maintenance Prompt Coverage
 
-The [catalog](../reference/skills/INDEX.md) owns eleven methods and the compatibility alias. Shared operating/revision/record guides own common rules; Bootstrap owns acquisition and routing. Six optional maintenance prompts select skills; init embeds its bootstrap skill. Fresh MR preparation exercised Git/compression through local routes, not interactive menus or arbitrary merges.
+The [catalog](../../reference/skills/INDEX.md) owns eleven methods and the compatibility alias. Shared operating/revision/record guides own common rules; Bootstrap owns acquisition and routing. Six optional maintenance prompts select skills; init embeds its bootstrap skill. Fresh MR preparation exercised Git/compression through local routes, not interactive menus or arbitrary merges.
 
 Manual [lifecycle review](EVALUATION.md#one-prompt-skills-lifecycle) covered immediate acquisition, offline reuse, scope/argument forwarding, unavailable resources, adaptation preservation and partial updates. Wording coverage is not execution.
 
@@ -372,7 +378,7 @@ A maintainer-owned application was also upgraded through its existing refresh in
 
 ## Growth, Composition And Refresh
 
-[Growth](../reference/skills/yaiml-grow/SKILL.md) now derives the canonical skill home from existing routes and follows [Bootstrap's acquisition rules](../reference/BOOTSTRAP.md#resolve-and-acquire), including changed-license authorization. Four fresh CLI profiles tested these corrections and related workflows on 2026-10-17, using the same CLI/model settings as above, workspace-write restrictions, no conversation history, no descendants/retries, and ten-minute limits. Fixtures were prepared from the earlier fictional Field Notes project with current methods and a retained `context/` home; these were workflow trials, not new initialization trials.
+[Growth](../../reference/skills/yaiml-grow/SKILL.md) now derives the canonical skill home from existing routes and follows [Bootstrap's acquisition rules](../../reference/BOOTSTRAP.md#resolve-and-acquire), including changed-license authorization. Four fresh CLI profiles tested these corrections and related workflows on 2026-10-17, using the same CLI/model settings as above, workspace-write restrictions, no conversation history, no descendants/retries, and ten-minute limits. Fixtures were prepared from the earlier fictional Field Notes project with current methods and a retained `context/` home; these were workflow trials, not new initialization trials.
 
 - **Growth:** created a project skill in `context/skills/` and registered it in the catalog, preserving the brief and export specifications. The sandbox denied its native wrapper; the agent reported partial registration and preserved file-based use.
 - **Composition:** a natural audit/work/verify request read all corresponding canonical methods, completed the sole remaining original priority despite a limit of two, verified examples/links, and maintained memory without inventing work or settling open decisions.

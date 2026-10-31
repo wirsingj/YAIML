@@ -1,11 +1,11 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
 not-here: Project facts, copied skill procedures, host-specific command syntax or a runtime specification.
 durability: Durable design; revise when responsibility or lifecycle boundaries change.
-read-with: Architecture; Bootstrap; Agent Integration.
+read-with: Using YAIML; Bootstrap; Agent Integration.
 update-when: Adoption, composition, growth or update ownership changes.
 agent-guidance: Preserve the one-prompt ordinary path and distinguish design from measured behavior.
 ---
@@ -57,4 +57,4 @@ Removal is also selective: disconnect a retired method only after updating calle
 
 ## Evidence Boundary
 
-These files prescribe agent behavior. Mechanical package/link checks establish availability, while separate fresh-session trials establish whether a host actually discovers and follows the guidance. Neither establishes productivity gains or universal compatibility. [Evaluation](EVALUATION.md) and [Cold Start Review](COLD_START_REVIEW.md) own current evidence and gaps.
+These files prescribe agent behavior. Mechanical package/link checks establish availability, while separate fresh-session trials establish whether a host actually discovers and follows the guidance. Neither establishes productivity gains or universal compatibility. [Evaluation](evaluation/EVALUATION.md) and [Cold Start Review](evaluation/COLD_START_REVIEW.md) own current evidence and gaps.

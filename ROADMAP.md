@@ -1,21 +1,21 @@
-<!-- yaiml-revision: 0.43.65c0797e642cbbde -->
+<!-- yaiml-revision: 0.47.a709c1ceed90c210 -->
 # YAIML Roadmap
 
 YAIML is in an early public convention-first phase. The long-term ambition is industry-standard adoption; maturity claims should follow outside use and evidence.
 
-The immediate route is one [init prompt](../reference/prompts/init-yaiml.md) that starts reference retrieval, project context and embedded methods. Evaluate the full [skills lifecycle](SKILLS_AND_LIFECYCLE.md) from a new user’s perspective, with no prior YAIML knowledge or maintainer-local paths.
+The immediate route is one [init prompt](reference/prompts/init-yaiml.md) that starts reference retrieval, project context and embedded methods. Evaluate the full [skills lifecycle](docs/SKILLS_AND_LIFECYCLE.md) from a new user’s perspective, with no prior YAIML knowledge or maintainer-local paths.
 
 ## Now
 
 - Validate the published seed-to-resource path, fresh-session ordinary use, named and composed skills, useful growth, offline behavior and refresh with local adaptations. Keep structural checks separate from observed behavior.
 - Trial initialization, refresh, and compression in real repositories; keep YAIML’s own core memory short.
-- Trial [YAIMLACP coordination](../reference/YAIMLACP.md): verify confirmation, bounded handoffs, cancellation, and actual cost against one-agent work. Add no server or installation.
+- Trial [YAIMLACP coordination](reference/YAIMLACP.md): verify confirmation, bounded handoffs, cancellation, and actual cost against one-agent work. Add no server or installation.
 - Test portability across machines, contributors, and AI providers, including mature adopters with older discovery layouts.
-- Gather three kinds of case evidence: a maintainer-owned project, an unfamiliar public repository, and a project owned by someone else. [YTMMOCC](case-studies/YTMMOCC.md) supplies maintainer-owned inspection evidence only.
+- Gather three kinds of case evidence: a maintainer-owned project, an unfamiliar public repository, and a project owned by someone else. [YTMMOCC](docs/evaluation/case-studies/YTMMOCC.md) supplies maintainer-owned inspection evidence only.
 - Run comparable fresh-session tasks and retain failures and neutral results. Measure context cost as well as useful work.
 - Refine headers, prompt length, and supporting-document split decisions from those trials.
 - Run the [prepared sanitized demo](examples/minimal-notes/README.md#short-paste-and-go-demo) with new readers and check what a fresh session recovers.
-- Keep the [private sensitive-reporting route](../SECURITY.md) available; GitHub's read-only API confirmed it enabled on 2026-10-18. Delivery remains untested.
+- Keep the [private sensitive-reporting route](SECURITY.md) available; GitHub's read-only API confirmed it enabled on 2026-10-18. Delivery remains untested.
 
 ## Public Pilot
 
@@ -27,7 +27,7 @@ Add or refine examples and supporting templates only when actual use reveals rec
 
 ## Maturity Milestones
 
-These are evidence milestones, separate from product release numbers, discovery labels and local revision counters. [RELEASE.md](RELEASE.md) owns the current product identity; publishing 0.3.0 does not claim the public-pilot evidence milestone.
+These are evidence milestones, separate from product release numbers, discovery labels and local revision counters. [RELEASE.md](docs/development/RELEASE.md) owns the current product identity; publishing 0.3.0 does not claim the public-pilot evidence milestone.
 
 | Milestone | Evidence sought |
 | --- | --- |
@@ -46,4 +46,4 @@ This reference repository supplies no runtime services, databases, orchestration
 
 ## Human Decisions
 
-The maintainer decides release labeling, contribution governance, maturity evidence thresholds, the private reporting channel, and whether tooling becomes appropriate. Preserve the [approved license](../LICENSE.md) and earlier grants; further licensing, ownership, trademark or endorsement changes require explicit approval. Obtain professional review of custom terms before publication.
+The maintainer decides release labeling, contribution governance, maturity evidence thresholds, the private reporting channel, and whether tooling becomes appropriate. Preserve the [approved license](LICENSE.md) and earlier grants; further licensing, ownership, trademark or endorsement changes require explicit approval. Obtain professional review of custom terms before publication.

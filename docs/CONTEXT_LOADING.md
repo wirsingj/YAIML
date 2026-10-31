@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: context-loading-guide
 title: Context Loading
@@ -7,7 +7,7 @@ purpose: Define how agents should load YAIML context deliberately without readin
 belongs-here: discovery/core/task/deep loading model, bounded context principles, hydration expectations, yaiml.yml discovery guidance.
 not-here: provider-specific context window tactics, token accounting tools, complete prompt text.
 durability: durable; update when YAIML context-loading policy changes.
-read-with: SoTY; Core Document Family; Agent Integration; Maintainer Guide.
+read-with: Using YAIML; Core Document Family; Agent Integration.
 update-when: hydration workflow, document-family expectations, or supporting-document loading guidance changes.
 agent-guidance: Keep the core bounded. Load supporting and deep-reference material because the task needs it, not because it exists.
 ---

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: lifecycle-guide
 title: Pruning And Lifecycle
@@ -7,7 +7,7 @@ purpose: Explain how YAIML documents retain, compress, and forget project memory
 belongs-here: pruning rules, document lifecycles, retention differences, stale-memory guidance.
 not-here: current project priorities, command procedures, complete history, legal advice.
 durability: durable; update when retention or pruning doctrine changes.
-read-with: SoTY; Core Document Family; Ambiguity And Evidence.
+read-with: Core Document Family; Ambiguity And Evidence.
 update-when: pruning behavior, lifecycle expectations, or supporting-document retention guidance changes.
 agent-guidance: Preserve useful continuity without append-only bloat. Keep human-governed retention constraints visible.
 ---
@@ -74,7 +74,7 @@ A budget is a review threshold, not a deletion quota. Preserve human direction, 
 
 Look for competing instructions that route every observation into an inbox, append a session summary, or preserve every completed item. Resolve their authority before changing them; relocation into the Maintainer Guide does not fix an instruction that still accumulates history.
 
-A prior local review recorded both frequent-update growth and infrequent-update role drift. Those observations motivate checking the update rule itself; they do not prove that one instruction always wins or that a budget prevents recurrence. [SoTY](SoTY.md) retains the unresolved evidence questions.
+A prior local review recorded both frequent-update growth and infrequent-update role drift. Those observations motivate checking the update rule itself; they do not prove that one instruction always wins or that a budget prevents recurrence. [SoTY](../.yaiml/SoTY.md) retains the unresolved evidence questions.
 
 Replace accumulation rules with the synthesis steps above, then compress within scope. A short current priority list can belong in SoT; an ever-growing completed-task list does not. Do not open new “lessons,” “verification,” or supporting documents just to relocate a diary.
 
