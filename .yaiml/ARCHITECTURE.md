@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.47.a709c1ceed90c210"
+yaiml-revision: "0.50.741e4ad5c7f6f656"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -22,7 +22,7 @@ One pasted networked init runs bootstrap through host tools; its self-contained 
 
 This repository develops YAIML and uses it like any other project. `reference/` is the reusable product; `docs/` holds explanations, evaluation evidence and source-development material; `examples/` holds fictional projects; root `ROADMAP.md` exposes public direction. Only our current context, retained audit and local methods live in `.yaiml/`. Discovery links to authoritative project artifacts outside memory without moving or duplicating them. Headers/stamps do not determine ownership. [Repository navigation](../README.md#find-your-way-around) is product-first.
 
-Both init forms consume only reusable guidance and required notices, never our documentation, examples, policies or project memory as adopter facts. Repository maintenance and adopter behavior require separate evidence. Source-only GitHub automation advances `latest` on approved updates to stable `main`, without a GitHub Release object. Numbered tags stay immutable; feature branches are not published by that workflow. This automation is not distributed or required by adopters.
+Both init forms consume only reusable guidance and required notices, never our documentation, examples, policies or project memory as adopter facts. Repository maintenance and adopter behavior require separate evidence. Source-only GitHub automation advances `latest` on approved updates to stable `main`, without a GitHub Release object. Numbered tags stay immutable; non-main branches are not published by that workflow. This automation is not distributed or required by adopters.
 
 An adopter's `.yaiml/` remains the default home for discovery, memory and installed reusable resources; the source distribution's `reference/` location requires no adopter migration. Host instructions and public/legal entry points remain in their supported locations. Discovery paths resolve relative to their map; mature layouts are compatibility inputs, not replacement targets. [Adoption And Updates](../docs/ADOPTION_AND_UPGRADES.md) owns compatibility.
 
@@ -43,6 +43,8 @@ An adopter's `.yaiml/` remains the default home for discovery, memory and instal
 | Templates / optional prompts | Dormant writing aids / alternative entry points to owning skills |
 
 Facts have one detailed memory owner; methods read current facts rather than embedding copies. Host entries are thin routes, not competing implementations. This repository uses `.agents/skills/` entries pointing to `reference/skills/`; other hosts need their supported mechanisms. [Core Document Family](../docs/CORE_DOCUMENT_FAMILY.md) owns role guidance.
+
+The optional diagram method produces derived, editable deliverables with source/evidence notes, not another memory owner. Its portable format notes belong in `reference/`; completed diagrams stay outside the acquisition set. Rendering uses available tools, with no required installation or hosted service.
 
 ## Lifecycle
 

@@ -1,0 +1,72 @@
+<mxfile>
+  <diagram id="minimal-notes-overview" name="Intended architecture">
+    <mxGraphModel grid="0" page="1" pageScale="1" pageWidth="1130" pageHeight="760" background="#FFFFFF">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Minimal Notes / Intended architecture" style="text;html=0;align=left;verticalAlign=middle;fontFamily=Helvetica;fontSize=28;fontStyle=1;fontColor=#202124;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="1050" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope" value="A local-only notes app, described by project memory.&#xa;Components below are declared responsibilities; connections remain inferred." style="text;html=0;align=left;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#444444;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="1050" height="60" as="geometry"/>
+        </mxCell>
+        <object id="no-implementation" label="VERIFIED IN THIS EXAMPLE: no application source or runtime behavior is implemented." evidence="Verified" source="examples/minimal-notes/SOT.md#current-state; examples/minimal-notes/ARCHITECTURE.md#system-model" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4">
+          <mxCell style="rounded=0;html=0;whiteSpace=wrap;align=left;spacingLeft=14;fontFamily=Helvetica;fontSize=16;fillColor=#EFF6EE;strokeColor=#53734F;fontColor=#223B22;" vertex="1" parent="1">
+            <mxGeometry x="40" y="160" width="1050" height="50" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="ui" label="UI&#xa;&#xa;Declared: note editing&#xa;and search interactions" evidence="Declared" source="examples/minimal-notes/ARCHITECTURE.md#boundaries" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4">
+          <mxCell style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fillColor=#F3F3F3;strokeColor=#333333;fontColor=#202124;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="40" y="260" width="250" height="130" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="search" label="Search&#xa;&#xa;Declared: read note text;&#xa;return matching IDs" evidence="Declared" source="examples/minimal-notes/ARCHITECTURE.md#boundaries" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4">
+          <mxCell style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fillColor=#F3F3F3;strokeColor=#333333;fontColor=#202124;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="440" y="260" width="250" height="130" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="storage" label="Storage&#xa;&#xa;Declared: local&#xa;note persistence" evidence="Declared" source="examples/minimal-notes/ARCHITECTURE.md#boundaries" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4">
+          <mxCell style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Helvetica;fontSize=17;fillColor=#F3F3F3;strokeColor=#333333;fontColor=#202124;strokeWidth=2;" vertex="1" parent="1">
+            <mxGeometry x="840" y="260" width="250" height="130" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="ui-search" label="Inferred:&#xa;request search" evidence="Inferred" source="examples/minimal-notes/ARCHITECTURE.md#boundaries" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4" note="Responsibilities imply collaboration; these source documents do not specify a direct interface.">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;html=0;dashed=1;dashPattern=6 4;strokeColor=#555555;fontColor=#333333;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="ui" target="search">
+            <mxGeometry y="-25" relative="1" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="search-storage" label="Inferred:&#xa;request note text" evidence="Inferred" source="examples/minimal-notes/ARCHITECTURE.md#boundaries" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4" note="The source describes reading note text, not a storage API; this connection remains a hypothesis.">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;html=0;dashed=1;dashPattern=6 4;strokeColor=#555555;fontColor=#333333;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontSize=13;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="search" target="storage">
+            <mxGeometry y="-25" relative="1" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="ui-storage" label="Inferred: persist edits" evidence="Inferred" source="examples/minimal-notes/SOT.md#current-state; examples/minimal-notes/ARCHITECTURE.md#boundaries" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4" note="Editing and persistence are declared responsibilities; their interface is not specified.">
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;html=0;dashed=1;dashPattern=6 4;strokeColor=#555555;fontColor=#333333;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;fontFamily=Helvetica;fontSize=13;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="ui" target="storage">
+            <mxGeometry y="-16" relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="165" y="450"/>
+                <mxPoint x="965" y="450"/>
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <mxCell id="legend" value="Solid boxes = declared responsibilities. Dashed arrows = inferred collaboration, not defined APIs." style="text;html=0;align=left;whiteSpace=wrap;fontFamily=Helvetica;fontSize=15;fontColor=#444444;" vertex="1" parent="1">
+          <mxGeometry x="40" y="485" width="1050" height="45" as="geometry"/>
+        </mxCell>
+        <object id="constraints" label="DECLARED INVARIANTS&#xa;Local-only. No accounts, sync, cloud storage or AI features." evidence="Declared" source="examples/minimal-notes/ARCHITECTURE.md#invariants" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4">
+          <mxCell style="text;html=0;align=left;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#202124;" vertex="1" parent="1">
+            <mxGeometry x="40" y="550" width="490" height="75" as="geometry"/>
+          </mxCell>
+        </object>
+        <object id="unknowns" label="UNKNOWN FROM THESE SOURCES&#xa;Interfaces and the storage format are not specified." evidence="Unknown" source="examples/minimal-notes/SOT.md; examples/minimal-notes/ARCHITECTURE.md" sourceRevision="git:7b4bee84fb4bb1dd769b0cc4144717ea3919afc4">
+          <mxCell style="text;html=0;align=left;whiteSpace=wrap;fontFamily=Helvetica;fontSize=16;fontColor=#734820;" vertex="1" parent="1">
+            <mxGeometry x="600" y="550" width="490" height="75" as="geometry"/>
+          </mxCell>
+        </object>
+        <mxCell id="provenance" value="Sources: examples/minimal-notes/SOT.md; examples/minimal-notes/ARCHITECTURE.md&#xa;Git 7b4bee8 (unchanged source files). Paths are repository-relative.&#xa;View created 2026-10-31; not automatically synchronized. Original documents remain authoritative.&#xa;Shape/connector data retains detailed provenance." style="text;html=0;align=left;whiteSpace=wrap;fontFamily=Helvetica;fontSize=13;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="40" y="660" width="1050" height="70" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

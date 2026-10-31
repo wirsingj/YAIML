@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.47.a709c1ceed90c210"
+yaiml-revision: "0.54.58ecbd56ad7274ae"
 yaiml: 0.2
 kind: agent-integration-guide
 title: Agent Integration
@@ -14,7 +14,7 @@ agent-guidance: Keep this provider-neutral. Do not imply official adapters or du
 
 # Agent Integration
 
-Host instructions connect sessions to project knowledge. [Bootstrap — Connect Future Sessions](../reference/BOOTSTRAP.md#connect-future-sessions) owns route inspection, supported native entries, argument forwarding, activation checks and the copyable pointer. Reuse that procedure instead of maintaining a competing integration checklist here.
+Repository instruction files tell later sessions which memory files to read and maintain; they do not transfer one chat's internal state to another. [Bootstrap — Connect Future Sessions](../reference/BOOTSTRAP.md#connect-future-sessions) owns route inspection, supported native entries, argument forwarding, activation checks and the copyable pointer.
 
 ## Keeping Responsibilities Clear
 
