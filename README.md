@@ -13,7 +13,7 @@ Use it for software, research, writing, event planning or team procedures. You a
 
 | Prompt | What your agent does |
 | --- | --- |
-| [Full setup: skill-based, networked](reference/prompts/init-yaiml.md) | Starts with a short prompt; the agent follows its instructions to retrieve the full guidance, templates and reusable skills. Requires access to the approved source during setup. |
+| [Full setup: skill-based, networked](reference/prompts/init-yaiml.md) | Starts with a short prompt; the agent follows its instructions to retrieve the full guidance, templates and reusable skills. Requires access to the approved source (this repo) during setup. |
 | [Self-contained setup: flat, offline](reference/prompts/init-yaiml-offline.md) | Uses instructions and templates embedded in one document to create project memory and working rules. Makes no network calls and does not include the reusable skill package. |
 
 The self-contained option suits restricted networks and organizations that need to review the complete prompt before use. Obtain it through an approved channel before entering a restricted environment. A later, separately requested full setup can add the skill package.
