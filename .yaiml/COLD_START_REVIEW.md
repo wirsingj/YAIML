@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.45.7ded1679f14c93b4"
+yaiml-revision: "0.46.42a0394f3a2abb59"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -16,11 +16,11 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 ## 0.5.2 Publication Review
 
-On 2026-10-31, the maintainer authorized committing, pushing and merging the complete local work. Main is the common ancestor at `db1dcd120ede0b59ebef16ed82f77ee7ea8cabaa`; the feature branch contains thirteen additional commits and the reference separation, latest-tag workflow and README edits. No independent main changes require reconciliation. This task owns integration and consolidates the pending README review record.
+On 2026-10-31, the maintainer authorized the full commit, push and merge. [PR #2](https://github.com/wirsingj/YAIML/pull/2) merged the fourteen feature commits, including `5e29c21cd80512168513c571a8177fe53af17691`, at `91c8307120215a499c4e7fd0801c0b5db70f98f5`. Main was an unchanged ancestor at `db1dcd120ede0b59ebef16ed82f77ee7ea8cabaa`; no independent main changes required reconciliation. The pending README review was consolidated under this task’s integration ownership.
 
 The README now leads with project creation, a document standard and included skills. It links directly to full/networked and flat/offline prompt files; the offline option supplies core memory and rules, not the skill package. The obsolete embedded-README parity check becomes direct-link validation while standalone/canonical init parity remains required. License and earlier audit records remain unchanged.
 
-The combined candidate passed isolated closure for 37 reference resources and both 23-resource home layouts, standalone/canonical init parity, direct README links, offline placeholders/notices, twelve native routes, discovery and active links/anchors. All ten mocked workflow cases passed. Public workflow execution and exact-source retrieval must be checked after merge. These checks do not establish fresh-session setup, repair, other-host support or independent newcomer usability; those acceptance gaps remain.
+The combined candidate passed isolated closure for 37 reference resources and both 23-resource home layouts, standalone/canonical init parity, direct README links, offline placeholders/notices, twelve native routes, discovery and active links/anchors. All ten mocked workflow cases passed. The [live workflow](https://github.com/wirsingj/YAIML/actions/runs/41175440712) succeeded; exact `refs/tags/latest` resolved to merge commit `91c8307120215a499c4e7fd0801c0b5db70f98f5`. Public raw retrieval of README, license and all 37 reference resources matched their Git blob identities. Both prompt entry paths were available at that exact source. This establishes live publication and resource integrity, not fresh-session setup, repair, other-host support or newcomer usability; those acceptance gaps remain.
 
 ## Structural Distribution Check
 
@@ -30,7 +30,7 @@ The broader check found concrete omissions in the initial containment pass: READ
 
 Parser-based checks passed for all 37 reference resources in isolation, the 23-resource base in default/custom homes, twelve native route metadata pairs, README/prompt/canonical parity, offline revision placeholders and exact embedded notice, source discovery and active Markdown links/anchors. These are artifact checks, not fresh-agent adoption or repair. Read-only remote inspection found a v0.5.1 branch but no v0.5.1 tag; its local tag points elsewhere. No remote latest tag was found.
 
-The maintainer selected `latest` as the moving public-ready tag, with approved main updates as the publication boundary; numbered tags stay fixed and no GitHub Release is required. Init/refresh resolve the exact tag once to a commit. The source-only workflow passed YAML/trigger/permission checks and ten mocked API cases: create, advance using live main despite an older event, unchanged no-op, annotated-tag replacement, read denial, invalid main, unexpected tag, post-write mismatch, write denial and creation race. Failure cases stopped without unrelated writes or bypasses. No live API writes ran. GitHub execution, ruleset compatibility, public retrieval and fresh-session acceptance remain pending.
+The maintainer selected `latest` as the moving public-ready tag, with approved main updates as the publication boundary; numbered tags stay fixed and no GitHub Release is required. Init/refresh resolve the exact tag once to a commit. The source-only workflow passed YAML/trigger/permission checks and ten mocked API cases: create, advance using live main despite an older event, unchanged no-op, annotated-tag replacement, read denial, invalid main, unexpected tag, post-write mismatch, write denial and creation race. Failure cases stopped without unrelated writes or bypasses. That prepublication check made no live API writes. The later publication review above establishes GitHub execution and public retrieval under current repository rules; fresh-session acceptance remains pending.
 
 ## Adopter Distribution Boundary
 

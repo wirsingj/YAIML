@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.45.7ded1679f14c93b4"
+yaiml-revision: "0.46.42a0394f3a2abb59"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -35,7 +35,7 @@ Stabilization direction: no new features; check regressions and reading/maintena
 
 ## Current State And Evidence
 
-This project develops and uses experimental [0.5.2](RELEASE.md), separating reusable `reference/` material from source memory and resolving exact public tags. Target releases remain independent of YAIML versions/stamps; 0.4.0 remains the earlier published comparison baseline. On 2026-10-31 the maintainer authorized the complete local commit, push and merge into main. All 37 reference resources and both init forms have artifact checks; actual publication verification is pending this merge. Fresh-session acceptance remains incomplete.
+This project develops and uses published experimental [0.5.2](RELEASE.md), separating reusable `reference/` material from source memory and resolving exact public tags. Target releases remain independent of YAIML versions/stamps; 0.4.0 remains the earlier published comparison baseline. The authorized complete commit and merge finished on 2026-10-31. At merge `91c8307120215a499c4e7fd0801c0b5db70f98f5`, the live latest-tag workflow succeeded and all 39 public README/license/reference files matched Git blobs. Fresh-session acceptance of this layout remains incomplete.
 
 [Current review](COLD_START_REVIEW.md) separates published/draft trials and retains corrected failures. One comparison pair found no advantage. [Simulated readers](COLD_START_REVIEW.md#simulated-newcomer-reading) informed README's starting point, recall check and saved-context example; human usability remains unverified. [Upgrade guidance](ADOPTION_AND_UPGRADES.md#existing-yaiml-update) explains repair.
 
@@ -54,8 +54,8 @@ This project develops and uses experimental [0.5.2](RELEASE.md), separating reus
 
 ## Immediate Priorities
 
-1. Finish the authorized main merge and verify the live `latest` workflow and public retrieval at one exact commit. Then verify both 0.5.2 init forms and existing/adapted-copy repair in fresh sessions. Local artifact/workflow checks do not establish fresh-agent behavior.
-2. [StateMesh and document trials](EVALUATION.md#statemesh-against-actual-local-main-2026-10-24) cover manual upgrade/writer checks, one live synthetic code candidate and a supplied document merge with rejection controls. Actual-branch testing found both local StateMesh versions blocked by synthetic branch/file contracts; autonomous document merging and repeated reliability remain unverified. Run the [bounded additional-host trial](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) for both init variants, ordinary maintenance and fresh recall. Claude Code/Copilot were unavailable here; manual offline file checks establish no new host reliability. Public pinned retrieval is part of the authorized publication check. Retain broader source-selection, interruption/revert and longer-sequence evidence gaps.
+1. Verify both published 0.5.2 init forms and existing/adapted-copy repair in fresh sessions. Artifact checks and verified public retrieval do not establish fresh-agent setup or recall.
+2. [StateMesh and document trials](EVALUATION.md#statemesh-against-actual-local-main-2026-10-24) cover manual upgrade/writer checks, one live synthetic code candidate and a supplied document merge with rejection controls. Actual-branch testing found both local StateMesh versions blocked by synthetic branch/file contracts; autonomous document merging and repeated reliability remain unverified. Run the [bounded additional-host trial](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) for both init variants, ordinary maintenance and fresh recall. Claude Code/Copilot were unavailable here; manual offline file checks establish no new host reliability. Public pinned retrieval passed for 0.5.2; it adds no broader-host behavioral evidence. Retain broader source-selection, interruption/revert and longer-sequence evidence gaps.
 3. Repair ShepAIrd's reader/writer revision gaps and decide historical-disclosure handling before broader rollout; distinguish current-file, history and deployment evidence.
 4. Repeat the [comparison](EVALUATION.md#ready-to-run-comparison) with equivalent ordinary docs and setup cost; seek [new-reader](examples/minimal-notes/README.md#short-paste-and-go-demo) and independent owner feedback.
 5. Measure recurring maintenance and under-pruning in an authorized adopter; change guidance from observed failures.

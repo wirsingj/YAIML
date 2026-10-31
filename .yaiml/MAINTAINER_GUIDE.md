@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.45.7ded1679f14c93b4"
+yaiml-revision: "0.46.42a0394f3a2abb59"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -17,7 +17,7 @@ agent-guidance: Verify command claims when practical. Surface conflicts. Preserv
 
 Include any [pending corrections](changes.md).
 
-Documentation repository; no application build/test suite. Current [distribution review](COLD_START_REVIEW.md#structural-distribution-check) checks reference closure, both init forms and routes, not fresh-agent behavior. Earlier [0.5.1 checks](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) retain their own scope. Host-delivered instructions/skill metadata and actual method reads do not validate every invocation or another host.
+Documentation repository; no application build/test suite. Current [publication review](COLD_START_REVIEW.md#052-publication-review) covers reference closure, both init forms/routes, live latest-tag execution and exact-source public retrieval; fresh-agent behavior remains unverified. Earlier [0.5.1 checks](EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) retain their own scope. Host-delivered instructions/skill metadata and actual method reads do not validate every invocation or another host.
 
 ## Review Procedure
 
