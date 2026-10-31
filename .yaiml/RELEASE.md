@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.45.7ded1679f14c93b4"
+yaiml-revision: "0.46.42a0394f3a2abb59"
 role: release-identity
 title: YAIML Release
 purpose: Identify YAIML's product release and source-maintainer publication readiness.
@@ -28,4 +28,4 @@ Feature work belongs on feature branches; optional release branches can collect 
 
 The workflow serializes its runs, reads live main rather than an older event commit, and creates or updates only the latest tag with job-scoped contents-write permission. It uses no checkout or third-party action. Repository rules or token restrictions can block it; report failure instead of bypassing protections. This is source maintenance, never an adopter dependency or copied release procedure.
 
-On 2026-10-31, the maintainer authorized committing, pushing and merging the complete local 0.5.2 work into main. Public workflow execution and exact-source retrieval must be checked after that merge. Fresh-session setup/upgrade acceptance for the reference layout remains unverified; publication does not establish it. Earlier remote inspection found no latest tag and a v0.5.1 branch without a matching remote tag. Numbered local tags are not publication evidence.
+On 2026-10-31, authorized [PR #2](https://github.com/wirsingj/YAIML/pull/2) merged the complete local 0.5.2 work at `91c8307120215a499c4e7fd0801c0b5db70f98f5`. The [live workflow](https://github.com/wirsingj/YAIML/actions/runs/41175440712) succeeded and `refs/tags/latest` resolved to that commit. All 39 public README/license/reference files were retrieved at that exact source and matched their Git blob identities, including both init prompts. This verifies publication and resource availability, not fresh-session setup/upgrade acceptance. Those behavioral checks and broader-host evidence remain pending.
