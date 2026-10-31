@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: case-study
 title: YTMMOCC Case Study
@@ -53,7 +53,7 @@ documents:
 
 The map points to the three core documents and `.yaiml/YAIML.md`. Its paths are inspectable; successful discovery by other consumers has not been tested here.
 
-Lesson for YAIML: apply the [discovery migration policy](../ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility), preserving this map during routine refreshes.
+Lesson for YAIML: apply the [discovery migration policy](../../ADOPTION_AND_UPGRADES.md#discovery-layout-compatibility), preserving this map during routine refreshes.
 
 ## Preserved Knowledge Traced To Evidence
 
@@ -110,7 +110,7 @@ Reported in a 2026-09-08 portfolio review: a 6,972-word state document versus 1,
 
 The report raises a useful failure mode: constraints may survive while role boundaries and pruning deteriorate. Preserved knowledge does not establish that memory stays concise or well organized. Reinspect the same revision before comparing that report with the preservation evidence above.
 
-The earlier review also reported 18 of 226 commits touching memory and proposed update cadence as the cause. That causal explanation is inferred; commit counts alone do not establish whether agents read or maintained the documents. Current organization, any subsequent repairs, and the cause of reported drift remain unverified here. [SoTY](../SoTY.md) tracks reconciliation of this evidence.
+The earlier review also reported 18 of 226 commits touching memory and proposed update cadence as the cause. That causal explanation is inferred; commit counts alone do not establish whether agents read or maintained the documents. Current organization, any subsequent repairs, and the cause of reported drift remain unverified here. [SoTY](../../../.yaiml/SoTY.md) tracks reconciliation of this evidence.
 
 ## Follow-Up Evaluation Path
 

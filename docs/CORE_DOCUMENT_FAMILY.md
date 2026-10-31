@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: core-family-guide
 title: Core Document Family
@@ -7,7 +7,7 @@ purpose: Define the core YAIML document roles and how self-unfolded supporting d
 belongs-here: SoT, Architecture, Maintainer Guide and changes responsibilities, supporting document split criteria, fact-placement guidance.
 not-here: current project state, command procedures, complete examples, implementation tooling.
 durability: durable; update when document responsibilities or split criteria change.
-read-with: SoTY; Stable Headers; Pruning And Lifecycle.
+read-with: Concepts; Stable Headers; Pruning And Lifecycle.
 update-when: core roles, self-unfolding guidance, or document ownership boundaries change.
 agent-guidance: Keep roles semantically firm and syntactically flexible. Avoid creating mandatory document inventories.
 ---
@@ -17,6 +17,8 @@ agent-guidance: Keep roles semantically firm and syntactically flexible. Avoid c
 YAIML starts with four distinct core roles, normally in four Markdown documents: three current-memory owners and a retained change record. Reuse existing files that already serve those roles; local filenames and headings may vary.
 
 Skills are reusable methods for working with this memory family. They read current project facts rather than owning competing copies. Shared operating rules, dormant templates and optional coordination guidance support those methods; they are not additional project-state documents. Add a specialist fact owner or project-specific skill only when recurring knowledge or work gives it a concrete purpose.
+
+Project memory describes the work; it is not a replacement home for the work itself. Product documentation, examples, specifications and other deliverables stay in their normal project locations. Discovery can link to those authoritative artifacts without moving or copying them into `.yaiml/`. A Markdown header or revision stamp does not determine which side of that boundary a document belongs on.
 
 New memory and reusable guidance use the established memory home, otherwise project-root `.yaiml/`; later specialist documents follow it. Preserve existing locations unless [re-init relocation](ADOPTION_AND_UPGRADES.md#default-placement) is confirmed; keep discovery/host instruction routes. A default directory or filename grants no overwrite or relocation permission. Inspect collisions, choose a nonconflicting path and record it in discovery. Set role-appropriate budgets for new memory; existing equivalent headers remain valid.
 

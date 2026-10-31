@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.45.7ded1679f14c93b4"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: adoption-update-guide
 title: YAIML Adoption And Updates
@@ -7,7 +7,7 @@ purpose: Define evidence-based first-time adoption, existing YAIML updates, and 
 belongs-here: adoption workflow, update workflow, discovery-protocol guidance, practical prompts.
 not-here: project-specific state, command procedures, implementation tooling, service design.
 durability: durable; update when YAIML adoption, update, or version-awareness guidance changes.
-read-with: SoTY; YAIML Architecture; YAIML Maintainer Guide; Core Document Family.
+read-with: Bootstrap; Core Document Family; Agent Integration.
 update-when: discovery protocol, adoption expectations, or update rules change.
 agent-guidance: Preserve repository-specific truth. Do not replace mature documents with generic templates. Treat YAIML as the canonical name.
 ---

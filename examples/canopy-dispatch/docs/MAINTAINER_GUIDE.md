@@ -52,7 +52,7 @@ npm run build
 
 Run these after meaningful changes:
 
-- Compare `.yaiml/SoTD.md` with changed product behavior and remove resolved active risks.
+- Compare `docs/SoTD.md` with changed product behavior and remove resolved active risks.
 - Check that public output still flows through the redaction boundary.
 - Review notification copy for language that confuses sent, delivered, read, and accepted.
 - Test responder screens with long incident titles, long street names, and offline banners.
@@ -60,9 +60,9 @@ Run these after meaningful changes:
 
 ## Important Files
 
-- `.yaiml/SoTD.md`: current state, risks, priorities, and known divergence.
-- `.yaiml/ARCHITECTURE.md`: durable system shape and privacy boundaries.
-- `.yaiml/RELEASE_AND_TRUST.md`: release gates, privacy posture, and trust checks.
+- `docs/SoTD.md`: current state, risks, priorities, and known divergence.
+- `docs/ARCHITECTURE.md`: durable system shape and privacy boundaries.
+- `docs/RELEASE_AND_TRUST.md`: release gates, privacy posture, and trust checks.
 - `src/incident/`: fictional incident lifecycle and assignment logic.
 - `src/redaction/`: fictional public-output boundary.
 - `src/notifications/`: fictional delivery adapters and failure recording.
@@ -103,7 +103,7 @@ Begin here:
 1. Disable public status publication.
 2. Find the rendering path that bypassed redaction.
 3. Add a redaction test reproducing the leak.
-4. Update `.yaiml/SoTD.md` and `.yaiml/RELEASE_AND_TRUST.md` with the incident and follow-up risk.
+4. Update `docs/SoTD.md` and `docs/RELEASE_AND_TRUST.md` with the incident and follow-up risk.
 
 ### Notification Provider Fails During A Storm
 

@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.46.42a0394f3a2abb59"
+yaiml-revision: "0.47.a709c1ceed90c210"
 role: release-identity
 title: YAIML Release
 purpose: Identify YAIML's product release and source-maintainer publication readiness.
@@ -24,7 +24,7 @@ The 1.0 claim remains pending: stable core and revision expectations, checked le
 
 ## Publication Boundary
 
-Feature work belongs on feature branches; optional release branches can collect reviewed changes. `main` is stable development. Under the maintainer's chosen workflow, merging to main is the public-ready decision: [.github/workflows/latest.yml](../.github/workflows/latest.yml) advances `refs/tags/latest` on main updates. No GitHub Release object is required. Only `latest` moves; numbered tags remain fixed.
+Feature work belongs on feature branches; optional release branches can collect reviewed changes. `main` is stable development. Under the maintainer's chosen workflow, merging to main is the public-ready decision: [.github/workflows/latest.yml](../../.github/workflows/latest.yml) advances `refs/tags/latest` on main updates. No GitHub Release object is required. Only `latest` moves; numbered tags remain fixed.
 
 The workflow serializes its runs, reads live main rather than an older event commit, and creates or updates only the latest tag with job-scoped contents-write permission. It uses no checkout or third-party action. Repository rules or token restrictions can block it; report failure instead of bypassing protections. This is source maintenance, never an adopter dependency or copied release procedure.
 

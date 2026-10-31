@@ -1,11 +1,11 @@
-<!-- yaiml-revision: 0.43.65c0797e642cbbde -->
+<!-- yaiml-revision: 0.47.a709c1ceed90c210 -->
 # Contributing to YAIML
 
 YAIML is an early public context and project management convention: one prompt establishes project memory and reusable skills, ordinary work maintains that context, and optional named workflows provide more control.
 
 Contributions should make the convention clearer, more useful, easier to apply, or harder for agents to misuse.
 
-This repository both develops YAIML and uses it. `reference/` contains only reusable guides, prompts, skills and templates; `.yaiml/` holds our own memory, roadmap, reviews and release plans. Consumer flows use the former and never depend on the latter. Required license notices remain included. A shared-method change affects both audiences; our backlog does not become an adopter default. [Architecture](.yaiml/ARCHITECTURE.md) owns that boundary; [Bootstrap](reference/BOOTSTRAP.md#resolve-and-acquire) identifies what adopters receive.
+This repository both develops YAIML and uses it. [reference/](reference/) contains the reusable product; [docs/](docs/README.md) explains it and records evaluation evidence; [examples/](examples/README.md) illustrates it. The [roadmap](ROADMAP.md) is public project direction. Only our working context, change records and project-local methods belong in `.yaiml/`. An agent-readable header does not make a product document project memory. [Architecture](.yaiml/ARCHITECTURE.md) owns that boundary; [Bootstrap](reference/BOOTSTRAP.md#resolve-and-acquire) identifies the adoption set. Our policies, release process and completed examples do not become adopter defaults.
 
 The value of YAIML is the convention for preserving project understanding, not the volume of documents around it. Favor refinement over expansion.
 
@@ -48,7 +48,7 @@ Before changing YAIML, ask:
 
 ## Feedback And Adoption Reports
 
-Open a GitHub issue or pull request with a concrete unclear passage, contradiction, or proposed correction. For adoption feedback, include the YAIML reference revision, repository context you may share, agent environment, task, observed result, and what required correction. Use [Evaluation](.yaiml/EVALUATION.md) for comparisons; small failure reports are welcome too.
+Open a GitHub issue or pull request with a concrete unclear passage, contradiction, or proposed correction. For adoption feedback, include the YAIML reference revision, repository context you may share, agent environment, task, observed result, and what required correction. Use [Evaluation](docs/evaluation/EVALUATION.md) for comparisons; small failure reports are welcome too.
 
 Use the private-contact guidance in [SECURITY.md](SECURITY.md) for sensitive reports. Do not publish private project memory or transcripts to make a report reproducible.
 

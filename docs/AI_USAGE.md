@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.1.01b3573c87d5279e"
+yaiml-revision: "0.47.a709c1ceed90c210"
 yaiml: 0.2
 kind: ai-usage-note
 title: AI Usage
