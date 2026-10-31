@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.55.e4878e79e2960300"
+yaiml-revision: "0.56.7665a059b603a2d9"
 role: release-identity
 title: YAIML Release
 purpose: Identify YAIML's product release and source-maintainer publication readiness.
@@ -11,7 +11,7 @@ agent-guidance: Source-only planning; never retrieved or installed by consumer i
 
 This document belongs to the YAIML source project. Adopters record only applied YAIML release/status and source revision in their own Maintainer Guide; their release plans remain project-owned.
 
-Product release: **0.5.2**. Status: **experimental**. Previous published baseline: **0.4.0**. Revision major: **0**. Discovery layout remains **0.2.0**.
+Product release: **0.6.0**. Status: **experimental**. Previous published guidance: **0.5.2**. Revision major: **0**. Discovery layout remains **0.2.0**.
 
 The 0.5.2 baseline separated reusable `reference/` material from this project's `.yaiml/` memory. Both init forms exclude completed source artifacts. The current package provides one retained-record workflow: consolidate during normal work with established sole ownership, defer during overlap, and prepare changes for review through the existing Git method. It supplies twelve methods plus one compatibility alias and the change-record guide. No adopter mode switch, hook or runtime is introduced. Default acquisition targets `refs/tags/latest`; local review preparation does not establish publication. A version label alone proves no reliability.
 
@@ -24,10 +24,10 @@ The 1.0 claim remains pending: stable core and revision expectations, checked le
 
 ## Publication Boundary
 
-This revision batch adds `yaiml-diagram` and portable draw.io notes. Public explanations and both init openings clarify file-based memory and agent responsibilities. Offline setup now explicitly connects existing supported instruction routes and checks real setup decisions without inventing a demonstration decision or launching another agent. Full setup follows the acquired catalog; self-contained setup still installs no skill package. The original 0.5.2 publication evidence below does not validate these later changes; the exact source commit distinguishes the applied guidance. Numeric release labels remain separate maintainer decisions.
+The maintainer selected 0.6.0 for this revision batch: `yaiml-diagram` and portable draw.io notes, clearer file-based memory explanations, and tightened offline setup. Offline init connects existing supported instruction routes and checks real setup decisions without inventing a demonstration decision or launching another agent. Full setup follows the acquired catalog; self-contained setup still installs no skill package. Record semantics, local revision major and discovery layout are unchanged; this label does not require a target-project version bump or memory migration.
 
 The maintainer's 1:1 workflow batches work on revision-cycle branches rather than one branch per feature. Roughly two weeks is a working rhythm, not a deadline. Test and review the batch before merging; choose any product-version bump deliberately, not from the branch name or elapsed time. `main` is stable development. Merging to main is the public-ready decision: [.github/workflows/latest.yml](../../.github/workflows/latest.yml) advances `refs/tags/latest` on main updates. No GitHub Release object is required. Only `latest` moves; numbered tags remain fixed.
 
 The workflow serializes its runs, reads live main rather than an older event commit, and creates or updates only the latest tag with job-scoped contents-write permission. It uses no checkout or third-party action. Repository rules or token restrictions can block it; report failure instead of bypassing protections. This is source maintenance, never an adopter dependency or copied release procedure.
 
-On 2026-10-31, authorized [PR #2](https://github.com/wirsingj/YAIML/pull/2) merged the complete local 0.5.2 work at `91c8307120215a499c4e7fd0801c0b5db70f98f5`. The [live workflow](https://github.com/wirsingj/YAIML/actions/runs/41175440712) succeeded and `refs/tags/latest` resolved to that commit. All 39 public README/license/reference files were retrieved at that exact source and matched their Git blob identities, including both init prompts. This verifies publication and resource availability, not fresh-session setup/upgrade acceptance. Those behavioral checks and broader-host evidence remain pending.
+On 2026-10-31, [PR #5](https://github.com/wirsingj/YAIML/pull/5) merged this batch at `02735018d0248cede9437bf86e236d1a72553592` before the numeric-label approval arrived. The [latest workflow](https://github.com/wirsingj/YAIML/actions/runs/41201044666) succeeded; all 41 public README/license/reference files matched their Git blobs at that commit. The 0.6.0 label is a follow-up to that verified publication, not evidence of new agent behavior. [Review evidence](../evaluation/COLD_START_REVIEW.md#revision-batch-audit) retains the tested scope and earlier baselines. Fresh-session setup/upgrade acceptance and broader-host evidence remain pending.

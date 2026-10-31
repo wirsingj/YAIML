@@ -1,6 +1,6 @@
 ---
-yaiml-revision: "0.45.7ded1679f14c93b4"
-product-release: "0.5.2"
+yaiml-revision: "0.56.7665a059b603a2d9"
+product-release: "0.6.0"
 release-status: experimental
 role: bootstrap-guide
 title: YAIML Bootstrap

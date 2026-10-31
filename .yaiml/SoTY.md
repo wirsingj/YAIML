@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.55.e4878e79e2960300"
+yaiml-revision: "0.56.7665a059b603a2d9"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -37,7 +37,7 @@ Stabilization remains the default; the maintainer approved optional diagram outp
 
 The optional [diagram method](../reference/skills/yaiml-diagram/SKILL.md) adds editable draw.io views, portable notes and a native route. [Checks](../docs/evaluation/COLD_START_REVIEW.md#diagram-skill-review) cover package closure, rendering, valid relative geometry and a controlled update fixture; fresh-session behavior remains unverified.
 
-Published experimental [0.5.2](../docs/development/RELEASE.md) separates reusable material from source memory; target release versions remain independent. [Publication evidence](../docs/evaluation/COLD_START_REVIEW.md#052-publication-review) records successful latest-tag execution and exact-source retrieval at merge `91c8307` on 2026-10-31. It does not establish fresh-session acceptance of this layout. 0.4.0 remains the earlier published comparison baseline.
+The maintainer approved experimental [0.6.0](../docs/development/RELEASE.md) for the diagram/clarity batch after its merge. Bootstrap and offline provenance use that label; record semantics, discovery and local revision major are unchanged. [Publication evidence](../docs/evaluation/COLD_START_REVIEW.md#revision-batch-audit) verifies the pre-label batch at `0273501`, not fresh-session acceptance. The earlier 0.4.0 comparison remains separately scoped; target releases stay independent.
 
 Product-first navigation was verified in `main` at `7b4bee8`. Keep the public tone approachable, professional and prompt-first. Supporting project context still belongs in memory when useful; no fixed file limit is implied. The [pre-merge audit](../docs/evaluation/COLD_START_REVIEW.md#revision-batch-audit) tightened offline route coverage and decision checks; its artifact results do not establish publication or fresh-agent acceptance.
 

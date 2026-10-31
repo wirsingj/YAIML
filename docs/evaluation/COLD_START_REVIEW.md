@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.55.e4878e79e2960300"
+yaiml-revision: "0.56.7665a059b603a2d9"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -19,6 +19,8 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 The 2026-10-31 pre-merge review at `0.55.e4878e79e2960300` found two offline-prompt ambiguities: only the active host was explicitly connected, and a requested demonstration decision could introduce invented memory. The prompt now connects applicable existing routes without duplicate sections, unused-tool files or guessed support, and checks real setup decisions without launching another agent. These are instruction-level risk corrections, not observed adopter failures.
 
 Package/link/discovery checks, offline template and exact-notice checks, standalone/canonical seed parity, diagram fixtures and ten mocked latest-workflow cases passed. Release counts and review-time observations were reconciled; old publication evidence remains attributed to its source. The target main was an unchanged ancestor at `7b4bee8`; no independent main changes needed semantic reconciliation. Fresh-agent execution of these changes, independent adoption and cross-host reliability remain unverified. This pre-merge review does not itself establish publication.
+
+Subsequently, [PR #5](https://github.com/wirsingj/YAIML/pull/5) merged at `02735018d0248cede9437bf86e236d1a72553592`. The [latest workflow](https://github.com/wirsingj/YAIML/actions/runs/41201044666) succeeded; live main/latest matched that commit and all 41 public README/license/reference files matched their Git blobs. The merged tree equaled the reviewed head. The maintainer then approved the 0.6.0 label; this publication evidence belongs to the pre-label source, not the later metadata change or new behavioral trials.
 
 ## Repository Navigation
 

@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.55.e4878e79e2960300 -->
+<!-- yaiml-revision: 0.56.7665a059b603a2d9 -->
 # Init YAIML Offline
 
 Paste this entire document into a project-aware agent to set up memory in local project files. All required guidance and the license are embedded below. "Offline" means no setup retrieval; it does not turn a hosted AI into a local model.
@@ -100,7 +100,7 @@ Follow [local operating rules](YAIML_GUIDE.md) during ordinary work.
 <Actual supported procedures and checks; distinguish listed from run.>
 ## Applied YAIML Guidance
 Offline minimal guidance from the supplied self-contained prompt; no retrieval.
-Product generation: experimental 0.5.x. No resolved upstream commit.
+YAIML guidance release: experimental 0.6.0. No resolved upstream commit.
 No distributed skill catalog or native skill bodies installed by this prompt.
 <Record actual local adaptations, host route and activation limits.>
 A separately requested full init or yaiml-refresh can upgrade in place:
