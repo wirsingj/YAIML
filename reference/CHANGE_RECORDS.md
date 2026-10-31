@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.43.65c0797e642cbbde"
+yaiml-revision: "0.56.7665a059b603a2d9"
 role: change-record-guide
 title: Change Records And Current Memory
 purpose: Preserve intent and evidence while choosing when shared memory can be consolidated.
@@ -29,7 +29,7 @@ Compose pending corrections by stated scope and human authority with actual arti
 
 ## Record Schema And External Validation Contract
 
-This is the normative stable record contract for 0.5.x. It defines integration points for external consumers; YAIML implements no validator, gatekeeper or semantic merger. Project memory bodies remain free-form Markdown. The contract below is self-contained; initialize records from the target's actual work, never YAIML's source-project history.
+This is the normative stable record contract introduced in 0.5.x and retained unchanged in 0.6.0. It defines integration points for external consumers; YAIML implements no validator, gatekeeper or semantic merger. Project memory bodies remain free-form Markdown. The contract below is self-contained; initialize records from the target's actual work, never YAIML's source-project history.
 
 A finalized record has YAML frontmatter with these required fields:
 
