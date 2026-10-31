@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.51.76d4cca6ae474b9c"
+yaiml-revision: "0.55.e4878e79e2960300"
 yaiml: 0.2
 role: review
 title: Cold Start Review
@@ -14,11 +14,17 @@ agent-guidance: Treat this as review evidence, not a normative source. Verify cu
 
 # Cold Start Review
 
+## Revision Batch Audit
+
+The 2026-10-31 pre-merge review at `0.55.e4878e79e2960300` found two offline-prompt ambiguities: only the active host was explicitly connected, and a requested demonstration decision could introduce invented memory. The prompt now connects applicable existing routes without duplicate sections, unused-tool files or guessed support, and checks real setup decisions without launching another agent. These are instruction-level risk corrections, not observed adopter failures.
+
+Package/link/discovery checks, offline template and exact-notice checks, standalone/canonical seed parity, diagram fixtures and ten mocked latest-workflow cases passed. Release counts and review-time observations were reconciled; old publication evidence remains attributed to its source. The target main was an unchanged ancestor at `7b4bee8`; no independent main changes needed semantic reconciliation. Fresh-agent execution of these changes, independent adoption and cross-host reliability remain unverified. This pre-merge review does not itself establish publication.
+
 ## Repository Navigation
 
 On 2026-10-31, maintainer feedback identified that acquisition isolation had not made the source repository navigable: public guides, examples and evaluation material still lived beside internal memory. Thirty files now live under public documentation/examples or the root roadmap, with reader indexes. Only this project's current memory, discovery, retained records and local method remain in `.yaiml/`; source instructions and discovery point to the moved owners.
 
-Local checks passed for active Markdown links/anchors, three discovery maps, old-path references, unchanged fenced examples, unchanged reference package/native routes/workflow/license and preserved prior audit records. Plain-text review also corrected Canopy Dispatch's stale memory paths to match its existing `docs/` layout. This is a source-navigation revision, not a new adoption workflow or fresh-user trial. Human usability of the revised navigation and publication remain unverified.
+Local checks passed for active Markdown links/anchors, three discovery maps, old-path references, unchanged fenced examples, unchanged reference package/native routes/workflow/license and preserved prior audit records. Plain-text review also corrected Canopy Dispatch's stale memory paths to match its existing `docs/` layout. This was a source-navigation revision, not a new adoption workflow or fresh-user trial. At that review, human usability and publication of the revised navigation had not been verified.
 
 ## Diagram Skill Review
 
@@ -28,7 +34,7 @@ On 2026-10-31, the maintainer approved an optional draw.io method and requested 
 2. **Packaging and safety:** local links/anchors, three discovery maps, thirteen native metadata/routes and 25-resource packages in default/custom homes passed. Both init prompts and licensing remained unchanged. Added an existing-file external-media/action check; local rendering can otherwise fetch referenced assets.
 3. **Practical use:** draw.io Desktop 32.6.1 rendered the fictional example. Visual inspection found connector-label overlap, corrected by offsetting labels. XML checks rejected missing-cell references, duplicate IDs, parent cycles and zero-size component boxes. A two-page fixture retained stable IDs, custom human metadata, shifted geometry and escaped text through a one-label update and draw.io's uncompressed XML reopen/export.
 
-The example sources match their recorded Git snapshot. No app was installed, service added or project material uploaded. These are primary-agent source/artifact checks, not autonomous creation/update trials, compressed-input update coverage, fresh native-menu activation or cross-host proof. The method is unreleased; published 0.5.2 evidence below does not validate it. Temporary fixtures/previews remain outside tracked artifacts.
+The example sources match their recorded Git snapshot. No app was installed, service added or project material uploaded. These are primary-agent source/artifact checks, not autonomous creation/update trials, compressed-input update coverage, fresh native-menu activation or cross-host proof. The method was unreleased at this review; published 0.5.2 evidence below does not validate it. Temporary fixtures/previews remain outside tracked artifacts.
 
 Follow-up at `0.51.76d4cca6ae474b9c` found the geometry rule too broad: draw.io rendered a valid relative edge-label vertex without width/height, while the original check rejected it. Corrected the notes/checks to preserve that geometry and explicit point endpoints; valid cases and the original rejection controls now pass. Host-delivered metadata also exposes `yaiml-diagram` on a subsequent turn. That establishes in-session discovery, not a fresh-session invocation. The earlier one-label exercise remains a hand-performed preservation check, not proof an arbitrary agent will update diagrams correctly.
 

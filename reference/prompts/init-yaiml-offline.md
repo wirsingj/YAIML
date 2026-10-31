@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.54.58ecbd56ad7274ae -->
+<!-- yaiml-revision: 0.55.e4878e79e2960300 -->
 # Init YAIML Offline
 
 Paste this entire document into a project-aware agent to set up memory in local project files. All required guidance and the license are embedded below. "Offline" means no setup retrieval; it does not turn a hosted AI into a local model.
@@ -11,7 +11,7 @@ Follow applicable project/host instructions and permissions. Inspect worktree st
 
 Reuse existing equivalent owners. Otherwise populate the four templates below in `.yaiml/`, omitting empty sections and marking unknowns. Save the Core Operating Rules as `.yaiml/YAIML_GUIDE.md`, including the Record And Revision Essentials. Save the complete embedded notice as `.yaiml/YAIML_NOTICE.md`; preserve other licenses and earlier grants. Include credit: YAIML — Yet Another AI Markup Language, by Jeff Wirsing, source https://github.com/wirsingj/YAIML. The notice covers copied guidance, not the adopter's independent work. Compare existing notice terms before replacing copied resources; changed permissions need project authorization.
 
-Create or reconcile the discovery map below, indexing existing files only, including relevant target-owned supporting docs at their actual paths. Do not copy YAIML's source discovery map or source agent instructions. Preserve recognized legacy `documents.*.path` maps and their supporting lists; do not migrate them for formatting. Create/reconcile a supported persistent host instruction route to read discovery, the local guide, audit receipt/pending records and core owners at startup, reuse context, and maintain material understanding before finishing. Preserve unrelated instructions and nested scope. Use the active host's supported instruction mechanism; if unavailable, report the exact activation gap. Create no pretend native skill entries: no skill bodies are embedded or fetched.
+Create or reconcile the discovery map below, indexing existing files only, including relevant target-owned supporting docs at their actual paths. Do not copy YAIML's source discovery map or source agent instructions. Preserve recognized legacy `documents.*.path` maps and their supporting lists; do not migrate them for formatting. Connect the active host and each applicable existing agent-instruction route to the same discovery, local guide, audit receipt/pending records and core owners. Direct later sessions to read them at startup, reuse current context, and maintain material understanding before finishing. Reconcile existing pointers without duplicate sections or circular includes; preserve unrelated instructions and nested scope. Use supported mechanisms established from available local evidence; report activation gaps instead of guessing. Create no files for unused tools or pretend native skill entries: no skill bodies are embedded or fetched.
 
 ## Core Operating Rules
 
@@ -144,7 +144,7 @@ yaiml:
 
 ## Verify And Finish
 
-Check useful target-specific memory, four reachable roles, discovery/host routes, pending-record recall, revision/parent/path agreement, retained knowledge/notices and no unresolved placeholders. Confirm neither source-project artifacts nor source revision IDs were used as target facts/history. Exercise one local ordinary decision with maintenance and a recall check when host capabilities permit. Report actual checks separately from configured behavior, source identity, missing activation, word counts and budget overages. Future-session recall needs a real fresh session; file checks alone do not establish it.
+Check useful target-specific memory, four reachable roles, discovery/host routes, pending-record recall, revision/parent/path agreement, retained knowledge/notices and no unresolved placeholders. Confirm neither source-project artifacts nor source revision IDs were used as target facts/history. Check that actual setup decisions are recorded accurately; do not invent a project decision to demonstrate maintenance. Report actual checks separately from configured behavior, source identity, missing activation, word counts and budget overages. Leave fresh-session recall unverified unless a separately authorized trial actually ran; setup alone does not launch another agent.
 
 Full networked init adds the distributed methods and catalog, supported native routes, full revision/change-record/recovery references, optional coordination guidance and dormant core starters. This minimal version is a working memory/record workflow, without those optional methods. Upgrade only when separately requested; preserve this setup in place.
 

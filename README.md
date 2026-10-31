@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.54.58ecbd56ad7274ae -->
+<!-- yaiml-revision: 0.55.e4878e79e2960300 -->
 # YAIML
 
 **Yet Another AI Markup Language (YAIML)** is a document standard that keeps your project's memory in ordinary files in your repository or project folder on your computer. Goals, decisions, constraints and current understanding live in readable Markdown, not just in an AI conversation.
@@ -116,7 +116,7 @@ For organizational security review, [retrieval and internal mirrors](docs/ADOPTI
 
 YAIML is an early public experiment. Maintainer-run Codex CLI trials on Windows have recovered decisions in fresh sessions and maintained memory during ordinary work. They also exposed stale verification notes and unnecessary reading. The [current review](docs/evaluation/COLD_START_REVIEW.md) separates published and draft trials, successes and failures.
 
-The current 0.5.2 layout has passed source/package checks and public retrieval, but fresh-session setup and upgrade trials for that layout are still pending. File checks do not establish agent behavior.
+The layout introduced in 0.5.2 passed source/package checks and public retrieval. Later guidance changes have their own scoped checks; fresh-session setup and upgrade acceptance remain pending. File checks do not establish agent behavior.
 
 Nondeveloper usability, other hosts, interactive skill menus, sustained reliability and productivity gains remain unverified; independent adoption and 1.0 readiness are not established. Agents can miss instructions or retain stale information. Review consequential changes: memory supplies context, not proof of correctness. Existing permissions and review controls apply; optional delegation requires scoped confirmation.
 

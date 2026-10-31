@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.54.58ecbd56ad7274ae"
+yaiml-revision: "0.55.e4878e79e2960300"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -35,11 +35,11 @@ Stabilization remains the default; the maintainer approved optional diagram outp
 
 ## Current State And Evidence
 
-The unreleased [diagram method](../reference/skills/yaiml-diagram/SKILL.md) adds editable draw.io views, portable notes and a native route. [Checks](../docs/evaluation/COLD_START_REVIEW.md#diagram-skill-review) cover package closure, rendering, valid relative geometry and a controlled update fixture; fresh-session behavior remains unverified.
+The optional [diagram method](../reference/skills/yaiml-diagram/SKILL.md) adds editable draw.io views, portable notes and a native route. [Checks](../docs/evaluation/COLD_START_REVIEW.md#diagram-skill-review) cover package closure, rendering, valid relative geometry and a controlled update fixture; fresh-session behavior remains unverified.
 
 Published experimental [0.5.2](../docs/development/RELEASE.md) separates reusable material from source memory; target release versions remain independent. [Publication evidence](../docs/evaluation/COLD_START_REVIEW.md#052-publication-review) records successful latest-tag execution and exact-source retrieval at merge `91c8307` on 2026-10-31. It does not establish fresh-session acceptance of this layout. 0.4.0 remains the earlier published comparison baseline.
 
-Product-first navigation is present in local `main` at `7b4bee8`; this review did not recheck public `latest`. Navigation alone changed no init resources. Keep the public tone approachable, professional and prompt-first. Supporting project context still belongs in memory when useful; no fixed file limit is implied.
+Product-first navigation was verified in `main` at `7b4bee8`. Keep the public tone approachable, professional and prompt-first. Supporting project context still belongs in memory when useful; no fixed file limit is implied. The [pre-merge audit](../docs/evaluation/COLD_START_REVIEW.md#revision-batch-audit) tightened offline route coverage and decision checks; its artifact results do not establish publication or fresh-agent acceptance.
 
 [Current review](../docs/evaluation/COLD_START_REVIEW.md) distinguishes published/draft trials and corrected failures. One comparison pair found no advantage; simulated readers informed README, not human usability proof. [StateMesh trials](../docs/evaluation/EVALUATION.md#statemesh-against-actual-local-main-2026-10-24) retain bounded synthetic/manual evidence; both inspected CLIs failed actual-branch inputs. External consumers are not adoption dependencies.
 
@@ -58,7 +58,7 @@ Product-first navigation is present in local `main` at `7b4bee8`; this review di
 
 ## Immediate Priorities
 
-1. Verify both published 0.5.2 init forms and existing/adapted-copy repair in fresh sessions. Artifact checks and verified public retrieval do not establish fresh-agent setup or recall.
+1. Verify both current init forms and existing/adapted-copy repair in fresh sessions, recording the exact tested source. Artifact checks and verified public retrieval do not establish fresh-agent setup or recall.
 2. Run the [additional-host trial](../docs/evaluation/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) for both init forms, ordinary maintenance and fresh recall. Claude Code/Copilot were unavailable; artifact/manual checks establish no host reliability. Retain source-selection, interruption/revert and longer-sequence gaps.
 3. Track separately authorized ShepAIrd reader/writer repairs and the historical-disclosure decision before broader portfolio rollout; distinguish current-file, history and deployment evidence. These are external work, not prerequisites for independent YAIML use.
 4. Repeat the [comparison](../docs/evaluation/EVALUATION.md#ready-to-run-comparison) with equivalent ordinary docs and setup cost; seek [new-reader](../examples/minimal-notes/README.md#short-paste-and-go-demo) and independent owner feedback.

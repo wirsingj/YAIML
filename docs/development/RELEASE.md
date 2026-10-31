@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.54.58ecbd56ad7274ae"
+yaiml-revision: "0.55.e4878e79e2960300"
 role: release-identity
 title: YAIML Release
 purpose: Identify YAIML's product release and source-maintainer publication readiness.
@@ -13,7 +13,7 @@ This document belongs to the YAIML source project. Adopters record only applied 
 
 Product release: **0.5.2**. Status: **experimental**. Previous published baseline: **0.4.0**. Revision major: **0**. Discovery layout remains **0.2.0**.
 
-This release separates reusable `reference/` material from this project's `.yaiml/` memory. Both init forms exclude completed source artifacts. It provides one retained-record workflow: consolidate during normal work with established sole ownership, defer during overlap, and prepare changes for review through the existing Git method. It supplies eleven methods plus one compatibility alias and the change-record guide. No adopter mode switch, hook or runtime is introduced. Default acquisition targets `refs/tags/latest`; local review preparation does not establish public availability of that ref. This label alone proves no reliability.
+The 0.5.2 baseline separated reusable `reference/` material from this project's `.yaiml/` memory. Both init forms exclude completed source artifacts. The current package provides one retained-record workflow: consolidate during normal work with established sole ownership, defer during overlap, and prepare changes for review through the existing Git method. It supplies twelve methods plus one compatibility alias and the change-record guide. No adopter mode switch, hook or runtime is introduced. Default acquisition targets `refs/tags/latest`; local review preparation does not establish publication. A version label alone proves no reliability.
 
 Networked acquisition requires exact tag `refs/tags/latest`, peeled once to a commit for all `reference/` resources. The tag is a moving public-ready pointer, not an immutable content identity. A same-named branch is never a substitute. Consumer product identity lives in `reference/BOOTSTRAP.md`; this planning document is not retrieved. Existing layouts, local adaptations, retained records and earlier grants survive upgrade. Prior trials remain attributed to their tested revisions; the new layout requires fresh acceptance.
 
@@ -24,7 +24,7 @@ The 1.0 claim remains pending: stable core and revision expectations, checked le
 
 ## Publication Boundary
 
-Pending revision: `yaiml-diagram` and its portable draw.io notes add an optional method; the working package has twelve methods plus the compatibility alias. Public explanations and both init openings now clarify file-based memory and agent responsibilities without changing acquisition or maintenance rules. These edits are outside the published 0.5.2 baseline; the next release label remains a maintainer decision. Full setup follows the acquired catalog; self-contained setup still installs no skill package.
+This revision batch adds `yaiml-diagram` and portable draw.io notes. Public explanations and both init openings clarify file-based memory and agent responsibilities. Offline setup now explicitly connects existing supported instruction routes and checks real setup decisions without inventing a demonstration decision or launching another agent. Full setup follows the acquired catalog; self-contained setup still installs no skill package. The original 0.5.2 publication evidence below does not validate these later changes; the exact source commit distinguishes the applied guidance. Numeric release labels remain separate maintainer decisions.
 
 The maintainer's 1:1 workflow batches work on revision-cycle branches rather than one branch per feature. Roughly two weeks is a working rhythm, not a deadline. Test and review the batch before merging; choose any product-version bump deliberately, not from the branch name or elapsed time. `main` is stable development. Merging to main is the public-ready decision: [.github/workflows/latest.yml](../../.github/workflows/latest.yml) advances `refs/tags/latest` on main updates. No GitHub Release object is required. Only `latest` moves; numbered tags remain fixed.
 
