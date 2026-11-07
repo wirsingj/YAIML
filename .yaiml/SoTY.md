@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.56.7665a059b603a2d9"
+yaiml-revision: "0.57.78b9381c12dc0d6e"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -41,7 +41,7 @@ The maintainer approved experimental [0.6.0](../docs/development/RELEASE.md) for
 
 Product-first navigation was verified in `main` at `7b4bee8`. Keep the public tone approachable, professional and prompt-first. Supporting project context still belongs in memory when useful; no fixed file limit is implied. The [pre-merge audit](../docs/evaluation/COLD_START_REVIEW.md#revision-batch-audit) tightened offline route coverage and decision checks; its artifact results do not establish publication or fresh-agent acceptance.
 
-[Current review](../docs/evaluation/COLD_START_REVIEW.md) distinguishes published/draft trials and corrected failures. One comparison pair found no advantage; simulated readers informed README, not human usability proof. [StateMesh trials](../docs/evaluation/EVALUATION.md#statemesh-against-actual-local-main-2026-10-24) retain bounded synthetic/manual evidence; both inspected CLIs failed actual-branch inputs. External consumers are not adoption dependencies.
+[Current review](../docs/evaluation/COLD_START_REVIEW.md) distinguishes published/draft trials and corrected failures. One comparison pair found no advantage; simulated readers informed README, not human usability proof. [StateMesh trials](../docs/evaluation/EVALUATION.md#statemesh-against-actual-local-main-2026-10-24) retain bounded synthetic/manual evidence; the October 24 CLIs failed actual-branch inputs. A [November 7 input repair](../docs/evaluation/EVALUATION.md#statemesh-input-repair-2026-11-07) successfully extracted real-branch context; candidate acceptance and automatic merging remain separately limited. External consumers are not adoption dependencies.
 
 ## Active Risks And Gaps
 
