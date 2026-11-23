@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.50.741e4ad5c7f6f656"
+yaiml-revision: "0.64.d31bc21db4dcadf4"
 yaiml: 0.2
 kind: maintainer
 title: YAIML Maintainer Guide
@@ -18,6 +18,8 @@ agent-guidance: Verify command claims when practical. Surface conflicts. Preserv
 Include any [pending corrections](changes.md).
 
 Documentation repository; no application build/test suite. Current [publication review](../docs/evaluation/COLD_START_REVIEW.md#052-publication-review) covers reference closure, both init forms/routes, live latest-tag execution and exact-source public retrieval; fresh-agent behavior remains unverified. Earlier [0.5.1 checks](../docs/evaluation/EVALUATION.md#post-review-cross-host-trial-gate-2026-10-24) retain their own scope. Host-delivered instructions/skill metadata and actual method reads do not validate every invocation or another host.
+
+The current local catalog has fifteen native routes, including packaging and loop. [Batch review](changes/0.64.d31bc21db4dcadf4.md) records structural checks; loop has assisted same-session use only. Packaging execution, fresh-host activation and public acquisition of this batch remain unverified.
 
 ## Review Procedure
 

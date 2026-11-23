@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.50.741e4ad5c7f6f656"
+yaiml-revision: "0.64.d31bc21db4dcadf4"
 yaiml: 0.2
 kind: architecture
 title: YAIML Architecture
@@ -57,6 +57,8 @@ The guide owns context, work, verification and maintenance. Reuse context; selec
 Composition carries one task's scope, findings, priorities and evidence through selected skills. Orient once, perform authorized work, verify at relevant checkpoints, then synthesize material understanding. `yaiml-to-do` bounds feasible original priorities; `yaiml-audit` accepts perspectives. Neither task counts nor skill invocations authorize subagents. Read-only and unchanged tasks remain respected.
 
 Growth distinguishes facts from methods: add specialist memory for recurring knowledge and project skills for recurring procedures. Update an existing owner first; avoid empty artifacts and speculative rules. Refresh compares incoming guidance, the applied baseline where available and current adaptations. Preserve local skills, authority and unresolved conflicts; healthy repeat setup is unchanged. [Skills And Project Lifecycle](../docs/SKILLS_AND_LIFECYCLE.md) owns the fuller rationale.
+
+Optional packaging and loop methods use the executing agent and target project tools. Packaging defines a recipient handoff and evidence requirements; loop defines ordered repetitions, progress and recovery. Neither adds a runtime, scheduler or background service.
 
 ## Evidence And Integration
 

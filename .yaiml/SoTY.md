@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.57.78b9381c12dc0d6e"
+yaiml-revision: "0.64.d31bc21db4dcadf4"
 yaiml: 0.2
 kind: sot
 title: SoTY
@@ -31,11 +31,13 @@ Declared: personal public project; require credit, permit commercial/client use,
 
 Maintainer direction: [Versioning](../reference/VERSIONING.md) stamps changed YAIML Markdown and audits all affected paths, preserving concurrent lineage through major/local-counter/random-tag revisions. Updaters establish prospective legacy baselines; no-op/read-only work stays unchanged.
 
-Stabilization remains the default; the maintainer approved optional diagram output as a bounded addition, then requested a whole-project alignment and complexity review, not another feature-only check. Preserve one workflow without a mode switch and existing Git review guidance. Evaluate additions by whether they help recover and maintain project understanding, including their reading/maintenance cost. No independent adoption is known; the maintainer's brother's feedback is pending.
+Stabilization remains the default; the maintainer approved optional diagram, packaging and repeated-workflow methods as bounded additions, then requested a whole-project alignment and complexity review, not another feature-only check. Preserve one workflow without a mode switch and existing Git review guidance. Evaluate additions by whether they help recover and maintain project understanding, including their reading/maintenance cost. No independent adoption is known; the maintainer's brother's feedback is pending.
 
 ## Current State And Evidence
 
 The optional [diagram method](../reference/skills/yaiml-diagram/SKILL.md) adds editable draw.io views, portable notes and a native route. [Checks](../docs/evaluation/COLD_START_REVIEW.md#diagram-skill-review) cover package closure, rendering, valid relative geometry and a controlled update fixture; fresh-session behavior remains unverified.
+
+The local distribution also includes [packaging](../reference/skills/yaiml-package/SKILL.md) and [loop](../reference/skills/yaiml-loop/SKILL.md) methods. The loop received assisted same-session use: one productive and one no-op cycle before early stopping, not a fresh-session reliability trial. Packaging execution remains unverified. The concise README leads with continuity and first use; detailed mechanics remain linked. These changes await integration/publication.
 
 The maintainer approved experimental [0.6.0](../docs/development/RELEASE.md) for the diagram/clarity batch after its merge. Bootstrap and offline provenance use that label; record semantics, discovery and local revision major are unchanged. [Publication evidence](../docs/evaluation/COLD_START_REVIEW.md#revision-batch-audit) verifies the pre-label batch at `0273501`, not fresh-session acceptance. The earlier 0.4.0 comparison remains separately scoped; target releases stay independent.
 
@@ -46,7 +48,7 @@ Product-first navigation was verified in `main` at `7b4bee8`. Keep the public to
 ## Active Risks And Gaps
 
 - **Process weight:** mandatory stamps, exact-path records and incorporation receipts add work beyond the memory loop. [Ordinary trials](../docs/evaluation/COLD_START_REVIEW.md#stabilization-against-main) overread versioning despite selective-loading guidance. Review assessment: simplify the ordinary path before expanding it; benefit over equivalent ordinary docs and total overhead remain unestablished. The approved record contract is not silently optional.
-- **Presentation gaps:** both teaching families are labeled legacy, leaving no completed current-init example. Current wording now distinguishes file storage, agent execution, host routing and normal team review; clearer prose alone establishes no new behavior.
+- **Presentation gaps:** the two full teaching families retain legacy layouts. A [current-role walkthrough](../examples/current-memory/README.md) now explains four-role memory and pending corrections, but is not a completed current-init example. Current wording now distinguishes file storage, agent execution, host routing and normal team review; clearer prose alone establishes no new behavior.
 - **Distribution boundary:** [inspected leakage](../docs/evaluation/COLD_START_REVIEW.md#adopter-distribution-boundary), offline source IDs and stale README init motivated structural separation. Earlier checks missed the full entry surface. Fresh-agent adoption/[repair](../docs/ADOPTION_AND_UPGRADES.md#existing-yaiml-update) remains unverified; the existing adopter is unchanged.
 
 - **Under-pruning:** local review reported a roughly 22,000-word SoT with an inbox instruction, and architecture accumulating in another project's state document. Causation remains hypothetical; measure recovery and recurrence after instruction updates.

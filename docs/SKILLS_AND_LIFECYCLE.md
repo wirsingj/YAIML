@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.54.58ecbd56ad7274ae"
+yaiml-revision: "0.60.2ecf23cf990c1aec"
 role: lifecycle-guide
 title: YAIML Skills And Project Lifecycle
 purpose: Explain how one-prompt adoption becomes persistent context and reusable project workflows.
@@ -33,6 +33,8 @@ A particular user can request `yaiml-audit` with perspectives or `yaiml-to-do 10
 
 Skills own the methods. [Using YAIML](../reference/YAIML_GUIDE.md) owns shared authority, evidence, context and retention rules. Prompts are optional entry points. Host entries are thin discovery routes. Stubs must never carry method content; retain only canonical references, argument pass-through and reference-resolution directions. Project procedures, expected outcomes and decisions remain in the owning memory documents so methods can use current facts instead of hardcoded copies.
 
+[yaiml-package](../reference/skills/yaiml-package/SKILL.md) handles requests such as "Make this easy to send to a friend so they can just run it." The agent chooses the technical approach for the project and recipient, builds the deliverable and verifies its launch experience. YAIML defines the outcome and evidence requirements, not language-specific packaging recipes or a runtime. First-use setup and untested platforms remain explicit; project packaging knowledge stays with its existing owner.
+
 ## Concurrent Memory
 
 [Change Records](../reference/CHANGE_RECORDS.md) supplies one workflow: each material change has one retained record; normal work consolidates with sole ownership, while known overlap or uncertain ownership defers factual snapshots and the shared receipt. Current context includes pending records; navigation is repaired immediately. Existing coordination establishes ownership; YAIML provides no global worker detector or lock. “Prepare these changes for review” uses the existing Git method to check intent, evidence and pending consolidation, without granting commit or publication authority.
@@ -42,6 +44,8 @@ Skills own the methods. [Using YAIML](../reference/YAIML_GUIDE.md) owns shared a
 The user's request supplies the scope and desired sequence. “Audit as X and Y, do ten priorities, then test” carries one task through evidence gathering, priority selection, work, verification and memory synthesis. A perspective selects questions, not a separate persona or automatic subagent. Counts bound feasible original priorities, not worker count or a demand to manufacture ten tasks.
 
 Methods pass results forward: findings with uncertainty, selected items with acceptance criteria, changes with verification evidence, then material memory corrections. The agent reuses context and completes the requested sequence without requiring additional skill invocations. A blocked dependency does not prevent independent authorized work. Audit findings do not silently supersede human priorities. This composition uses existing agent reasoning; YAIML supplies no workflow engine.
+
+[yaiml-loop](../reference/skills/yaiml-loop/SKILL.md) makes repeated composition explicit: “Audit, run to-do twice, and repeat the whole sequence ten times.” That requests ten audits and twenty separate to-do invocations if completed; each to-do selects from the updated state. The method distinguishes skill arguments from repetition counts, tracks nested progress, and reports incomplete cycles, exhaustion and interruption without promising background execution. Its canonical method owns stopping and recovery rules.
 
 ## Growing Knowledge And Methods
 

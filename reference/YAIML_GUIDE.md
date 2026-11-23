@@ -1,5 +1,5 @@
 ---
-yaiml-revision: "0.54.58ecbd56ad7274ae"
+yaiml-revision: "0.60.2ecf23cf990c1aec"
 role: operating-guide
 title: Using YAIML
 purpose: Shared operating rules for project context, skill selection, composition, and retention.
@@ -21,7 +21,7 @@ Follow applicable project instructions. Locate discovery, normally `.yaiml/yaiml
 
 Reuse that context until insufficient or stale after relevant work, branch/contributor changes or context loss. A header's `read-with` is a relevance hint, not a recursive import. Read supporting material only for the task.
 
-Ordinary work can follow this guide directly; it need not open the catalog, `yaiml-orient`, `yaiml-maintain` or `yaiml-verify` as a ritual. For a named or specialized workflow, use available skill metadata or [the catalog](skills/INDEX.md) to select its canonical method. Preserve counts, perspectives and scope. Compose requested methods without restarting orientation or requiring separate user invocations. Native command syntax depends on the host.
+Ordinary work can follow this guide directly; it need not open the catalog, `yaiml-orient`, `yaiml-maintain` or `yaiml-verify` as a ritual. For a named or specialized workflow, use available skill metadata or [the catalog](skills/INDEX.md) to select its canonical method. Preserve counts, perspectives and scope. Compose requested methods without restarting orientation or requiring separate user invocations. For repeated sequences or nested counts, use [yaiml-loop](skills/yaiml-loop/SKILL.md) to track execution and stopping conditions. Native command syntax depends on the host.
 
 ## Work And Evidence
 

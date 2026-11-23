@@ -1,4 +1,4 @@
-<!-- yaiml-revision: 0.47.a709c1ceed90c210 -->
+<!-- yaiml-revision: 0.62.ea5e56759cd3932d -->
 # Minimal Notes YAIML Example
 
 This is a tiny fictional legacy example focused on the three original current-memory roles. It intentionally predates changes.md and revision stamps; use it as an upgrade input, not current init output. The updater must establish the fourth role and a prospective baseline under [VERSIONING.md](../../reference/VERSIONING.md).
@@ -23,7 +23,7 @@ Give the agent this brief, followed by the contents of [Init YAIML](../../refere
 
 For a published-source trial, give the agent only that brief and the init prompt. For an unpublished development trial, additionally supply an isolated reference snapshot and label that difference; no maintainer checkout or conversation context is implied. Record any host-injected YAIML instructions or skill descriptions before calling the trial a clean cold start.
 
-Review the result: three useful core documents, discovery, supported persistent instructions, a local skill catalog and bodies, shared rules, dormant starters, YAIMLACP and copied-material notice. Check every required local skill reference. Local-only is declared intent; absent source prevents runtime claims. Init should acquire resources itself, not ask the user to paste more workflows, build the app, install dependencies, start workers or invent test results.
+Review the result: four useful core roles (current state, architecture, maintainer procedures and the retained change audit), discovery, supported persistent instructions, a local skill catalog and bodies, shared rules, dormant starters, YAIMLACP and copied-material notice. Check every required local skill reference. Local-only is declared intent; absent source prevents runtime claims. Init should acquire resources itself, not ask the user to paste more workflows, build the app, install dependencies, start workers or invent test results.
 
 Start a fresh session in that same scratch folder with only this request:
 
